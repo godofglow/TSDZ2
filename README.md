@@ -1,4 +1,4 @@
-This is a manual update of the latest code from qmarco.
+This is a manual update of the latest code from qmarco. I'm not the author of the sourcecode!
 
 discussions:
 
