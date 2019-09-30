@@ -381,6 +381,8 @@ volatile uint8_t ui8_phase_c_voltage = 0;
 volatile uint16_t ui16_value;
 volatile uint16_t ui16_counter_adc_battery_current_ramp_up = 0;
 volatile uint8_t ui8_controller_adc_battery_max_current = 0;
+volatile uint16_t ui16_counter_adc_motor_current_ramp_up = 0;
+volatile uint8_t ui8_controller_adc_motor_max_current = 0;
 volatile uint8_t ui8_first_time_run_flag = 1;
 volatile uint8_t ui8_adc_battery_voltage_cut_off = 0xFF; // safe value so controller will not discharge the battery if not receiving a lower value from the LCD
 volatile uint16_t ui16_adc_battery_voltage_accumulated = 0;
@@ -443,6 +445,8 @@ uint16_t ui16_value;
 
 uint16_t ui16_counter_adc_battery_current_ramp_up = 0;
 uint8_t ui8_controller_adc_battery_max_current = 0;
+uint16_t ui16_counter_adc_motor_current_ramp_up = 0;
+uint8_t ui8_controller_adc_motor_max_current = 0;
 
 uint8_t ui8_first_time_run_flag = 1;
 
@@ -509,6 +513,7 @@ void motor_controller(void)
 void TIM1_CAP_COM_IRQHandler(void) __interrupt(TIM1_CAP_COM_IRQHANDLER) // runs every 64us (PWM frequency)
 {
   static uint8_t ui8_temp;
+  static uint8_t valuesAreTooHigh;
   struct_configuration_variables *p_configuration_variables;
   p_configuration_variables = get_configuration_variables();
 	
@@ -679,6 +684,15 @@ void TIM1_CAP_COM_IRQHandler(void) __interrupt(TIM1_CAP_COM_IRQHANDLER) // runs 
   // - limit motor max phase current
   // - limit motor max ERPS
   // - ramp up/down PWM duty_cycle value
+  
+  if(ui8_adc_battery_current > ui8_controller_adc_battery_max_current ||
+     ui8_adc_motor_phase_current > ui8_adc_target_motor_phase_max_current ||
+     ui8_adc_motor_phase_current > ui8_controller_adc_motor_max_current)
+  {
+    valuesAreTooHigh = 1;
+  }else{
+    valuesAreTooHigh = 0;
+  }
 
   // do not execute all, otherwise ui8_duty_cycle would be decremented more than onece on each PWM cycle
   // do not control current at every PWM cycle, that will measure and control too fast. Use counter to limit 
@@ -688,8 +702,7 @@ void TIM1_CAP_COM_IRQHandler(void) __interrupt(TIM1_CAP_COM_IRQHANDLER) // runs 
     ui8_current_controller_counter = 0;
     
     // if battery max current or phase current is too much, reduce duty cycle
-    if((ui8_adc_battery_current > ui8_controller_adc_battery_max_current)||
-    		(ui8_adc_motor_phase_current > ui8_adc_target_motor_phase_max_current))
+    if(valuesAreTooHigh)
     {
       if(ui8_duty_cycle > 0)
       {
@@ -716,7 +729,8 @@ void TIM1_CAP_COM_IRQHandler(void) __interrupt(TIM1_CAP_COM_IRQHANDLER) // runs 
   }
   else // nothing to limit, so adjust duty_cycle to duty_cycle_target, including ramping
   {
-    if(ui8_duty_cycle_target > ui8_duty_cycle)
+    if(ui8_duty_cycle_target > ui8_duty_cycle &&
+       !valuesAreTooHigh)
     {
       if(ui16_counter_duty_cycle_ramp_up++ >= ui16_duty_cycle_ramp_up_inverse_step)
       {
@@ -815,6 +829,24 @@ void TIM1_CAP_COM_IRQHandler(void) __interrupt(TIM1_CAP_COM_IRQHANDLER) // runs 
     // we are not doing a ramp down here, just directly setting to the target value
     ui8_controller_adc_battery_max_current = ui8_adc_target_battery_max_current;
   }
+  
+  // Implement ramp up ADC motor current
+  if(ui8_adc_target_motor_max_current > ui8_controller_adc_motor_max_current)
+  {
+    if(ui16_counter_adc_motor_current_ramp_up++ >= ADC_BATTERY_CURRENT_RAMP_UP_INVERSE_STEP)
+    {
+			// reset counter
+      ui16_counter_adc_motor_current_ramp_up = 0;
+			// increment current
+      ui8_controller_adc_motor_max_current++;
+    }
+  }
+  else if(ui8_adc_target_motor_max_current < ui8_controller_adc_motor_max_current)
+  {
+    // we are not doing a ramp down here, just directly setting to the target value
+    ui8_controller_adc_motor_max_current = ui8_adc_target_motor_max_current;
+  }
+  
   /****************************************************************************/
   /****************************************************************************/
 	// calc PAS timming between each positive pulses, in PWM cycles ticks
