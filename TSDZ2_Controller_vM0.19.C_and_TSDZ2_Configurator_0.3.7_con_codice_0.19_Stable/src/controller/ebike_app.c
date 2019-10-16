@@ -895,6 +895,9 @@ static void uart_receive_package(void)
 					break;
 
 				case ASSIST_PEDAL_LEVEL3:
+				  // assist level 3
+					configuration_variables.ui8_assist_level_factor_x10 = configuration_variables.ui8_assist_level_power[SPORT];
+					
 					// startup motor power boost 3
 					configuration_variables.ui8_startup_motor_power_boost_assist_level = configuration_variables.ui8_startup_motor_power_boost[2];
 
