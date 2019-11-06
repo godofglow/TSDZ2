@@ -148,8 +148,8 @@ void ebike_app_init(void)
 {
   
 	// set max battery current
-  ebike_app_set_battery_max_current(ADC_BATTERY_CURRENT_MAX);
-  ebike_app_set_motor_max_current(ADC_MOTOR_PHASE_CURRENT_MAX);
+  ebike_app_set_battery_max_current(ADC_BATTERY_CURRENT_MAX_LIMIT);
+  ebike_app_set_motor_max_current(MOTOR_PHASE_CURRENT_MAX_AMP);
   ebike_app_set_torque_assist_ratio();
 
 	// clear function code
@@ -333,7 +333,7 @@ static void ebike_control_motor(void)
   ui8_adc_max_motor_current_boost_state = 0;
 
   // clear battery target current
-  ui8_adc_battery_target_current = 0;
+  ui8_adc_battery_target_current = ui8_adc_battery_current_max;
   ui8_adc_motor_target_current = 0;
 
   // clear max battery power current
@@ -525,10 +525,6 @@ static void ebike_control_motor(void)
       ui8_adc_max_motor_current = ui32_vartemp >> 3;
       ui8_limit_max(&ui8_adc_max_motor_current, 255);
       ui8_adc_motor_target_current = ui8_adc_max_motor_current;
-      if(ui8_adc_motor_target_current){
-        //set battery to max
-        ui8_adc_battery_target_current = ui8_adc_battery_current_max;
-      }
     }
     else
     {
@@ -648,7 +644,7 @@ static void ebike_control_motor(void)
   // check to see if we should enable the motor
   if((!ui8_motor_enabled)&&
 	   (ui16_motor_get_motor_speed_erps() == 0)&&
-     (ui8_adc_battery_target_current))
+     (ui8_adc_motor_target_current))
   {
 		ui8_motor_enabled = 1;
 		ui8_duty_cycle = 0;
@@ -658,7 +654,7 @@ static void ebike_control_motor(void)
   // check to see if we should disable the motor
   if((ui8_motor_enabled)&&
      (ui16_motor_get_motor_speed_erps() == 0)&&
-     (ui8_adc_battery_target_current == 0)&&
+     (ui8_adc_motor_target_current == 0)&&
      (ui8_duty_cycle == 0))
   {
     ui8_motor_enabled = 0;
@@ -686,7 +682,7 @@ static void ebike_control_motor(void)
 	#endif
 	
 	// we must have a target positive current and brakes must not be pressed
-	if((ui8_adc_battery_target_current)&&(!ui8_brake_is_set))
+  if((ui8_adc_motor_target_current)&&(!ui8_brake_is_set))
   {
 		// walk assist active?
 		if(ui8_walk_assist_flag)
