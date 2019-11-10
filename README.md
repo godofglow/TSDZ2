@@ -7,9 +7,9 @@ Change of Achmaniac in relation to qmarco:
 Reason is that motor current is equal to torque so the result should be a smoother motor assistance.*
 
 ## XH18 descriptions
-OVERTEMPERATURE -> E06
-EBIKE WHEEL LOCKED -> E04
-OVERVOLTAGE -> E08
+- OVERTEMPERATURE -> E06
+- EBIKE WHEEL LOCKED -> E04
+- OVERVOLTAGE -> E08
 
 functions:
 - DEFAULT PARAMETERS -> E02 (Level 0)
