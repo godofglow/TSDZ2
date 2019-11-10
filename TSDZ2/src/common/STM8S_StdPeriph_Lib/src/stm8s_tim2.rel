@@ -1,6 +1,6 @@
 ;!FILE ../common/STM8S_StdPeriph_Lib/src/stm8s_tim2.asm
 XH3
-H B areas 401 global symbols
+H B areas 40C global symbols
 M stm8s_tim2
 O -mstm8
 S .__.ABS. Def000000
@@ -13,403 +13,413 @@ A GSINIT size 0 flags 0 addr 0
 A GSFINAL size 0 flags 0 addr 0
 A CONST size 0 flags 0 addr 0
 A INITIALIZER size 0 flags 0 addr 0
-A CODE size 4FD flags 0 addr 0
-S C$stm8s_tim2.c$985$1_0$462 Def0003C7
-S C$stm8s_tim2.c$928$1_0$456 Def0003A5
-S C$stm8s_tim2.c$864$1_0$448 Def000357
-S C$stm8s_tim2.c$545$1_0$398 Def00025B
-S C$stm8s_tim2.c$288$2_0$366 Def000170
-S C$stm8s_tim2.c$199$1_0$357 Def000108
-S _TIM2_GetCapture2 Def0003D6
-S _TIM2_SetCompare3 Def00038A
-S C$stm8s_tim2.c$377$2_0$377 Def0001F2
-S G$TIM2_ITConfig$0$0 Def0001ED
-S _TIM2_GetCapture3 Def0003F0
-S C$stm8s_tim2.c$987$1_0$462 Def0003D3
-S C$stm8s_tim2.c$946$1_0$458 Def0003A6
-S C$stm8s_tim2.c$769$3_0$435 Def0002F3
-S C$stm8s_tim2.c$678$2_0$419 Def0002AD
-S _TIM2_ClearITPendingBit Def000472
-S C$stm8s_tim2.c$995$1_0$464 Def0003D6
-S C$stm8s_tim2.c$988$1_0$462 Def0003D5
-S C$stm8s_tim2.c$947$1_0$458 Def0003AB
-S C$stm8s_tim2.c$867$1_0$448 Def000359
-S C$stm8s_tim2.c$448$2_0$389 Def00022D
-S C$stm8s_tim2.c$298$2_0$368 Def00017D
+A CODE size 513 flags 0 addr 0
+S C$stm8s_tim2.c$985$1_0$462 Def0003DF
+S C$stm8s_tim2.c$928$1_0$456 Def0003BD
+S C$stm8s_tim2.c$864$1_0$448 Def00035F
+S C$stm8s_tim2.c$545$1_0$398 Def00025F
+S C$stm8s_tim2.c$288$2_0$366 Def000174
+S C$stm8s_tim2.c$199$1_0$357 Def00010C
+S _TIM2_GetCapture2 Def0003EC
+S _TIM2_SetCompare3 Def00039E
+S C$stm8s_tim2.c$377$2_0$377 Def0001F6
+S G$TIM2_ITConfig$0$0 Def0001F1
+S _TIM2_GetCapture3 Def000404
+S C$stm8s_tim2.c$987$1_0$462 Def0003E9
+S C$stm8s_tim2.c$946$1_0$458 Def0003BE
+S C$stm8s_tim2.c$769$3_0$435 Def0002F7
+S C$stm8s_tim2.c$678$2_0$419 Def0002B1
+S _TIM2_ClearITPendingBit Def000488
+S C$stm8s_tim2.c$995$1_0$464 Def0003EC
+S C$stm8s_tim2.c$988$1_0$462 Def0003EB
+S C$stm8s_tim2.c$947$1_0$458 Def0003C3
+S C$stm8s_tim2.c$867$1_0$448 Def000361
+S C$stm8s_tim2.c$448$2_0$389 Def000231
+S C$stm8s_tim2.c$298$2_0$368 Def000181
 S C$stm8s_tim2.c$93$1_0$351 Def00005B
-S XG$TIM2_GetFlagStatus$0$0 Def000448
-S C$stm8s_tim2.c$948$1_0$458 Def0003B0
-S C$stm8s_tim2.c$868$1_0$448 Def000360
-S C$stm8s_tim2.c$785$3_0$439 Def000309
-S C$stm8s_tim2.c$779$2_0$437 Def0002FF
-S XG$TIM2_TimeBaseInit$0$0 Def00006F
+S XG$TIM2_GetFlagStatus$0$0 Def00045E
+S C$stm8s_tim2.c$948$1_0$458 Def0003C8
+S C$stm8s_tim2.c$868$1_0$448 Def00036C
+S C$stm8s_tim2.c$785$3_0$439 Def00030D
+S C$stm8s_tim2.c$779$2_0$437 Def000303
+S XG$TIM2_TimeBaseInit$0$0 Def000073
 S C$stm8s_tim2.c$60$1_0$349 Def000010
 S C$stm8s_tim2.c$52$0_0$349 Def000000
-S C$stm8s_tim2.c$869$1_0$448 Def000367
-S G$TIM2_SelectOCxM$0$0 Def00030E
-S G$TIM2_PrescalerConfig$0$0 Def000238
+S C$stm8s_tim2.c$869$1_0$448 Def000373
+S G$TIM2_SelectOCxM$0$0 Def000312
+S G$TIM2_PrescalerConfig$0$0 Def00023C
 S C$stm8s_tim2.c$95$1_0$351 Def000061
 S C$stm8s_tim2.c$70$1_0$349 Def00002C
-S XG$TIM2_OC1PreloadConfig$0$0 Def000283
-S XG$TIM2_ICInit$0$0 Def000161
-S C$stm8s_tim2.c$96$1_0$351 Def000068
+S XG$TIM2_OC1PreloadConfig$0$0 Def000287
+S XG$TIM2_ICInit$0$0 Def000165
+S C$stm8s_tim2.c$96$1_0$351 Def00006C
 S C$stm8s_tim2.c$80$1_0$349 Def000054
 S C$stm8s_tim2.c$71$1_0$349 Def000030
-S _TIM2_ForcedOC1Config Def000245
-S XFstm8s_tim2$TI1_Config$0$0 Def0004A4
-S XG$TIM2_ClearFlag$0$0 Def000455
-S XG$TIM2_OC2PreloadConfig$0$0 Def000292
-S C$stm8s_tim2.c$97$1_0$351 Def00006F
+S _TIM2_ForcedOC1Config Def000249
+S XFstm8s_tim2$TI1_Config$0$0 Def0004BA
+S XG$TIM2_ClearFlag$0$0 Def00046B
+S XG$TIM2_OC2PreloadConfig$0$0 Def000296
+S C$stm8s_tim2.c$97$1_0$351 Def000073
 S C$stm8s_tim2.c$81$1_0$349 Def000058
 S C$stm8s_tim2.c$72$1_0$349 Def000034
 S C$stm8s_tim2.c$54$1_0$349 Def000000
-S _TIM2_OC1PolarityConfig Def0002A9
-S _TIM2_GenerateEvent Def0002A2
-S _TIM2_ForcedOC2Config Def000250
-S _TIM2_UpdateDisableConfig Def00020B
-S XFstm8s_tim2$TI2_Config$0$0 Def0004D0
-S XG$TIM2_OC3PreloadConfig$0$0 Def0002A1
-S XG$TIM2_UpdateRequestConfig$0$0 Def000228
+S _TIM2_OC1PolarityConfig Def0002AD
+S _TIM2_GenerateEvent Def0002A6
+S _TIM2_ForcedOC2Config Def000254
+S _TIM2_UpdateDisableConfig Def00020F
+S XFstm8s_tim2$TI2_Config$0$0 Def0004E6
+S XG$TIM2_OC3PreloadConfig$0$0 Def0002A5
+S XG$TIM2_UpdateRequestConfig$0$0 Def00022C
 S C$stm8s_tim2.c$89$1_0$351 Def000059
 S C$stm8s_tim2.c$73$1_0$349 Def000038
 S C$stm8s_tim2.c$64$1_0$349 Def000014
 S C$stm8s_tim2.c$55$1_0$349 Def000004
-S _TIM2_OC2PolarityConfig Def0002B8
-S _TIM2_ForcedOC3Config Def00025B
-S XFstm8s_tim2$TI3_Config$0$0 Def0004FC
+S _TIM2_OC2PolarityConfig Def0002BC
+S _TIM2_ForcedOC3Config Def00025F
+S XFstm8s_tim2$TI3_Config$0$0 Def000512
 S C$stm8s_tim2.c$74$1_0$349 Def00003C
 S C$stm8s_tim2.c$65$1_0$349 Def000018
 S C$stm8s_tim2.c$56$1_0$349 Def000008
-S _TIM2_OC3PolarityConfig Def0002C7
-S XG$TIM2_SetCompare1$0$0 Def000378
-S G$TIM2_SetAutoreload$0$0 Def000357
+S _TIM2_OC3PolarityConfig Def0002CB
+S XG$TIM2_SetCompare1$0$0 Def000388
+S G$TIM2_SetAutoreload$0$0 Def00035F
 S C$stm8s_tim2.c$75$1_0$349 Def000040
 S C$stm8s_tim2.c$66$1_0$349 Def00001C
-S XG$TIM2_GetCapture1$0$0 Def0003D5
-S XG$TIM2_SetCompare2$0$0 Def000389
+S XG$TIM2_GetCapture1$0$0 Def0003EB
+S XG$TIM2_SetCompare2$0$0 Def00039D
 S C$stm8s_tim2.c$76$1_0$349 Def000044
 S C$stm8s_tim2.c$67$1_0$349 Def000020
 S G$TIM2_DeInit$0$0 Def000000
-S XG$TIM2_GetCapture2$0$0 Def0003EF
-S XG$TIM2_SetCompare3$0$0 Def00039A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1100 Def000361
+S XG$TIM2_GetCapture2$0$0 Def000403
+S XG$TIM2_SetCompare3$0$0 Def0003B2
 S C$stm8s_tim2.c$77$1_0$349 Def000048
 S C$stm8s_tim2.c$68$1_0$349 Def000024
 S C$stm8s_tim2.c$59$1_0$349 Def00000C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1101 Def000360
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1020 Def000316
-S XG$TIM2_GetCapture3$0$0 Def000409
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1200 Def0003B6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1101 Def000363
+S XG$TIM2_GetCapture3$0$0 Def00041B
 S C$stm8s_tim2.c$78$1_0$349 Def00004C
 S C$stm8s_tim2.c$69$1_0$349 Def000028
-S _TIM2_ITConfig Def0001ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1300 Def0003E8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1120 Def00036C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1102 Def000362
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1030 Def000322
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1021 Def000319
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1003 Def00030D
-S XG$TIM2_ClearITPendingBit$0$0 Def000478
-S G$TIM2_GetCounter$0$0 Def00040A
+S _TIM2_ITConfig Def0001F1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1300 Def0003F2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1111 Def000371
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1102 Def000365
+S XG$TIM2_ClearITPendingBit$0$0 Def00048E
+S G$TIM2_GetCounter$0$0 Def00041C
 S C$stm8s_tim2.c$79$1_0$349 Def000050
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1301 Def0003E9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1211 Def0003AB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1121 Def00036E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1031 Def000324
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1013 Def00030E
-S G$TIM2_GetITStatus$0$0 Def000456
-S G$TIM2_GetPrescaler$0$0 Def000421
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1410 Def000434
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1311 Def0003EF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1302 Def0003EA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1212 Def0003AD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1131 Def000378
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1032 Def000325
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1014 Def000310
-S G$TIM2_ARRPreloadConfig$0$0 Def000266
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1420 Def000441
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1411 Def000436
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1402 Def000427
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1330 Def0003FA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1303 Def0003EC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1231 Def0003B6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1105 Def000365
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1051 Def00033B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1042 Def000330
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1024 Def00031B
-S _TIM2_SelectOCxM Def00030E
-S _TIM2_PrescalerConfig Def000238
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1421 Def000443
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1403 Def00042A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1340 Def000406
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1322 Def0003F2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1232 Def0003B8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1151 Def000387
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1142 Def00037B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1124 Def000371
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1070 Def000346
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1052 Def00033E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1043 Def000332
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1025 Def00031D
-S XG$TIM2_ForcedOC1Config$0$0 Def00024F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1620 Def0004D9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1602 Def0004CF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1521 Def000479
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1431 Def000446
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1404 Def00042C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1323 Def0003F5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1260 Def0003C9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1170 Def000393
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1143 Def00037D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1125 Def000373
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1116 Def000368
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1062 Def000345
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1044 Def000335
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1035 Def000327
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1026 Def000320
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1017 Def000312
-S XG$TIM2_OC1PolarityConfig$0$0 Def0002B7
-S XG$TIM2_GenerateEvent$0$0 Def0002A8
-S XG$TIM2_ForcedOC2Config$0$0 Def00025A
-S XG$TIM2_UpdateDisableConfig$0$0 Def000219
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1621 Def0004DB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1540 Def000491
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1513 Def000478
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1450 Def000451
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1414 Def000438
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1405 Def00042E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1360 Def00040F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1333 Def0003FB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1261 Def0003CB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1252 Def0003C2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1207 Def0003A6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1171 Def000395
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1162 Def00038A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1144 Def00037F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1108 Def000367
-S XG$TIM2_OC2PolarityConfig$0$0 Def0002C6
-S XG$TIM2_ForcedOC3Config$0$0 Def000265
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1613 Def0004D1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1541 Def000493
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1532 Def000485
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1451 Def000452
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1415 Def00043B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1406 Def000430
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1370 Def00041D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1361 Def000410
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1334 Def0003FD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1271 Def0003D3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1262 Def0003CC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1217 Def0003B0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1208 Def0003A9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1154 Def000389
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1082 Def000354
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1073 Def000348
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1055 Def000340
-S XG$TIM2_OC3PolarityConfig$0$0 Def0002D5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1641 Def0004F3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1632 Def0004E9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1605 Def0004D0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1533 Def000487
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1524 Def00047A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1506 Def000472
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1434 Def000448
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1425 Def000445
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1416 Def00043D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1362 Def000411
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1335 Def0003FF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1326 Def0003F6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1308 Def0003ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1263 Def0003CE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1245 Def0003BC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1227 Def0003B1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1191 Def0003A0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1128 Def000376
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1119 Def00036A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1074 Def00034A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1056 Def000342
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1038 Def00032B
-S _TIM2_SetAutoreload Def000357
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1651 Def0004FC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1633 Def0004EB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1624 Def0004DD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1570 Def0004A6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1534 Def000488
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1507 Def000474
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1444 Def000449
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1417 Def00043F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1345 Def000407
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1336 Def000400
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1282 Def0003D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1264 Def0003CF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1255 Def0003C5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1237 Def0003BB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1228 Def0003B4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1192 Def0003A2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1174 Def000398
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1165 Def00038C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1147 Def000382
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1093 Def000357
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1310 Def0003FC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1220 Def0003C1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1103 Def000367
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1040 Def00032F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1022 Def00031A
+S G$TIM2_GetITStatus$0$0 Def00046C
+S G$TIM2_GetPrescaler$0$0 Def000437
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1410 Def00043B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1311 Def0003FD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1203 Def0003B8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1122 Def000374
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1104 Def000369
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1050 Def00033B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1041 Def000332
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1032 Def000326
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1023 Def00031D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1005 Def000311
+S G$TIM2_ARRPreloadConfig$0$0 Def00026A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1420 Def000448
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1402 Def00043A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1321 Def000403
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1312 Def0003FE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1303 Def0003F5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1240 Def0003CC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1204 Def0003BA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1150 Def00038B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1132 Def000381
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1114 Def000373
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1033 Def000328
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1015 Def000312
+S _TIM2_SelectOCxM Def000312
+S _TIM2_PrescalerConfig Def00023C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1610 Def0004E1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1601 Def0004D7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1421 Def00044A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1340 Def00040E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1313 Def000400
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1304 Def0003F6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1223 Def0003C3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1151 Def00038D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1133 Def000383
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1034 Def000329
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1016 Def000314
+S XG$TIM2_ForcedOC1Config$0$0 Def000253
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1602 Def0004DB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1431 Def000457
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1422 Def00044C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1413 Def00043D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1332 Def000406
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1260 Def0003D6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1224 Def0003C5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1161 Def00039B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1152 Def00038F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1125 Def000376
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1107 Def00036C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1053 Def00033F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1044 Def000334
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1026 Def00031F
+S XG$TIM2_OC1PolarityConfig$0$0 Def0002BB
+S XG$TIM2_GenerateEvent$0$0 Def0002AC
+S XG$TIM2_ForcedOC2Config$0$0 Def00025E
+S XG$TIM2_UpdateDisableConfig$0$0 Def00021D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1630 Def0004EC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1540 Def000499
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1504 Def000485
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1432 Def000459
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1414 Def000440
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1333 Def000409
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1261 Def0003D9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1243 Def0003CE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1153 Def000391
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1126 Def000378
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1108 Def00036E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1072 Def00034A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1054 Def000342
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1045 Def000336
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1027 Def000321
+S XG$TIM2_OC2PolarityConfig$0$0 Def0002CA
+S XG$TIM2_ForcedOC3Config$0$0 Def000269
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1640 Def0004FC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1631 Def0004EF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1613 Def0004E5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1532 Def00048F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1460 Def000465
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1442 Def00045C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1415 Def000442
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1370 Def000422
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1343 Def00040F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1307 Def0003F7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1271 Def0003DF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1244 Def0003D0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1172 Def00039E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1154 Def000393
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1136 Def000386
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1127 Def00037A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1082 Def000357
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1064 Def000349
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1046 Def000339
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1037 Def00032B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1028 Def000324
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1019 Def000316
+S XG$TIM2_OC3PolarityConfig$0$0 Def0002D9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1632 Def0004F1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1560 Def0004B1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1551 Def0004A7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1524 Def00048E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1461 Def000467
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1425 Def00044E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1416 Def000444
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1380 Def000431
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1371 Def000423
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1344 Def000411
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1308 Def0003F9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1272 Def0003E1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1209 Def0003BD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1182 Def0003AB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1164 Def00039D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1128 Def00037C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1083 Def000359
+S _TIM2_SetAutoreload Def00035F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1624 Def0004E7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1606 Def0004DD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1570 Def0004BA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1552 Def0004A9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1543 Def00049B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1507 Def000487
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1480 Def000472
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1462 Def000468
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1426 Def000451
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1417 Def000446
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1381 Def000433
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1354 Def000419
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1345 Def000412
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1336 Def00040A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1318 Def000401
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1309 Def0003FA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1282 Def0003E9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1273 Def0003E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1264 Def0003DA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1219 Def0003BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1183 Def0003AD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1147 Def000389
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1129 Def00037E
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1075 Def00034C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1048 Def000337
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1039 Def00032E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1057 Def000344
 S _TIM2_DeInit Def000000
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1625 Def0004DF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1616 Def0004D2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1580 Def0004B4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1553 Def00049F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1544 Def000495
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1535 Def00048A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1508 Def000475
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1472 Def00045E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1445 Def00044B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1409 Def000432
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1391 Def000424
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1373 Def00041E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1337 Def000402
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1319 Def0003F0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1292 Def0003DF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1274 Def0003D5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1265 Def0003D0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1256 Def0003C6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1166 Def00038E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1148 Def000384
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1139 Def000379
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1085 Def000356
-S G$TIM2_SetIC1Prescaler$0$0 Def00039B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1626 Def0004E0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1590 Def0004C1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1581 Def0004B6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1545 Def000499
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1536 Def00048C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1527 Def00047E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1482 Def00046A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1473 Def000461
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1464 Def000456
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1446 Def00044C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1365 Def000413
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1356 Def00040A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1338 Def000403
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1329 Def0003F9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1293 Def0003E0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1266 Def0003D2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1248 Def0003BE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1167 Def000390
-S G$TIM2_SetIC2Prescaler$0$0 Def0003A6
-S XG$TIM2_ITConfig$0$0 Def00020A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1645 Def0004F7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1636 Def0004ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1627 Def0004E2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1591 Def0004C5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1582 Def0004B8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1573 Def0004AA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1537 Def00048E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1528 Def000481
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1483 Def00046C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1456 Def000455
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1366 Def000416
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1348 Def000409
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1339 Def000404
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1285 Def0003D8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1249 Def0003C1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1177 Def00039A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1096 Def000359
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1078 Def00034F
-S G$TIM2_SetIC3Prescaler$0$0 Def0003B1
-S G$TIM2_SetCounter$0$0 Def000346
-S _TIM2_GetCounter Def00040A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1637 Def0004F1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1628 Def0004E4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1619 Def0004D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1583 Def0004BA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1574 Def0004AD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1556 Def0004A3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1529 Def000483
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1493 Def00046F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1376 Def000420
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1367 Def000418
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1286 Def0003DB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1259 Def0003C7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1187 Def00039B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1097 Def00035B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1079 Def000351
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1652 Def000509
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1643 Def0004FF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1616 Def0004E6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1544 Def00049D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1535 Def000490
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1517 Def000488
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1490 Def00047E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1445 Def00045E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1436 Def00045B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1427 Def000453
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1346 Def000414
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1274 Def0003E4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1229 Def0003C8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1175 Def0003A0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1157 Def000396
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1139 Def000388
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1076 Def00034E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1058 Def000346
+S G$TIM2_SetIC1Prescaler$0$0 Def0003B3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1662 Def000512
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1644 Def000501
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1635 Def0004F3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1590 Def0004C9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1581 Def0004BC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1545 Def00049E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1518 Def00048A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1455 Def00045F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1428 Def000455
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1374 Def000425
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1365 Def00041C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1347 Def000415
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1329 Def000404
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1293 Def0003EC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1275 Def0003E5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1257 Def0003D4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1239 Def0003C9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1176 Def0003A2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1158 Def000398
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1086 Def00035C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1077 Def000350
+S G$TIM2_SetIC2Prescaler$0$0 Def0003BE
+S XG$TIM2_ITConfig$0$0 Def00020E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1636 Def0004F5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1627 Def0004E8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1591 Def0004CA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1564 Def0004B5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1555 Def0004AB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1546 Def0004A0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1519 Def00048B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1483 Def000474
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1456 Def000461
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1384 Def000434
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1375 Def000428
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1357 Def00041B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1348 Def000416
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1339 Def00040D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1285 Def0003EB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1276 Def0003E6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1267 Def0003DD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1249 Def0003D3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1186 Def0003B0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1177 Def0003A4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1078 Def000352
+S G$TIM2_SetIC3Prescaler$0$0 Def0003C9
+S G$TIM2_SetCounter$0$0 Def00034A
+S _TIM2_GetCounter Def00041C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1637 Def0004F6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1592 Def0004CC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1556 Def0004AF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1547 Def0004A2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1538 Def000494
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1493 Def000480
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1484 Def000477
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1475 Def00046C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1457 Def000462
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1376 Def00042A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1349 Def000418
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1277 Def0003E8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1268 Def0003DE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1178 Def0003A6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1097 Def00035F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1079 Def000354
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$100 Def000000
-S _TIM2_GetITStatus Def000456
-S _TIM2_GetPrescaler Def000421
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1629 Def0004E6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1575 Def0004AF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1476 Def000463
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1467 Def000457
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1449 Def00044F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1386 Def000421
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1368 Def00041A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1359 Def00040C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1296 Def0003E1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1197 Def0003A5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1188 Def00039E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1098 Def00035D
-S _TIM2_ARRPreloadConfig Def000266
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1648 Def0004FB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1567 Def0004A5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1549 Def00049B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1477 Def000465
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1468 Def00045A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1369 Def00041B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1297 Def0003E3
-S XG$TIM2_SelectOCxM$0$0 Def000345
-S XG$TIM2_PrescalerConfig$0$0 Def000244
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1595 Def0004C7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1586 Def0004BD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1559 Def0004A4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1496 Def000471
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1487 Def00046E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1478 Def000467
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1469 Def00045C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1298 Def0003E5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1289 Def0003DC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$400 Def00014F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$310 Def0000E8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$220 Def000087
+S _TIM2_GetITStatus Def00046C
+S _TIM2_GetPrescaler Def000437
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1656 Def00050D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1647 Def000503
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1638 Def0004F8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1593 Def0004CE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1584 Def0004C0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1548 Def0004A4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1539 Def000497
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1494 Def000482
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1467 Def00046B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1377 Def00042C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1368 Def00041E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1296 Def0003EE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1179 Def0003A8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1089 Def00035E
+S _TIM2_ARRPreloadConfig Def00026A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1648 Def000507
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1639 Def0004FA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1594 Def0004D0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1585 Def0004C3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1567 Def0004B9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1387 Def000436
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1378 Def00042E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1369 Def000421
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1297 Def0003F1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1189 Def0003B2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$210 Def000079
+S XG$TIM2_SelectOCxM$0$0 Def000349
+S XG$TIM2_PrescalerConfig$0$0 Def000248
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1586 Def0004C5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1487 Def000479
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1478 Def00046D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1397 Def000437
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1379 Def000430
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1199 Def0003B3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$400 Def000150
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$211 Def00007B
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$130 Def000028
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$121 Def00001C
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$112 Def000010
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$103 Def000004
-S C$stm8s_tim2.c$1001$1_0$464 Def0003D8
-S G$TIM2_SelectOnePulseMode$0$0 Def000229
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1587 Def0004BF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1578 Def0004B1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1479 Def000468
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1299 Def0003E6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$500 Def0001B6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$410 Def00015D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$401 Def000151
+S C$stm8s_tim2.c$1001$1_0$464 Def0003EE
+S G$TIM2_SelectOnePulseMode$0$0 Def00022D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1659 Def000511
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1578 Def0004BB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1488 Def00047B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1479 Def000470
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$500 Def0001B7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$410 Def00015E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$401 Def000152
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$320 Def0000F9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$311 Def0000EB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$302 Def0000DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$230 Def000095
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$221 Def000089
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$212 Def00007A
-S C$stm8s_tim2.c$1002$1_0$464 Def0003DC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1579 Def0004B3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1399 Def000425
+S C$stm8s_tim2.c$1002$1_0$464 Def0003F2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1597 Def0004D3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1498 Def000484
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1489 Def00047D
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$510 Def0001C5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$501 Def0001B7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$501 Def0001B8
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$411 Def000160
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$402 Def000152
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$402 Def000153
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$330 Def000107
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$321 Def0000FB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$312 Def0000ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$231 Def000097
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$312 Def0000EC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$240 Def0000A3
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$222 Def00008B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$213 Def00007D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$204 Def000070
-S G$TIM2_CCxCmd$0$0 Def0002D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$700 Def000248
+S G$TIM2_CCxCmd$0$0 Def0002DA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1598 Def0004D5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1589 Def0004C7
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$520 Def0001D2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$502 Def0001B9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$511 Def0001C6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$502 Def0001BA
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$430 Def000168
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$403 Def000154
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$340 Def000112
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$412 Def000161
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$403 Def000155
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$331 Def000109
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$322 Def0000FD
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$313 Def0000EF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$304 Def0000E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$241 Def0000A5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$232 Def000099
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$223 Def00008D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$214 Def00007F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$214 Def00007E
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$160 Def000050
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$151 Def000044
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$142 Def000038
@@ -417,67 +427,67 @@ S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$133 Def00002C
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$124 Def000020
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$115 Def000014
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$106 Def000008
-S C$stm8s_tim2.c$1052$1_0$470 Def000421
-S C$stm8s_tim2.c$1004$1_0$464 Def0003DF
-S G$TIM2_PWMIConfig$0$0 Def000162
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1599 Def0004CB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$611 Def000215
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$602 Def00020B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$530 Def0001DB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$503 Def0001BA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$404 Def000155
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$332 Def000108
+S C$stm8s_tim2.c$1052$1_0$470 Def000437
+S C$stm8s_tim2.c$1004$1_0$464 Def0003F5
+S G$TIM2_PWMIConfig$0$0 Def000166
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$701 Def000249
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$521 Def0001D3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$512 Def0001C9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$503 Def0001BB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$431 Def00016A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$413 Def000164
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$404 Def000156
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$323 Def0000FF
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$314 Def0000F1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$305 Def0000E0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$242 Def0000A4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$260 Def0000B2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$233 Def00009B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$224 Def00008F
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$215 Def000081
-S C$stm8s_tim2.c$1053$1_0$470 Def000424
-S C$stm8s_tim2.c$1021$1_0$466 Def0003F2
-S C$stm8s_tim2.c$1005$1_0$464 Def0003E1
-S XG$TIM2_SetAutoreload$0$0 Def000367
-S G$TIM2_Cmd$0$0 Def0001DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$810 Def000286
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$720 Def000253
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$603 Def00020D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$513 Def0001C6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$206 Def000074
+S C$stm8s_tim2.c$1053$1_0$470 Def00043A
+S C$stm8s_tim2.c$1021$1_0$466 Def000406
+S C$stm8s_tim2.c$1005$1_0$464 Def0003F7
+S XG$TIM2_SetAutoreload$0$0 Def000373
+S G$TIM2_Cmd$0$0 Def0001E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$801 Def000287
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$711 Def000253
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$702 Def00024C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$630 Def000220
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$522 Def0001D6
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$504 Def0001BD
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$450 Def00017B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$441 Def000174
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$432 Def00016C
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$405 Def000158
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$360 Def00011E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$333 Def00010A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$324 Def0000FE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$306 Def0000E3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$360 Def00011F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$342 Def000116
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$315 Def0000F3
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$270 Def0000C0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$261 Def0000B1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$234 Def00009A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$225 Def000091
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$216 Def000083
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$207 Def000072
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$180 Def00005E
-S C$stm8s_tim2.c$1142$2_0$480 Def00046E
-S C$stm8s_tim2.c$1111$1_0$476 Def00044F
-S C$stm8s_tim2.c$1022$1_0$466 Def0003F6
+S C$stm8s_tim2.c$1142$2_0$480 Def000484
+S C$stm8s_tim2.c$1111$1_0$476 Def000465
+S C$stm8s_tim2.c$1022$1_0$466 Def00040A
 S XG$TIM2_DeInit$0$0 Def000058
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$910 Def0002C2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$901 Def0002B8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$703 Def00024A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$631 Def00021E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$523 Def0001D4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$514 Def0001C8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$460 Def000183
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$433 Def00016A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$820 Def000292
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$811 Def000288
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$721 Def000254
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$613 Def000219
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$604 Def00020F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$550 Def0001EA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$532 Def0001DF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$505 Def0001BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$451 Def00017D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$406 Def000159
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$370 Def00012D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$361 Def00011F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$343 Def000114
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$325 Def000101
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$307 Def0000E5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$280 Def0000CE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$361 Def000120
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$334 Def00010C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$316 Def0000F5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$307 Def0000E4
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$271 Def0000C2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$262 Def0000B4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$253 Def0000A7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$235 Def00009C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$226 Def000090
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$208 Def000075
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$190 Def00006A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$244 Def0000A8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$217 Def000085
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$181 Def000060
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$163 Def000054
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$154 Def000048
@@ -486,558 +496,559 @@ S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$136 Def000030
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$127 Def000024
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$118 Def000018
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$109 Def00000C
-S C$stm8s_tim2.c$1241$2_0$490 Def0004C7
-S C$stm8s_tim2.c$1203$1_0$484 Def00049F
-S C$stm8s_tim2.c$1200$2_0$486 Def00049B
-S C$stm8s_tim2.c$1112$1_0$476 Def000455
-S C$stm8s_tim2.c$1103$1_0$476 Def000449
-S C$stm8s_tim2.c$1007$1_0$464 Def0003ED
-S _TIM2_SetIC1Prescaler Def00039B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$902 Def0002BA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$740 Def00025E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$704 Def00024C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$632 Def000222
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$533 Def0001DD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$524 Def0001D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$515 Def0001C9
+S C$stm8s_tim2.c$1241$2_0$490 Def0004DD
+S C$stm8s_tim2.c$1203$1_0$484 Def0004B5
+S C$stm8s_tim2.c$1200$2_0$486 Def0004B1
+S C$stm8s_tim2.c$1112$1_0$476 Def00046B
+S C$stm8s_tim2.c$1103$1_0$476 Def00045F
+S C$stm8s_tim2.c$1007$1_0$464 Def000401
+S _TIM2_SetIC1Prescaler Def0003B3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$812 Def00028A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$731 Def00025E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$722 Def000257
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$605 Def000211
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$560 Def0001F0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$515 Def0001CA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$506 Def0001C1
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$470 Def000191
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$443 Def000172
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$434 Def00016C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$425 Def000162
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$380 Def000135
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$461 Def000185
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$452 Def00017F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$407 Def00015C
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$371 Def00012E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$362 Def000121
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$353 Def000115
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$317 Def0000F3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$362 Def000122
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$335 Def00010E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$326 Def000102
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$308 Def0000E7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$290 Def0000DC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$281 Def0000D0
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$272 Def0000C4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$263 Def0000B6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$245 Def0000A6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$227 Def000093
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$209 Def000077
-S C$stm8s_tim2.c$1204$1_0$484 Def0004A4
-S C$stm8s_tim2.c$1024$1_0$466 Def0003F9
-S C$stm8s_tim2.c$1015$1_0$466 Def0003F0
-S C$stm8s_tim2.c$1008$1_0$464 Def0003EF
-S G$TIM2_OC1Init$0$0 Def000070
-S _TIM2_SetIC2Prescaler Def0003A6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$930 Def0002CB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$813 Def000288
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$723 Def000255
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$642 Def000228
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$606 Def00020F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$570 Def0001F0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$552 Def0001E8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$543 Def0001DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$525 Def0001D7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$516 Def0001CB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$507 Def0001BF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$480 Def00019C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$444 Def000174
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$263 Def0000B5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$236 Def00009E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$218 Def000087
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$209 Def000076
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$191 Def00006C
+S C$stm8s_tim2.c$1204$1_0$484 Def0004BA
+S C$stm8s_tim2.c$1024$1_0$466 Def00040D
+S C$stm8s_tim2.c$1015$1_0$466 Def000404
+S C$stm8s_tim2.c$1008$1_0$464 Def000403
+S G$TIM2_OC1Init$0$0 Def000074
+S _TIM2_SetIC2Prescaler Def0003BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$912 Def0002C6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$903 Def0002BC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$840 Def00029B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$741 Def00025F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$705 Def00024E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$633 Def000222
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$525 Def0001D8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$516 Def0001CC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$471 Def000192
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$462 Def000187
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$435 Def00016E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$417 Def000161
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$408 Def00015A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$390 Def000143
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$381 Def000137
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$363 Def000122
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$354 Def000117
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$336 Def00010D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$318 Def0000F5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$291 Def0000DB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$372 Def000131
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$363 Def000123
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$345 Def000118
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$327 Def000105
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$309 Def0000E9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$282 Def0000D2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$273 Def0000C6
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$264 Def0000B8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$219 Def000085
-S XG$TIM2_GetCounter$0$0 Def000420
-S C$stm8s_tim2.c$1041$1_0$468 Def000413
-S C$stm8s_tim2.c$1025$1_0$466 Def0003FB
-S G$TIM2_OC2Init$0$0 Def0000A7
-S _TIM2_SetIC3Prescaler Def0003B1
-S _TIM2_SetCounter Def000346
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$931 Def0002CF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$814 Def00028C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$760 Def000268
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$724 Def000257
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$661 Def000233
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$652 Def000229
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$607 Def000213
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$580 Def0001FC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$544 Def0001E0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$255 Def0000AB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$237 Def0000A0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$228 Def000094
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$192 Def00006E
+S XG$TIM2_GetCounter$0$0 Def000436
+S C$stm8s_tim2.c$1041$1_0$468 Def000425
+S C$stm8s_tim2.c$1025$1_0$466 Def00040F
+S G$TIM2_OC2Init$0$0 Def0000AB
+S _TIM2_SetIC3Prescaler Def0003C9
+S _TIM2_SetCounter Def00034A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$904 Def0002BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$841 Def00029F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$751 Def000269
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$742 Def000262
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$706 Def000250
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$634 Def000226
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$571 Def0001F2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$535 Def0001E1
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$526 Def0001DA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$517 Def0001CC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$508 Def0001C1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$490 Def0001AA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$481 Def00019D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$463 Def000185
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$454 Def00017D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$445 Def000175
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$409 Def00015C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$391 Def000145
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$382 Def000138
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$517 Def0001CD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$481 Def00019E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$472 Def000195
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$445 Def000176
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$436 Def000170
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$427 Def000166
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$382 Def000139
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$373 Def000132
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$364 Def000125
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$337 Def00010F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$328 Def000103
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$355 Def000119
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$319 Def0000F7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$283 Def0000D1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$274 Def0000C8
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$265 Def0000BA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$256 Def0000A9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$238 Def00009F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$193 Def00006D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$247 Def0000AA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$229 Def000097
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$184 Def000061
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$157 Def00004C
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$148 Def000040
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$139 Def000034
-S C$stm8s_tim2.c$1270$1_0$492 Def0004DD
-S C$stm8s_tim2.c$1163$1_0$482 Def000472
-S XG$TIM2_GetITStatus$0$0 Def000471
-S C$stm8s_tim2.c$1081$2_0$473 Def000441
-S XG$TIM2_GetPrescaler$0$0 Def000424
-S C$stm8s_tim2.c$1049$1_0$470 Def000421
-S C$stm8s_tim2.c$1042$1_0$468 Def000420
-S G$TIM2_OC3Init$0$0 Def0000DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$941 Def0002D5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$905 Def0002BC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$860 Def0002A5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$824 Def000292
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$743 Def000260
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$653 Def00022B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$617 Def000219
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$581 Def0001FF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$518 Def0001CE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$509 Def0001C2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$491 Def0001AB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$482 Def00019F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$473 Def000193
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$464 Def000187
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$455 Def00017F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$428 Def000164
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$392 Def000146
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$383 Def00013A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$329 Def000105
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$284 Def0000D3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$275 Def0000C7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$257 Def0000AC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$239 Def0000A1
+S C$stm8s_tim2.c$1270$1_0$492 Def0004F3
+S C$stm8s_tim2.c$1163$1_0$482 Def000488
+S XG$TIM2_GetITStatus$0$0 Def000487
+S C$stm8s_tim2.c$1081$2_0$473 Def000457
+S XG$TIM2_GetPrescaler$0$0 Def00043A
+S C$stm8s_tim2.c$1049$1_0$470 Def000437
+S C$stm8s_tim2.c$1042$1_0$468 Def000436
+S G$TIM2_OC3Init$0$0 Def0000E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$932 Def0002CF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$851 Def0002A5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$815 Def00028C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$770 Def000274
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$761 Def00026A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$725 Def000259
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$680 Def00023F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$644 Def00022C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$608 Def000213
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$572 Def0001F4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$554 Def0001EC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$545 Def0001E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$527 Def0001DB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$518 Def0001CF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$509 Def0001C3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$491 Def0001AC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$482 Def0001A0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$446 Def000178
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$437 Def000172
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$419 Def000165
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$392 Def000147
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$383 Def00013B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$365 Def000126
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$356 Def00011B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$338 Def000111
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$293 Def0000DF
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$266 Def0000BC
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$185 Def000063
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$176 Def000059
-S C$stm8s_tim2.c$1262$1_0$492 Def0004D1
-S C$stm8s_tim2.c$1230$1_0$488 Def0004AA
-S C$stm8s_tim2.c$1164$1_0$482 Def000478
-S C$stm8s_tim2.c$1132$1_0$478 Def000457
-S C$stm8s_tim2.c$1027$1_0$466 Def000407
-S XG$TIM2_ARRPreloadConfig$0$0 Def000274
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$960 Def0002E2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$951 Def0002D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$906 Def0002C0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$861 Def0002A7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$843 Def00029D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$834 Def000293
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$744 Def000262
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$636 Def000224
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$627 Def00021A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$582 Def000201
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$573 Def0001F2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$519 Def0001CF
+S C$stm8s_tim2.c$1262$1_0$492 Def0004E7
+S C$stm8s_tim2.c$1230$1_0$488 Def0004C0
+S C$stm8s_tim2.c$1164$1_0$482 Def00048E
+S C$stm8s_tim2.c$1132$1_0$478 Def00046D
+S C$stm8s_tim2.c$1027$1_0$466 Def000419
+S XG$TIM2_ARRPreloadConfig$0$0 Def000278
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$933 Def0002D3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$861 Def0002A6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$816 Def000290
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$762 Def00026C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$726 Def00025B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$681 Def000241
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$663 Def000237
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$654 Def00022D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$609 Def000217
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$591 Def00020D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$582 Def000200
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$546 Def0001E4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$528 Def0001DE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$519 Def0001D0
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$492 Def0001AE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$483 Def0001A0
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$474 Def000195
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$465 Def000188
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$429 Def000166
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$483 Def0001A1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$465 Def000189
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$456 Def000181
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$447 Def000179
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$393 Def000149
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$384 Def00013B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$375 Def000130
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$357 Def000119
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$294 Def0000DD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$276 Def0000CA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$258 Def0000AE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$384 Def00013C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$366 Def000129
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$339 Def000113
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$285 Def0000D5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$267 Def0000BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$258 Def0000AD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$195 Def000071
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$186 Def000065
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$168 Def000058
-S C$stm8s_tim2.c$1231$1_0$488 Def0004B1
-S C$stm8s_tim2.c$1222$1_0$488 Def0004A5
-S C$stm8s_tim2.c$1190$1_0$484 Def00047E
-S C$stm8s_tim2.c$1124$1_0$478 Def000456
-S C$stm8s_tim2.c$1076$1_0$472 Def000427
-S C$stm8s_tim2.c$1035$1_0$468 Def00040A
-S C$stm8s_tim2.c$1028$1_0$466 Def000409
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$970 Def0002EC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$952 Def0002D8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$916 Def0002C6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$880 Def0002AD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$835 Def000295
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$763 Def00026A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$709 Def00024F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$682 Def00023E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$628 Def00021C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$592 Def00020A
+S C$stm8s_tim2.c$1231$1_0$488 Def0004C7
+S C$stm8s_tim2.c$1222$1_0$488 Def0004BB
+S C$stm8s_tim2.c$1190$1_0$484 Def000494
+S C$stm8s_tim2.c$1124$1_0$478 Def00046C
+S C$stm8s_tim2.c$1076$1_0$472 Def00043D
+S C$stm8s_tim2.c$1035$1_0$468 Def00041C
+S C$stm8s_tim2.c$1028$1_0$466 Def00041B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$961 Def0002E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$943 Def0002D9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$907 Def0002C0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$862 Def0002A9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$826 Def000296
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$790 Def00027D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$745 Def000264
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$691 Def000248
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$655 Def00022F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$619 Def00021D
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$583 Def000203
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$574 Def0001F5
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$547 Def0001E2
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$493 Def0001AF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$484 Def0001A2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$475 Def000196
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$466 Def00018A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$448 Def000177
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$439 Def000170
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$484 Def0001A3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$475 Def000197
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$466 Def00018B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$457 Def000183
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$394 Def00014A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$385 Def00013D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$376 Def000132
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$367 Def000127
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$358 Def00011B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$268 Def0000BC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$196 Def00006F
-S C$stm8s_tim2.c$1191$1_0$484 Def000485
-S C$stm8s_tim2.c$1182$1_0$484 Def000479
-S C$stm8s_tim2.c$1157$1_0$482 Def000472
-S C$stm8s_tim2.c$1134$1_0$478 Def00045E
-S C$stm8s_tim2.c$1109$1_0$476 Def000449
-S C$stm8s_tim2.c$1077$1_0$472 Def000432
-S C$stm8s_tim2.c$1068$1_0$472 Def000425
-S _TIM2_SelectOnePulseMode Def000229
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$971 Def0002ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$935 Def0002D1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$926 Def0002C7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$881 Def0002B1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$818 Def00028E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$809 Def000284
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$764 Def00026E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$719 Def000250
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$683 Def000241
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$656 Def00022D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$584 Def000204
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$575 Def0001F7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$566 Def0001ED
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$548 Def0001E6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$485 Def0001A3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$385 Def00013E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$286 Def0000D7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$277 Def0000CB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$259 Def0000B0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$187 Def000067
+S C$stm8s_tim2.c$1191$1_0$484 Def00049B
+S C$stm8s_tim2.c$1182$1_0$484 Def00048F
+S C$stm8s_tim2.c$1157$1_0$482 Def000488
+S C$stm8s_tim2.c$1134$1_0$478 Def000474
+S C$stm8s_tim2.c$1109$1_0$476 Def00045F
+S C$stm8s_tim2.c$1077$1_0$472 Def000448
+S C$stm8s_tim2.c$1068$1_0$472 Def00043B
+S _TIM2_SelectOnePulseMode Def00022D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$980 Def0002F7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$971 Def0002EE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$962 Def0002E6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$953 Def0002DA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$908 Def0002C4
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$863 Def0002AB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$845 Def0002A1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$836 Def000297
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$791 Def000281
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$746 Def000266
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$638 Def000228
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$629 Def00021E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$584 Def000205
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$575 Def0001F6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$494 Def0001B2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$485 Def0001A4
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$476 Def000199
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$467 Def00018B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$449 Def000179
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$386 Def00013E
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$377 Def000133
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$368 Def000129
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$359 Def00011C
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$287 Def0000D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$269 Def0000BE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$467 Def00018C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$395 Def00014D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$386 Def00013F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$377 Def000134
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$359 Def00011D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$296 Def0000E1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$278 Def0000CE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$188 Def000069
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$179 Def00005B
-S C$stm8s_tim2.c$1283$1_0$492 Def0004F7
-S C$stm8s_tim2.c$1280$2_0$494 Def0004F3
-S C$stm8s_tim2.c$1274$1_0$492 Def0004E9
-S C$stm8s_tim2.c$1144$1_0$478 Def00046F
-S C$stm8s_tim2.c$1087$1_0$472 Def000446
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$927 Def0002C9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$891 Def0002B7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$774 Def000274
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$729 Def00025A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$684 Def000243
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$657 Def000231
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$585 Def000206
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$576 Def0001FA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$558 Def0001EC
+S C$stm8s_tim2.c$1283$1_0$492 Def00050D
+S C$stm8s_tim2.c$1280$2_0$494 Def000509
+S C$stm8s_tim2.c$1274$1_0$492 Def0004FF
+S C$stm8s_tim2.c$1144$1_0$478 Def000485
+S C$stm8s_tim2.c$1087$1_0$472 Def00045C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$990 Def000303
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$981 Def0002FB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$972 Def0002F0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$954 Def0002DC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$918 Def0002CA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$882 Def0002B1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$837 Def000299
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$765 Def00026E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$684 Def000242
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$594 Def00020E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$585 Def000207
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$576 Def0001F9
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$549 Def0001E6
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$495 Def0001B3
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$486 Def0001A6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$468 Def00018D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$459 Def000181
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$477 Def00019A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$468 Def00018E
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$396 Def00014E
 S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$387 Def000141
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$369 Def00012A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$288 Def0000D8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$279 Def0000CC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$189 Def000068
-S C$stm8s_tim2.c$1284$1_0$492 Def0004FC
-S C$stm8s_tim2.c$1266$1_0$492 Def0004D2
-S C$stm8s_tim2.c$1145$1_0$478 Def000471
-S C$stm8s_tim2.c$1136$1_0$478 Def000463
-S C$stm8s_tim2.c$1088$1_0$472 Def000448
-S C$stm8s_tim2.c$1085$2_0$474 Def000445
-S C$stm8s_tim2.c$1079$1_0$472 Def000438
-S G$TIM2_GetFlagStatus$0$0 Def000425
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$378 Def000136
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$369 Def00012B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$198 Def000073
+S C$stm8s_tim2.c$1284$1_0$492 Def000512
+S C$stm8s_tim2.c$1266$1_0$492 Def0004E8
+S C$stm8s_tim2.c$1145$1_0$478 Def000487
+S C$stm8s_tim2.c$1136$1_0$478 Def000479
+S C$stm8s_tim2.c$1088$1_0$472 Def00045E
+S C$stm8s_tim2.c$1085$2_0$474 Def00045B
+S C$stm8s_tim2.c$1079$1_0$472 Def00044E
+S G$TIM2_GetFlagStatus$0$0 Def00043B
 S G$TIM2_TimeBaseInit$0$0 Def000059
-S _TIM2_CCxCmd Def0002D6
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$964 Def0002E4
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$955 Def0002DA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$838 Def000297
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$793 Def00027F
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$784 Def000275
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$739 Def00025B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$667 Def000237
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$469 Def00018E
-S C$stm8s_tim2.c$1235$1_0$488 Def0004BD
-S C$stm8s_tim2.c$1194$1_0$484 Def000491
-S C$stm8s_tim2.c$1039$1_0$468 Def00040C
-S C$stm8s_tim2.c$700$1_0$422 Def0002B8
-S C$stm8s_tim2.c$130$1_0$353 Def00009F
-S C$stm8s_tim2.c$121$1_0$353 Def00007A
-S _TIM2_PWMIConfig Def000162
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$992 Def000303
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$983 Def0002F9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$974 Def0002EF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$965 Def0002E8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$956 Def0002DC
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$866 Def0002A8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$839 Def00029B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$785 Def000277
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$749 Def000265
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$677 Def000238
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$569 Def0001EE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$497 Def0001B1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$479 Def00019A
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$398 Def00014C
-S C$stm8s_tim2.c$1245$1_0$488 Def0004CB
-S C$stm8s_tim2.c$1227$1_0$488 Def0004A6
-S G$TIM2_OC1PreloadConfig$0$0 Def000275
-S C$stm8s_tim2.c$561$1_0$400 Def000266
-S G$TIM2_ICInit$0$0 Def000115
-S C$stm8s_tim2.c$131$1_0$353 Def0000A6
-S C$stm8s_tim2.c$122$1_0$353 Def000085
-S _TIM2_Cmd Def0001DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$993 Def000307
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$984 Def0002FD
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$975 Def0002F1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$885 Def0002B3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$876 Def0002A9
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$849 Def0002A1
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$768 Def000270
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$759 Def000266
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$678 Def00023B
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$498 Def0001B3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$489 Def0001A8
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$399 Def00014E
-S C$stm8s_tim2.c$1276$2_0$493 Def0004ED
-S C$stm8s_tim2.c$1269$1_0$492 Def0004D6
-S C$stm8s_tim2.c$1246$1_0$488 Def0004D0
-S C$stm8s_tim2.c$1187$1_0$484 Def00047A
-S Fstm8s_tim2$TI1_Config$0$0 Def000479
-S G$TIM2_ClearFlag$0$0 Def000449
-S G$TIM2_OC2PreloadConfig$0$0 Def000284
-S C$stm8s_tim2.c$400$2_0$381 Def00020F
-S C$stm8s_tim2.c$301$1_0$364 Def000181
-S C$stm8s_tim2.c$200$1_0$357 Def00010D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$877 Def0002AB
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$859 Def0002A2
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$679 Def00023D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$589 Def000209
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$499 Def0001B4
-S Fstm8s_tim2$TI2_Config$0$0 Def0004A5
-S C$stm8s_tim2.c$1138$2_0$479 Def00046A
-S XG$TIM2_SetIC1Prescaler$0$0 Def0003A5
-S C$stm8s_tim2.c$810$1_0$441 Def00030E
-S C$stm8s_tim2.c$641$1_0$412 Def0002A1
-S G$TIM2_OC3PreloadConfig$0$0 Def000293
-S G$TIM2_UpdateRequestConfig$0$0 Def00021A
-S C$stm8s_tim2.c$233$2_0$360 Def000127
-S C$stm8s_tim2.c$201$1_0$357 Def000114
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$959 Def0002DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$788 Def000279
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$689 Def000244
-S Fstm8s_tim2$TI3_Config$0$0 Def0004D1
-S C$stm8s_tim2.c$1237$2_0$489 Def0004C1
-S C$stm8s_tim2.c$1196$2_0$485 Def000495
-S XG$TIM2_SetIC2Prescaler$0$0 Def0003B0
-S C$stm8s_tim2.c$702$2_0$423 Def0002BC
-S C$stm8s_tim2.c$633$1_0$412 Def000293
-S C$stm8s_tim2.c$323$2_0$370 Def0001BF
-S C$stm8s_tim2.c$125$1_0$353 Def000090
-S _TIM2_OC1Init Def000070
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$978 Def0002F3
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$969 Def0002EA
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$789 Def00027D
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$699 Def000245
-S XG$TIM2_SetIC3Prescaler$0$0 Def0003BB
-S G$TIM2_SetCompare1$0$0 Def000368
-S XG$TIM2_SetCounter$0$0 Def000356
-S C$stm8s_tim2.c$751$1_0$430 Def0002D6
-S C$stm8s_tim2.c$617$2_0$410 Def00028E
-S C$stm8s_tim2.c$611$1_0$408 Def000284
-S C$stm8s_tim2.c$331$1_0$364 Def0001DD
-S C$stm8s_tim2.c$243$2_0$361 Def000143
-S C$stm8s_tim2.c$142$1_0$355 Def0000A7
-S C$stm8s_tim2.c$126$1_0$353 Def000095
-S C$stm8s_tim2.c$108$1_0$353 Def000070
-S _TIM2_OC2Init Def0000A7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$997 Def000309
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$988 Def0002FF
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$979 Def0002F7
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$799 Def000283
-S G$TIM2_GetCapture1$0$0 Def0003BC
-S G$TIM2_SetCompare2$0$0 Def000379
-S C$stm8s_tim2.c$575$1_0$400 Def000274
-S C$stm8s_tim2.c$406$1_0$380 Def000219
-S C$stm8s_tim2.c$161$1_0$355 Def0000C7
-S _TIM2_OC3Init Def0000DE
-S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$989 Def000301
-S G$TIM2_GetCapture2$0$0 Def0003D6
-S G$TIM2_SetCompare3$0$0 Def00038A
-S C$stm8s_tim2.c$627$1_0$412 Def000293
-S C$stm8s_tim2.c$573$2_0$402 Def000270
-S C$stm8s_tim2.c$567$1_0$400 Def000266
-S C$stm8s_tim2.c$430$1_0$384 Def000228
-S C$stm8s_tim2.c$404$2_0$382 Def000215
-S C$stm8s_tim2.c$326$2_0$370 Def0001C6
-S C$stm8s_tim2.c$253$2_0$362 Def00015A
-S C$stm8s_tim2.c$228$2_0$360 Def000119
-S C$stm8s_tim2.c$212$1_0$359 Def000115
-S C$stm8s_tim2.c$162$1_0$355 Def0000CC
-S C$stm8s_tim2.c$119$1_0$353 Def000072
-S G$TIM2_GetCapture3$0$0 Def0003F0
-S C$stm8s_tim2.c$822$2_0$442 Def000316
-S C$stm8s_tim2.c$745$1_0$430 Def0002D6
-S C$stm8s_tim2.c$708$1_0$422 Def0002C6
-S C$stm8s_tim2.c$682$2_0$420 Def0002B3
-S C$stm8s_tim2.c$660$1_0$416 Def0002A8
-S C$stm8s_tim2.c$635$2_0$413 Def000297
-S C$stm8s_tim2.c$605$1_0$408 Def000284
-S C$stm8s_tim2.c$422$1_0$384 Def00021A
-S C$stm8s_tim2.c$353$1_0$372 Def0001EC
-S C$stm8s_tim2.c$154$1_0$355 Def0000A9
-S C$stm8s_tim2.c$129$1_0$353 Def00009A
-S G$TIM2_ClearITPendingBit$0$0 Def000472
-S C$stm8s_tim2.c$843$1_0$441 Def000345
-S C$stm8s_tim2.c$831$2_0$443 Def00032B
-S C$stm8s_tim2.c$825$1_0$441 Def000322
-S C$stm8s_tim2.c$823$2_0$442 Def00031B
-S C$stm8s_tim2.c$816$1_0$441 Def00030E
-S C$stm8s_tim2.c$764$1_0$430 Def0002EA
-S C$stm8s_tim2.c$732$1_0$426 Def0002D5
-S C$stm8s_tim2.c$706$2_0$424 Def0002C2
-S C$stm8s_tim2.c$613$2_0$409 Def000288
-S C$stm8s_tim2.c$583$1_0$404 Def000275
-S XG$TIM2_SelectOnePulseMode$0$0 Def000237
-S C$stm8s_tim2.c$452$2_0$390 Def000233
-S C$stm8s_tim2.c$351$2_0$374 Def0001E8
-S C$stm8s_tim2.c$345$1_0$372 Def0001DE
-S C$stm8s_tim2.c$319$2_0$370 Def0001B1
-S C$stm8s_tim2.c$311$2_0$369 Def00019A
-S C$stm8s_tim2.c$238$2_0$361 Def000135
-S C$stm8s_tim2.c$960$1_0$460 Def0003B1
-S C$stm8s_tim2.c$903$1_0$454 Def00038A
-S C$stm8s_tim2.c$880$1_0$450 Def00036A
-S C$stm8s_tim2.c$840$2_0$444 Def00033B
-S C$stm8s_tim2.c$832$2_0$443 Def000330
-S C$stm8s_tim2.c$760$3_0$433 Def0002E4
-S C$stm8s_tim2.c$754$2_0$431 Def0002DA
-S C$stm8s_tim2.c$730$2_0$428 Def0002D1
-S C$stm8s_tim2.c$724$1_0$426 Def0002C7
-S C$stm8s_tim2.c$653$1_0$416 Def0002A2
-S C$stm8s_tim2.c$591$2_0$405 Def000279
-S C$stm8s_tim2.c$513$1_0$394 Def000245
-S C$stm8s_tim2.c$392$1_0$380 Def00020B
-S C$stm8s_tim2.c$329$2_0$370 Def0001D4
-S C$stm8s_tim2.c$282$1_0$364 Def000164
-S C$stm8s_tim2.c$156$1_0$355 Def0000B1
-S C$stm8s_tim2.c$920$1_0$456 Def00039B
-S C$stm8s_tim2.c$881$1_0$450 Def000371
-S C$stm8s_tim2.c$841$2_0$444 Def000340
-S XG$TIM2_CCxCmd$0$0 Def00030D
-S C$stm8s_tim2.c$670$1_0$418 Def0002A9
-S C$stm8s_tim2.c$569$2_0$401 Def00026A
-S C$stm8s_tim2.c$514$1_0$394 Def00024A
-S C$stm8s_tim2.c$416$1_0$384 Def00021A
-S C$stm8s_tim2.c$304$2_0$369 Def000185
-S C$stm8s_tim2.c$292$1_0$364 Def000172
-S C$stm8s_tim2.c$248$2_0$362 Def00014C
-S C$stm8s_tim2.c$225$1_0$359 Def000115
-S C$stm8s_tim2.c$191$1_0$357 Def0000E8
-S C$stm8s_tim2.c$166$1_0$355 Def0000D1
-S C$stm8s_tim2.c$157$1_0$355 Def0000BC
-S _TIM2_GetFlagStatus Def000425
+S _TIM2_CCxCmd Def0002DA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$991 Def000305
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$973 Def0002F1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$937 Def0002D5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$928 Def0002CB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$883 Def0002B5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$766 Def000272
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$685 Def000245
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$658 Def000231
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$586 Def000208
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$577 Def0001FB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$568 Def0001F1
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$487 Def0001A7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$478 Def00019D
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$469 Def00018F
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$388 Def000142
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$379 Def000137
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$289 Def0000DA
+S C$stm8s_tim2.c$1235$1_0$488 Def0004D3
+S C$stm8s_tim2.c$1194$1_0$484 Def0004A7
+S C$stm8s_tim2.c$1039$1_0$468 Def00041E
+S C$stm8s_tim2.c$700$1_0$422 Def0002BC
+S C$stm8s_tim2.c$130$1_0$353 Def0000A3
+S C$stm8s_tim2.c$121$1_0$353 Def00007E
+S _TIM2_PWMIConfig Def000166
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$929 Def0002CD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$893 Def0002BB
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$776 Def000278
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$686 Def000247
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$659 Def000235
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$587 Def00020A
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$578 Def0001FE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$488 Def0001AA
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$389 Def000145
+S C$stm8s_tim2.c$1245$1_0$488 Def0004E1
+S C$stm8s_tim2.c$1227$1_0$488 Def0004BC
+S G$TIM2_OC1PreloadConfig$0$0 Def000279
+S C$stm8s_tim2.c$561$1_0$400 Def00026A
+S G$TIM2_ICInit$0$0 Def000119
+S C$stm8s_tim2.c$131$1_0$353 Def0000AA
+S C$stm8s_tim2.c$122$1_0$353 Def000089
+S _TIM2_Cmd Def0001E2
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$966 Def0002E8
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$957 Def0002DE
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$795 Def000283
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$786 Def000279
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$669 Def00023B
+S C$stm8s_tim2.c$1276$2_0$493 Def000503
+S C$stm8s_tim2.c$1269$1_0$492 Def0004EC
+S C$stm8s_tim2.c$1246$1_0$488 Def0004E6
+S C$stm8s_tim2.c$1187$1_0$484 Def000490
+S Fstm8s_tim2$TI1_Config$0$0 Def00048F
+S G$TIM2_ClearFlag$0$0 Def00045F
+S G$TIM2_OC2PreloadConfig$0$0 Def000288
+S C$stm8s_tim2.c$400$2_0$381 Def000213
+S C$stm8s_tim2.c$301$1_0$364 Def000185
+S C$stm8s_tim2.c$200$1_0$357 Def000111
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$994 Def000307
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$985 Def0002FD
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$976 Def0002F3
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$967 Def0002EC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$958 Def0002E0
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$868 Def0002AC
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$787 Def00027B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$679 Def00023C
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$499 Def0001B5
+S Fstm8s_tim2$TI2_Config$0$0 Def0004BB
+S C$stm8s_tim2.c$1138$2_0$479 Def000480
+S XG$TIM2_SetIC1Prescaler$0$0 Def0003BD
+S C$stm8s_tim2.c$810$1_0$441 Def000312
+S C$stm8s_tim2.c$641$1_0$412 Def0002A5
+S G$TIM2_OC3PreloadConfig$0$0 Def000297
+S G$TIM2_UpdateRequestConfig$0$0 Def00021E
+S C$stm8s_tim2.c$233$2_0$360 Def00012B
+S C$stm8s_tim2.c$201$1_0$357 Def000118
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$995 Def00030B
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$986 Def000301
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$977 Def0002F5
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$887 Def0002B7
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$878 Def0002AD
+S Fstm8s_tim2$TI3_Config$0$0 Def0004E7
+S C$stm8s_tim2.c$1237$2_0$489 Def0004D7
+S C$stm8s_tim2.c$1196$2_0$485 Def0004AB
+S XG$TIM2_SetIC2Prescaler$0$0 Def0003C8
+S C$stm8s_tim2.c$702$2_0$423 Def0002C0
+S C$stm8s_tim2.c$633$1_0$412 Def000297
+S C$stm8s_tim2.c$323$2_0$370 Def0001C3
+S C$stm8s_tim2.c$125$1_0$353 Def000094
+S _TIM2_OC1Init Def000074
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$879 Def0002AF
+S XG$TIM2_SetIC3Prescaler$0$0 Def0003D3
+S G$TIM2_SetCompare1$0$0 Def000374
+S XG$TIM2_SetCounter$0$0 Def00035E
+S C$stm8s_tim2.c$751$1_0$430 Def0002DA
+S C$stm8s_tim2.c$617$2_0$410 Def000292
+S C$stm8s_tim2.c$611$1_0$408 Def000288
+S C$stm8s_tim2.c$331$1_0$364 Def0001E1
+S C$stm8s_tim2.c$243$2_0$361 Def000147
+S C$stm8s_tim2.c$142$1_0$355 Def0000AB
+S C$stm8s_tim2.c$126$1_0$353 Def000099
+S C$stm8s_tim2.c$108$1_0$353 Def000074
+S _TIM2_OC2Init Def0000AB
+S G$TIM2_GetCapture1$0$0 Def0003D4
+S G$TIM2_SetCompare2$0$0 Def000389
+S C$stm8s_tim2.c$575$1_0$400 Def000278
+S C$stm8s_tim2.c$406$1_0$380 Def00021D
+S C$stm8s_tim2.c$161$1_0$355 Def0000CB
+S _TIM2_OC3Init Def0000E2
+S G$TIM2_GetCapture2$0$0 Def0003EC
+S G$TIM2_SetCompare3$0$0 Def00039E
+S C$stm8s_tim2.c$627$1_0$412 Def000297
+S C$stm8s_tim2.c$573$2_0$402 Def000274
+S C$stm8s_tim2.c$567$1_0$400 Def00026A
+S C$stm8s_tim2.c$430$1_0$384 Def00022C
+S C$stm8s_tim2.c$404$2_0$382 Def000219
+S C$stm8s_tim2.c$326$2_0$370 Def0001CA
+S C$stm8s_tim2.c$253$2_0$362 Def00015E
+S C$stm8s_tim2.c$228$2_0$360 Def00011D
+S C$stm8s_tim2.c$212$1_0$359 Def000119
+S C$stm8s_tim2.c$162$1_0$355 Def0000D0
+S C$stm8s_tim2.c$119$1_0$353 Def000076
+S A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$999 Def00030D
+S G$TIM2_GetCapture3$0$0 Def000404
+S C$stm8s_tim2.c$822$2_0$442 Def00031A
+S C$stm8s_tim2.c$745$1_0$430 Def0002DA
+S C$stm8s_tim2.c$708$1_0$422 Def0002CA
+S C$stm8s_tim2.c$682$2_0$420 Def0002B7
+S C$stm8s_tim2.c$660$1_0$416 Def0002AC
+S C$stm8s_tim2.c$635$2_0$413 Def00029B
+S C$stm8s_tim2.c$605$1_0$408 Def000288
+S C$stm8s_tim2.c$422$1_0$384 Def00021E
+S C$stm8s_tim2.c$353$1_0$372 Def0001F0
+S C$stm8s_tim2.c$154$1_0$355 Def0000AD
+S C$stm8s_tim2.c$129$1_0$353 Def00009E
+S G$TIM2_ClearITPendingBit$0$0 Def000488
+S C$stm8s_tim2.c$843$1_0$441 Def000349
+S C$stm8s_tim2.c$831$2_0$443 Def00032F
+S C$stm8s_tim2.c$825$1_0$441 Def000326
+S C$stm8s_tim2.c$823$2_0$442 Def00031F
+S C$stm8s_tim2.c$816$1_0$441 Def000312
+S C$stm8s_tim2.c$764$1_0$430 Def0002EE
+S C$stm8s_tim2.c$732$1_0$426 Def0002D9
+S C$stm8s_tim2.c$706$2_0$424 Def0002C6
+S C$stm8s_tim2.c$613$2_0$409 Def00028C
+S C$stm8s_tim2.c$583$1_0$404 Def000279
+S XG$TIM2_SelectOnePulseMode$0$0 Def00023B
+S C$stm8s_tim2.c$452$2_0$390 Def000237
+S C$stm8s_tim2.c$351$2_0$374 Def0001EC
+S C$stm8s_tim2.c$345$1_0$372 Def0001E2
+S C$stm8s_tim2.c$319$2_0$370 Def0001B5
+S C$stm8s_tim2.c$311$2_0$369 Def00019E
+S C$stm8s_tim2.c$238$2_0$361 Def000139
+S C$stm8s_tim2.c$960$1_0$460 Def0003C9
+S C$stm8s_tim2.c$903$1_0$454 Def00039E
+S C$stm8s_tim2.c$880$1_0$450 Def000376
+S C$stm8s_tim2.c$840$2_0$444 Def00033F
+S C$stm8s_tim2.c$832$2_0$443 Def000334
+S C$stm8s_tim2.c$760$3_0$433 Def0002E8
+S C$stm8s_tim2.c$754$2_0$431 Def0002DE
+S C$stm8s_tim2.c$730$2_0$428 Def0002D5
+S C$stm8s_tim2.c$724$1_0$426 Def0002CB
+S C$stm8s_tim2.c$653$1_0$416 Def0002A6
+S C$stm8s_tim2.c$591$2_0$405 Def00027D
+S C$stm8s_tim2.c$513$1_0$394 Def000249
+S C$stm8s_tim2.c$392$1_0$380 Def00020F
+S C$stm8s_tim2.c$329$2_0$370 Def0001D8
+S C$stm8s_tim2.c$282$1_0$364 Def000168
+S C$stm8s_tim2.c$156$1_0$355 Def0000B5
+S C$stm8s_tim2.c$920$1_0$456 Def0003B3
+S C$stm8s_tim2.c$881$1_0$450 Def000381
+S C$stm8s_tim2.c$841$2_0$444 Def000344
+S XG$TIM2_CCxCmd$0$0 Def000311
+S C$stm8s_tim2.c$670$1_0$418 Def0002AD
+S C$stm8s_tim2.c$569$2_0$401 Def00026E
+S C$stm8s_tim2.c$514$1_0$394 Def00024E
+S C$stm8s_tim2.c$416$1_0$384 Def00021E
+S C$stm8s_tim2.c$304$2_0$369 Def000189
+S C$stm8s_tim2.c$292$1_0$364 Def000176
+S C$stm8s_tim2.c$248$2_0$362 Def000150
+S C$stm8s_tim2.c$225$1_0$359 Def000119
+S C$stm8s_tim2.c$191$1_0$357 Def0000EC
+S C$stm8s_tim2.c$166$1_0$355 Def0000D5
+S C$stm8s_tim2.c$157$1_0$355 Def0000C0
+S _TIM2_GetFlagStatus Def00043B
 S _TIM2_TimeBaseInit Def000059
-S C$stm8s_tim2.c$882$1_0$450 Def000378
-S C$stm8s_tim2.c$694$1_0$422 Def0002B8
-S C$stm8s_tim2.c$515$1_0$394 Def00024F
-S C$stm8s_tim2.c$440$1_0$388 Def000229
-S C$stm8s_tim2.c$424$2_0$385 Def00021E
-S C$stm8s_tim2.c$339$1_0$372 Def0001DE
-S XG$TIM2_PWMIConfig$0$0 Def0001DD
-S C$stm8s_tim2.c$314$2_0$369 Def0001A8
-S C$stm8s_tim2.c$266$1_0$364 Def000162
-S C$stm8s_tim2.c$235$1_0$359 Def000130
-S C$stm8s_tim2.c$192$1_0$357 Def0000F3
-S C$stm8s_tim2.c$167$1_0$355 Def0000D6
-S C$stm8s_tim2.c$906$1_0$454 Def00038C
-S C$stm8s_tim2.c$890$1_0$452 Def000379
-S C$stm8s_tim2.c$851$1_0$446 Def000346
-S C$stm8s_tim2.c$718$1_0$426 Def0002C7
-S C$stm8s_tim2.c$639$2_0$414 Def00029D
-S C$stm8s_tim2.c$619$1_0$408 Def000292
-S C$stm8s_tim2.c$532$1_0$396 Def000250
-S C$stm8s_tim2.c$507$1_0$394 Def000245
-S G$TIM2_ForcedOC1Config$0$0 Def000245
-S XG$TIM2_Cmd$0$0 Def0001EC
-S C$stm8s_tim2.c$347$2_0$373 Def0001E2
-S C$stm8s_tim2.c$168$1_0$355 Def0000DD
-S _TIM2_OC1PreloadConfig Def000275
-S _TIM2_ICInit Def000115
-S C$stm8s_tim2.c$907$1_0$454 Def000393
-S C$stm8s_tim2.c$819$2_0$442 Def000312
-S C$stm8s_tim2.c$756$3_0$432 Def0002DE
-S C$stm8s_tim2.c$726$2_0$427 Def0002CB
-S G$TIM2_OC1PolarityConfig$0$0 Def0002A9
-S G$TIM2_GenerateEvent$0$0 Def0002A2
-S C$stm8s_tim2.c$597$1_0$404 Def000283
-S C$stm8s_tim2.c$533$1_0$396 Def000255
-S G$TIM2_ForcedOC2Config$0$0 Def000250
-S C$stm8s_tim2.c$492$1_0$392 Def000238
-S G$TIM2_UpdateDisableConfig$0$0 Def00020B
-S C$stm8s_tim2.c$284$2_0$365 Def00016A
-S C$stm8s_tim2.c$255$1_0$359 Def000161
-S _TIM2_ClearFlag Def000449
-S _TIM2_OC2PreloadConfig Def000284
-S C$stm8s_tim2.c$981$1_0$462 Def0003BE
-S C$stm8s_tim2.c$940$1_0$458 Def0003A6
-S C$stm8s_tim2.c$908$1_0$454 Def00039A
-S C$stm8s_tim2.c$828$2_0$443 Def000327
-S C$stm8s_tim2.c$788$1_0$430 Def00030D
-S G$TIM2_OC2PolarityConfig$0$0 Def0002B8
-S C$stm8s_tim2.c$595$2_0$406 Def00027F
-S C$stm8s_tim2.c$589$1_0$404 Def000275
-S G$TIM2_ForcedOC3Config$0$0 Def00025B
-S C$stm8s_tim2.c$534$1_0$396 Def00025A
-S C$stm8s_tim2.c$484$1_0$392 Def000238
-S C$stm8s_tim2.c$374$1_0$376 Def0001EE
-S C$stm8s_tim2.c$308$2_0$369 Def000193
-S C$stm8s_tim2.c$195$1_0$357 Def0000FE
-S _TIM2_OC3PreloadConfig Def000293
-S _TIM2_UpdateRequestConfig Def00021A
-S C$stm8s_tim2.c$982$1_0$462 Def0003C2
-S C$stm8s_tim2.c$966$1_0$460 Def0003B1
-S C$stm8s_tim2.c$893$1_0$452 Def00037B
-S C$stm8s_tim2.c$877$1_0$450 Def000368
-S C$stm8s_tim2.c$854$1_0$446 Def000348
-S C$stm8s_tim2.c$837$2_0$444 Def000337
-S G$TIM2_OC3PolarityConfig$0$0 Def0002C7
-S C$stm8s_tim2.c$684$1_0$418 Def0002B7
-S C$stm8s_tim2.c$659$1_0$416 Def0002A2
-S C$stm8s_tim2.c$551$1_0$398 Def00025B
-S C$stm8s_tim2.c$526$1_0$396 Def000250
-S C$stm8s_tim2.c$398$1_0$380 Def00020B
-S C$stm8s_tim2.c$384$1_0$376 Def00020A
-S C$stm8s_tim2.c$196$1_0$357 Def000103
-S XG$TIM2_OC1Init$0$0 Def0000A6
-S C$stm8s_tim2.c$967$1_0$460 Def0003B6
-S C$stm8s_tim2.c$926$1_0$456 Def00039B
-S C$stm8s_tim2.c$894$1_0$452 Def000382
-S C$stm8s_tim2.c$855$1_0$446 Def00034F
-S C$stm8s_tim2.c$773$3_0$436 Def0002F9
-S C$stm8s_tim2.c$767$2_0$434 Def0002EF
-S C$stm8s_tim2.c$676$1_0$418 Def0002A9
-S C$stm8s_tim2.c$552$1_0$398 Def000260
-S C$stm8s_tim2.c$495$1_0$392 Def00023E
-S C$stm8s_tim2.c$454$1_0$388 Def000237
-S C$stm8s_tim2.c$428$2_0$386 Def000224
-S C$stm8s_tim2.c$382$2_0$378 Def0001FC
-S C$stm8s_tim2.c$294$2_0$367 Def000177
-S C$stm8s_tim2.c$179$1_0$357 Def0000DE
-S XG$TIM2_OC2Init$0$0 Def0000DD
-S _TIM2_SetCompare1 Def000368
-S C$stm8s_tim2.c$984$1_0$462 Def0003C5
-S C$stm8s_tim2.c$975$1_0$462 Def0003BC
-S C$stm8s_tim2.c$968$1_0$460 Def0003BB
-S C$stm8s_tim2.c$927$1_0$456 Def0003A0
-S C$stm8s_tim2.c$895$1_0$452 Def000389
-S C$stm8s_tim2.c$856$1_0$446 Def000356
-S C$stm8s_tim2.c$781$3_0$438 Def000303
-S C$stm8s_tim2.c$553$1_0$398 Def000265
-S C$stm8s_tim2.c$496$1_0$392 Def000244
-S C$stm8s_tim2.c$446$1_0$388 Def000229
-S C$stm8s_tim2.c$368$1_0$376 Def0001ED
-S XG$TIM2_OC3Init$0$0 Def000114
-S C$stm8s_tim2.c$189$1_0$357 Def0000E0
-S _TIM2_GetCapture1 Def0003BC
-S _TIM2_SetCompare2 Def000379
+S C$stm8s_tim2.c$882$1_0$450 Def000388
+S C$stm8s_tim2.c$694$1_0$422 Def0002BC
+S C$stm8s_tim2.c$515$1_0$394 Def000253
+S C$stm8s_tim2.c$440$1_0$388 Def00022D
+S C$stm8s_tim2.c$424$2_0$385 Def000222
+S C$stm8s_tim2.c$339$1_0$372 Def0001E2
+S XG$TIM2_PWMIConfig$0$0 Def0001E1
+S C$stm8s_tim2.c$314$2_0$369 Def0001AC
+S C$stm8s_tim2.c$266$1_0$364 Def000166
+S C$stm8s_tim2.c$235$1_0$359 Def000134
+S C$stm8s_tim2.c$192$1_0$357 Def0000F7
+S C$stm8s_tim2.c$167$1_0$355 Def0000DA
+S C$stm8s_tim2.c$906$1_0$454 Def0003A0
+S C$stm8s_tim2.c$890$1_0$452 Def000389
+S C$stm8s_tim2.c$851$1_0$446 Def00034A
+S C$stm8s_tim2.c$718$1_0$426 Def0002CB
+S C$stm8s_tim2.c$639$2_0$414 Def0002A1
+S C$stm8s_tim2.c$619$1_0$408 Def000296
+S C$stm8s_tim2.c$532$1_0$396 Def000254
+S C$stm8s_tim2.c$507$1_0$394 Def000249
+S G$TIM2_ForcedOC1Config$0$0 Def000249
+S XG$TIM2_Cmd$0$0 Def0001F0
+S C$stm8s_tim2.c$347$2_0$373 Def0001E6
+S C$stm8s_tim2.c$168$1_0$355 Def0000E1
+S _TIM2_OC1PreloadConfig Def000279
+S _TIM2_ICInit Def000119
+S C$stm8s_tim2.c$907$1_0$454 Def0003AB
+S C$stm8s_tim2.c$819$2_0$442 Def000316
+S C$stm8s_tim2.c$756$3_0$432 Def0002E2
+S C$stm8s_tim2.c$726$2_0$427 Def0002CF
+S G$TIM2_OC1PolarityConfig$0$0 Def0002AD
+S G$TIM2_GenerateEvent$0$0 Def0002A6
+S C$stm8s_tim2.c$597$1_0$404 Def000287
+S C$stm8s_tim2.c$533$1_0$396 Def000259
+S G$TIM2_ForcedOC2Config$0$0 Def000254
+S C$stm8s_tim2.c$492$1_0$392 Def00023C
+S G$TIM2_UpdateDisableConfig$0$0 Def00020F
+S C$stm8s_tim2.c$284$2_0$365 Def00016E
+S C$stm8s_tim2.c$255$1_0$359 Def000165
+S _TIM2_ClearFlag Def00045F
+S _TIM2_OC2PreloadConfig Def000288
+S C$stm8s_tim2.c$981$1_0$462 Def0003D6
+S C$stm8s_tim2.c$940$1_0$458 Def0003BE
+S C$stm8s_tim2.c$908$1_0$454 Def0003B2
+S C$stm8s_tim2.c$828$2_0$443 Def00032B
+S C$stm8s_tim2.c$788$1_0$430 Def000311
+S G$TIM2_OC2PolarityConfig$0$0 Def0002BC
+S C$stm8s_tim2.c$595$2_0$406 Def000283
+S C$stm8s_tim2.c$589$1_0$404 Def000279
+S G$TIM2_ForcedOC3Config$0$0 Def00025F
+S C$stm8s_tim2.c$534$1_0$396 Def00025E
+S C$stm8s_tim2.c$484$1_0$392 Def00023C
+S C$stm8s_tim2.c$374$1_0$376 Def0001F2
+S C$stm8s_tim2.c$308$2_0$369 Def000197
+S C$stm8s_tim2.c$195$1_0$357 Def000102
+S _TIM2_OC3PreloadConfig Def000297
+S _TIM2_UpdateRequestConfig Def00021E
+S C$stm8s_tim2.c$982$1_0$462 Def0003DA
+S C$stm8s_tim2.c$966$1_0$460 Def0003C9
+S C$stm8s_tim2.c$893$1_0$452 Def00038B
+S C$stm8s_tim2.c$877$1_0$450 Def000374
+S C$stm8s_tim2.c$854$1_0$446 Def00034C
+S C$stm8s_tim2.c$837$2_0$444 Def00033B
+S G$TIM2_OC3PolarityConfig$0$0 Def0002CB
+S C$stm8s_tim2.c$684$1_0$418 Def0002BB
+S C$stm8s_tim2.c$659$1_0$416 Def0002A6
+S C$stm8s_tim2.c$551$1_0$398 Def00025F
+S C$stm8s_tim2.c$526$1_0$396 Def000254
+S C$stm8s_tim2.c$398$1_0$380 Def00020F
+S C$stm8s_tim2.c$384$1_0$376 Def00020E
+S C$stm8s_tim2.c$196$1_0$357 Def000107
+S XG$TIM2_OC1Init$0$0 Def0000AA
+S C$stm8s_tim2.c$967$1_0$460 Def0003CE
+S C$stm8s_tim2.c$926$1_0$456 Def0003B3
+S C$stm8s_tim2.c$894$1_0$452 Def000396
+S C$stm8s_tim2.c$855$1_0$446 Def000357
+S C$stm8s_tim2.c$773$3_0$436 Def0002FD
+S C$stm8s_tim2.c$767$2_0$434 Def0002F3
+S C$stm8s_tim2.c$676$1_0$418 Def0002AD
+S C$stm8s_tim2.c$552$1_0$398 Def000264
+S C$stm8s_tim2.c$495$1_0$392 Def000242
+S C$stm8s_tim2.c$454$1_0$388 Def00023B
+S C$stm8s_tim2.c$428$2_0$386 Def000228
+S C$stm8s_tim2.c$382$2_0$378 Def000200
+S C$stm8s_tim2.c$294$2_0$367 Def00017B
+S C$stm8s_tim2.c$179$1_0$357 Def0000E2
+S XG$TIM2_OC2Init$0$0 Def0000E1
+S _TIM2_SetCompare1 Def000374
+S C$stm8s_tim2.c$984$1_0$462 Def0003DD
+S C$stm8s_tim2.c$975$1_0$462 Def0003D4
+S C$stm8s_tim2.c$968$1_0$460 Def0003D3
+S C$stm8s_tim2.c$927$1_0$456 Def0003B8
+S C$stm8s_tim2.c$895$1_0$452 Def00039D
+S C$stm8s_tim2.c$856$1_0$446 Def00035E
+S C$stm8s_tim2.c$781$3_0$438 Def000307
+S C$stm8s_tim2.c$553$1_0$398 Def000269
+S C$stm8s_tim2.c$496$1_0$392 Def000248
+S C$stm8s_tim2.c$446$1_0$388 Def00022D
+S C$stm8s_tim2.c$368$1_0$376 Def0001F1
+S XG$TIM2_OC3Init$0$0 Def000118
+S C$stm8s_tim2.c$189$1_0$357 Def0000E4
+S _TIM2_GetCapture1 Def0003D4
+S _TIM2_SetCompare2 Def000389
 A CABS size 0 flags 8 addr 0
 T 00 00 00
 R 00 00 00 09
@@ -1059,487 +1070,491 @@ T 00 00 56 53 02 81
 R 00 00 00 09
 T 00 00 59
 R 00 00 00 09
-T 00 00 59 52 02 AE 53 0C 7B 05 F7 7B 06 0F 01 C7
+T 00 00 59 52 02 AE 53 0C 7B 05 F7 7B 06 6B 02 0F
 R 00 00 00 09
-T 00 00 66 53 0D 7B 07 C7 53 0E 5B 02 81
+T 00 00 66 01 7B 02 C7 53 0D 7B 07 C7 53 0E 5B 02
 R 00 00 00 09
-T 00 00 70
+T 00 00 73 81
 R 00 00 00 09
-T 00 00 70 52 02 C6 53 08 A4 FC C7 53 08 C6 53 08
+T 00 00 74
 R 00 00 00 09
-T 00 00 7D 6B 02 7B 06 A4 01 6B 01 7B 09 A4 02 1A
+T 00 00 74 52 02 C6 53 08 A4 FC C7 53 08 C6 53 08
 R 00 00 00 09
-T 00 00 8A 01 1A 02 C7 53 08 C6 53 05 A4 8F 1A 05
+T 00 00 81 6B 01 7B 06 A4 01 6B 02 7B 09 A4 02 1A
 R 00 00 00 09
-T 00 00 97 C7 53 05 7B 07 C7 53 0F 7B 08 C7 53 10
+T 00 00 8E 02 1A 01 C7 53 08 C6 53 05 A4 8F 1A 05
 R 00 00 00 09
-T 00 00 A4 5B 02 81
+T 00 00 9B C7 53 05 7B 07 C7 53 0F 7B 08 C7 53 10
 R 00 00 00 09
-T 00 00 A7
+T 00 00 A8 5B 02 81
 R 00 00 00 09
-T 00 00 A7 52 02 C6 53 08 A4 CF C7 53 08 C6 53 08
+T 00 00 AB
 R 00 00 00 09
-T 00 00 B4 6B 01 7B 06 A4 10 6B 02 7B 09 A4 20 1A
+T 00 00 AB 52 02 C6 53 08 A4 CF C7 53 08 C6 53 08
 R 00 00 00 09
-T 00 00 C1 02 1A 01 C7 53 08 C6 53 06 A4 8F 1A 05
+T 00 00 B8 6B 01 7B 06 A4 10 6B 02 7B 09 A4 20 1A
 R 00 00 00 09
-T 00 00 CE C7 53 06 7B 07 C7 53 11 7B 08 C7 53 12
+T 00 00 C5 02 1A 01 C7 53 08 C6 53 06 A4 8F 1A 05
 R 00 00 00 09
-T 00 00 DB 5B 02 81
+T 00 00 D2 C7 53 06 7B 07 C7 53 11 7B 08 C7 53 12
 R 00 00 00 09
-T 00 00 DE
+T 00 00 DF 5B 02 81
 R 00 00 00 09
-T 00 00 DE 52 02 C6 53 09 A4 FC C7 53 09 C6 53 09
+T 00 00 E2
 R 00 00 00 09
-T 00 00 EB 6B 01 7B 06 A4 01 6B 02 7B 09 A4 02 1A
+T 00 00 E2 52 02 C6 53 09 A4 FC C7 53 09 C6 53 09
 R 00 00 00 09
-T 00 00 F8 02 1A 01 C7 53 09 C6 53 07 A4 8F 1A 05
+T 00 00 EF 6B 01 7B 06 A4 01 6B 02 7B 09 A4 02 1A
 R 00 00 00 09
-T 00 01 05 C7 53 07 7B 07 C7 53 13 7B 08 C7 53 14
+T 00 00 FC 02 1A 01 C7 53 09 C6 53 07 A4 8F 1A 05
 R 00 00 00 09
-T 00 01 12 5B 02 81
+T 00 01 09 C7 53 07 7B 07 C7 53 13 7B 08 C7 53 14
 R 00 00 00 09
-T 00 01 15
+T 00 01 16 5B 02 81
 R 00 00 00 09
-T 00 01 15 0D 03 26 17 7B 07 88 7B 06 88 7B 06 88
+T 00 01 19
 R 00 00 00 09
-T 00 01 22 CD 04 79 5B 03 7B 06 88 CD 03 9B 84 20
+T 00 01 19 0D 03 26 17 7B 07 88 7B 06 88 7B 06 88
+R 00 00 00 09
+T 00 01 26 CD 04 8F 5B 03 7B 06 88 CD 03 B3 84 20
 R 00 00 00 09 00 04 00 09 00 0C 00 09
-T 00 01 2F 31
+T 00 01 33 31
 R 00 00 00 09
-T 00 01 30
+T 00 01 34
 R 00 00 00 09
-T 00 01 30 7B 03 4A 26 17 7B 07 88 7B 06 88 7B 06
+T 00 01 34 7B 03 4A 26 17 7B 07 88 7B 06 88 7B 06
 R 00 00 00 09
-T 00 01 3D 88 CD 04 A5 5B 03 7B 06 88 CD 03 A6 84
+T 00 01 41 88 CD 04 BB 5B 03 7B 06 88 CD 03 BE 84
 R 00 00 00 09 00 05 00 09 00 0D 00 09
-T 00 01 4A 20 15
+T 00 01 4E 20 15
 R 00 00 00 09
-T 00 01 4C
+T 00 01 50
 R 00 00 00 09
-T 00 01 4C 7B 07 88 7B 06 88 7B 06 88 CD 04 D1 5B
+T 00 01 50 7B 07 88 7B 06 88 7B 06 88 CD 04 E7 5B
 R 00 00 00 09 00 0D 00 09
-T 00 01 59 03 7B 06 88 CD 03 B1 84
+T 00 01 5D 03 7B 06 88 CD 03 C9 84
 R 00 00 00 09 00 08 00 09
-T 00 01 61
+T 00 01 65
 R 00 00 00 09
-T 00 01 61 81
+T 00 01 65 81
 R 00 00 00 09
-T 00 01 62
+T 00 01 66
 R 00 00 00 09
-T 00 01 62 52 02 7B 06 A1 44 27 06 A6 44 6B 02 20
+T 00 01 66 52 02 7B 06 A1 44 27 06 A6 44 6B 01 20
 R 00 00 00 09
-T 00 01 6F 02
+T 00 01 73 02
 R 00 00 00 09
-T 00 01 70
+T 00 01 74
 R 00 00 00 09
-T 00 01 70 0F 02
+T 00 01 74 0F 01
 R 00 00 00 09
-T 00 01 72
+T 00 01 76
 R 00 00 00 09
-T 00 01 72 7B 07 4A 26 06 A6 02 6B 01 20 04
-R 00 00 00 09
-T 00 01 7D
-R 00 00 00 09
-T 00 01 7D A6 01 6B 01
+T 00 01 76 7B 07 4A 26 06 A6 02 6B 02 20 04
 R 00 00 00 09
 T 00 01 81
 R 00 00 00 09
-T 00 01 81 0D 05 26 2C 7B 09 88 7B 08 88 7B 08 88
+T 00 01 81 A6 01 6B 02
 R 00 00 00 09
-T 00 01 8E CD 04 79 5B 03 7B 08 88 CD 03 9B 84 7B
+T 00 01 85
+R 00 00 00 09
+T 00 01 85 0D 05 26 2C 7B 09 88 7B 08 88 7B 08 88
+R 00 00 00 09
+T 00 01 92 CD 04 8F 5B 03 7B 08 88 CD 03 B3 84 7B
 R 00 00 00 09 00 04 00 09 00 0C 00 09
-T 00 01 9B 09 88 7B 02 88 7B 04 88 CD 04 A5 5B 03
+T 00 01 9F 09 88 7B 03 88 7B 03 88 CD 04 BB 5B 03
 R 00 00 00 09 00 0C 00 09
-T 00 01 A8 7B 08 88 CD 03 A6 84 20 2A
+T 00 01 AC 7B 08 88 CD 03 BE 84 20 2A
 R 00 00 00 09 00 07 00 09
-T 00 01 B1
+T 00 01 B5
 R 00 00 00 09
-T 00 01 B1 7B 09 88 7B 08 88 7B 08 88 CD 04 A5 5B
+T 00 01 B5 7B 09 88 7B 08 88 7B 08 88 CD 04 BB 5B
 R 00 00 00 09 00 0D 00 09
-T 00 01 BE 03 7B 08 88 CD 03 A6 84 7B 09 88 7B 02
+T 00 01 C2 03 7B 08 88 CD 03 BE 84 7B 09 88 7B 03
 R 00 00 00 09 00 08 00 09
-T 00 01 CB 88 7B 04 88 CD 04 79 5B 03 7B 08 88 CD
+T 00 01 CF 88 7B 03 88 CD 04 8F 5B 03 7B 08 88 CD
 R 00 00 00 09 00 08 00 09
-T 00 01 D8 03 9B 84
+T 00 01 DC 03 B3 84
 R 00 00 00 09 00 03 00 09
-T 00 01 DB
+T 00 01 DF
 R 00 00 00 09
-T 00 01 DB 5B 02 81
+T 00 01 DF 5B 02 81
 R 00 00 00 09
-T 00 01 DE
+T 00 01 E2
 R 00 00 00 09
-T 00 01 DE 0D 03 27 06 72 10 53 00 20 04
-R 00 00 00 09
-T 00 01 E8
-R 00 00 00 09
-T 00 01 E8 72 11 53 00
+T 00 01 E2 0D 03 27 06 72 10 53 00 20 04
 R 00 00 00 09
 T 00 01 EC
 R 00 00 00 09
-T 00 01 EC 81
+T 00 01 EC 72 11 53 00
 R 00 00 00 09
-T 00 01 ED
+T 00 01 F0
 R 00 00 00 09
-T 00 01 ED 88 0D 05 27 0A C6 53 01 1A 04 C7 53 01
+T 00 01 F0 81
 R 00 00 00 09
-T 00 01 FA 20 0D
+T 00 01 F1
 R 00 00 00 09
-T 00 01 FC
+T 00 01 F1 88 0D 05 27 0A C6 53 01 1A 04 C7 53 01
 R 00 00 00 09
-T 00 01 FC C6 53 01 6B 01 7B 04 43 14 01 C7 53 01
+T 00 01 FE 20 0D
 R 00 00 00 09
-T 00 02 09
+T 00 02 00
 R 00 00 00 09
-T 00 02 09 84 81
+T 00 02 00 C6 53 01 6B 01 7B 04 43 14 01 C7 53 01
 R 00 00 00 09
-T 00 02 0B
+T 00 02 0D
 R 00 00 00 09
-T 00 02 0B 0D 03 27 06 72 12 53 00 20 04
+T 00 02 0D 84 81
 R 00 00 00 09
-T 00 02 15
+T 00 02 0F
 R 00 00 00 09
-T 00 02 15 72 13 53 00
+T 00 02 0F 0D 03 27 06 72 12 53 00 20 04
 R 00 00 00 09
 T 00 02 19
 R 00 00 00 09
-T 00 02 19 81
+T 00 02 19 72 13 53 00
 R 00 00 00 09
-T 00 02 1A
+T 00 02 1D
 R 00 00 00 09
-T 00 02 1A 0D 03 27 06 72 14 53 00 20 04
+T 00 02 1D 81
 R 00 00 00 09
-T 00 02 24
+T 00 02 1E
 R 00 00 00 09
-T 00 02 24 72 15 53 00
+T 00 02 1E 0D 03 27 06 72 14 53 00 20 04
 R 00 00 00 09
 T 00 02 28
 R 00 00 00 09
-T 00 02 28 81
+T 00 02 28 72 15 53 00
 R 00 00 00 09
-T 00 02 29
+T 00 02 2C
 R 00 00 00 09
-T 00 02 29 0D 03 27 06 72 16 53 00 20 04
+T 00 02 2C 81
 R 00 00 00 09
-T 00 02 33
+T 00 02 2D
 R 00 00 00 09
-T 00 02 33 72 17 53 00
+T 00 02 2D 0D 03 27 06 72 16 53 00 20 04
 R 00 00 00 09
 T 00 02 37
 R 00 00 00 09
-T 00 02 37 81
+T 00 02 37 72 17 53 00
 R 00 00 00 09
-T 00 02 38
+T 00 02 3B
 R 00 00 00 09
-T 00 02 38 AE 53 0C 7B 03 F7 AE 53 04 7B 04 F7 81
+T 00 02 3B 81
 R 00 00 00 09
-T 00 02 45
+T 00 02 3C
 R 00 00 00 09
-T 00 02 45 C6 53 05 A4 8F 1A 03 C7 53 05 81
+T 00 02 3C AE 53 0C 7B 03 F7 AE 53 04 7B 04 F7 81
 R 00 00 00 09
-T 00 02 50
+T 00 02 49
 R 00 00 00 09
-T 00 02 50 C6 53 06 A4 8F 1A 03 C7 53 06 81
+T 00 02 49 C6 53 05 A4 8F 1A 03 C7 53 05 81
 R 00 00 00 09
-T 00 02 5B
+T 00 02 54
 R 00 00 00 09
-T 00 02 5B C6 53 07 A4 8F 1A 03 C7 53 07 81
+T 00 02 54 C6 53 06 A4 8F 1A 03 C7 53 06 81
 R 00 00 00 09
-T 00 02 66
+T 00 02 5F
 R 00 00 00 09
-T 00 02 66 0D 03 27 06 72 1E 53 00 20 04
+T 00 02 5F C6 53 07 A4 8F 1A 03 C7 53 07 81
 R 00 00 00 09
-T 00 02 70
+T 00 02 6A
 R 00 00 00 09
-T 00 02 70 72 1F 53 00
+T 00 02 6A 0D 03 27 06 72 1E 53 00 20 04
 R 00 00 00 09
 T 00 02 74
 R 00 00 00 09
-T 00 02 74 81
+T 00 02 74 72 1F 53 00
 R 00 00 00 09
-T 00 02 75
+T 00 02 78
 R 00 00 00 09
-T 00 02 75 0D 03 27 06 72 16 53 05 20 04
+T 00 02 78 81
 R 00 00 00 09
-T 00 02 7F
+T 00 02 79
 R 00 00 00 09
-T 00 02 7F 72 17 53 05
+T 00 02 79 0D 03 27 06 72 16 53 05 20 04
 R 00 00 00 09
 T 00 02 83
 R 00 00 00 09
-T 00 02 83 81
+T 00 02 83 72 17 53 05
 R 00 00 00 09
-T 00 02 84
+T 00 02 87
 R 00 00 00 09
-T 00 02 84 0D 03 27 06 72 16 53 06 20 04
+T 00 02 87 81
 R 00 00 00 09
-T 00 02 8E
+T 00 02 88
 R 00 00 00 09
-T 00 02 8E 72 17 53 06
+T 00 02 88 0D 03 27 06 72 16 53 06 20 04
 R 00 00 00 09
 T 00 02 92
 R 00 00 00 09
-T 00 02 92 81
+T 00 02 92 72 17 53 06
 R 00 00 00 09
-T 00 02 93
+T 00 02 96
 R 00 00 00 09
-T 00 02 93 0D 03 27 06 72 16 53 07 20 04
+T 00 02 96 81
 R 00 00 00 09
-T 00 02 9D
+T 00 02 97
 R 00 00 00 09
-T 00 02 9D 72 17 53 07
+T 00 02 97 0D 03 27 06 72 16 53 07 20 04
 R 00 00 00 09
 T 00 02 A1
 R 00 00 00 09
-T 00 02 A1 81
+T 00 02 A1 72 17 53 07
 R 00 00 00 09
-T 00 02 A2
+T 00 02 A5
 R 00 00 00 09
-T 00 02 A2 AE 53 04 7B 03 F7 81
+T 00 02 A5 81
 R 00 00 00 09
-T 00 02 A9
+T 00 02 A6
 R 00 00 00 09
-T 00 02 A9 0D 03 27 06 72 12 53 08 20 04
+T 00 02 A6 AE 53 04 7B 03 F7 81
 R 00 00 00 09
-T 00 02 B3
+T 00 02 AD
 R 00 00 00 09
-T 00 02 B3 72 13 53 08
+T 00 02 AD 0D 03 27 06 72 12 53 08 20 04
 R 00 00 00 09
 T 00 02 B7
 R 00 00 00 09
-T 00 02 B7 81
+T 00 02 B7 72 13 53 08
 R 00 00 00 09
-T 00 02 B8
+T 00 02 BB
 R 00 00 00 09
-T 00 02 B8 0D 03 27 06 72 1A 53 08 20 04
+T 00 02 BB 81
 R 00 00 00 09
-T 00 02 C2
+T 00 02 BC
 R 00 00 00 09
-T 00 02 C2 72 1B 53 08
+T 00 02 BC 0D 03 27 06 72 1A 53 08 20 04
 R 00 00 00 09
 T 00 02 C6
 R 00 00 00 09
-T 00 02 C6 81
+T 00 02 C6 72 1B 53 08
 R 00 00 00 09
-T 00 02 C7
+T 00 02 CA
 R 00 00 00 09
-T 00 02 C7 0D 03 27 06 72 12 53 09 20 04
+T 00 02 CA 81
 R 00 00 00 09
-T 00 02 D1
+T 00 02 CB
 R 00 00 00 09
-T 00 02 D1 72 13 53 09
+T 00 02 CB 0D 03 27 06 72 12 53 09 20 04
 R 00 00 00 09
 T 00 02 D5
 R 00 00 00 09
-T 00 02 D5 81
+T 00 02 D5 72 13 53 09
 R 00 00 00 09
-T 00 02 D6
+T 00 02 D9
 R 00 00 00 09
-T 00 02 D6 0D 03 26 10 0D 04 27 06 72 10 53 08 20
+T 00 02 D9 81
 R 00 00 00 09
-T 00 02 E3 29
+T 00 02 DA
 R 00 00 00 09
-T 00 02 E4
+T 00 02 DA 0D 03 26 10 0D 04 27 06 72 10 53 08 20
 R 00 00 00 09
-T 00 02 E4 72 11 53 08 20 23
+T 00 02 E7 29
 R 00 00 00 09
-T 00 02 EA
+T 00 02 E8
 R 00 00 00 09
-T 00 02 EA 7B 03 4A 26 10 0D 04 27 06 72 18 53 08
+T 00 02 E8 72 11 53 08 20 23
 R 00 00 00 09
-T 00 02 F7 20 14
+T 00 02 EE
 R 00 00 00 09
-T 00 02 F9
+T 00 02 EE 7B 03 4A 26 10 0D 04 27 06 72 18 53 08
 R 00 00 00 09
-T 00 02 F9 72 19 53 08 20 0E
+T 00 02 FB 20 14
 R 00 00 00 09
-T 00 02 FF
+T 00 02 FD
 R 00 00 00 09
-T 00 02 FF 0D 04 27 06 72 10 53 09 20 04
+T 00 02 FD 72 19 53 08 20 0E
 R 00 00 00 09
-T 00 03 09
+T 00 03 03
 R 00 00 00 09
-T 00 03 09 72 11 53 09
+T 00 03 03 0D 04 27 06 72 10 53 09 20 04
 R 00 00 00 09
 T 00 03 0D
 R 00 00 00 09
-T 00 03 0D 81
+T 00 03 0D 72 11 53 09
 R 00 00 00 09
-T 00 03 0E
+T 00 03 11
 R 00 00 00 09
-T 00 03 0E 0D 03 26 10 72 11 53 08 C6 53 05 A4 8F
+T 00 03 11 81
 R 00 00 00 09
-T 00 03 1B 1A 04 C7 53 05 20 23
+T 00 03 12
 R 00 00 00 09
-T 00 03 22
+T 00 03 12 0D 03 26 10 72 11 53 08 C6 53 05 A4 8F
 R 00 00 00 09
-T 00 03 22 7B 03 4A 26 10 72 19 53 08 C6 53 06 A4
+T 00 03 1F 1A 04 C7 53 05 20 23
 R 00 00 00 09
-T 00 03 2F 8F 1A 04 C7 53 06 20 0E
+T 00 03 26
 R 00 00 00 09
-T 00 03 37
+T 00 03 26 7B 03 4A 26 10 72 19 53 08 C6 53 06 A4
 R 00 00 00 09
-T 00 03 37 72 11 53 09 C6 53 07 A4 8F 1A 04 C7
+T 00 03 33 8F 1A 04 C7 53 06 20 0E
 R 00 00 00 09
-T 00 03 43 53 07
+T 00 03 3B
 R 00 00 00 09
-T 00 03 45
+T 00 03 3B 72 11 53 09 C6 53 07 A4 8F 1A 04 C7
 R 00 00 00 09
-T 00 03 45 81
+T 00 03 47 53 07
 R 00 00 00 09
-T 00 03 46
+T 00 03 49
 R 00 00 00 09
-T 00 03 46 52 02 7B 05 0F 01 C7 53 0A 7B 06 C7
+T 00 03 49 81
 R 00 00 00 09
-T 00 03 52 53 0B 5B 02 81
+T 00 03 4A
 R 00 00 00 09
-T 00 03 57
+T 00 03 4A 52 02 7B 05 6B 02 0F 01 7B 02 C7 53 0A
 R 00 00 00 09
-T 00 03 57 52 02 7B 05 0F 01 C7 53 0D 7B 06 C7
+T 00 03 57 7B 06 C7 53 0B 5B 02 81
 R 00 00 00 09
-T 00 03 63 53 0E 5B 02 81
+T 00 03 5F
 R 00 00 00 09
-T 00 03 68
+T 00 03 5F 52 02 7B 05 6B 02 0F 01 7B 02 C7 53 0D
 R 00 00 00 09
-T 00 03 68 52 02 7B 05 0F 01 C7 53 0F 7B 06 C7
+T 00 03 6C 7B 06 C7 53 0E 5B 02 81
 R 00 00 00 09
-T 00 03 74 53 10 5B 02 81
+T 00 03 74
 R 00 00 00 09
-T 00 03 79
+T 00 03 74 52 02 7B 05 6B 02 0F 01 7B 02 C7 53 0F
 R 00 00 00 09
-T 00 03 79 52 02 7B 05 0F 01 C7 53 11 7B 06 C7
+T 00 03 81 7B 06 C7 53 10 5B 02 81
 R 00 00 00 09
-T 00 03 85 53 12 5B 02 81
+T 00 03 89
 R 00 00 00 09
-T 00 03 8A
+T 00 03 89 52 02 7B 05 6B 02 0F 01 7B 02 C7 53 11
 R 00 00 00 09
-T 00 03 8A 52 02 7B 05 0F 01 C7 53 13 7B 06 C7
+T 00 03 96 7B 06 C7 53 12 5B 02 81
 R 00 00 00 09
-T 00 03 96 53 14 5B 02 81
+T 00 03 9E
 R 00 00 00 09
-T 00 03 9B
+T 00 03 9E 52 02 7B 05 6B 02 0F 01 7B 02 C7 53 13
 R 00 00 00 09
-T 00 03 9B C6 53 05 A4 F3 1A 03 C7 53 05 81
+T 00 03 AB 7B 06 C7 53 14 5B 02 81
 R 00 00 00 09
-T 00 03 A6
+T 00 03 B3
 R 00 00 00 09
-T 00 03 A6 C6 53 06 A4 F3 1A 03 C7 53 06 81
+T 00 03 B3 C6 53 05 A4 F3 1A 03 C7 53 05 81
 R 00 00 00 09
-T 00 03 B1
+T 00 03 BE
 R 00 00 00 09
-T 00 03 B1 C6 53 07 A4 F3 1A 03 C7 53 07 81
+T 00 03 BE C6 53 06 A4 F3 1A 03 C7 53 06 81
 R 00 00 00 09
-T 00 03 BC
+T 00 03 C9
 R 00 00 00 09
-T 00 03 BC 52 02 C6 53 0F 95 C6 53 10 97 4F 90 5F
+T 00 03 C9 C6 53 07 A4 F3 1A 03 C7 53 07 81
 R 00 00 00 09
-T 00 03 C9 0F 02 89 1A 01 85 01 1A 02 97 5B 02 81
+T 00 03 D4
 R 00 00 00 09
-T 00 03 D6
+T 00 03 D4 52 02 C6 53 0F 95 C6 53 10 97 4F 0F 02
 R 00 00 00 09
-T 00 03 D6 52 02 C6 53 11 95 C6 53 12 97 4F 90 5F
+T 00 03 E1 89 1A 01 85 01 1A 02 97 5B 02 81
 R 00 00 00 09
-T 00 03 E3 0F 02 89 1A 01 85 01 1A 02 97 5B 02 81
+T 00 03 EC
 R 00 00 00 09
-T 00 03 F0
+T 00 03 EC 52 02 C6 53 11 95 C6 53 12 97 4F 0F 02
 R 00 00 00 09
-T 00 03 F0 52 02 C6 53 13 95 C6 53 14 97 4F 90 5F
+T 00 03 F9 89 1A 01 85 01 1A 02 97 5B 02 81
 R 00 00 00 09
-T 00 03 FD 0F 02 89 1A 01 85 01 1A 02 97 5B 02 81
+T 00 04 04
 R 00 00 00 09
-T 00 04 0A
+T 00 04 04 52 02 C6 53 13 95 C6 53 14 97 4F 0F 02
 R 00 00 00 09
-T 00 04 0A 52 04 C6 53 0A 95 4F 6B 04 C6 53 0B 0F
+T 00 04 11 89 1A 01 85 01 1A 02 97 5B 02 81
 R 00 00 00 09
-T 00 04 17 01 1A 04 02 1A 01 95 5B 04 81
+T 00 04 1C
 R 00 00 00 09
-T 00 04 21
+T 00 04 1C 52 04 C6 53 0A 95 4F 6B 02 C6 53 0B 6B
 R 00 00 00 09
-T 00 04 21 C6 53 0C 81
+T 00 04 29 04 0F 03 7B 02 1A 04 02 1A 03 95 5B 04
 R 00 00 00 09
-T 00 04 25
+T 00 04 36 81
 R 00 00 00 09
-T 00 04 25 52 05 C6 53 02 6B 01 7B 09 14 01 6B 05
+T 00 04 37
 R 00 00 00 09
-T 00 04 32 7B 08 0F 02 6B 04 C6 53 03 14 04 1A 05
+T 00 04 37 C6 53 0C 81
 R 00 00 00 09
-T 00 04 3F 27 04 A6 01 20 01
+T 00 04 3B
 R 00 00 00 09
-T 00 04 45
+T 00 04 3B 52 03 C6 53 02 6B 03 7B 07 14 03 6B 01
 R 00 00 00 09
-T 00 04 45 4F
+T 00 04 48 7B 06 6B 03 0F 02 C6 53 03 14 03 1A 01
 R 00 00 00 09
-T 00 04 46
+T 00 04 55 27 04 A6 01 20 01
 R 00 00 00 09
-T 00 04 46 5B 05 81
+T 00 04 5B
 R 00 00 00 09
-T 00 04 49
+T 00 04 5B 4F
 R 00 00 00 09
-T 00 04 49 7B 04 43 C7 53 02 7B 03 43 C7 53 03 81
+T 00 04 5C
 R 00 00 00 09
-T 00 04 56
+T 00 04 5C 5B 03 81
 R 00 00 00 09
-T 00 04 56 88 C6 53 02 14 04 6B 01 C6 53 01 14 04
+T 00 04 5F
 R 00 00 00 09
-T 00 04 63 0D 01 27 07 4D 27 04 A6 01 20 01
+T 00 04 5F 7B 04 43 C7 53 02 7B 03 43 C7 53 03 81
 R 00 00 00 09
-T 00 04 6E
+T 00 04 6C
 R 00 00 00 09
-T 00 04 6E 4F
+T 00 04 6C 88 C6 53 02 14 04 6B 01 C6 53 01 14 04
 R 00 00 00 09
-T 00 04 6F
+T 00 04 79 0D 01 27 07 4D 27 04 A6 01 20 01
 R 00 00 00 09
-T 00 04 6F 5B 01 81
+T 00 04 84
 R 00 00 00 09
-T 00 04 72
+T 00 04 84 4F
 R 00 00 00 09
-T 00 04 72 7B 03 43 C7 53 02 81
+T 00 04 85
 R 00 00 00 09
-T 00 04 79
+T 00 04 85 5B 01 81
 R 00 00 00 09
-T 00 04 79 88 72 11 53 08 C6 53 05 A4 0C 6B 01 7B
+T 00 04 88
 R 00 00 00 09
-T 00 04 86 06 4E A4 F0 1A 05 1A 01 C7 53 05 0D 04
+T 00 04 88 7B 03 43 C7 53 02 81
 R 00 00 00 09
-T 00 04 93 27 06 72 12 53 08 20 04
+T 00 04 8F
 R 00 00 00 09
-T 00 04 9B
+T 00 04 8F 88 72 11 53 08 C6 53 05 A4 0C 6B 01 7B
 R 00 00 00 09
-T 00 04 9B 72 13 53 08
+T 00 04 9C 06 4E A4 F0 1A 05 1A 01 C7 53 05 0D 04
 R 00 00 00 09
-T 00 04 9F
+T 00 04 A9 27 06 72 12 53 08 20 04
 R 00 00 00 09
-T 00 04 9F 72 10 53 08 84 81
+T 00 04 B1
 R 00 00 00 09
-T 00 04 A5
+T 00 04 B1 72 13 53 08
 R 00 00 00 09
-T 00 04 A5 88 72 19 53 08 C6 53 06 A4 0C 6B 01 7B
+T 00 04 B5
 R 00 00 00 09
-T 00 04 B2 06 4E A4 F0 1A 05 1A 01 C7 53 06 0D 04
+T 00 04 B5 72 10 53 08 84 81
 R 00 00 00 09
-T 00 04 BF 27 06 72 1A 53 08 20 04
+T 00 04 BB
 R 00 00 00 09
-T 00 04 C7
+T 00 04 BB 88 72 19 53 08 C6 53 06 A4 0C 6B 01 7B
 R 00 00 00 09
-T 00 04 C7 72 1B 53 08
+T 00 04 C8 06 4E A4 F0 1A 05 1A 01 C7 53 06 0D 04
 R 00 00 00 09
-T 00 04 CB
+T 00 04 D5 27 06 72 1A 53 08 20 04
 R 00 00 00 09
-T 00 04 CB 72 18 53 08 84 81
+T 00 04 DD
 R 00 00 00 09
-T 00 04 D1
+T 00 04 DD 72 1B 53 08
 R 00 00 00 09
-T 00 04 D1 88 72 11 53 09 C6 53 07 A4 0C 6B 01 7B
+T 00 04 E1
 R 00 00 00 09
-T 00 04 DE 06 4E A4 F0 1A 05 1A 01 C7 53 07 0D 04
+T 00 04 E1 72 18 53 08 84 81
 R 00 00 00 09
-T 00 04 EB 27 06 72 12 53 09 20 04
+T 00 04 E7
 R 00 00 00 09
-T 00 04 F3
+T 00 04 E7 88 72 11 53 09 C6 53 07 A4 0C 6B 01 7B
 R 00 00 00 09
-T 00 04 F3 72 13 53 09
+T 00 04 F4 06 4E A4 F0 1A 05 1A 01 C7 53 07 0D 04
 R 00 00 00 09
-T 00 04 F7
+T 00 05 01 27 06 72 12 53 09 20 04
 R 00 00 00 09
-T 00 04 F7 72 10 53 09 84 81
+T 00 05 09
+R 00 00 00 09
+T 00 05 09 72 13 53 09
+R 00 00 00 09
+T 00 05 0D
+R 00 00 00 09
+T 00 05 0D 72 10 53 09 84 81
 R 00 00 00 09

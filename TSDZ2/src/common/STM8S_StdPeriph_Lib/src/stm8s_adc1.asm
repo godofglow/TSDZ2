@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_adc1
 	.optsdcc -mstm8
@@ -302,15 +302,15 @@ _ADC1_PrescalerConfig:
 ;	 function ADC1_SchmittTriggerConfig
 ;	-----------------------------------------
 _ADC1_SchmittTriggerConfig:
-	sub	sp, #4
+	push	a
 	C$stm8s_adc1.c$218$1_0$368 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 218: if (ADC1_SchmittTriggerChannel == ADC1_SCHMITTTRIG_ALL)
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	inc	a
 	jrne	00114$
 	C$stm8s_adc1.c$220$2_0$369 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 220: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00102$
 	C$stm8s_adc1.c$222$3_0$370 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 222: ADC1->TDRL &= (uint8_t)0x0;
@@ -334,20 +334,20 @@ _ADC1_SchmittTriggerConfig:
 00114$:
 	C$stm8s_adc1.c$231$1_0$368 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 231: else if (ADC1_SchmittTriggerChannel < ADC1_SCHMITTTRIG_CHANNEL8)
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0x08
 	jrnc	00111$
 	C$stm8s_adc1.c$233$2_0$372 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 233: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00105$
 	C$stm8s_adc1.c$235$3_0$373 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 235: ADC1->TDRL &= (uint8_t)(~(uint8_t)((uint8_t)0x01 << (uint8_t)ADC1_SchmittTriggerChannel));
 	ld	a, 0x5407
-	ld	(0x03, sp), a
+	ld	(0x01, sp), a
 	ld	a, #0x01
 	push	a
-	ld	a, (0x08, sp)
+	ld	a, (0x05, sp)
 	jreq	00145$
 00144$:
 	sll	(1, sp)
@@ -356,7 +356,7 @@ _ADC1_SchmittTriggerConfig:
 00145$:
 	pop	a
 	cpl	a
-	and	a, (0x03, sp)
+	and	a, (0x01, sp)
 	ld	0x5407, a
 	jra	00116$
 00105$:
@@ -365,28 +365,28 @@ _ADC1_SchmittTriggerConfig:
 	ld	a, 0x5407
 	push	a
 	ld	a, #0x01
-	ld	(0x03, sp), a
-	ld	a, (0x08, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x05, sp)
 	jreq	00147$
 00146$:
-	sll	(0x03, sp)
+	sll	(0x02, sp)
 	dec	a
 	jrne	00146$
 00147$:
 	pop	a
-	or	a, (0x02, sp)
+	or	a, (0x01, sp)
 	ld	0x5407, a
 	jra	00116$
 00111$:
 	C$stm8s_adc1.c$244$2_0$375 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 244: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00108$
 	C$stm8s_adc1.c$246$3_0$376 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 246: ADC1->TDRH &= (uint8_t)(~(uint8_t)((uint8_t)0x01 << ((uint8_t)ADC1_SchmittTriggerChannel - (uint8_t)8)));
 	ld	a, 0x5406
-	ld	(0x04, sp), a
-	ld	a, (0x07, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x04, sp)
 	sub	a, #0x08
 	ld	xl, a
 	ld	a, #0x01
@@ -401,7 +401,7 @@ _ADC1_SchmittTriggerConfig:
 00150$:
 	pop	a
 	cpl	a
-	and	a, (0x04, sp)
+	and	a, (0x01, sp)
 	ld	0x5406, a
 	jra	00116$
 00108$:
@@ -409,7 +409,7 @@ _ADC1_SchmittTriggerConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 250: ADC1->TDRH |= (uint8_t)((uint8_t)0x01 << ((uint8_t)ADC1_SchmittTriggerChannel - (uint8_t)8));
 	ld	a, 0x5406
 	ld	xl, a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	sub	a, #0x08
 	push	a
 	ld	a, #0x01
@@ -428,7 +428,7 @@ _ADC1_SchmittTriggerConfig:
 00116$:
 	C$stm8s_adc1.c$253$1_0$368 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 253: }
-	addw	sp, #4
+	pop	a
 	C$stm8s_adc1.c$253$1_0$368 ==.
 	XG$ADC1_SchmittTriggerConfig$0$0 ==.
 	ret
@@ -533,7 +533,7 @@ _ADC1_StartConversion:
 ;	 function ADC1_GetConversionValue
 ;	-----------------------------------------
 _ADC1_GetConversionValue:
-	sub	sp, #8
+	sub	sp, #4
 	C$stm8s_adc1.c$345$1_0$389 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 345: if ((ADC1->CR2 & ADC1_CR2_ALIGN) != 0) /* Right alignment */
 	ld	a, 0x5402
@@ -549,12 +549,16 @@ _ADC1_GetConversionValue:
 	C$stm8s_adc1.c$352$2_0$390 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 352: temph = (uint16_t)(templ | (uint16_t)(temph << (uint8_t)8));
 	clr	(0x02, sp)
-	clr	(0x07, sp)
-	or	a, (0x07, sp)
-	rrwa	x
+	exg	a, xl
+	ld	(0x04, sp), a
+	exg	a, xl
+	clr	(0x03, sp)
+	or	a, (0x03, sp)
+	ld	xh, a
+	ld	a, (0x04, sp)
 	or	a, (0x02, sp)
 	ld	xl, a
-	ldw	(0x05, sp), x
+	ldw	(0x03, sp), x
 	jra	00103$
 00102$:
 	C$stm8s_adc1.c$357$2_0$391 ==.
@@ -582,14 +586,14 @@ _ADC1_GetConversionValue:
 	ld	a, yl
 	or	a, (0x03, sp)
 	ld	xh, a
-	ldw	(0x05, sp), x
+	ldw	(0x03, sp), x
 00103$:
 	C$stm8s_adc1.c$364$1_0$389 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 364: return ((uint16_t)temph);
-	ldw	x, (0x05, sp)
+	ldw	x, (0x03, sp)
 	C$stm8s_adc1.c$365$1_0$389 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 365: }
-	addw	sp, #8
+	addw	sp, #4
 	C$stm8s_adc1.c$365$1_0$389 ==.
 	XG$ADC1_GetConversionValue$0$0 ==.
 	ret
@@ -600,41 +604,41 @@ _ADC1_GetConversionValue:
 ;	 function ADC1_AWDChannelConfig
 ;	-----------------------------------------
 _ADC1_AWDChannelConfig:
-	sub	sp, #4
+	push	a
 	C$stm8s_adc1.c$381$1_0$393 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 381: if (Channel < (uint8_t)8)
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0x08
 	jrnc	00108$
 	C$stm8s_adc1.c$383$2_0$394 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 383: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00102$
 	C$stm8s_adc1.c$385$3_0$395 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 385: ADC1->AWCRL |= (uint8_t)((uint8_t)1 << Channel);
 	ld	a, 0x540f
 	push	a
 	ld	a, #0x01
-	ld	(0x04, sp), a
-	ld	a, (0x08, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x05, sp)
 	jreq	00127$
 00126$:
-	sll	(0x04, sp)
+	sll	(0x02, sp)
 	dec	a
 	jrne	00126$
 00127$:
 	pop	a
-	or	a, (0x03, sp)
+	or	a, (0x01, sp)
 	ld	0x540f, a
 	jra	00110$
 00102$:
 	C$stm8s_adc1.c$389$3_0$396 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 389: ADC1->AWCRL &= (uint8_t)~(uint8_t)((uint8_t)1 << Channel);
 	ld	a, 0x540f
-	ld	(0x02, sp), a
+	ld	(0x01, sp), a
 	ld	a, #0x01
 	push	a
-	ld	a, (0x08, sp)
+	ld	a, (0x05, sp)
 	jreq	00129$
 00128$:
 	sll	(1, sp)
@@ -643,33 +647,33 @@ _ADC1_AWDChannelConfig:
 00129$:
 	pop	a
 	cpl	a
-	and	a, (0x02, sp)
+	and	a, (0x01, sp)
 	ld	0x540f, a
 	jra	00110$
 00108$:
 	C$stm8s_adc1.c$394$2_0$397 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 394: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00105$
 	C$stm8s_adc1.c$396$3_0$398 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 396: ADC1->AWCRH |= (uint8_t)((uint8_t)1 << (Channel - (uint8_t)8));
 	ld	a, 0x540e
 	ld	xl, a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	sub	a, #0x08
 	push	a
 	ld	a, #0x01
-	ld	(0x05, sp), a
+	ld	(0x02, sp), a
 	pop	a
 	tnz	a
 	jreq	00132$
 00131$:
-	sll	(0x04, sp)
+	sll	(0x01, sp)
 	dec	a
 	jrne	00131$
 00132$:
 	ld	a, xl
-	or	a, (0x04, sp)
+	or	a, (0x01, sp)
 	ld	0x540e, a
 	jra	00110$
 00105$:
@@ -677,7 +681,7 @@ _ADC1_AWDChannelConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 400: ADC1->AWCRH &= (uint8_t)~(uint8_t)((uint8_t)1 << (uint8_t)(Channel - (uint8_t)8));
 	ld	a, 0x540e
 	ld	(0x01, sp), a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	sub	a, #0x08
 	ld	xl, a
 	ld	a, #0x01
@@ -697,7 +701,7 @@ _ADC1_AWDChannelConfig:
 00110$:
 	C$stm8s_adc1.c$403$1_0$393 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 403: }
-	addw	sp, #4
+	pop	a
 	C$stm8s_adc1.c$403$1_0$393 ==.
 	XG$ADC1_AWDChannelConfig$0$0 ==.
 	ret
@@ -754,7 +758,7 @@ _ADC1_SetLowThreshold:
 ;	 function ADC1_GetBufferValue
 ;	-----------------------------------------
 _ADC1_GetBufferValue:
-	sub	sp, #8
+	sub	sp, #4
 	C$stm8s_adc1.c$444$1_0$405 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 444: if ((ADC1->CR2 & ADC1_CR2_ALIGN) != 0) /* Right alignment */
 	ld	a, 0x5402
@@ -762,7 +766,7 @@ _ADC1_GetBufferValue:
 	jreq	00102$
 	C$stm8s_adc1.c$447$2_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 447: templ = *(uint8_t*)(uint16_t)((uint16_t)ADC1_BaseAddress + (uint8_t)(Buffer << 1) + 1);
-	ld	a, (0x0b, sp)
+	ld	a, (0x07, sp)
 	sll	a
 	clrw	x
 	ld	xl, a
@@ -777,18 +781,22 @@ _ADC1_GetBufferValue:
 	ld	a, (y)
 	C$stm8s_adc1.c$451$2_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 451: temph = (uint16_t)(templ | (uint16_t)(temph << (uint8_t)8));
-	clr	(0x06, sp)
+	clr	(0x02, sp)
+	exg	a, xl
+	ld	(0x04, sp), a
+	exg	a, xl
 	clr	(0x03, sp)
 	or	a, (0x03, sp)
-	rrwa	x
-	or	a, (0x06, sp)
+	ld	xh, a
+	ld	a, (0x04, sp)
+	or	a, (0x02, sp)
 	ld	xl, a
-	ldw	(0x07, sp), x
+	ldw	(0x03, sp), x
 	jra	00103$
 00102$:
 	C$stm8s_adc1.c$456$2_0$407 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 456: temph = *(uint8_t*)(uint16_t)((uint16_t)ADC1_BaseAddress + (uint8_t)(Buffer << 1));
-	ld	a, (0x0b, sp)
+	ld	a, (0x07, sp)
 	sll	a
 	clrw	x
 	ld	xl, a
@@ -811,20 +819,20 @@ _ADC1_GetBufferValue:
 	sllw	x
 	sllw	x
 	sllw	x
-	ldw	(0x01, sp), x
-	ld	a, (0x02, sp)
+	ldw	(0x03, sp), x
+	ld	a, (0x04, sp)
 	ld	xl, a
 	ld	a, yl
-	or	a, (0x01, sp)
+	or	a, (0x03, sp)
 	ld	xh, a
-	ldw	(0x07, sp), x
+	ldw	(0x03, sp), x
 00103$:
 	C$stm8s_adc1.c$463$1_0$405 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 463: return ((uint16_t)temph);
-	ldw	x, (0x07, sp)
+	ldw	x, (0x03, sp)
 	C$stm8s_adc1.c$464$1_0$405 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 464: }
-	addw	sp, #8
+	addw	sp, #4
 	C$stm8s_adc1.c$464$1_0$405 ==.
 	XG$ADC1_GetBufferValue$0$0 ==.
 	ret
@@ -835,10 +843,10 @@ _ADC1_GetBufferValue:
 ;	 function ADC1_GetAWDChannelStatus
 ;	-----------------------------------------
 _ADC1_GetAWDChannelStatus:
-	sub	sp, #2
+	push	a
 	C$stm8s_adc1.c$479$1_0$409 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 479: if (Channel < (uint8_t)8)
-	ld	a, (0x05, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0x08
 	jrnc	00102$
 	C$stm8s_adc1.c$481$2_0$410 ==.
@@ -846,23 +854,23 @@ _ADC1_GetAWDChannelStatus:
 	ld	a, 0x540d
 	push	a
 	ld	a, #0x01
-	ld	(0x03, sp), a
-	ld	a, (0x06, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x05, sp)
 	jreq	00112$
 00111$:
-	sll	(0x03, sp)
+	sll	(0x02, sp)
 	dec	a
 	jrne	00111$
 00112$:
 	pop	a
-	and	a, (0x02, sp)
+	and	a, (0x01, sp)
 	jra	00103$
 00102$:
 	C$stm8s_adc1.c$485$2_0$411 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 485: status = (uint8_t)(ADC1->AWSRH & (uint8_t)((uint8_t)1 << (Channel - (uint8_t)8)));
 	ld	a, 0x540c
 	ld	xl, a
-	ld	a, (0x05, sp)
+	ld	a, (0x04, sp)
 	sub	a, #0x08
 	push	a
 	ld	a, #0x01
@@ -882,7 +890,7 @@ _ADC1_GetAWDChannelStatus:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 488: return ((FlagStatus)status);
 	C$stm8s_adc1.c$489$1_0$409 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 489: }
-	addw	sp, #2
+	addw	sp, #1
 	C$stm8s_adc1.c$489$1_0$409 ==.
 	XG$ADC1_GetAWDChannelStatus$0$0 ==.
 	ret
@@ -893,13 +901,13 @@ _ADC1_GetAWDChannelStatus:
 ;	 function ADC1_GetFlagStatus
 ;	-----------------------------------------
 _ADC1_GetFlagStatus:
-	sub	sp, #4
+	sub	sp, #2
 	C$stm8s_adc1.c$502$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 502: if ((Flag & 0x0F) == 0x01)
-	ld	a, (0x07, sp)
-	ld	(0x04, sp), a
-	clr	(0x03, sp)
-	ld	a, (0x04, sp)
+	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
+	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	and	a, #0x0f
 	ld	xl, a
 	clr	a
@@ -914,7 +922,7 @@ _ADC1_GetFlagStatus:
 00108$:
 	C$stm8s_adc1.c$507$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 507: else if ((Flag & 0xF0) == 0x10)
-	ld	a, (0x04, sp)
+	ld	a, (0x02, sp)
 	and	a, #0xf0
 	ld	xl, a
 	clr	a
@@ -923,7 +931,7 @@ _ADC1_GetFlagStatus:
 	jrne	00105$
 	C$stm8s_adc1.c$510$2_0$415 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 510: temp = (uint8_t)(Flag & (uint8_t)0x0F);
-	ld	a, (0x07, sp)
+	ld	a, (0x05, sp)
 	and	a, #0x0f
 	ld	xl, a
 	C$stm8s_adc1.c$511$2_0$415 ==.
@@ -934,7 +942,7 @@ _ADC1_GetFlagStatus:
 	C$stm8s_adc1.c$513$3_0$416 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 513: flagstatus = (uint8_t)(ADC1->AWSRL & (uint8_t)((uint8_t)1 << temp));
 	ld	a, 0x540d
-	ld	(0x01, sp), a
+	ld	(0x02, sp), a
 	ld	a, #0x01
 	push	a
 	ld	a, xl
@@ -946,7 +954,7 @@ _ADC1_GetFlagStatus:
 	jrne	00131$
 00132$:
 	pop	a
-	and	a, (0x01, sp)
+	and	a, (0x02, sp)
 	jra	00109$
 00102$:
 	C$stm8s_adc1.c$517$3_0$417 ==.
@@ -971,13 +979,13 @@ _ADC1_GetFlagStatus:
 	C$stm8s_adc1.c$522$2_0$418 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 522: flagstatus = (uint8_t)(ADC1->CSR & Flag);
 	ld	a, 0x5400
-	and	a, (0x07, sp)
+	and	a, (0x05, sp)
 00109$:
 	C$stm8s_adc1.c$524$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 524: return ((FlagStatus)flagstatus);
 	C$stm8s_adc1.c$526$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 526: }
-	addw	sp, #4
+	addw	sp, #2
 	C$stm8s_adc1.c$526$1_0$413 ==.
 	XG$ADC1_GetFlagStatus$0$0 ==.
 	ret
@@ -988,12 +996,14 @@ _ADC1_GetFlagStatus:
 ;	 function ADC1_ClearFlag
 ;	-----------------------------------------
 _ADC1_ClearFlag:
-	sub	sp, #5
+	sub	sp, #2
 	C$stm8s_adc1.c$541$1_0$420 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 541: if ((Flag & 0x0F) == 0x01)
-	ld	a, (0x08, sp)
-	clr	(0x04, sp)
+	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
+	clr	(0x01, sp)
 	push	a
+	ld	a, (0x03, sp)
 	and	a, #0x0f
 	ld	xl, a
 	clr	a
@@ -1008,6 +1018,7 @@ _ADC1_ClearFlag:
 00108$:
 	C$stm8s_adc1.c$546$1_0$420 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 546: else if ((Flag & 0xF0) == 0x10)
+	ld	a, (0x02, sp)
 	and	a, #0xf0
 	ld	xl, a
 	clr	a
@@ -1016,7 +1027,7 @@ _ADC1_ClearFlag:
 	jrne	00105$
 	C$stm8s_adc1.c$549$2_0$422 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 549: temp = (uint8_t)(Flag & (uint8_t)0x0F);
-	ld	a, (0x08, sp)
+	ld	a, (0x05, sp)
 	and	a, #0x0f
 	ld	xl, a
 	C$stm8s_adc1.c$550$2_0$422 ==.
@@ -1027,7 +1038,7 @@ _ADC1_ClearFlag:
 	C$stm8s_adc1.c$552$3_0$423 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 552: ADC1->AWSRL &= (uint8_t)~(uint8_t)((uint8_t)1 << temp);
 	ld	a, 0x540d
-	ld	(0x03, sp), a
+	ld	(0x02, sp), a
 	ld	a, #0x01
 	push	a
 	ld	a, xl
@@ -1040,7 +1051,7 @@ _ADC1_ClearFlag:
 00132$:
 	pop	a
 	cpl	a
-	and	a, (0x03, sp)
+	and	a, (0x02, sp)
 	ld	0x540d, a
 	jra	00110$
 00102$:
@@ -1068,15 +1079,15 @@ _ADC1_ClearFlag:
 	C$stm8s_adc1.c$561$2_0$425 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 561: ADC1->CSR &= (uint8_t) (~Flag);
 	ld	a, 0x5400
-	ld	(0x01, sp), a
-	ld	a, (0x08, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x05, sp)
 	cpl	a
-	and	a, (0x01, sp)
+	and	a, (0x02, sp)
 	ld	0x5400, a
 00110$:
 	C$stm8s_adc1.c$563$1_0$420 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 563: }
-	addw	sp, #5
+	addw	sp, #2
 	C$stm8s_adc1.c$563$1_0$420 ==.
 	XG$ADC1_ClearFlag$0$0 ==.
 	ret
@@ -1087,10 +1098,10 @@ _ADC1_ClearFlag:
 ;	 function ADC1_GetITStatus
 ;	-----------------------------------------
 _ADC1_GetITStatus:
-	sub	sp, #3
+	push	a
 	C$stm8s_adc1.c$591$1_0$427 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 591: if (((uint16_t)ITPendingBit & 0xF0) == 0x10)
-	ld	a, (0x07, sp)
+	ld	a, (0x05, sp)
 	and	a, #0xf0
 	ld	xl, a
 	clr	a
@@ -1099,7 +1110,7 @@ _ADC1_GetITStatus:
 	jrne	00105$
 	C$stm8s_adc1.c$594$1_0$427 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 594: temp = (uint8_t)((uint16_t)ITPendingBit & 0x0F);
-	ld	a, (0x07, sp)
+	ld	a, (0x05, sp)
 	and	a, #0x0f
 	ld	xl, a
 	C$stm8s_adc1.c$595$2_0$428 ==.
@@ -1110,7 +1121,7 @@ _ADC1_GetITStatus:
 	C$stm8s_adc1.c$597$3_0$429 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 597: itstatus = (ITStatus)(ADC1->AWSRL & (uint8_t)((uint8_t)1 << temp));
 	ld	a, 0x540d
-	ld	(0x03, sp), a
+	ld	(0x01, sp), a
 	ld	a, #0x01
 	push	a
 	ld	a, xl
@@ -1122,13 +1133,13 @@ _ADC1_GetITStatus:
 	jrne	00121$
 00122$:
 	pop	a
-	and	a, (0x03, sp)
+	and	a, (0x01, sp)
 	jra	00106$
 00102$:
 	C$stm8s_adc1.c$601$3_0$430 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 601: itstatus = (ITStatus)(ADC1->AWSRH & (uint8_t)((uint8_t)1 << (temp - 8)));
 	ld	a, 0x540c
-	ld	(0x02, sp), a
+	ld	(0x01, sp), a
 	subw	x, #8
 	ld	a, #0x01
 	push	a
@@ -1141,21 +1152,21 @@ _ADC1_GetITStatus:
 	jrne	00123$
 00124$:
 	pop	a
-	and	a, (0x02, sp)
+	and	a, (0x01, sp)
 	jra	00106$
 00105$:
 	C$stm8s_adc1.c$606$2_0$431 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 606: itstatus = (ITStatus)(ADC1->CSR & (uint8_t)ITPendingBit);
 	ld	a, 0x5400
 	ld	(0x01, sp), a
-	ld	a, (0x07, sp)
+	ld	a, (0x05, sp)
 	and	a, (0x01, sp)
 00106$:
 	C$stm8s_adc1.c$608$1_0$427 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 608: return ((ITStatus)itstatus);
 	C$stm8s_adc1.c$609$1_0$427 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 609: }
-	addw	sp, #3
+	addw	sp, #1
 	C$stm8s_adc1.c$609$1_0$427 ==.
 	XG$ADC1_GetITStatus$0$0 ==.
 	ret
@@ -1166,10 +1177,10 @@ _ADC1_GetITStatus:
 ;	 function ADC1_ClearITPendingBit
 ;	-----------------------------------------
 _ADC1_ClearITPendingBit:
-	sub	sp, #2
+	push	a
 	C$stm8s_adc1.c$636$1_0$433 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 636: if (((uint16_t)ITPendingBit & 0xF0) == 0x10)
-	ld	a, (0x06, sp)
+	ld	a, (0x05, sp)
 	and	a, #0xf0
 	ld	xl, a
 	clr	a
@@ -1178,7 +1189,7 @@ _ADC1_ClearITPendingBit:
 	jrne	00105$
 	C$stm8s_adc1.c$639$1_0$433 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 639: temp = (uint8_t)((uint16_t)ITPendingBit & 0x0F);
-	ld	a, (0x06, sp)
+	ld	a, (0x05, sp)
 	and	a, #0x0f
 	ld	xl, a
 	C$stm8s_adc1.c$640$2_0$434 ==.
@@ -1189,7 +1200,7 @@ _ADC1_ClearITPendingBit:
 	C$stm8s_adc1.c$642$3_0$435 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 642: ADC1->AWSRL &= (uint8_t)~(uint8_t)((uint8_t)1 << temp);
 	ld	a, 0x540d
-	ld	(0x02, sp), a
+	ld	(0x01, sp), a
 	ld	a, #0x01
 	push	a
 	ld	a, xl
@@ -1202,7 +1213,7 @@ _ADC1_ClearITPendingBit:
 00122$:
 	pop	a
 	cpl	a
-	and	a, (0x02, sp)
+	and	a, (0x01, sp)
 	ld	0x540d, a
 	jra	00107$
 00102$:
@@ -1230,7 +1241,7 @@ _ADC1_ClearITPendingBit:
 	C$stm8s_adc1.c$651$2_0$437 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 651: ADC1->CSR &= (uint8_t)((uint16_t)~(uint16_t)ITPendingBit);
 	ld	a, 0x5400
-	ldw	x, (0x05, sp)
+	ldw	x, (0x04, sp)
 	cplw	x
 	pushw	x
 	and	a, (2, sp)
@@ -1239,7 +1250,7 @@ _ADC1_ClearITPendingBit:
 00107$:
 	C$stm8s_adc1.c$653$1_0$433 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.c: 653: }
-	addw	sp, #2
+	pop	a
 	C$stm8s_adc1.c$653$1_0$433 ==.
 	XG$ADC1_ClearITPendingBit$0$0 ==.
 	ret

@@ -1,14 +1,14 @@
 M:stm8s_gpio
 F:G$GPIO_DeInit$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_gpio.GPIO_DeInit$GPIOx$1_0$345({2}DG,STGPIO_struct:S),B,1,2
-F:G$GPIO_Init$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$GPIO_Init$0_0$0({2}DF,SV:S),Z,0,-2,0,0,0
 S:Lstm8s_gpio.GPIO_Init$GPIOx$1_0$347({2}DG,STGPIO_struct:S),B,1,2
 S:Lstm8s_gpio.GPIO_Init$GPIO_Pin$1_0$347({1}SC:U),B,1,4
 S:Lstm8s_gpio.GPIO_Init$GPIO_Mode$1_0$347({1}SC:U),B,1,5
-S:Lstm8s_gpio.GPIO_Init$sloc0$0_1$0({2}DG,SC:U),B,1,-2
-S:Lstm8s_gpio.GPIO_Init$sloc1$0_1$0({1}SC:U),B,1,-5
-S:Lstm8s_gpio.GPIO_Init$sloc2$0_1$0({2}DG,SC:U),B,1,-4
-S:Lstm8s_gpio.GPIO_Init$sloc3$0_1$0({2}DG,SC:U),B,1,-7
+S:Lstm8s_gpio.GPIO_Init$sloc0$0_1$0({2}DG,SC:U),B,1,-5
+S:Lstm8s_gpio.GPIO_Init$sloc1$0_1$0({1}SC:U),B,1,-3
+S:Lstm8s_gpio.GPIO_Init$sloc2$0_1$0({2}DG,SC:U),B,1,-2
+S:Lstm8s_gpio.GPIO_Init$sloc3$0_1$0({2}DG,SC:U),B,1,-2
 F:G$GPIO_Write$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_gpio.GPIO_Write$GPIOx$1_0$357({2}DG,STGPIO_struct:S),B,1,2
 S:Lstm8s_gpio.GPIO_Write$PortVal$1_0$357({1}SC:U),B,1,4
@@ -18,7 +18,7 @@ S:Lstm8s_gpio.GPIO_WriteHigh$PortPins$1_0$359({1}SC:U),B,1,4
 F:G$GPIO_WriteLow$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_gpio.GPIO_WriteLow$GPIOx$1_0$361({2}DG,STGPIO_struct:S),B,1,2
 S:Lstm8s_gpio.GPIO_WriteLow$PortPins$1_0$361({1}SC:U),B,1,4
-S:Lstm8s_gpio.GPIO_WriteLow$sloc4$0_1$0({1}SC:U),B,1,-1
+S:Lstm8s_gpio.GPIO_WriteLow$sloc0$0_1$0({1}SC:U),B,1,-1
 F:G$GPIO_WriteReverse$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_gpio.GPIO_WriteReverse$GPIOx$1_0$363({2}DG,STGPIO_struct:S),B,1,2
 S:Lstm8s_gpio.GPIO_WriteReverse$PortPins$1_0$363({1}SC:U),B,1,4
@@ -33,7 +33,7 @@ F:G$GPIO_ExternalPullUpConfig$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_gpio.GPIO_ExternalPullUpConfig$GPIOx$1_0$371({2}DG,STGPIO_struct:S),B,1,2
 S:Lstm8s_gpio.GPIO_ExternalPullUpConfig$GPIO_Pin$1_0$371({1}SC:U),B,1,4
 S:Lstm8s_gpio.GPIO_ExternalPullUpConfig$NewState$1_0$371({1}SC:U),B,1,5
-S:Lstm8s_gpio.GPIO_ExternalPullUpConfig$sloc5$0_1$0({1}SC:U),B,1,-1
+S:Lstm8s_gpio.GPIO_ExternalPullUpConfig$sloc0$0_1$0({1}SC:U),B,1,-1
 T:Fstm8s_gpio$TIM1_struct[({0}S:S$CR1$0_0$0({1}SC:U),Z,0,0)({1}S:S$CR2$0_0$0({1}SC:U),Z,0,0)({2}S:S$SMCR$0_0$0({1}SC:U),Z,0,0)({3}S:S$ETR$0_0$0({1}SC:U),Z,0,0)({4}S:S$IER$0_0$0({1}SC:U),Z,0,0)({5}S:S$SR1$0_0$0({1}SC:U),Z,0,0)({6}S:S$SR2$0_0$0({1}SC:U),Z,0,0)({7}S:S$EGR$0_0$0({1}SC:U),Z,0,0)({8}S:S$CCMR1$0_0$0({1}SC:U),Z,0,0)({9}S:S$CCMR2$0_0$0({1}SC:U),Z,0,0)({10}S:S$CCMR3$0_0$0({1}SC:U),Z,0,0)({11}S:S$CCMR4$0_0$0({1}SC:U),Z,0,0)({12}S:S$CCER1$0_0$0({1}SC:U),Z,0,0)({13}S:S$CCER2$0_0$0({1}SC:U),Z,0,0)({14}S:S$CNTRH$0_0$0({1}SC:U),Z,0,0)({15}S:S$CNTRL$0_0$0({1}SC:U),Z,0,0)({16}S:S$PSCRH$0_0$0({1}SC:U),Z,0,0)({17}S:S$PSCRL$0_0$0({1}SC:U),Z,0,0)({18}S:S$ARRH$0_0$0({1}SC:U),Z,0,0)({19}S:S$ARRL$0_0$0({1}SC:U),Z,0,0)({20}S:S$RCR$0_0$0({1}SC:U),Z,0,0)({21}S:S$CCR1H$0_0$0({1}SC:U),Z,0,0)({22}S:S$CCR1L$0_0$0({1}SC:U),Z,0,0)({23}S:S$CCR2H$0_0$0({1}SC:U),Z,0,0)({24}S:S$CCR2L$0_0$0({1}SC:U),Z,0,0)({25}S:S$CCR3H$0_0$0({1}SC:U),Z,0,0)({26}S:S$CCR3L$0_0$0({1}SC:U),Z,0,0)({27}S:S$CCR4H$0_0$0({1}SC:U),Z,0,0)({28}S:S$CCR4L$0_0$0({1}SC:U),Z,0,0)({29}S:S$BKR$0_0$0({1}SC:U),Z,0,0)({30}S:S$DTR$0_0$0({1}SC:U),Z,0,0)({31}S:S$OISR$0_0$0({1}SC:U),Z,0,0)]
 T:Fstm8s_gpio$TIM2_struct[({0}S:S$CR1$0_0$0({1}SC:U),Z,0,0)({1}S:S$IER$0_0$0({1}SC:U),Z,0,0)({2}S:S$SR1$0_0$0({1}SC:U),Z,0,0)({3}S:S$SR2$0_0$0({1}SC:U),Z,0,0)({4}S:S$EGR$0_0$0({1}SC:U),Z,0,0)({5}S:S$CCMR1$0_0$0({1}SC:U),Z,0,0)({6}S:S$CCMR2$0_0$0({1}SC:U),Z,0,0)({7}S:S$CCMR3$0_0$0({1}SC:U),Z,0,0)({8}S:S$CCER1$0_0$0({1}SC:U),Z,0,0)({9}S:S$CCER2$0_0$0({1}SC:U),Z,0,0)({10}S:S$CNTRH$0_0$0({1}SC:U),Z,0,0)({11}S:S$CNTRL$0_0$0({1}SC:U),Z,0,0)({12}S:S$PSCR$0_0$0({1}SC:U),Z,0,0)({13}S:S$ARRH$0_0$0({1}SC:U),Z,0,0)({14}S:S$ARRL$0_0$0({1}SC:U),Z,0,0)({15}S:S$CCR1H$0_0$0({1}SC:U),Z,0,0)({16}S:S$CCR1L$0_0$0({1}SC:U),Z,0,0)({17}S:S$CCR2H$0_0$0({1}SC:U),Z,0,0)({18}S:S$CCR2L$0_0$0({1}SC:U),Z,0,0)({19}S:S$CCR3H$0_0$0({1}SC:U),Z,0,0)({20}S:S$CCR3L$0_0$0({1}SC:U),Z,0,0)]
 T:Fstm8s_gpio$BEEP_struct[({0}S:S$CSR$0_0$0({1}SC:U),Z,0,0)]

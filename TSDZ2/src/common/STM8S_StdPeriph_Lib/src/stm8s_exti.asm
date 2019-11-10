@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_exti
 	.optsdcc -mstm8
@@ -75,16 +75,16 @@ _EXTI_DeInit:
 ;	 function EXTI_SetExtIntSensitivity
 ;	-----------------------------------------
 _EXTI_SetExtIntSensitivity:
-	sub	sp, #3
+	push	a
 	C$stm8s_exti.c$77$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 77: switch (Port)
-	ld	a, (0x06, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0x04
 	jrule	00114$
 	jp	00108$
 00114$:
 	clrw	x
-	ld	a, (0x06, sp)
+	ld	a, (0x04, sp)
 	ld	xl, a
 	sllw	x
 	ldw	x, (#00115$, x)
@@ -106,7 +106,7 @@ _EXTI_SetExtIntSensitivity:
 	C$stm8s_exti.c$81$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 81: EXTI->CR1 |= (uint8_t)(SensitivityValue);
 	ld	a, 0x50a0
-	or	a, (0x07, sp)
+	or	a, (0x05, sp)
 	ld	0x50a0, a
 	C$stm8s_exti.c$82$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 82: break;
@@ -122,11 +122,11 @@ _EXTI_SetExtIntSensitivity:
 	C$stm8s_exti.c$85$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 85: EXTI->CR1 |= (uint8_t)((uint8_t)(SensitivityValue) << 2);
 	ld	a, 0x50a0
-	ld	(0x02, sp), a
-	ld	a, (0x07, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x05, sp)
 	sll	a
 	sll	a
-	or	a, (0x02, sp)
+	or	a, (0x01, sp)
 	ld	0x50a0, a
 	C$stm8s_exti.c$86$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 86: break;
@@ -143,7 +143,7 @@ _EXTI_SetExtIntSensitivity:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 89: EXTI->CR1 |= (uint8_t)((uint8_t)(SensitivityValue) << 4);
 	ld	a, 0x50a0
 	ld	(0x01, sp), a
-	ld	a, (0x07, sp)
+	ld	a, (0x05, sp)
 	swap	a
 	and	a, #0xf0
 	or	a, (0x01, sp)
@@ -162,13 +162,13 @@ _EXTI_SetExtIntSensitivity:
 	C$stm8s_exti.c$93$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 93: EXTI->CR1 |= (uint8_t)((uint8_t)(SensitivityValue) << 6);
 	ld	a, 0x50a0
-	ld	(0x03, sp), a
-	ld	a, (0x07, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x05, sp)
 	swap	a
 	and	a, #0xf0
 	sll	a
 	sll	a
-	or	a, (0x03, sp)
+	or	a, (0x01, sp)
 	ld	0x50a0, a
 	C$stm8s_exti.c$94$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 94: break;
@@ -184,14 +184,14 @@ _EXTI_SetExtIntSensitivity:
 	C$stm8s_exti.c$97$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 97: EXTI->CR2 |= (uint8_t)(SensitivityValue);
 	ld	a, 0x50a1
-	or	a, (0x07, sp)
+	or	a, (0x05, sp)
 	ld	0x50a1, a
 	C$stm8s_exti.c$101$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 101: }
 00108$:
 	C$stm8s_exti.c$102$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_exti.c: 102: }
-	addw	sp, #3
+	pop	a
 	C$stm8s_exti.c$102$1_0$348 ==.
 	XG$EXTI_SetExtIntSensitivity$0$0 ==.
 	ret

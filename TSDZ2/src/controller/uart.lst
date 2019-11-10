@@ -1,0 +1,158 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module uart
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _uart2_init
+                                     12 	.globl _UART2_GetFlagStatus
+                                     13 	.globl _UART2_SendData8
+                                     14 	.globl _UART2_ReceiveData8
+                                     15 	.globl _UART2_ITConfig
+                                     16 	.globl _UART2_Init
+                                     17 	.globl _UART2_DeInit
+                                     18 	.globl _putchar
+                                     19 	.globl _getchar
+                                     20 ;--------------------------------------------------------
+                                     21 ; ram data
+                                     22 ;--------------------------------------------------------
+                                     23 	.area DATA
+                                     24 ;--------------------------------------------------------
+                                     25 ; ram data
+                                     26 ;--------------------------------------------------------
+                                     27 	.area INITIALIZED
+                                     28 ;--------------------------------------------------------
+                                     29 ; absolute external ram data
+                                     30 ;--------------------------------------------------------
+                                     31 	.area DABS (ABS)
+                                     32 
+                                     33 ; default segment ordering for linker
+                                     34 	.area HOME
+                                     35 	.area GSINIT
+                                     36 	.area GSFINAL
+                                     37 	.area CONST
+                                     38 	.area INITIALIZER
+                                     39 	.area CODE
+                                     40 
+                                     41 ;--------------------------------------------------------
+                                     42 ; global & static initialisations
+                                     43 ;--------------------------------------------------------
+                                     44 	.area HOME
+                                     45 	.area GSINIT
+                                     46 	.area GSFINAL
+                                     47 	.area GSINIT
+                                     48 ;--------------------------------------------------------
+                                     49 ; Home
+                                     50 ;--------------------------------------------------------
+                                     51 	.area HOME
+                                     52 	.area HOME
+                                     53 ;--------------------------------------------------------
+                                     54 ; code
+                                     55 ;--------------------------------------------------------
+                                     56 	.area CODE
+                           000000    57 	G$uart2_init$0$0 ==.
+                           000000    58 	C$uart.c$19$0_0$357 ==.
+                                     59 ;	uart.c: 19: void uart2_init(void)
+                                     60 ;	-----------------------------------------
+                                     61 ;	 function uart2_init
+                                     62 ;	-----------------------------------------
+      000000                         63 _uart2_init:
+                           000000    64 	C$uart.c$21$1_0$357 ==.
+                                     65 ;	uart.c: 21: UART2_DeInit();
+      000000 CDr00r00         [ 4]   66 	call	_UART2_DeInit
+                           000003    67 	C$uart.c$25$1_0$357 ==.
+                                     68 ;	uart.c: 25: UART2_Init((uint32_t) 9600,
+      000003 4B 0C            [ 1]   69 	push	#0x0c
+      000005 4B 80            [ 1]   70 	push	#0x80
+      000007 4B 00            [ 1]   71 	push	#0x00
+      000009 4B 00            [ 1]   72 	push	#0x00
+      00000B 4B 00            [ 1]   73 	push	#0x00
+      00000D 4B 80            [ 1]   74 	push	#0x80
+      00000F 4B 25            [ 1]   75 	push	#0x25
+      000011 5F               [ 1]   76 	clrw	x
+      000012 89               [ 2]   77 	pushw	x
+      000013 CDr00r00         [ 4]   78 	call	_UART2_Init
+      000016 5B 09            [ 2]   79 	addw	sp, #9
+                           000018    80 	C$uart.c$33$1_0$357 ==.
+                                     81 ;	uart.c: 33: UART2_ITConfig(UART2_IT_RXNE_OR, ENABLE);
+      000018 4B 01            [ 1]   82 	push	#0x01
+      00001A 4B 05            [ 1]   83 	push	#0x05
+      00001C 4B 02            [ 1]   84 	push	#0x02
+      00001E CDr00r00         [ 4]   85 	call	_UART2_ITConfig
+      000021 5B 03            [ 2]   86 	addw	sp, #3
+                           000023    87 	C$uart.c$34$1_0$357 ==.
+                                     88 ;	uart.c: 34: }
+                           000023    89 	C$uart.c$34$1_0$357 ==.
+                           000023    90 	XG$uart2_init$0$0 ==.
+      000023 81               [ 4]   91 	ret
+                           000024    92 	G$putchar$0$0 ==.
+                           000024    93 	C$uart.c$52$1_0$359 ==.
+                                     94 ;	uart.c: 52: int putchar(int c)
+                                     95 ;	-----------------------------------------
+                                     96 ;	 function putchar
+                                     97 ;	-----------------------------------------
+      000024                         98 _putchar:
+      000024 88               [ 1]   99 	push	a
+                           000025   100 	C$uart.c$55$1_0$359 ==.
+                                    101 ;	uart.c: 55: UART2_SendData8(c);
+      000025 7B 05            [ 1]  102 	ld	a, (0x05, sp)
+      000027 6B 01            [ 1]  103 	ld	(0x01, sp), a
+      000029 88               [ 1]  104 	push	a
+      00002A CDr00r00         [ 4]  105 	call	_UART2_SendData8
+      00002D 84               [ 1]  106 	pop	a
+                           00002E   107 	C$uart.c$58$1_0$359 ==.
+                                    108 ;	uart.c: 58: while(UART2_GetFlagStatus(UART2_FLAG_TXE) == RESET);
+      00002E                        109 00101$:
+      00002E 4B 80            [ 1]  110 	push	#0x80
+      000030 4B 00            [ 1]  111 	push	#0x00
+      000032 CDr00r00         [ 4]  112 	call	_UART2_GetFlagStatus
+      000035 5B 02            [ 2]  113 	addw	sp, #2
+      000037 4D               [ 1]  114 	tnz	a
+      000038 27 F4            [ 1]  115 	jreq	00101$
+                           00003A   116 	C$uart.c$60$1_0$359 ==.
+                                    117 ;	uart.c: 60: return((unsigned char)c);
+      00003A 5F               [ 1]  118 	clrw	x
+      00003B 7B 01            [ 1]  119 	ld	a, (0x01, sp)
+      00003D 97               [ 1]  120 	ld	xl, a
+                           00003E   121 	C$uart.c$61$1_0$359 ==.
+                                    122 ;	uart.c: 61: }
+      00003E 84               [ 1]  123 	pop	a
+                           00003F   124 	C$uart.c$61$1_0$359 ==.
+                           00003F   125 	XG$putchar$0$0 ==.
+      00003F 81               [ 4]  126 	ret
+                           000040   127 	G$getchar$0$0 ==.
+                           000040   128 	C$uart.c$70$1_0$361 ==.
+                                    129 ;	uart.c: 70: int getchar(void)
+                                    130 ;	-----------------------------------------
+                                    131 ;	 function getchar
+                                    132 ;	-----------------------------------------
+      000040                        133 _getchar:
+                           000040   134 	C$uart.c$76$1_0$361 ==.
+                                    135 ;	uart.c: 76: while(UART2_GetFlagStatus(UART2_FLAG_RXNE) == RESET);
+      000040                        136 00101$:
+      000040 4B 20            [ 1]  137 	push	#0x20
+      000042 4B 00            [ 1]  138 	push	#0x00
+      000044 CDr00r00         [ 4]  139 	call	_UART2_GetFlagStatus
+      000047 5B 02            [ 2]  140 	addw	sp, #2
+      000049 4D               [ 1]  141 	tnz	a
+      00004A 27 F4            [ 1]  142 	jreq	00101$
+                           00004C   143 	C$uart.c$78$1_0$361 ==.
+                                    144 ;	uart.c: 78: c = UART2_ReceiveData8();
+      00004C CDr00r00         [ 4]  145 	call	_UART2_ReceiveData8
+                           00004F   146 	C$uart.c$80$1_0$361 ==.
+                                    147 ;	uart.c: 80: return (c);
+      00004F 5F               [ 1]  148 	clrw	x
+      000050 97               [ 1]  149 	ld	xl, a
+                           000051   150 	C$uart.c$81$1_0$361 ==.
+                                    151 ;	uart.c: 81: }
+                           000051   152 	C$uart.c$81$1_0$361 ==.
+                           000051   153 	XG$getchar$0$0 ==.
+      000051 81               [ 4]  154 	ret
+                                    155 	.area CODE
+                                    156 	.area CONST
+                                    157 	.area INITIALIZER
+                                    158 	.area CABS (ABS)

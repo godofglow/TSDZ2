@@ -1,0 +1,201 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module pwm
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _TIM1_ITConfig
+                                     12 	.globl _TIM1_CtrlPWMOutputs
+                                     13 	.globl _TIM1_Cmd
+                                     14 	.globl _TIM1_BDTRConfig
+                                     15 	.globl _TIM1_OC4Init
+                                     16 	.globl _TIM1_OC3Init
+                                     17 	.globl _TIM1_OC2Init
+                                     18 	.globl _TIM1_OC1Init
+                                     19 	.globl _TIM1_TimeBaseInit
+                                     20 	.globl _FLASH_SetProgrammingTime
+                                     21 	.globl _FLASH_EraseOptionByte
+                                     22 	.globl _FLASH_ProgramOptionByte
+                                     23 	.globl _FLASH_ReadOptionByte
+                                     24 	.globl _FLASH_Lock
+                                     25 	.globl _FLASH_Unlock
+                                     26 	.globl _pwm_init_bipolar_4q
+                                     27 ;--------------------------------------------------------
+                                     28 ; ram data
+                                     29 ;--------------------------------------------------------
+                                     30 	.area DATA
+                                     31 ;--------------------------------------------------------
+                                     32 ; ram data
+                                     33 ;--------------------------------------------------------
+                                     34 	.area INITIALIZED
+                                     35 ;--------------------------------------------------------
+                                     36 ; absolute external ram data
+                                     37 ;--------------------------------------------------------
+                                     38 	.area DABS (ABS)
+                                     39 
+                                     40 ; default segment ordering for linker
+                                     41 	.area HOME
+                                     42 	.area GSINIT
+                                     43 	.area GSFINAL
+                                     44 	.area CONST
+                                     45 	.area INITIALIZER
+                                     46 	.area CODE
+                                     47 
+                                     48 ;--------------------------------------------------------
+                                     49 ; global & static initialisations
+                                     50 ;--------------------------------------------------------
+                                     51 	.area HOME
+                                     52 	.area GSINIT
+                                     53 	.area GSFINAL
+                                     54 	.area GSINIT
+                                     55 ;--------------------------------------------------------
+                                     56 ; Home
+                                     57 ;--------------------------------------------------------
+                                     58 	.area HOME
+                                     59 	.area HOME
+                                     60 ;--------------------------------------------------------
+                                     61 ; code
+                                     62 ;--------------------------------------------------------
+                                     63 	.area CODE
+                           000000    64 	G$pwm_init_bipolar_4q$0$0 ==.
+                           000000    65 	C$pwm.c$21$0_0$358 ==.
+                                     66 ;	pwm.c: 21: void pwm_init_bipolar_4q(void)
+                                     67 ;	-----------------------------------------
+                                     68 ;	 function pwm_init_bipolar_4q
+                                     69 ;	-----------------------------------------
+      000000                         70 _pwm_init_bipolar_4q:
+                           000000    71 	C$pwm.c$24$1_0$358 ==.
+                                     72 ;	pwm.c: 24: FLASH_SetProgrammingTime(FLASH_PROGRAMTIME_STANDARD);
+      000000 4B 00            [ 1]   73 	push	#0x00
+      000002 CDr00r00         [ 4]   74 	call	_FLASH_SetProgrammingTime
+      000005 84               [ 1]   75 	pop	a
+                           000006    76 	C$pwm.c$25$1_0$358 ==.
+                                     77 ;	pwm.c: 25: if(FLASH_ReadOptionByte(0x4803) != 0x20)
+      000006 4B 03            [ 1]   78 	push	#0x03
+      000008 4B 48            [ 1]   79 	push	#0x48
+      00000A CDr00r00         [ 4]   80 	call	_FLASH_ReadOptionByte
+      00000D 5B 02            [ 2]   81 	addw	sp, #2
+      00000F A3 00 20         [ 2]   82 	cpw	x, #0x0020
+      000012 27 20            [ 1]   83 	jreq	00102$
+                           000014    84 	C$pwm.c$27$2_0$359 ==.
+                                     85 ;	pwm.c: 27: FLASH_Unlock(FLASH_MEMTYPE_DATA);
+      000014 4B F7            [ 1]   86 	push	#0xf7
+      000016 CDr00r00         [ 4]   87 	call	_FLASH_Unlock
+      000019 84               [ 1]   88 	pop	a
+                           00001A    89 	C$pwm.c$28$2_0$359 ==.
+                                     90 ;	pwm.c: 28: FLASH_EraseOptionByte(0x4803);
+      00001A 4B 03            [ 1]   91 	push	#0x03
+      00001C 4B 48            [ 1]   92 	push	#0x48
+      00001E CDr00r00         [ 4]   93 	call	_FLASH_EraseOptionByte
+      000021 5B 02            [ 2]   94 	addw	sp, #2
+                           000023    95 	C$pwm.c$29$2_0$359 ==.
+                                     96 ;	pwm.c: 29: FLASH_ProgramOptionByte(0x4803, 0x20);
+      000023 4B 20            [ 1]   97 	push	#0x20
+      000025 4B 03            [ 1]   98 	push	#0x03
+      000027 4B 48            [ 1]   99 	push	#0x48
+      000029 CDr00r00         [ 4]  100 	call	_FLASH_ProgramOptionByte
+      00002C 5B 03            [ 2]  101 	addw	sp, #3
+                           00002E   102 	C$pwm.c$30$2_0$359 ==.
+                                    103 ;	pwm.c: 30: FLASH_Lock(FLASH_MEMTYPE_DATA);
+      00002E 4B F7            [ 1]  104 	push	#0xf7
+      000030 CDr00r00         [ 4]  105 	call	_FLASH_Lock
+      000033 84               [ 1]  106 	pop	a
+      000034                        107 00102$:
+                           000034   108 	C$pwm.c$88$1_0$358 ==.
+                                    109 ;	pwm.c: 88: TIM1_TimeBaseInit(0, // TIM1_Prescaler = 0
+      000034 4B 01            [ 1]  110 	push	#0x01
+      000036 4B FF            [ 1]  111 	push	#0xff
+      000038 4B 01            [ 1]  112 	push	#0x01
+      00003A 4B 20            [ 1]  113 	push	#0x20
+      00003C 5F               [ 1]  114 	clrw	x
+      00003D 89               [ 2]  115 	pushw	x
+      00003E CDr00r00         [ 4]  116 	call	_TIM1_TimeBaseInit
+      000041 5B 06            [ 2]  117 	addw	sp, #6
+                           000043   118 	C$pwm.c$96$1_0$358 ==.
+                                    119 ;	pwm.c: 96: TIM1_OC1Init(TIM1_OCMODE_PWM1,
+      000043 4B 2A            [ 1]  120 	push	#0x2a
+      000045 4B 00            [ 1]  121 	push	#0x00
+      000047 4B 00            [ 1]  122 	push	#0x00
+      000049 4B 00            [ 1]  123 	push	#0x00
+      00004B 4B FF            [ 1]  124 	push	#0xff
+      00004D 4B 00            [ 1]  125 	push	#0x00
+      00004F 4B 44            [ 1]  126 	push	#0x44
+      000051 4B 11            [ 1]  127 	push	#0x11
+      000053 4B 60            [ 1]  128 	push	#0x60
+      000055 CDr00r00         [ 4]  129 	call	_TIM1_OC1Init
+      000058 5B 09            [ 2]  130 	addw	sp, #9
+                           00005A   131 	C$pwm.c$110$1_0$358 ==.
+                                    132 ;	pwm.c: 110: TIM1_OC2Init(TIM1_OCMODE_PWM1,
+      00005A 4B 55            [ 1]  133 	push	#0x55
+      00005C 4B 00            [ 1]  134 	push	#0x00
+      00005E 4B 00            [ 1]  135 	push	#0x00
+      000060 4B 00            [ 1]  136 	push	#0x00
+      000062 4B FF            [ 1]  137 	push	#0xff
+      000064 4B 00            [ 1]  138 	push	#0x00
+      000066 4B 44            [ 1]  139 	push	#0x44
+      000068 4B 11            [ 1]  140 	push	#0x11
+      00006A 4B 60            [ 1]  141 	push	#0x60
+      00006C CDr00r00         [ 4]  142 	call	_TIM1_OC2Init
+      00006F 5B 09            [ 2]  143 	addw	sp, #9
+                           000071   144 	C$pwm.c$119$1_0$358 ==.
+                                    145 ;	pwm.c: 119: TIM1_OC3Init(TIM1_OCMODE_PWM1,
+      000071 4B 2A            [ 1]  146 	push	#0x2a
+      000073 4B 00            [ 1]  147 	push	#0x00
+      000075 4B 00            [ 1]  148 	push	#0x00
+      000077 4B 00            [ 1]  149 	push	#0x00
+      000079 4B FF            [ 1]  150 	push	#0xff
+      00007B 4B 00            [ 1]  151 	push	#0x00
+      00007D 4B 44            [ 1]  152 	push	#0x44
+      00007F 4B 11            [ 1]  153 	push	#0x11
+      000081 4B 60            [ 1]  154 	push	#0x60
+      000083 CDr00r00         [ 4]  155 	call	_TIM1_OC3Init
+      000086 5B 09            [ 2]  156 	addw	sp, #9
+                           000088   157 	C$pwm.c$135$1_0$358 ==.
+                                    158 ;	pwm.c: 135: TIM1_OC4Init(TIM1_OCMODE_PWM1,
+      000088 4B 00            [ 1]  159 	push	#0x00
+      00008A 4B 00            [ 1]  160 	push	#0x00
+      00008C 4B 1D            [ 1]  161 	push	#0x1d
+      00008E 4B 01            [ 1]  162 	push	#0x01
+      000090 4B 00            [ 1]  163 	push	#0x00
+      000092 4B 60            [ 1]  164 	push	#0x60
+      000094 CDr00r00         [ 4]  165 	call	_TIM1_OC4Init
+      000097 5B 06            [ 2]  166 	addw	sp, #6
+                           000099   167 	C$pwm.c$142$1_0$358 ==.
+                                    168 ;	pwm.c: 142: TIM1_BDTRConfig(TIM1_OSSISTATE_ENABLE,
+      000099 4B 00            [ 1]  169 	push	#0x00
+      00009B 4B 00            [ 1]  170 	push	#0x00
+      00009D 4B 00            [ 1]  171 	push	#0x00
+      00009F 4B 10            [ 1]  172 	push	#0x10
+      0000A1 4B 00            [ 1]  173 	push	#0x00
+      0000A3 4B 04            [ 1]  174 	push	#0x04
+      0000A5 CDr00r00         [ 4]  175 	call	_TIM1_BDTRConfig
+      0000A8 5B 06            [ 2]  176 	addw	sp, #6
+                           0000AA   177 	C$pwm.c$150$1_0$358 ==.
+                                    178 ;	pwm.c: 150: TIM1_ITConfig(TIM1_IT_CC4, ENABLE);
+      0000AA 4B 01            [ 1]  179 	push	#0x01
+      0000AC 4B 10            [ 1]  180 	push	#0x10
+      0000AE CDr00r00         [ 4]  181 	call	_TIM1_ITConfig
+      0000B1 5B 02            [ 2]  182 	addw	sp, #2
+                           0000B3   183 	C$pwm.c$151$1_0$358 ==.
+                                    184 ;	pwm.c: 151: TIM1_Cmd(ENABLE); // TIM1 counter enable
+      0000B3 4B 01            [ 1]  185 	push	#0x01
+      0000B5 CDr00r00         [ 4]  186 	call	_TIM1_Cmd
+      0000B8 84               [ 1]  187 	pop	a
+                           0000B9   188 	C$pwm.c$152$1_0$358 ==.
+                                    189 ;	pwm.c: 152: TIM1_CtrlPWMOutputs(ENABLE);
+      0000B9 4B 01            [ 1]  190 	push	#0x01
+      0000BB CDr00r00         [ 4]  191 	call	_TIM1_CtrlPWMOutputs
+      0000BE 84               [ 1]  192 	pop	a
+                           0000BF   193 	C$pwm.c$154$1_0$358 ==.
+                                    194 ;	pwm.c: 154: }
+                           0000BF   195 	C$pwm.c$154$1_0$358 ==.
+                           0000BF   196 	XG$pwm_init_bipolar_4q$0$0 ==.
+      0000BF 81               [ 4]  197 	ret
+                                    198 	.area CODE
+                                    199 	.area CONST
+                                    200 	.area INITIALIZER
+                                    201 	.area CABS (ABS)

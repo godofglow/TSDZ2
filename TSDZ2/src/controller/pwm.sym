@@ -1,0 +1,165 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$pwm$100                                                      000029 GR
+  9 A$pwm$101                                                      00002C GR
+  9 A$pwm$104                                                      00002E GR
+  9 A$pwm$105                                                      000030 GR
+  9 A$pwm$106                                                      000033 GR
+  9 A$pwm$110                                                      000034 GR
+  9 A$pwm$111                                                      000036 GR
+  9 A$pwm$112                                                      000038 GR
+  9 A$pwm$113                                                      00003A GR
+  9 A$pwm$114                                                      00003C GR
+  9 A$pwm$115                                                      00003D GR
+  9 A$pwm$116                                                      00003E GR
+  9 A$pwm$117                                                      000041 GR
+  9 A$pwm$120                                                      000043 GR
+  9 A$pwm$121                                                      000045 GR
+  9 A$pwm$122                                                      000047 GR
+  9 A$pwm$123                                                      000049 GR
+  9 A$pwm$124                                                      00004B GR
+  9 A$pwm$125                                                      00004D GR
+  9 A$pwm$126                                                      00004F GR
+  9 A$pwm$127                                                      000051 GR
+  9 A$pwm$128                                                      000053 GR
+  9 A$pwm$129                                                      000055 GR
+  9 A$pwm$130                                                      000058 GR
+  9 A$pwm$133                                                      00005A GR
+  9 A$pwm$134                                                      00005C GR
+  9 A$pwm$135                                                      00005E GR
+  9 A$pwm$136                                                      000060 GR
+  9 A$pwm$137                                                      000062 GR
+  9 A$pwm$138                                                      000064 GR
+  9 A$pwm$139                                                      000066 GR
+  9 A$pwm$140                                                      000068 GR
+  9 A$pwm$141                                                      00006A GR
+  9 A$pwm$142                                                      00006C GR
+  9 A$pwm$143                                                      00006F GR
+  9 A$pwm$146                                                      000071 GR
+  9 A$pwm$147                                                      000073 GR
+  9 A$pwm$148                                                      000075 GR
+  9 A$pwm$149                                                      000077 GR
+  9 A$pwm$150                                                      000079 GR
+  9 A$pwm$151                                                      00007B GR
+  9 A$pwm$152                                                      00007D GR
+  9 A$pwm$153                                                      00007F GR
+  9 A$pwm$154                                                      000081 GR
+  9 A$pwm$155                                                      000083 GR
+  9 A$pwm$156                                                      000086 GR
+  9 A$pwm$159                                                      000088 GR
+  9 A$pwm$160                                                      00008A GR
+  9 A$pwm$161                                                      00008C GR
+  9 A$pwm$162                                                      00008E GR
+  9 A$pwm$163                                                      000090 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$pwm$164                                                      000092 GR
+  9 A$pwm$165                                                      000094 GR
+  9 A$pwm$166                                                      000097 GR
+  9 A$pwm$169                                                      000099 GR
+  9 A$pwm$170                                                      00009B GR
+  9 A$pwm$171                                                      00009D GR
+  9 A$pwm$172                                                      00009F GR
+  9 A$pwm$173                                                      0000A1 GR
+  9 A$pwm$174                                                      0000A3 GR
+  9 A$pwm$175                                                      0000A5 GR
+  9 A$pwm$176                                                      0000A8 GR
+  9 A$pwm$179                                                      0000AA GR
+  9 A$pwm$180                                                      0000AC GR
+  9 A$pwm$181                                                      0000AE GR
+  9 A$pwm$182                                                      0000B1 GR
+  9 A$pwm$185                                                      0000B3 GR
+  9 A$pwm$186                                                      0000B5 GR
+  9 A$pwm$187                                                      0000B8 GR
+  9 A$pwm$190                                                      0000B9 GR
+  9 A$pwm$191                                                      0000BB GR
+  9 A$pwm$192                                                      0000BE GR
+  9 A$pwm$197                                                      0000BF GR
+  9 A$pwm$73                                                       000000 GR
+  9 A$pwm$74                                                       000002 GR
+  9 A$pwm$75                                                       000005 GR
+  9 A$pwm$78                                                       000006 GR
+  9 A$pwm$79                                                       000008 GR
+  9 A$pwm$80                                                       00000A GR
+  9 A$pwm$81                                                       00000D GR
+  9 A$pwm$82                                                       00000F GR
+  9 A$pwm$83                                                       000012 GR
+  9 A$pwm$86                                                       000014 GR
+  9 A$pwm$87                                                       000016 GR
+  9 A$pwm$88                                                       000019 GR
+  9 A$pwm$91                                                       00001A GR
+  9 A$pwm$92                                                       00001C GR
+  9 A$pwm$93                                                       00001E GR
+  9 A$pwm$94                                                       000021 GR
+  9 A$pwm$97                                                       000023 GR
+  9 A$pwm$98                                                       000025 GR
+  9 A$pwm$99                                                       000027 GR
+  9 C$pwm.c$110$1_0$358                                         =  00005A GR
+  9 C$pwm.c$119$1_0$358                                         =  000071 GR
+  9 C$pwm.c$135$1_0$358                                         =  000088 GR
+  9 C$pwm.c$142$1_0$358                                         =  000099 GR
+  9 C$pwm.c$150$1_0$358                                         =  0000AA GR
+  9 C$pwm.c$151$1_0$358                                         =  0000B3 GR
+  9 C$pwm.c$152$1_0$358                                         =  0000B9 GR
+  9 C$pwm.c$154$1_0$358                                         =  0000BF GR
+  9 C$pwm.c$21$0_0$358                                          =  000000 GR
+  9 C$pwm.c$24$1_0$358                                          =  000000 GR
+  9 C$pwm.c$25$1_0$358                                          =  000006 GR
+  9 C$pwm.c$27$2_0$359                                          =  000014 GR
+  9 C$pwm.c$28$2_0$359                                          =  00001A GR
+  9 C$pwm.c$29$2_0$359                                          =  000023 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$pwm.c$30$2_0$359                                          =  00002E GR
+  9 C$pwm.c$88$1_0$358                                          =  000034 GR
+  9 C$pwm.c$96$1_0$358                                          =  000043 GR
+  9 G$pwm_init_bipolar_4q$0$0                                   =  000000 GR
+  9 XG$pwm_init_bipolar_4q$0$0                                  =  0000BF GR
+    _FLASH_EraseOptionByte                                         ****** GX
+    _FLASH_Lock                                                    ****** GX
+    _FLASH_ProgramOptionByte                                       ****** GX
+    _FLASH_ReadOptionByte                                          ****** GX
+    _FLASH_SetProgrammingTime                                      ****** GX
+    _FLASH_Unlock                                                  ****** GX
+    _TIM1_BDTRConfig                                               ****** GX
+    _TIM1_Cmd                                                      ****** GX
+    _TIM1_CtrlPWMOutputs                                           ****** GX
+    _TIM1_ITConfig                                                 ****** GX
+    _TIM1_OC1Init                                                  ****** GX
+    _TIM1_OC2Init                                                  ****** GX
+    _TIM1_OC3Init                                                  ****** GX
+    _TIM1_OC4Init                                                  ****** GX
+    _TIM1_TimeBaseInit                                             ****** GX
+  9 _pwm_init_bipolar_4q                                           000000 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 4.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size     C0   flags    0
+   A CABS                                       size      0   flags    8
+

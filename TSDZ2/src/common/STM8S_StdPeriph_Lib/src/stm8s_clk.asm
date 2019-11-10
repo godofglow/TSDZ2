@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_clk
 	.optsdcc -mstm8
@@ -306,35 +306,35 @@ _CLK_SlowActiveHaltWakeUpCmd:
 ;	 function CLK_PeripheralClockConfig
 ;	-----------------------------------------
 _CLK_PeripheralClockConfig:
-	sub	sp, #4
+	push	a
 	C$stm8s_clk.c$269$1_0$377 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 269: if (((uint8_t)CLK_Peripheral & (uint8_t)0x10) == 0x00)
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	bcp	a, #0x10
 	jrne	00108$
 	C$stm8s_clk.c$271$2_0$378 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 271: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00102$
 	C$stm8s_clk.c$274$3_0$379 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 274: CLK->PCKENR1 |= (uint8_t)((uint8_t)1 << ((uint8_t)CLK_Peripheral & (uint8_t)0x0F));
 	ld	a, 0x50c7
 	ld	xl, a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	and	a, #0x0f
 	push	a
 	ld	a, #0x01
-	ld	(0x05, sp), a
+	ld	(0x02, sp), a
 	pop	a
 	tnz	a
 	jreq	00127$
 00126$:
-	sll	(0x04, sp)
+	sll	(0x01, sp)
 	dec	a
 	jrne	00126$
 00127$:
 	ld	a, xl
-	or	a, (0x04, sp)
+	or	a, (0x01, sp)
 	ld	0x50c7, a
 	jra	00110$
 00102$:
@@ -342,7 +342,7 @@ _CLK_PeripheralClockConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 279: CLK->PCKENR1 &= (uint8_t)(~(uint8_t)(((uint8_t)1 << ((uint8_t)CLK_Peripheral & (uint8_t)0x0F))));
 	ld	a, 0x50c7
 	ld	(0x01, sp), a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	and	a, #0x0f
 	ld	xl, a
 	ld	a, #0x01
@@ -363,35 +363,35 @@ _CLK_PeripheralClockConfig:
 00108$:
 	C$stm8s_clk.c$284$2_0$381 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 284: if (NewState != DISABLE)
-	tnz	(0x08, sp)
+	tnz	(0x05, sp)
 	jreq	00105$
 	C$stm8s_clk.c$287$3_0$382 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 287: CLK->PCKENR2 |= (uint8_t)((uint8_t)1 << ((uint8_t)CLK_Peripheral & (uint8_t)0x0F));
 	ld	a, 0x50ca
 	ld	xl, a
-	ld	a, (0x07, sp)
+	ld	a, (0x04, sp)
 	and	a, #0x0f
 	push	a
 	ld	a, #0x01
-	ld	(0x04, sp), a
+	ld	(0x02, sp), a
 	pop	a
 	tnz	a
 	jreq	00132$
 00131$:
-	sll	(0x03, sp)
+	sll	(0x01, sp)
 	dec	a
 	jrne	00131$
 00132$:
 	ld	a, xl
-	or	a, (0x03, sp)
+	or	a, (0x01, sp)
 	ld	0x50ca, a
 	jra	00110$
 00105$:
 	C$stm8s_clk.c$292$3_0$383 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 292: CLK->PCKENR2 &= (uint8_t)(~(uint8_t)(((uint8_t)1 << ((uint8_t)CLK_Peripheral & (uint8_t)0x0F))));
 	ld	a, 0x50ca
-	ld	(0x02, sp), a
-	ld	a, (0x07, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x04, sp)
 	and	a, #0x0f
 	ld	xl, a
 	ld	a, #0x01
@@ -406,12 +406,12 @@ _CLK_PeripheralClockConfig:
 00134$:
 	pop	a
 	cpl	a
-	and	a, (0x02, sp)
+	and	a, (0x01, sp)
 	ld	0x50ca, a
 00110$:
 	C$stm8s_clk.c$295$1_0$377 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 295: }
-	addw	sp, #4
+	pop	a
 	C$stm8s_clk.c$295$1_0$377 ==.
 	XG$CLK_PeripheralClockConfig$0$0 ==.
 	ret
@@ -701,10 +701,10 @@ _CLK_ITConfig:
 ;	 function CLK_SYSCLKConfig
 ;	-----------------------------------------
 _CLK_SYSCLKConfig:
-	sub	sp, #2
+	push	a
 	C$stm8s_clk.c$505$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 505: if (((uint8_t)CLK_Prescaler & (uint8_t)0x80) == 0x00) /* Bit7 = 0 means HSI divider */
-	tnz	(0x05, sp)
+	tnz	(0x04, sp)
 	jrmi	00102$
 	C$stm8s_clk.c$507$2_0$414 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 507: CLK->CKDIVR &= (uint8_t)(~CLK_CKDIVR_HSIDIV);
@@ -715,7 +715,7 @@ _CLK_SYSCLKConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 508: CLK->CKDIVR |= (uint8_t)((uint8_t)CLK_Prescaler & (uint8_t)CLK_CKDIVR_HSIDIV);
 	ld	a, 0x50c6
 	ld	(0x01, sp), a
-	ld	a, (0x05, sp)
+	ld	a, (0x04, sp)
 	and	a, #0x18
 	or	a, (0x01, sp)
 	ld	0x50c6, a
@@ -729,15 +729,15 @@ _CLK_SYSCLKConfig:
 	C$stm8s_clk.c$513$2_0$415 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 513: CLK->CKDIVR |= (uint8_t)((uint8_t)CLK_Prescaler & (uint8_t)CLK_CKDIVR_CPUDIV);
 	ld	a, 0x50c6
-	ld	(0x02, sp), a
-	ld	a, (0x05, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x04, sp)
 	and	a, #0x07
-	or	a, (0x02, sp)
+	or	a, (0x01, sp)
 	ld	0x50c6, a
 00104$:
 	C$stm8s_clk.c$515$1_0$413 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 515: }
-	addw	sp, #2
+	pop	a
 	C$stm8s_clk.c$515$1_0$413 ==.
 	XG$CLK_SYSCLKConfig$0$0 ==.
 	ret
@@ -803,14 +803,14 @@ _CLK_GetSYSCLKSource:
 ;	 function CLK_GetClockFreq
 ;	-----------------------------------------
 _CLK_GetClockFreq:
-	sub	sp, #5
+	sub	sp, #4
 	C$stm8s_clk.c$576$1_0$425 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 576: clocksource = (CLK_Source_TypeDef)CLK->CMSR;
 	ld	a, 0x50c3
-	ld	(0x05, sp), a
+	ld	(0x04, sp), a
 	C$stm8s_clk.c$578$1_0$425 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 578: if (clocksource == CLK_SOURCE_HSI)
-	ld	a, (0x05, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0xe1
 	jrne	00105$
 	C$stm8s_clk.c$580$2_0$426 ==.
@@ -826,7 +826,7 @@ _CLK_GetClockFreq:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 582: presc = HSIDivFactor[tmp];
 	clrw	x
 	ld	xl, a
-	addw	x, #_HSIDivFactor
+	addw	x, #(_HSIDivFactor + 0)
 	ld	a, (x)
 	C$stm8s_clk.c$583$2_0$426 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 583: clockfrequency = HSI_VALUE / presc;
@@ -846,7 +846,7 @@ _CLK_GetClockFreq:
 00105$:
 	C$stm8s_clk.c$585$1_0$425 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 585: else if ( clocksource == CLK_SOURCE_LSI)
-	ld	a, (0x05, sp)
+	ld	a, (0x04, sp)
 	cp	a, #0xd2
 	jrne	00102$
 	C$stm8s_clk.c$587$2_0$427 ==.
@@ -867,7 +867,7 @@ _CLK_GetClockFreq:
 	ldw	x, (0x03, sp)
 	C$stm8s_clk.c$595$1_0$425 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_clk.c: 595: }
-	addw	sp, #5
+	addw	sp, #4
 	C$stm8s_clk.c$595$1_0$425 ==.
 	XG$CLK_GetClockFreq$0$0 ==.
 	ret

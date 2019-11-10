@@ -1,0 +1,52 @@
+;!FILE watchdog.asm
+XH3
+H B areas 1C global symbols
+M watchdog
+O -mstm8
+S _IWDG_WriteAccessCmd Ref000000
+S .__.ABS. Def000000
+S _IWDG_ReloadCounter Ref000000
+S _IWDG_SetReload Ref000000
+S _IWDG_Enable Ref000000
+S _IWDG_SetPrescaler Ref000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 0 flags 0 addr 0
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 19 flags 0 addr 0
+S A$watchdog$71 Def000009
+S A$watchdog$81 Def000015
+S A$watchdog$72 Def00000B
+S A$watchdog$63 Def000000
+S _watchdog_init Def000000
+S A$watchdog$73 Def00000E
+S A$watchdog$66 Def000003
+S A$watchdog$76 Def00000F
+S A$watchdog$67 Def000005
+S A$watchdog$86 Def000018
+S A$watchdog$77 Def000011
+S A$watchdog$68 Def000008
+S A$watchdog$78 Def000014
+S XG$watchdog_init$0$0 Def000018
+S C$watchdog.c$20$1_0$346 Def000003
+S C$watchdog.c$21$1_0$346 Def000009
+S G$watchdog_init$0$0 Def000000
+S C$watchdog.c$17$0_0$346 Def000000
+S C$watchdog.c$35$1_0$346 Def00000F
+S C$watchdog.c$36$1_0$346 Def000015
+S C$watchdog.c$37$1_0$346 Def000018
+S C$watchdog.c$19$1_0$346 Def000000
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 CD 00 00 4B 55 CD 00 00 84 4B 00 CD
+R 00 00 00 09 02 04 00 04 02 09 00 00
+T 00 00 0C 00 00 84 4B FF CD 00 00 84 CD
+R 00 00 00 09 02 03 00 05 02 09 00 03
+T 00 00 16 00 00 81
+R 00 00 00 09 02 03 00 02

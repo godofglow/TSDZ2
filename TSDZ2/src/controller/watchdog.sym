@@ -1,0 +1,55 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$watchdog$63                                                  000000 GR
+  9 A$watchdog$66                                                  000003 GR
+  9 A$watchdog$67                                                  000005 GR
+  9 A$watchdog$68                                                  000008 GR
+  9 A$watchdog$71                                                  000009 GR
+  9 A$watchdog$72                                                  00000B GR
+  9 A$watchdog$73                                                  00000E GR
+  9 A$watchdog$76                                                  00000F GR
+  9 A$watchdog$77                                                  000011 GR
+  9 A$watchdog$78                                                  000014 GR
+  9 A$watchdog$81                                                  000015 GR
+  9 A$watchdog$86                                                  000018 GR
+  9 C$watchdog.c$17$0_0$346                                     =  000000 GR
+  9 C$watchdog.c$19$1_0$346                                     =  000000 GR
+  9 C$watchdog.c$20$1_0$346                                     =  000003 GR
+  9 C$watchdog.c$21$1_0$346                                     =  000009 GR
+  9 C$watchdog.c$35$1_0$346                                     =  00000F GR
+  9 C$watchdog.c$36$1_0$346                                     =  000015 GR
+  9 C$watchdog.c$37$1_0$346                                     =  000018 GR
+  9 G$watchdog_init$0$0                                         =  000000 GR
+  9 XG$watchdog_init$0$0                                        =  000018 GR
+    _IWDG_Enable                                                   ****** GX
+    _IWDG_ReloadCounter                                            ****** GX
+    _IWDG_SetPrescaler                                             ****** GX
+    _IWDG_SetReload                                                ****** GX
+    _IWDG_WriteAccessCmd                                           ****** GX
+  9 _watchdog_init                                                 000000 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size     19   flags    0
+   A CABS                                       size      0   flags    8
+

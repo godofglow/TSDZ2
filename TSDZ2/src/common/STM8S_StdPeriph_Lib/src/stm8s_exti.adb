@@ -1,10 +1,10 @@
 M:stm8s_exti
 F:G$EXTI_DeInit$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
-F:G$EXTI_SetExtIntSensitivity$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
+F:G$EXTI_SetExtIntSensitivity$0_0$0({2}DF,SV:S),Z,0,-2,0,0,0
 S:Lstm8s_exti.EXTI_SetExtIntSensitivity$Port$1_0$347({1}SC:U),B,1,2
 S:Lstm8s_exti.EXTI_SetExtIntSensitivity$SensitivityValue$1_0$347({1}SC:U),B,1,3
-S:Lstm8s_exti.EXTI_SetExtIntSensitivity$sloc0$0_1$0({1}SC:U),B,1,-2
-S:Lstm8s_exti.EXTI_SetExtIntSensitivity$sloc1$0_1$0({1}SC:U),B,1,-3
+S:Lstm8s_exti.EXTI_SetExtIntSensitivity$sloc0$0_1$0({1}SC:U),B,1,-1
+S:Lstm8s_exti.EXTI_SetExtIntSensitivity$sloc1$0_1$0({1}SC:U),B,1,-1
 S:Lstm8s_exti.EXTI_SetExtIntSensitivity$sloc2$0_1$0({1}SC:U),B,1,-1
 F:G$EXTI_SetTLISensitivity$0_0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Lstm8s_exti.EXTI_SetTLISensitivity$SensitivityValue$1_0$350({1}SC:U),B,1,2
@@ -12,7 +12,7 @@ F:G$EXTI_GetExtIntSensitivity$0_0$0({2}DF,SC:U),Z,0,0,0,0,0
 S:Lstm8s_exti.EXTI_GetExtIntSensitivity$Port$1_0$352({1}SC:U),B,1,2
 S:Lstm8s_exti.EXTI_GetExtIntSensitivity$value$1_0$353({1}SC:U),R,0,0,[a]
 F:G$EXTI_GetTLISensitivity$0_0$0({2}DF,SC:U),Z,0,0,0,0,0
-S:Lstm8s_exti.EXTI_GetTLISensitivity$value$1_0$0({1}SC:U),R,0,0,[a]
+S:Lstm8s_exti.EXTI_GetTLISensitivity$value$1_0$356({1}SC:U),R,0,0,[a]
 T:Fstm8s_exti$TIM1_struct[({0}S:S$CR1$0_0$0({1}SC:U),Z,0,0)({1}S:S$CR2$0_0$0({1}SC:U),Z,0,0)({2}S:S$SMCR$0_0$0({1}SC:U),Z,0,0)({3}S:S$ETR$0_0$0({1}SC:U),Z,0,0)({4}S:S$IER$0_0$0({1}SC:U),Z,0,0)({5}S:S$SR1$0_0$0({1}SC:U),Z,0,0)({6}S:S$SR2$0_0$0({1}SC:U),Z,0,0)({7}S:S$EGR$0_0$0({1}SC:U),Z,0,0)({8}S:S$CCMR1$0_0$0({1}SC:U),Z,0,0)({9}S:S$CCMR2$0_0$0({1}SC:U),Z,0,0)({10}S:S$CCMR3$0_0$0({1}SC:U),Z,0,0)({11}S:S$CCMR4$0_0$0({1}SC:U),Z,0,0)({12}S:S$CCER1$0_0$0({1}SC:U),Z,0,0)({13}S:S$CCER2$0_0$0({1}SC:U),Z,0,0)({14}S:S$CNTRH$0_0$0({1}SC:U),Z,0,0)({15}S:S$CNTRL$0_0$0({1}SC:U),Z,0,0)({16}S:S$PSCRH$0_0$0({1}SC:U),Z,0,0)({17}S:S$PSCRL$0_0$0({1}SC:U),Z,0,0)({18}S:S$ARRH$0_0$0({1}SC:U),Z,0,0)({19}S:S$ARRL$0_0$0({1}SC:U),Z,0,0)({20}S:S$RCR$0_0$0({1}SC:U),Z,0,0)({21}S:S$CCR1H$0_0$0({1}SC:U),Z,0,0)({22}S:S$CCR1L$0_0$0({1}SC:U),Z,0,0)({23}S:S$CCR2H$0_0$0({1}SC:U),Z,0,0)({24}S:S$CCR2L$0_0$0({1}SC:U),Z,0,0)({25}S:S$CCR3H$0_0$0({1}SC:U),Z,0,0)({26}S:S$CCR3L$0_0$0({1}SC:U),Z,0,0)({27}S:S$CCR4H$0_0$0({1}SC:U),Z,0,0)({28}S:S$CCR4L$0_0$0({1}SC:U),Z,0,0)({29}S:S$BKR$0_0$0({1}SC:U),Z,0,0)({30}S:S$DTR$0_0$0({1}SC:U),Z,0,0)({31}S:S$OISR$0_0$0({1}SC:U),Z,0,0)]
 T:Fstm8s_exti$TIM2_struct[({0}S:S$CR1$0_0$0({1}SC:U),Z,0,0)({1}S:S$IER$0_0$0({1}SC:U),Z,0,0)({2}S:S$SR1$0_0$0({1}SC:U),Z,0,0)({3}S:S$SR2$0_0$0({1}SC:U),Z,0,0)({4}S:S$EGR$0_0$0({1}SC:U),Z,0,0)({5}S:S$CCMR1$0_0$0({1}SC:U),Z,0,0)({6}S:S$CCMR2$0_0$0({1}SC:U),Z,0,0)({7}S:S$CCMR3$0_0$0({1}SC:U),Z,0,0)({8}S:S$CCER1$0_0$0({1}SC:U),Z,0,0)({9}S:S$CCER2$0_0$0({1}SC:U),Z,0,0)({10}S:S$CNTRH$0_0$0({1}SC:U),Z,0,0)({11}S:S$CNTRL$0_0$0({1}SC:U),Z,0,0)({12}S:S$PSCR$0_0$0({1}SC:U),Z,0,0)({13}S:S$ARRH$0_0$0({1}SC:U),Z,0,0)({14}S:S$ARRL$0_0$0({1}SC:U),Z,0,0)({15}S:S$CCR1H$0_0$0({1}SC:U),Z,0,0)({16}S:S$CCR1L$0_0$0({1}SC:U),Z,0,0)({17}S:S$CCR2H$0_0$0({1}SC:U),Z,0,0)({18}S:S$CCR2L$0_0$0({1}SC:U),Z,0,0)({19}S:S$CCR3H$0_0$0({1}SC:U),Z,0,0)({20}S:S$CCR3L$0_0$0({1}SC:U),Z,0,0)]
 T:Fstm8s_exti$BEEP_struct[({0}S:S$CSR$0_0$0({1}SC:U),Z,0,0)]

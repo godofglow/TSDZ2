@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_gpio
 	.optsdcc -mstm8
@@ -92,35 +92,35 @@ _GPIO_DeInit:
 ;	 function GPIO_Init
 ;	-----------------------------------------
 _GPIO_Init:
-	sub	sp, #7
+	sub	sp, #5
 	C$stm8s_gpio.c$74$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 74: GPIOx->CR2 &= (uint8_t)(~(GPIO_Pin));
-	ldw	y, (0x0a, sp)
+	ldw	y, (0x08, sp)
 	ldw	x, y
 	addw	x, #0x0004
-	ldw	(0x06, sp), x
+	ldw	(0x01, sp), x
 	ld	a, (x)
 	push	a
-	ld	a, (0x0d, sp)
+	ld	a, (0x0b, sp)
 	cpl	a
 	ld	(0x04, sp), a
 	pop	a
 	and	a, (0x03, sp)
-	ldw	x, (0x06, sp)
+	ldw	x, (0x01, sp)
 	ld	(x), a
 	C$stm8s_gpio.c$80$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 80: if ((((uint8_t)(GPIO_Mode)) & (uint8_t)0x80) != (uint8_t)0x00) /* Output mode */
-	tnz	(0x0d, sp)
+	tnz	(0x0b, sp)
 	jrpl	00105$
 	C$stm8s_gpio.c$82$2_0$349 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 82: if ((((uint8_t)(GPIO_Mode)) & (uint8_t)0x10) != (uint8_t)0x00) /* High level */
-	ld	a, (0x0d, sp)
+	ld	a, (0x0b, sp)
 	bcp	a, #0x10
 	jreq	00102$
 	C$stm8s_gpio.c$84$3_0$350 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 84: GPIOx->ODR |= (uint8_t)GPIO_Pin;
 	ld	a, (y)
-	or	a, (0x0c, sp)
+	or	a, (0x0a, sp)
 	ld	(y), a
 	jra	00103$
 00102$:
@@ -136,7 +136,7 @@ _GPIO_Init:
 	incw	x
 	incw	x
 	ld	a, (x)
-	or	a, (0x0c, sp)
+	or	a, (0x0a, sp)
 	ld	(x), a
 	jra	00106$
 00105$:
@@ -153,7 +153,7 @@ _GPIO_Init:
 00106$:
 	C$stm8s_gpio.c$103$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 103: if ((((uint8_t)(GPIO_Mode)) & (uint8_t)0x40) != (uint8_t)0x00) /* Pull-Up or Push-Pull */
-	ld	a, (0x0d, sp)
+	ld	a, (0x0b, sp)
 	bcp	a, #0x40
 	jreq	00108$
 	C$stm8s_gpio.c$105$2_0$353 ==.
@@ -161,7 +161,7 @@ _GPIO_Init:
 	ldw	x, y
 	addw	x, #0x0003
 	ld	a, (x)
-	or	a, (0x0c, sp)
+	or	a, (0x0a, sp)
 	ld	(x), a
 	jra	00109$
 00108$:
@@ -169,37 +169,37 @@ _GPIO_Init:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 109: GPIOx->CR1 &= (uint8_t)(~(GPIO_Pin));
 	ldw	x, y
 	addw	x, #0x0003
-	ldw	(0x01, sp), x
+	ldw	(0x04, sp), x
 	ld	a, (x)
 	and	a, (0x03, sp)
-	ldw	x, (0x01, sp)
+	ldw	x, (0x04, sp)
 	ld	(x), a
 00109$:
 	C$stm8s_gpio.c$116$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 116: if ((((uint8_t)(GPIO_Mode)) & (uint8_t)0x20) != (uint8_t)0x00) /* Interrupt or Slow slope */
-	ld	a, (0x0d, sp)
+	ld	a, (0x0b, sp)
 	bcp	a, #0x20
 	jreq	00111$
 	C$stm8s_gpio.c$118$2_0$355 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 118: GPIOx->CR2 |= (uint8_t)GPIO_Pin;
-	ldw	x, (0x06, sp)
+	ldw	x, (0x01, sp)
 	ld	a, (x)
-	or	a, (0x0c, sp)
-	ldw	x, (0x06, sp)
+	or	a, (0x0a, sp)
+	ldw	x, (0x01, sp)
 	ld	(x), a
 	jra	00113$
 00111$:
 	C$stm8s_gpio.c$122$2_0$356 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 122: GPIOx->CR2 &= (uint8_t)(~(GPIO_Pin));
-	ldw	x, (0x06, sp)
+	ldw	x, (0x01, sp)
 	ld	a, (x)
 	and	a, (0x03, sp)
-	ldw	x, (0x06, sp)
+	ldw	x, (0x01, sp)
 	ld	(x), a
 00113$:
 	C$stm8s_gpio.c$124$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.c: 124: }
-	addw	sp, #7
+	addw	sp, #5
 	C$stm8s_gpio.c$124$1_0$348 ==.
 	XG$GPIO_Init$0$0 ==.
 	ret

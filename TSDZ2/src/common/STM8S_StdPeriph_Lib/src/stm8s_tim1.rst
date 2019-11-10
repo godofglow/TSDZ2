@@ -1,6 +1,6 @@
                                       1 ;--------------------------------------------------------
                                       2 ; File Created by SDCC : free open source ANSI-C Compiler
-                                      3 ; Version 3.8.0 #10562 (MINGW64)
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
                                       4 ;--------------------------------------------------------
                                       5 	.module stm8s_tim1
                                       6 	.optsdcc -mstm8
@@ -125,2737 +125,2755 @@
                                     125 ;	-----------------------------------------
                                     126 ;	 function TIM1_DeInit
                                     127 ;	-----------------------------------------
-      008DCB                        128 _TIM1_DeInit:
+      008DDA                        128 _TIM1_DeInit:
                            000000   129 	C$stm8s_tim1.c$60$1_0$350 ==.
                                     130 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 60: TIM1->CR1  = TIM1_CR1_RESET_VALUE;
-      008DCB 35 00 52 50      [ 1]  131 	mov	0x5250+0, #0x00
+      008DDA 35 00 52 50      [ 1]  131 	mov	0x5250+0, #0x00
                            000004   132 	C$stm8s_tim1.c$61$1_0$350 ==.
                                     133 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 61: TIM1->CR2  = TIM1_CR2_RESET_VALUE;
-      008DCF 35 00 52 51      [ 1]  134 	mov	0x5251+0, #0x00
+      008DDE 35 00 52 51      [ 1]  134 	mov	0x5251+0, #0x00
                            000008   135 	C$stm8s_tim1.c$62$1_0$350 ==.
                                     136 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 62: TIM1->SMCR = TIM1_SMCR_RESET_VALUE;
-      008DD3 35 00 52 52      [ 1]  137 	mov	0x5252+0, #0x00
+      008DE2 35 00 52 52      [ 1]  137 	mov	0x5252+0, #0x00
                            00000C   138 	C$stm8s_tim1.c$63$1_0$350 ==.
                                     139 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 63: TIM1->ETR  = TIM1_ETR_RESET_VALUE;
-      008DD7 35 00 52 53      [ 1]  140 	mov	0x5253+0, #0x00
+      008DE6 35 00 52 53      [ 1]  140 	mov	0x5253+0, #0x00
                            000010   141 	C$stm8s_tim1.c$64$1_0$350 ==.
                                     142 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 64: TIM1->IER  = TIM1_IER_RESET_VALUE;
-      008DDB 35 00 52 54      [ 1]  143 	mov	0x5254+0, #0x00
+      008DEA 35 00 52 54      [ 1]  143 	mov	0x5254+0, #0x00
                            000014   144 	C$stm8s_tim1.c$65$1_0$350 ==.
                                     145 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 65: TIM1->SR2  = TIM1_SR2_RESET_VALUE;
-      008DDF 35 00 52 56      [ 1]  146 	mov	0x5256+0, #0x00
+      008DEE 35 00 52 56      [ 1]  146 	mov	0x5256+0, #0x00
                            000018   147 	C$stm8s_tim1.c$67$1_0$350 ==.
                                     148 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 67: TIM1->CCER1 = TIM1_CCER1_RESET_VALUE;
-      008DE3 35 00 52 5C      [ 1]  149 	mov	0x525c+0, #0x00
+      008DF2 35 00 52 5C      [ 1]  149 	mov	0x525c+0, #0x00
                            00001C   150 	C$stm8s_tim1.c$68$1_0$350 ==.
                                     151 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 68: TIM1->CCER2 = TIM1_CCER2_RESET_VALUE;
-      008DE7 35 00 52 5D      [ 1]  152 	mov	0x525d+0, #0x00
+      008DF6 35 00 52 5D      [ 1]  152 	mov	0x525d+0, #0x00
                            000020   153 	C$stm8s_tim1.c$70$1_0$350 ==.
                                     154 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 70: TIM1->CCMR1 = 0x01;
-      008DEB 35 01 52 58      [ 1]  155 	mov	0x5258+0, #0x01
+      008DFA 35 01 52 58      [ 1]  155 	mov	0x5258+0, #0x01
                            000024   156 	C$stm8s_tim1.c$71$1_0$350 ==.
                                     157 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 71: TIM1->CCMR2 = 0x01;
-      008DEF 35 01 52 59      [ 1]  158 	mov	0x5259+0, #0x01
+      008DFE 35 01 52 59      [ 1]  158 	mov	0x5259+0, #0x01
                            000028   159 	C$stm8s_tim1.c$72$1_0$350 ==.
                                     160 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 72: TIM1->CCMR3 = 0x01;
-      008DF3 35 01 52 5A      [ 1]  161 	mov	0x525a+0, #0x01
+      008E02 35 01 52 5A      [ 1]  161 	mov	0x525a+0, #0x01
                            00002C   162 	C$stm8s_tim1.c$73$1_0$350 ==.
                                     163 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 73: TIM1->CCMR4 = 0x01;
-      008DF7 35 01 52 5B      [ 1]  164 	mov	0x525b+0, #0x01
+      008E06 35 01 52 5B      [ 1]  164 	mov	0x525b+0, #0x01
                            000030   165 	C$stm8s_tim1.c$75$1_0$350 ==.
                                     166 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 75: TIM1->CCER1 = TIM1_CCER1_RESET_VALUE;
-      008DFB 35 00 52 5C      [ 1]  167 	mov	0x525c+0, #0x00
+      008E0A 35 00 52 5C      [ 1]  167 	mov	0x525c+0, #0x00
                            000034   168 	C$stm8s_tim1.c$76$1_0$350 ==.
                                     169 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 76: TIM1->CCER2 = TIM1_CCER2_RESET_VALUE;
-      008DFF 35 00 52 5D      [ 1]  170 	mov	0x525d+0, #0x00
+      008E0E 35 00 52 5D      [ 1]  170 	mov	0x525d+0, #0x00
                            000038   171 	C$stm8s_tim1.c$77$1_0$350 ==.
                                     172 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 77: TIM1->CCMR1 = TIM1_CCMR1_RESET_VALUE;
-      008E03 35 00 52 58      [ 1]  173 	mov	0x5258+0, #0x00
+      008E12 35 00 52 58      [ 1]  173 	mov	0x5258+0, #0x00
                            00003C   174 	C$stm8s_tim1.c$78$1_0$350 ==.
                                     175 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 78: TIM1->CCMR2 = TIM1_CCMR2_RESET_VALUE;
-      008E07 35 00 52 59      [ 1]  176 	mov	0x5259+0, #0x00
+      008E16 35 00 52 59      [ 1]  176 	mov	0x5259+0, #0x00
                            000040   177 	C$stm8s_tim1.c$79$1_0$350 ==.
                                     178 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 79: TIM1->CCMR3 = TIM1_CCMR3_RESET_VALUE;
-      008E0B 35 00 52 5A      [ 1]  179 	mov	0x525a+0, #0x00
+      008E1A 35 00 52 5A      [ 1]  179 	mov	0x525a+0, #0x00
                            000044   180 	C$stm8s_tim1.c$80$1_0$350 ==.
                                     181 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 80: TIM1->CCMR4 = TIM1_CCMR4_RESET_VALUE;
-      008E0F 35 00 52 5B      [ 1]  182 	mov	0x525b+0, #0x00
+      008E1E 35 00 52 5B      [ 1]  182 	mov	0x525b+0, #0x00
                            000048   183 	C$stm8s_tim1.c$81$1_0$350 ==.
                                     184 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 81: TIM1->CNTRH = TIM1_CNTRH_RESET_VALUE;
-      008E13 35 00 52 5E      [ 1]  185 	mov	0x525e+0, #0x00
+      008E22 35 00 52 5E      [ 1]  185 	mov	0x525e+0, #0x00
                            00004C   186 	C$stm8s_tim1.c$82$1_0$350 ==.
                                     187 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 82: TIM1->CNTRL = TIM1_CNTRL_RESET_VALUE;
-      008E17 35 00 52 5F      [ 1]  188 	mov	0x525f+0, #0x00
+      008E26 35 00 52 5F      [ 1]  188 	mov	0x525f+0, #0x00
                            000050   189 	C$stm8s_tim1.c$83$1_0$350 ==.
                                     190 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 83: TIM1->PSCRH = TIM1_PSCRH_RESET_VALUE;
-      008E1B 35 00 52 60      [ 1]  191 	mov	0x5260+0, #0x00
+      008E2A 35 00 52 60      [ 1]  191 	mov	0x5260+0, #0x00
                            000054   192 	C$stm8s_tim1.c$84$1_0$350 ==.
                                     193 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 84: TIM1->PSCRL = TIM1_PSCRL_RESET_VALUE;
-      008E1F 35 00 52 61      [ 1]  194 	mov	0x5261+0, #0x00
+      008E2E 35 00 52 61      [ 1]  194 	mov	0x5261+0, #0x00
                            000058   195 	C$stm8s_tim1.c$85$1_0$350 ==.
                                     196 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 85: TIM1->ARRH  = TIM1_ARRH_RESET_VALUE;
-      008E23 35 FF 52 62      [ 1]  197 	mov	0x5262+0, #0xff
+      008E32 35 FF 52 62      [ 1]  197 	mov	0x5262+0, #0xff
                            00005C   198 	C$stm8s_tim1.c$86$1_0$350 ==.
                                     199 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 86: TIM1->ARRL  = TIM1_ARRL_RESET_VALUE;
-      008E27 35 FF 52 63      [ 1]  200 	mov	0x5263+0, #0xff
+      008E36 35 FF 52 63      [ 1]  200 	mov	0x5263+0, #0xff
                            000060   201 	C$stm8s_tim1.c$87$1_0$350 ==.
                                     202 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 87: TIM1->CCR1H = TIM1_CCR1H_RESET_VALUE;
-      008E2B 35 00 52 65      [ 1]  203 	mov	0x5265+0, #0x00
+      008E3A 35 00 52 65      [ 1]  203 	mov	0x5265+0, #0x00
                            000064   204 	C$stm8s_tim1.c$88$1_0$350 ==.
                                     205 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 88: TIM1->CCR1L = TIM1_CCR1L_RESET_VALUE;
-      008E2F 35 00 52 66      [ 1]  206 	mov	0x5266+0, #0x00
+      008E3E 35 00 52 66      [ 1]  206 	mov	0x5266+0, #0x00
                            000068   207 	C$stm8s_tim1.c$89$1_0$350 ==.
                                     208 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 89: TIM1->CCR2H = TIM1_CCR2H_RESET_VALUE;
-      008E33 35 00 52 67      [ 1]  209 	mov	0x5267+0, #0x00
+      008E42 35 00 52 67      [ 1]  209 	mov	0x5267+0, #0x00
                            00006C   210 	C$stm8s_tim1.c$90$1_0$350 ==.
                                     211 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 90: TIM1->CCR2L = TIM1_CCR2L_RESET_VALUE;
-      008E37 35 00 52 68      [ 1]  212 	mov	0x5268+0, #0x00
+      008E46 35 00 52 68      [ 1]  212 	mov	0x5268+0, #0x00
                            000070   213 	C$stm8s_tim1.c$91$1_0$350 ==.
                                     214 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 91: TIM1->CCR3H = TIM1_CCR3H_RESET_VALUE;
-      008E3B 35 00 52 69      [ 1]  215 	mov	0x5269+0, #0x00
+      008E4A 35 00 52 69      [ 1]  215 	mov	0x5269+0, #0x00
                            000074   216 	C$stm8s_tim1.c$92$1_0$350 ==.
                                     217 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 92: TIM1->CCR3L = TIM1_CCR3L_RESET_VALUE;
-      008E3F 35 00 52 6A      [ 1]  218 	mov	0x526a+0, #0x00
+      008E4E 35 00 52 6A      [ 1]  218 	mov	0x526a+0, #0x00
                            000078   219 	C$stm8s_tim1.c$93$1_0$350 ==.
                                     220 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 93: TIM1->CCR4H = TIM1_CCR4H_RESET_VALUE;
-      008E43 35 00 52 6B      [ 1]  221 	mov	0x526b+0, #0x00
+      008E52 35 00 52 6B      [ 1]  221 	mov	0x526b+0, #0x00
                            00007C   222 	C$stm8s_tim1.c$94$1_0$350 ==.
                                     223 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 94: TIM1->CCR4L = TIM1_CCR4L_RESET_VALUE;
-      008E47 35 00 52 6C      [ 1]  224 	mov	0x526c+0, #0x00
+      008E56 35 00 52 6C      [ 1]  224 	mov	0x526c+0, #0x00
                            000080   225 	C$stm8s_tim1.c$95$1_0$350 ==.
                                     226 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 95: TIM1->OISR  = TIM1_OISR_RESET_VALUE;
-      008E4B 35 00 52 6F      [ 1]  227 	mov	0x526f+0, #0x00
+      008E5A 35 00 52 6F      [ 1]  227 	mov	0x526f+0, #0x00
                            000084   228 	C$stm8s_tim1.c$96$1_0$350 ==.
                                     229 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 96: TIM1->EGR   = 0x01; /* TIM1_EGR_UG */
-      008E4F 35 01 52 57      [ 1]  230 	mov	0x5257+0, #0x01
+      008E5E 35 01 52 57      [ 1]  230 	mov	0x5257+0, #0x01
                            000088   231 	C$stm8s_tim1.c$97$1_0$350 ==.
                                     232 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 97: TIM1->DTR   = TIM1_DTR_RESET_VALUE;
-      008E53 35 00 52 6E      [ 1]  233 	mov	0x526e+0, #0x00
+      008E62 35 00 52 6E      [ 1]  233 	mov	0x526e+0, #0x00
                            00008C   234 	C$stm8s_tim1.c$98$1_0$350 ==.
                                     235 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 98: TIM1->BKR   = TIM1_BKR_RESET_VALUE;
-      008E57 35 00 52 6D      [ 1]  236 	mov	0x526d+0, #0x00
+      008E66 35 00 52 6D      [ 1]  236 	mov	0x526d+0, #0x00
                            000090   237 	C$stm8s_tim1.c$99$1_0$350 ==.
                                     238 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 99: TIM1->RCR   = TIM1_RCR_RESET_VALUE;
-      008E5B 35 00 52 64      [ 1]  239 	mov	0x5264+0, #0x00
+      008E6A 35 00 52 64      [ 1]  239 	mov	0x5264+0, #0x00
                            000094   240 	C$stm8s_tim1.c$100$1_0$350 ==.
                                     241 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 100: TIM1->SR1   = TIM1_SR1_RESET_VALUE;
-      008E5F 35 00 52 55      [ 1]  242 	mov	0x5255+0, #0x00
+      008E6E 35 00 52 55      [ 1]  242 	mov	0x5255+0, #0x00
                            000098   243 	C$stm8s_tim1.c$101$1_0$350 ==.
                                     244 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 101: }
                            000098   245 	C$stm8s_tim1.c$101$1_0$350 ==.
                            000098   246 	XG$TIM1_DeInit$0$0 ==.
-      008E63 81               [ 4]  247 	ret
+      008E72 81               [ 4]  247 	ret
                            000099   248 	G$TIM1_TimeBaseInit$0$0 ==.
                            000099   249 	C$stm8s_tim1.c$111$1_0$352 ==.
                                     250 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 111: void TIM1_TimeBaseInit(uint16_t TIM1_Prescaler,
                                     251 ;	-----------------------------------------
                                     252 ;	 function TIM1_TimeBaseInit
                                     253 ;	-----------------------------------------
-      008E64                        254 _TIM1_TimeBaseInit:
-      008E64 52 04            [ 2]  255 	sub	sp, #4
+      008E73                        254 _TIM1_TimeBaseInit:
+      008E73 52 02            [ 2]  255 	sub	sp, #2
                            00009B   256 	C$stm8s_tim1.c$120$1_0$352 ==.
                                     257 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 120: TIM1->ARRH = (uint8_t)(TIM1_Period >> 8);
-      008E66 7B 0A            [ 1]  258 	ld	a, (0x0a, sp)
-      008E68 0F 01            [ 1]  259 	clr	(0x01, sp)
-      008E6A C7 52 62         [ 1]  260 	ld	0x5262, a
-                           0000A2   261 	C$stm8s_tim1.c$121$1_0$352 ==.
-                                    262 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 121: TIM1->ARRL = (uint8_t)(TIM1_Period);
-      008E6D 7B 0B            [ 1]  263 	ld	a, (0x0b, sp)
-      008E6F C7 52 63         [ 1]  264 	ld	0x5263, a
-                           0000A7   265 	C$stm8s_tim1.c$124$1_0$352 ==.
-                                    266 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 124: TIM1->PSCRH = (uint8_t)(TIM1_Prescaler >> 8);
-      008E72 7B 07            [ 1]  267 	ld	a, (0x07, sp)
-      008E74 0F 03            [ 1]  268 	clr	(0x03, sp)
-      008E76 C7 52 60         [ 1]  269 	ld	0x5260, a
-                           0000AE   270 	C$stm8s_tim1.c$125$1_0$352 ==.
-                                    271 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 125: TIM1->PSCRL = (uint8_t)(TIM1_Prescaler);
-      008E79 7B 08            [ 1]  272 	ld	a, (0x08, sp)
-      008E7B C7 52 61         [ 1]  273 	ld	0x5261, a
-                           0000B3   274 	C$stm8s_tim1.c$128$1_0$352 ==.
-                                    275 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 128: TIM1->CR1 = (uint8_t)((uint8_t)(TIM1->CR1 & (uint8_t)(~(TIM1_CR1_CMS | TIM1_CR1_DIR)))
-      008E7E C6 52 50         [ 1]  276 	ld	a, 0x5250
-      008E81 A4 8F            [ 1]  277 	and	a, #0x8f
-                           0000B8   278 	C$stm8s_tim1.c$129$1_0$352 ==.
-                                    279 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 129: | (uint8_t)(TIM1_CounterMode));
-      008E83 1A 09            [ 1]  280 	or	a, (0x09, sp)
-      008E85 C7 52 50         [ 1]  281 	ld	0x5250, a
-                           0000BD   282 	C$stm8s_tim1.c$132$1_0$352 ==.
-                                    283 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 132: TIM1->RCR = TIM1_RepetitionCounter;
-      008E88 AE 52 64         [ 2]  284 	ldw	x, #0x5264
-      008E8B 7B 0C            [ 1]  285 	ld	a, (0x0c, sp)
-      008E8D F7               [ 1]  286 	ld	(x), a
-                           0000C3   287 	C$stm8s_tim1.c$133$1_0$352 ==.
-                                    288 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 133: }
-      008E8E 5B 04            [ 2]  289 	addw	sp, #4
-                           0000C5   290 	C$stm8s_tim1.c$133$1_0$352 ==.
-                           0000C5   291 	XG$TIM1_TimeBaseInit$0$0 ==.
-      008E90 81               [ 4]  292 	ret
-                           0000C6   293 	G$TIM1_OC1Init$0$0 ==.
-                           0000C6   294 	C$stm8s_tim1.c$154$1_0$354 ==.
-                                    295 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 154: void TIM1_OC1Init(TIM1_OCMode_TypeDef TIM1_OCMode,
-                                    296 ;	-----------------------------------------
-                                    297 ;	 function TIM1_OC1Init
-                                    298 ;	-----------------------------------------
-      008E91                        299 _TIM1_OC1Init:
-      008E91 52 06            [ 2]  300 	sub	sp, #6
-                           0000C8   301 	C$stm8s_tim1.c$174$1_0$354 ==.
-                                    302 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 174: TIM1->CCER1 &= (uint8_t)(~( TIM1_CCER1_CC1E | TIM1_CCER1_CC1NE 
-      008E93 C6 52 5C         [ 1]  303 	ld	a, 0x525c
-      008E96 A4 F0            [ 1]  304 	and	a, #0xf0
-      008E98 C7 52 5C         [ 1]  305 	ld	0x525c, a
-                           0000D0   306 	C$stm8s_tim1.c$178$1_0$354 ==.
-                                    307 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 178: TIM1->CCER1 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER1_CC1E)
-      008E9B C6 52 5C         [ 1]  308 	ld	a, 0x525c
-      008E9E 6B 02            [ 1]  309 	ld	(0x02, sp), a
-      008EA0 7B 0A            [ 1]  310 	ld	a, (0x0a, sp)
-      008EA2 A4 01            [ 1]  311 	and	a, #0x01
-      008EA4 6B 01            [ 1]  312 	ld	(0x01, sp), a
-                           0000DB   313 	C$stm8s_tim1.c$179$1_0$354 ==.
-                                    314 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 179: | (uint8_t)(TIM1_OutputNState & TIM1_CCER1_CC1NE))
-      008EA6 7B 0B            [ 1]  315 	ld	a, (0x0b, sp)
-      008EA8 A4 04            [ 1]  316 	and	a, #0x04
-      008EAA 1A 01            [ 1]  317 	or	a, (0x01, sp)
-      008EAC 6B 05            [ 1]  318 	ld	(0x05, sp), a
-                           0000E3   319 	C$stm8s_tim1.c$180$1_0$354 ==.
-                                    320 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 180: | (uint8_t)( (uint8_t)(TIM1_OCPolarity  & TIM1_CCER1_CC1P)
-      008EAE 7B 0E            [ 1]  321 	ld	a, (0x0e, sp)
-      008EB0 A4 02            [ 1]  322 	and	a, #0x02
-      008EB2 6B 06            [ 1]  323 	ld	(0x06, sp), a
-                           0000E9   324 	C$stm8s_tim1.c$181$1_0$354 ==.
-                                    325 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 181: | (uint8_t)(TIM1_OCNPolarity & TIM1_CCER1_CC1NP)));
-      008EB4 7B 0F            [ 1]  326 	ld	a, (0x0f, sp)
-      008EB6 A4 08            [ 1]  327 	and	a, #0x08
-      008EB8 1A 06            [ 1]  328 	or	a, (0x06, sp)
-      008EBA 1A 05            [ 1]  329 	or	a, (0x05, sp)
-      008EBC 1A 02            [ 1]  330 	or	a, (0x02, sp)
-      008EBE C7 52 5C         [ 1]  331 	ld	0x525c, a
-                           0000F6   332 	C$stm8s_tim1.c$184$1_0$354 ==.
-                                    333 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 184: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM)) | 
-      008EC1 C6 52 58         [ 1]  334 	ld	a, 0x5258
-      008EC4 A4 8F            [ 1]  335 	and	a, #0x8f
-                           0000FB   336 	C$stm8s_tim1.c$185$1_0$354 ==.
-                                    337 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 185: (uint8_t)TIM1_OCMode);
-      008EC6 1A 09            [ 1]  338 	or	a, (0x09, sp)
-      008EC8 C7 52 58         [ 1]  339 	ld	0x5258, a
-                           000100   340 	C$stm8s_tim1.c$188$1_0$354 ==.
-                                    341 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 188: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS1 | TIM1_OISR_OIS1N));
-      008ECB C6 52 6F         [ 1]  342 	ld	a, 0x526f
-      008ECE A4 FC            [ 1]  343 	and	a, #0xfc
-      008ED0 C7 52 6F         [ 1]  344 	ld	0x526f, a
-                           000108   345 	C$stm8s_tim1.c$190$1_0$354 ==.
-                                    346 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 190: TIM1->OISR |= (uint8_t)((uint8_t)( TIM1_OCIdleState & TIM1_OISR_OIS1 ) | 
-      008ED3 C6 52 6F         [ 1]  347 	ld	a, 0x526f
-      008ED6 6B 04            [ 1]  348 	ld	(0x04, sp), a
-      008ED8 7B 10            [ 1]  349 	ld	a, (0x10, sp)
-      008EDA A4 01            [ 1]  350 	and	a, #0x01
-      008EDC 6B 03            [ 1]  351 	ld	(0x03, sp), a
-                           000113   352 	C$stm8s_tim1.c$191$1_0$354 ==.
-                                    353 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 191: (uint8_t)( TIM1_OCNIdleState & TIM1_OISR_OIS1N ));
-      008EDE 7B 11            [ 1]  354 	ld	a, (0x11, sp)
-      008EE0 A4 02            [ 1]  355 	and	a, #0x02
-      008EE2 1A 03            [ 1]  356 	or	a, (0x03, sp)
-      008EE4 1A 04            [ 1]  357 	or	a, (0x04, sp)
-      008EE6 C7 52 6F         [ 1]  358 	ld	0x526f, a
-                           00011E   359 	C$stm8s_tim1.c$194$1_0$354 ==.
-                                    360 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 194: TIM1->CCR1H = (uint8_t)(TIM1_Pulse >> 8);
-      008EE9 7B 0C            [ 1]  361 	ld	a, (0x0c, sp)
-      008EEB C7 52 65         [ 1]  362 	ld	0x5265, a
-                           000123   363 	C$stm8s_tim1.c$195$1_0$354 ==.
-                                    364 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 195: TIM1->CCR1L = (uint8_t)(TIM1_Pulse);
-      008EEE 7B 0D            [ 1]  365 	ld	a, (0x0d, sp)
-      008EF0 C7 52 66         [ 1]  366 	ld	0x5266, a
-                           000128   367 	C$stm8s_tim1.c$196$1_0$354 ==.
-                                    368 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 196: }
-      008EF3 5B 06            [ 2]  369 	addw	sp, #6
-                           00012A   370 	C$stm8s_tim1.c$196$1_0$354 ==.
-                           00012A   371 	XG$TIM1_OC1Init$0$0 ==.
-      008EF5 81               [ 4]  372 	ret
-                           00012B   373 	G$TIM1_OC2Init$0$0 ==.
-                           00012B   374 	C$stm8s_tim1.c$217$1_0$356 ==.
-                                    375 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 217: void TIM1_OC2Init(TIM1_OCMode_TypeDef TIM1_OCMode,
-                                    376 ;	-----------------------------------------
-                                    377 ;	 function TIM1_OC2Init
-                                    378 ;	-----------------------------------------
-      008EF6                        379 _TIM1_OC2Init:
-      008EF6 52 06            [ 2]  380 	sub	sp, #6
-                           00012D   381 	C$stm8s_tim1.c$237$1_0$356 ==.
-                                    382 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 237: TIM1->CCER1 &= (uint8_t)(~( TIM1_CCER1_CC2E | TIM1_CCER1_CC2NE | 
-      008EF8 C6 52 5C         [ 1]  383 	ld	a, 0x525c
-      008EFB A4 0F            [ 1]  384 	and	a, #0x0f
-      008EFD C7 52 5C         [ 1]  385 	ld	0x525c, a
-                           000135   386 	C$stm8s_tim1.c$242$1_0$356 ==.
-                                    387 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 242: TIM1->CCER1 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER1_CC2E  ) | 
-      008F00 C6 52 5C         [ 1]  388 	ld	a, 0x525c
-      008F03 6B 06            [ 1]  389 	ld	(0x06, sp), a
-      008F05 7B 0A            [ 1]  390 	ld	a, (0x0a, sp)
-      008F07 A4 10            [ 1]  391 	and	a, #0x10
-      008F09 6B 05            [ 1]  392 	ld	(0x05, sp), a
-                           000140   393 	C$stm8s_tim1.c$243$1_0$356 ==.
-                                    394 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 243: (uint8_t)(TIM1_OutputNState & TIM1_CCER1_CC2NE )) | 
-      008F0B 7B 0B            [ 1]  395 	ld	a, (0x0b, sp)
-      008F0D A4 40            [ 1]  396 	and	a, #0x40
-      008F0F 1A 05            [ 1]  397 	or	a, (0x05, sp)
-      008F11 6B 04            [ 1]  398 	ld	(0x04, sp), a
-                           000148   399 	C$stm8s_tim1.c$244$1_0$356 ==.
-                                    400 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 244: (uint8_t)((uint8_t)(TIM1_OCPolarity  & TIM1_CCER1_CC2P  ) | 
-      008F13 7B 0E            [ 1]  401 	ld	a, (0x0e, sp)
-      008F15 A4 20            [ 1]  402 	and	a, #0x20
-      008F17 6B 03            [ 1]  403 	ld	(0x03, sp), a
-                           00014E   404 	C$stm8s_tim1.c$245$1_0$356 ==.
-                                    405 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 245: (uint8_t)(TIM1_OCNPolarity & TIM1_CCER1_CC2NP )));
-      008F19 7B 0F            [ 1]  406 	ld	a, (0x0f, sp)
-      008F1B A4 80            [ 1]  407 	and	a, #0x80
-      008F1D 1A 03            [ 1]  408 	or	a, (0x03, sp)
-      008F1F 1A 04            [ 1]  409 	or	a, (0x04, sp)
-      008F21 1A 06            [ 1]  410 	or	a, (0x06, sp)
-      008F23 C7 52 5C         [ 1]  411 	ld	0x525c, a
-                           00015B   412 	C$stm8s_tim1.c$248$1_0$356 ==.
-                                    413 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 248: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM)) | 
-      008F26 C6 52 59         [ 1]  414 	ld	a, 0x5259
-      008F29 A4 8F            [ 1]  415 	and	a, #0x8f
-                           000160   416 	C$stm8s_tim1.c$249$1_0$356 ==.
-                                    417 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 249: (uint8_t)TIM1_OCMode);
-      008F2B 1A 09            [ 1]  418 	or	a, (0x09, sp)
-      008F2D C7 52 59         [ 1]  419 	ld	0x5259, a
-                           000165   420 	C$stm8s_tim1.c$252$1_0$356 ==.
-                                    421 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 252: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS2 | TIM1_OISR_OIS2N));
-      008F30 C6 52 6F         [ 1]  422 	ld	a, 0x526f
-      008F33 A4 F3            [ 1]  423 	and	a, #0xf3
-      008F35 C7 52 6F         [ 1]  424 	ld	0x526f, a
-                           00016D   425 	C$stm8s_tim1.c$254$1_0$356 ==.
-                                    426 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 254: TIM1->OISR |= (uint8_t)((uint8_t)(TIM1_OISR_OIS2 & TIM1_OCIdleState) | 
-      008F38 C6 52 6F         [ 1]  427 	ld	a, 0x526f
-      008F3B 6B 01            [ 1]  428 	ld	(0x01, sp), a
-      008F3D 7B 10            [ 1]  429 	ld	a, (0x10, sp)
-      008F3F A4 04            [ 1]  430 	and	a, #0x04
-      008F41 6B 02            [ 1]  431 	ld	(0x02, sp), a
-                           000178   432 	C$stm8s_tim1.c$255$1_0$356 ==.
-                                    433 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 255: (uint8_t)(TIM1_OISR_OIS2N & TIM1_OCNIdleState));
-      008F43 7B 11            [ 1]  434 	ld	a, (0x11, sp)
-      008F45 A4 08            [ 1]  435 	and	a, #0x08
-      008F47 1A 02            [ 1]  436 	or	a, (0x02, sp)
-      008F49 1A 01            [ 1]  437 	or	a, (0x01, sp)
-      008F4B C7 52 6F         [ 1]  438 	ld	0x526f, a
-                           000183   439 	C$stm8s_tim1.c$258$1_0$356 ==.
-                                    440 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 258: TIM1->CCR2H = (uint8_t)(TIM1_Pulse >> 8);
-      008F4E 7B 0C            [ 1]  441 	ld	a, (0x0c, sp)
-      008F50 C7 52 67         [ 1]  442 	ld	0x5267, a
-                           000188   443 	C$stm8s_tim1.c$259$1_0$356 ==.
-                                    444 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 259: TIM1->CCR2L = (uint8_t)(TIM1_Pulse);
-      008F53 7B 0D            [ 1]  445 	ld	a, (0x0d, sp)
-      008F55 C7 52 68         [ 1]  446 	ld	0x5268, a
-                           00018D   447 	C$stm8s_tim1.c$260$1_0$356 ==.
-                                    448 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 260: }
-      008F58 5B 06            [ 2]  449 	addw	sp, #6
-                           00018F   450 	C$stm8s_tim1.c$260$1_0$356 ==.
-                           00018F   451 	XG$TIM1_OC2Init$0$0 ==.
-      008F5A 81               [ 4]  452 	ret
-                           000190   453 	G$TIM1_OC3Init$0$0 ==.
-                           000190   454 	C$stm8s_tim1.c$281$1_0$358 ==.
-                                    455 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 281: void TIM1_OC3Init(TIM1_OCMode_TypeDef TIM1_OCMode,
-                                    456 ;	-----------------------------------------
-                                    457 ;	 function TIM1_OC3Init
-                                    458 ;	-----------------------------------------
-      008F5B                        459 _TIM1_OC3Init:
-      008F5B 52 06            [ 2]  460 	sub	sp, #6
-                           000192   461 	C$stm8s_tim1.c$301$1_0$358 ==.
-                                    462 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 301: TIM1->CCER2 &= (uint8_t)(~( TIM1_CCER2_CC3E | TIM1_CCER2_CC3NE | 
-      008F5D C6 52 5D         [ 1]  463 	ld	a, 0x525d
-      008F60 A4 F0            [ 1]  464 	and	a, #0xf0
-      008F62 C7 52 5D         [ 1]  465 	ld	0x525d, a
-                           00019A   466 	C$stm8s_tim1.c$305$1_0$358 ==.
-                                    467 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 305: TIM1->CCER2 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState  & TIM1_CCER2_CC3E   ) |
-      008F65 C6 52 5D         [ 1]  468 	ld	a, 0x525d
-      008F68 6B 02            [ 1]  469 	ld	(0x02, sp), a
-      008F6A 7B 0A            [ 1]  470 	ld	a, (0x0a, sp)
-      008F6C A4 01            [ 1]  471 	and	a, #0x01
-      008F6E 6B 06            [ 1]  472 	ld	(0x06, sp), a
-                           0001A5   473 	C$stm8s_tim1.c$306$1_0$358 ==.
-                                    474 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 306: (uint8_t)(TIM1_OutputNState & TIM1_CCER2_CC3NE  )) | 
-      008F70 7B 0B            [ 1]  475 	ld	a, (0x0b, sp)
-      008F72 A4 04            [ 1]  476 	and	a, #0x04
-      008F74 1A 06            [ 1]  477 	or	a, (0x06, sp)
-      008F76 6B 04            [ 1]  478 	ld	(0x04, sp), a
-                           0001AD   479 	C$stm8s_tim1.c$307$1_0$358 ==.
-                                    480 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 307: (uint8_t)((uint8_t)(TIM1_OCPolarity   & TIM1_CCER2_CC3P   ) | 
-      008F78 7B 0E            [ 1]  481 	ld	a, (0x0e, sp)
-      008F7A A4 02            [ 1]  482 	and	a, #0x02
-      008F7C 6B 03            [ 1]  483 	ld	(0x03, sp), a
-                           0001B3   484 	C$stm8s_tim1.c$308$1_0$358 ==.
-                                    485 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 308: (uint8_t)(TIM1_OCNPolarity  & TIM1_CCER2_CC3NP  )));
-      008F7E 7B 0F            [ 1]  486 	ld	a, (0x0f, sp)
-      008F80 A4 08            [ 1]  487 	and	a, #0x08
-      008F82 1A 03            [ 1]  488 	or	a, (0x03, sp)
-      008F84 1A 04            [ 1]  489 	or	a, (0x04, sp)
-      008F86 1A 02            [ 1]  490 	or	a, (0x02, sp)
-      008F88 C7 52 5D         [ 1]  491 	ld	0x525d, a
-                           0001C0   492 	C$stm8s_tim1.c$311$1_0$358 ==.
-                                    493 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 311: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM)) | 
-      008F8B C6 52 5A         [ 1]  494 	ld	a, 0x525a
-      008F8E A4 8F            [ 1]  495 	and	a, #0x8f
-                           0001C5   496 	C$stm8s_tim1.c$312$1_0$358 ==.
-                                    497 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 312: (uint8_t)TIM1_OCMode);
-      008F90 1A 09            [ 1]  498 	or	a, (0x09, sp)
-      008F92 C7 52 5A         [ 1]  499 	ld	0x525a, a
-                           0001CA   500 	C$stm8s_tim1.c$315$1_0$358 ==.
-                                    501 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 315: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS3 | TIM1_OISR_OIS3N));
-      008F95 C6 52 6F         [ 1]  502 	ld	a, 0x526f
-      008F98 A4 CF            [ 1]  503 	and	a, #0xcf
-      008F9A C7 52 6F         [ 1]  504 	ld	0x526f, a
-                           0001D2   505 	C$stm8s_tim1.c$317$1_0$358 ==.
-                                    506 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 317: TIM1->OISR |= (uint8_t)((uint8_t)(TIM1_OISR_OIS3 & TIM1_OCIdleState) | 
-      008F9D C6 52 6F         [ 1]  507 	ld	a, 0x526f
-      008FA0 6B 05            [ 1]  508 	ld	(0x05, sp), a
-      008FA2 7B 10            [ 1]  509 	ld	a, (0x10, sp)
-      008FA4 A4 10            [ 1]  510 	and	a, #0x10
-      008FA6 6B 01            [ 1]  511 	ld	(0x01, sp), a
-                           0001DD   512 	C$stm8s_tim1.c$318$1_0$358 ==.
-                                    513 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 318: (uint8_t)(TIM1_OISR_OIS3N & TIM1_OCNIdleState));
-      008FA8 7B 11            [ 1]  514 	ld	a, (0x11, sp)
-      008FAA A4 20            [ 1]  515 	and	a, #0x20
-      008FAC 1A 01            [ 1]  516 	or	a, (0x01, sp)
-      008FAE 1A 05            [ 1]  517 	or	a, (0x05, sp)
-      008FB0 C7 52 6F         [ 1]  518 	ld	0x526f, a
-                           0001E8   519 	C$stm8s_tim1.c$321$1_0$358 ==.
-                                    520 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 321: TIM1->CCR3H = (uint8_t)(TIM1_Pulse >> 8);
-      008FB3 7B 0C            [ 1]  521 	ld	a, (0x0c, sp)
-      008FB5 C7 52 69         [ 1]  522 	ld	0x5269, a
-                           0001ED   523 	C$stm8s_tim1.c$322$1_0$358 ==.
-                                    524 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 322: TIM1->CCR3L = (uint8_t)(TIM1_Pulse);
-      008FB8 7B 0D            [ 1]  525 	ld	a, (0x0d, sp)
-      008FBA C7 52 6A         [ 1]  526 	ld	0x526a, a
-                           0001F2   527 	C$stm8s_tim1.c$323$1_0$358 ==.
-                                    528 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 323: }
-      008FBD 5B 06            [ 2]  529 	addw	sp, #6
-                           0001F4   530 	C$stm8s_tim1.c$323$1_0$358 ==.
-                           0001F4   531 	XG$TIM1_OC3Init$0$0 ==.
-      008FBF 81               [ 4]  532 	ret
-                           0001F5   533 	G$TIM1_OC4Init$0$0 ==.
-                           0001F5   534 	C$stm8s_tim1.c$338$1_0$360 ==.
-                                    535 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 338: void TIM1_OC4Init(TIM1_OCMode_TypeDef TIM1_OCMode,
-                                    536 ;	-----------------------------------------
-                                    537 ;	 function TIM1_OC4Init
-                                    538 ;	-----------------------------------------
-      008FC0                        539 _TIM1_OC4Init:
-      008FC0 52 02            [ 2]  540 	sub	sp, #2
-                           0001F7   541 	C$stm8s_tim1.c$351$1_0$360 ==.
-                                    542 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 351: TIM1->CCER2 &= (uint8_t)(~(TIM1_CCER2_CC4E | TIM1_CCER2_CC4P));
-      008FC2 C6 52 5D         [ 1]  543 	ld	a, 0x525d
-      008FC5 A4 CF            [ 1]  544 	and	a, #0xcf
-      008FC7 C7 52 5D         [ 1]  545 	ld	0x525d, a
-                           0001FF   546 	C$stm8s_tim1.c$353$1_0$360 ==.
-                                    547 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 353: TIM1->CCER2 |= (uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER2_CC4E ) |  
-      008FCA C6 52 5D         [ 1]  548 	ld	a, 0x525d
-      008FCD 6B 02            [ 1]  549 	ld	(0x02, sp), a
-      008FCF 7B 06            [ 1]  550 	ld	a, (0x06, sp)
-      008FD1 A4 10            [ 1]  551 	and	a, #0x10
-      008FD3 6B 01            [ 1]  552 	ld	(0x01, sp), a
-                           00020A   553 	C$stm8s_tim1.c$354$1_0$360 ==.
-                                    554 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 354: (uint8_t)(TIM1_OCPolarity  & TIM1_CCER2_CC4P ));
-      008FD5 7B 09            [ 1]  555 	ld	a, (0x09, sp)
-      008FD7 A4 20            [ 1]  556 	and	a, #0x20
-      008FD9 1A 01            [ 1]  557 	or	a, (0x01, sp)
-      008FDB 1A 02            [ 1]  558 	or	a, (0x02, sp)
-      008FDD C7 52 5D         [ 1]  559 	ld	0x525d, a
-                           000215   560 	C$stm8s_tim1.c$357$1_0$360 ==.
-                                    561 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 357: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) | 
-      008FE0 C6 52 5B         [ 1]  562 	ld	a, 0x525b
-      008FE3 A4 8F            [ 1]  563 	and	a, #0x8f
-      008FE5 1A 05            [ 1]  564 	or	a, (0x05, sp)
-      008FE7 C7 52 5B         [ 1]  565 	ld	0x525b, a
-                           00021F   566 	C$stm8s_tim1.c$361$1_0$360 ==.
-                                    567 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 361: if (TIM1_OCIdleState != TIM1_OCIDLESTATE_RESET)
-      008FEA 0D 0A            [ 1]  568 	tnz	(0x0a, sp)
-      008FEC 27 0A            [ 1]  569 	jreq	00102$
-                           000223   570 	C$stm8s_tim1.c$363$2_0$361 ==.
-                                    571 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 363: TIM1->OISR |= (uint8_t)(~TIM1_CCER2_CC4P);
-      008FEE C6 52 6F         [ 1]  572 	ld	a, 0x526f
-      008FF1 AA DF            [ 1]  573 	or	a, #0xdf
-      008FF3 C7 52 6F         [ 1]  574 	ld	0x526f, a
-      008FF6 20 04            [ 2]  575 	jra	00103$
-      008FF8                        576 00102$:
-                           00022D   577 	C$stm8s_tim1.c$367$2_0$362 ==.
-                                    578 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 367: TIM1->OISR &= (uint8_t)(~TIM1_OISR_OIS4);
-      008FF8 72 1D 52 6F      [ 1]  579 	bres	21103, #6
-      008FFC                        580 00103$:
-                           000231   581 	C$stm8s_tim1.c$371$1_0$360 ==.
-                                    582 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 371: TIM1->CCR4H = (uint8_t)(TIM1_Pulse >> 8);
-      008FFC 7B 07            [ 1]  583 	ld	a, (0x07, sp)
-      008FFE C7 52 6B         [ 1]  584 	ld	0x526b, a
-                           000236   585 	C$stm8s_tim1.c$372$1_0$360 ==.
-                                    586 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 372: TIM1->CCR4L = (uint8_t)(TIM1_Pulse);
-      009001 7B 08            [ 1]  587 	ld	a, (0x08, sp)
-      009003 C7 52 6C         [ 1]  588 	ld	0x526c, a
-                           00023B   589 	C$stm8s_tim1.c$373$1_0$360 ==.
-                                    590 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 373: }
-      009006 5B 02            [ 2]  591 	addw	sp, #2
-                           00023D   592 	C$stm8s_tim1.c$373$1_0$360 ==.
-                           00023D   593 	XG$TIM1_OC4Init$0$0 ==.
-      009008 81               [ 4]  594 	ret
-                           00023E   595 	G$TIM1_BDTRConfig$0$0 ==.
-                           00023E   596 	C$stm8s_tim1.c$388$1_0$364 ==.
-                                    597 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 388: void TIM1_BDTRConfig(TIM1_OSSIState_TypeDef TIM1_OSSIState,
-                                    598 ;	-----------------------------------------
-                                    599 ;	 function TIM1_BDTRConfig
-                                    600 ;	-----------------------------------------
-      009009                        601 _TIM1_BDTRConfig:
-      009009 88               [ 1]  602 	push	a
-                           00023F   603 	C$stm8s_tim1.c$402$1_0$364 ==.
-                                    604 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 402: TIM1->DTR = (uint8_t)(TIM1_DeadTime);
-      00900A AE 52 6E         [ 2]  605 	ldw	x, #0x526e
-      00900D 7B 06            [ 1]  606 	ld	a, (0x06, sp)
-      00900F F7               [ 1]  607 	ld	(x), a
-                           000245   608 	C$stm8s_tim1.c$406$1_0$364 ==.
-                                    609 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 406: TIM1->BKR  =  (uint8_t)((uint8_t)(TIM1_OSSIState | (uint8_t)TIM1_LockLevel)  | 
-      009010 7B 04            [ 1]  610 	ld	a, (0x04, sp)
-      009012 1A 05            [ 1]  611 	or	a, (0x05, sp)
-      009014 6B 01            [ 1]  612 	ld	(0x01, sp), a
-                           00024B   613 	C$stm8s_tim1.c$407$1_0$364 ==.
-                                    614 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 407: (uint8_t)((uint8_t)(TIM1_Break | (uint8_t)TIM1_BreakPolarity)  | 
-      009016 7B 07            [ 1]  615 	ld	a, (0x07, sp)
-      009018 1A 08            [ 1]  616 	or	a, (0x08, sp)
-                           00024F   617 	C$stm8s_tim1.c$408$1_0$364 ==.
-                                    618 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 408: (uint8_t)TIM1_AutomaticOutput));
-      00901A 1A 09            [ 1]  619 	or	a, (0x09, sp)
-      00901C 1A 01            [ 1]  620 	or	a, (0x01, sp)
-      00901E C7 52 6D         [ 1]  621 	ld	0x526d, a
-                           000256   622 	C$stm8s_tim1.c$409$1_0$364 ==.
-                                    623 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 409: }
-      009021 84               [ 1]  624 	pop	a
-                           000257   625 	C$stm8s_tim1.c$409$1_0$364 ==.
-                           000257   626 	XG$TIM1_BDTRConfig$0$0 ==.
-      009022 81               [ 4]  627 	ret
-                           000258   628 	G$TIM1_ICInit$0$0 ==.
-                           000258   629 	C$stm8s_tim1.c$423$1_0$366 ==.
-                                    630 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 423: void TIM1_ICInit(TIM1_Channel_TypeDef TIM1_Channel,
-                                    631 ;	-----------------------------------------
-                                    632 ;	 function TIM1_ICInit
-                                    633 ;	-----------------------------------------
-      009023                        634 _TIM1_ICInit:
-                           000258   635 	C$stm8s_tim1.c$436$1_0$366 ==.
-                                    636 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 436: if (TIM1_Channel == TIM1_CHANNEL_1)
-      009023 0D 03            [ 1]  637 	tnz	(0x03, sp)
-      009025 26 18            [ 1]  638 	jrne	00108$
-                           00025C   639 	C$stm8s_tim1.c$439$2_0$367 ==.
-                                    640 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 439: TI1_Config((uint8_t)TIM1_ICPolarity,
-      009027 7B 07            [ 1]  641 	ld	a, (0x07, sp)
-      009029 88               [ 1]  642 	push	a
-      00902A 7B 06            [ 1]  643 	ld	a, (0x06, sp)
-      00902C 88               [ 1]  644 	push	a
-      00902D 7B 06            [ 1]  645 	ld	a, (0x06, sp)
-      00902F 88               [ 1]  646 	push	a
-      009030 CD 96 1F         [ 4]  647 	call	_TI1_Config
-      009033 5B 03            [ 2]  648 	addw	sp, #3
-                           00026A   649 	C$stm8s_tim1.c$443$2_0$367 ==.
-                                    650 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 443: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
-      009035 7B 06            [ 1]  651 	ld	a, (0x06, sp)
-      009037 88               [ 1]  652 	push	a
-      009038 CD 95 07         [ 4]  653 	call	_TIM1_SetIC1Prescaler
-      00903B 84               [ 1]  654 	pop	a
-      00903C CC 90 8D         [ 2]  655 	jp	00110$
-      00903F                        656 00108$:
-                           000274   657 	C$stm8s_tim1.c$445$1_0$366 ==.
-                                    658 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 445: else if (TIM1_Channel == TIM1_CHANNEL_2)
-      00903F 7B 03            [ 1]  659 	ld	a, (0x03, sp)
-      009041 4A               [ 1]  660 	dec	a
-      009042 26 17            [ 1]  661 	jrne	00105$
-                           000279   662 	C$stm8s_tim1.c$448$2_0$368 ==.
-                                    663 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 448: TI2_Config((uint8_t)TIM1_ICPolarity,
-      009044 7B 07            [ 1]  664 	ld	a, (0x07, sp)
-      009046 88               [ 1]  665 	push	a
-      009047 7B 06            [ 1]  666 	ld	a, (0x06, sp)
-      009049 88               [ 1]  667 	push	a
-      00904A 7B 06            [ 1]  668 	ld	a, (0x06, sp)
-      00904C 88               [ 1]  669 	push	a
-      00904D CD 96 4B         [ 4]  670 	call	_TI2_Config
-      009050 5B 03            [ 2]  671 	addw	sp, #3
-                           000287   672 	C$stm8s_tim1.c$452$2_0$368 ==.
-                                    673 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 452: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
-      009052 7B 06            [ 1]  674 	ld	a, (0x06, sp)
-      009054 88               [ 1]  675 	push	a
-      009055 CD 95 12         [ 4]  676 	call	_TIM1_SetIC2Prescaler
-      009058 84               [ 1]  677 	pop	a
-      009059 20 32            [ 2]  678 	jra	00110$
-      00905B                        679 00105$:
-                           000290   680 	C$stm8s_tim1.c$454$1_0$366 ==.
-                                    681 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 454: else if (TIM1_Channel == TIM1_CHANNEL_3)
-      00905B 7B 03            [ 1]  682 	ld	a, (0x03, sp)
-      00905D A1 02            [ 1]  683 	cp	a, #0x02
-      00905F 26 17            [ 1]  684 	jrne	00102$
-                           000296   685 	C$stm8s_tim1.c$457$2_0$369 ==.
-                                    686 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 457: TI3_Config((uint8_t)TIM1_ICPolarity,
-      009061 7B 07            [ 1]  687 	ld	a, (0x07, sp)
-      009063 88               [ 1]  688 	push	a
-      009064 7B 06            [ 1]  689 	ld	a, (0x06, sp)
-      009066 88               [ 1]  690 	push	a
-      009067 7B 06            [ 1]  691 	ld	a, (0x06, sp)
-      009069 88               [ 1]  692 	push	a
-      00906A CD 96 77         [ 4]  693 	call	_TI3_Config
-      00906D 5B 03            [ 2]  694 	addw	sp, #3
-                           0002A4   695 	C$stm8s_tim1.c$461$2_0$369 ==.
-                                    696 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 461: TIM1_SetIC3Prescaler(TIM1_ICPrescaler);
-      00906F 7B 06            [ 1]  697 	ld	a, (0x06, sp)
-      009071 88               [ 1]  698 	push	a
-      009072 CD 95 1D         [ 4]  699 	call	_TIM1_SetIC3Prescaler
-      009075 84               [ 1]  700 	pop	a
-      009076 20 15            [ 2]  701 	jra	00110$
-      009078                        702 00102$:
-                           0002AD   703 	C$stm8s_tim1.c$466$2_0$370 ==.
-                                    704 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 466: TI4_Config((uint8_t)TIM1_ICPolarity,
-      009078 7B 07            [ 1]  705 	ld	a, (0x07, sp)
-      00907A 88               [ 1]  706 	push	a
-      00907B 7B 06            [ 1]  707 	ld	a, (0x06, sp)
-      00907D 88               [ 1]  708 	push	a
-      00907E 7B 06            [ 1]  709 	ld	a, (0x06, sp)
-      009080 88               [ 1]  710 	push	a
-      009081 CD 96 A7         [ 4]  711 	call	_TI4_Config
-      009084 5B 03            [ 2]  712 	addw	sp, #3
-                           0002BB   713 	C$stm8s_tim1.c$470$2_0$370 ==.
-                                    714 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 470: TIM1_SetIC4Prescaler(TIM1_ICPrescaler);
-      009086 7B 06            [ 1]  715 	ld	a, (0x06, sp)
-      009088 88               [ 1]  716 	push	a
-      009089 CD 95 28         [ 4]  717 	call	_TIM1_SetIC4Prescaler
-      00908C 84               [ 1]  718 	pop	a
-      00908D                        719 00110$:
-                           0002C2   720 	C$stm8s_tim1.c$472$1_0$366 ==.
-                                    721 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 472: }
-                           0002C2   722 	C$stm8s_tim1.c$472$1_0$366 ==.
-                           0002C2   723 	XG$TIM1_ICInit$0$0 ==.
-      00908D 81               [ 4]  724 	ret
-                           0002C3   725 	G$TIM1_PWMIConfig$0$0 ==.
-                           0002C3   726 	C$stm8s_tim1.c$488$1_0$372 ==.
-                                    727 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 488: void TIM1_PWMIConfig(TIM1_Channel_TypeDef TIM1_Channel,
-                                    728 ;	-----------------------------------------
-                                    729 ;	 function TIM1_PWMIConfig
-                                    730 ;	-----------------------------------------
-      00908E                        731 _TIM1_PWMIConfig:
-      00908E 52 02            [ 2]  732 	sub	sp, #2
-                           0002C5   733 	C$stm8s_tim1.c$504$1_0$372 ==.
-                                    734 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 504: if (TIM1_ICPolarity != TIM1_ICPOLARITY_FALLING)
-      009090 7B 06            [ 1]  735 	ld	a, (0x06, sp)
-      009092 4A               [ 1]  736 	dec	a
-      009093 27 06            [ 1]  737 	jreq	00102$
-                           0002CA   738 	C$stm8s_tim1.c$506$2_0$373 ==.
-                                    739 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 506: icpolarity = TIM1_ICPOLARITY_FALLING;
-      009095 A6 01            [ 1]  740 	ld	a, #0x01
-      009097 6B 02            [ 1]  741 	ld	(0x02, sp), a
-      009099 20 02            [ 2]  742 	jra	00103$
-      00909B                        743 00102$:
-                           0002D0   744 	C$stm8s_tim1.c$510$2_0$374 ==.
-                                    745 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 510: icpolarity = TIM1_ICPOLARITY_RISING;
-      00909B 0F 02            [ 1]  746 	clr	(0x02, sp)
-      00909D                        747 00103$:
-                           0002D2   748 	C$stm8s_tim1.c$514$1_0$372 ==.
-                                    749 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 514: if (TIM1_ICSelection == TIM1_ICSELECTION_DIRECTTI)
-      00909D 7B 07            [ 1]  750 	ld	a, (0x07, sp)
-      00909F 4A               [ 1]  751 	dec	a
-      0090A0 26 06            [ 1]  752 	jrne	00105$
-                           0002D7   753 	C$stm8s_tim1.c$516$2_0$375 ==.
-                                    754 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 516: icselection = TIM1_ICSELECTION_INDIRECTTI;
-      0090A2 A6 02            [ 1]  755 	ld	a, #0x02
-      0090A4 6B 01            [ 1]  756 	ld	(0x01, sp), a
-      0090A6 20 04            [ 2]  757 	jra	00106$
-      0090A8                        758 00105$:
-                           0002DD   759 	C$stm8s_tim1.c$520$2_0$376 ==.
-                                    760 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 520: icselection = TIM1_ICSELECTION_DIRECTTI;
-      0090A8 A6 01            [ 1]  761 	ld	a, #0x01
-      0090AA 6B 01            [ 1]  762 	ld	(0x01, sp), a
-      0090AC                        763 00106$:
-                           0002E1   764 	C$stm8s_tim1.c$523$1_0$372 ==.
-                                    765 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 523: if (TIM1_Channel == TIM1_CHANNEL_1)
-      0090AC 0D 05            [ 1]  766 	tnz	(0x05, sp)
-      0090AE 26 2C            [ 1]  767 	jrne	00108$
-                           0002E5   768 	C$stm8s_tim1.c$526$2_0$377 ==.
-                                    769 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 526: TI1_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSelection,
-      0090B0 7B 09            [ 1]  770 	ld	a, (0x09, sp)
-      0090B2 88               [ 1]  771 	push	a
-      0090B3 7B 08            [ 1]  772 	ld	a, (0x08, sp)
-      0090B5 88               [ 1]  773 	push	a
-      0090B6 7B 08            [ 1]  774 	ld	a, (0x08, sp)
-      0090B8 88               [ 1]  775 	push	a
-      0090B9 CD 96 1F         [ 4]  776 	call	_TI1_Config
-      0090BC 5B 03            [ 2]  777 	addw	sp, #3
-                           0002F3   778 	C$stm8s_tim1.c$530$2_0$377 ==.
-                                    779 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 530: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
-      0090BE 7B 08            [ 1]  780 	ld	a, (0x08, sp)
-      0090C0 88               [ 1]  781 	push	a
-      0090C1 CD 95 07         [ 4]  782 	call	_TIM1_SetIC1Prescaler
-      0090C4 84               [ 1]  783 	pop	a
-                           0002FA   784 	C$stm8s_tim1.c$533$2_0$377 ==.
-                                    785 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 533: TI2_Config(icpolarity, icselection, TIM1_ICFilter);
-      0090C5 7B 09            [ 1]  786 	ld	a, (0x09, sp)
-      0090C7 88               [ 1]  787 	push	a
-      0090C8 7B 02            [ 1]  788 	ld	a, (0x02, sp)
-      0090CA 88               [ 1]  789 	push	a
-      0090CB 7B 04            [ 1]  790 	ld	a, (0x04, sp)
-      0090CD 88               [ 1]  791 	push	a
-      0090CE CD 96 4B         [ 4]  792 	call	_TI2_Config
-      0090D1 5B 03            [ 2]  793 	addw	sp, #3
-                           000308   794 	C$stm8s_tim1.c$536$2_0$377 ==.
-                                    795 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 536: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
-      0090D3 7B 08            [ 1]  796 	ld	a, (0x08, sp)
-      0090D5 88               [ 1]  797 	push	a
-      0090D6 CD 95 12         [ 4]  798 	call	_TIM1_SetIC2Prescaler
-      0090D9 84               [ 1]  799 	pop	a
-      0090DA 20 2A            [ 2]  800 	jra	00110$
-      0090DC                        801 00108$:
-                           000311   802 	C$stm8s_tim1.c$541$2_0$378 ==.
-                                    803 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 541: TI2_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSelection,
-      0090DC 7B 09            [ 1]  804 	ld	a, (0x09, sp)
-      0090DE 88               [ 1]  805 	push	a
-      0090DF 7B 08            [ 1]  806 	ld	a, (0x08, sp)
-      0090E1 88               [ 1]  807 	push	a
-      0090E2 7B 08            [ 1]  808 	ld	a, (0x08, sp)
-      0090E4 88               [ 1]  809 	push	a
-      0090E5 CD 96 4B         [ 4]  810 	call	_TI2_Config
-      0090E8 5B 03            [ 2]  811 	addw	sp, #3
-                           00031F   812 	C$stm8s_tim1.c$545$2_0$378 ==.
-                                    813 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 545: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
-      0090EA 7B 08            [ 1]  814 	ld	a, (0x08, sp)
-      0090EC 88               [ 1]  815 	push	a
-      0090ED CD 95 12         [ 4]  816 	call	_TIM1_SetIC2Prescaler
-      0090F0 84               [ 1]  817 	pop	a
-                           000326   818 	C$stm8s_tim1.c$548$2_0$378 ==.
-                                    819 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 548: TI1_Config(icpolarity, icselection, TIM1_ICFilter);
-      0090F1 7B 09            [ 1]  820 	ld	a, (0x09, sp)
-      0090F3 88               [ 1]  821 	push	a
-      0090F4 7B 02            [ 1]  822 	ld	a, (0x02, sp)
-      0090F6 88               [ 1]  823 	push	a
-      0090F7 7B 04            [ 1]  824 	ld	a, (0x04, sp)
-      0090F9 88               [ 1]  825 	push	a
-      0090FA CD 96 1F         [ 4]  826 	call	_TI1_Config
-      0090FD 5B 03            [ 2]  827 	addw	sp, #3
-                           000334   828 	C$stm8s_tim1.c$551$2_0$378 ==.
-                                    829 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 551: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
-      0090FF 7B 08            [ 1]  830 	ld	a, (0x08, sp)
-      009101 88               [ 1]  831 	push	a
-      009102 CD 95 07         [ 4]  832 	call	_TIM1_SetIC1Prescaler
-      009105 84               [ 1]  833 	pop	a
-      009106                        834 00110$:
-                           00033B   835 	C$stm8s_tim1.c$553$1_0$372 ==.
-                                    836 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 553: }
-      009106 5B 02            [ 2]  837 	addw	sp, #2
-                           00033D   838 	C$stm8s_tim1.c$553$1_0$372 ==.
-                           00033D   839 	XG$TIM1_PWMIConfig$0$0 ==.
-      009108 81               [ 4]  840 	ret
-                           00033E   841 	G$TIM1_Cmd$0$0 ==.
-                           00033E   842 	C$stm8s_tim1.c$561$1_0$380 ==.
-                                    843 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 561: void TIM1_Cmd(FunctionalState NewState)
-                                    844 ;	-----------------------------------------
-                                    845 ;	 function TIM1_Cmd
-                                    846 ;	-----------------------------------------
-      009109                        847 _TIM1_Cmd:
-                           00033E   848 	C$stm8s_tim1.c$567$1_0$380 ==.
-                                    849 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 567: if (NewState != DISABLE)
-      009109 0D 03            [ 1]  850 	tnz	(0x03, sp)
-      00910B 27 06            [ 1]  851 	jreq	00102$
-                           000342   852 	C$stm8s_tim1.c$569$2_0$381 ==.
-                                    853 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 569: TIM1->CR1 |= TIM1_CR1_CEN;
-      00910D 72 10 52 50      [ 1]  854 	bset	21072, #0
-      009111 20 04            [ 2]  855 	jra	00104$
-      009113                        856 00102$:
-                           000348   857 	C$stm8s_tim1.c$573$2_0$382 ==.
-                                    858 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 573: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_CEN);
-      009113 72 11 52 50      [ 1]  859 	bres	21072, #0
-      009117                        860 00104$:
-                           00034C   861 	C$stm8s_tim1.c$575$1_0$380 ==.
-                                    862 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 575: }
-                           00034C   863 	C$stm8s_tim1.c$575$1_0$380 ==.
-                           00034C   864 	XG$TIM1_Cmd$0$0 ==.
-      009117 81               [ 4]  865 	ret
-                           00034D   866 	G$TIM1_CtrlPWMOutputs$0$0 ==.
-                           00034D   867 	C$stm8s_tim1.c$583$1_0$384 ==.
-                                    868 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 583: void TIM1_CtrlPWMOutputs(FunctionalState NewState)
-                                    869 ;	-----------------------------------------
-                                    870 ;	 function TIM1_CtrlPWMOutputs
-                                    871 ;	-----------------------------------------
-      009118                        872 _TIM1_CtrlPWMOutputs:
-                           00034D   873 	C$stm8s_tim1.c$590$1_0$384 ==.
-                                    874 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 590: if (NewState != DISABLE)
-      009118 0D 03            [ 1]  875 	tnz	(0x03, sp)
-      00911A 27 06            [ 1]  876 	jreq	00102$
-                           000351   877 	C$stm8s_tim1.c$592$2_0$385 ==.
-                                    878 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 592: TIM1->BKR |= TIM1_BKR_MOE;
-      00911C 72 1E 52 6D      [ 1]  879 	bset	21101, #7
-      009120 20 04            [ 2]  880 	jra	00104$
-      009122                        881 00102$:
-                           000357   882 	C$stm8s_tim1.c$596$2_0$386 ==.
-                                    883 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 596: TIM1->BKR &= (uint8_t)(~TIM1_BKR_MOE);
-      009122 72 1F 52 6D      [ 1]  884 	bres	21101, #7
-      009126                        885 00104$:
-                           00035B   886 	C$stm8s_tim1.c$598$1_0$384 ==.
-                                    887 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 598: }
-                           00035B   888 	C$stm8s_tim1.c$598$1_0$384 ==.
-                           00035B   889 	XG$TIM1_CtrlPWMOutputs$0$0 ==.
-      009126 81               [ 4]  890 	ret
-                           00035C   891 	G$TIM1_ITConfig$0$0 ==.
-                           00035C   892 	C$stm8s_tim1.c$617$1_0$388 ==.
-                                    893 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 617: void TIM1_ITConfig(TIM1_IT_TypeDef  TIM1_IT, FunctionalState NewState)
-                                    894 ;	-----------------------------------------
-                                    895 ;	 function TIM1_ITConfig
-                                    896 ;	-----------------------------------------
-      009127                        897 _TIM1_ITConfig:
-      009127 88               [ 1]  898 	push	a
-                           00035D   899 	C$stm8s_tim1.c$623$1_0$388 ==.
-                                    900 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 623: if (NewState != DISABLE)
-      009128 0D 05            [ 1]  901 	tnz	(0x05, sp)
-      00912A 27 0A            [ 1]  902 	jreq	00102$
-                           000361   903 	C$stm8s_tim1.c$626$2_0$389 ==.
-                                    904 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 626: TIM1->IER |= (uint8_t)TIM1_IT;
-      00912C C6 52 54         [ 1]  905 	ld	a, 0x5254
-      00912F 1A 04            [ 1]  906 	or	a, (0x04, sp)
-      009131 C7 52 54         [ 1]  907 	ld	0x5254, a
-      009134 20 0D            [ 2]  908 	jra	00104$
-      009136                        909 00102$:
-                           00036B   910 	C$stm8s_tim1.c$631$2_0$390 ==.
-                                    911 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 631: TIM1->IER &= (uint8_t)(~(uint8_t)TIM1_IT);
-      009136 C6 52 54         [ 1]  912 	ld	a, 0x5254
-      009139 6B 01            [ 1]  913 	ld	(0x01, sp), a
-      00913B 7B 04            [ 1]  914 	ld	a, (0x04, sp)
-      00913D 43               [ 1]  915 	cpl	a
-      00913E 14 01            [ 1]  916 	and	a, (0x01, sp)
-      009140 C7 52 54         [ 1]  917 	ld	0x5254, a
-      009143                        918 00104$:
-                           000378   919 	C$stm8s_tim1.c$633$1_0$388 ==.
-                                    920 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 633: }
-      009143 84               [ 1]  921 	pop	a
-                           000379   922 	C$stm8s_tim1.c$633$1_0$388 ==.
-                           000379   923 	XG$TIM1_ITConfig$0$0 ==.
-      009144 81               [ 4]  924 	ret
-                           00037A   925 	G$TIM1_InternalClockConfig$0$0 ==.
-                           00037A   926 	C$stm8s_tim1.c$640$1_0$392 ==.
-                                    927 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 640: void TIM1_InternalClockConfig(void)
-                                    928 ;	-----------------------------------------
-                                    929 ;	 function TIM1_InternalClockConfig
-                                    930 ;	-----------------------------------------
-      009145                        931 _TIM1_InternalClockConfig:
-                           00037A   932 	C$stm8s_tim1.c$643$1_0$392 ==.
-                                    933 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 643: TIM1->SMCR &= (uint8_t)(~TIM1_SMCR_SMS);
-      009145 C6 52 52         [ 1]  934 	ld	a, 0x5252
-      009148 A4 F8            [ 1]  935 	and	a, #0xf8
-      00914A C7 52 52         [ 1]  936 	ld	0x5252, a
-                           000382   937 	C$stm8s_tim1.c$644$1_0$392 ==.
-                                    938 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 644: }
-                           000382   939 	C$stm8s_tim1.c$644$1_0$392 ==.
-                           000382   940 	XG$TIM1_InternalClockConfig$0$0 ==.
-      00914D 81               [ 4]  941 	ret
-                           000383   942 	G$TIM1_ETRClockMode1Config$0$0 ==.
-                           000383   943 	C$stm8s_tim1.c$662$1_0$394 ==.
-                                    944 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 662: void TIM1_ETRClockMode1Config(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
-                                    945 ;	-----------------------------------------
-                                    946 ;	 function TIM1_ETRClockMode1Config
-                                    947 ;	-----------------------------------------
-      00914E                        948 _TIM1_ETRClockMode1Config:
-                           000383   949 	C$stm8s_tim1.c$671$1_0$394 ==.
-                                    950 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 671: TIM1_ETRConfig(TIM1_ExtTRGPrescaler, TIM1_ExtTRGPolarity, ExtTRGFilter);
-      00914E 7B 05            [ 1]  951 	ld	a, (0x05, sp)
-      009150 88               [ 1]  952 	push	a
-      009151 7B 05            [ 1]  953 	ld	a, (0x05, sp)
-      009153 88               [ 1]  954 	push	a
-      009154 7B 05            [ 1]  955 	ld	a, (0x05, sp)
-      009156 88               [ 1]  956 	push	a
-      009157 CD 91 7A         [ 4]  957 	call	_TIM1_ETRConfig
-      00915A 5B 03            [ 2]  958 	addw	sp, #3
-                           000391   959 	C$stm8s_tim1.c$674$1_0$394 ==.
-                                    960 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 674: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~(uint8_t)(TIM1_SMCR_SMS | TIM1_SMCR_TS )))
-      00915C C6 52 52         [ 1]  961 	ld	a, 0x5252
-      00915F A4 88            [ 1]  962 	and	a, #0x88
-      009161 AA 77            [ 1]  963 	or	a, #0x77
-      009163 C7 52 52         [ 1]  964 	ld	0x5252, a
-                           00039B   965 	C$stm8s_tim1.c$676$1_0$394 ==.
-                                    966 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 676: }
-                           00039B   967 	C$stm8s_tim1.c$676$1_0$394 ==.
-                           00039B   968 	XG$TIM1_ETRClockMode1Config$0$0 ==.
-      009166 81               [ 4]  969 	ret
-                           00039C   970 	G$TIM1_ETRClockMode2Config$0$0 ==.
-                           00039C   971 	C$stm8s_tim1.c$694$1_0$396 ==.
-                                    972 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 694: void TIM1_ETRClockMode2Config(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
-                                    973 ;	-----------------------------------------
-                                    974 ;	 function TIM1_ETRClockMode2Config
-                                    975 ;	-----------------------------------------
-      009167                        976 _TIM1_ETRClockMode2Config:
-                           00039C   977 	C$stm8s_tim1.c$703$1_0$396 ==.
-                                    978 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 703: TIM1_ETRConfig(TIM1_ExtTRGPrescaler, TIM1_ExtTRGPolarity, ExtTRGFilter);
-      009167 7B 05            [ 1]  979 	ld	a, (0x05, sp)
-      009169 88               [ 1]  980 	push	a
-      00916A 7B 05            [ 1]  981 	ld	a, (0x05, sp)
-      00916C 88               [ 1]  982 	push	a
-      00916D 7B 05            [ 1]  983 	ld	a, (0x05, sp)
-      00916F 88               [ 1]  984 	push	a
-      009170 CD 91 7A         [ 4]  985 	call	_TIM1_ETRConfig
-      009173 5B 03            [ 2]  986 	addw	sp, #3
-                           0003AA   987 	C$stm8s_tim1.c$706$1_0$396 ==.
-                                    988 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 706: TIM1->ETR |= TIM1_ETR_ECE;
-      009175 72 1C 52 53      [ 1]  989 	bset	21075, #6
-                           0003AE   990 	C$stm8s_tim1.c$707$1_0$396 ==.
-                                    991 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 707: }
-                           0003AE   992 	C$stm8s_tim1.c$707$1_0$396 ==.
-                           0003AE   993 	XG$TIM1_ETRClockMode2Config$0$0 ==.
-      009179 81               [ 4]  994 	ret
-                           0003AF   995 	G$TIM1_ETRConfig$0$0 ==.
-                           0003AF   996 	C$stm8s_tim1.c$725$1_0$398 ==.
-                                    997 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 725: void TIM1_ETRConfig(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
-                                    998 ;	-----------------------------------------
-                                    999 ;	 function TIM1_ETRConfig
-                                   1000 ;	-----------------------------------------
-      00917A                       1001 _TIM1_ETRConfig:
-      00917A 88               [ 1] 1002 	push	a
-                           0003B0  1003 	C$stm8s_tim1.c$732$1_0$398 ==.
-                                   1004 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 732: TIM1->ETR |= (uint8_t)((uint8_t)(TIM1_ExtTRGPrescaler | (uint8_t)TIM1_ExtTRGPolarity )|
-      00917B C6 52 53         [ 1] 1005 	ld	a, 0x5253
-      00917E 6B 01            [ 1] 1006 	ld	(0x01, sp), a
-      009180 7B 04            [ 1] 1007 	ld	a, (0x04, sp)
-      009182 1A 05            [ 1] 1008 	or	a, (0x05, sp)
-                           0003B9  1009 	C$stm8s_tim1.c$733$1_0$398 ==.
-                                   1010 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 733: (uint8_t)ExtTRGFilter );
-      009184 1A 06            [ 1] 1011 	or	a, (0x06, sp)
-      009186 1A 01            [ 1] 1012 	or	a, (0x01, sp)
-      009188 C7 52 53         [ 1] 1013 	ld	0x5253, a
-                           0003C0  1014 	C$stm8s_tim1.c$734$1_0$398 ==.
-                                   1015 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 734: }
-      00918B 84               [ 1] 1016 	pop	a
-                           0003C1  1017 	C$stm8s_tim1.c$734$1_0$398 ==.
-                           0003C1  1018 	XG$TIM1_ETRConfig$0$0 ==.
-      00918C 81               [ 4] 1019 	ret
-                           0003C2  1020 	G$TIM1_TIxExternalClockConfig$0$0 ==.
-                           0003C2  1021 	C$stm8s_tim1.c$751$1_0$400 ==.
-                                   1022 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 751: void TIM1_TIxExternalClockConfig(TIM1_TIxExternalCLK1Source_TypeDef TIM1_TIxExternalCLKSource,
-                                   1023 ;	-----------------------------------------
-                                   1024 ;	 function TIM1_TIxExternalClockConfig
-                                   1025 ;	-----------------------------------------
-      00918D                       1026 _TIM1_TIxExternalClockConfig:
-                           0003C2  1027 	C$stm8s_tim1.c$761$1_0$400 ==.
-                                   1028 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 761: if (TIM1_TIxExternalCLKSource == TIM1_TIXEXTERNALCLK1SOURCE_TI2)
-      00918D 7B 03            [ 1] 1029 	ld	a, (0x03, sp)
-      00918F A1 60            [ 1] 1030 	cp	a, #0x60
-      009191 26 0F            [ 1] 1031 	jrne	00102$
-                           0003C8  1032 	C$stm8s_tim1.c$763$2_0$401 ==.
-                                   1033 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 763: TI2_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSELECTION_DIRECTTI, (uint8_t)ICFilter);
-      009193 7B 05            [ 1] 1034 	ld	a, (0x05, sp)
-      009195 88               [ 1] 1035 	push	a
-      009196 4B 01            [ 1] 1036 	push	#0x01
-      009198 7B 06            [ 1] 1037 	ld	a, (0x06, sp)
-      00919A 88               [ 1] 1038 	push	a
-      00919B CD 96 4B         [ 4] 1039 	call	_TI2_Config
-      00919E 5B 03            [ 2] 1040 	addw	sp, #3
-      0091A0 20 0D            [ 2] 1041 	jra	00103$
-      0091A2                       1042 00102$:
-                           0003D7  1043 	C$stm8s_tim1.c$767$2_0$402 ==.
-                                   1044 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 767: TI1_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSELECTION_DIRECTTI, (uint8_t)ICFilter);
-      0091A2 7B 05            [ 1] 1045 	ld	a, (0x05, sp)
-      0091A4 88               [ 1] 1046 	push	a
-      0091A5 4B 01            [ 1] 1047 	push	#0x01
-      0091A7 7B 06            [ 1] 1048 	ld	a, (0x06, sp)
-      0091A9 88               [ 1] 1049 	push	a
-      0091AA CD 96 1F         [ 4] 1050 	call	_TI1_Config
-      0091AD 5B 03            [ 2] 1051 	addw	sp, #3
-      0091AF                       1052 00103$:
-                           0003E4  1053 	C$stm8s_tim1.c$771$1_0$400 ==.
-                                   1054 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 771: TIM1_SelectInputTrigger((TIM1_TS_TypeDef)TIM1_TIxExternalCLKSource);
-      0091AF 7B 03            [ 1] 1055 	ld	a, (0x03, sp)
-      0091B1 88               [ 1] 1056 	push	a
-      0091B2 CD 91 BF         [ 4] 1057 	call	_TIM1_SelectInputTrigger
-      0091B5 84               [ 1] 1058 	pop	a
-                           0003EB  1059 	C$stm8s_tim1.c$774$1_0$400 ==.
-                                   1060 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 774: TIM1->SMCR |= (uint8_t)(TIM1_SLAVEMODE_EXTERNAL1);
-      0091B6 C6 52 52         [ 1] 1061 	ld	a, 0x5252
-      0091B9 AA 07            [ 1] 1062 	or	a, #0x07
-      0091BB C7 52 52         [ 1] 1063 	ld	0x5252, a
-                           0003F3  1064 	C$stm8s_tim1.c$775$1_0$400 ==.
-                                   1065 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 775: }
-                           0003F3  1066 	C$stm8s_tim1.c$775$1_0$400 ==.
-                           0003F3  1067 	XG$TIM1_TIxExternalClockConfig$0$0 ==.
-      0091BE 81               [ 4] 1068 	ret
-                           0003F4  1069 	G$TIM1_SelectInputTrigger$0$0 ==.
-                           0003F4  1070 	C$stm8s_tim1.c$787$1_0$404 ==.
-                                   1071 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 787: void TIM1_SelectInputTrigger(TIM1_TS_TypeDef TIM1_InputTriggerSource)
-                                   1072 ;	-----------------------------------------
-                                   1073 ;	 function TIM1_SelectInputTrigger
-                                   1074 ;	-----------------------------------------
-      0091BF                       1075 _TIM1_SelectInputTrigger:
-                           0003F4  1076 	C$stm8s_tim1.c$793$1_0$404 ==.
-                                   1077 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 793: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~TIM1_SMCR_TS)) | (uint8_t)TIM1_InputTriggerSource);
-      0091BF C6 52 52         [ 1] 1078 	ld	a, 0x5252
-      0091C2 A4 8F            [ 1] 1079 	and	a, #0x8f
-      0091C4 1A 03            [ 1] 1080 	or	a, (0x03, sp)
-      0091C6 C7 52 52         [ 1] 1081 	ld	0x5252, a
-                           0003FE  1082 	C$stm8s_tim1.c$794$1_0$404 ==.
-                                   1083 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 794: }
-                           0003FE  1084 	C$stm8s_tim1.c$794$1_0$404 ==.
-                           0003FE  1085 	XG$TIM1_SelectInputTrigger$0$0 ==.
-      0091C9 81               [ 4] 1086 	ret
-                           0003FF  1087 	G$TIM1_UpdateDisableConfig$0$0 ==.
-                           0003FF  1088 	C$stm8s_tim1.c$803$1_0$406 ==.
-                                   1089 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 803: void TIM1_UpdateDisableConfig(FunctionalState NewState)
-                                   1090 ;	-----------------------------------------
-                                   1091 ;	 function TIM1_UpdateDisableConfig
-                                   1092 ;	-----------------------------------------
-      0091CA                       1093 _TIM1_UpdateDisableConfig:
-                           0003FF  1094 	C$stm8s_tim1.c$809$1_0$406 ==.
-                                   1095 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 809: if (NewState != DISABLE)
-      0091CA 0D 03            [ 1] 1096 	tnz	(0x03, sp)
-      0091CC 27 06            [ 1] 1097 	jreq	00102$
-                           000403  1098 	C$stm8s_tim1.c$811$2_0$407 ==.
-                                   1099 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 811: TIM1->CR1 |= TIM1_CR1_UDIS;
-      0091CE 72 12 52 50      [ 1] 1100 	bset	21072, #1
-      0091D2 20 04            [ 2] 1101 	jra	00104$
-      0091D4                       1102 00102$:
-                           000409  1103 	C$stm8s_tim1.c$815$2_0$408 ==.
-                                   1104 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 815: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_UDIS);
-      0091D4 72 13 52 50      [ 1] 1105 	bres	21072, #1
-      0091D8                       1106 00104$:
-                           00040D  1107 	C$stm8s_tim1.c$817$1_0$406 ==.
-                                   1108 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 817: }
-                           00040D  1109 	C$stm8s_tim1.c$817$1_0$406 ==.
-                           00040D  1110 	XG$TIM1_UpdateDisableConfig$0$0 ==.
-      0091D8 81               [ 4] 1111 	ret
-                           00040E  1112 	G$TIM1_UpdateRequestConfig$0$0 ==.
-                           00040E  1113 	C$stm8s_tim1.c$827$1_0$410 ==.
-                                   1114 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 827: void TIM1_UpdateRequestConfig(TIM1_UpdateSource_TypeDef TIM1_UpdateSource)
-                                   1115 ;	-----------------------------------------
-                                   1116 ;	 function TIM1_UpdateRequestConfig
-                                   1117 ;	-----------------------------------------
-      0091D9                       1118 _TIM1_UpdateRequestConfig:
-                           00040E  1119 	C$stm8s_tim1.c$833$1_0$410 ==.
-                                   1120 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 833: if (TIM1_UpdateSource != TIM1_UPDATESOURCE_GLOBAL)
-      0091D9 0D 03            [ 1] 1121 	tnz	(0x03, sp)
-      0091DB 27 06            [ 1] 1122 	jreq	00102$
-                           000412  1123 	C$stm8s_tim1.c$835$2_0$411 ==.
-                                   1124 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 835: TIM1->CR1 |= TIM1_CR1_URS;
-      0091DD 72 14 52 50      [ 1] 1125 	bset	21072, #2
-      0091E1 20 04            [ 2] 1126 	jra	00104$
-      0091E3                       1127 00102$:
-                           000418  1128 	C$stm8s_tim1.c$839$2_0$412 ==.
-                                   1129 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 839: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_URS);
-      0091E3 72 15 52 50      [ 1] 1130 	bres	21072, #2
-      0091E7                       1131 00104$:
-                           00041C  1132 	C$stm8s_tim1.c$841$1_0$410 ==.
-                                   1133 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 841: }
-                           00041C  1134 	C$stm8s_tim1.c$841$1_0$410 ==.
-                           00041C  1135 	XG$TIM1_UpdateRequestConfig$0$0 ==.
-      0091E7 81               [ 4] 1136 	ret
-                           00041D  1137 	G$TIM1_SelectHallSensor$0$0 ==.
-                           00041D  1138 	C$stm8s_tim1.c$849$1_0$414 ==.
-                                   1139 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 849: void TIM1_SelectHallSensor(FunctionalState NewState)
-                                   1140 ;	-----------------------------------------
-                                   1141 ;	 function TIM1_SelectHallSensor
-                                   1142 ;	-----------------------------------------
-      0091E8                       1143 _TIM1_SelectHallSensor:
-                           00041D  1144 	C$stm8s_tim1.c$855$1_0$414 ==.
-                                   1145 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 855: if (NewState != DISABLE)
-      0091E8 0D 03            [ 1] 1146 	tnz	(0x03, sp)
-      0091EA 27 06            [ 1] 1147 	jreq	00102$
-                           000421  1148 	C$stm8s_tim1.c$857$2_0$415 ==.
-                                   1149 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 857: TIM1->CR2 |= TIM1_CR2_TI1S;
-      0091EC 72 1E 52 51      [ 1] 1150 	bset	21073, #7
-      0091F0 20 04            [ 2] 1151 	jra	00104$
-      0091F2                       1152 00102$:
-                           000427  1153 	C$stm8s_tim1.c$861$2_0$416 ==.
-                                   1154 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 861: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_TI1S);
-      0091F2 72 1F 52 51      [ 1] 1155 	bres	21073, #7
-      0091F6                       1156 00104$:
-                           00042B  1157 	C$stm8s_tim1.c$863$1_0$414 ==.
-                                   1158 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 863: }
-                           00042B  1159 	C$stm8s_tim1.c$863$1_0$414 ==.
-                           00042B  1160 	XG$TIM1_SelectHallSensor$0$0 ==.
-      0091F6 81               [ 4] 1161 	ret
-                           00042C  1162 	G$TIM1_SelectOnePulseMode$0$0 ==.
-                           00042C  1163 	C$stm8s_tim1.c$873$1_0$418 ==.
-                                   1164 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 873: void TIM1_SelectOnePulseMode(TIM1_OPMode_TypeDef TIM1_OPMode)
-                                   1165 ;	-----------------------------------------
-                                   1166 ;	 function TIM1_SelectOnePulseMode
-                                   1167 ;	-----------------------------------------
-      0091F7                       1168 _TIM1_SelectOnePulseMode:
-                           00042C  1169 	C$stm8s_tim1.c$879$1_0$418 ==.
-                                   1170 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 879: if (TIM1_OPMode != TIM1_OPMODE_REPETITIVE)
-      0091F7 0D 03            [ 1] 1171 	tnz	(0x03, sp)
-      0091F9 27 06            [ 1] 1172 	jreq	00102$
-                           000430  1173 	C$stm8s_tim1.c$881$2_0$419 ==.
-                                   1174 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 881: TIM1->CR1 |= TIM1_CR1_OPM;
-      0091FB 72 16 52 50      [ 1] 1175 	bset	21072, #3
-      0091FF 20 04            [ 2] 1176 	jra	00104$
-      009201                       1177 00102$:
-                           000436  1178 	C$stm8s_tim1.c$885$2_0$420 ==.
-                                   1179 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 885: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_OPM);
-      009201 72 17 52 50      [ 1] 1180 	bres	21072, #3
-      009205                       1181 00104$:
-                           00043A  1182 	C$stm8s_tim1.c$888$1_0$418 ==.
-                                   1183 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 888: }
-                           00043A  1184 	C$stm8s_tim1.c$888$1_0$418 ==.
-                           00043A  1185 	XG$TIM1_SelectOnePulseMode$0$0 ==.
-      009205 81               [ 4] 1186 	ret
-                           00043B  1187 	G$TIM1_SelectOutputTrigger$0$0 ==.
-                           00043B  1188 	C$stm8s_tim1.c$903$1_0$422 ==.
-                                   1189 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 903: void TIM1_SelectOutputTrigger(TIM1_TRGOSource_TypeDef TIM1_TRGOSource)
-                                   1190 ;	-----------------------------------------
-                                   1191 ;	 function TIM1_SelectOutputTrigger
-                                   1192 ;	-----------------------------------------
-      009206                       1193 _TIM1_SelectOutputTrigger:
-                           00043B  1194 	C$stm8s_tim1.c$909$1_0$422 ==.
-                                   1195 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 909: TIM1->CR2 = (uint8_t)((uint8_t)(TIM1->CR2 & (uint8_t)(~TIM1_CR2_MMS)) | 
-      009206 C6 52 51         [ 1] 1196 	ld	a, 0x5251
-      009209 A4 8F            [ 1] 1197 	and	a, #0x8f
-                           000440  1198 	C$stm8s_tim1.c$910$1_0$422 ==.
-                                   1199 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 910: (uint8_t) TIM1_TRGOSource);
-      00920B 1A 03            [ 1] 1200 	or	a, (0x03, sp)
-      00920D C7 52 51         [ 1] 1201 	ld	0x5251, a
-                           000445  1202 	C$stm8s_tim1.c$911$1_0$422 ==.
-                                   1203 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 911: }
-                           000445  1204 	C$stm8s_tim1.c$911$1_0$422 ==.
-                           000445  1205 	XG$TIM1_SelectOutputTrigger$0$0 ==.
-      009210 81               [ 4] 1206 	ret
-                           000446  1207 	G$TIM1_SelectSlaveMode$0$0 ==.
-                           000446  1208 	C$stm8s_tim1.c$923$1_0$424 ==.
-                                   1209 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 923: void TIM1_SelectSlaveMode(TIM1_SlaveMode_TypeDef TIM1_SlaveMode)
-                                   1210 ;	-----------------------------------------
-                                   1211 ;	 function TIM1_SelectSlaveMode
-                                   1212 ;	-----------------------------------------
-      009211                       1213 _TIM1_SelectSlaveMode:
-                           000446  1214 	C$stm8s_tim1.c$929$1_0$424 ==.
-                                   1215 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 929: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~TIM1_SMCR_SMS)) |
-      009211 C6 52 52         [ 1] 1216 	ld	a, 0x5252
-      009214 A4 F8            [ 1] 1217 	and	a, #0xf8
-                           00044B  1218 	C$stm8s_tim1.c$930$1_0$424 ==.
-                                   1219 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 930: (uint8_t)TIM1_SlaveMode);
-      009216 1A 03            [ 1] 1220 	or	a, (0x03, sp)
-      009218 C7 52 52         [ 1] 1221 	ld	0x5252, a
-                           000450  1222 	C$stm8s_tim1.c$931$1_0$424 ==.
-                                   1223 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 931: }
-                           000450  1224 	C$stm8s_tim1.c$931$1_0$424 ==.
-                           000450  1225 	XG$TIM1_SelectSlaveMode$0$0 ==.
-      00921B 81               [ 4] 1226 	ret
-                           000451  1227 	G$TIM1_SelectMasterSlaveMode$0$0 ==.
-                           000451  1228 	C$stm8s_tim1.c$939$1_0$426 ==.
-                                   1229 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 939: void TIM1_SelectMasterSlaveMode(FunctionalState NewState)
-                                   1230 ;	-----------------------------------------
-                                   1231 ;	 function TIM1_SelectMasterSlaveMode
-                                   1232 ;	-----------------------------------------
-      00921C                       1233 _TIM1_SelectMasterSlaveMode:
-                           000451  1234 	C$stm8s_tim1.c$945$1_0$426 ==.
-                                   1235 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 945: if (NewState != DISABLE)
-      00921C 0D 03            [ 1] 1236 	tnz	(0x03, sp)
-      00921E 27 06            [ 1] 1237 	jreq	00102$
-                           000455  1238 	C$stm8s_tim1.c$947$2_0$427 ==.
-                                   1239 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 947: TIM1->SMCR |= TIM1_SMCR_MSM;
-      009220 72 1E 52 52      [ 1] 1240 	bset	21074, #7
-      009224 20 04            [ 2] 1241 	jra	00104$
-      009226                       1242 00102$:
-                           00045B  1243 	C$stm8s_tim1.c$951$2_0$428 ==.
-                                   1244 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 951: TIM1->SMCR &= (uint8_t)(~TIM1_SMCR_MSM);
-      009226 72 1F 52 52      [ 1] 1245 	bres	21074, #7
-      00922A                       1246 00104$:
-                           00045F  1247 	C$stm8s_tim1.c$953$1_0$426 ==.
-                                   1248 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 953: }
-                           00045F  1249 	C$stm8s_tim1.c$953$1_0$426 ==.
-                           00045F  1250 	XG$TIM1_SelectMasterSlaveMode$0$0 ==.
-      00922A 81               [ 4] 1251 	ret
-                           000460  1252 	G$TIM1_EncoderInterfaceConfig$0$0 ==.
-                           000460  1253 	C$stm8s_tim1.c$975$1_0$430 ==.
-                                   1254 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 975: void TIM1_EncoderInterfaceConfig(TIM1_EncoderMode_TypeDef TIM1_EncoderMode,
-                                   1255 ;	-----------------------------------------
-                                   1256 ;	 function TIM1_EncoderInterfaceConfig
-                                   1257 ;	-----------------------------------------
-      00922B                       1258 _TIM1_EncoderInterfaceConfig:
-                           000460  1259 	C$stm8s_tim1.c$985$1_0$430 ==.
-                                   1260 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 985: if (TIM1_IC1Polarity != TIM1_ICPOLARITY_RISING)
-      00922B 0D 04            [ 1] 1261 	tnz	(0x04, sp)
-      00922D 27 06            [ 1] 1262 	jreq	00102$
-                           000464  1263 	C$stm8s_tim1.c$987$2_0$431 ==.
-                                   1264 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 987: TIM1->CCER1 |= TIM1_CCER1_CC1P;
-      00922F 72 12 52 5C      [ 1] 1265 	bset	21084, #1
-      009233 20 04            [ 2] 1266 	jra	00103$
-      009235                       1267 00102$:
-                           00046A  1268 	C$stm8s_tim1.c$991$2_0$432 ==.
-                                   1269 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 991: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
-      009235 72 13 52 5C      [ 1] 1270 	bres	21084, #1
-      009239                       1271 00103$:
-                           00046E  1272 	C$stm8s_tim1.c$994$1_0$430 ==.
-                                   1273 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 994: if (TIM1_IC2Polarity != TIM1_ICPOLARITY_RISING)
-      009239 0D 05            [ 1] 1274 	tnz	(0x05, sp)
-      00923B 27 06            [ 1] 1275 	jreq	00105$
-                           000472  1276 	C$stm8s_tim1.c$996$2_0$433 ==.
-                                   1277 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 996: TIM1->CCER1 |= TIM1_CCER1_CC2P;
-      00923D 72 1A 52 5C      [ 1] 1278 	bset	21084, #5
-      009241 20 04            [ 2] 1279 	jra	00106$
-      009243                       1280 00105$:
-                           000478  1281 	C$stm8s_tim1.c$1000$2_0$434 ==.
-                                   1282 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1000: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
-      009243 72 1B 52 5C      [ 1] 1283 	bres	21084, #5
-      009247                       1284 00106$:
-                           00047C  1285 	C$stm8s_tim1.c$1003$1_0$430 ==.
-                                   1286 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1003: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(TIM1_SMCR_MSM | TIM1_SMCR_TS))
-      009247 C6 52 52         [ 1] 1287 	ld	a, 0x5252
-      00924A A4 F0            [ 1] 1288 	and	a, #0xf0
-                           000481  1289 	C$stm8s_tim1.c$1004$1_0$430 ==.
-                                   1290 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1004: | (uint8_t) TIM1_EncoderMode);
-      00924C 1A 03            [ 1] 1291 	or	a, (0x03, sp)
-      00924E C7 52 52         [ 1] 1292 	ld	0x5252, a
-                           000486  1293 	C$stm8s_tim1.c$1007$1_0$430 ==.
-                                   1294 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1007: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_CCxS)) 
-      009251 C6 52 58         [ 1] 1295 	ld	a, 0x5258
-      009254 A4 FC            [ 1] 1296 	and	a, #0xfc
-      009256 AA 01            [ 1] 1297 	or	a, #0x01
-      009258 C7 52 58         [ 1] 1298 	ld	0x5258, a
-                           000490  1299 	C$stm8s_tim1.c$1009$1_0$430 ==.
-                                   1300 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1009: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_CCxS))
-      00925B C6 52 59         [ 1] 1301 	ld	a, 0x5259
-      00925E A4 FC            [ 1] 1302 	and	a, #0xfc
-      009260 AA 01            [ 1] 1303 	or	a, #0x01
-      009262 C7 52 59         [ 1] 1304 	ld	0x5259, a
-                           00049A  1305 	C$stm8s_tim1.c$1011$1_0$430 ==.
-                                   1306 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1011: }
-                           00049A  1307 	C$stm8s_tim1.c$1011$1_0$430 ==.
-                           00049A  1308 	XG$TIM1_EncoderInterfaceConfig$0$0 ==.
-      009265 81               [ 4] 1309 	ret
-                           00049B  1310 	G$TIM1_PrescalerConfig$0$0 ==.
-                           00049B  1311 	C$stm8s_tim1.c$1023$1_0$436 ==.
-                                   1312 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1023: void TIM1_PrescalerConfig(uint16_t Prescaler,
-                                   1313 ;	-----------------------------------------
-                                   1314 ;	 function TIM1_PrescalerConfig
-                                   1315 ;	-----------------------------------------
-      009266                       1316 _TIM1_PrescalerConfig:
-      009266 52 02            [ 2] 1317 	sub	sp, #2
-                           00049D  1318 	C$stm8s_tim1.c$1030$1_0$436 ==.
-                                   1319 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1030: TIM1->PSCRH = (uint8_t)(Prescaler >> 8);
-      009268 7B 05            [ 1] 1320 	ld	a, (0x05, sp)
-      00926A 0F 01            [ 1] 1321 	clr	(0x01, sp)
-      00926C C7 52 60         [ 1] 1322 	ld	0x5260, a
-                           0004A4  1323 	C$stm8s_tim1.c$1031$1_0$436 ==.
-                                   1324 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1031: TIM1->PSCRL = (uint8_t)(Prescaler);
-      00926F 7B 06            [ 1] 1325 	ld	a, (0x06, sp)
-      009271 C7 52 61         [ 1] 1326 	ld	0x5261, a
-                           0004A9  1327 	C$stm8s_tim1.c$1034$1_0$436 ==.
-                                   1328 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1034: TIM1->EGR = (uint8_t)TIM1_PSCReloadMode;
-      009274 AE 52 57         [ 2] 1329 	ldw	x, #0x5257
-      009277 7B 07            [ 1] 1330 	ld	a, (0x07, sp)
-      009279 F7               [ 1] 1331 	ld	(x), a
-                           0004AF  1332 	C$stm8s_tim1.c$1035$1_0$436 ==.
-                                   1333 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1035: }
-      00927A 5B 02            [ 2] 1334 	addw	sp, #2
-                           0004B1  1335 	C$stm8s_tim1.c$1035$1_0$436 ==.
-                           0004B1  1336 	XG$TIM1_PrescalerConfig$0$0 ==.
-      00927C 81               [ 4] 1337 	ret
-                           0004B2  1338 	G$TIM1_CounterModeConfig$0$0 ==.
-                           0004B2  1339 	C$stm8s_tim1.c$1048$1_0$438 ==.
-                                   1340 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1048: void TIM1_CounterModeConfig(TIM1_CounterMode_TypeDef TIM1_CounterMode)
-                                   1341 ;	-----------------------------------------
-                                   1342 ;	 function TIM1_CounterModeConfig
-                                   1343 ;	-----------------------------------------
-      00927D                       1344 _TIM1_CounterModeConfig:
-                           0004B2  1345 	C$stm8s_tim1.c$1055$1_0$438 ==.
-                                   1346 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1055: TIM1->CR1 = (uint8_t)((uint8_t)(TIM1->CR1 & (uint8_t)((uint8_t)(~TIM1_CR1_CMS) & (uint8_t)(~TIM1_CR1_DIR)))
-      00927D C6 52 50         [ 1] 1347 	ld	a, 0x5250
-      009280 A4 8F            [ 1] 1348 	and	a, #0x8f
-                           0004B7  1349 	C$stm8s_tim1.c$1056$1_0$438 ==.
-                                   1350 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1056: | (uint8_t)TIM1_CounterMode);
-      009282 1A 03            [ 1] 1351 	or	a, (0x03, sp)
-      009284 C7 52 50         [ 1] 1352 	ld	0x5250, a
-                           0004BC  1353 	C$stm8s_tim1.c$1057$1_0$438 ==.
-                                   1354 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1057: }
-                           0004BC  1355 	C$stm8s_tim1.c$1057$1_0$438 ==.
-                           0004BC  1356 	XG$TIM1_CounterModeConfig$0$0 ==.
-      009287 81               [ 4] 1357 	ret
-                           0004BD  1358 	G$TIM1_ForcedOC1Config$0$0 ==.
-                           0004BD  1359 	C$stm8s_tim1.c$1067$1_0$440 ==.
-                                   1360 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1067: void TIM1_ForcedOC1Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
-                                   1361 ;	-----------------------------------------
-                                   1362 ;	 function TIM1_ForcedOC1Config
-                                   1363 ;	-----------------------------------------
-      009288                       1364 _TIM1_ForcedOC1Config:
-                           0004BD  1365 	C$stm8s_tim1.c$1073$1_0$440 ==.
-                                   1366 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1073: TIM1->CCMR1 =  (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM))|
-      009288 C6 52 58         [ 1] 1367 	ld	a, 0x5258
-      00928B A4 8F            [ 1] 1368 	and	a, #0x8f
-                           0004C2  1369 	C$stm8s_tim1.c$1074$1_0$440 ==.
-                                   1370 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1074: (uint8_t)TIM1_ForcedAction);
-      00928D 1A 03            [ 1] 1371 	or	a, (0x03, sp)
-      00928F C7 52 58         [ 1] 1372 	ld	0x5258, a
-                           0004C7  1373 	C$stm8s_tim1.c$1075$1_0$440 ==.
-                                   1374 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1075: }
-                           0004C7  1375 	C$stm8s_tim1.c$1075$1_0$440 ==.
-                           0004C7  1376 	XG$TIM1_ForcedOC1Config$0$0 ==.
-      009292 81               [ 4] 1377 	ret
-                           0004C8  1378 	G$TIM1_ForcedOC2Config$0$0 ==.
-                           0004C8  1379 	C$stm8s_tim1.c$1085$1_0$442 ==.
-                                   1380 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1085: void TIM1_ForcedOC2Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
-                                   1381 ;	-----------------------------------------
-                                   1382 ;	 function TIM1_ForcedOC2Config
-                                   1383 ;	-----------------------------------------
-      009293                       1384 _TIM1_ForcedOC2Config:
-                           0004C8  1385 	C$stm8s_tim1.c$1091$1_0$442 ==.
-                                   1386 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1091: TIM1->CCMR2  =  (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM))
-      009293 C6 52 59         [ 1] 1387 	ld	a, 0x5259
-      009296 A4 8F            [ 1] 1388 	and	a, #0x8f
-                           0004CD  1389 	C$stm8s_tim1.c$1092$1_0$442 ==.
-                                   1390 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1092: | (uint8_t)TIM1_ForcedAction);
-      009298 1A 03            [ 1] 1391 	or	a, (0x03, sp)
-      00929A C7 52 59         [ 1] 1392 	ld	0x5259, a
-                           0004D2  1393 	C$stm8s_tim1.c$1093$1_0$442 ==.
-                                   1394 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1093: }
-                           0004D2  1395 	C$stm8s_tim1.c$1093$1_0$442 ==.
-                           0004D2  1396 	XG$TIM1_ForcedOC2Config$0$0 ==.
-      00929D 81               [ 4] 1397 	ret
-                           0004D3  1398 	G$TIM1_ForcedOC3Config$0$0 ==.
-                           0004D3  1399 	C$stm8s_tim1.c$1104$1_0$444 ==.
-                                   1400 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1104: void TIM1_ForcedOC3Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
-                                   1401 ;	-----------------------------------------
-                                   1402 ;	 function TIM1_ForcedOC3Config
-                                   1403 ;	-----------------------------------------
-      00929E                       1404 _TIM1_ForcedOC3Config:
-                           0004D3  1405 	C$stm8s_tim1.c$1110$1_0$444 ==.
-                                   1406 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1110: TIM1->CCMR3  =  (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM))  
-      00929E C6 52 5A         [ 1] 1407 	ld	a, 0x525a
-      0092A1 A4 8F            [ 1] 1408 	and	a, #0x8f
-                           0004D8  1409 	C$stm8s_tim1.c$1111$1_0$444 ==.
-                                   1410 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1111: | (uint8_t)TIM1_ForcedAction);
-      0092A3 1A 03            [ 1] 1411 	or	a, (0x03, sp)
-      0092A5 C7 52 5A         [ 1] 1412 	ld	0x525a, a
-                           0004DD  1413 	C$stm8s_tim1.c$1112$1_0$444 ==.
-                                   1414 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1112: }
-                           0004DD  1415 	C$stm8s_tim1.c$1112$1_0$444 ==.
-                           0004DD  1416 	XG$TIM1_ForcedOC3Config$0$0 ==.
-      0092A8 81               [ 4] 1417 	ret
-                           0004DE  1418 	G$TIM1_ForcedOC4Config$0$0 ==.
-                           0004DE  1419 	C$stm8s_tim1.c$1123$1_0$446 ==.
-                                   1420 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1123: void TIM1_ForcedOC4Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
-                                   1421 ;	-----------------------------------------
-                                   1422 ;	 function TIM1_ForcedOC4Config
-                                   1423 ;	-----------------------------------------
-      0092A9                       1424 _TIM1_ForcedOC4Config:
-                           0004DE  1425 	C$stm8s_tim1.c$1129$1_0$446 ==.
-                                   1426 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1129: TIM1->CCMR4  =  (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) 
-      0092A9 C6 52 5B         [ 1] 1427 	ld	a, 0x525b
-      0092AC A4 8F            [ 1] 1428 	and	a, #0x8f
-                           0004E3  1429 	C$stm8s_tim1.c$1130$1_0$446 ==.
-                                   1430 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1130: | (uint8_t)TIM1_ForcedAction);
-      0092AE 1A 03            [ 1] 1431 	or	a, (0x03, sp)
-      0092B0 C7 52 5B         [ 1] 1432 	ld	0x525b, a
-                           0004E8  1433 	C$stm8s_tim1.c$1131$1_0$446 ==.
-                                   1434 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1131: }
-                           0004E8  1435 	C$stm8s_tim1.c$1131$1_0$446 ==.
-                           0004E8  1436 	XG$TIM1_ForcedOC4Config$0$0 ==.
-      0092B3 81               [ 4] 1437 	ret
-                           0004E9  1438 	G$TIM1_ARRPreloadConfig$0$0 ==.
-                           0004E9  1439 	C$stm8s_tim1.c$1139$1_0$448 ==.
-                                   1440 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1139: void TIM1_ARRPreloadConfig(FunctionalState NewState)
-                                   1441 ;	-----------------------------------------
-                                   1442 ;	 function TIM1_ARRPreloadConfig
-                                   1443 ;	-----------------------------------------
-      0092B4                       1444 _TIM1_ARRPreloadConfig:
-                           0004E9  1445 	C$stm8s_tim1.c$1145$1_0$448 ==.
-                                   1446 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1145: if (NewState != DISABLE)
-      0092B4 0D 03            [ 1] 1447 	tnz	(0x03, sp)
-      0092B6 27 06            [ 1] 1448 	jreq	00102$
-                           0004ED  1449 	C$stm8s_tim1.c$1147$2_0$449 ==.
-                                   1450 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1147: TIM1->CR1 |= TIM1_CR1_ARPE;
-      0092B8 72 1E 52 50      [ 1] 1451 	bset	21072, #7
-      0092BC 20 04            [ 2] 1452 	jra	00104$
-      0092BE                       1453 00102$:
-                           0004F3  1454 	C$stm8s_tim1.c$1151$2_0$450 ==.
-                                   1455 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1151: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_ARPE);
-      0092BE 72 1F 52 50      [ 1] 1456 	bres	21072, #7
-      0092C2                       1457 00104$:
-                           0004F7  1458 	C$stm8s_tim1.c$1153$1_0$448 ==.
-                                   1459 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1153: }
-                           0004F7  1460 	C$stm8s_tim1.c$1153$1_0$448 ==.
-                           0004F7  1461 	XG$TIM1_ARRPreloadConfig$0$0 ==.
-      0092C2 81               [ 4] 1462 	ret
-                           0004F8  1463 	G$TIM1_SelectCOM$0$0 ==.
-                           0004F8  1464 	C$stm8s_tim1.c$1161$1_0$452 ==.
-                                   1465 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1161: void TIM1_SelectCOM(FunctionalState NewState)
-                                   1466 ;	-----------------------------------------
-                                   1467 ;	 function TIM1_SelectCOM
-                                   1468 ;	-----------------------------------------
-      0092C3                       1469 _TIM1_SelectCOM:
-                           0004F8  1470 	C$stm8s_tim1.c$1167$1_0$452 ==.
-                                   1471 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1167: if (NewState != DISABLE)
-      0092C3 0D 03            [ 1] 1472 	tnz	(0x03, sp)
-      0092C5 27 06            [ 1] 1473 	jreq	00102$
-                           0004FC  1474 	C$stm8s_tim1.c$1169$2_0$453 ==.
-                                   1475 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1169: TIM1->CR2 |= TIM1_CR2_COMS;
-      0092C7 72 14 52 51      [ 1] 1476 	bset	21073, #2
-      0092CB 20 04            [ 2] 1477 	jra	00104$
-      0092CD                       1478 00102$:
-                           000502  1479 	C$stm8s_tim1.c$1173$2_0$454 ==.
-                                   1480 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1173: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_COMS);
-      0092CD 72 15 52 51      [ 1] 1481 	bres	21073, #2
-      0092D1                       1482 00104$:
-                           000506  1483 	C$stm8s_tim1.c$1175$1_0$452 ==.
-                                   1484 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1175: }
-                           000506  1485 	C$stm8s_tim1.c$1175$1_0$452 ==.
-                           000506  1486 	XG$TIM1_SelectCOM$0$0 ==.
-      0092D1 81               [ 4] 1487 	ret
-                           000507  1488 	G$TIM1_CCPreloadControl$0$0 ==.
-                           000507  1489 	C$stm8s_tim1.c$1183$1_0$456 ==.
-                                   1490 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1183: void TIM1_CCPreloadControl(FunctionalState NewState)
-                                   1491 ;	-----------------------------------------
-                                   1492 ;	 function TIM1_CCPreloadControl
-                                   1493 ;	-----------------------------------------
-      0092D2                       1494 _TIM1_CCPreloadControl:
-                           000507  1495 	C$stm8s_tim1.c$1189$1_0$456 ==.
-                                   1496 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1189: if (NewState != DISABLE)
-      0092D2 0D 03            [ 1] 1497 	tnz	(0x03, sp)
-      0092D4 27 06            [ 1] 1498 	jreq	00102$
-                           00050B  1499 	C$stm8s_tim1.c$1191$2_0$457 ==.
-                                   1500 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1191: TIM1->CR2 |= TIM1_CR2_CCPC;
-      0092D6 72 10 52 51      [ 1] 1501 	bset	21073, #0
-      0092DA 20 04            [ 2] 1502 	jra	00104$
-      0092DC                       1503 00102$:
-                           000511  1504 	C$stm8s_tim1.c$1195$2_0$458 ==.
-                                   1505 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1195: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_CCPC);
-      0092DC 72 11 52 51      [ 1] 1506 	bres	21073, #0
-      0092E0                       1507 00104$:
-                           000515  1508 	C$stm8s_tim1.c$1197$1_0$456 ==.
-                                   1509 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1197: }
-                           000515  1510 	C$stm8s_tim1.c$1197$1_0$456 ==.
-                           000515  1511 	XG$TIM1_CCPreloadControl$0$0 ==.
-      0092E0 81               [ 4] 1512 	ret
-                           000516  1513 	G$TIM1_OC1PreloadConfig$0$0 ==.
-                           000516  1514 	C$stm8s_tim1.c$1205$1_0$460 ==.
-                                   1515 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1205: void TIM1_OC1PreloadConfig(FunctionalState NewState)
-                                   1516 ;	-----------------------------------------
-                                   1517 ;	 function TIM1_OC1PreloadConfig
-                                   1518 ;	-----------------------------------------
-      0092E1                       1519 _TIM1_OC1PreloadConfig:
-                           000516  1520 	C$stm8s_tim1.c$1211$1_0$460 ==.
-                                   1521 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1211: if (NewState != DISABLE)
-      0092E1 0D 03            [ 1] 1522 	tnz	(0x03, sp)
-      0092E3 27 06            [ 1] 1523 	jreq	00102$
-                           00051A  1524 	C$stm8s_tim1.c$1213$2_0$461 ==.
-                                   1525 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1213: TIM1->CCMR1 |= TIM1_CCMR_OCxPE;
-      0092E5 72 16 52 58      [ 1] 1526 	bset	21080, #3
-      0092E9 20 04            [ 2] 1527 	jra	00104$
-      0092EB                       1528 00102$:
-                           000520  1529 	C$stm8s_tim1.c$1217$2_0$462 ==.
-                                   1530 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1217: TIM1->CCMR1 &= (uint8_t)(~TIM1_CCMR_OCxPE);
-      0092EB 72 17 52 58      [ 1] 1531 	bres	21080, #3
-      0092EF                       1532 00104$:
-                           000524  1533 	C$stm8s_tim1.c$1219$1_0$460 ==.
-                                   1534 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1219: }
-                           000524  1535 	C$stm8s_tim1.c$1219$1_0$460 ==.
-                           000524  1536 	XG$TIM1_OC1PreloadConfig$0$0 ==.
-      0092EF 81               [ 4] 1537 	ret
-                           000525  1538 	G$TIM1_OC2PreloadConfig$0$0 ==.
-                           000525  1539 	C$stm8s_tim1.c$1227$1_0$464 ==.
-                                   1540 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1227: void TIM1_OC2PreloadConfig(FunctionalState NewState)
-                                   1541 ;	-----------------------------------------
-                                   1542 ;	 function TIM1_OC2PreloadConfig
-                                   1543 ;	-----------------------------------------
-      0092F0                       1544 _TIM1_OC2PreloadConfig:
-                           000525  1545 	C$stm8s_tim1.c$1233$1_0$464 ==.
-                                   1546 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1233: if (NewState != DISABLE)
-      0092F0 0D 03            [ 1] 1547 	tnz	(0x03, sp)
-      0092F2 27 06            [ 1] 1548 	jreq	00102$
-                           000529  1549 	C$stm8s_tim1.c$1235$2_0$465 ==.
-                                   1550 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1235: TIM1->CCMR2 |= TIM1_CCMR_OCxPE;
-      0092F4 72 16 52 59      [ 1] 1551 	bset	21081, #3
-      0092F8 20 04            [ 2] 1552 	jra	00104$
-      0092FA                       1553 00102$:
-                           00052F  1554 	C$stm8s_tim1.c$1239$2_0$466 ==.
-                                   1555 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1239: TIM1->CCMR2 &= (uint8_t)(~TIM1_CCMR_OCxPE);
-      0092FA 72 17 52 59      [ 1] 1556 	bres	21081, #3
-      0092FE                       1557 00104$:
-                           000533  1558 	C$stm8s_tim1.c$1241$1_0$464 ==.
-                                   1559 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1241: }
-                           000533  1560 	C$stm8s_tim1.c$1241$1_0$464 ==.
-                           000533  1561 	XG$TIM1_OC2PreloadConfig$0$0 ==.
-      0092FE 81               [ 4] 1562 	ret
-                           000534  1563 	G$TIM1_OC3PreloadConfig$0$0 ==.
-                           000534  1564 	C$stm8s_tim1.c$1249$1_0$468 ==.
-                                   1565 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1249: void TIM1_OC3PreloadConfig(FunctionalState NewState)
-                                   1566 ;	-----------------------------------------
-                                   1567 ;	 function TIM1_OC3PreloadConfig
-                                   1568 ;	-----------------------------------------
-      0092FF                       1569 _TIM1_OC3PreloadConfig:
-                           000534  1570 	C$stm8s_tim1.c$1255$1_0$468 ==.
-                                   1571 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1255: if (NewState != DISABLE)
-      0092FF 0D 03            [ 1] 1572 	tnz	(0x03, sp)
-      009301 27 06            [ 1] 1573 	jreq	00102$
-                           000538  1574 	C$stm8s_tim1.c$1257$2_0$469 ==.
-                                   1575 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1257: TIM1->CCMR3 |= TIM1_CCMR_OCxPE;
-      009303 72 16 52 5A      [ 1] 1576 	bset	21082, #3
-      009307 20 04            [ 2] 1577 	jra	00104$
-      009309                       1578 00102$:
-                           00053E  1579 	C$stm8s_tim1.c$1261$2_0$470 ==.
-                                   1580 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1261: TIM1->CCMR3 &= (uint8_t)(~TIM1_CCMR_OCxPE);
-      009309 72 17 52 5A      [ 1] 1581 	bres	21082, #3
-      00930D                       1582 00104$:
-                           000542  1583 	C$stm8s_tim1.c$1263$1_0$468 ==.
-                                   1584 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1263: }
-                           000542  1585 	C$stm8s_tim1.c$1263$1_0$468 ==.
-                           000542  1586 	XG$TIM1_OC3PreloadConfig$0$0 ==.
-      00930D 81               [ 4] 1587 	ret
-                           000543  1588 	G$TIM1_OC4PreloadConfig$0$0 ==.
-                           000543  1589 	C$stm8s_tim1.c$1271$1_0$472 ==.
-                                   1590 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1271: void TIM1_OC4PreloadConfig(FunctionalState NewState)
-                                   1591 ;	-----------------------------------------
-                                   1592 ;	 function TIM1_OC4PreloadConfig
-                                   1593 ;	-----------------------------------------
-      00930E                       1594 _TIM1_OC4PreloadConfig:
-                           000543  1595 	C$stm8s_tim1.c$1277$1_0$472 ==.
-                                   1596 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1277: if (NewState != DISABLE)
-      00930E 0D 03            [ 1] 1597 	tnz	(0x03, sp)
-      009310 27 06            [ 1] 1598 	jreq	00102$
-                           000547  1599 	C$stm8s_tim1.c$1279$2_0$473 ==.
-                                   1600 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1279: TIM1->CCMR4 |= TIM1_CCMR_OCxPE;
-      009312 72 16 52 5B      [ 1] 1601 	bset	21083, #3
-      009316 20 04            [ 2] 1602 	jra	00104$
-      009318                       1603 00102$:
-                           00054D  1604 	C$stm8s_tim1.c$1283$2_0$474 ==.
-                                   1605 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1283: TIM1->CCMR4 &= (uint8_t)(~TIM1_CCMR_OCxPE);
-      009318 72 17 52 5B      [ 1] 1606 	bres	21083, #3
-      00931C                       1607 00104$:
-                           000551  1608 	C$stm8s_tim1.c$1285$1_0$472 ==.
-                                   1609 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1285: }
-                           000551  1610 	C$stm8s_tim1.c$1285$1_0$472 ==.
-                           000551  1611 	XG$TIM1_OC4PreloadConfig$0$0 ==.
-      00931C 81               [ 4] 1612 	ret
-                           000552  1613 	G$TIM1_OC1FastConfig$0$0 ==.
-                           000552  1614 	C$stm8s_tim1.c$1293$1_0$476 ==.
-                                   1615 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1293: void TIM1_OC1FastConfig(FunctionalState NewState)
-                                   1616 ;	-----------------------------------------
-                                   1617 ;	 function TIM1_OC1FastConfig
-                                   1618 ;	-----------------------------------------
-      00931D                       1619 _TIM1_OC1FastConfig:
-                           000552  1620 	C$stm8s_tim1.c$1299$1_0$476 ==.
-                                   1621 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1299: if (NewState != DISABLE)
-      00931D 0D 03            [ 1] 1622 	tnz	(0x03, sp)
-      00931F 27 06            [ 1] 1623 	jreq	00102$
-                           000556  1624 	C$stm8s_tim1.c$1301$2_0$477 ==.
-                                   1625 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1301: TIM1->CCMR1 |= TIM1_CCMR_OCxFE;
-      009321 72 14 52 58      [ 1] 1626 	bset	21080, #2
-      009325 20 04            [ 2] 1627 	jra	00104$
-      009327                       1628 00102$:
-                           00055C  1629 	C$stm8s_tim1.c$1305$2_0$478 ==.
-                                   1630 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1305: TIM1->CCMR1 &= (uint8_t)(~TIM1_CCMR_OCxFE);
-      009327 72 15 52 58      [ 1] 1631 	bres	21080, #2
-      00932B                       1632 00104$:
-                           000560  1633 	C$stm8s_tim1.c$1307$1_0$476 ==.
-                                   1634 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1307: }
-                           000560  1635 	C$stm8s_tim1.c$1307$1_0$476 ==.
-                           000560  1636 	XG$TIM1_OC1FastConfig$0$0 ==.
-      00932B 81               [ 4] 1637 	ret
-                           000561  1638 	G$TIM1_OC2FastConfig$0$0 ==.
-                           000561  1639 	C$stm8s_tim1.c$1315$1_0$480 ==.
-                                   1640 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1315: void TIM1_OC2FastConfig(FunctionalState NewState)
-                                   1641 ;	-----------------------------------------
-                                   1642 ;	 function TIM1_OC2FastConfig
-                                   1643 ;	-----------------------------------------
-      00932C                       1644 _TIM1_OC2FastConfig:
-                           000561  1645 	C$stm8s_tim1.c$1321$1_0$480 ==.
-                                   1646 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1321: if (NewState != DISABLE)
-      00932C 0D 03            [ 1] 1647 	tnz	(0x03, sp)
-      00932E 27 06            [ 1] 1648 	jreq	00102$
-                           000565  1649 	C$stm8s_tim1.c$1323$2_0$481 ==.
-                                   1650 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1323: TIM1->CCMR2 |= TIM1_CCMR_OCxFE;
-      009330 72 14 52 59      [ 1] 1651 	bset	21081, #2
-      009334 20 04            [ 2] 1652 	jra	00104$
-      009336                       1653 00102$:
-                           00056B  1654 	C$stm8s_tim1.c$1327$2_0$482 ==.
-                                   1655 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1327: TIM1->CCMR2 &= (uint8_t)(~TIM1_CCMR_OCxFE);
-      009336 72 15 52 59      [ 1] 1656 	bres	21081, #2
-      00933A                       1657 00104$:
-                           00056F  1658 	C$stm8s_tim1.c$1329$1_0$480 ==.
-                                   1659 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1329: }
-                           00056F  1660 	C$stm8s_tim1.c$1329$1_0$480 ==.
-                           00056F  1661 	XG$TIM1_OC2FastConfig$0$0 ==.
-      00933A 81               [ 4] 1662 	ret
-                           000570  1663 	G$TIM1_OC3FastConfig$0$0 ==.
-                           000570  1664 	C$stm8s_tim1.c$1337$1_0$484 ==.
-                                   1665 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1337: void TIM1_OC3FastConfig(FunctionalState NewState)
-                                   1666 ;	-----------------------------------------
-                                   1667 ;	 function TIM1_OC3FastConfig
-                                   1668 ;	-----------------------------------------
-      00933B                       1669 _TIM1_OC3FastConfig:
-                           000570  1670 	C$stm8s_tim1.c$1343$1_0$484 ==.
-                                   1671 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1343: if (NewState != DISABLE)
-      00933B 0D 03            [ 1] 1672 	tnz	(0x03, sp)
-      00933D 27 06            [ 1] 1673 	jreq	00102$
-                           000574  1674 	C$stm8s_tim1.c$1345$2_0$485 ==.
-                                   1675 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1345: TIM1->CCMR3 |= TIM1_CCMR_OCxFE;
-      00933F 72 14 52 5A      [ 1] 1676 	bset	21082, #2
-      009343 20 04            [ 2] 1677 	jra	00104$
-      009345                       1678 00102$:
-                           00057A  1679 	C$stm8s_tim1.c$1349$2_0$486 ==.
-                                   1680 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1349: TIM1->CCMR3 &= (uint8_t)(~TIM1_CCMR_OCxFE);
-      009345 72 15 52 5A      [ 1] 1681 	bres	21082, #2
-      009349                       1682 00104$:
-                           00057E  1683 	C$stm8s_tim1.c$1351$1_0$484 ==.
-                                   1684 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1351: }
-                           00057E  1685 	C$stm8s_tim1.c$1351$1_0$484 ==.
-                           00057E  1686 	XG$TIM1_OC3FastConfig$0$0 ==.
-      009349 81               [ 4] 1687 	ret
-                           00057F  1688 	G$TIM1_OC4FastConfig$0$0 ==.
-                           00057F  1689 	C$stm8s_tim1.c$1359$1_0$488 ==.
-                                   1690 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1359: void TIM1_OC4FastConfig(FunctionalState NewState)
-                                   1691 ;	-----------------------------------------
-                                   1692 ;	 function TIM1_OC4FastConfig
-                                   1693 ;	-----------------------------------------
-      00934A                       1694 _TIM1_OC4FastConfig:
-                           00057F  1695 	C$stm8s_tim1.c$1365$1_0$488 ==.
-                                   1696 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1365: if (NewState != DISABLE)
-      00934A 0D 03            [ 1] 1697 	tnz	(0x03, sp)
-      00934C 27 06            [ 1] 1698 	jreq	00102$
-                           000583  1699 	C$stm8s_tim1.c$1367$2_0$489 ==.
-                                   1700 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1367: TIM1->CCMR4 |= TIM1_CCMR_OCxFE;
-      00934E 72 14 52 5B      [ 1] 1701 	bset	21083, #2
-      009352 20 04            [ 2] 1702 	jra	00104$
-      009354                       1703 00102$:
-                           000589  1704 	C$stm8s_tim1.c$1371$2_0$490 ==.
-                                   1705 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1371: TIM1->CCMR4 &= (uint8_t)(~TIM1_CCMR_OCxFE);
-      009354 72 15 52 5B      [ 1] 1706 	bres	21083, #2
-      009358                       1707 00104$:
-                           00058D  1708 	C$stm8s_tim1.c$1373$1_0$488 ==.
-                                   1709 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1373: }
-                           00058D  1710 	C$stm8s_tim1.c$1373$1_0$488 ==.
-                           00058D  1711 	XG$TIM1_OC4FastConfig$0$0 ==.
-      009358 81               [ 4] 1712 	ret
-                           00058E  1713 	G$TIM1_GenerateEvent$0$0 ==.
-                           00058E  1714 	C$stm8s_tim1.c$1389$1_0$492 ==.
-                                   1715 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1389: void TIM1_GenerateEvent(TIM1_EventSource_TypeDef TIM1_EventSource)
-                                   1716 ;	-----------------------------------------
-                                   1717 ;	 function TIM1_GenerateEvent
-                                   1718 ;	-----------------------------------------
-      009359                       1719 _TIM1_GenerateEvent:
-                           00058E  1720 	C$stm8s_tim1.c$1395$1_0$492 ==.
-                                   1721 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1395: TIM1->EGR = (uint8_t)TIM1_EventSource;
-      009359 AE 52 57         [ 2] 1722 	ldw	x, #0x5257
-      00935C 7B 03            [ 1] 1723 	ld	a, (0x03, sp)
-      00935E F7               [ 1] 1724 	ld	(x), a
-                           000594  1725 	C$stm8s_tim1.c$1396$1_0$492 ==.
-                                   1726 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1396: }
-                           000594  1727 	C$stm8s_tim1.c$1396$1_0$492 ==.
-                           000594  1728 	XG$TIM1_GenerateEvent$0$0 ==.
-      00935F 81               [ 4] 1729 	ret
-                           000595  1730 	G$TIM1_OC1PolarityConfig$0$0 ==.
-                           000595  1731 	C$stm8s_tim1.c$1406$1_0$494 ==.
-                                   1732 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1406: void TIM1_OC1PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
-                                   1733 ;	-----------------------------------------
-                                   1734 ;	 function TIM1_OC1PolarityConfig
-                                   1735 ;	-----------------------------------------
-      009360                       1736 _TIM1_OC1PolarityConfig:
-                           000595  1737 	C$stm8s_tim1.c$1412$1_0$494 ==.
-                                   1738 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1412: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
-      009360 0D 03            [ 1] 1739 	tnz	(0x03, sp)
-      009362 27 06            [ 1] 1740 	jreq	00102$
-                           000599  1741 	C$stm8s_tim1.c$1414$2_0$495 ==.
-                                   1742 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1414: TIM1->CCER1 |= TIM1_CCER1_CC1P;
-      009364 72 12 52 5C      [ 1] 1743 	bset	21084, #1
-      009368 20 04            [ 2] 1744 	jra	00104$
-      00936A                       1745 00102$:
-                           00059F  1746 	C$stm8s_tim1.c$1418$2_0$496 ==.
-                                   1747 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1418: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
-      00936A 72 13 52 5C      [ 1] 1748 	bres	21084, #1
-      00936E                       1749 00104$:
-                           0005A3  1750 	C$stm8s_tim1.c$1420$1_0$494 ==.
-                                   1751 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1420: }
-                           0005A3  1752 	C$stm8s_tim1.c$1420$1_0$494 ==.
-                           0005A3  1753 	XG$TIM1_OC1PolarityConfig$0$0 ==.
-      00936E 81               [ 4] 1754 	ret
-                           0005A4  1755 	G$TIM1_OC1NPolarityConfig$0$0 ==.
-                           0005A4  1756 	C$stm8s_tim1.c$1430$1_0$498 ==.
-                                   1757 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1430: void TIM1_OC1NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
-                                   1758 ;	-----------------------------------------
-                                   1759 ;	 function TIM1_OC1NPolarityConfig
-                                   1760 ;	-----------------------------------------
-      00936F                       1761 _TIM1_OC1NPolarityConfig:
-                           0005A4  1762 	C$stm8s_tim1.c$1436$1_0$498 ==.
-                                   1763 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1436: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
-      00936F 0D 03            [ 1] 1764 	tnz	(0x03, sp)
-      009371 27 06            [ 1] 1765 	jreq	00102$
-                           0005A8  1766 	C$stm8s_tim1.c$1438$2_0$499 ==.
-                                   1767 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1438: TIM1->CCER1 |= TIM1_CCER1_CC1NP;
-      009373 72 16 52 5C      [ 1] 1768 	bset	21084, #3
-      009377 20 04            [ 2] 1769 	jra	00104$
-      009379                       1770 00102$:
-                           0005AE  1771 	C$stm8s_tim1.c$1442$2_0$500 ==.
-                                   1772 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1442: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1NP);
-      009379 72 17 52 5C      [ 1] 1773 	bres	21084, #3
-      00937D                       1774 00104$:
-                           0005B2  1775 	C$stm8s_tim1.c$1444$1_0$498 ==.
-                                   1776 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1444: }
-                           0005B2  1777 	C$stm8s_tim1.c$1444$1_0$498 ==.
-                           0005B2  1778 	XG$TIM1_OC1NPolarityConfig$0$0 ==.
-      00937D 81               [ 4] 1779 	ret
-                           0005B3  1780 	G$TIM1_OC2PolarityConfig$0$0 ==.
-                           0005B3  1781 	C$stm8s_tim1.c$1454$1_0$502 ==.
-                                   1782 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1454: void TIM1_OC2PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
-                                   1783 ;	-----------------------------------------
-                                   1784 ;	 function TIM1_OC2PolarityConfig
-                                   1785 ;	-----------------------------------------
-      00937E                       1786 _TIM1_OC2PolarityConfig:
-                           0005B3  1787 	C$stm8s_tim1.c$1460$1_0$502 ==.
-                                   1788 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1460: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
-      00937E 0D 03            [ 1] 1789 	tnz	(0x03, sp)
-      009380 27 06            [ 1] 1790 	jreq	00102$
-                           0005B7  1791 	C$stm8s_tim1.c$1462$2_0$503 ==.
-                                   1792 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1462: TIM1->CCER1 |= TIM1_CCER1_CC2P;
-      009382 72 1A 52 5C      [ 1] 1793 	bset	21084, #5
-      009386 20 04            [ 2] 1794 	jra	00104$
-      009388                       1795 00102$:
-                           0005BD  1796 	C$stm8s_tim1.c$1466$2_0$504 ==.
-                                   1797 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1466: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
-      009388 72 1B 52 5C      [ 1] 1798 	bres	21084, #5
-      00938C                       1799 00104$:
-                           0005C1  1800 	C$stm8s_tim1.c$1468$1_0$502 ==.
-                                   1801 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1468: }
-                           0005C1  1802 	C$stm8s_tim1.c$1468$1_0$502 ==.
-                           0005C1  1803 	XG$TIM1_OC2PolarityConfig$0$0 ==.
-      00938C 81               [ 4] 1804 	ret
-                           0005C2  1805 	G$TIM1_OC2NPolarityConfig$0$0 ==.
-                           0005C2  1806 	C$stm8s_tim1.c$1478$1_0$506 ==.
-                                   1807 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1478: void TIM1_OC2NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
-                                   1808 ;	-----------------------------------------
-                                   1809 ;	 function TIM1_OC2NPolarityConfig
-                                   1810 ;	-----------------------------------------
-      00938D                       1811 _TIM1_OC2NPolarityConfig:
-                           0005C2  1812 	C$stm8s_tim1.c$1484$1_0$506 ==.
-                                   1813 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1484: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
-      00938D 0D 03            [ 1] 1814 	tnz	(0x03, sp)
-      00938F 27 06            [ 1] 1815 	jreq	00102$
-                           0005C6  1816 	C$stm8s_tim1.c$1486$2_0$507 ==.
-                                   1817 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1486: TIM1->CCER1 |= TIM1_CCER1_CC2NP;
-      009391 72 1E 52 5C      [ 1] 1818 	bset	21084, #7
-      009395 20 04            [ 2] 1819 	jra	00104$
-      009397                       1820 00102$:
-                           0005CC  1821 	C$stm8s_tim1.c$1490$2_0$508 ==.
-                                   1822 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1490: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2NP);
-      009397 72 1F 52 5C      [ 1] 1823 	bres	21084, #7
-      00939B                       1824 00104$:
-                           0005D0  1825 	C$stm8s_tim1.c$1492$1_0$506 ==.
-                                   1826 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1492: }
-                           0005D0  1827 	C$stm8s_tim1.c$1492$1_0$506 ==.
-                           0005D0  1828 	XG$TIM1_OC2NPolarityConfig$0$0 ==.
-      00939B 81               [ 4] 1829 	ret
-                           0005D1  1830 	G$TIM1_OC3PolarityConfig$0$0 ==.
-                           0005D1  1831 	C$stm8s_tim1.c$1502$1_0$510 ==.
-                                   1832 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1502: void TIM1_OC3PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
-                                   1833 ;	-----------------------------------------
-                                   1834 ;	 function TIM1_OC3PolarityConfig
-                                   1835 ;	-----------------------------------------
-      00939C                       1836 _TIM1_OC3PolarityConfig:
-                           0005D1  1837 	C$stm8s_tim1.c$1508$1_0$510 ==.
-                                   1838 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1508: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
-      00939C 0D 03            [ 1] 1839 	tnz	(0x03, sp)
-      00939E 27 06            [ 1] 1840 	jreq	00102$
-                           0005D5  1841 	C$stm8s_tim1.c$1510$2_0$511 ==.
-                                   1842 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1510: TIM1->CCER2 |= TIM1_CCER2_CC3P;
-      0093A0 72 12 52 5D      [ 1] 1843 	bset	21085, #1
-      0093A4 20 04            [ 2] 1844 	jra	00104$
-      0093A6                       1845 00102$:
-                           0005DB  1846 	C$stm8s_tim1.c$1514$2_0$512 ==.
-                                   1847 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1514: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3P);
-      0093A6 72 13 52 5D      [ 1] 1848 	bres	21085, #1
-      0093AA                       1849 00104$:
-                           0005DF  1850 	C$stm8s_tim1.c$1516$1_0$510 ==.
-                                   1851 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1516: }
-                           0005DF  1852 	C$stm8s_tim1.c$1516$1_0$510 ==.
-                           0005DF  1853 	XG$TIM1_OC3PolarityConfig$0$0 ==.
-      0093AA 81               [ 4] 1854 	ret
-                           0005E0  1855 	G$TIM1_OC3NPolarityConfig$0$0 ==.
-                           0005E0  1856 	C$stm8s_tim1.c$1527$1_0$514 ==.
-                                   1857 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1527: void TIM1_OC3NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
-                                   1858 ;	-----------------------------------------
-                                   1859 ;	 function TIM1_OC3NPolarityConfig
-                                   1860 ;	-----------------------------------------
-      0093AB                       1861 _TIM1_OC3NPolarityConfig:
-                           0005E0  1862 	C$stm8s_tim1.c$1533$1_0$514 ==.
-                                   1863 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1533: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
-      0093AB 0D 03            [ 1] 1864 	tnz	(0x03, sp)
-      0093AD 27 06            [ 1] 1865 	jreq	00102$
-                           0005E4  1866 	C$stm8s_tim1.c$1535$2_0$515 ==.
-                                   1867 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1535: TIM1->CCER2 |= TIM1_CCER2_CC3NP;
-      0093AF 72 16 52 5D      [ 1] 1868 	bset	21085, #3
-      0093B3 20 04            [ 2] 1869 	jra	00104$
-      0093B5                       1870 00102$:
-                           0005EA  1871 	C$stm8s_tim1.c$1539$2_0$516 ==.
-                                   1872 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1539: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3NP);
-      0093B5 72 17 52 5D      [ 1] 1873 	bres	21085, #3
-      0093B9                       1874 00104$:
-                           0005EE  1875 	C$stm8s_tim1.c$1541$1_0$514 ==.
-                                   1876 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1541: }
-                           0005EE  1877 	C$stm8s_tim1.c$1541$1_0$514 ==.
-                           0005EE  1878 	XG$TIM1_OC3NPolarityConfig$0$0 ==.
-      0093B9 81               [ 4] 1879 	ret
-                           0005EF  1880 	G$TIM1_OC4PolarityConfig$0$0 ==.
-                           0005EF  1881 	C$stm8s_tim1.c$1551$1_0$518 ==.
-                                   1882 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1551: void TIM1_OC4PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
-                                   1883 ;	-----------------------------------------
-                                   1884 ;	 function TIM1_OC4PolarityConfig
-                                   1885 ;	-----------------------------------------
-      0093BA                       1886 _TIM1_OC4PolarityConfig:
-                           0005EF  1887 	C$stm8s_tim1.c$1557$1_0$518 ==.
-                                   1888 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1557: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
-      0093BA 0D 03            [ 1] 1889 	tnz	(0x03, sp)
-      0093BC 27 06            [ 1] 1890 	jreq	00102$
-                           0005F3  1891 	C$stm8s_tim1.c$1559$2_0$519 ==.
-                                   1892 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1559: TIM1->CCER2 |= TIM1_CCER2_CC4P;
-      0093BE 72 1A 52 5D      [ 1] 1893 	bset	21085, #5
-      0093C2 20 04            [ 2] 1894 	jra	00104$
-      0093C4                       1895 00102$:
-                           0005F9  1896 	C$stm8s_tim1.c$1563$2_0$520 ==.
-                                   1897 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1563: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4P);
-      0093C4 72 1B 52 5D      [ 1] 1898 	bres	21085, #5
-      0093C8                       1899 00104$:
-                           0005FD  1900 	C$stm8s_tim1.c$1565$1_0$518 ==.
-                                   1901 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1565: }
-                           0005FD  1902 	C$stm8s_tim1.c$1565$1_0$518 ==.
-                           0005FD  1903 	XG$TIM1_OC4PolarityConfig$0$0 ==.
-      0093C8 81               [ 4] 1904 	ret
-                           0005FE  1905 	G$TIM1_CCxCmd$0$0 ==.
-                           0005FE  1906 	C$stm8s_tim1.c$1579$1_0$522 ==.
-                                   1907 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1579: void TIM1_CCxCmd(TIM1_Channel_TypeDef TIM1_Channel, FunctionalState NewState)
-                                   1908 ;	-----------------------------------------
-                                   1909 ;	 function TIM1_CCxCmd
-                                   1910 ;	-----------------------------------------
-      0093C9                       1911 _TIM1_CCxCmd:
-                           0005FE  1912 	C$stm8s_tim1.c$1585$1_0$522 ==.
-                                   1913 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1585: if (TIM1_Channel == TIM1_CHANNEL_1)
-      0093C9 0D 03            [ 1] 1914 	tnz	(0x03, sp)
-      0093CB 26 10            [ 1] 1915 	jrne	00120$
-                           000602  1916 	C$stm8s_tim1.c$1588$2_0$523 ==.
-                                   1917 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1588: if (NewState != DISABLE)
-      0093CD 0D 04            [ 1] 1918 	tnz	(0x04, sp)
-      0093CF 27 06            [ 1] 1919 	jreq	00102$
-                           000606  1920 	C$stm8s_tim1.c$1590$3_0$524 ==.
-                                   1921 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1590: TIM1->CCER1 |= TIM1_CCER1_CC1E;
-      0093D1 72 10 52 5C      [ 1] 1922 	bset	21084, #0
-      0093D5 20 3F            [ 2] 1923 	jra	00122$
-      0093D7                       1924 00102$:
-                           00060C  1925 	C$stm8s_tim1.c$1594$3_0$525 ==.
-                                   1926 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1594: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
-      0093D7 72 11 52 5C      [ 1] 1927 	bres	21084, #0
-      0093DB 20 39            [ 2] 1928 	jra	00122$
-      0093DD                       1929 00120$:
-                           000612  1930 	C$stm8s_tim1.c$1598$1_0$522 ==.
-                                   1931 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1598: else if (TIM1_Channel == TIM1_CHANNEL_2)
-      0093DD 7B 03            [ 1] 1932 	ld	a, (0x03, sp)
-      0093DF 4A               [ 1] 1933 	dec	a
-      0093E0 26 10            [ 1] 1934 	jrne	00117$
-                           000617  1935 	C$stm8s_tim1.c$1601$2_0$526 ==.
-                                   1936 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1601: if (NewState != DISABLE)
-      0093E2 0D 04            [ 1] 1937 	tnz	(0x04, sp)
-      0093E4 27 06            [ 1] 1938 	jreq	00105$
-                           00061B  1939 	C$stm8s_tim1.c$1603$3_0$527 ==.
-                                   1940 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1603: TIM1->CCER1 |= TIM1_CCER1_CC2E;
-      0093E6 72 18 52 5C      [ 1] 1941 	bset	21084, #4
-      0093EA 20 2A            [ 2] 1942 	jra	00122$
-      0093EC                       1943 00105$:
-                           000621  1944 	C$stm8s_tim1.c$1607$3_0$528 ==.
-                                   1945 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1607: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2E);
-      0093EC 72 19 52 5C      [ 1] 1946 	bres	21084, #4
-      0093F0 20 24            [ 2] 1947 	jra	00122$
-      0093F2                       1948 00117$:
-                           000627  1949 	C$stm8s_tim1.c$1610$1_0$522 ==.
-                                   1950 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1610: else if (TIM1_Channel == TIM1_CHANNEL_3)
-      0093F2 7B 03            [ 1] 1951 	ld	a, (0x03, sp)
-      0093F4 A1 02            [ 1] 1952 	cp	a, #0x02
-      0093F6 26 10            [ 1] 1953 	jrne	00114$
-                           00062D  1954 	C$stm8s_tim1.c$1613$2_0$529 ==.
-                                   1955 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1613: if (NewState != DISABLE)
-      0093F8 0D 04            [ 1] 1956 	tnz	(0x04, sp)
-      0093FA 27 06            [ 1] 1957 	jreq	00108$
-                           000631  1958 	C$stm8s_tim1.c$1615$3_0$530 ==.
-                                   1959 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1615: TIM1->CCER2 |= TIM1_CCER2_CC3E;
-      0093FC 72 10 52 5D      [ 1] 1960 	bset	21085, #0
-      009400 20 14            [ 2] 1961 	jra	00122$
-      009402                       1962 00108$:
-                           000637  1963 	C$stm8s_tim1.c$1619$3_0$531 ==.
-                                   1964 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1619: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3E);
-      009402 72 11 52 5D      [ 1] 1965 	bres	21085, #0
-      009406 20 0E            [ 2] 1966 	jra	00122$
-      009408                       1967 00114$:
-                           00063D  1968 	C$stm8s_tim1.c$1625$2_0$532 ==.
-                                   1969 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1625: if (NewState != DISABLE)
-      009408 0D 04            [ 1] 1970 	tnz	(0x04, sp)
-      00940A 27 06            [ 1] 1971 	jreq	00111$
-                           000641  1972 	C$stm8s_tim1.c$1627$3_0$533 ==.
-                                   1973 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1627: TIM1->CCER2 |= TIM1_CCER2_CC4E;
-      00940C 72 18 52 5D      [ 1] 1974 	bset	21085, #4
-      009410 20 04            [ 2] 1975 	jra	00122$
-      009412                       1976 00111$:
-                           000647  1977 	C$stm8s_tim1.c$1631$3_0$534 ==.
-                                   1978 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1631: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4E);
-      009412 72 19 52 5D      [ 1] 1979 	bres	21085, #4
-      009416                       1980 00122$:
-                           00064B  1981 	C$stm8s_tim1.c$1634$1_0$522 ==.
-                                   1982 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1634: }
-                           00064B  1983 	C$stm8s_tim1.c$1634$1_0$522 ==.
-                           00064B  1984 	XG$TIM1_CCxCmd$0$0 ==.
-      009416 81               [ 4] 1985 	ret
-                           00064C  1986 	G$TIM1_CCxNCmd$0$0 ==.
-                           00064C  1987 	C$stm8s_tim1.c$1647$1_0$536 ==.
-                                   1988 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1647: void TIM1_CCxNCmd(TIM1_Channel_TypeDef TIM1_Channel, FunctionalState NewState)
-                                   1989 ;	-----------------------------------------
-                                   1990 ;	 function TIM1_CCxNCmd
-                                   1991 ;	-----------------------------------------
-      009417                       1992 _TIM1_CCxNCmd:
-                           00064C  1993 	C$stm8s_tim1.c$1653$1_0$536 ==.
-                                   1994 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1653: if (TIM1_Channel == TIM1_CHANNEL_1)
-      009417 0D 03            [ 1] 1995 	tnz	(0x03, sp)
-      009419 26 10            [ 1] 1996 	jrne	00114$
-                           000650  1997 	C$stm8s_tim1.c$1656$2_0$537 ==.
-                                   1998 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1656: if (NewState != DISABLE)
-      00941B 0D 04            [ 1] 1999 	tnz	(0x04, sp)
-      00941D 27 06            [ 1] 2000 	jreq	00102$
-                           000654  2001 	C$stm8s_tim1.c$1658$3_0$538 ==.
-                                   2002 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1658: TIM1->CCER1 |= TIM1_CCER1_CC1NE;
-      00941F 72 14 52 5C      [ 1] 2003 	bset	21084, #2
-      009423 20 29            [ 2] 2004 	jra	00116$
-      009425                       2005 00102$:
-                           00065A  2006 	C$stm8s_tim1.c$1662$3_0$539 ==.
-                                   2007 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1662: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1NE);
-      009425 72 15 52 5C      [ 1] 2008 	bres	21084, #2
-      009429 20 23            [ 2] 2009 	jra	00116$
-      00942B                       2010 00114$:
-                           000660  2011 	C$stm8s_tim1.c$1665$1_0$536 ==.
-                                   2012 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1665: else if (TIM1_Channel == TIM1_CHANNEL_2)
-      00942B 7B 03            [ 1] 2013 	ld	a, (0x03, sp)
-      00942D 4A               [ 1] 2014 	dec	a
-      00942E 26 10            [ 1] 2015 	jrne	00111$
-                           000665  2016 	C$stm8s_tim1.c$1668$2_0$540 ==.
-                                   2017 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1668: if (NewState != DISABLE)
-      009430 0D 04            [ 1] 2018 	tnz	(0x04, sp)
-      009432 27 06            [ 1] 2019 	jreq	00105$
-                           000669  2020 	C$stm8s_tim1.c$1670$3_0$541 ==.
-                                   2021 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1670: TIM1->CCER1 |= TIM1_CCER1_CC2NE;
-      009434 72 1C 52 5C      [ 1] 2022 	bset	21084, #6
-      009438 20 14            [ 2] 2023 	jra	00116$
-      00943A                       2024 00105$:
-                           00066F  2025 	C$stm8s_tim1.c$1674$3_0$542 ==.
-                                   2026 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1674: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2NE);
-      00943A 72 1D 52 5C      [ 1] 2027 	bres	21084, #6
-      00943E 20 0E            [ 2] 2028 	jra	00116$
-      009440                       2029 00111$:
-                           000675  2030 	C$stm8s_tim1.c$1680$2_0$543 ==.
-                                   2031 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1680: if (NewState != DISABLE)
-      009440 0D 04            [ 1] 2032 	tnz	(0x04, sp)
-      009442 27 06            [ 1] 2033 	jreq	00108$
-                           000679  2034 	C$stm8s_tim1.c$1682$3_0$544 ==.
-                                   2035 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1682: TIM1->CCER2 |= TIM1_CCER2_CC3NE;
-      009444 72 14 52 5D      [ 1] 2036 	bset	21085, #2
-      009448 20 04            [ 2] 2037 	jra	00116$
-      00944A                       2038 00108$:
-                           00067F  2039 	C$stm8s_tim1.c$1686$3_0$545 ==.
-                                   2040 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1686: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3NE);
-      00944A 72 15 52 5D      [ 1] 2041 	bres	21085, #2
-      00944E                       2042 00116$:
-                           000683  2043 	C$stm8s_tim1.c$1689$1_0$536 ==.
-                                   2044 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1689: }
-                           000683  2045 	C$stm8s_tim1.c$1689$1_0$536 ==.
-                           000683  2046 	XG$TIM1_CCxNCmd$0$0 ==.
-      00944E 81               [ 4] 2047 	ret
-                           000684  2048 	G$TIM1_SelectOCxM$0$0 ==.
-                           000684  2049 	C$stm8s_tim1.c$1712$1_0$547 ==.
-                                   2050 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1712: void TIM1_SelectOCxM(TIM1_Channel_TypeDef TIM1_Channel, TIM1_OCMode_TypeDef TIM1_OCMode)
-                                   2051 ;	-----------------------------------------
-                                   2052 ;	 function TIM1_SelectOCxM
-                                   2053 ;	-----------------------------------------
-      00944F                       2054 _TIM1_SelectOCxM:
-                           000684  2055 	C$stm8s_tim1.c$1718$1_0$547 ==.
-                                   2056 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1718: if (TIM1_Channel == TIM1_CHANNEL_1)
-      00944F 0D 03            [ 1] 2057 	tnz	(0x03, sp)
-      009451 26 10            [ 1] 2058 	jrne	00108$
-                           000688  2059 	C$stm8s_tim1.c$1721$2_0$548 ==.
-                                   2060 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1721: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
-      009453 72 11 52 5C      [ 1] 2061 	bres	21084, #0
-                           00068C  2062 	C$stm8s_tim1.c$1724$2_0$548 ==.
-                                   2063 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1724: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM)) 
-      009457 C6 52 58         [ 1] 2064 	ld	a, 0x5258
-      00945A A4 8F            [ 1] 2065 	and	a, #0x8f
-                           000691  2066 	C$stm8s_tim1.c$1725$2_0$548 ==.
-                                   2067 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1725: | (uint8_t)TIM1_OCMode);
-      00945C 1A 04            [ 1] 2068 	or	a, (0x04, sp)
-      00945E C7 52 58         [ 1] 2069 	ld	0x5258, a
-      009461 20 3D            [ 2] 2070 	jra	00110$
-      009463                       2071 00108$:
-                           000698  2072 	C$stm8s_tim1.c$1727$1_0$547 ==.
-                                   2073 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1727: else if (TIM1_Channel == TIM1_CHANNEL_2)
-      009463 7B 03            [ 1] 2074 	ld	a, (0x03, sp)
-      009465 4A               [ 1] 2075 	dec	a
-      009466 26 10            [ 1] 2076 	jrne	00105$
-                           00069D  2077 	C$stm8s_tim1.c$1730$2_0$549 ==.
-                                   2078 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1730: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2E);
-      009468 72 19 52 5C      [ 1] 2079 	bres	21084, #4
-                           0006A1  2080 	C$stm8s_tim1.c$1733$2_0$549 ==.
-                                   2081 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1733: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM))
-      00946C C6 52 59         [ 1] 2082 	ld	a, 0x5259
-      00946F A4 8F            [ 1] 2083 	and	a, #0x8f
-                           0006A6  2084 	C$stm8s_tim1.c$1734$2_0$549 ==.
-                                   2085 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1734: | (uint8_t)TIM1_OCMode);
-      009471 1A 04            [ 1] 2086 	or	a, (0x04, sp)
-      009473 C7 52 59         [ 1] 2087 	ld	0x5259, a
-      009476 20 28            [ 2] 2088 	jra	00110$
-      009478                       2089 00105$:
-                           0006AD  2090 	C$stm8s_tim1.c$1736$1_0$547 ==.
-                                   2091 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1736: else if (TIM1_Channel == TIM1_CHANNEL_3)
-      009478 7B 03            [ 1] 2092 	ld	a, (0x03, sp)
-      00947A A1 02            [ 1] 2093 	cp	a, #0x02
-      00947C 26 14            [ 1] 2094 	jrne	00102$
-                           0006B3  2095 	C$stm8s_tim1.c$1739$2_0$550 ==.
-                                   2096 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1739: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3E);
-      00947E C6 52 5D         [ 1] 2097 	ld	a, 0x525d
-      009481 A4 FE            [ 1] 2098 	and	a, #0xfe
-      009483 C7 52 5D         [ 1] 2099 	ld	0x525d, a
-                           0006BB  2100 	C$stm8s_tim1.c$1742$2_0$550 ==.
-                                   2101 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1742: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM)) 
-      009486 C6 52 5A         [ 1] 2102 	ld	a, 0x525a
-      009489 A4 8F            [ 1] 2103 	and	a, #0x8f
-                           0006C0  2104 	C$stm8s_tim1.c$1743$2_0$550 ==.
-                                   2105 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1743: | (uint8_t)TIM1_OCMode);
-      00948B 1A 04            [ 1] 2106 	or	a, (0x04, sp)
-      00948D C7 52 5A         [ 1] 2107 	ld	0x525a, a
-      009490 20 0E            [ 2] 2108 	jra	00110$
-      009492                       2109 00102$:
-                           0006C7  2110 	C$stm8s_tim1.c$1748$2_0$551 ==.
-                                   2111 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1748: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4E);
-      009492 72 19 52 5D      [ 1] 2112 	bres	21085, #4
-                           0006CB  2113 	C$stm8s_tim1.c$1751$2_0$551 ==.
-                                   2114 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1751: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) 
-      009496 C6 52 5B         [ 1] 2115 	ld	a, 0x525b
-      009499 A4 8F            [ 1] 2116 	and	a, #0x8f
-                           0006D0  2117 	C$stm8s_tim1.c$1752$2_0$551 ==.
-                                   2118 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1752: | (uint8_t)TIM1_OCMode);
-      00949B 1A 04            [ 1] 2119 	or	a, (0x04, sp)
-      00949D C7 52 5B         [ 1] 2120 	ld	0x525b, a
-      0094A0                       2121 00110$:
-                           0006D5  2122 	C$stm8s_tim1.c$1754$1_0$547 ==.
-                                   2123 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1754: }
-                           0006D5  2124 	C$stm8s_tim1.c$1754$1_0$547 ==.
-                           0006D5  2125 	XG$TIM1_SelectOCxM$0$0 ==.
-      0094A0 81               [ 4] 2126 	ret
-                           0006D6  2127 	G$TIM1_SetCounter$0$0 ==.
-                           0006D6  2128 	C$stm8s_tim1.c$1762$1_0$553 ==.
-                                   2129 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1762: void TIM1_SetCounter(uint16_t Counter)
-                                   2130 ;	-----------------------------------------
-                                   2131 ;	 function TIM1_SetCounter
-                                   2132 ;	-----------------------------------------
-      0094A1                       2133 _TIM1_SetCounter:
-      0094A1 52 02            [ 2] 2134 	sub	sp, #2
-                           0006D8  2135 	C$stm8s_tim1.c$1765$1_0$553 ==.
-                                   2136 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1765: TIM1->CNTRH = (uint8_t)(Counter >> 8);
-      0094A3 7B 05            [ 1] 2137 	ld	a, (0x05, sp)
-      0094A5 0F 01            [ 1] 2138 	clr	(0x01, sp)
-      0094A7 C7 52 5E         [ 1] 2139 	ld	0x525e, a
-                           0006DF  2140 	C$stm8s_tim1.c$1766$1_0$553 ==.
-                                   2141 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1766: TIM1->CNTRL = (uint8_t)(Counter);
-      0094AA 7B 06            [ 1] 2142 	ld	a, (0x06, sp)
-      0094AC C7 52 5F         [ 1] 2143 	ld	0x525f, a
-                           0006E4  2144 	C$stm8s_tim1.c$1767$1_0$553 ==.
-                                   2145 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1767: }
-      0094AF 5B 02            [ 2] 2146 	addw	sp, #2
-                           0006E6  2147 	C$stm8s_tim1.c$1767$1_0$553 ==.
-                           0006E6  2148 	XG$TIM1_SetCounter$0$0 ==.
-      0094B1 81               [ 4] 2149 	ret
-                           0006E7  2150 	G$TIM1_SetAutoreload$0$0 ==.
-                           0006E7  2151 	C$stm8s_tim1.c$1775$1_0$555 ==.
-                                   2152 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1775: void TIM1_SetAutoreload(uint16_t Autoreload)
-                                   2153 ;	-----------------------------------------
-                                   2154 ;	 function TIM1_SetAutoreload
-                                   2155 ;	-----------------------------------------
-      0094B2                       2156 _TIM1_SetAutoreload:
-      0094B2 52 02            [ 2] 2157 	sub	sp, #2
-                           0006E9  2158 	C$stm8s_tim1.c$1778$1_0$555 ==.
-                                   2159 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1778: TIM1->ARRH = (uint8_t)(Autoreload >> 8);
-      0094B4 7B 05            [ 1] 2160 	ld	a, (0x05, sp)
-      0094B6 0F 01            [ 1] 2161 	clr	(0x01, sp)
-      0094B8 C7 52 62         [ 1] 2162 	ld	0x5262, a
-                           0006F0  2163 	C$stm8s_tim1.c$1779$1_0$555 ==.
-                                   2164 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1779: TIM1->ARRL = (uint8_t)(Autoreload);
-      0094BB 7B 06            [ 1] 2165 	ld	a, (0x06, sp)
-      0094BD C7 52 63         [ 1] 2166 	ld	0x5263, a
-                           0006F5  2167 	C$stm8s_tim1.c$1780$1_0$555 ==.
-                                   2168 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1780: }
-      0094C0 5B 02            [ 2] 2169 	addw	sp, #2
-                           0006F7  2170 	C$stm8s_tim1.c$1780$1_0$555 ==.
-                           0006F7  2171 	XG$TIM1_SetAutoreload$0$0 ==.
-      0094C2 81               [ 4] 2172 	ret
-                           0006F8  2173 	G$TIM1_SetCompare1$0$0 ==.
-                           0006F8  2174 	C$stm8s_tim1.c$1788$1_0$557 ==.
-                                   2175 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1788: void TIM1_SetCompare1(uint16_t Compare1)
-                                   2176 ;	-----------------------------------------
-                                   2177 ;	 function TIM1_SetCompare1
-                                   2178 ;	-----------------------------------------
-      0094C3                       2179 _TIM1_SetCompare1:
-      0094C3 52 02            [ 2] 2180 	sub	sp, #2
-                           0006FA  2181 	C$stm8s_tim1.c$1791$1_0$557 ==.
-                                   2182 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1791: TIM1->CCR1H = (uint8_t)(Compare1 >> 8);
-      0094C5 7B 05            [ 1] 2183 	ld	a, (0x05, sp)
-      0094C7 0F 01            [ 1] 2184 	clr	(0x01, sp)
-      0094C9 C7 52 65         [ 1] 2185 	ld	0x5265, a
-                           000701  2186 	C$stm8s_tim1.c$1792$1_0$557 ==.
-                                   2187 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1792: TIM1->CCR1L = (uint8_t)(Compare1);
-      0094CC 7B 06            [ 1] 2188 	ld	a, (0x06, sp)
-      0094CE C7 52 66         [ 1] 2189 	ld	0x5266, a
-                           000706  2190 	C$stm8s_tim1.c$1793$1_0$557 ==.
-                                   2191 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1793: }
-      0094D1 5B 02            [ 2] 2192 	addw	sp, #2
-                           000708  2193 	C$stm8s_tim1.c$1793$1_0$557 ==.
-                           000708  2194 	XG$TIM1_SetCompare1$0$0 ==.
-      0094D3 81               [ 4] 2195 	ret
-                           000709  2196 	G$TIM1_SetCompare2$0$0 ==.
-                           000709  2197 	C$stm8s_tim1.c$1801$1_0$559 ==.
-                                   2198 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1801: void TIM1_SetCompare2(uint16_t Compare2)
-                                   2199 ;	-----------------------------------------
-                                   2200 ;	 function TIM1_SetCompare2
-                                   2201 ;	-----------------------------------------
-      0094D4                       2202 _TIM1_SetCompare2:
-      0094D4 52 02            [ 2] 2203 	sub	sp, #2
-                           00070B  2204 	C$stm8s_tim1.c$1804$1_0$559 ==.
-                                   2205 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1804: TIM1->CCR2H = (uint8_t)(Compare2 >> 8);
-      0094D6 7B 05            [ 1] 2206 	ld	a, (0x05, sp)
-      0094D8 0F 01            [ 1] 2207 	clr	(0x01, sp)
-      0094DA C7 52 67         [ 1] 2208 	ld	0x5267, a
-                           000712  2209 	C$stm8s_tim1.c$1805$1_0$559 ==.
-                                   2210 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1805: TIM1->CCR2L = (uint8_t)(Compare2);
-      0094DD 7B 06            [ 1] 2211 	ld	a, (0x06, sp)
-      0094DF C7 52 68         [ 1] 2212 	ld	0x5268, a
-                           000717  2213 	C$stm8s_tim1.c$1806$1_0$559 ==.
-                                   2214 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1806: }
-      0094E2 5B 02            [ 2] 2215 	addw	sp, #2
-                           000719  2216 	C$stm8s_tim1.c$1806$1_0$559 ==.
-                           000719  2217 	XG$TIM1_SetCompare2$0$0 ==.
-      0094E4 81               [ 4] 2218 	ret
-                           00071A  2219 	G$TIM1_SetCompare3$0$0 ==.
-                           00071A  2220 	C$stm8s_tim1.c$1814$1_0$561 ==.
-                                   2221 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1814: void TIM1_SetCompare3(uint16_t Compare3)
-                                   2222 ;	-----------------------------------------
-                                   2223 ;	 function TIM1_SetCompare3
-                                   2224 ;	-----------------------------------------
-      0094E5                       2225 _TIM1_SetCompare3:
-      0094E5 52 02            [ 2] 2226 	sub	sp, #2
-                           00071C  2227 	C$stm8s_tim1.c$1817$1_0$561 ==.
-                                   2228 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1817: TIM1->CCR3H = (uint8_t)(Compare3 >> 8);
-      0094E7 7B 05            [ 1] 2229 	ld	a, (0x05, sp)
-      0094E9 0F 01            [ 1] 2230 	clr	(0x01, sp)
-      0094EB C7 52 69         [ 1] 2231 	ld	0x5269, a
-                           000723  2232 	C$stm8s_tim1.c$1818$1_0$561 ==.
-                                   2233 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1818: TIM1->CCR3L = (uint8_t)(Compare3);
-      0094EE 7B 06            [ 1] 2234 	ld	a, (0x06, sp)
-      0094F0 C7 52 6A         [ 1] 2235 	ld	0x526a, a
-                           000728  2236 	C$stm8s_tim1.c$1819$1_0$561 ==.
-                                   2237 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1819: }
-      0094F3 5B 02            [ 2] 2238 	addw	sp, #2
-                           00072A  2239 	C$stm8s_tim1.c$1819$1_0$561 ==.
-                           00072A  2240 	XG$TIM1_SetCompare3$0$0 ==.
-      0094F5 81               [ 4] 2241 	ret
-                           00072B  2242 	G$TIM1_SetCompare4$0$0 ==.
-                           00072B  2243 	C$stm8s_tim1.c$1827$1_0$563 ==.
-                                   2244 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1827: void TIM1_SetCompare4(uint16_t Compare4)
-                                   2245 ;	-----------------------------------------
-                                   2246 ;	 function TIM1_SetCompare4
-                                   2247 ;	-----------------------------------------
-      0094F6                       2248 _TIM1_SetCompare4:
-      0094F6 52 02            [ 2] 2249 	sub	sp, #2
-                           00072D  2250 	C$stm8s_tim1.c$1830$1_0$563 ==.
-                                   2251 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1830: TIM1->CCR4H = (uint8_t)(Compare4 >> 8);
-      0094F8 7B 05            [ 1] 2252 	ld	a, (0x05, sp)
-      0094FA 0F 01            [ 1] 2253 	clr	(0x01, sp)
-      0094FC C7 52 6B         [ 1] 2254 	ld	0x526b, a
-                           000734  2255 	C$stm8s_tim1.c$1831$1_0$563 ==.
-                                   2256 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1831: TIM1->CCR4L = (uint8_t)(Compare4);
-      0094FF 7B 06            [ 1] 2257 	ld	a, (0x06, sp)
-      009501 C7 52 6C         [ 1] 2258 	ld	0x526c, a
-                           000739  2259 	C$stm8s_tim1.c$1832$1_0$563 ==.
-                                   2260 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1832: }
-      009504 5B 02            [ 2] 2261 	addw	sp, #2
-                           00073B  2262 	C$stm8s_tim1.c$1832$1_0$563 ==.
-                           00073B  2263 	XG$TIM1_SetCompare4$0$0 ==.
-      009506 81               [ 4] 2264 	ret
-                           00073C  2265 	G$TIM1_SetIC1Prescaler$0$0 ==.
-                           00073C  2266 	C$stm8s_tim1.c$1844$1_0$565 ==.
-                                   2267 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1844: void TIM1_SetIC1Prescaler(TIM1_ICPSC_TypeDef TIM1_IC1Prescaler)
-                                   2268 ;	-----------------------------------------
-                                   2269 ;	 function TIM1_SetIC1Prescaler
-                                   2270 ;	-----------------------------------------
-      009507                       2271 _TIM1_SetIC1Prescaler:
-                           00073C  2272 	C$stm8s_tim1.c$1850$1_0$565 ==.
-                                   2273 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1850: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_ICxPSC)) 
-      009507 C6 52 58         [ 1] 2274 	ld	a, 0x5258
-      00950A A4 F3            [ 1] 2275 	and	a, #0xf3
-                           000741  2276 	C$stm8s_tim1.c$1851$1_0$565 ==.
-                                   2277 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1851: | (uint8_t)TIM1_IC1Prescaler);
-      00950C 1A 03            [ 1] 2278 	or	a, (0x03, sp)
-      00950E C7 52 58         [ 1] 2279 	ld	0x5258, a
-                           000746  2280 	C$stm8s_tim1.c$1852$1_0$565 ==.
-                                   2281 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1852: }
-                           000746  2282 	C$stm8s_tim1.c$1852$1_0$565 ==.
-                           000746  2283 	XG$TIM1_SetIC1Prescaler$0$0 ==.
-      009511 81               [ 4] 2284 	ret
-                           000747  2285 	G$TIM1_SetIC2Prescaler$0$0 ==.
-                           000747  2286 	C$stm8s_tim1.c$1864$1_0$567 ==.
-                                   2287 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1864: void TIM1_SetIC2Prescaler(TIM1_ICPSC_TypeDef TIM1_IC2Prescaler)
+      008E75 7B 08            [ 1]  258 	ld	a, (0x08, sp)
+      008E77 6B 02            [ 1]  259 	ld	(0x02, sp), a
+      008E79 0F 01            [ 1]  260 	clr	(0x01, sp)
+      008E7B 7B 02            [ 1]  261 	ld	a, (0x02, sp)
+      008E7D C7 52 62         [ 1]  262 	ld	0x5262, a
+                           0000A6   263 	C$stm8s_tim1.c$121$1_0$352 ==.
+                                    264 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 121: TIM1->ARRL = (uint8_t)(TIM1_Period);
+      008E80 7B 09            [ 1]  265 	ld	a, (0x09, sp)
+      008E82 C7 52 63         [ 1]  266 	ld	0x5263, a
+                           0000AB   267 	C$stm8s_tim1.c$124$1_0$352 ==.
+                                    268 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 124: TIM1->PSCRH = (uint8_t)(TIM1_Prescaler >> 8);
+      008E85 7B 05            [ 1]  269 	ld	a, (0x05, sp)
+      008E87 6B 02            [ 1]  270 	ld	(0x02, sp), a
+      008E89 0F 01            [ 1]  271 	clr	(0x01, sp)
+      008E8B 7B 02            [ 1]  272 	ld	a, (0x02, sp)
+      008E8D C7 52 60         [ 1]  273 	ld	0x5260, a
+                           0000B6   274 	C$stm8s_tim1.c$125$1_0$352 ==.
+                                    275 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 125: TIM1->PSCRL = (uint8_t)(TIM1_Prescaler);
+      008E90 7B 06            [ 1]  276 	ld	a, (0x06, sp)
+      008E92 C7 52 61         [ 1]  277 	ld	0x5261, a
+                           0000BB   278 	C$stm8s_tim1.c$128$1_0$352 ==.
+                                    279 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 128: TIM1->CR1 = (uint8_t)((uint8_t)(TIM1->CR1 & (uint8_t)(~(TIM1_CR1_CMS | TIM1_CR1_DIR)))
+      008E95 C6 52 50         [ 1]  280 	ld	a, 0x5250
+      008E98 A4 8F            [ 1]  281 	and	a, #0x8f
+                           0000C0   282 	C$stm8s_tim1.c$129$1_0$352 ==.
+                                    283 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 129: | (uint8_t)(TIM1_CounterMode));
+      008E9A 1A 07            [ 1]  284 	or	a, (0x07, sp)
+      008E9C C7 52 50         [ 1]  285 	ld	0x5250, a
+                           0000C5   286 	C$stm8s_tim1.c$132$1_0$352 ==.
+                                    287 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 132: TIM1->RCR = TIM1_RepetitionCounter;
+      008E9F AE 52 64         [ 2]  288 	ldw	x, #0x5264
+      008EA2 7B 0A            [ 1]  289 	ld	a, (0x0a, sp)
+      008EA4 F7               [ 1]  290 	ld	(x), a
+                           0000CB   291 	C$stm8s_tim1.c$133$1_0$352 ==.
+                                    292 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 133: }
+      008EA5 5B 02            [ 2]  293 	addw	sp, #2
+                           0000CD   294 	C$stm8s_tim1.c$133$1_0$352 ==.
+                           0000CD   295 	XG$TIM1_TimeBaseInit$0$0 ==.
+      008EA7 81               [ 4]  296 	ret
+                           0000CE   297 	G$TIM1_OC1Init$0$0 ==.
+                           0000CE   298 	C$stm8s_tim1.c$154$1_0$354 ==.
+                                    299 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 154: void TIM1_OC1Init(TIM1_OCMode_TypeDef TIM1_OCMode,
+                                    300 ;	-----------------------------------------
+                                    301 ;	 function TIM1_OC1Init
+                                    302 ;	-----------------------------------------
+      008EA8                        303 _TIM1_OC1Init:
+      008EA8 52 03            [ 2]  304 	sub	sp, #3
+                           0000D0   305 	C$stm8s_tim1.c$174$1_0$354 ==.
+                                    306 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 174: TIM1->CCER1 &= (uint8_t)(~( TIM1_CCER1_CC1E | TIM1_CCER1_CC1NE 
+      008EAA C6 52 5C         [ 1]  307 	ld	a, 0x525c
+      008EAD A4 F0            [ 1]  308 	and	a, #0xf0
+      008EAF C7 52 5C         [ 1]  309 	ld	0x525c, a
+                           0000D8   310 	C$stm8s_tim1.c$178$1_0$354 ==.
+                                    311 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 178: TIM1->CCER1 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER1_CC1E)
+      008EB2 C6 52 5C         [ 1]  312 	ld	a, 0x525c
+      008EB5 6B 01            [ 1]  313 	ld	(0x01, sp), a
+      008EB7 7B 07            [ 1]  314 	ld	a, (0x07, sp)
+      008EB9 A4 01            [ 1]  315 	and	a, #0x01
+      008EBB 6B 03            [ 1]  316 	ld	(0x03, sp), a
+                           0000E3   317 	C$stm8s_tim1.c$179$1_0$354 ==.
+                                    318 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 179: | (uint8_t)(TIM1_OutputNState & TIM1_CCER1_CC1NE))
+      008EBD 7B 08            [ 1]  319 	ld	a, (0x08, sp)
+      008EBF A4 04            [ 1]  320 	and	a, #0x04
+      008EC1 1A 03            [ 1]  321 	or	a, (0x03, sp)
+      008EC3 6B 02            [ 1]  322 	ld	(0x02, sp), a
+                           0000EB   323 	C$stm8s_tim1.c$180$1_0$354 ==.
+                                    324 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 180: | (uint8_t)( (uint8_t)(TIM1_OCPolarity  & TIM1_CCER1_CC1P)
+      008EC5 7B 0B            [ 1]  325 	ld	a, (0x0b, sp)
+      008EC7 A4 02            [ 1]  326 	and	a, #0x02
+      008EC9 6B 03            [ 1]  327 	ld	(0x03, sp), a
+                           0000F1   328 	C$stm8s_tim1.c$181$1_0$354 ==.
+                                    329 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 181: | (uint8_t)(TIM1_OCNPolarity & TIM1_CCER1_CC1NP)));
+      008ECB 7B 0C            [ 1]  330 	ld	a, (0x0c, sp)
+      008ECD A4 08            [ 1]  331 	and	a, #0x08
+      008ECF 1A 03            [ 1]  332 	or	a, (0x03, sp)
+      008ED1 1A 02            [ 1]  333 	or	a, (0x02, sp)
+      008ED3 1A 01            [ 1]  334 	or	a, (0x01, sp)
+      008ED5 C7 52 5C         [ 1]  335 	ld	0x525c, a
+                           0000FE   336 	C$stm8s_tim1.c$184$1_0$354 ==.
+                                    337 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 184: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM)) | 
+      008ED8 C6 52 58         [ 1]  338 	ld	a, 0x5258
+      008EDB A4 8F            [ 1]  339 	and	a, #0x8f
+                           000103   340 	C$stm8s_tim1.c$185$1_0$354 ==.
+                                    341 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 185: (uint8_t)TIM1_OCMode);
+      008EDD 1A 06            [ 1]  342 	or	a, (0x06, sp)
+      008EDF C7 52 58         [ 1]  343 	ld	0x5258, a
+                           000108   344 	C$stm8s_tim1.c$188$1_0$354 ==.
+                                    345 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 188: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS1 | TIM1_OISR_OIS1N));
+      008EE2 C6 52 6F         [ 1]  346 	ld	a, 0x526f
+      008EE5 A4 FC            [ 1]  347 	and	a, #0xfc
+      008EE7 C7 52 6F         [ 1]  348 	ld	0x526f, a
+                           000110   349 	C$stm8s_tim1.c$190$1_0$354 ==.
+                                    350 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 190: TIM1->OISR |= (uint8_t)((uint8_t)( TIM1_OCIdleState & TIM1_OISR_OIS1 ) | 
+      008EEA C6 52 6F         [ 1]  351 	ld	a, 0x526f
+      008EED 6B 02            [ 1]  352 	ld	(0x02, sp), a
+      008EEF 7B 0D            [ 1]  353 	ld	a, (0x0d, sp)
+      008EF1 A4 01            [ 1]  354 	and	a, #0x01
+      008EF3 6B 03            [ 1]  355 	ld	(0x03, sp), a
+                           00011B   356 	C$stm8s_tim1.c$191$1_0$354 ==.
+                                    357 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 191: (uint8_t)( TIM1_OCNIdleState & TIM1_OISR_OIS1N ));
+      008EF5 7B 0E            [ 1]  358 	ld	a, (0x0e, sp)
+      008EF7 A4 02            [ 1]  359 	and	a, #0x02
+      008EF9 1A 03            [ 1]  360 	or	a, (0x03, sp)
+      008EFB 1A 02            [ 1]  361 	or	a, (0x02, sp)
+      008EFD C7 52 6F         [ 1]  362 	ld	0x526f, a
+                           000126   363 	C$stm8s_tim1.c$194$1_0$354 ==.
+                                    364 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 194: TIM1->CCR1H = (uint8_t)(TIM1_Pulse >> 8);
+      008F00 7B 09            [ 1]  365 	ld	a, (0x09, sp)
+      008F02 C7 52 65         [ 1]  366 	ld	0x5265, a
+                           00012B   367 	C$stm8s_tim1.c$195$1_0$354 ==.
+                                    368 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 195: TIM1->CCR1L = (uint8_t)(TIM1_Pulse);
+      008F05 7B 0A            [ 1]  369 	ld	a, (0x0a, sp)
+      008F07 C7 52 66         [ 1]  370 	ld	0x5266, a
+                           000130   371 	C$stm8s_tim1.c$196$1_0$354 ==.
+                                    372 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 196: }
+      008F0A 5B 03            [ 2]  373 	addw	sp, #3
+                           000132   374 	C$stm8s_tim1.c$196$1_0$354 ==.
+                           000132   375 	XG$TIM1_OC1Init$0$0 ==.
+      008F0C 81               [ 4]  376 	ret
+                           000133   377 	G$TIM1_OC2Init$0$0 ==.
+                           000133   378 	C$stm8s_tim1.c$217$1_0$356 ==.
+                                    379 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 217: void TIM1_OC2Init(TIM1_OCMode_TypeDef TIM1_OCMode,
+                                    380 ;	-----------------------------------------
+                                    381 ;	 function TIM1_OC2Init
+                                    382 ;	-----------------------------------------
+      008F0D                        383 _TIM1_OC2Init:
+      008F0D 52 03            [ 2]  384 	sub	sp, #3
+                           000135   385 	C$stm8s_tim1.c$237$1_0$356 ==.
+                                    386 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 237: TIM1->CCER1 &= (uint8_t)(~( TIM1_CCER1_CC2E | TIM1_CCER1_CC2NE | 
+      008F0F C6 52 5C         [ 1]  387 	ld	a, 0x525c
+      008F12 A4 0F            [ 1]  388 	and	a, #0x0f
+      008F14 C7 52 5C         [ 1]  389 	ld	0x525c, a
+                           00013D   390 	C$stm8s_tim1.c$242$1_0$356 ==.
+                                    391 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 242: TIM1->CCER1 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER1_CC2E  ) | 
+      008F17 C6 52 5C         [ 1]  392 	ld	a, 0x525c
+      008F1A 6B 01            [ 1]  393 	ld	(0x01, sp), a
+      008F1C 7B 07            [ 1]  394 	ld	a, (0x07, sp)
+      008F1E A4 10            [ 1]  395 	and	a, #0x10
+      008F20 6B 03            [ 1]  396 	ld	(0x03, sp), a
+                           000148   397 	C$stm8s_tim1.c$243$1_0$356 ==.
+                                    398 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 243: (uint8_t)(TIM1_OutputNState & TIM1_CCER1_CC2NE )) | 
+      008F22 7B 08            [ 1]  399 	ld	a, (0x08, sp)
+      008F24 A4 40            [ 1]  400 	and	a, #0x40
+      008F26 1A 03            [ 1]  401 	or	a, (0x03, sp)
+      008F28 6B 02            [ 1]  402 	ld	(0x02, sp), a
+                           000150   403 	C$stm8s_tim1.c$244$1_0$356 ==.
+                                    404 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 244: (uint8_t)((uint8_t)(TIM1_OCPolarity  & TIM1_CCER1_CC2P  ) | 
+      008F2A 7B 0B            [ 1]  405 	ld	a, (0x0b, sp)
+      008F2C A4 20            [ 1]  406 	and	a, #0x20
+      008F2E 6B 03            [ 1]  407 	ld	(0x03, sp), a
+                           000156   408 	C$stm8s_tim1.c$245$1_0$356 ==.
+                                    409 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 245: (uint8_t)(TIM1_OCNPolarity & TIM1_CCER1_CC2NP )));
+      008F30 7B 0C            [ 1]  410 	ld	a, (0x0c, sp)
+      008F32 A4 80            [ 1]  411 	and	a, #0x80
+      008F34 1A 03            [ 1]  412 	or	a, (0x03, sp)
+      008F36 1A 02            [ 1]  413 	or	a, (0x02, sp)
+      008F38 1A 01            [ 1]  414 	or	a, (0x01, sp)
+      008F3A C7 52 5C         [ 1]  415 	ld	0x525c, a
+                           000163   416 	C$stm8s_tim1.c$248$1_0$356 ==.
+                                    417 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 248: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM)) | 
+      008F3D C6 52 59         [ 1]  418 	ld	a, 0x5259
+      008F40 A4 8F            [ 1]  419 	and	a, #0x8f
+                           000168   420 	C$stm8s_tim1.c$249$1_0$356 ==.
+                                    421 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 249: (uint8_t)TIM1_OCMode);
+      008F42 1A 06            [ 1]  422 	or	a, (0x06, sp)
+      008F44 C7 52 59         [ 1]  423 	ld	0x5259, a
+                           00016D   424 	C$stm8s_tim1.c$252$1_0$356 ==.
+                                    425 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 252: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS2 | TIM1_OISR_OIS2N));
+      008F47 C6 52 6F         [ 1]  426 	ld	a, 0x526f
+      008F4A A4 F3            [ 1]  427 	and	a, #0xf3
+      008F4C C7 52 6F         [ 1]  428 	ld	0x526f, a
+                           000175   429 	C$stm8s_tim1.c$254$1_0$356 ==.
+                                    430 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 254: TIM1->OISR |= (uint8_t)((uint8_t)(TIM1_OISR_OIS2 & TIM1_OCIdleState) | 
+      008F4F C6 52 6F         [ 1]  431 	ld	a, 0x526f
+      008F52 6B 02            [ 1]  432 	ld	(0x02, sp), a
+      008F54 7B 0D            [ 1]  433 	ld	a, (0x0d, sp)
+      008F56 A4 04            [ 1]  434 	and	a, #0x04
+      008F58 6B 03            [ 1]  435 	ld	(0x03, sp), a
+                           000180   436 	C$stm8s_tim1.c$255$1_0$356 ==.
+                                    437 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 255: (uint8_t)(TIM1_OISR_OIS2N & TIM1_OCNIdleState));
+      008F5A 7B 0E            [ 1]  438 	ld	a, (0x0e, sp)
+      008F5C A4 08            [ 1]  439 	and	a, #0x08
+      008F5E 1A 03            [ 1]  440 	or	a, (0x03, sp)
+      008F60 1A 02            [ 1]  441 	or	a, (0x02, sp)
+      008F62 C7 52 6F         [ 1]  442 	ld	0x526f, a
+                           00018B   443 	C$stm8s_tim1.c$258$1_0$356 ==.
+                                    444 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 258: TIM1->CCR2H = (uint8_t)(TIM1_Pulse >> 8);
+      008F65 7B 09            [ 1]  445 	ld	a, (0x09, sp)
+      008F67 C7 52 67         [ 1]  446 	ld	0x5267, a
+                           000190   447 	C$stm8s_tim1.c$259$1_0$356 ==.
+                                    448 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 259: TIM1->CCR2L = (uint8_t)(TIM1_Pulse);
+      008F6A 7B 0A            [ 1]  449 	ld	a, (0x0a, sp)
+      008F6C C7 52 68         [ 1]  450 	ld	0x5268, a
+                           000195   451 	C$stm8s_tim1.c$260$1_0$356 ==.
+                                    452 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 260: }
+      008F6F 5B 03            [ 2]  453 	addw	sp, #3
+                           000197   454 	C$stm8s_tim1.c$260$1_0$356 ==.
+                           000197   455 	XG$TIM1_OC2Init$0$0 ==.
+      008F71 81               [ 4]  456 	ret
+                           000198   457 	G$TIM1_OC3Init$0$0 ==.
+                           000198   458 	C$stm8s_tim1.c$281$1_0$358 ==.
+                                    459 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 281: void TIM1_OC3Init(TIM1_OCMode_TypeDef TIM1_OCMode,
+                                    460 ;	-----------------------------------------
+                                    461 ;	 function TIM1_OC3Init
+                                    462 ;	-----------------------------------------
+      008F72                        463 _TIM1_OC3Init:
+      008F72 52 03            [ 2]  464 	sub	sp, #3
+                           00019A   465 	C$stm8s_tim1.c$301$1_0$358 ==.
+                                    466 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 301: TIM1->CCER2 &= (uint8_t)(~( TIM1_CCER2_CC3E | TIM1_CCER2_CC3NE | 
+      008F74 C6 52 5D         [ 1]  467 	ld	a, 0x525d
+      008F77 A4 F0            [ 1]  468 	and	a, #0xf0
+      008F79 C7 52 5D         [ 1]  469 	ld	0x525d, a
+                           0001A2   470 	C$stm8s_tim1.c$305$1_0$358 ==.
+                                    471 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 305: TIM1->CCER2 |= (uint8_t)((uint8_t)((uint8_t)(TIM1_OutputState  & TIM1_CCER2_CC3E   ) |
+      008F7C C6 52 5D         [ 1]  472 	ld	a, 0x525d
+      008F7F 6B 01            [ 1]  473 	ld	(0x01, sp), a
+      008F81 7B 07            [ 1]  474 	ld	a, (0x07, sp)
+      008F83 A4 01            [ 1]  475 	and	a, #0x01
+      008F85 6B 03            [ 1]  476 	ld	(0x03, sp), a
+                           0001AD   477 	C$stm8s_tim1.c$306$1_0$358 ==.
+                                    478 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 306: (uint8_t)(TIM1_OutputNState & TIM1_CCER2_CC3NE  )) | 
+      008F87 7B 08            [ 1]  479 	ld	a, (0x08, sp)
+      008F89 A4 04            [ 1]  480 	and	a, #0x04
+      008F8B 1A 03            [ 1]  481 	or	a, (0x03, sp)
+      008F8D 6B 02            [ 1]  482 	ld	(0x02, sp), a
+                           0001B5   483 	C$stm8s_tim1.c$307$1_0$358 ==.
+                                    484 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 307: (uint8_t)((uint8_t)(TIM1_OCPolarity   & TIM1_CCER2_CC3P   ) | 
+      008F8F 7B 0B            [ 1]  485 	ld	a, (0x0b, sp)
+      008F91 A4 02            [ 1]  486 	and	a, #0x02
+      008F93 6B 03            [ 1]  487 	ld	(0x03, sp), a
+                           0001BB   488 	C$stm8s_tim1.c$308$1_0$358 ==.
+                                    489 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 308: (uint8_t)(TIM1_OCNPolarity  & TIM1_CCER2_CC3NP  )));
+      008F95 7B 0C            [ 1]  490 	ld	a, (0x0c, sp)
+      008F97 A4 08            [ 1]  491 	and	a, #0x08
+      008F99 1A 03            [ 1]  492 	or	a, (0x03, sp)
+      008F9B 1A 02            [ 1]  493 	or	a, (0x02, sp)
+      008F9D 1A 01            [ 1]  494 	or	a, (0x01, sp)
+      008F9F C7 52 5D         [ 1]  495 	ld	0x525d, a
+                           0001C8   496 	C$stm8s_tim1.c$311$1_0$358 ==.
+                                    497 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 311: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM)) | 
+      008FA2 C6 52 5A         [ 1]  498 	ld	a, 0x525a
+      008FA5 A4 8F            [ 1]  499 	and	a, #0x8f
+                           0001CD   500 	C$stm8s_tim1.c$312$1_0$358 ==.
+                                    501 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 312: (uint8_t)TIM1_OCMode);
+      008FA7 1A 06            [ 1]  502 	or	a, (0x06, sp)
+      008FA9 C7 52 5A         [ 1]  503 	ld	0x525a, a
+                           0001D2   504 	C$stm8s_tim1.c$315$1_0$358 ==.
+                                    505 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 315: TIM1->OISR &= (uint8_t)(~(TIM1_OISR_OIS3 | TIM1_OISR_OIS3N));
+      008FAC C6 52 6F         [ 1]  506 	ld	a, 0x526f
+      008FAF A4 CF            [ 1]  507 	and	a, #0xcf
+      008FB1 C7 52 6F         [ 1]  508 	ld	0x526f, a
+                           0001DA   509 	C$stm8s_tim1.c$317$1_0$358 ==.
+                                    510 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 317: TIM1->OISR |= (uint8_t)((uint8_t)(TIM1_OISR_OIS3 & TIM1_OCIdleState) | 
+      008FB4 C6 52 6F         [ 1]  511 	ld	a, 0x526f
+      008FB7 6B 02            [ 1]  512 	ld	(0x02, sp), a
+      008FB9 7B 0D            [ 1]  513 	ld	a, (0x0d, sp)
+      008FBB A4 10            [ 1]  514 	and	a, #0x10
+      008FBD 6B 03            [ 1]  515 	ld	(0x03, sp), a
+                           0001E5   516 	C$stm8s_tim1.c$318$1_0$358 ==.
+                                    517 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 318: (uint8_t)(TIM1_OISR_OIS3N & TIM1_OCNIdleState));
+      008FBF 7B 0E            [ 1]  518 	ld	a, (0x0e, sp)
+      008FC1 A4 20            [ 1]  519 	and	a, #0x20
+      008FC3 1A 03            [ 1]  520 	or	a, (0x03, sp)
+      008FC5 1A 02            [ 1]  521 	or	a, (0x02, sp)
+      008FC7 C7 52 6F         [ 1]  522 	ld	0x526f, a
+                           0001F0   523 	C$stm8s_tim1.c$321$1_0$358 ==.
+                                    524 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 321: TIM1->CCR3H = (uint8_t)(TIM1_Pulse >> 8);
+      008FCA 7B 09            [ 1]  525 	ld	a, (0x09, sp)
+      008FCC C7 52 69         [ 1]  526 	ld	0x5269, a
+                           0001F5   527 	C$stm8s_tim1.c$322$1_0$358 ==.
+                                    528 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 322: TIM1->CCR3L = (uint8_t)(TIM1_Pulse);
+      008FCF 7B 0A            [ 1]  529 	ld	a, (0x0a, sp)
+      008FD1 C7 52 6A         [ 1]  530 	ld	0x526a, a
+                           0001FA   531 	C$stm8s_tim1.c$323$1_0$358 ==.
+                                    532 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 323: }
+      008FD4 5B 03            [ 2]  533 	addw	sp, #3
+                           0001FC   534 	C$stm8s_tim1.c$323$1_0$358 ==.
+                           0001FC   535 	XG$TIM1_OC3Init$0$0 ==.
+      008FD6 81               [ 4]  536 	ret
+                           0001FD   537 	G$TIM1_OC4Init$0$0 ==.
+                           0001FD   538 	C$stm8s_tim1.c$338$1_0$360 ==.
+                                    539 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 338: void TIM1_OC4Init(TIM1_OCMode_TypeDef TIM1_OCMode,
+                                    540 ;	-----------------------------------------
+                                    541 ;	 function TIM1_OC4Init
+                                    542 ;	-----------------------------------------
+      008FD7                        543 _TIM1_OC4Init:
+      008FD7 52 02            [ 2]  544 	sub	sp, #2
+                           0001FF   545 	C$stm8s_tim1.c$351$1_0$360 ==.
+                                    546 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 351: TIM1->CCER2 &= (uint8_t)(~(TIM1_CCER2_CC4E | TIM1_CCER2_CC4P));
+      008FD9 C6 52 5D         [ 1]  547 	ld	a, 0x525d
+      008FDC A4 CF            [ 1]  548 	and	a, #0xcf
+      008FDE C7 52 5D         [ 1]  549 	ld	0x525d, a
+                           000207   550 	C$stm8s_tim1.c$353$1_0$360 ==.
+                                    551 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 353: TIM1->CCER2 |= (uint8_t)((uint8_t)(TIM1_OutputState & TIM1_CCER2_CC4E ) |  
+      008FE1 C6 52 5D         [ 1]  552 	ld	a, 0x525d
+      008FE4 6B 01            [ 1]  553 	ld	(0x01, sp), a
+      008FE6 7B 06            [ 1]  554 	ld	a, (0x06, sp)
+      008FE8 A4 10            [ 1]  555 	and	a, #0x10
+      008FEA 6B 02            [ 1]  556 	ld	(0x02, sp), a
+                           000212   557 	C$stm8s_tim1.c$354$1_0$360 ==.
+                                    558 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 354: (uint8_t)(TIM1_OCPolarity  & TIM1_CCER2_CC4P ));
+      008FEC 7B 09            [ 1]  559 	ld	a, (0x09, sp)
+      008FEE A4 20            [ 1]  560 	and	a, #0x20
+      008FF0 1A 02            [ 1]  561 	or	a, (0x02, sp)
+      008FF2 1A 01            [ 1]  562 	or	a, (0x01, sp)
+      008FF4 C7 52 5D         [ 1]  563 	ld	0x525d, a
+                           00021D   564 	C$stm8s_tim1.c$357$1_0$360 ==.
+                                    565 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 357: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) | 
+      008FF7 C6 52 5B         [ 1]  566 	ld	a, 0x525b
+      008FFA A4 8F            [ 1]  567 	and	a, #0x8f
+      008FFC 1A 05            [ 1]  568 	or	a, (0x05, sp)
+      008FFE C7 52 5B         [ 1]  569 	ld	0x525b, a
+                           000227   570 	C$stm8s_tim1.c$361$1_0$360 ==.
+                                    571 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 361: if (TIM1_OCIdleState != TIM1_OCIDLESTATE_RESET)
+      009001 0D 0A            [ 1]  572 	tnz	(0x0a, sp)
+      009003 27 0A            [ 1]  573 	jreq	00102$
+                           00022B   574 	C$stm8s_tim1.c$363$2_0$361 ==.
+                                    575 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 363: TIM1->OISR |= (uint8_t)(~TIM1_CCER2_CC4P);
+      009005 C6 52 6F         [ 1]  576 	ld	a, 0x526f
+      009008 AA DF            [ 1]  577 	or	a, #0xdf
+      00900A C7 52 6F         [ 1]  578 	ld	0x526f, a
+      00900D 20 04            [ 2]  579 	jra	00103$
+      00900F                        580 00102$:
+                           000235   581 	C$stm8s_tim1.c$367$2_0$362 ==.
+                                    582 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 367: TIM1->OISR &= (uint8_t)(~TIM1_OISR_OIS4);
+      00900F 72 1D 52 6F      [ 1]  583 	bres	21103, #6
+      009013                        584 00103$:
+                           000239   585 	C$stm8s_tim1.c$371$1_0$360 ==.
+                                    586 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 371: TIM1->CCR4H = (uint8_t)(TIM1_Pulse >> 8);
+      009013 7B 07            [ 1]  587 	ld	a, (0x07, sp)
+      009015 C7 52 6B         [ 1]  588 	ld	0x526b, a
+                           00023E   589 	C$stm8s_tim1.c$372$1_0$360 ==.
+                                    590 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 372: TIM1->CCR4L = (uint8_t)(TIM1_Pulse);
+      009018 7B 08            [ 1]  591 	ld	a, (0x08, sp)
+      00901A C7 52 6C         [ 1]  592 	ld	0x526c, a
+                           000243   593 	C$stm8s_tim1.c$373$1_0$360 ==.
+                                    594 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 373: }
+      00901D 5B 02            [ 2]  595 	addw	sp, #2
+                           000245   596 	C$stm8s_tim1.c$373$1_0$360 ==.
+                           000245   597 	XG$TIM1_OC4Init$0$0 ==.
+      00901F 81               [ 4]  598 	ret
+                           000246   599 	G$TIM1_BDTRConfig$0$0 ==.
+                           000246   600 	C$stm8s_tim1.c$388$1_0$364 ==.
+                                    601 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 388: void TIM1_BDTRConfig(TIM1_OSSIState_TypeDef TIM1_OSSIState,
+                                    602 ;	-----------------------------------------
+                                    603 ;	 function TIM1_BDTRConfig
+                                    604 ;	-----------------------------------------
+      009020                        605 _TIM1_BDTRConfig:
+      009020 88               [ 1]  606 	push	a
+                           000247   607 	C$stm8s_tim1.c$402$1_0$364 ==.
+                                    608 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 402: TIM1->DTR = (uint8_t)(TIM1_DeadTime);
+      009021 AE 52 6E         [ 2]  609 	ldw	x, #0x526e
+      009024 7B 06            [ 1]  610 	ld	a, (0x06, sp)
+      009026 F7               [ 1]  611 	ld	(x), a
+                           00024D   612 	C$stm8s_tim1.c$406$1_0$364 ==.
+                                    613 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 406: TIM1->BKR  =  (uint8_t)((uint8_t)(TIM1_OSSIState | (uint8_t)TIM1_LockLevel)  | 
+      009027 7B 04            [ 1]  614 	ld	a, (0x04, sp)
+      009029 1A 05            [ 1]  615 	or	a, (0x05, sp)
+      00902B 6B 01            [ 1]  616 	ld	(0x01, sp), a
+                           000253   617 	C$stm8s_tim1.c$407$1_0$364 ==.
+                                    618 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 407: (uint8_t)((uint8_t)(TIM1_Break | (uint8_t)TIM1_BreakPolarity)  | 
+      00902D 7B 07            [ 1]  619 	ld	a, (0x07, sp)
+      00902F 1A 08            [ 1]  620 	or	a, (0x08, sp)
+                           000257   621 	C$stm8s_tim1.c$408$1_0$364 ==.
+                                    622 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 408: (uint8_t)TIM1_AutomaticOutput));
+      009031 1A 09            [ 1]  623 	or	a, (0x09, sp)
+      009033 1A 01            [ 1]  624 	or	a, (0x01, sp)
+      009035 C7 52 6D         [ 1]  625 	ld	0x526d, a
+                           00025E   626 	C$stm8s_tim1.c$409$1_0$364 ==.
+                                    627 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 409: }
+      009038 84               [ 1]  628 	pop	a
+                           00025F   629 	C$stm8s_tim1.c$409$1_0$364 ==.
+                           00025F   630 	XG$TIM1_BDTRConfig$0$0 ==.
+      009039 81               [ 4]  631 	ret
+                           000260   632 	G$TIM1_ICInit$0$0 ==.
+                           000260   633 	C$stm8s_tim1.c$423$1_0$366 ==.
+                                    634 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 423: void TIM1_ICInit(TIM1_Channel_TypeDef TIM1_Channel,
+                                    635 ;	-----------------------------------------
+                                    636 ;	 function TIM1_ICInit
+                                    637 ;	-----------------------------------------
+      00903A                        638 _TIM1_ICInit:
+                           000260   639 	C$stm8s_tim1.c$436$1_0$366 ==.
+                                    640 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 436: if (TIM1_Channel == TIM1_CHANNEL_1)
+      00903A 0D 03            [ 1]  641 	tnz	(0x03, sp)
+      00903C 26 17            [ 1]  642 	jrne	00108$
+                           000264   643 	C$stm8s_tim1.c$439$2_0$367 ==.
+                                    644 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 439: TI1_Config((uint8_t)TIM1_ICPolarity,
+      00903E 7B 07            [ 1]  645 	ld	a, (0x07, sp)
+      009040 88               [ 1]  646 	push	a
+      009041 7B 06            [ 1]  647 	ld	a, (0x06, sp)
+      009043 88               [ 1]  648 	push	a
+      009044 7B 06            [ 1]  649 	ld	a, (0x06, sp)
+      009046 88               [ 1]  650 	push	a
+      009047 CD 96 51         [ 4]  651 	call	_TI1_Config
+      00904A 5B 03            [ 2]  652 	addw	sp, #3
+                           000272   653 	C$stm8s_tim1.c$443$2_0$367 ==.
+                                    654 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 443: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
+      00904C 7B 06            [ 1]  655 	ld	a, (0x06, sp)
+      00904E 88               [ 1]  656 	push	a
+      00904F CD 95 39         [ 4]  657 	call	_TIM1_SetIC1Prescaler
+      009052 84               [ 1]  658 	pop	a
+      009053 20 4E            [ 2]  659 	jra	00110$
+      009055                        660 00108$:
+                           00027B   661 	C$stm8s_tim1.c$445$1_0$366 ==.
+                                    662 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 445: else if (TIM1_Channel == TIM1_CHANNEL_2)
+      009055 7B 03            [ 1]  663 	ld	a, (0x03, sp)
+      009057 4A               [ 1]  664 	dec	a
+      009058 26 17            [ 1]  665 	jrne	00105$
+                           000280   666 	C$stm8s_tim1.c$448$2_0$368 ==.
+                                    667 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 448: TI2_Config((uint8_t)TIM1_ICPolarity,
+      00905A 7B 07            [ 1]  668 	ld	a, (0x07, sp)
+      00905C 88               [ 1]  669 	push	a
+      00905D 7B 06            [ 1]  670 	ld	a, (0x06, sp)
+      00905F 88               [ 1]  671 	push	a
+      009060 7B 06            [ 1]  672 	ld	a, (0x06, sp)
+      009062 88               [ 1]  673 	push	a
+      009063 CD 96 7D         [ 4]  674 	call	_TI2_Config
+      009066 5B 03            [ 2]  675 	addw	sp, #3
+                           00028E   676 	C$stm8s_tim1.c$452$2_0$368 ==.
+                                    677 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 452: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
+      009068 7B 06            [ 1]  678 	ld	a, (0x06, sp)
+      00906A 88               [ 1]  679 	push	a
+      00906B CD 95 44         [ 4]  680 	call	_TIM1_SetIC2Prescaler
+      00906E 84               [ 1]  681 	pop	a
+      00906F 20 32            [ 2]  682 	jra	00110$
+      009071                        683 00105$:
+                           000297   684 	C$stm8s_tim1.c$454$1_0$366 ==.
+                                    685 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 454: else if (TIM1_Channel == TIM1_CHANNEL_3)
+      009071 7B 03            [ 1]  686 	ld	a, (0x03, sp)
+      009073 A1 02            [ 1]  687 	cp	a, #0x02
+      009075 26 17            [ 1]  688 	jrne	00102$
+                           00029D   689 	C$stm8s_tim1.c$457$2_0$369 ==.
+                                    690 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 457: TI3_Config((uint8_t)TIM1_ICPolarity,
+      009077 7B 07            [ 1]  691 	ld	a, (0x07, sp)
+      009079 88               [ 1]  692 	push	a
+      00907A 7B 06            [ 1]  693 	ld	a, (0x06, sp)
+      00907C 88               [ 1]  694 	push	a
+      00907D 7B 06            [ 1]  695 	ld	a, (0x06, sp)
+      00907F 88               [ 1]  696 	push	a
+      009080 CD 96 A9         [ 4]  697 	call	_TI3_Config
+      009083 5B 03            [ 2]  698 	addw	sp, #3
+                           0002AB   699 	C$stm8s_tim1.c$461$2_0$369 ==.
+                                    700 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 461: TIM1_SetIC3Prescaler(TIM1_ICPrescaler);
+      009085 7B 06            [ 1]  701 	ld	a, (0x06, sp)
+      009087 88               [ 1]  702 	push	a
+      009088 CD 95 4F         [ 4]  703 	call	_TIM1_SetIC3Prescaler
+      00908B 84               [ 1]  704 	pop	a
+      00908C 20 15            [ 2]  705 	jra	00110$
+      00908E                        706 00102$:
+                           0002B4   707 	C$stm8s_tim1.c$466$2_0$370 ==.
+                                    708 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 466: TI4_Config((uint8_t)TIM1_ICPolarity,
+      00908E 7B 07            [ 1]  709 	ld	a, (0x07, sp)
+      009090 88               [ 1]  710 	push	a
+      009091 7B 06            [ 1]  711 	ld	a, (0x06, sp)
+      009093 88               [ 1]  712 	push	a
+      009094 7B 06            [ 1]  713 	ld	a, (0x06, sp)
+      009096 88               [ 1]  714 	push	a
+      009097 CD 96 D9         [ 4]  715 	call	_TI4_Config
+      00909A 5B 03            [ 2]  716 	addw	sp, #3
+                           0002C2   717 	C$stm8s_tim1.c$470$2_0$370 ==.
+                                    718 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 470: TIM1_SetIC4Prescaler(TIM1_ICPrescaler);
+      00909C 7B 06            [ 1]  719 	ld	a, (0x06, sp)
+      00909E 88               [ 1]  720 	push	a
+      00909F CD 95 5A         [ 4]  721 	call	_TIM1_SetIC4Prescaler
+      0090A2 84               [ 1]  722 	pop	a
+      0090A3                        723 00110$:
+                           0002C9   724 	C$stm8s_tim1.c$472$1_0$366 ==.
+                                    725 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 472: }
+                           0002C9   726 	C$stm8s_tim1.c$472$1_0$366 ==.
+                           0002C9   727 	XG$TIM1_ICInit$0$0 ==.
+      0090A3 81               [ 4]  728 	ret
+                           0002CA   729 	G$TIM1_PWMIConfig$0$0 ==.
+                           0002CA   730 	C$stm8s_tim1.c$488$1_0$372 ==.
+                                    731 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 488: void TIM1_PWMIConfig(TIM1_Channel_TypeDef TIM1_Channel,
+                                    732 ;	-----------------------------------------
+                                    733 ;	 function TIM1_PWMIConfig
+                                    734 ;	-----------------------------------------
+      0090A4                        735 _TIM1_PWMIConfig:
+      0090A4 52 02            [ 2]  736 	sub	sp, #2
+                           0002CC   737 	C$stm8s_tim1.c$504$1_0$372 ==.
+                                    738 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 504: if (TIM1_ICPolarity != TIM1_ICPOLARITY_FALLING)
+      0090A6 7B 06            [ 1]  739 	ld	a, (0x06, sp)
+      0090A8 4A               [ 1]  740 	dec	a
+      0090A9 27 06            [ 1]  741 	jreq	00102$
+                           0002D1   742 	C$stm8s_tim1.c$506$2_0$373 ==.
+                                    743 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 506: icpolarity = TIM1_ICPOLARITY_FALLING;
+      0090AB A6 01            [ 1]  744 	ld	a, #0x01
+      0090AD 6B 01            [ 1]  745 	ld	(0x01, sp), a
+      0090AF 20 02            [ 2]  746 	jra	00103$
+      0090B1                        747 00102$:
+                           0002D7   748 	C$stm8s_tim1.c$510$2_0$374 ==.
+                                    749 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 510: icpolarity = TIM1_ICPOLARITY_RISING;
+      0090B1 0F 01            [ 1]  750 	clr	(0x01, sp)
+      0090B3                        751 00103$:
+                           0002D9   752 	C$stm8s_tim1.c$514$1_0$372 ==.
+                                    753 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 514: if (TIM1_ICSelection == TIM1_ICSELECTION_DIRECTTI)
+      0090B3 7B 07            [ 1]  754 	ld	a, (0x07, sp)
+      0090B5 4A               [ 1]  755 	dec	a
+      0090B6 26 06            [ 1]  756 	jrne	00105$
+                           0002DE   757 	C$stm8s_tim1.c$516$2_0$375 ==.
+                                    758 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 516: icselection = TIM1_ICSELECTION_INDIRECTTI;
+      0090B8 A6 02            [ 1]  759 	ld	a, #0x02
+      0090BA 6B 02            [ 1]  760 	ld	(0x02, sp), a
+      0090BC 20 04            [ 2]  761 	jra	00106$
+      0090BE                        762 00105$:
+                           0002E4   763 	C$stm8s_tim1.c$520$2_0$376 ==.
+                                    764 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 520: icselection = TIM1_ICSELECTION_DIRECTTI;
+      0090BE A6 01            [ 1]  765 	ld	a, #0x01
+      0090C0 6B 02            [ 1]  766 	ld	(0x02, sp), a
+      0090C2                        767 00106$:
+                           0002E8   768 	C$stm8s_tim1.c$523$1_0$372 ==.
+                                    769 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 523: if (TIM1_Channel == TIM1_CHANNEL_1)
+      0090C2 0D 05            [ 1]  770 	tnz	(0x05, sp)
+      0090C4 26 2C            [ 1]  771 	jrne	00108$
+                           0002EC   772 	C$stm8s_tim1.c$526$2_0$377 ==.
+                                    773 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 526: TI1_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSelection,
+      0090C6 7B 09            [ 1]  774 	ld	a, (0x09, sp)
+      0090C8 88               [ 1]  775 	push	a
+      0090C9 7B 08            [ 1]  776 	ld	a, (0x08, sp)
+      0090CB 88               [ 1]  777 	push	a
+      0090CC 7B 08            [ 1]  778 	ld	a, (0x08, sp)
+      0090CE 88               [ 1]  779 	push	a
+      0090CF CD 96 51         [ 4]  780 	call	_TI1_Config
+      0090D2 5B 03            [ 2]  781 	addw	sp, #3
+                           0002FA   782 	C$stm8s_tim1.c$530$2_0$377 ==.
+                                    783 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 530: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
+      0090D4 7B 08            [ 1]  784 	ld	a, (0x08, sp)
+      0090D6 88               [ 1]  785 	push	a
+      0090D7 CD 95 39         [ 4]  786 	call	_TIM1_SetIC1Prescaler
+      0090DA 84               [ 1]  787 	pop	a
+                           000301   788 	C$stm8s_tim1.c$533$2_0$377 ==.
+                                    789 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 533: TI2_Config(icpolarity, icselection, TIM1_ICFilter);
+      0090DB 7B 09            [ 1]  790 	ld	a, (0x09, sp)
+      0090DD 88               [ 1]  791 	push	a
+      0090DE 7B 03            [ 1]  792 	ld	a, (0x03, sp)
+      0090E0 88               [ 1]  793 	push	a
+      0090E1 7B 03            [ 1]  794 	ld	a, (0x03, sp)
+      0090E3 88               [ 1]  795 	push	a
+      0090E4 CD 96 7D         [ 4]  796 	call	_TI2_Config
+      0090E7 5B 03            [ 2]  797 	addw	sp, #3
+                           00030F   798 	C$stm8s_tim1.c$536$2_0$377 ==.
+                                    799 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 536: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
+      0090E9 7B 08            [ 1]  800 	ld	a, (0x08, sp)
+      0090EB 88               [ 1]  801 	push	a
+      0090EC CD 95 44         [ 4]  802 	call	_TIM1_SetIC2Prescaler
+      0090EF 84               [ 1]  803 	pop	a
+      0090F0 20 2A            [ 2]  804 	jra	00110$
+      0090F2                        805 00108$:
+                           000318   806 	C$stm8s_tim1.c$541$2_0$378 ==.
+                                    807 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 541: TI2_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSelection,
+      0090F2 7B 09            [ 1]  808 	ld	a, (0x09, sp)
+      0090F4 88               [ 1]  809 	push	a
+      0090F5 7B 08            [ 1]  810 	ld	a, (0x08, sp)
+      0090F7 88               [ 1]  811 	push	a
+      0090F8 7B 08            [ 1]  812 	ld	a, (0x08, sp)
+      0090FA 88               [ 1]  813 	push	a
+      0090FB CD 96 7D         [ 4]  814 	call	_TI2_Config
+      0090FE 5B 03            [ 2]  815 	addw	sp, #3
+                           000326   816 	C$stm8s_tim1.c$545$2_0$378 ==.
+                                    817 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 545: TIM1_SetIC2Prescaler(TIM1_ICPrescaler);
+      009100 7B 08            [ 1]  818 	ld	a, (0x08, sp)
+      009102 88               [ 1]  819 	push	a
+      009103 CD 95 44         [ 4]  820 	call	_TIM1_SetIC2Prescaler
+      009106 84               [ 1]  821 	pop	a
+                           00032D   822 	C$stm8s_tim1.c$548$2_0$378 ==.
+                                    823 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 548: TI1_Config(icpolarity, icselection, TIM1_ICFilter);
+      009107 7B 09            [ 1]  824 	ld	a, (0x09, sp)
+      009109 88               [ 1]  825 	push	a
+      00910A 7B 03            [ 1]  826 	ld	a, (0x03, sp)
+      00910C 88               [ 1]  827 	push	a
+      00910D 7B 03            [ 1]  828 	ld	a, (0x03, sp)
+      00910F 88               [ 1]  829 	push	a
+      009110 CD 96 51         [ 4]  830 	call	_TI1_Config
+      009113 5B 03            [ 2]  831 	addw	sp, #3
+                           00033B   832 	C$stm8s_tim1.c$551$2_0$378 ==.
+                                    833 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 551: TIM1_SetIC1Prescaler(TIM1_ICPrescaler);
+      009115 7B 08            [ 1]  834 	ld	a, (0x08, sp)
+      009117 88               [ 1]  835 	push	a
+      009118 CD 95 39         [ 4]  836 	call	_TIM1_SetIC1Prescaler
+      00911B 84               [ 1]  837 	pop	a
+      00911C                        838 00110$:
+                           000342   839 	C$stm8s_tim1.c$553$1_0$372 ==.
+                                    840 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 553: }
+      00911C 5B 02            [ 2]  841 	addw	sp, #2
+                           000344   842 	C$stm8s_tim1.c$553$1_0$372 ==.
+                           000344   843 	XG$TIM1_PWMIConfig$0$0 ==.
+      00911E 81               [ 4]  844 	ret
+                           000345   845 	G$TIM1_Cmd$0$0 ==.
+                           000345   846 	C$stm8s_tim1.c$561$1_0$380 ==.
+                                    847 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 561: void TIM1_Cmd(FunctionalState NewState)
+                                    848 ;	-----------------------------------------
+                                    849 ;	 function TIM1_Cmd
+                                    850 ;	-----------------------------------------
+      00911F                        851 _TIM1_Cmd:
+                           000345   852 	C$stm8s_tim1.c$567$1_0$380 ==.
+                                    853 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 567: if (NewState != DISABLE)
+      00911F 0D 03            [ 1]  854 	tnz	(0x03, sp)
+      009121 27 06            [ 1]  855 	jreq	00102$
+                           000349   856 	C$stm8s_tim1.c$569$2_0$381 ==.
+                                    857 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 569: TIM1->CR1 |= TIM1_CR1_CEN;
+      009123 72 10 52 50      [ 1]  858 	bset	21072, #0
+      009127 20 04            [ 2]  859 	jra	00104$
+      009129                        860 00102$:
+                           00034F   861 	C$stm8s_tim1.c$573$2_0$382 ==.
+                                    862 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 573: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_CEN);
+      009129 72 11 52 50      [ 1]  863 	bres	21072, #0
+      00912D                        864 00104$:
+                           000353   865 	C$stm8s_tim1.c$575$1_0$380 ==.
+                                    866 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 575: }
+                           000353   867 	C$stm8s_tim1.c$575$1_0$380 ==.
+                           000353   868 	XG$TIM1_Cmd$0$0 ==.
+      00912D 81               [ 4]  869 	ret
+                           000354   870 	G$TIM1_CtrlPWMOutputs$0$0 ==.
+                           000354   871 	C$stm8s_tim1.c$583$1_0$384 ==.
+                                    872 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 583: void TIM1_CtrlPWMOutputs(FunctionalState NewState)
+                                    873 ;	-----------------------------------------
+                                    874 ;	 function TIM1_CtrlPWMOutputs
+                                    875 ;	-----------------------------------------
+      00912E                        876 _TIM1_CtrlPWMOutputs:
+                           000354   877 	C$stm8s_tim1.c$590$1_0$384 ==.
+                                    878 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 590: if (NewState != DISABLE)
+      00912E 0D 03            [ 1]  879 	tnz	(0x03, sp)
+      009130 27 06            [ 1]  880 	jreq	00102$
+                           000358   881 	C$stm8s_tim1.c$592$2_0$385 ==.
+                                    882 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 592: TIM1->BKR |= TIM1_BKR_MOE;
+      009132 72 1E 52 6D      [ 1]  883 	bset	21101, #7
+      009136 20 04            [ 2]  884 	jra	00104$
+      009138                        885 00102$:
+                           00035E   886 	C$stm8s_tim1.c$596$2_0$386 ==.
+                                    887 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 596: TIM1->BKR &= (uint8_t)(~TIM1_BKR_MOE);
+      009138 72 1F 52 6D      [ 1]  888 	bres	21101, #7
+      00913C                        889 00104$:
+                           000362   890 	C$stm8s_tim1.c$598$1_0$384 ==.
+                                    891 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 598: }
+                           000362   892 	C$stm8s_tim1.c$598$1_0$384 ==.
+                           000362   893 	XG$TIM1_CtrlPWMOutputs$0$0 ==.
+      00913C 81               [ 4]  894 	ret
+                           000363   895 	G$TIM1_ITConfig$0$0 ==.
+                           000363   896 	C$stm8s_tim1.c$617$1_0$388 ==.
+                                    897 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 617: void TIM1_ITConfig(TIM1_IT_TypeDef  TIM1_IT, FunctionalState NewState)
+                                    898 ;	-----------------------------------------
+                                    899 ;	 function TIM1_ITConfig
+                                    900 ;	-----------------------------------------
+      00913D                        901 _TIM1_ITConfig:
+      00913D 88               [ 1]  902 	push	a
+                           000364   903 	C$stm8s_tim1.c$623$1_0$388 ==.
+                                    904 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 623: if (NewState != DISABLE)
+      00913E 0D 05            [ 1]  905 	tnz	(0x05, sp)
+      009140 27 0A            [ 1]  906 	jreq	00102$
+                           000368   907 	C$stm8s_tim1.c$626$2_0$389 ==.
+                                    908 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 626: TIM1->IER |= (uint8_t)TIM1_IT;
+      009142 C6 52 54         [ 1]  909 	ld	a, 0x5254
+      009145 1A 04            [ 1]  910 	or	a, (0x04, sp)
+      009147 C7 52 54         [ 1]  911 	ld	0x5254, a
+      00914A 20 0D            [ 2]  912 	jra	00104$
+      00914C                        913 00102$:
+                           000372   914 	C$stm8s_tim1.c$631$2_0$390 ==.
+                                    915 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 631: TIM1->IER &= (uint8_t)(~(uint8_t)TIM1_IT);
+      00914C C6 52 54         [ 1]  916 	ld	a, 0x5254
+      00914F 6B 01            [ 1]  917 	ld	(0x01, sp), a
+      009151 7B 04            [ 1]  918 	ld	a, (0x04, sp)
+      009153 43               [ 1]  919 	cpl	a
+      009154 14 01            [ 1]  920 	and	a, (0x01, sp)
+      009156 C7 52 54         [ 1]  921 	ld	0x5254, a
+      009159                        922 00104$:
+                           00037F   923 	C$stm8s_tim1.c$633$1_0$388 ==.
+                                    924 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 633: }
+      009159 84               [ 1]  925 	pop	a
+                           000380   926 	C$stm8s_tim1.c$633$1_0$388 ==.
+                           000380   927 	XG$TIM1_ITConfig$0$0 ==.
+      00915A 81               [ 4]  928 	ret
+                           000381   929 	G$TIM1_InternalClockConfig$0$0 ==.
+                           000381   930 	C$stm8s_tim1.c$640$1_0$392 ==.
+                                    931 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 640: void TIM1_InternalClockConfig(void)
+                                    932 ;	-----------------------------------------
+                                    933 ;	 function TIM1_InternalClockConfig
+                                    934 ;	-----------------------------------------
+      00915B                        935 _TIM1_InternalClockConfig:
+                           000381   936 	C$stm8s_tim1.c$643$1_0$392 ==.
+                                    937 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 643: TIM1->SMCR &= (uint8_t)(~TIM1_SMCR_SMS);
+      00915B C6 52 52         [ 1]  938 	ld	a, 0x5252
+      00915E A4 F8            [ 1]  939 	and	a, #0xf8
+      009160 C7 52 52         [ 1]  940 	ld	0x5252, a
+                           000389   941 	C$stm8s_tim1.c$644$1_0$392 ==.
+                                    942 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 644: }
+                           000389   943 	C$stm8s_tim1.c$644$1_0$392 ==.
+                           000389   944 	XG$TIM1_InternalClockConfig$0$0 ==.
+      009163 81               [ 4]  945 	ret
+                           00038A   946 	G$TIM1_ETRClockMode1Config$0$0 ==.
+                           00038A   947 	C$stm8s_tim1.c$662$1_0$394 ==.
+                                    948 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 662: void TIM1_ETRClockMode1Config(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
+                                    949 ;	-----------------------------------------
+                                    950 ;	 function TIM1_ETRClockMode1Config
+                                    951 ;	-----------------------------------------
+      009164                        952 _TIM1_ETRClockMode1Config:
+                           00038A   953 	C$stm8s_tim1.c$671$1_0$394 ==.
+                                    954 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 671: TIM1_ETRConfig(TIM1_ExtTRGPrescaler, TIM1_ExtTRGPolarity, ExtTRGFilter);
+      009164 7B 05            [ 1]  955 	ld	a, (0x05, sp)
+      009166 88               [ 1]  956 	push	a
+      009167 7B 05            [ 1]  957 	ld	a, (0x05, sp)
+      009169 88               [ 1]  958 	push	a
+      00916A 7B 05            [ 1]  959 	ld	a, (0x05, sp)
+      00916C 88               [ 1]  960 	push	a
+      00916D CD 91 90         [ 4]  961 	call	_TIM1_ETRConfig
+      009170 5B 03            [ 2]  962 	addw	sp, #3
+                           000398   963 	C$stm8s_tim1.c$674$1_0$394 ==.
+                                    964 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 674: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~(uint8_t)(TIM1_SMCR_SMS | TIM1_SMCR_TS )))
+      009172 C6 52 52         [ 1]  965 	ld	a, 0x5252
+      009175 A4 88            [ 1]  966 	and	a, #0x88
+      009177 AA 77            [ 1]  967 	or	a, #0x77
+      009179 C7 52 52         [ 1]  968 	ld	0x5252, a
+                           0003A2   969 	C$stm8s_tim1.c$676$1_0$394 ==.
+                                    970 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 676: }
+                           0003A2   971 	C$stm8s_tim1.c$676$1_0$394 ==.
+                           0003A2   972 	XG$TIM1_ETRClockMode1Config$0$0 ==.
+      00917C 81               [ 4]  973 	ret
+                           0003A3   974 	G$TIM1_ETRClockMode2Config$0$0 ==.
+                           0003A3   975 	C$stm8s_tim1.c$694$1_0$396 ==.
+                                    976 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 694: void TIM1_ETRClockMode2Config(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
+                                    977 ;	-----------------------------------------
+                                    978 ;	 function TIM1_ETRClockMode2Config
+                                    979 ;	-----------------------------------------
+      00917D                        980 _TIM1_ETRClockMode2Config:
+                           0003A3   981 	C$stm8s_tim1.c$703$1_0$396 ==.
+                                    982 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 703: TIM1_ETRConfig(TIM1_ExtTRGPrescaler, TIM1_ExtTRGPolarity, ExtTRGFilter);
+      00917D 7B 05            [ 1]  983 	ld	a, (0x05, sp)
+      00917F 88               [ 1]  984 	push	a
+      009180 7B 05            [ 1]  985 	ld	a, (0x05, sp)
+      009182 88               [ 1]  986 	push	a
+      009183 7B 05            [ 1]  987 	ld	a, (0x05, sp)
+      009185 88               [ 1]  988 	push	a
+      009186 CD 91 90         [ 4]  989 	call	_TIM1_ETRConfig
+      009189 5B 03            [ 2]  990 	addw	sp, #3
+                           0003B1   991 	C$stm8s_tim1.c$706$1_0$396 ==.
+                                    992 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 706: TIM1->ETR |= TIM1_ETR_ECE;
+      00918B 72 1C 52 53      [ 1]  993 	bset	21075, #6
+                           0003B5   994 	C$stm8s_tim1.c$707$1_0$396 ==.
+                                    995 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 707: }
+                           0003B5   996 	C$stm8s_tim1.c$707$1_0$396 ==.
+                           0003B5   997 	XG$TIM1_ETRClockMode2Config$0$0 ==.
+      00918F 81               [ 4]  998 	ret
+                           0003B6   999 	G$TIM1_ETRConfig$0$0 ==.
+                           0003B6  1000 	C$stm8s_tim1.c$725$1_0$398 ==.
+                                   1001 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 725: void TIM1_ETRConfig(TIM1_ExtTRGPSC_TypeDef TIM1_ExtTRGPrescaler,
+                                   1002 ;	-----------------------------------------
+                                   1003 ;	 function TIM1_ETRConfig
+                                   1004 ;	-----------------------------------------
+      009190                       1005 _TIM1_ETRConfig:
+      009190 88               [ 1] 1006 	push	a
+                           0003B7  1007 	C$stm8s_tim1.c$732$1_0$398 ==.
+                                   1008 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 732: TIM1->ETR |= (uint8_t)((uint8_t)(TIM1_ExtTRGPrescaler | (uint8_t)TIM1_ExtTRGPolarity )|
+      009191 C6 52 53         [ 1] 1009 	ld	a, 0x5253
+      009194 6B 01            [ 1] 1010 	ld	(0x01, sp), a
+      009196 7B 04            [ 1] 1011 	ld	a, (0x04, sp)
+      009198 1A 05            [ 1] 1012 	or	a, (0x05, sp)
+                           0003C0  1013 	C$stm8s_tim1.c$733$1_0$398 ==.
+                                   1014 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 733: (uint8_t)ExtTRGFilter );
+      00919A 1A 06            [ 1] 1015 	or	a, (0x06, sp)
+      00919C 1A 01            [ 1] 1016 	or	a, (0x01, sp)
+      00919E C7 52 53         [ 1] 1017 	ld	0x5253, a
+                           0003C7  1018 	C$stm8s_tim1.c$734$1_0$398 ==.
+                                   1019 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 734: }
+      0091A1 84               [ 1] 1020 	pop	a
+                           0003C8  1021 	C$stm8s_tim1.c$734$1_0$398 ==.
+                           0003C8  1022 	XG$TIM1_ETRConfig$0$0 ==.
+      0091A2 81               [ 4] 1023 	ret
+                           0003C9  1024 	G$TIM1_TIxExternalClockConfig$0$0 ==.
+                           0003C9  1025 	C$stm8s_tim1.c$751$1_0$400 ==.
+                                   1026 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 751: void TIM1_TIxExternalClockConfig(TIM1_TIxExternalCLK1Source_TypeDef TIM1_TIxExternalCLKSource,
+                                   1027 ;	-----------------------------------------
+                                   1028 ;	 function TIM1_TIxExternalClockConfig
+                                   1029 ;	-----------------------------------------
+      0091A3                       1030 _TIM1_TIxExternalClockConfig:
+                           0003C9  1031 	C$stm8s_tim1.c$761$1_0$400 ==.
+                                   1032 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 761: if (TIM1_TIxExternalCLKSource == TIM1_TIXEXTERNALCLK1SOURCE_TI2)
+      0091A3 7B 03            [ 1] 1033 	ld	a, (0x03, sp)
+      0091A5 A1 60            [ 1] 1034 	cp	a, #0x60
+      0091A7 26 0F            [ 1] 1035 	jrne	00102$
+                           0003CF  1036 	C$stm8s_tim1.c$763$2_0$401 ==.
+                                   1037 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 763: TI2_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSELECTION_DIRECTTI, (uint8_t)ICFilter);
+      0091A9 7B 05            [ 1] 1038 	ld	a, (0x05, sp)
+      0091AB 88               [ 1] 1039 	push	a
+      0091AC 4B 01            [ 1] 1040 	push	#0x01
+      0091AE 7B 06            [ 1] 1041 	ld	a, (0x06, sp)
+      0091B0 88               [ 1] 1042 	push	a
+      0091B1 CD 96 7D         [ 4] 1043 	call	_TI2_Config
+      0091B4 5B 03            [ 2] 1044 	addw	sp, #3
+      0091B6 20 0D            [ 2] 1045 	jra	00103$
+      0091B8                       1046 00102$:
+                           0003DE  1047 	C$stm8s_tim1.c$767$2_0$402 ==.
+                                   1048 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 767: TI1_Config((uint8_t)TIM1_ICPolarity, (uint8_t)TIM1_ICSELECTION_DIRECTTI, (uint8_t)ICFilter);
+      0091B8 7B 05            [ 1] 1049 	ld	a, (0x05, sp)
+      0091BA 88               [ 1] 1050 	push	a
+      0091BB 4B 01            [ 1] 1051 	push	#0x01
+      0091BD 7B 06            [ 1] 1052 	ld	a, (0x06, sp)
+      0091BF 88               [ 1] 1053 	push	a
+      0091C0 CD 96 51         [ 4] 1054 	call	_TI1_Config
+      0091C3 5B 03            [ 2] 1055 	addw	sp, #3
+      0091C5                       1056 00103$:
+                           0003EB  1057 	C$stm8s_tim1.c$771$1_0$400 ==.
+                                   1058 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 771: TIM1_SelectInputTrigger((TIM1_TS_TypeDef)TIM1_TIxExternalCLKSource);
+      0091C5 7B 03            [ 1] 1059 	ld	a, (0x03, sp)
+      0091C7 88               [ 1] 1060 	push	a
+      0091C8 CD 91 D5         [ 4] 1061 	call	_TIM1_SelectInputTrigger
+      0091CB 84               [ 1] 1062 	pop	a
+                           0003F2  1063 	C$stm8s_tim1.c$774$1_0$400 ==.
+                                   1064 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 774: TIM1->SMCR |= (uint8_t)(TIM1_SLAVEMODE_EXTERNAL1);
+      0091CC C6 52 52         [ 1] 1065 	ld	a, 0x5252
+      0091CF AA 07            [ 1] 1066 	or	a, #0x07
+      0091D1 C7 52 52         [ 1] 1067 	ld	0x5252, a
+                           0003FA  1068 	C$stm8s_tim1.c$775$1_0$400 ==.
+                                   1069 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 775: }
+                           0003FA  1070 	C$stm8s_tim1.c$775$1_0$400 ==.
+                           0003FA  1071 	XG$TIM1_TIxExternalClockConfig$0$0 ==.
+      0091D4 81               [ 4] 1072 	ret
+                           0003FB  1073 	G$TIM1_SelectInputTrigger$0$0 ==.
+                           0003FB  1074 	C$stm8s_tim1.c$787$1_0$404 ==.
+                                   1075 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 787: void TIM1_SelectInputTrigger(TIM1_TS_TypeDef TIM1_InputTriggerSource)
+                                   1076 ;	-----------------------------------------
+                                   1077 ;	 function TIM1_SelectInputTrigger
+                                   1078 ;	-----------------------------------------
+      0091D5                       1079 _TIM1_SelectInputTrigger:
+                           0003FB  1080 	C$stm8s_tim1.c$793$1_0$404 ==.
+                                   1081 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 793: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~TIM1_SMCR_TS)) | (uint8_t)TIM1_InputTriggerSource);
+      0091D5 C6 52 52         [ 1] 1082 	ld	a, 0x5252
+      0091D8 A4 8F            [ 1] 1083 	and	a, #0x8f
+      0091DA 1A 03            [ 1] 1084 	or	a, (0x03, sp)
+      0091DC C7 52 52         [ 1] 1085 	ld	0x5252, a
+                           000405  1086 	C$stm8s_tim1.c$794$1_0$404 ==.
+                                   1087 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 794: }
+                           000405  1088 	C$stm8s_tim1.c$794$1_0$404 ==.
+                           000405  1089 	XG$TIM1_SelectInputTrigger$0$0 ==.
+      0091DF 81               [ 4] 1090 	ret
+                           000406  1091 	G$TIM1_UpdateDisableConfig$0$0 ==.
+                           000406  1092 	C$stm8s_tim1.c$803$1_0$406 ==.
+                                   1093 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 803: void TIM1_UpdateDisableConfig(FunctionalState NewState)
+                                   1094 ;	-----------------------------------------
+                                   1095 ;	 function TIM1_UpdateDisableConfig
+                                   1096 ;	-----------------------------------------
+      0091E0                       1097 _TIM1_UpdateDisableConfig:
+                           000406  1098 	C$stm8s_tim1.c$809$1_0$406 ==.
+                                   1099 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 809: if (NewState != DISABLE)
+      0091E0 0D 03            [ 1] 1100 	tnz	(0x03, sp)
+      0091E2 27 06            [ 1] 1101 	jreq	00102$
+                           00040A  1102 	C$stm8s_tim1.c$811$2_0$407 ==.
+                                   1103 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 811: TIM1->CR1 |= TIM1_CR1_UDIS;
+      0091E4 72 12 52 50      [ 1] 1104 	bset	21072, #1
+      0091E8 20 04            [ 2] 1105 	jra	00104$
+      0091EA                       1106 00102$:
+                           000410  1107 	C$stm8s_tim1.c$815$2_0$408 ==.
+                                   1108 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 815: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_UDIS);
+      0091EA 72 13 52 50      [ 1] 1109 	bres	21072, #1
+      0091EE                       1110 00104$:
+                           000414  1111 	C$stm8s_tim1.c$817$1_0$406 ==.
+                                   1112 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 817: }
+                           000414  1113 	C$stm8s_tim1.c$817$1_0$406 ==.
+                           000414  1114 	XG$TIM1_UpdateDisableConfig$0$0 ==.
+      0091EE 81               [ 4] 1115 	ret
+                           000415  1116 	G$TIM1_UpdateRequestConfig$0$0 ==.
+                           000415  1117 	C$stm8s_tim1.c$827$1_0$410 ==.
+                                   1118 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 827: void TIM1_UpdateRequestConfig(TIM1_UpdateSource_TypeDef TIM1_UpdateSource)
+                                   1119 ;	-----------------------------------------
+                                   1120 ;	 function TIM1_UpdateRequestConfig
+                                   1121 ;	-----------------------------------------
+      0091EF                       1122 _TIM1_UpdateRequestConfig:
+                           000415  1123 	C$stm8s_tim1.c$833$1_0$410 ==.
+                                   1124 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 833: if (TIM1_UpdateSource != TIM1_UPDATESOURCE_GLOBAL)
+      0091EF 0D 03            [ 1] 1125 	tnz	(0x03, sp)
+      0091F1 27 06            [ 1] 1126 	jreq	00102$
+                           000419  1127 	C$stm8s_tim1.c$835$2_0$411 ==.
+                                   1128 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 835: TIM1->CR1 |= TIM1_CR1_URS;
+      0091F3 72 14 52 50      [ 1] 1129 	bset	21072, #2
+      0091F7 20 04            [ 2] 1130 	jra	00104$
+      0091F9                       1131 00102$:
+                           00041F  1132 	C$stm8s_tim1.c$839$2_0$412 ==.
+                                   1133 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 839: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_URS);
+      0091F9 72 15 52 50      [ 1] 1134 	bres	21072, #2
+      0091FD                       1135 00104$:
+                           000423  1136 	C$stm8s_tim1.c$841$1_0$410 ==.
+                                   1137 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 841: }
+                           000423  1138 	C$stm8s_tim1.c$841$1_0$410 ==.
+                           000423  1139 	XG$TIM1_UpdateRequestConfig$0$0 ==.
+      0091FD 81               [ 4] 1140 	ret
+                           000424  1141 	G$TIM1_SelectHallSensor$0$0 ==.
+                           000424  1142 	C$stm8s_tim1.c$849$1_0$414 ==.
+                                   1143 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 849: void TIM1_SelectHallSensor(FunctionalState NewState)
+                                   1144 ;	-----------------------------------------
+                                   1145 ;	 function TIM1_SelectHallSensor
+                                   1146 ;	-----------------------------------------
+      0091FE                       1147 _TIM1_SelectHallSensor:
+                           000424  1148 	C$stm8s_tim1.c$855$1_0$414 ==.
+                                   1149 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 855: if (NewState != DISABLE)
+      0091FE 0D 03            [ 1] 1150 	tnz	(0x03, sp)
+      009200 27 06            [ 1] 1151 	jreq	00102$
+                           000428  1152 	C$stm8s_tim1.c$857$2_0$415 ==.
+                                   1153 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 857: TIM1->CR2 |= TIM1_CR2_TI1S;
+      009202 72 1E 52 51      [ 1] 1154 	bset	21073, #7
+      009206 20 04            [ 2] 1155 	jra	00104$
+      009208                       1156 00102$:
+                           00042E  1157 	C$stm8s_tim1.c$861$2_0$416 ==.
+                                   1158 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 861: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_TI1S);
+      009208 72 1F 52 51      [ 1] 1159 	bres	21073, #7
+      00920C                       1160 00104$:
+                           000432  1161 	C$stm8s_tim1.c$863$1_0$414 ==.
+                                   1162 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 863: }
+                           000432  1163 	C$stm8s_tim1.c$863$1_0$414 ==.
+                           000432  1164 	XG$TIM1_SelectHallSensor$0$0 ==.
+      00920C 81               [ 4] 1165 	ret
+                           000433  1166 	G$TIM1_SelectOnePulseMode$0$0 ==.
+                           000433  1167 	C$stm8s_tim1.c$873$1_0$418 ==.
+                                   1168 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 873: void TIM1_SelectOnePulseMode(TIM1_OPMode_TypeDef TIM1_OPMode)
+                                   1169 ;	-----------------------------------------
+                                   1170 ;	 function TIM1_SelectOnePulseMode
+                                   1171 ;	-----------------------------------------
+      00920D                       1172 _TIM1_SelectOnePulseMode:
+                           000433  1173 	C$stm8s_tim1.c$879$1_0$418 ==.
+                                   1174 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 879: if (TIM1_OPMode != TIM1_OPMODE_REPETITIVE)
+      00920D 0D 03            [ 1] 1175 	tnz	(0x03, sp)
+      00920F 27 06            [ 1] 1176 	jreq	00102$
+                           000437  1177 	C$stm8s_tim1.c$881$2_0$419 ==.
+                                   1178 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 881: TIM1->CR1 |= TIM1_CR1_OPM;
+      009211 72 16 52 50      [ 1] 1179 	bset	21072, #3
+      009215 20 04            [ 2] 1180 	jra	00104$
+      009217                       1181 00102$:
+                           00043D  1182 	C$stm8s_tim1.c$885$2_0$420 ==.
+                                   1183 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 885: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_OPM);
+      009217 72 17 52 50      [ 1] 1184 	bres	21072, #3
+      00921B                       1185 00104$:
+                           000441  1186 	C$stm8s_tim1.c$888$1_0$418 ==.
+                                   1187 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 888: }
+                           000441  1188 	C$stm8s_tim1.c$888$1_0$418 ==.
+                           000441  1189 	XG$TIM1_SelectOnePulseMode$0$0 ==.
+      00921B 81               [ 4] 1190 	ret
+                           000442  1191 	G$TIM1_SelectOutputTrigger$0$0 ==.
+                           000442  1192 	C$stm8s_tim1.c$903$1_0$422 ==.
+                                   1193 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 903: void TIM1_SelectOutputTrigger(TIM1_TRGOSource_TypeDef TIM1_TRGOSource)
+                                   1194 ;	-----------------------------------------
+                                   1195 ;	 function TIM1_SelectOutputTrigger
+                                   1196 ;	-----------------------------------------
+      00921C                       1197 _TIM1_SelectOutputTrigger:
+                           000442  1198 	C$stm8s_tim1.c$909$1_0$422 ==.
+                                   1199 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 909: TIM1->CR2 = (uint8_t)((uint8_t)(TIM1->CR2 & (uint8_t)(~TIM1_CR2_MMS)) | 
+      00921C C6 52 51         [ 1] 1200 	ld	a, 0x5251
+      00921F A4 8F            [ 1] 1201 	and	a, #0x8f
+                           000447  1202 	C$stm8s_tim1.c$910$1_0$422 ==.
+                                   1203 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 910: (uint8_t) TIM1_TRGOSource);
+      009221 1A 03            [ 1] 1204 	or	a, (0x03, sp)
+      009223 C7 52 51         [ 1] 1205 	ld	0x5251, a
+                           00044C  1206 	C$stm8s_tim1.c$911$1_0$422 ==.
+                                   1207 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 911: }
+                           00044C  1208 	C$stm8s_tim1.c$911$1_0$422 ==.
+                           00044C  1209 	XG$TIM1_SelectOutputTrigger$0$0 ==.
+      009226 81               [ 4] 1210 	ret
+                           00044D  1211 	G$TIM1_SelectSlaveMode$0$0 ==.
+                           00044D  1212 	C$stm8s_tim1.c$923$1_0$424 ==.
+                                   1213 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 923: void TIM1_SelectSlaveMode(TIM1_SlaveMode_TypeDef TIM1_SlaveMode)
+                                   1214 ;	-----------------------------------------
+                                   1215 ;	 function TIM1_SelectSlaveMode
+                                   1216 ;	-----------------------------------------
+      009227                       1217 _TIM1_SelectSlaveMode:
+                           00044D  1218 	C$stm8s_tim1.c$929$1_0$424 ==.
+                                   1219 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 929: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(~TIM1_SMCR_SMS)) |
+      009227 C6 52 52         [ 1] 1220 	ld	a, 0x5252
+      00922A A4 F8            [ 1] 1221 	and	a, #0xf8
+                           000452  1222 	C$stm8s_tim1.c$930$1_0$424 ==.
+                                   1223 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 930: (uint8_t)TIM1_SlaveMode);
+      00922C 1A 03            [ 1] 1224 	or	a, (0x03, sp)
+      00922E C7 52 52         [ 1] 1225 	ld	0x5252, a
+                           000457  1226 	C$stm8s_tim1.c$931$1_0$424 ==.
+                                   1227 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 931: }
+                           000457  1228 	C$stm8s_tim1.c$931$1_0$424 ==.
+                           000457  1229 	XG$TIM1_SelectSlaveMode$0$0 ==.
+      009231 81               [ 4] 1230 	ret
+                           000458  1231 	G$TIM1_SelectMasterSlaveMode$0$0 ==.
+                           000458  1232 	C$stm8s_tim1.c$939$1_0$426 ==.
+                                   1233 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 939: void TIM1_SelectMasterSlaveMode(FunctionalState NewState)
+                                   1234 ;	-----------------------------------------
+                                   1235 ;	 function TIM1_SelectMasterSlaveMode
+                                   1236 ;	-----------------------------------------
+      009232                       1237 _TIM1_SelectMasterSlaveMode:
+                           000458  1238 	C$stm8s_tim1.c$945$1_0$426 ==.
+                                   1239 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 945: if (NewState != DISABLE)
+      009232 0D 03            [ 1] 1240 	tnz	(0x03, sp)
+      009234 27 06            [ 1] 1241 	jreq	00102$
+                           00045C  1242 	C$stm8s_tim1.c$947$2_0$427 ==.
+                                   1243 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 947: TIM1->SMCR |= TIM1_SMCR_MSM;
+      009236 72 1E 52 52      [ 1] 1244 	bset	21074, #7
+      00923A 20 04            [ 2] 1245 	jra	00104$
+      00923C                       1246 00102$:
+                           000462  1247 	C$stm8s_tim1.c$951$2_0$428 ==.
+                                   1248 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 951: TIM1->SMCR &= (uint8_t)(~TIM1_SMCR_MSM);
+      00923C 72 1F 52 52      [ 1] 1249 	bres	21074, #7
+      009240                       1250 00104$:
+                           000466  1251 	C$stm8s_tim1.c$953$1_0$426 ==.
+                                   1252 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 953: }
+                           000466  1253 	C$stm8s_tim1.c$953$1_0$426 ==.
+                           000466  1254 	XG$TIM1_SelectMasterSlaveMode$0$0 ==.
+      009240 81               [ 4] 1255 	ret
+                           000467  1256 	G$TIM1_EncoderInterfaceConfig$0$0 ==.
+                           000467  1257 	C$stm8s_tim1.c$975$1_0$430 ==.
+                                   1258 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 975: void TIM1_EncoderInterfaceConfig(TIM1_EncoderMode_TypeDef TIM1_EncoderMode,
+                                   1259 ;	-----------------------------------------
+                                   1260 ;	 function TIM1_EncoderInterfaceConfig
+                                   1261 ;	-----------------------------------------
+      009241                       1262 _TIM1_EncoderInterfaceConfig:
+                           000467  1263 	C$stm8s_tim1.c$985$1_0$430 ==.
+                                   1264 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 985: if (TIM1_IC1Polarity != TIM1_ICPOLARITY_RISING)
+      009241 0D 04            [ 1] 1265 	tnz	(0x04, sp)
+      009243 27 06            [ 1] 1266 	jreq	00102$
+                           00046B  1267 	C$stm8s_tim1.c$987$2_0$431 ==.
+                                   1268 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 987: TIM1->CCER1 |= TIM1_CCER1_CC1P;
+      009245 72 12 52 5C      [ 1] 1269 	bset	21084, #1
+      009249 20 04            [ 2] 1270 	jra	00103$
+      00924B                       1271 00102$:
+                           000471  1272 	C$stm8s_tim1.c$991$2_0$432 ==.
+                                   1273 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 991: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
+      00924B 72 13 52 5C      [ 1] 1274 	bres	21084, #1
+      00924F                       1275 00103$:
+                           000475  1276 	C$stm8s_tim1.c$994$1_0$430 ==.
+                                   1277 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 994: if (TIM1_IC2Polarity != TIM1_ICPOLARITY_RISING)
+      00924F 0D 05            [ 1] 1278 	tnz	(0x05, sp)
+      009251 27 06            [ 1] 1279 	jreq	00105$
+                           000479  1280 	C$stm8s_tim1.c$996$2_0$433 ==.
+                                   1281 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 996: TIM1->CCER1 |= TIM1_CCER1_CC2P;
+      009253 72 1A 52 5C      [ 1] 1282 	bset	21084, #5
+      009257 20 04            [ 2] 1283 	jra	00106$
+      009259                       1284 00105$:
+                           00047F  1285 	C$stm8s_tim1.c$1000$2_0$434 ==.
+                                   1286 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1000: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
+      009259 72 1B 52 5C      [ 1] 1287 	bres	21084, #5
+      00925D                       1288 00106$:
+                           000483  1289 	C$stm8s_tim1.c$1003$1_0$430 ==.
+                                   1290 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1003: TIM1->SMCR = (uint8_t)((uint8_t)(TIM1->SMCR & (uint8_t)(TIM1_SMCR_MSM | TIM1_SMCR_TS))
+      00925D C6 52 52         [ 1] 1291 	ld	a, 0x5252
+      009260 A4 F0            [ 1] 1292 	and	a, #0xf0
+                           000488  1293 	C$stm8s_tim1.c$1004$1_0$430 ==.
+                                   1294 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1004: | (uint8_t) TIM1_EncoderMode);
+      009262 1A 03            [ 1] 1295 	or	a, (0x03, sp)
+      009264 C7 52 52         [ 1] 1296 	ld	0x5252, a
+                           00048D  1297 	C$stm8s_tim1.c$1007$1_0$430 ==.
+                                   1298 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1007: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_CCxS)) 
+      009267 C6 52 58         [ 1] 1299 	ld	a, 0x5258
+      00926A A4 FC            [ 1] 1300 	and	a, #0xfc
+      00926C AA 01            [ 1] 1301 	or	a, #0x01
+      00926E C7 52 58         [ 1] 1302 	ld	0x5258, a
+                           000497  1303 	C$stm8s_tim1.c$1009$1_0$430 ==.
+                                   1304 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1009: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_CCxS))
+      009271 C6 52 59         [ 1] 1305 	ld	a, 0x5259
+      009274 A4 FC            [ 1] 1306 	and	a, #0xfc
+      009276 AA 01            [ 1] 1307 	or	a, #0x01
+      009278 C7 52 59         [ 1] 1308 	ld	0x5259, a
+                           0004A1  1309 	C$stm8s_tim1.c$1011$1_0$430 ==.
+                                   1310 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1011: }
+                           0004A1  1311 	C$stm8s_tim1.c$1011$1_0$430 ==.
+                           0004A1  1312 	XG$TIM1_EncoderInterfaceConfig$0$0 ==.
+      00927B 81               [ 4] 1313 	ret
+                           0004A2  1314 	G$TIM1_PrescalerConfig$0$0 ==.
+                           0004A2  1315 	C$stm8s_tim1.c$1023$1_0$436 ==.
+                                   1316 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1023: void TIM1_PrescalerConfig(uint16_t Prescaler,
+                                   1317 ;	-----------------------------------------
+                                   1318 ;	 function TIM1_PrescalerConfig
+                                   1319 ;	-----------------------------------------
+      00927C                       1320 _TIM1_PrescalerConfig:
+      00927C 52 02            [ 2] 1321 	sub	sp, #2
+                           0004A4  1322 	C$stm8s_tim1.c$1030$1_0$436 ==.
+                                   1323 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1030: TIM1->PSCRH = (uint8_t)(Prescaler >> 8);
+      00927E 7B 05            [ 1] 1324 	ld	a, (0x05, sp)
+      009280 6B 02            [ 1] 1325 	ld	(0x02, sp), a
+      009282 0F 01            [ 1] 1326 	clr	(0x01, sp)
+      009284 7B 02            [ 1] 1327 	ld	a, (0x02, sp)
+      009286 C7 52 60         [ 1] 1328 	ld	0x5260, a
+                           0004AF  1329 	C$stm8s_tim1.c$1031$1_0$436 ==.
+                                   1330 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1031: TIM1->PSCRL = (uint8_t)(Prescaler);
+      009289 7B 06            [ 1] 1331 	ld	a, (0x06, sp)
+      00928B C7 52 61         [ 1] 1332 	ld	0x5261, a
+                           0004B4  1333 	C$stm8s_tim1.c$1034$1_0$436 ==.
+                                   1334 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1034: TIM1->EGR = (uint8_t)TIM1_PSCReloadMode;
+      00928E AE 52 57         [ 2] 1335 	ldw	x, #0x5257
+      009291 7B 07            [ 1] 1336 	ld	a, (0x07, sp)
+      009293 F7               [ 1] 1337 	ld	(x), a
+                           0004BA  1338 	C$stm8s_tim1.c$1035$1_0$436 ==.
+                                   1339 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1035: }
+      009294 5B 02            [ 2] 1340 	addw	sp, #2
+                           0004BC  1341 	C$stm8s_tim1.c$1035$1_0$436 ==.
+                           0004BC  1342 	XG$TIM1_PrescalerConfig$0$0 ==.
+      009296 81               [ 4] 1343 	ret
+                           0004BD  1344 	G$TIM1_CounterModeConfig$0$0 ==.
+                           0004BD  1345 	C$stm8s_tim1.c$1048$1_0$438 ==.
+                                   1346 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1048: void TIM1_CounterModeConfig(TIM1_CounterMode_TypeDef TIM1_CounterMode)
+                                   1347 ;	-----------------------------------------
+                                   1348 ;	 function TIM1_CounterModeConfig
+                                   1349 ;	-----------------------------------------
+      009297                       1350 _TIM1_CounterModeConfig:
+                           0004BD  1351 	C$stm8s_tim1.c$1055$1_0$438 ==.
+                                   1352 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1055: TIM1->CR1 = (uint8_t)((uint8_t)(TIM1->CR1 & (uint8_t)((uint8_t)(~TIM1_CR1_CMS) & (uint8_t)(~TIM1_CR1_DIR)))
+      009297 C6 52 50         [ 1] 1353 	ld	a, 0x5250
+      00929A A4 8F            [ 1] 1354 	and	a, #0x8f
+                           0004C2  1355 	C$stm8s_tim1.c$1056$1_0$438 ==.
+                                   1356 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1056: | (uint8_t)TIM1_CounterMode);
+      00929C 1A 03            [ 1] 1357 	or	a, (0x03, sp)
+      00929E C7 52 50         [ 1] 1358 	ld	0x5250, a
+                           0004C7  1359 	C$stm8s_tim1.c$1057$1_0$438 ==.
+                                   1360 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1057: }
+                           0004C7  1361 	C$stm8s_tim1.c$1057$1_0$438 ==.
+                           0004C7  1362 	XG$TIM1_CounterModeConfig$0$0 ==.
+      0092A1 81               [ 4] 1363 	ret
+                           0004C8  1364 	G$TIM1_ForcedOC1Config$0$0 ==.
+                           0004C8  1365 	C$stm8s_tim1.c$1067$1_0$440 ==.
+                                   1366 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1067: void TIM1_ForcedOC1Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
+                                   1367 ;	-----------------------------------------
+                                   1368 ;	 function TIM1_ForcedOC1Config
+                                   1369 ;	-----------------------------------------
+      0092A2                       1370 _TIM1_ForcedOC1Config:
+                           0004C8  1371 	C$stm8s_tim1.c$1073$1_0$440 ==.
+                                   1372 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1073: TIM1->CCMR1 =  (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM))|
+      0092A2 C6 52 58         [ 1] 1373 	ld	a, 0x5258
+      0092A5 A4 8F            [ 1] 1374 	and	a, #0x8f
+                           0004CD  1375 	C$stm8s_tim1.c$1074$1_0$440 ==.
+                                   1376 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1074: (uint8_t)TIM1_ForcedAction);
+      0092A7 1A 03            [ 1] 1377 	or	a, (0x03, sp)
+      0092A9 C7 52 58         [ 1] 1378 	ld	0x5258, a
+                           0004D2  1379 	C$stm8s_tim1.c$1075$1_0$440 ==.
+                                   1380 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1075: }
+                           0004D2  1381 	C$stm8s_tim1.c$1075$1_0$440 ==.
+                           0004D2  1382 	XG$TIM1_ForcedOC1Config$0$0 ==.
+      0092AC 81               [ 4] 1383 	ret
+                           0004D3  1384 	G$TIM1_ForcedOC2Config$0$0 ==.
+                           0004D3  1385 	C$stm8s_tim1.c$1085$1_0$442 ==.
+                                   1386 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1085: void TIM1_ForcedOC2Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
+                                   1387 ;	-----------------------------------------
+                                   1388 ;	 function TIM1_ForcedOC2Config
+                                   1389 ;	-----------------------------------------
+      0092AD                       1390 _TIM1_ForcedOC2Config:
+                           0004D3  1391 	C$stm8s_tim1.c$1091$1_0$442 ==.
+                                   1392 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1091: TIM1->CCMR2  =  (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM))
+      0092AD C6 52 59         [ 1] 1393 	ld	a, 0x5259
+      0092B0 A4 8F            [ 1] 1394 	and	a, #0x8f
+                           0004D8  1395 	C$stm8s_tim1.c$1092$1_0$442 ==.
+                                   1396 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1092: | (uint8_t)TIM1_ForcedAction);
+      0092B2 1A 03            [ 1] 1397 	or	a, (0x03, sp)
+      0092B4 C7 52 59         [ 1] 1398 	ld	0x5259, a
+                           0004DD  1399 	C$stm8s_tim1.c$1093$1_0$442 ==.
+                                   1400 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1093: }
+                           0004DD  1401 	C$stm8s_tim1.c$1093$1_0$442 ==.
+                           0004DD  1402 	XG$TIM1_ForcedOC2Config$0$0 ==.
+      0092B7 81               [ 4] 1403 	ret
+                           0004DE  1404 	G$TIM1_ForcedOC3Config$0$0 ==.
+                           0004DE  1405 	C$stm8s_tim1.c$1104$1_0$444 ==.
+                                   1406 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1104: void TIM1_ForcedOC3Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
+                                   1407 ;	-----------------------------------------
+                                   1408 ;	 function TIM1_ForcedOC3Config
+                                   1409 ;	-----------------------------------------
+      0092B8                       1410 _TIM1_ForcedOC3Config:
+                           0004DE  1411 	C$stm8s_tim1.c$1110$1_0$444 ==.
+                                   1412 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1110: TIM1->CCMR3  =  (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM))  
+      0092B8 C6 52 5A         [ 1] 1413 	ld	a, 0x525a
+      0092BB A4 8F            [ 1] 1414 	and	a, #0x8f
+                           0004E3  1415 	C$stm8s_tim1.c$1111$1_0$444 ==.
+                                   1416 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1111: | (uint8_t)TIM1_ForcedAction);
+      0092BD 1A 03            [ 1] 1417 	or	a, (0x03, sp)
+      0092BF C7 52 5A         [ 1] 1418 	ld	0x525a, a
+                           0004E8  1419 	C$stm8s_tim1.c$1112$1_0$444 ==.
+                                   1420 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1112: }
+                           0004E8  1421 	C$stm8s_tim1.c$1112$1_0$444 ==.
+                           0004E8  1422 	XG$TIM1_ForcedOC3Config$0$0 ==.
+      0092C2 81               [ 4] 1423 	ret
+                           0004E9  1424 	G$TIM1_ForcedOC4Config$0$0 ==.
+                           0004E9  1425 	C$stm8s_tim1.c$1123$1_0$446 ==.
+                                   1426 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1123: void TIM1_ForcedOC4Config(TIM1_ForcedAction_TypeDef TIM1_ForcedAction)
+                                   1427 ;	-----------------------------------------
+                                   1428 ;	 function TIM1_ForcedOC4Config
+                                   1429 ;	-----------------------------------------
+      0092C3                       1430 _TIM1_ForcedOC4Config:
+                           0004E9  1431 	C$stm8s_tim1.c$1129$1_0$446 ==.
+                                   1432 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1129: TIM1->CCMR4  =  (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) 
+      0092C3 C6 52 5B         [ 1] 1433 	ld	a, 0x525b
+      0092C6 A4 8F            [ 1] 1434 	and	a, #0x8f
+                           0004EE  1435 	C$stm8s_tim1.c$1130$1_0$446 ==.
+                                   1436 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1130: | (uint8_t)TIM1_ForcedAction);
+      0092C8 1A 03            [ 1] 1437 	or	a, (0x03, sp)
+      0092CA C7 52 5B         [ 1] 1438 	ld	0x525b, a
+                           0004F3  1439 	C$stm8s_tim1.c$1131$1_0$446 ==.
+                                   1440 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1131: }
+                           0004F3  1441 	C$stm8s_tim1.c$1131$1_0$446 ==.
+                           0004F3  1442 	XG$TIM1_ForcedOC4Config$0$0 ==.
+      0092CD 81               [ 4] 1443 	ret
+                           0004F4  1444 	G$TIM1_ARRPreloadConfig$0$0 ==.
+                           0004F4  1445 	C$stm8s_tim1.c$1139$1_0$448 ==.
+                                   1446 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1139: void TIM1_ARRPreloadConfig(FunctionalState NewState)
+                                   1447 ;	-----------------------------------------
+                                   1448 ;	 function TIM1_ARRPreloadConfig
+                                   1449 ;	-----------------------------------------
+      0092CE                       1450 _TIM1_ARRPreloadConfig:
+                           0004F4  1451 	C$stm8s_tim1.c$1145$1_0$448 ==.
+                                   1452 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1145: if (NewState != DISABLE)
+      0092CE 0D 03            [ 1] 1453 	tnz	(0x03, sp)
+      0092D0 27 06            [ 1] 1454 	jreq	00102$
+                           0004F8  1455 	C$stm8s_tim1.c$1147$2_0$449 ==.
+                                   1456 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1147: TIM1->CR1 |= TIM1_CR1_ARPE;
+      0092D2 72 1E 52 50      [ 1] 1457 	bset	21072, #7
+      0092D6 20 04            [ 2] 1458 	jra	00104$
+      0092D8                       1459 00102$:
+                           0004FE  1460 	C$stm8s_tim1.c$1151$2_0$450 ==.
+                                   1461 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1151: TIM1->CR1 &= (uint8_t)(~TIM1_CR1_ARPE);
+      0092D8 72 1F 52 50      [ 1] 1462 	bres	21072, #7
+      0092DC                       1463 00104$:
+                           000502  1464 	C$stm8s_tim1.c$1153$1_0$448 ==.
+                                   1465 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1153: }
+                           000502  1466 	C$stm8s_tim1.c$1153$1_0$448 ==.
+                           000502  1467 	XG$TIM1_ARRPreloadConfig$0$0 ==.
+      0092DC 81               [ 4] 1468 	ret
+                           000503  1469 	G$TIM1_SelectCOM$0$0 ==.
+                           000503  1470 	C$stm8s_tim1.c$1161$1_0$452 ==.
+                                   1471 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1161: void TIM1_SelectCOM(FunctionalState NewState)
+                                   1472 ;	-----------------------------------------
+                                   1473 ;	 function TIM1_SelectCOM
+                                   1474 ;	-----------------------------------------
+      0092DD                       1475 _TIM1_SelectCOM:
+                           000503  1476 	C$stm8s_tim1.c$1167$1_0$452 ==.
+                                   1477 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1167: if (NewState != DISABLE)
+      0092DD 0D 03            [ 1] 1478 	tnz	(0x03, sp)
+      0092DF 27 06            [ 1] 1479 	jreq	00102$
+                           000507  1480 	C$stm8s_tim1.c$1169$2_0$453 ==.
+                                   1481 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1169: TIM1->CR2 |= TIM1_CR2_COMS;
+      0092E1 72 14 52 51      [ 1] 1482 	bset	21073, #2
+      0092E5 20 04            [ 2] 1483 	jra	00104$
+      0092E7                       1484 00102$:
+                           00050D  1485 	C$stm8s_tim1.c$1173$2_0$454 ==.
+                                   1486 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1173: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_COMS);
+      0092E7 72 15 52 51      [ 1] 1487 	bres	21073, #2
+      0092EB                       1488 00104$:
+                           000511  1489 	C$stm8s_tim1.c$1175$1_0$452 ==.
+                                   1490 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1175: }
+                           000511  1491 	C$stm8s_tim1.c$1175$1_0$452 ==.
+                           000511  1492 	XG$TIM1_SelectCOM$0$0 ==.
+      0092EB 81               [ 4] 1493 	ret
+                           000512  1494 	G$TIM1_CCPreloadControl$0$0 ==.
+                           000512  1495 	C$stm8s_tim1.c$1183$1_0$456 ==.
+                                   1496 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1183: void TIM1_CCPreloadControl(FunctionalState NewState)
+                                   1497 ;	-----------------------------------------
+                                   1498 ;	 function TIM1_CCPreloadControl
+                                   1499 ;	-----------------------------------------
+      0092EC                       1500 _TIM1_CCPreloadControl:
+                           000512  1501 	C$stm8s_tim1.c$1189$1_0$456 ==.
+                                   1502 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1189: if (NewState != DISABLE)
+      0092EC 0D 03            [ 1] 1503 	tnz	(0x03, sp)
+      0092EE 27 06            [ 1] 1504 	jreq	00102$
+                           000516  1505 	C$stm8s_tim1.c$1191$2_0$457 ==.
+                                   1506 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1191: TIM1->CR2 |= TIM1_CR2_CCPC;
+      0092F0 72 10 52 51      [ 1] 1507 	bset	21073, #0
+      0092F4 20 04            [ 2] 1508 	jra	00104$
+      0092F6                       1509 00102$:
+                           00051C  1510 	C$stm8s_tim1.c$1195$2_0$458 ==.
+                                   1511 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1195: TIM1->CR2 &= (uint8_t)(~TIM1_CR2_CCPC);
+      0092F6 72 11 52 51      [ 1] 1512 	bres	21073, #0
+      0092FA                       1513 00104$:
+                           000520  1514 	C$stm8s_tim1.c$1197$1_0$456 ==.
+                                   1515 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1197: }
+                           000520  1516 	C$stm8s_tim1.c$1197$1_0$456 ==.
+                           000520  1517 	XG$TIM1_CCPreloadControl$0$0 ==.
+      0092FA 81               [ 4] 1518 	ret
+                           000521  1519 	G$TIM1_OC1PreloadConfig$0$0 ==.
+                           000521  1520 	C$stm8s_tim1.c$1205$1_0$460 ==.
+                                   1521 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1205: void TIM1_OC1PreloadConfig(FunctionalState NewState)
+                                   1522 ;	-----------------------------------------
+                                   1523 ;	 function TIM1_OC1PreloadConfig
+                                   1524 ;	-----------------------------------------
+      0092FB                       1525 _TIM1_OC1PreloadConfig:
+                           000521  1526 	C$stm8s_tim1.c$1211$1_0$460 ==.
+                                   1527 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1211: if (NewState != DISABLE)
+      0092FB 0D 03            [ 1] 1528 	tnz	(0x03, sp)
+      0092FD 27 06            [ 1] 1529 	jreq	00102$
+                           000525  1530 	C$stm8s_tim1.c$1213$2_0$461 ==.
+                                   1531 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1213: TIM1->CCMR1 |= TIM1_CCMR_OCxPE;
+      0092FF 72 16 52 58      [ 1] 1532 	bset	21080, #3
+      009303 20 04            [ 2] 1533 	jra	00104$
+      009305                       1534 00102$:
+                           00052B  1535 	C$stm8s_tim1.c$1217$2_0$462 ==.
+                                   1536 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1217: TIM1->CCMR1 &= (uint8_t)(~TIM1_CCMR_OCxPE);
+      009305 72 17 52 58      [ 1] 1537 	bres	21080, #3
+      009309                       1538 00104$:
+                           00052F  1539 	C$stm8s_tim1.c$1219$1_0$460 ==.
+                                   1540 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1219: }
+                           00052F  1541 	C$stm8s_tim1.c$1219$1_0$460 ==.
+                           00052F  1542 	XG$TIM1_OC1PreloadConfig$0$0 ==.
+      009309 81               [ 4] 1543 	ret
+                           000530  1544 	G$TIM1_OC2PreloadConfig$0$0 ==.
+                           000530  1545 	C$stm8s_tim1.c$1227$1_0$464 ==.
+                                   1546 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1227: void TIM1_OC2PreloadConfig(FunctionalState NewState)
+                                   1547 ;	-----------------------------------------
+                                   1548 ;	 function TIM1_OC2PreloadConfig
+                                   1549 ;	-----------------------------------------
+      00930A                       1550 _TIM1_OC2PreloadConfig:
+                           000530  1551 	C$stm8s_tim1.c$1233$1_0$464 ==.
+                                   1552 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1233: if (NewState != DISABLE)
+      00930A 0D 03            [ 1] 1553 	tnz	(0x03, sp)
+      00930C 27 06            [ 1] 1554 	jreq	00102$
+                           000534  1555 	C$stm8s_tim1.c$1235$2_0$465 ==.
+                                   1556 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1235: TIM1->CCMR2 |= TIM1_CCMR_OCxPE;
+      00930E 72 16 52 59      [ 1] 1557 	bset	21081, #3
+      009312 20 04            [ 2] 1558 	jra	00104$
+      009314                       1559 00102$:
+                           00053A  1560 	C$stm8s_tim1.c$1239$2_0$466 ==.
+                                   1561 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1239: TIM1->CCMR2 &= (uint8_t)(~TIM1_CCMR_OCxPE);
+      009314 72 17 52 59      [ 1] 1562 	bres	21081, #3
+      009318                       1563 00104$:
+                           00053E  1564 	C$stm8s_tim1.c$1241$1_0$464 ==.
+                                   1565 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1241: }
+                           00053E  1566 	C$stm8s_tim1.c$1241$1_0$464 ==.
+                           00053E  1567 	XG$TIM1_OC2PreloadConfig$0$0 ==.
+      009318 81               [ 4] 1568 	ret
+                           00053F  1569 	G$TIM1_OC3PreloadConfig$0$0 ==.
+                           00053F  1570 	C$stm8s_tim1.c$1249$1_0$468 ==.
+                                   1571 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1249: void TIM1_OC3PreloadConfig(FunctionalState NewState)
+                                   1572 ;	-----------------------------------------
+                                   1573 ;	 function TIM1_OC3PreloadConfig
+                                   1574 ;	-----------------------------------------
+      009319                       1575 _TIM1_OC3PreloadConfig:
+                           00053F  1576 	C$stm8s_tim1.c$1255$1_0$468 ==.
+                                   1577 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1255: if (NewState != DISABLE)
+      009319 0D 03            [ 1] 1578 	tnz	(0x03, sp)
+      00931B 27 06            [ 1] 1579 	jreq	00102$
+                           000543  1580 	C$stm8s_tim1.c$1257$2_0$469 ==.
+                                   1581 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1257: TIM1->CCMR3 |= TIM1_CCMR_OCxPE;
+      00931D 72 16 52 5A      [ 1] 1582 	bset	21082, #3
+      009321 20 04            [ 2] 1583 	jra	00104$
+      009323                       1584 00102$:
+                           000549  1585 	C$stm8s_tim1.c$1261$2_0$470 ==.
+                                   1586 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1261: TIM1->CCMR3 &= (uint8_t)(~TIM1_CCMR_OCxPE);
+      009323 72 17 52 5A      [ 1] 1587 	bres	21082, #3
+      009327                       1588 00104$:
+                           00054D  1589 	C$stm8s_tim1.c$1263$1_0$468 ==.
+                                   1590 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1263: }
+                           00054D  1591 	C$stm8s_tim1.c$1263$1_0$468 ==.
+                           00054D  1592 	XG$TIM1_OC3PreloadConfig$0$0 ==.
+      009327 81               [ 4] 1593 	ret
+                           00054E  1594 	G$TIM1_OC4PreloadConfig$0$0 ==.
+                           00054E  1595 	C$stm8s_tim1.c$1271$1_0$472 ==.
+                                   1596 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1271: void TIM1_OC4PreloadConfig(FunctionalState NewState)
+                                   1597 ;	-----------------------------------------
+                                   1598 ;	 function TIM1_OC4PreloadConfig
+                                   1599 ;	-----------------------------------------
+      009328                       1600 _TIM1_OC4PreloadConfig:
+                           00054E  1601 	C$stm8s_tim1.c$1277$1_0$472 ==.
+                                   1602 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1277: if (NewState != DISABLE)
+      009328 0D 03            [ 1] 1603 	tnz	(0x03, sp)
+      00932A 27 06            [ 1] 1604 	jreq	00102$
+                           000552  1605 	C$stm8s_tim1.c$1279$2_0$473 ==.
+                                   1606 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1279: TIM1->CCMR4 |= TIM1_CCMR_OCxPE;
+      00932C 72 16 52 5B      [ 1] 1607 	bset	21083, #3
+      009330 20 04            [ 2] 1608 	jra	00104$
+      009332                       1609 00102$:
+                           000558  1610 	C$stm8s_tim1.c$1283$2_0$474 ==.
+                                   1611 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1283: TIM1->CCMR4 &= (uint8_t)(~TIM1_CCMR_OCxPE);
+      009332 72 17 52 5B      [ 1] 1612 	bres	21083, #3
+      009336                       1613 00104$:
+                           00055C  1614 	C$stm8s_tim1.c$1285$1_0$472 ==.
+                                   1615 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1285: }
+                           00055C  1616 	C$stm8s_tim1.c$1285$1_0$472 ==.
+                           00055C  1617 	XG$TIM1_OC4PreloadConfig$0$0 ==.
+      009336 81               [ 4] 1618 	ret
+                           00055D  1619 	G$TIM1_OC1FastConfig$0$0 ==.
+                           00055D  1620 	C$stm8s_tim1.c$1293$1_0$476 ==.
+                                   1621 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1293: void TIM1_OC1FastConfig(FunctionalState NewState)
+                                   1622 ;	-----------------------------------------
+                                   1623 ;	 function TIM1_OC1FastConfig
+                                   1624 ;	-----------------------------------------
+      009337                       1625 _TIM1_OC1FastConfig:
+                           00055D  1626 	C$stm8s_tim1.c$1299$1_0$476 ==.
+                                   1627 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1299: if (NewState != DISABLE)
+      009337 0D 03            [ 1] 1628 	tnz	(0x03, sp)
+      009339 27 06            [ 1] 1629 	jreq	00102$
+                           000561  1630 	C$stm8s_tim1.c$1301$2_0$477 ==.
+                                   1631 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1301: TIM1->CCMR1 |= TIM1_CCMR_OCxFE;
+      00933B 72 14 52 58      [ 1] 1632 	bset	21080, #2
+      00933F 20 04            [ 2] 1633 	jra	00104$
+      009341                       1634 00102$:
+                           000567  1635 	C$stm8s_tim1.c$1305$2_0$478 ==.
+                                   1636 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1305: TIM1->CCMR1 &= (uint8_t)(~TIM1_CCMR_OCxFE);
+      009341 72 15 52 58      [ 1] 1637 	bres	21080, #2
+      009345                       1638 00104$:
+                           00056B  1639 	C$stm8s_tim1.c$1307$1_0$476 ==.
+                                   1640 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1307: }
+                           00056B  1641 	C$stm8s_tim1.c$1307$1_0$476 ==.
+                           00056B  1642 	XG$TIM1_OC1FastConfig$0$0 ==.
+      009345 81               [ 4] 1643 	ret
+                           00056C  1644 	G$TIM1_OC2FastConfig$0$0 ==.
+                           00056C  1645 	C$stm8s_tim1.c$1315$1_0$480 ==.
+                                   1646 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1315: void TIM1_OC2FastConfig(FunctionalState NewState)
+                                   1647 ;	-----------------------------------------
+                                   1648 ;	 function TIM1_OC2FastConfig
+                                   1649 ;	-----------------------------------------
+      009346                       1650 _TIM1_OC2FastConfig:
+                           00056C  1651 	C$stm8s_tim1.c$1321$1_0$480 ==.
+                                   1652 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1321: if (NewState != DISABLE)
+      009346 0D 03            [ 1] 1653 	tnz	(0x03, sp)
+      009348 27 06            [ 1] 1654 	jreq	00102$
+                           000570  1655 	C$stm8s_tim1.c$1323$2_0$481 ==.
+                                   1656 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1323: TIM1->CCMR2 |= TIM1_CCMR_OCxFE;
+      00934A 72 14 52 59      [ 1] 1657 	bset	21081, #2
+      00934E 20 04            [ 2] 1658 	jra	00104$
+      009350                       1659 00102$:
+                           000576  1660 	C$stm8s_tim1.c$1327$2_0$482 ==.
+                                   1661 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1327: TIM1->CCMR2 &= (uint8_t)(~TIM1_CCMR_OCxFE);
+      009350 72 15 52 59      [ 1] 1662 	bres	21081, #2
+      009354                       1663 00104$:
+                           00057A  1664 	C$stm8s_tim1.c$1329$1_0$480 ==.
+                                   1665 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1329: }
+                           00057A  1666 	C$stm8s_tim1.c$1329$1_0$480 ==.
+                           00057A  1667 	XG$TIM1_OC2FastConfig$0$0 ==.
+      009354 81               [ 4] 1668 	ret
+                           00057B  1669 	G$TIM1_OC3FastConfig$0$0 ==.
+                           00057B  1670 	C$stm8s_tim1.c$1337$1_0$484 ==.
+                                   1671 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1337: void TIM1_OC3FastConfig(FunctionalState NewState)
+                                   1672 ;	-----------------------------------------
+                                   1673 ;	 function TIM1_OC3FastConfig
+                                   1674 ;	-----------------------------------------
+      009355                       1675 _TIM1_OC3FastConfig:
+                           00057B  1676 	C$stm8s_tim1.c$1343$1_0$484 ==.
+                                   1677 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1343: if (NewState != DISABLE)
+      009355 0D 03            [ 1] 1678 	tnz	(0x03, sp)
+      009357 27 06            [ 1] 1679 	jreq	00102$
+                           00057F  1680 	C$stm8s_tim1.c$1345$2_0$485 ==.
+                                   1681 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1345: TIM1->CCMR3 |= TIM1_CCMR_OCxFE;
+      009359 72 14 52 5A      [ 1] 1682 	bset	21082, #2
+      00935D 20 04            [ 2] 1683 	jra	00104$
+      00935F                       1684 00102$:
+                           000585  1685 	C$stm8s_tim1.c$1349$2_0$486 ==.
+                                   1686 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1349: TIM1->CCMR3 &= (uint8_t)(~TIM1_CCMR_OCxFE);
+      00935F 72 15 52 5A      [ 1] 1687 	bres	21082, #2
+      009363                       1688 00104$:
+                           000589  1689 	C$stm8s_tim1.c$1351$1_0$484 ==.
+                                   1690 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1351: }
+                           000589  1691 	C$stm8s_tim1.c$1351$1_0$484 ==.
+                           000589  1692 	XG$TIM1_OC3FastConfig$0$0 ==.
+      009363 81               [ 4] 1693 	ret
+                           00058A  1694 	G$TIM1_OC4FastConfig$0$0 ==.
+                           00058A  1695 	C$stm8s_tim1.c$1359$1_0$488 ==.
+                                   1696 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1359: void TIM1_OC4FastConfig(FunctionalState NewState)
+                                   1697 ;	-----------------------------------------
+                                   1698 ;	 function TIM1_OC4FastConfig
+                                   1699 ;	-----------------------------------------
+      009364                       1700 _TIM1_OC4FastConfig:
+                           00058A  1701 	C$stm8s_tim1.c$1365$1_0$488 ==.
+                                   1702 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1365: if (NewState != DISABLE)
+      009364 0D 03            [ 1] 1703 	tnz	(0x03, sp)
+      009366 27 06            [ 1] 1704 	jreq	00102$
+                           00058E  1705 	C$stm8s_tim1.c$1367$2_0$489 ==.
+                                   1706 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1367: TIM1->CCMR4 |= TIM1_CCMR_OCxFE;
+      009368 72 14 52 5B      [ 1] 1707 	bset	21083, #2
+      00936C 20 04            [ 2] 1708 	jra	00104$
+      00936E                       1709 00102$:
+                           000594  1710 	C$stm8s_tim1.c$1371$2_0$490 ==.
+                                   1711 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1371: TIM1->CCMR4 &= (uint8_t)(~TIM1_CCMR_OCxFE);
+      00936E 72 15 52 5B      [ 1] 1712 	bres	21083, #2
+      009372                       1713 00104$:
+                           000598  1714 	C$stm8s_tim1.c$1373$1_0$488 ==.
+                                   1715 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1373: }
+                           000598  1716 	C$stm8s_tim1.c$1373$1_0$488 ==.
+                           000598  1717 	XG$TIM1_OC4FastConfig$0$0 ==.
+      009372 81               [ 4] 1718 	ret
+                           000599  1719 	G$TIM1_GenerateEvent$0$0 ==.
+                           000599  1720 	C$stm8s_tim1.c$1389$1_0$492 ==.
+                                   1721 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1389: void TIM1_GenerateEvent(TIM1_EventSource_TypeDef TIM1_EventSource)
+                                   1722 ;	-----------------------------------------
+                                   1723 ;	 function TIM1_GenerateEvent
+                                   1724 ;	-----------------------------------------
+      009373                       1725 _TIM1_GenerateEvent:
+                           000599  1726 	C$stm8s_tim1.c$1395$1_0$492 ==.
+                                   1727 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1395: TIM1->EGR = (uint8_t)TIM1_EventSource;
+      009373 AE 52 57         [ 2] 1728 	ldw	x, #0x5257
+      009376 7B 03            [ 1] 1729 	ld	a, (0x03, sp)
+      009378 F7               [ 1] 1730 	ld	(x), a
+                           00059F  1731 	C$stm8s_tim1.c$1396$1_0$492 ==.
+                                   1732 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1396: }
+                           00059F  1733 	C$stm8s_tim1.c$1396$1_0$492 ==.
+                           00059F  1734 	XG$TIM1_GenerateEvent$0$0 ==.
+      009379 81               [ 4] 1735 	ret
+                           0005A0  1736 	G$TIM1_OC1PolarityConfig$0$0 ==.
+                           0005A0  1737 	C$stm8s_tim1.c$1406$1_0$494 ==.
+                                   1738 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1406: void TIM1_OC1PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
+                                   1739 ;	-----------------------------------------
+                                   1740 ;	 function TIM1_OC1PolarityConfig
+                                   1741 ;	-----------------------------------------
+      00937A                       1742 _TIM1_OC1PolarityConfig:
+                           0005A0  1743 	C$stm8s_tim1.c$1412$1_0$494 ==.
+                                   1744 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1412: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
+      00937A 0D 03            [ 1] 1745 	tnz	(0x03, sp)
+      00937C 27 06            [ 1] 1746 	jreq	00102$
+                           0005A4  1747 	C$stm8s_tim1.c$1414$2_0$495 ==.
+                                   1748 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1414: TIM1->CCER1 |= TIM1_CCER1_CC1P;
+      00937E 72 12 52 5C      [ 1] 1749 	bset	21084, #1
+      009382 20 04            [ 2] 1750 	jra	00104$
+      009384                       1751 00102$:
+                           0005AA  1752 	C$stm8s_tim1.c$1418$2_0$496 ==.
+                                   1753 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1418: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
+      009384 72 13 52 5C      [ 1] 1754 	bres	21084, #1
+      009388                       1755 00104$:
+                           0005AE  1756 	C$stm8s_tim1.c$1420$1_0$494 ==.
+                                   1757 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1420: }
+                           0005AE  1758 	C$stm8s_tim1.c$1420$1_0$494 ==.
+                           0005AE  1759 	XG$TIM1_OC1PolarityConfig$0$0 ==.
+      009388 81               [ 4] 1760 	ret
+                           0005AF  1761 	G$TIM1_OC1NPolarityConfig$0$0 ==.
+                           0005AF  1762 	C$stm8s_tim1.c$1430$1_0$498 ==.
+                                   1763 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1430: void TIM1_OC1NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
+                                   1764 ;	-----------------------------------------
+                                   1765 ;	 function TIM1_OC1NPolarityConfig
+                                   1766 ;	-----------------------------------------
+      009389                       1767 _TIM1_OC1NPolarityConfig:
+                           0005AF  1768 	C$stm8s_tim1.c$1436$1_0$498 ==.
+                                   1769 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1436: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
+      009389 0D 03            [ 1] 1770 	tnz	(0x03, sp)
+      00938B 27 06            [ 1] 1771 	jreq	00102$
+                           0005B3  1772 	C$stm8s_tim1.c$1438$2_0$499 ==.
+                                   1773 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1438: TIM1->CCER1 |= TIM1_CCER1_CC1NP;
+      00938D 72 16 52 5C      [ 1] 1774 	bset	21084, #3
+      009391 20 04            [ 2] 1775 	jra	00104$
+      009393                       1776 00102$:
+                           0005B9  1777 	C$stm8s_tim1.c$1442$2_0$500 ==.
+                                   1778 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1442: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1NP);
+      009393 72 17 52 5C      [ 1] 1779 	bres	21084, #3
+      009397                       1780 00104$:
+                           0005BD  1781 	C$stm8s_tim1.c$1444$1_0$498 ==.
+                                   1782 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1444: }
+                           0005BD  1783 	C$stm8s_tim1.c$1444$1_0$498 ==.
+                           0005BD  1784 	XG$TIM1_OC1NPolarityConfig$0$0 ==.
+      009397 81               [ 4] 1785 	ret
+                           0005BE  1786 	G$TIM1_OC2PolarityConfig$0$0 ==.
+                           0005BE  1787 	C$stm8s_tim1.c$1454$1_0$502 ==.
+                                   1788 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1454: void TIM1_OC2PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
+                                   1789 ;	-----------------------------------------
+                                   1790 ;	 function TIM1_OC2PolarityConfig
+                                   1791 ;	-----------------------------------------
+      009398                       1792 _TIM1_OC2PolarityConfig:
+                           0005BE  1793 	C$stm8s_tim1.c$1460$1_0$502 ==.
+                                   1794 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1460: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
+      009398 0D 03            [ 1] 1795 	tnz	(0x03, sp)
+      00939A 27 06            [ 1] 1796 	jreq	00102$
+                           0005C2  1797 	C$stm8s_tim1.c$1462$2_0$503 ==.
+                                   1798 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1462: TIM1->CCER1 |= TIM1_CCER1_CC2P;
+      00939C 72 1A 52 5C      [ 1] 1799 	bset	21084, #5
+      0093A0 20 04            [ 2] 1800 	jra	00104$
+      0093A2                       1801 00102$:
+                           0005C8  1802 	C$stm8s_tim1.c$1466$2_0$504 ==.
+                                   1803 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1466: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
+      0093A2 72 1B 52 5C      [ 1] 1804 	bres	21084, #5
+      0093A6                       1805 00104$:
+                           0005CC  1806 	C$stm8s_tim1.c$1468$1_0$502 ==.
+                                   1807 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1468: }
+                           0005CC  1808 	C$stm8s_tim1.c$1468$1_0$502 ==.
+                           0005CC  1809 	XG$TIM1_OC2PolarityConfig$0$0 ==.
+      0093A6 81               [ 4] 1810 	ret
+                           0005CD  1811 	G$TIM1_OC2NPolarityConfig$0$0 ==.
+                           0005CD  1812 	C$stm8s_tim1.c$1478$1_0$506 ==.
+                                   1813 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1478: void TIM1_OC2NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
+                                   1814 ;	-----------------------------------------
+                                   1815 ;	 function TIM1_OC2NPolarityConfig
+                                   1816 ;	-----------------------------------------
+      0093A7                       1817 _TIM1_OC2NPolarityConfig:
+                           0005CD  1818 	C$stm8s_tim1.c$1484$1_0$506 ==.
+                                   1819 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1484: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
+      0093A7 0D 03            [ 1] 1820 	tnz	(0x03, sp)
+      0093A9 27 06            [ 1] 1821 	jreq	00102$
+                           0005D1  1822 	C$stm8s_tim1.c$1486$2_0$507 ==.
+                                   1823 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1486: TIM1->CCER1 |= TIM1_CCER1_CC2NP;
+      0093AB 72 1E 52 5C      [ 1] 1824 	bset	21084, #7
+      0093AF 20 04            [ 2] 1825 	jra	00104$
+      0093B1                       1826 00102$:
+                           0005D7  1827 	C$stm8s_tim1.c$1490$2_0$508 ==.
+                                   1828 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1490: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2NP);
+      0093B1 72 1F 52 5C      [ 1] 1829 	bres	21084, #7
+      0093B5                       1830 00104$:
+                           0005DB  1831 	C$stm8s_tim1.c$1492$1_0$506 ==.
+                                   1832 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1492: }
+                           0005DB  1833 	C$stm8s_tim1.c$1492$1_0$506 ==.
+                           0005DB  1834 	XG$TIM1_OC2NPolarityConfig$0$0 ==.
+      0093B5 81               [ 4] 1835 	ret
+                           0005DC  1836 	G$TIM1_OC3PolarityConfig$0$0 ==.
+                           0005DC  1837 	C$stm8s_tim1.c$1502$1_0$510 ==.
+                                   1838 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1502: void TIM1_OC3PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
+                                   1839 ;	-----------------------------------------
+                                   1840 ;	 function TIM1_OC3PolarityConfig
+                                   1841 ;	-----------------------------------------
+      0093B6                       1842 _TIM1_OC3PolarityConfig:
+                           0005DC  1843 	C$stm8s_tim1.c$1508$1_0$510 ==.
+                                   1844 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1508: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
+      0093B6 0D 03            [ 1] 1845 	tnz	(0x03, sp)
+      0093B8 27 06            [ 1] 1846 	jreq	00102$
+                           0005E0  1847 	C$stm8s_tim1.c$1510$2_0$511 ==.
+                                   1848 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1510: TIM1->CCER2 |= TIM1_CCER2_CC3P;
+      0093BA 72 12 52 5D      [ 1] 1849 	bset	21085, #1
+      0093BE 20 04            [ 2] 1850 	jra	00104$
+      0093C0                       1851 00102$:
+                           0005E6  1852 	C$stm8s_tim1.c$1514$2_0$512 ==.
+                                   1853 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1514: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3P);
+      0093C0 72 13 52 5D      [ 1] 1854 	bres	21085, #1
+      0093C4                       1855 00104$:
+                           0005EA  1856 	C$stm8s_tim1.c$1516$1_0$510 ==.
+                                   1857 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1516: }
+                           0005EA  1858 	C$stm8s_tim1.c$1516$1_0$510 ==.
+                           0005EA  1859 	XG$TIM1_OC3PolarityConfig$0$0 ==.
+      0093C4 81               [ 4] 1860 	ret
+                           0005EB  1861 	G$TIM1_OC3NPolarityConfig$0$0 ==.
+                           0005EB  1862 	C$stm8s_tim1.c$1527$1_0$514 ==.
+                                   1863 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1527: void TIM1_OC3NPolarityConfig(TIM1_OCNPolarity_TypeDef TIM1_OCNPolarity)
+                                   1864 ;	-----------------------------------------
+                                   1865 ;	 function TIM1_OC3NPolarityConfig
+                                   1866 ;	-----------------------------------------
+      0093C5                       1867 _TIM1_OC3NPolarityConfig:
+                           0005EB  1868 	C$stm8s_tim1.c$1533$1_0$514 ==.
+                                   1869 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1533: if (TIM1_OCNPolarity != TIM1_OCNPOLARITY_HIGH)
+      0093C5 0D 03            [ 1] 1870 	tnz	(0x03, sp)
+      0093C7 27 06            [ 1] 1871 	jreq	00102$
+                           0005EF  1872 	C$stm8s_tim1.c$1535$2_0$515 ==.
+                                   1873 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1535: TIM1->CCER2 |= TIM1_CCER2_CC3NP;
+      0093C9 72 16 52 5D      [ 1] 1874 	bset	21085, #3
+      0093CD 20 04            [ 2] 1875 	jra	00104$
+      0093CF                       1876 00102$:
+                           0005F5  1877 	C$stm8s_tim1.c$1539$2_0$516 ==.
+                                   1878 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1539: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3NP);
+      0093CF 72 17 52 5D      [ 1] 1879 	bres	21085, #3
+      0093D3                       1880 00104$:
+                           0005F9  1881 	C$stm8s_tim1.c$1541$1_0$514 ==.
+                                   1882 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1541: }
+                           0005F9  1883 	C$stm8s_tim1.c$1541$1_0$514 ==.
+                           0005F9  1884 	XG$TIM1_OC3NPolarityConfig$0$0 ==.
+      0093D3 81               [ 4] 1885 	ret
+                           0005FA  1886 	G$TIM1_OC4PolarityConfig$0$0 ==.
+                           0005FA  1887 	C$stm8s_tim1.c$1551$1_0$518 ==.
+                                   1888 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1551: void TIM1_OC4PolarityConfig(TIM1_OCPolarity_TypeDef TIM1_OCPolarity)
+                                   1889 ;	-----------------------------------------
+                                   1890 ;	 function TIM1_OC4PolarityConfig
+                                   1891 ;	-----------------------------------------
+      0093D4                       1892 _TIM1_OC4PolarityConfig:
+                           0005FA  1893 	C$stm8s_tim1.c$1557$1_0$518 ==.
+                                   1894 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1557: if (TIM1_OCPolarity != TIM1_OCPOLARITY_HIGH)
+      0093D4 0D 03            [ 1] 1895 	tnz	(0x03, sp)
+      0093D6 27 06            [ 1] 1896 	jreq	00102$
+                           0005FE  1897 	C$stm8s_tim1.c$1559$2_0$519 ==.
+                                   1898 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1559: TIM1->CCER2 |= TIM1_CCER2_CC4P;
+      0093D8 72 1A 52 5D      [ 1] 1899 	bset	21085, #5
+      0093DC 20 04            [ 2] 1900 	jra	00104$
+      0093DE                       1901 00102$:
+                           000604  1902 	C$stm8s_tim1.c$1563$2_0$520 ==.
+                                   1903 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1563: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4P);
+      0093DE 72 1B 52 5D      [ 1] 1904 	bres	21085, #5
+      0093E2                       1905 00104$:
+                           000608  1906 	C$stm8s_tim1.c$1565$1_0$518 ==.
+                                   1907 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1565: }
+                           000608  1908 	C$stm8s_tim1.c$1565$1_0$518 ==.
+                           000608  1909 	XG$TIM1_OC4PolarityConfig$0$0 ==.
+      0093E2 81               [ 4] 1910 	ret
+                           000609  1911 	G$TIM1_CCxCmd$0$0 ==.
+                           000609  1912 	C$stm8s_tim1.c$1579$1_0$522 ==.
+                                   1913 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1579: void TIM1_CCxCmd(TIM1_Channel_TypeDef TIM1_Channel, FunctionalState NewState)
+                                   1914 ;	-----------------------------------------
+                                   1915 ;	 function TIM1_CCxCmd
+                                   1916 ;	-----------------------------------------
+      0093E3                       1917 _TIM1_CCxCmd:
+                           000609  1918 	C$stm8s_tim1.c$1585$1_0$522 ==.
+                                   1919 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1585: if (TIM1_Channel == TIM1_CHANNEL_1)
+      0093E3 0D 03            [ 1] 1920 	tnz	(0x03, sp)
+      0093E5 26 10            [ 1] 1921 	jrne	00120$
+                           00060D  1922 	C$stm8s_tim1.c$1588$2_0$523 ==.
+                                   1923 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1588: if (NewState != DISABLE)
+      0093E7 0D 04            [ 1] 1924 	tnz	(0x04, sp)
+      0093E9 27 06            [ 1] 1925 	jreq	00102$
+                           000611  1926 	C$stm8s_tim1.c$1590$3_0$524 ==.
+                                   1927 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1590: TIM1->CCER1 |= TIM1_CCER1_CC1E;
+      0093EB 72 10 52 5C      [ 1] 1928 	bset	21084, #0
+      0093EF 20 3F            [ 2] 1929 	jra	00122$
+      0093F1                       1930 00102$:
+                           000617  1931 	C$stm8s_tim1.c$1594$3_0$525 ==.
+                                   1932 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1594: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
+      0093F1 72 11 52 5C      [ 1] 1933 	bres	21084, #0
+      0093F5 20 39            [ 2] 1934 	jra	00122$
+      0093F7                       1935 00120$:
+                           00061D  1936 	C$stm8s_tim1.c$1598$1_0$522 ==.
+                                   1937 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1598: else if (TIM1_Channel == TIM1_CHANNEL_2)
+      0093F7 7B 03            [ 1] 1938 	ld	a, (0x03, sp)
+      0093F9 4A               [ 1] 1939 	dec	a
+      0093FA 26 10            [ 1] 1940 	jrne	00117$
+                           000622  1941 	C$stm8s_tim1.c$1601$2_0$526 ==.
+                                   1942 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1601: if (NewState != DISABLE)
+      0093FC 0D 04            [ 1] 1943 	tnz	(0x04, sp)
+      0093FE 27 06            [ 1] 1944 	jreq	00105$
+                           000626  1945 	C$stm8s_tim1.c$1603$3_0$527 ==.
+                                   1946 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1603: TIM1->CCER1 |= TIM1_CCER1_CC2E;
+      009400 72 18 52 5C      [ 1] 1947 	bset	21084, #4
+      009404 20 2A            [ 2] 1948 	jra	00122$
+      009406                       1949 00105$:
+                           00062C  1950 	C$stm8s_tim1.c$1607$3_0$528 ==.
+                                   1951 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1607: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2E);
+      009406 72 19 52 5C      [ 1] 1952 	bres	21084, #4
+      00940A 20 24            [ 2] 1953 	jra	00122$
+      00940C                       1954 00117$:
+                           000632  1955 	C$stm8s_tim1.c$1610$1_0$522 ==.
+                                   1956 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1610: else if (TIM1_Channel == TIM1_CHANNEL_3)
+      00940C 7B 03            [ 1] 1957 	ld	a, (0x03, sp)
+      00940E A1 02            [ 1] 1958 	cp	a, #0x02
+      009410 26 10            [ 1] 1959 	jrne	00114$
+                           000638  1960 	C$stm8s_tim1.c$1613$2_0$529 ==.
+                                   1961 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1613: if (NewState != DISABLE)
+      009412 0D 04            [ 1] 1962 	tnz	(0x04, sp)
+      009414 27 06            [ 1] 1963 	jreq	00108$
+                           00063C  1964 	C$stm8s_tim1.c$1615$3_0$530 ==.
+                                   1965 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1615: TIM1->CCER2 |= TIM1_CCER2_CC3E;
+      009416 72 10 52 5D      [ 1] 1966 	bset	21085, #0
+      00941A 20 14            [ 2] 1967 	jra	00122$
+      00941C                       1968 00108$:
+                           000642  1969 	C$stm8s_tim1.c$1619$3_0$531 ==.
+                                   1970 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1619: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3E);
+      00941C 72 11 52 5D      [ 1] 1971 	bres	21085, #0
+      009420 20 0E            [ 2] 1972 	jra	00122$
+      009422                       1973 00114$:
+                           000648  1974 	C$stm8s_tim1.c$1625$2_0$532 ==.
+                                   1975 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1625: if (NewState != DISABLE)
+      009422 0D 04            [ 1] 1976 	tnz	(0x04, sp)
+      009424 27 06            [ 1] 1977 	jreq	00111$
+                           00064C  1978 	C$stm8s_tim1.c$1627$3_0$533 ==.
+                                   1979 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1627: TIM1->CCER2 |= TIM1_CCER2_CC4E;
+      009426 72 18 52 5D      [ 1] 1980 	bset	21085, #4
+      00942A 20 04            [ 2] 1981 	jra	00122$
+      00942C                       1982 00111$:
+                           000652  1983 	C$stm8s_tim1.c$1631$3_0$534 ==.
+                                   1984 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1631: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4E);
+      00942C 72 19 52 5D      [ 1] 1985 	bres	21085, #4
+      009430                       1986 00122$:
+                           000656  1987 	C$stm8s_tim1.c$1634$1_0$522 ==.
+                                   1988 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1634: }
+                           000656  1989 	C$stm8s_tim1.c$1634$1_0$522 ==.
+                           000656  1990 	XG$TIM1_CCxCmd$0$0 ==.
+      009430 81               [ 4] 1991 	ret
+                           000657  1992 	G$TIM1_CCxNCmd$0$0 ==.
+                           000657  1993 	C$stm8s_tim1.c$1647$1_0$536 ==.
+                                   1994 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1647: void TIM1_CCxNCmd(TIM1_Channel_TypeDef TIM1_Channel, FunctionalState NewState)
+                                   1995 ;	-----------------------------------------
+                                   1996 ;	 function TIM1_CCxNCmd
+                                   1997 ;	-----------------------------------------
+      009431                       1998 _TIM1_CCxNCmd:
+                           000657  1999 	C$stm8s_tim1.c$1653$1_0$536 ==.
+                                   2000 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1653: if (TIM1_Channel == TIM1_CHANNEL_1)
+      009431 0D 03            [ 1] 2001 	tnz	(0x03, sp)
+      009433 26 10            [ 1] 2002 	jrne	00114$
+                           00065B  2003 	C$stm8s_tim1.c$1656$2_0$537 ==.
+                                   2004 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1656: if (NewState != DISABLE)
+      009435 0D 04            [ 1] 2005 	tnz	(0x04, sp)
+      009437 27 06            [ 1] 2006 	jreq	00102$
+                           00065F  2007 	C$stm8s_tim1.c$1658$3_0$538 ==.
+                                   2008 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1658: TIM1->CCER1 |= TIM1_CCER1_CC1NE;
+      009439 72 14 52 5C      [ 1] 2009 	bset	21084, #2
+      00943D 20 29            [ 2] 2010 	jra	00116$
+      00943F                       2011 00102$:
+                           000665  2012 	C$stm8s_tim1.c$1662$3_0$539 ==.
+                                   2013 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1662: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1NE);
+      00943F 72 15 52 5C      [ 1] 2014 	bres	21084, #2
+      009443 20 23            [ 2] 2015 	jra	00116$
+      009445                       2016 00114$:
+                           00066B  2017 	C$stm8s_tim1.c$1665$1_0$536 ==.
+                                   2018 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1665: else if (TIM1_Channel == TIM1_CHANNEL_2)
+      009445 7B 03            [ 1] 2019 	ld	a, (0x03, sp)
+      009447 4A               [ 1] 2020 	dec	a
+      009448 26 10            [ 1] 2021 	jrne	00111$
+                           000670  2022 	C$stm8s_tim1.c$1668$2_0$540 ==.
+                                   2023 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1668: if (NewState != DISABLE)
+      00944A 0D 04            [ 1] 2024 	tnz	(0x04, sp)
+      00944C 27 06            [ 1] 2025 	jreq	00105$
+                           000674  2026 	C$stm8s_tim1.c$1670$3_0$541 ==.
+                                   2027 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1670: TIM1->CCER1 |= TIM1_CCER1_CC2NE;
+      00944E 72 1C 52 5C      [ 1] 2028 	bset	21084, #6
+      009452 20 14            [ 2] 2029 	jra	00116$
+      009454                       2030 00105$:
+                           00067A  2031 	C$stm8s_tim1.c$1674$3_0$542 ==.
+                                   2032 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1674: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2NE);
+      009454 72 1D 52 5C      [ 1] 2033 	bres	21084, #6
+      009458 20 0E            [ 2] 2034 	jra	00116$
+      00945A                       2035 00111$:
+                           000680  2036 	C$stm8s_tim1.c$1680$2_0$543 ==.
+                                   2037 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1680: if (NewState != DISABLE)
+      00945A 0D 04            [ 1] 2038 	tnz	(0x04, sp)
+      00945C 27 06            [ 1] 2039 	jreq	00108$
+                           000684  2040 	C$stm8s_tim1.c$1682$3_0$544 ==.
+                                   2041 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1682: TIM1->CCER2 |= TIM1_CCER2_CC3NE;
+      00945E 72 14 52 5D      [ 1] 2042 	bset	21085, #2
+      009462 20 04            [ 2] 2043 	jra	00116$
+      009464                       2044 00108$:
+                           00068A  2045 	C$stm8s_tim1.c$1686$3_0$545 ==.
+                                   2046 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1686: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3NE);
+      009464 72 15 52 5D      [ 1] 2047 	bres	21085, #2
+      009468                       2048 00116$:
+                           00068E  2049 	C$stm8s_tim1.c$1689$1_0$536 ==.
+                                   2050 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1689: }
+                           00068E  2051 	C$stm8s_tim1.c$1689$1_0$536 ==.
+                           00068E  2052 	XG$TIM1_CCxNCmd$0$0 ==.
+      009468 81               [ 4] 2053 	ret
+                           00068F  2054 	G$TIM1_SelectOCxM$0$0 ==.
+                           00068F  2055 	C$stm8s_tim1.c$1712$1_0$547 ==.
+                                   2056 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1712: void TIM1_SelectOCxM(TIM1_Channel_TypeDef TIM1_Channel, TIM1_OCMode_TypeDef TIM1_OCMode)
+                                   2057 ;	-----------------------------------------
+                                   2058 ;	 function TIM1_SelectOCxM
+                                   2059 ;	-----------------------------------------
+      009469                       2060 _TIM1_SelectOCxM:
+                           00068F  2061 	C$stm8s_tim1.c$1718$1_0$547 ==.
+                                   2062 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1718: if (TIM1_Channel == TIM1_CHANNEL_1)
+      009469 0D 03            [ 1] 2063 	tnz	(0x03, sp)
+      00946B 26 10            [ 1] 2064 	jrne	00108$
+                           000693  2065 	C$stm8s_tim1.c$1721$2_0$548 ==.
+                                   2066 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1721: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
+      00946D 72 11 52 5C      [ 1] 2067 	bres	21084, #0
+                           000697  2068 	C$stm8s_tim1.c$1724$2_0$548 ==.
+                                   2069 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1724: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_OCM)) 
+      009471 C6 52 58         [ 1] 2070 	ld	a, 0x5258
+      009474 A4 8F            [ 1] 2071 	and	a, #0x8f
+                           00069C  2072 	C$stm8s_tim1.c$1725$2_0$548 ==.
+                                   2073 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1725: | (uint8_t)TIM1_OCMode);
+      009476 1A 04            [ 1] 2074 	or	a, (0x04, sp)
+      009478 C7 52 58         [ 1] 2075 	ld	0x5258, a
+      00947B 20 3D            [ 2] 2076 	jra	00110$
+      00947D                       2077 00108$:
+                           0006A3  2078 	C$stm8s_tim1.c$1727$1_0$547 ==.
+                                   2079 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1727: else if (TIM1_Channel == TIM1_CHANNEL_2)
+      00947D 7B 03            [ 1] 2080 	ld	a, (0x03, sp)
+      00947F 4A               [ 1] 2081 	dec	a
+      009480 26 10            [ 1] 2082 	jrne	00105$
+                           0006A8  2083 	C$stm8s_tim1.c$1730$2_0$549 ==.
+                                   2084 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1730: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2E);
+      009482 72 19 52 5C      [ 1] 2085 	bres	21084, #4
+                           0006AC  2086 	C$stm8s_tim1.c$1733$2_0$549 ==.
+                                   2087 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1733: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_OCM))
+      009486 C6 52 59         [ 1] 2088 	ld	a, 0x5259
+      009489 A4 8F            [ 1] 2089 	and	a, #0x8f
+                           0006B1  2090 	C$stm8s_tim1.c$1734$2_0$549 ==.
+                                   2091 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1734: | (uint8_t)TIM1_OCMode);
+      00948B 1A 04            [ 1] 2092 	or	a, (0x04, sp)
+      00948D C7 52 59         [ 1] 2093 	ld	0x5259, a
+      009490 20 28            [ 2] 2094 	jra	00110$
+      009492                       2095 00105$:
+                           0006B8  2096 	C$stm8s_tim1.c$1736$1_0$547 ==.
+                                   2097 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1736: else if (TIM1_Channel == TIM1_CHANNEL_3)
+      009492 7B 03            [ 1] 2098 	ld	a, (0x03, sp)
+      009494 A1 02            [ 1] 2099 	cp	a, #0x02
+      009496 26 14            [ 1] 2100 	jrne	00102$
+                           0006BE  2101 	C$stm8s_tim1.c$1739$2_0$550 ==.
+                                   2102 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1739: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3E);
+      009498 C6 52 5D         [ 1] 2103 	ld	a, 0x525d
+      00949B A4 FE            [ 1] 2104 	and	a, #0xfe
+      00949D C7 52 5D         [ 1] 2105 	ld	0x525d, a
+                           0006C6  2106 	C$stm8s_tim1.c$1742$2_0$550 ==.
+                                   2107 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1742: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_OCM)) 
+      0094A0 C6 52 5A         [ 1] 2108 	ld	a, 0x525a
+      0094A3 A4 8F            [ 1] 2109 	and	a, #0x8f
+                           0006CB  2110 	C$stm8s_tim1.c$1743$2_0$550 ==.
+                                   2111 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1743: | (uint8_t)TIM1_OCMode);
+      0094A5 1A 04            [ 1] 2112 	or	a, (0x04, sp)
+      0094A7 C7 52 5A         [ 1] 2113 	ld	0x525a, a
+      0094AA 20 0E            [ 2] 2114 	jra	00110$
+      0094AC                       2115 00102$:
+                           0006D2  2116 	C$stm8s_tim1.c$1748$2_0$551 ==.
+                                   2117 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1748: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4E);
+      0094AC 72 19 52 5D      [ 1] 2118 	bres	21085, #4
+                           0006D6  2119 	C$stm8s_tim1.c$1751$2_0$551 ==.
+                                   2120 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1751: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_OCM)) 
+      0094B0 C6 52 5B         [ 1] 2121 	ld	a, 0x525b
+      0094B3 A4 8F            [ 1] 2122 	and	a, #0x8f
+                           0006DB  2123 	C$stm8s_tim1.c$1752$2_0$551 ==.
+                                   2124 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1752: | (uint8_t)TIM1_OCMode);
+      0094B5 1A 04            [ 1] 2125 	or	a, (0x04, sp)
+      0094B7 C7 52 5B         [ 1] 2126 	ld	0x525b, a
+      0094BA                       2127 00110$:
+                           0006E0  2128 	C$stm8s_tim1.c$1754$1_0$547 ==.
+                                   2129 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1754: }
+                           0006E0  2130 	C$stm8s_tim1.c$1754$1_0$547 ==.
+                           0006E0  2131 	XG$TIM1_SelectOCxM$0$0 ==.
+      0094BA 81               [ 4] 2132 	ret
+                           0006E1  2133 	G$TIM1_SetCounter$0$0 ==.
+                           0006E1  2134 	C$stm8s_tim1.c$1762$1_0$553 ==.
+                                   2135 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1762: void TIM1_SetCounter(uint16_t Counter)
+                                   2136 ;	-----------------------------------------
+                                   2137 ;	 function TIM1_SetCounter
+                                   2138 ;	-----------------------------------------
+      0094BB                       2139 _TIM1_SetCounter:
+      0094BB 52 02            [ 2] 2140 	sub	sp, #2
+                           0006E3  2141 	C$stm8s_tim1.c$1765$1_0$553 ==.
+                                   2142 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1765: TIM1->CNTRH = (uint8_t)(Counter >> 8);
+      0094BD 7B 05            [ 1] 2143 	ld	a, (0x05, sp)
+      0094BF 6B 02            [ 1] 2144 	ld	(0x02, sp), a
+      0094C1 0F 01            [ 1] 2145 	clr	(0x01, sp)
+      0094C3 7B 02            [ 1] 2146 	ld	a, (0x02, sp)
+      0094C5 C7 52 5E         [ 1] 2147 	ld	0x525e, a
+                           0006EE  2148 	C$stm8s_tim1.c$1766$1_0$553 ==.
+                                   2149 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1766: TIM1->CNTRL = (uint8_t)(Counter);
+      0094C8 7B 06            [ 1] 2150 	ld	a, (0x06, sp)
+      0094CA C7 52 5F         [ 1] 2151 	ld	0x525f, a
+                           0006F3  2152 	C$stm8s_tim1.c$1767$1_0$553 ==.
+                                   2153 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1767: }
+      0094CD 5B 02            [ 2] 2154 	addw	sp, #2
+                           0006F5  2155 	C$stm8s_tim1.c$1767$1_0$553 ==.
+                           0006F5  2156 	XG$TIM1_SetCounter$0$0 ==.
+      0094CF 81               [ 4] 2157 	ret
+                           0006F6  2158 	G$TIM1_SetAutoreload$0$0 ==.
+                           0006F6  2159 	C$stm8s_tim1.c$1775$1_0$555 ==.
+                                   2160 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1775: void TIM1_SetAutoreload(uint16_t Autoreload)
+                                   2161 ;	-----------------------------------------
+                                   2162 ;	 function TIM1_SetAutoreload
+                                   2163 ;	-----------------------------------------
+      0094D0                       2164 _TIM1_SetAutoreload:
+      0094D0 52 02            [ 2] 2165 	sub	sp, #2
+                           0006F8  2166 	C$stm8s_tim1.c$1778$1_0$555 ==.
+                                   2167 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1778: TIM1->ARRH = (uint8_t)(Autoreload >> 8);
+      0094D2 7B 05            [ 1] 2168 	ld	a, (0x05, sp)
+      0094D4 6B 02            [ 1] 2169 	ld	(0x02, sp), a
+      0094D6 0F 01            [ 1] 2170 	clr	(0x01, sp)
+      0094D8 7B 02            [ 1] 2171 	ld	a, (0x02, sp)
+      0094DA C7 52 62         [ 1] 2172 	ld	0x5262, a
+                           000703  2173 	C$stm8s_tim1.c$1779$1_0$555 ==.
+                                   2174 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1779: TIM1->ARRL = (uint8_t)(Autoreload);
+      0094DD 7B 06            [ 1] 2175 	ld	a, (0x06, sp)
+      0094DF C7 52 63         [ 1] 2176 	ld	0x5263, a
+                           000708  2177 	C$stm8s_tim1.c$1780$1_0$555 ==.
+                                   2178 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1780: }
+      0094E2 5B 02            [ 2] 2179 	addw	sp, #2
+                           00070A  2180 	C$stm8s_tim1.c$1780$1_0$555 ==.
+                           00070A  2181 	XG$TIM1_SetAutoreload$0$0 ==.
+      0094E4 81               [ 4] 2182 	ret
+                           00070B  2183 	G$TIM1_SetCompare1$0$0 ==.
+                           00070B  2184 	C$stm8s_tim1.c$1788$1_0$557 ==.
+                                   2185 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1788: void TIM1_SetCompare1(uint16_t Compare1)
+                                   2186 ;	-----------------------------------------
+                                   2187 ;	 function TIM1_SetCompare1
+                                   2188 ;	-----------------------------------------
+      0094E5                       2189 _TIM1_SetCompare1:
+      0094E5 52 02            [ 2] 2190 	sub	sp, #2
+                           00070D  2191 	C$stm8s_tim1.c$1791$1_0$557 ==.
+                                   2192 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1791: TIM1->CCR1H = (uint8_t)(Compare1 >> 8);
+      0094E7 7B 05            [ 1] 2193 	ld	a, (0x05, sp)
+      0094E9 6B 02            [ 1] 2194 	ld	(0x02, sp), a
+      0094EB 0F 01            [ 1] 2195 	clr	(0x01, sp)
+      0094ED 7B 02            [ 1] 2196 	ld	a, (0x02, sp)
+      0094EF C7 52 65         [ 1] 2197 	ld	0x5265, a
+                           000718  2198 	C$stm8s_tim1.c$1792$1_0$557 ==.
+                                   2199 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1792: TIM1->CCR1L = (uint8_t)(Compare1);
+      0094F2 7B 06            [ 1] 2200 	ld	a, (0x06, sp)
+      0094F4 C7 52 66         [ 1] 2201 	ld	0x5266, a
+                           00071D  2202 	C$stm8s_tim1.c$1793$1_0$557 ==.
+                                   2203 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1793: }
+      0094F7 5B 02            [ 2] 2204 	addw	sp, #2
+                           00071F  2205 	C$stm8s_tim1.c$1793$1_0$557 ==.
+                           00071F  2206 	XG$TIM1_SetCompare1$0$0 ==.
+      0094F9 81               [ 4] 2207 	ret
+                           000720  2208 	G$TIM1_SetCompare2$0$0 ==.
+                           000720  2209 	C$stm8s_tim1.c$1801$1_0$559 ==.
+                                   2210 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1801: void TIM1_SetCompare2(uint16_t Compare2)
+                                   2211 ;	-----------------------------------------
+                                   2212 ;	 function TIM1_SetCompare2
+                                   2213 ;	-----------------------------------------
+      0094FA                       2214 _TIM1_SetCompare2:
+      0094FA 52 02            [ 2] 2215 	sub	sp, #2
+                           000722  2216 	C$stm8s_tim1.c$1804$1_0$559 ==.
+                                   2217 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1804: TIM1->CCR2H = (uint8_t)(Compare2 >> 8);
+      0094FC 7B 05            [ 1] 2218 	ld	a, (0x05, sp)
+      0094FE 6B 02            [ 1] 2219 	ld	(0x02, sp), a
+      009500 0F 01            [ 1] 2220 	clr	(0x01, sp)
+      009502 7B 02            [ 1] 2221 	ld	a, (0x02, sp)
+      009504 C7 52 67         [ 1] 2222 	ld	0x5267, a
+                           00072D  2223 	C$stm8s_tim1.c$1805$1_0$559 ==.
+                                   2224 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1805: TIM1->CCR2L = (uint8_t)(Compare2);
+      009507 7B 06            [ 1] 2225 	ld	a, (0x06, sp)
+      009509 C7 52 68         [ 1] 2226 	ld	0x5268, a
+                           000732  2227 	C$stm8s_tim1.c$1806$1_0$559 ==.
+                                   2228 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1806: }
+      00950C 5B 02            [ 2] 2229 	addw	sp, #2
+                           000734  2230 	C$stm8s_tim1.c$1806$1_0$559 ==.
+                           000734  2231 	XG$TIM1_SetCompare2$0$0 ==.
+      00950E 81               [ 4] 2232 	ret
+                           000735  2233 	G$TIM1_SetCompare3$0$0 ==.
+                           000735  2234 	C$stm8s_tim1.c$1814$1_0$561 ==.
+                                   2235 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1814: void TIM1_SetCompare3(uint16_t Compare3)
+                                   2236 ;	-----------------------------------------
+                                   2237 ;	 function TIM1_SetCompare3
+                                   2238 ;	-----------------------------------------
+      00950F                       2239 _TIM1_SetCompare3:
+      00950F 52 02            [ 2] 2240 	sub	sp, #2
+                           000737  2241 	C$stm8s_tim1.c$1817$1_0$561 ==.
+                                   2242 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1817: TIM1->CCR3H = (uint8_t)(Compare3 >> 8);
+      009511 7B 05            [ 1] 2243 	ld	a, (0x05, sp)
+      009513 6B 02            [ 1] 2244 	ld	(0x02, sp), a
+      009515 0F 01            [ 1] 2245 	clr	(0x01, sp)
+      009517 7B 02            [ 1] 2246 	ld	a, (0x02, sp)
+      009519 C7 52 69         [ 1] 2247 	ld	0x5269, a
+                           000742  2248 	C$stm8s_tim1.c$1818$1_0$561 ==.
+                                   2249 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1818: TIM1->CCR3L = (uint8_t)(Compare3);
+      00951C 7B 06            [ 1] 2250 	ld	a, (0x06, sp)
+      00951E C7 52 6A         [ 1] 2251 	ld	0x526a, a
+                           000747  2252 	C$stm8s_tim1.c$1819$1_0$561 ==.
+                                   2253 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1819: }
+      009521 5B 02            [ 2] 2254 	addw	sp, #2
+                           000749  2255 	C$stm8s_tim1.c$1819$1_0$561 ==.
+                           000749  2256 	XG$TIM1_SetCompare3$0$0 ==.
+      009523 81               [ 4] 2257 	ret
+                           00074A  2258 	G$TIM1_SetCompare4$0$0 ==.
+                           00074A  2259 	C$stm8s_tim1.c$1827$1_0$563 ==.
+                                   2260 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1827: void TIM1_SetCompare4(uint16_t Compare4)
+                                   2261 ;	-----------------------------------------
+                                   2262 ;	 function TIM1_SetCompare4
+                                   2263 ;	-----------------------------------------
+      009524                       2264 _TIM1_SetCompare4:
+      009524 52 02            [ 2] 2265 	sub	sp, #2
+                           00074C  2266 	C$stm8s_tim1.c$1830$1_0$563 ==.
+                                   2267 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1830: TIM1->CCR4H = (uint8_t)(Compare4 >> 8);
+      009526 7B 05            [ 1] 2268 	ld	a, (0x05, sp)
+      009528 6B 02            [ 1] 2269 	ld	(0x02, sp), a
+      00952A 0F 01            [ 1] 2270 	clr	(0x01, sp)
+      00952C 7B 02            [ 1] 2271 	ld	a, (0x02, sp)
+      00952E C7 52 6B         [ 1] 2272 	ld	0x526b, a
+                           000757  2273 	C$stm8s_tim1.c$1831$1_0$563 ==.
+                                   2274 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1831: TIM1->CCR4L = (uint8_t)(Compare4);
+      009531 7B 06            [ 1] 2275 	ld	a, (0x06, sp)
+      009533 C7 52 6C         [ 1] 2276 	ld	0x526c, a
+                           00075C  2277 	C$stm8s_tim1.c$1832$1_0$563 ==.
+                                   2278 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1832: }
+      009536 5B 02            [ 2] 2279 	addw	sp, #2
+                           00075E  2280 	C$stm8s_tim1.c$1832$1_0$563 ==.
+                           00075E  2281 	XG$TIM1_SetCompare4$0$0 ==.
+      009538 81               [ 4] 2282 	ret
+                           00075F  2283 	G$TIM1_SetIC1Prescaler$0$0 ==.
+                           00075F  2284 	C$stm8s_tim1.c$1844$1_0$565 ==.
+                                   2285 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1844: void TIM1_SetIC1Prescaler(TIM1_ICPSC_TypeDef TIM1_IC1Prescaler)
+                                   2286 ;	-----------------------------------------
+                                   2287 ;	 function TIM1_SetIC1Prescaler
                                    2288 ;	-----------------------------------------
-                                   2289 ;	 function TIM1_SetIC2Prescaler
-                                   2290 ;	-----------------------------------------
-      009512                       2291 _TIM1_SetIC2Prescaler:
-                           000747  2292 	C$stm8s_tim1.c$1871$1_0$567 ==.
-                                   2293 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1871: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_ICxPSC))
-      009512 C6 52 59         [ 1] 2294 	ld	a, 0x5259
-      009515 A4 F3            [ 1] 2295 	and	a, #0xf3
-                           00074C  2296 	C$stm8s_tim1.c$1872$1_0$567 ==.
-                                   2297 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1872: | (uint8_t)TIM1_IC2Prescaler);
-      009517 1A 03            [ 1] 2298 	or	a, (0x03, sp)
-      009519 C7 52 59         [ 1] 2299 	ld	0x5259, a
-                           000751  2300 	C$stm8s_tim1.c$1873$1_0$567 ==.
-                                   2301 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1873: }
-                           000751  2302 	C$stm8s_tim1.c$1873$1_0$567 ==.
-                           000751  2303 	XG$TIM1_SetIC2Prescaler$0$0 ==.
-      00951C 81               [ 4] 2304 	ret
-                           000752  2305 	G$TIM1_SetIC3Prescaler$0$0 ==.
-                           000752  2306 	C$stm8s_tim1.c$1885$1_0$569 ==.
-                                   2307 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1885: void TIM1_SetIC3Prescaler(TIM1_ICPSC_TypeDef TIM1_IC3Prescaler)
+      009539                       2289 _TIM1_SetIC1Prescaler:
+                           00075F  2290 	C$stm8s_tim1.c$1850$1_0$565 ==.
+                                   2291 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1850: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~TIM1_CCMR_ICxPSC)) 
+      009539 C6 52 58         [ 1] 2292 	ld	a, 0x5258
+      00953C A4 F3            [ 1] 2293 	and	a, #0xf3
+                           000764  2294 	C$stm8s_tim1.c$1851$1_0$565 ==.
+                                   2295 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1851: | (uint8_t)TIM1_IC1Prescaler);
+      00953E 1A 03            [ 1] 2296 	or	a, (0x03, sp)
+      009540 C7 52 58         [ 1] 2297 	ld	0x5258, a
+                           000769  2298 	C$stm8s_tim1.c$1852$1_0$565 ==.
+                                   2299 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1852: }
+                           000769  2300 	C$stm8s_tim1.c$1852$1_0$565 ==.
+                           000769  2301 	XG$TIM1_SetIC1Prescaler$0$0 ==.
+      009543 81               [ 4] 2302 	ret
+                           00076A  2303 	G$TIM1_SetIC2Prescaler$0$0 ==.
+                           00076A  2304 	C$stm8s_tim1.c$1864$1_0$567 ==.
+                                   2305 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1864: void TIM1_SetIC2Prescaler(TIM1_ICPSC_TypeDef TIM1_IC2Prescaler)
+                                   2306 ;	-----------------------------------------
+                                   2307 ;	 function TIM1_SetIC2Prescaler
                                    2308 ;	-----------------------------------------
-                                   2309 ;	 function TIM1_SetIC3Prescaler
-                                   2310 ;	-----------------------------------------
-      00951D                       2311 _TIM1_SetIC3Prescaler:
-                           000752  2312 	C$stm8s_tim1.c$1892$1_0$569 ==.
-                                   2313 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1892: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_ICxPSC)) | 
-      00951D C6 52 5A         [ 1] 2314 	ld	a, 0x525a
-      009520 A4 F3            [ 1] 2315 	and	a, #0xf3
-                           000757  2316 	C$stm8s_tim1.c$1893$1_0$569 ==.
-                                   2317 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1893: (uint8_t)TIM1_IC3Prescaler);
-      009522 1A 03            [ 1] 2318 	or	a, (0x03, sp)
-      009524 C7 52 5A         [ 1] 2319 	ld	0x525a, a
-                           00075C  2320 	C$stm8s_tim1.c$1894$1_0$569 ==.
-                                   2321 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1894: }
-                           00075C  2322 	C$stm8s_tim1.c$1894$1_0$569 ==.
-                           00075C  2323 	XG$TIM1_SetIC3Prescaler$0$0 ==.
-      009527 81               [ 4] 2324 	ret
-                           00075D  2325 	G$TIM1_SetIC4Prescaler$0$0 ==.
-                           00075D  2326 	C$stm8s_tim1.c$1906$1_0$571 ==.
-                                   2327 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1906: void TIM1_SetIC4Prescaler(TIM1_ICPSC_TypeDef TIM1_IC4Prescaler)
+      009544                       2309 _TIM1_SetIC2Prescaler:
+                           00076A  2310 	C$stm8s_tim1.c$1871$1_0$567 ==.
+                                   2311 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1871: TIM1->CCMR2 = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~TIM1_CCMR_ICxPSC))
+      009544 C6 52 59         [ 1] 2312 	ld	a, 0x5259
+      009547 A4 F3            [ 1] 2313 	and	a, #0xf3
+                           00076F  2314 	C$stm8s_tim1.c$1872$1_0$567 ==.
+                                   2315 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1872: | (uint8_t)TIM1_IC2Prescaler);
+      009549 1A 03            [ 1] 2316 	or	a, (0x03, sp)
+      00954B C7 52 59         [ 1] 2317 	ld	0x5259, a
+                           000774  2318 	C$stm8s_tim1.c$1873$1_0$567 ==.
+                                   2319 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1873: }
+                           000774  2320 	C$stm8s_tim1.c$1873$1_0$567 ==.
+                           000774  2321 	XG$TIM1_SetIC2Prescaler$0$0 ==.
+      00954E 81               [ 4] 2322 	ret
+                           000775  2323 	G$TIM1_SetIC3Prescaler$0$0 ==.
+                           000775  2324 	C$stm8s_tim1.c$1885$1_0$569 ==.
+                                   2325 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1885: void TIM1_SetIC3Prescaler(TIM1_ICPSC_TypeDef TIM1_IC3Prescaler)
+                                   2326 ;	-----------------------------------------
+                                   2327 ;	 function TIM1_SetIC3Prescaler
                                    2328 ;	-----------------------------------------
-                                   2329 ;	 function TIM1_SetIC4Prescaler
-                                   2330 ;	-----------------------------------------
-      009528                       2331 _TIM1_SetIC4Prescaler:
-                           00075D  2332 	C$stm8s_tim1.c$1913$1_0$571 ==.
-                                   2333 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1913: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_ICxPSC)) |
-      009528 C6 52 5B         [ 1] 2334 	ld	a, 0x525b
-      00952B A4 F3            [ 1] 2335 	and	a, #0xf3
-                           000762  2336 	C$stm8s_tim1.c$1914$1_0$571 ==.
-                                   2337 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1914: (uint8_t)TIM1_IC4Prescaler);
-      00952D 1A 03            [ 1] 2338 	or	a, (0x03, sp)
-      00952F C7 52 5B         [ 1] 2339 	ld	0x525b, a
-                           000767  2340 	C$stm8s_tim1.c$1915$1_0$571 ==.
-                                   2341 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1915: }
-                           000767  2342 	C$stm8s_tim1.c$1915$1_0$571 ==.
-                           000767  2343 	XG$TIM1_SetIC4Prescaler$0$0 ==.
-      009532 81               [ 4] 2344 	ret
-                           000768  2345 	G$TIM1_GetCapture1$0$0 ==.
-                           000768  2346 	C$stm8s_tim1.c$1922$1_0$573 ==.
-                                   2347 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1922: uint16_t TIM1_GetCapture1(void)
+      00954F                       2329 _TIM1_SetIC3Prescaler:
+                           000775  2330 	C$stm8s_tim1.c$1892$1_0$569 ==.
+                                   2331 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1892: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~TIM1_CCMR_ICxPSC)) | 
+      00954F C6 52 5A         [ 1] 2332 	ld	a, 0x525a
+      009552 A4 F3            [ 1] 2333 	and	a, #0xf3
+                           00077A  2334 	C$stm8s_tim1.c$1893$1_0$569 ==.
+                                   2335 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1893: (uint8_t)TIM1_IC3Prescaler);
+      009554 1A 03            [ 1] 2336 	or	a, (0x03, sp)
+      009556 C7 52 5A         [ 1] 2337 	ld	0x525a, a
+                           00077F  2338 	C$stm8s_tim1.c$1894$1_0$569 ==.
+                                   2339 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1894: }
+                           00077F  2340 	C$stm8s_tim1.c$1894$1_0$569 ==.
+                           00077F  2341 	XG$TIM1_SetIC3Prescaler$0$0 ==.
+      009559 81               [ 4] 2342 	ret
+                           000780  2343 	G$TIM1_SetIC4Prescaler$0$0 ==.
+                           000780  2344 	C$stm8s_tim1.c$1906$1_0$571 ==.
+                                   2345 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1906: void TIM1_SetIC4Prescaler(TIM1_ICPSC_TypeDef TIM1_IC4Prescaler)
+                                   2346 ;	-----------------------------------------
+                                   2347 ;	 function TIM1_SetIC4Prescaler
                                    2348 ;	-----------------------------------------
-                                   2349 ;	 function TIM1_GetCapture1
-                                   2350 ;	-----------------------------------------
-      009533                       2351 _TIM1_GetCapture1:
-      009533 52 02            [ 2] 2352 	sub	sp, #2
-                           00076A  2353 	C$stm8s_tim1.c$1929$1_0$573 ==.
-                                   2354 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1929: tmpccr1h = TIM1->CCR1H;
-      009535 C6 52 65         [ 1] 2355 	ld	a, 0x5265
-      009538 95               [ 1] 2356 	ld	xh, a
-                           00076E  2357 	C$stm8s_tim1.c$1930$1_0$573 ==.
-                                   2358 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1930: tmpccr1l = TIM1->CCR1L;
-      009539 C6 52 66         [ 1] 2359 	ld	a, 0x5266
-                           000771  2360 	C$stm8s_tim1.c$1932$1_0$573 ==.
-                                   2361 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1932: tmpccr1 = (uint16_t)(tmpccr1l);
-      00953C 97               [ 1] 2362 	ld	xl, a
-      00953D 4F               [ 1] 2363 	clr	a
-                           000773  2364 	C$stm8s_tim1.c$1933$1_0$573 ==.
-                                   2365 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1933: tmpccr1 |= (uint16_t)((uint16_t)tmpccr1h << 8);
-      00953E 90 5F            [ 1] 2366 	clrw	y
-      009540 0F 02            [ 1] 2367 	clr	(0x02, sp)
-      009542 89               [ 2] 2368 	pushw	x
-      009543 1A 01            [ 1] 2369 	or	a, (1, sp)
-      009545 85               [ 2] 2370 	popw	x
-      009546 01               [ 1] 2371 	rrwa	x
-      009547 1A 02            [ 1] 2372 	or	a, (0x02, sp)
-      009549 97               [ 1] 2373 	ld	xl, a
-                           00077F  2374 	C$stm8s_tim1.c$1935$1_0$573 ==.
-                                   2375 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1935: return (uint16_t)tmpccr1;
-                           00077F  2376 	C$stm8s_tim1.c$1936$1_0$573 ==.
-                                   2377 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1936: }
-      00954A 5B 02            [ 2] 2378 	addw	sp, #2
-                           000781  2379 	C$stm8s_tim1.c$1936$1_0$573 ==.
-                           000781  2380 	XG$TIM1_GetCapture1$0$0 ==.
-      00954C 81               [ 4] 2381 	ret
-                           000782  2382 	G$TIM1_GetCapture2$0$0 ==.
-                           000782  2383 	C$stm8s_tim1.c$1943$1_0$575 ==.
-                                   2384 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1943: uint16_t TIM1_GetCapture2(void)
-                                   2385 ;	-----------------------------------------
-                                   2386 ;	 function TIM1_GetCapture2
-                                   2387 ;	-----------------------------------------
-      00954D                       2388 _TIM1_GetCapture2:
-      00954D 52 02            [ 2] 2389 	sub	sp, #2
-                           000784  2390 	C$stm8s_tim1.c$1950$1_0$575 ==.
-                                   2391 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1950: tmpccr2h = TIM1->CCR2H;
-      00954F C6 52 67         [ 1] 2392 	ld	a, 0x5267
-      009552 95               [ 1] 2393 	ld	xh, a
-                           000788  2394 	C$stm8s_tim1.c$1951$1_0$575 ==.
-                                   2395 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1951: tmpccr2l = TIM1->CCR2L;
-      009553 C6 52 68         [ 1] 2396 	ld	a, 0x5268
-                           00078B  2397 	C$stm8s_tim1.c$1953$1_0$575 ==.
-                                   2398 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1953: tmpccr2 = (uint16_t)(tmpccr2l);
-      009556 97               [ 1] 2399 	ld	xl, a
-      009557 4F               [ 1] 2400 	clr	a
-                           00078D  2401 	C$stm8s_tim1.c$1954$1_0$575 ==.
-                                   2402 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1954: tmpccr2 |= (uint16_t)((uint16_t)tmpccr2h << 8);
-      009558 90 5F            [ 1] 2403 	clrw	y
-      00955A 0F 02            [ 1] 2404 	clr	(0x02, sp)
-      00955C 89               [ 2] 2405 	pushw	x
-      00955D 1A 01            [ 1] 2406 	or	a, (1, sp)
-      00955F 85               [ 2] 2407 	popw	x
-      009560 01               [ 1] 2408 	rrwa	x
-      009561 1A 02            [ 1] 2409 	or	a, (0x02, sp)
-      009563 97               [ 1] 2410 	ld	xl, a
-                           000799  2411 	C$stm8s_tim1.c$1956$1_0$575 ==.
-                                   2412 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1956: return (uint16_t)tmpccr2;
-                           000799  2413 	C$stm8s_tim1.c$1957$1_0$575 ==.
-                                   2414 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1957: }
-      009564 5B 02            [ 2] 2415 	addw	sp, #2
-                           00079B  2416 	C$stm8s_tim1.c$1957$1_0$575 ==.
-                           00079B  2417 	XG$TIM1_GetCapture2$0$0 ==.
-      009566 81               [ 4] 2418 	ret
-                           00079C  2419 	G$TIM1_GetCapture3$0$0 ==.
-                           00079C  2420 	C$stm8s_tim1.c$1964$1_0$577 ==.
-                                   2421 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1964: uint16_t TIM1_GetCapture3(void)
-                                   2422 ;	-----------------------------------------
-                                   2423 ;	 function TIM1_GetCapture3
-                                   2424 ;	-----------------------------------------
-      009567                       2425 _TIM1_GetCapture3:
-      009567 52 02            [ 2] 2426 	sub	sp, #2
-                           00079E  2427 	C$stm8s_tim1.c$1970$1_0$577 ==.
-                                   2428 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1970: tmpccr3h = TIM1->CCR3H;
-      009569 C6 52 69         [ 1] 2429 	ld	a, 0x5269
-      00956C 95               [ 1] 2430 	ld	xh, a
-                           0007A2  2431 	C$stm8s_tim1.c$1971$1_0$577 ==.
-                                   2432 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1971: tmpccr3l = TIM1->CCR3L;
-      00956D C6 52 6A         [ 1] 2433 	ld	a, 0x526a
-                           0007A5  2434 	C$stm8s_tim1.c$1973$1_0$577 ==.
-                                   2435 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1973: tmpccr3 = (uint16_t)(tmpccr3l);
-      009570 97               [ 1] 2436 	ld	xl, a
-      009571 4F               [ 1] 2437 	clr	a
-                           0007A7  2438 	C$stm8s_tim1.c$1974$1_0$577 ==.
-                                   2439 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1974: tmpccr3 |= (uint16_t)((uint16_t)tmpccr3h << 8);
-      009572 90 5F            [ 1] 2440 	clrw	y
-      009574 0F 02            [ 1] 2441 	clr	(0x02, sp)
-      009576 89               [ 2] 2442 	pushw	x
-      009577 1A 01            [ 1] 2443 	or	a, (1, sp)
-      009579 85               [ 2] 2444 	popw	x
-      00957A 01               [ 1] 2445 	rrwa	x
-      00957B 1A 02            [ 1] 2446 	or	a, (0x02, sp)
-      00957D 97               [ 1] 2447 	ld	xl, a
-                           0007B3  2448 	C$stm8s_tim1.c$1976$1_0$577 ==.
-                                   2449 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1976: return (uint16_t)tmpccr3;
-                           0007B3  2450 	C$stm8s_tim1.c$1977$1_0$577 ==.
-                                   2451 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1977: }
-      00957E 5B 02            [ 2] 2452 	addw	sp, #2
-                           0007B5  2453 	C$stm8s_tim1.c$1977$1_0$577 ==.
-                           0007B5  2454 	XG$TIM1_GetCapture3$0$0 ==.
-      009580 81               [ 4] 2455 	ret
-                           0007B6  2456 	G$TIM1_GetCapture4$0$0 ==.
-                           0007B6  2457 	C$stm8s_tim1.c$1984$1_0$579 ==.
-                                   2458 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1984: uint16_t TIM1_GetCapture4(void)
-                                   2459 ;	-----------------------------------------
-                                   2460 ;	 function TIM1_GetCapture4
-                                   2461 ;	-----------------------------------------
-      009581                       2462 _TIM1_GetCapture4:
-      009581 52 02            [ 2] 2463 	sub	sp, #2
-                           0007B8  2464 	C$stm8s_tim1.c$1990$1_0$579 ==.
-                                   2465 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1990: tmpccr4h = TIM1->CCR4H;
-      009583 C6 52 6B         [ 1] 2466 	ld	a, 0x526b
-      009586 95               [ 1] 2467 	ld	xh, a
-                           0007BC  2468 	C$stm8s_tim1.c$1991$1_0$579 ==.
-                                   2469 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1991: tmpccr4l = TIM1->CCR4L;
-      009587 C6 52 6C         [ 1] 2470 	ld	a, 0x526c
-                           0007BF  2471 	C$stm8s_tim1.c$1993$1_0$579 ==.
-                                   2472 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1993: tmpccr4 = (uint16_t)(tmpccr4l);
-      00958A 97               [ 1] 2473 	ld	xl, a
-      00958B 4F               [ 1] 2474 	clr	a
-                           0007C1  2475 	C$stm8s_tim1.c$1994$1_0$579 ==.
-                                   2476 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1994: tmpccr4 |= (uint16_t)((uint16_t)tmpccr4h << 8);
-      00958C 90 5F            [ 1] 2477 	clrw	y
-      00958E 0F 02            [ 1] 2478 	clr	(0x02, sp)
-      009590 89               [ 2] 2479 	pushw	x
-      009591 1A 01            [ 1] 2480 	or	a, (1, sp)
-      009593 85               [ 2] 2481 	popw	x
-      009594 01               [ 1] 2482 	rrwa	x
-      009595 1A 02            [ 1] 2483 	or	a, (0x02, sp)
-      009597 97               [ 1] 2484 	ld	xl, a
-                           0007CD  2485 	C$stm8s_tim1.c$1996$1_0$579 ==.
-                                   2486 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1996: return (uint16_t)tmpccr4;
-                           0007CD  2487 	C$stm8s_tim1.c$1997$1_0$579 ==.
-                                   2488 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1997: }
-      009598 5B 02            [ 2] 2489 	addw	sp, #2
-                           0007CF  2490 	C$stm8s_tim1.c$1997$1_0$579 ==.
-                           0007CF  2491 	XG$TIM1_GetCapture4$0$0 ==.
-      00959A 81               [ 4] 2492 	ret
-                           0007D0  2493 	G$TIM1_GetCounter$0$0 ==.
-                           0007D0  2494 	C$stm8s_tim1.c$2004$1_0$581 ==.
-                                   2495 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2004: uint16_t TIM1_GetCounter(void)
-                                   2496 ;	-----------------------------------------
-                                   2497 ;	 function TIM1_GetCounter
-                                   2498 ;	-----------------------------------------
-      00959B                       2499 _TIM1_GetCounter:
-      00959B 52 04            [ 2] 2500 	sub	sp, #4
-                           0007D2  2501 	C$stm8s_tim1.c$2008$1_0$581 ==.
-                                   2502 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2008: tmpcntr = ((uint16_t)TIM1->CNTRH << 8);
-      00959D C6 52 5E         [ 1] 2503 	ld	a, 0x525e
-      0095A0 95               [ 1] 2504 	ld	xh, a
-      0095A1 4F               [ 1] 2505 	clr	a
-      0095A2 6B 02            [ 1] 2506 	ld	(0x02, sp), a
-                           0007D9  2507 	C$stm8s_tim1.c$2011$1_0$581 ==.
-                                   2508 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2011: return (uint16_t)(tmpcntr | (uint16_t)(TIM1->CNTRL));
-      0095A4 C6 52 5F         [ 1] 2509 	ld	a, 0x525f
-      0095A7 0F 03            [ 1] 2510 	clr	(0x03, sp)
-      0095A9 1A 02            [ 1] 2511 	or	a, (0x02, sp)
-      0095AB 02               [ 1] 2512 	rlwa	x
-      0095AC 1A 03            [ 1] 2513 	or	a, (0x03, sp)
-      0095AE 95               [ 1] 2514 	ld	xh, a
-                           0007E4  2515 	C$stm8s_tim1.c$2012$1_0$581 ==.
-                                   2516 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2012: }
-      0095AF 5B 04            [ 2] 2517 	addw	sp, #4
-                           0007E6  2518 	C$stm8s_tim1.c$2012$1_0$581 ==.
-                           0007E6  2519 	XG$TIM1_GetCounter$0$0 ==.
-      0095B1 81               [ 4] 2520 	ret
-                           0007E7  2521 	G$TIM1_GetPrescaler$0$0 ==.
-                           0007E7  2522 	C$stm8s_tim1.c$2019$1_0$583 ==.
-                                   2523 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2019: uint16_t TIM1_GetPrescaler(void)
-                                   2524 ;	-----------------------------------------
-                                   2525 ;	 function TIM1_GetPrescaler
-                                   2526 ;	-----------------------------------------
-      0095B2                       2527 _TIM1_GetPrescaler:
-      0095B2 52 04            [ 2] 2528 	sub	sp, #4
-                           0007E9  2529 	C$stm8s_tim1.c$2023$1_0$583 ==.
-                                   2530 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2023: temp = ((uint16_t)TIM1->PSCRH << 8);
-      0095B4 C6 52 60         [ 1] 2531 	ld	a, 0x5260
-      0095B7 95               [ 1] 2532 	ld	xh, a
-      0095B8 4F               [ 1] 2533 	clr	a
-      0095B9 6B 04            [ 1] 2534 	ld	(0x04, sp), a
-                           0007F0  2535 	C$stm8s_tim1.c$2026$1_0$583 ==.
-                                   2536 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2026: return (uint16_t)( temp | (uint16_t)(TIM1->PSCRL));
-      0095BB C6 52 61         [ 1] 2537 	ld	a, 0x5261
-      0095BE 0F 01            [ 1] 2538 	clr	(0x01, sp)
-      0095C0 1A 04            [ 1] 2539 	or	a, (0x04, sp)
-      0095C2 02               [ 1] 2540 	rlwa	x
-      0095C3 1A 01            [ 1] 2541 	or	a, (0x01, sp)
-      0095C5 95               [ 1] 2542 	ld	xh, a
-                           0007FB  2543 	C$stm8s_tim1.c$2027$1_0$583 ==.
-                                   2544 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2027: }
-      0095C6 5B 04            [ 2] 2545 	addw	sp, #4
-                           0007FD  2546 	C$stm8s_tim1.c$2027$1_0$583 ==.
-                           0007FD  2547 	XG$TIM1_GetPrescaler$0$0 ==.
-      0095C8 81               [ 4] 2548 	ret
-                           0007FE  2549 	G$TIM1_GetFlagStatus$0$0 ==.
-                           0007FE  2550 	C$stm8s_tim1.c$2047$1_0$585 ==.
-                                   2551 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2047: FlagStatus TIM1_GetFlagStatus(TIM1_FLAG_TypeDef TIM1_FLAG)
-                                   2552 ;	-----------------------------------------
-                                   2553 ;	 function TIM1_GetFlagStatus
-                                   2554 ;	-----------------------------------------
-      0095C9                       2555 _TIM1_GetFlagStatus:
-      0095C9 52 05            [ 2] 2556 	sub	sp, #5
-                           000800  2557 	C$stm8s_tim1.c$2055$1_0$585 ==.
-                                   2558 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2055: tim1_flag_l = (uint8_t)(TIM1->SR1 & (uint8_t)TIM1_FLAG);
-      0095CB C6 52 55         [ 1] 2559 	ld	a, 0x5255
-      0095CE 6B 03            [ 1] 2560 	ld	(0x03, sp), a
-      0095D0 7B 09            [ 1] 2561 	ld	a, (0x09, sp)
-      0095D2 14 03            [ 1] 2562 	and	a, (0x03, sp)
-      0095D4 6B 04            [ 1] 2563 	ld	(0x04, sp), a
-                           00080B  2564 	C$stm8s_tim1.c$2056$1_0$585 ==.
-                                   2565 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2056: tim1_flag_h = (uint8_t)((uint16_t)TIM1_FLAG >> 8);
-      0095D6 7B 08            [ 1] 2566 	ld	a, (0x08, sp)
-      0095D8 0F 01            [ 1] 2567 	clr	(0x01, sp)
-      0095DA 6B 05            [ 1] 2568 	ld	(0x05, sp), a
-                           000811  2569 	C$stm8s_tim1.c$2058$1_0$585 ==.
-                                   2570 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2058: if ((tim1_flag_l | (uint8_t)(TIM1->SR2 & tim1_flag_h)) != 0)
-      0095DC C6 52 56         [ 1] 2571 	ld	a, 0x5256
-      0095DF 14 05            [ 1] 2572 	and	a, (0x05, sp)
-      0095E1 1A 04            [ 1] 2573 	or	a, (0x04, sp)
-      0095E3 27 04            [ 1] 2574 	jreq	00102$
-                           00081A  2575 	C$stm8s_tim1.c$2060$2_0$586 ==.
-                                   2576 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2060: bitstatus = SET;
-      0095E5 A6 01            [ 1] 2577 	ld	a, #0x01
-      0095E7 20 01            [ 2] 2578 	jra	00103$
-      0095E9                       2579 00102$:
-                           00081E  2580 	C$stm8s_tim1.c$2064$2_0$587 ==.
-                                   2581 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2064: bitstatus = RESET;
-      0095E9 4F               [ 1] 2582 	clr	a
-      0095EA                       2583 00103$:
-                           00081F  2584 	C$stm8s_tim1.c$2066$1_0$585 ==.
-                                   2585 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2066: return (FlagStatus)(bitstatus);
-                           00081F  2586 	C$stm8s_tim1.c$2067$1_0$585 ==.
-                                   2587 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2067: }
-      0095EA 5B 05            [ 2] 2588 	addw	sp, #5
-                           000821  2589 	C$stm8s_tim1.c$2067$1_0$585 ==.
-                           000821  2590 	XG$TIM1_GetFlagStatus$0$0 ==.
-      0095EC 81               [ 4] 2591 	ret
-                           000822  2592 	G$TIM1_ClearFlag$0$0 ==.
-                           000822  2593 	C$stm8s_tim1.c$2087$1_0$589 ==.
-                                   2594 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2087: void TIM1_ClearFlag(TIM1_FLAG_TypeDef TIM1_FLAG)
-                                   2595 ;	-----------------------------------------
-                                   2596 ;	 function TIM1_ClearFlag
-                                   2597 ;	-----------------------------------------
-      0095ED                       2598 _TIM1_ClearFlag:
-                           000822  2599 	C$stm8s_tim1.c$2093$1_0$589 ==.
-                                   2600 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2093: TIM1->SR1 = (uint8_t)(~(uint8_t)(TIM1_FLAG));
-      0095ED 7B 04            [ 1] 2601 	ld	a, (0x04, sp)
-      0095EF 43               [ 1] 2602 	cpl	a
-      0095F0 C7 52 55         [ 1] 2603 	ld	0x5255, a
-                           000828  2604 	C$stm8s_tim1.c$2094$1_0$589 ==.
-                                   2605 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2094: TIM1->SR2 = (uint8_t)((uint8_t)(~((uint8_t)((uint16_t)TIM1_FLAG >> 8))) & 
-      0095F3 7B 03            [ 1] 2606 	ld	a, (0x03, sp)
-      0095F5 43               [ 1] 2607 	cpl	a
-      0095F6 A4 1E            [ 1] 2608 	and	a, #0x1e
-      0095F8 C7 52 56         [ 1] 2609 	ld	0x5256, a
-                           000830  2610 	C$stm8s_tim1.c$2096$1_0$589 ==.
-                                   2611 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2096: }
-                           000830  2612 	C$stm8s_tim1.c$2096$1_0$589 ==.
-                           000830  2613 	XG$TIM1_ClearFlag$0$0 ==.
-      0095FB 81               [ 4] 2614 	ret
-                           000831  2615 	G$TIM1_GetITStatus$0$0 ==.
-                           000831  2616 	C$stm8s_tim1.c$2112$1_0$591 ==.
-                                   2617 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2112: ITStatus TIM1_GetITStatus(TIM1_IT_TypeDef TIM1_IT)
-                                   2618 ;	-----------------------------------------
-                                   2619 ;	 function TIM1_GetITStatus
-                                   2620 ;	-----------------------------------------
-      0095FC                       2621 _TIM1_GetITStatus:
-      0095FC 88               [ 1] 2622 	push	a
-                           000832  2623 	C$stm8s_tim1.c$2120$1_0$591 ==.
-                                   2624 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2120: TIM1_itStatus = (uint8_t)(TIM1->SR1 & (uint8_t)TIM1_IT);
-      0095FD C6 52 55         [ 1] 2625 	ld	a, 0x5255
-      009600 14 04            [ 1] 2626 	and	a, (0x04, sp)
-      009602 6B 01            [ 1] 2627 	ld	(0x01, sp), a
-                           000839  2628 	C$stm8s_tim1.c$2122$1_0$591 ==.
-                                   2629 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2122: TIM1_itEnable = (uint8_t)(TIM1->IER & (uint8_t)TIM1_IT);
-      009604 C6 52 54         [ 1] 2630 	ld	a, 0x5254
-      009607 14 04            [ 1] 2631 	and	a, (0x04, sp)
-                           00083E  2632 	C$stm8s_tim1.c$2124$1_0$591 ==.
-                                   2633 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2124: if ((TIM1_itStatus != (uint8_t)RESET ) && (TIM1_itEnable != (uint8_t)RESET ))
-      009609 0D 01            [ 1] 2634 	tnz	(0x01, sp)
-      00960B 27 07            [ 1] 2635 	jreq	00102$
-      00960D 4D               [ 1] 2636 	tnz	a
-      00960E 27 04            [ 1] 2637 	jreq	00102$
-                           000845  2638 	C$stm8s_tim1.c$2126$2_0$592 ==.
-                                   2639 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2126: bitstatus = SET;
-      009610 A6 01            [ 1] 2640 	ld	a, #0x01
-      009612 20 01            [ 2] 2641 	jra	00103$
-      009614                       2642 00102$:
-                           000849  2643 	C$stm8s_tim1.c$2130$2_0$593 ==.
-                                   2644 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2130: bitstatus = RESET;
-      009614 4F               [ 1] 2645 	clr	a
-      009615                       2646 00103$:
-                           00084A  2647 	C$stm8s_tim1.c$2132$1_0$591 ==.
-                                   2648 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2132: return (ITStatus)(bitstatus);
-                           00084A  2649 	C$stm8s_tim1.c$2133$1_0$591 ==.
-                                   2650 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2133: }
-      009615 5B 01            [ 2] 2651 	addw	sp, #1
-                           00084C  2652 	C$stm8s_tim1.c$2133$1_0$591 ==.
-                           00084C  2653 	XG$TIM1_GetITStatus$0$0 ==.
-      009617 81               [ 4] 2654 	ret
-                           00084D  2655 	G$TIM1_ClearITPendingBit$0$0 ==.
-                           00084D  2656 	C$stm8s_tim1.c$2149$1_0$595 ==.
-                                   2657 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2149: void TIM1_ClearITPendingBit(TIM1_IT_TypeDef TIM1_IT)
-                                   2658 ;	-----------------------------------------
-                                   2659 ;	 function TIM1_ClearITPendingBit
-                                   2660 ;	-----------------------------------------
-      009618                       2661 _TIM1_ClearITPendingBit:
-                           00084D  2662 	C$stm8s_tim1.c$2155$1_0$595 ==.
-                                   2663 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2155: TIM1->SR1 = (uint8_t)(~(uint8_t)TIM1_IT);
-      009618 7B 03            [ 1] 2664 	ld	a, (0x03, sp)
-      00961A 43               [ 1] 2665 	cpl	a
-      00961B C7 52 55         [ 1] 2666 	ld	0x5255, a
-                           000853  2667 	C$stm8s_tim1.c$2156$1_0$595 ==.
-                                   2668 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2156: }
-                           000853  2669 	C$stm8s_tim1.c$2156$1_0$595 ==.
-                           000853  2670 	XG$TIM1_ClearITPendingBit$0$0 ==.
-      00961E 81               [ 4] 2671 	ret
-                           000854  2672 	Fstm8s_tim1$TI1_Config$0$0 ==.
-                           000854  2673 	C$stm8s_tim1.c$2174$1_0$597 ==.
-                                   2674 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2174: static void TI1_Config(uint8_t TIM1_ICPolarity,
-                                   2675 ;	-----------------------------------------
-                                   2676 ;	 function TI1_Config
-                                   2677 ;	-----------------------------------------
-      00961F                       2678 _TI1_Config:
-      00961F 88               [ 1] 2679 	push	a
-                           000855  2680 	C$stm8s_tim1.c$2179$1_0$597 ==.
-                                   2681 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2179: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
-      009620 72 11 52 5C      [ 1] 2682 	bres	21084, #0
-                           000859  2683 	C$stm8s_tim1.c$2182$1_0$597 ==.
-                                   2684 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2182: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF ))) | 
-      009624 C6 52 58         [ 1] 2685 	ld	a, 0x5258
-      009627 A4 0C            [ 1] 2686 	and	a, #0x0c
-      009629 6B 01            [ 1] 2687 	ld	(0x01, sp), a
-                           000860  2688 	C$stm8s_tim1.c$2183$1_0$597 ==.
-                                   2689 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2183: (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
-      00962B 7B 06            [ 1] 2690 	ld	a, (0x06, sp)
-      00962D 4E               [ 1] 2691 	swap	a
-      00962E A4 F0            [ 1] 2692 	and	a, #0xf0
-      009630 1A 05            [ 1] 2693 	or	a, (0x05, sp)
-      009632 1A 01            [ 1] 2694 	or	a, (0x01, sp)
-      009634 C7 52 58         [ 1] 2695 	ld	0x5258, a
-                           00086C  2696 	C$stm8s_tim1.c$2186$1_0$597 ==.
-                                   2697 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2186: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
-      009637 0D 04            [ 1] 2698 	tnz	(0x04, sp)
-      009639 27 06            [ 1] 2699 	jreq	00102$
-                           000870  2700 	C$stm8s_tim1.c$2188$2_0$598 ==.
-                                   2701 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2188: TIM1->CCER1 |= TIM1_CCER1_CC1P;
-      00963B 72 12 52 5C      [ 1] 2702 	bset	21084, #1
-      00963F 20 04            [ 2] 2703 	jra	00103$
-      009641                       2704 00102$:
-                           000876  2705 	C$stm8s_tim1.c$2192$2_0$599 ==.
-                                   2706 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2192: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
-      009641 72 13 52 5C      [ 1] 2707 	bres	21084, #1
-      009645                       2708 00103$:
-                           00087A  2709 	C$stm8s_tim1.c$2196$1_0$597 ==.
-                                   2710 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2196: TIM1->CCER1 |=  TIM1_CCER1_CC1E;
-      009645 72 10 52 5C      [ 1] 2711 	bset	21084, #0
-                           00087E  2712 	C$stm8s_tim1.c$2197$1_0$597 ==.
-                                   2713 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2197: }
-      009649 84               [ 1] 2714 	pop	a
-                           00087F  2715 	C$stm8s_tim1.c$2197$1_0$597 ==.
-                           00087F  2716 	XFstm8s_tim1$TI1_Config$0$0 ==.
-      00964A 81               [ 4] 2717 	ret
-                           000880  2718 	Fstm8s_tim1$TI2_Config$0$0 ==.
-                           000880  2719 	C$stm8s_tim1.c$2215$1_0$601 ==.
-                                   2720 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2215: static void TI2_Config(uint8_t TIM1_ICPolarity,
-                                   2721 ;	-----------------------------------------
-                                   2722 ;	 function TI2_Config
-                                   2723 ;	-----------------------------------------
-      00964B                       2724 _TI2_Config:
-      00964B 88               [ 1] 2725 	push	a
-                           000881  2726 	C$stm8s_tim1.c$2220$1_0$601 ==.
-                                   2727 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2220: TIM1->CCER1 &=  (uint8_t)(~TIM1_CCER1_CC2E);
-      00964C 72 19 52 5C      [ 1] 2728 	bres	21084, #4
-                           000885  2729 	C$stm8s_tim1.c$2223$1_0$601 ==.
-                                   2730 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2223: TIM1->CCMR2  = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF ))) 
-      009650 C6 52 59         [ 1] 2731 	ld	a, 0x5259
-      009653 A4 0C            [ 1] 2732 	and	a, #0x0c
-      009655 6B 01            [ 1] 2733 	ld	(0x01, sp), a
-                           00088C  2734 	C$stm8s_tim1.c$2224$1_0$601 ==.
-                                   2735 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2224: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
-      009657 7B 06            [ 1] 2736 	ld	a, (0x06, sp)
-      009659 4E               [ 1] 2737 	swap	a
-      00965A A4 F0            [ 1] 2738 	and	a, #0xf0
-      00965C 1A 05            [ 1] 2739 	or	a, (0x05, sp)
-      00965E 1A 01            [ 1] 2740 	or	a, (0x01, sp)
-      009660 C7 52 59         [ 1] 2741 	ld	0x5259, a
-                           000898  2742 	C$stm8s_tim1.c$2226$1_0$601 ==.
-                                   2743 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2226: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
-      009663 0D 04            [ 1] 2744 	tnz	(0x04, sp)
-      009665 27 06            [ 1] 2745 	jreq	00102$
-                           00089C  2746 	C$stm8s_tim1.c$2228$2_0$602 ==.
-                                   2747 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2228: TIM1->CCER1 |= TIM1_CCER1_CC2P;
-      009667 72 1A 52 5C      [ 1] 2748 	bset	21084, #5
-      00966B 20 04            [ 2] 2749 	jra	00103$
-      00966D                       2750 00102$:
-                           0008A2  2751 	C$stm8s_tim1.c$2232$2_0$603 ==.
-                                   2752 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2232: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
-      00966D 72 1B 52 5C      [ 1] 2753 	bres	21084, #5
-      009671                       2754 00103$:
-                           0008A6  2755 	C$stm8s_tim1.c$2235$1_0$601 ==.
-                                   2756 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2235: TIM1->CCER1 |=  TIM1_CCER1_CC2E;
-      009671 72 18 52 5C      [ 1] 2757 	bset	21084, #4
-                           0008AA  2758 	C$stm8s_tim1.c$2236$1_0$601 ==.
-                                   2759 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2236: }
-      009675 84               [ 1] 2760 	pop	a
-                           0008AB  2761 	C$stm8s_tim1.c$2236$1_0$601 ==.
-                           0008AB  2762 	XFstm8s_tim1$TI2_Config$0$0 ==.
-      009676 81               [ 4] 2763 	ret
-                           0008AC  2764 	Fstm8s_tim1$TI3_Config$0$0 ==.
-                           0008AC  2765 	C$stm8s_tim1.c$2254$1_0$605 ==.
-                                   2766 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2254: static void TI3_Config(uint8_t TIM1_ICPolarity,
-                                   2767 ;	-----------------------------------------
-                                   2768 ;	 function TI3_Config
-                                   2769 ;	-----------------------------------------
-      009677                       2770 _TI3_Config:
-      009677 88               [ 1] 2771 	push	a
-                           0008AD  2772 	C$stm8s_tim1.c$2259$1_0$605 ==.
-                                   2773 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2259: TIM1->CCER2 &=  (uint8_t)(~TIM1_CCER2_CC3E);
-      009678 C6 52 5D         [ 1] 2774 	ld	a, 0x525d
-      00967B A4 FE            [ 1] 2775 	and	a, #0xfe
-      00967D C7 52 5D         [ 1] 2776 	ld	0x525d, a
-                           0008B5  2777 	C$stm8s_tim1.c$2262$1_0$605 ==.
-                                   2778 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2262: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF))) 
-      009680 C6 52 5A         [ 1] 2779 	ld	a, 0x525a
-      009683 A4 0C            [ 1] 2780 	and	a, #0x0c
-      009685 6B 01            [ 1] 2781 	ld	(0x01, sp), a
-                           0008BC  2782 	C$stm8s_tim1.c$2263$1_0$605 ==.
-                                   2783 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2263: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
-      009687 7B 06            [ 1] 2784 	ld	a, (0x06, sp)
-      009689 4E               [ 1] 2785 	swap	a
-      00968A A4 F0            [ 1] 2786 	and	a, #0xf0
-      00968C 1A 05            [ 1] 2787 	or	a, (0x05, sp)
-      00968E 1A 01            [ 1] 2788 	or	a, (0x01, sp)
-      009690 C7 52 5A         [ 1] 2789 	ld	0x525a, a
-                           0008C8  2790 	C$stm8s_tim1.c$2266$1_0$605 ==.
-                                   2791 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2266: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
-      009693 0D 04            [ 1] 2792 	tnz	(0x04, sp)
-      009695 27 06            [ 1] 2793 	jreq	00102$
-                           0008CC  2794 	C$stm8s_tim1.c$2268$2_0$606 ==.
-                                   2795 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2268: TIM1->CCER2 |= TIM1_CCER2_CC3P;
-      009697 72 12 52 5D      [ 1] 2796 	bset	21085, #1
-      00969B 20 04            [ 2] 2797 	jra	00103$
-      00969D                       2798 00102$:
-                           0008D2  2799 	C$stm8s_tim1.c$2272$2_0$607 ==.
-                                   2800 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2272: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3P);
-      00969D 72 13 52 5D      [ 1] 2801 	bres	21085, #1
-      0096A1                       2802 00103$:
-                           0008D6  2803 	C$stm8s_tim1.c$2275$1_0$605 ==.
-                                   2804 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2275: TIM1->CCER2 |=  TIM1_CCER2_CC3E;
-      0096A1 72 10 52 5D      [ 1] 2805 	bset	21085, #0
-                           0008DA  2806 	C$stm8s_tim1.c$2276$1_0$605 ==.
-                                   2807 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2276: }
-      0096A5 84               [ 1] 2808 	pop	a
-                           0008DB  2809 	C$stm8s_tim1.c$2276$1_0$605 ==.
-                           0008DB  2810 	XFstm8s_tim1$TI3_Config$0$0 ==.
-      0096A6 81               [ 4] 2811 	ret
-                           0008DC  2812 	Fstm8s_tim1$TI4_Config$0$0 ==.
-                           0008DC  2813 	C$stm8s_tim1.c$2294$1_0$609 ==.
-                                   2814 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2294: static void TI4_Config(uint8_t TIM1_ICPolarity,
-                                   2815 ;	-----------------------------------------
-                                   2816 ;	 function TI4_Config
-                                   2817 ;	-----------------------------------------
-      0096A7                       2818 _TI4_Config:
-      0096A7 88               [ 1] 2819 	push	a
-                           0008DD  2820 	C$stm8s_tim1.c$2299$1_0$609 ==.
-                                   2821 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2299: TIM1->CCER2 &=  (uint8_t)(~TIM1_CCER2_CC4E);
-      0096A8 72 19 52 5D      [ 1] 2822 	bres	21085, #4
-                           0008E1  2823 	C$stm8s_tim1.c$2302$1_0$609 ==.
-                                   2824 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2302: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF )))
-      0096AC C6 52 5B         [ 1] 2825 	ld	a, 0x525b
-      0096AF A4 0C            [ 1] 2826 	and	a, #0x0c
-      0096B1 6B 01            [ 1] 2827 	ld	(0x01, sp), a
-                           0008E8  2828 	C$stm8s_tim1.c$2303$1_0$609 ==.
-                                   2829 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2303: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
-      0096B3 7B 06            [ 1] 2830 	ld	a, (0x06, sp)
-      0096B5 4E               [ 1] 2831 	swap	a
-      0096B6 A4 F0            [ 1] 2832 	and	a, #0xf0
-      0096B8 1A 05            [ 1] 2833 	or	a, (0x05, sp)
-      0096BA 1A 01            [ 1] 2834 	or	a, (0x01, sp)
-      0096BC C7 52 5B         [ 1] 2835 	ld	0x525b, a
-                           0008F4  2836 	C$stm8s_tim1.c$2306$1_0$609 ==.
-                                   2837 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2306: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
-      0096BF 0D 04            [ 1] 2838 	tnz	(0x04, sp)
-      0096C1 27 06            [ 1] 2839 	jreq	00102$
-                           0008F8  2840 	C$stm8s_tim1.c$2308$2_0$610 ==.
-                                   2841 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2308: TIM1->CCER2 |= TIM1_CCER2_CC4P;
-      0096C3 72 1A 52 5D      [ 1] 2842 	bset	21085, #5
-      0096C7 20 04            [ 2] 2843 	jra	00103$
-      0096C9                       2844 00102$:
-                           0008FE  2845 	C$stm8s_tim1.c$2312$2_0$611 ==.
-                                   2846 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2312: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4P);
-      0096C9 72 1B 52 5D      [ 1] 2847 	bres	21085, #5
-      0096CD                       2848 00103$:
-                           000902  2849 	C$stm8s_tim1.c$2316$1_0$609 ==.
-                                   2850 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2316: TIM1->CCER2 |=  TIM1_CCER2_CC4E;
-      0096CD 72 18 52 5D      [ 1] 2851 	bset	21085, #4
-                           000906  2852 	C$stm8s_tim1.c$2317$1_0$609 ==.
-                                   2853 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2317: }
-      0096D1 84               [ 1] 2854 	pop	a
-                           000907  2855 	C$stm8s_tim1.c$2317$1_0$609 ==.
-                           000907  2856 	XFstm8s_tim1$TI4_Config$0$0 ==.
-      0096D2 81               [ 4] 2857 	ret
-                                   2858 	.area CODE
-                                   2859 	.area CONST
-                                   2860 	.area INITIALIZER
-                                   2861 	.area CABS (ABS)
+      00955A                       2349 _TIM1_SetIC4Prescaler:
+                           000780  2350 	C$stm8s_tim1.c$1913$1_0$571 ==.
+                                   2351 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1913: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~TIM1_CCMR_ICxPSC)) |
+      00955A C6 52 5B         [ 1] 2352 	ld	a, 0x525b
+      00955D A4 F3            [ 1] 2353 	and	a, #0xf3
+                           000785  2354 	C$stm8s_tim1.c$1914$1_0$571 ==.
+                                   2355 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1914: (uint8_t)TIM1_IC4Prescaler);
+      00955F 1A 03            [ 1] 2356 	or	a, (0x03, sp)
+      009561 C7 52 5B         [ 1] 2357 	ld	0x525b, a
+                           00078A  2358 	C$stm8s_tim1.c$1915$1_0$571 ==.
+                                   2359 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1915: }
+                           00078A  2360 	C$stm8s_tim1.c$1915$1_0$571 ==.
+                           00078A  2361 	XG$TIM1_SetIC4Prescaler$0$0 ==.
+      009564 81               [ 4] 2362 	ret
+                           00078B  2363 	G$TIM1_GetCapture1$0$0 ==.
+                           00078B  2364 	C$stm8s_tim1.c$1922$1_0$573 ==.
+                                   2365 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1922: uint16_t TIM1_GetCapture1(void)
+                                   2366 ;	-----------------------------------------
+                                   2367 ;	 function TIM1_GetCapture1
+                                   2368 ;	-----------------------------------------
+      009565                       2369 _TIM1_GetCapture1:
+      009565 52 02            [ 2] 2370 	sub	sp, #2
+                           00078D  2371 	C$stm8s_tim1.c$1929$1_0$573 ==.
+                                   2372 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1929: tmpccr1h = TIM1->CCR1H;
+      009567 C6 52 65         [ 1] 2373 	ld	a, 0x5265
+      00956A 95               [ 1] 2374 	ld	xh, a
+                           000791  2375 	C$stm8s_tim1.c$1930$1_0$573 ==.
+                                   2376 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1930: tmpccr1l = TIM1->CCR1L;
+      00956B C6 52 66         [ 1] 2377 	ld	a, 0x5266
+                           000794  2378 	C$stm8s_tim1.c$1932$1_0$573 ==.
+                                   2379 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1932: tmpccr1 = (uint16_t)(tmpccr1l);
+      00956E 97               [ 1] 2380 	ld	xl, a
+      00956F 4F               [ 1] 2381 	clr	a
+                           000796  2382 	C$stm8s_tim1.c$1933$1_0$573 ==.
+                                   2383 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1933: tmpccr1 |= (uint16_t)((uint16_t)tmpccr1h << 8);
+      009570 0F 02            [ 1] 2384 	clr	(0x02, sp)
+      009572 89               [ 2] 2385 	pushw	x
+      009573 1A 01            [ 1] 2386 	or	a, (1, sp)
+      009575 85               [ 2] 2387 	popw	x
+      009576 01               [ 1] 2388 	rrwa	x
+      009577 1A 02            [ 1] 2389 	or	a, (0x02, sp)
+      009579 97               [ 1] 2390 	ld	xl, a
+                           0007A0  2391 	C$stm8s_tim1.c$1935$1_0$573 ==.
+                                   2392 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1935: return (uint16_t)tmpccr1;
+                           0007A0  2393 	C$stm8s_tim1.c$1936$1_0$573 ==.
+                                   2394 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1936: }
+      00957A 5B 02            [ 2] 2395 	addw	sp, #2
+                           0007A2  2396 	C$stm8s_tim1.c$1936$1_0$573 ==.
+                           0007A2  2397 	XG$TIM1_GetCapture1$0$0 ==.
+      00957C 81               [ 4] 2398 	ret
+                           0007A3  2399 	G$TIM1_GetCapture2$0$0 ==.
+                           0007A3  2400 	C$stm8s_tim1.c$1943$1_0$575 ==.
+                                   2401 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1943: uint16_t TIM1_GetCapture2(void)
+                                   2402 ;	-----------------------------------------
+                                   2403 ;	 function TIM1_GetCapture2
+                                   2404 ;	-----------------------------------------
+      00957D                       2405 _TIM1_GetCapture2:
+      00957D 52 02            [ 2] 2406 	sub	sp, #2
+                           0007A5  2407 	C$stm8s_tim1.c$1950$1_0$575 ==.
+                                   2408 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1950: tmpccr2h = TIM1->CCR2H;
+      00957F C6 52 67         [ 1] 2409 	ld	a, 0x5267
+      009582 95               [ 1] 2410 	ld	xh, a
+                           0007A9  2411 	C$stm8s_tim1.c$1951$1_0$575 ==.
+                                   2412 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1951: tmpccr2l = TIM1->CCR2L;
+      009583 C6 52 68         [ 1] 2413 	ld	a, 0x5268
+                           0007AC  2414 	C$stm8s_tim1.c$1953$1_0$575 ==.
+                                   2415 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1953: tmpccr2 = (uint16_t)(tmpccr2l);
+      009586 97               [ 1] 2416 	ld	xl, a
+      009587 4F               [ 1] 2417 	clr	a
+                           0007AE  2418 	C$stm8s_tim1.c$1954$1_0$575 ==.
+                                   2419 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1954: tmpccr2 |= (uint16_t)((uint16_t)tmpccr2h << 8);
+      009588 0F 02            [ 1] 2420 	clr	(0x02, sp)
+      00958A 89               [ 2] 2421 	pushw	x
+      00958B 1A 01            [ 1] 2422 	or	a, (1, sp)
+      00958D 85               [ 2] 2423 	popw	x
+      00958E 01               [ 1] 2424 	rrwa	x
+      00958F 1A 02            [ 1] 2425 	or	a, (0x02, sp)
+      009591 97               [ 1] 2426 	ld	xl, a
+                           0007B8  2427 	C$stm8s_tim1.c$1956$1_0$575 ==.
+                                   2428 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1956: return (uint16_t)tmpccr2;
+                           0007B8  2429 	C$stm8s_tim1.c$1957$1_0$575 ==.
+                                   2430 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1957: }
+      009592 5B 02            [ 2] 2431 	addw	sp, #2
+                           0007BA  2432 	C$stm8s_tim1.c$1957$1_0$575 ==.
+                           0007BA  2433 	XG$TIM1_GetCapture2$0$0 ==.
+      009594 81               [ 4] 2434 	ret
+                           0007BB  2435 	G$TIM1_GetCapture3$0$0 ==.
+                           0007BB  2436 	C$stm8s_tim1.c$1964$1_0$577 ==.
+                                   2437 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1964: uint16_t TIM1_GetCapture3(void)
+                                   2438 ;	-----------------------------------------
+                                   2439 ;	 function TIM1_GetCapture3
+                                   2440 ;	-----------------------------------------
+      009595                       2441 _TIM1_GetCapture3:
+      009595 52 02            [ 2] 2442 	sub	sp, #2
+                           0007BD  2443 	C$stm8s_tim1.c$1970$1_0$577 ==.
+                                   2444 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1970: tmpccr3h = TIM1->CCR3H;
+      009597 C6 52 69         [ 1] 2445 	ld	a, 0x5269
+      00959A 95               [ 1] 2446 	ld	xh, a
+                           0007C1  2447 	C$stm8s_tim1.c$1971$1_0$577 ==.
+                                   2448 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1971: tmpccr3l = TIM1->CCR3L;
+      00959B C6 52 6A         [ 1] 2449 	ld	a, 0x526a
+                           0007C4  2450 	C$stm8s_tim1.c$1973$1_0$577 ==.
+                                   2451 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1973: tmpccr3 = (uint16_t)(tmpccr3l);
+      00959E 97               [ 1] 2452 	ld	xl, a
+      00959F 4F               [ 1] 2453 	clr	a
+                           0007C6  2454 	C$stm8s_tim1.c$1974$1_0$577 ==.
+                                   2455 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1974: tmpccr3 |= (uint16_t)((uint16_t)tmpccr3h << 8);
+      0095A0 0F 02            [ 1] 2456 	clr	(0x02, sp)
+      0095A2 89               [ 2] 2457 	pushw	x
+      0095A3 1A 01            [ 1] 2458 	or	a, (1, sp)
+      0095A5 85               [ 2] 2459 	popw	x
+      0095A6 01               [ 1] 2460 	rrwa	x
+      0095A7 1A 02            [ 1] 2461 	or	a, (0x02, sp)
+      0095A9 97               [ 1] 2462 	ld	xl, a
+                           0007D0  2463 	C$stm8s_tim1.c$1976$1_0$577 ==.
+                                   2464 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1976: return (uint16_t)tmpccr3;
+                           0007D0  2465 	C$stm8s_tim1.c$1977$1_0$577 ==.
+                                   2466 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1977: }
+      0095AA 5B 02            [ 2] 2467 	addw	sp, #2
+                           0007D2  2468 	C$stm8s_tim1.c$1977$1_0$577 ==.
+                           0007D2  2469 	XG$TIM1_GetCapture3$0$0 ==.
+      0095AC 81               [ 4] 2470 	ret
+                           0007D3  2471 	G$TIM1_GetCapture4$0$0 ==.
+                           0007D3  2472 	C$stm8s_tim1.c$1984$1_0$579 ==.
+                                   2473 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1984: uint16_t TIM1_GetCapture4(void)
+                                   2474 ;	-----------------------------------------
+                                   2475 ;	 function TIM1_GetCapture4
+                                   2476 ;	-----------------------------------------
+      0095AD                       2477 _TIM1_GetCapture4:
+      0095AD 52 02            [ 2] 2478 	sub	sp, #2
+                           0007D5  2479 	C$stm8s_tim1.c$1990$1_0$579 ==.
+                                   2480 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1990: tmpccr4h = TIM1->CCR4H;
+      0095AF C6 52 6B         [ 1] 2481 	ld	a, 0x526b
+      0095B2 95               [ 1] 2482 	ld	xh, a
+                           0007D9  2483 	C$stm8s_tim1.c$1991$1_0$579 ==.
+                                   2484 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1991: tmpccr4l = TIM1->CCR4L;
+      0095B3 C6 52 6C         [ 1] 2485 	ld	a, 0x526c
+                           0007DC  2486 	C$stm8s_tim1.c$1993$1_0$579 ==.
+                                   2487 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1993: tmpccr4 = (uint16_t)(tmpccr4l);
+      0095B6 97               [ 1] 2488 	ld	xl, a
+      0095B7 4F               [ 1] 2489 	clr	a
+                           0007DE  2490 	C$stm8s_tim1.c$1994$1_0$579 ==.
+                                   2491 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1994: tmpccr4 |= (uint16_t)((uint16_t)tmpccr4h << 8);
+      0095B8 0F 02            [ 1] 2492 	clr	(0x02, sp)
+      0095BA 89               [ 2] 2493 	pushw	x
+      0095BB 1A 01            [ 1] 2494 	or	a, (1, sp)
+      0095BD 85               [ 2] 2495 	popw	x
+      0095BE 01               [ 1] 2496 	rrwa	x
+      0095BF 1A 02            [ 1] 2497 	or	a, (0x02, sp)
+      0095C1 97               [ 1] 2498 	ld	xl, a
+                           0007E8  2499 	C$stm8s_tim1.c$1996$1_0$579 ==.
+                                   2500 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1996: return (uint16_t)tmpccr4;
+                           0007E8  2501 	C$stm8s_tim1.c$1997$1_0$579 ==.
+                                   2502 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 1997: }
+      0095C2 5B 02            [ 2] 2503 	addw	sp, #2
+                           0007EA  2504 	C$stm8s_tim1.c$1997$1_0$579 ==.
+                           0007EA  2505 	XG$TIM1_GetCapture4$0$0 ==.
+      0095C4 81               [ 4] 2506 	ret
+                           0007EB  2507 	G$TIM1_GetCounter$0$0 ==.
+                           0007EB  2508 	C$stm8s_tim1.c$2004$1_0$581 ==.
+                                   2509 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2004: uint16_t TIM1_GetCounter(void)
+                                   2510 ;	-----------------------------------------
+                                   2511 ;	 function TIM1_GetCounter
+                                   2512 ;	-----------------------------------------
+      0095C5                       2513 _TIM1_GetCounter:
+      0095C5 52 04            [ 2] 2514 	sub	sp, #4
+                           0007ED  2515 	C$stm8s_tim1.c$2008$1_0$581 ==.
+                                   2516 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2008: tmpcntr = ((uint16_t)TIM1->CNTRH << 8);
+      0095C7 C6 52 5E         [ 1] 2517 	ld	a, 0x525e
+      0095CA 95               [ 1] 2518 	ld	xh, a
+      0095CB 4F               [ 1] 2519 	clr	a
+      0095CC 6B 02            [ 1] 2520 	ld	(0x02, sp), a
+                           0007F4  2521 	C$stm8s_tim1.c$2011$1_0$581 ==.
+                                   2522 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2011: return (uint16_t)(tmpcntr | (uint16_t)(TIM1->CNTRL));
+      0095CE C6 52 5F         [ 1] 2523 	ld	a, 0x525f
+      0095D1 6B 04            [ 1] 2524 	ld	(0x04, sp), a
+      0095D3 0F 03            [ 1] 2525 	clr	(0x03, sp)
+      0095D5 7B 02            [ 1] 2526 	ld	a, (0x02, sp)
+      0095D7 1A 04            [ 1] 2527 	or	a, (0x04, sp)
+      0095D9 02               [ 1] 2528 	rlwa	x
+      0095DA 1A 03            [ 1] 2529 	or	a, (0x03, sp)
+      0095DC 95               [ 1] 2530 	ld	xh, a
+                           000803  2531 	C$stm8s_tim1.c$2012$1_0$581 ==.
+                                   2532 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2012: }
+      0095DD 5B 04            [ 2] 2533 	addw	sp, #4
+                           000805  2534 	C$stm8s_tim1.c$2012$1_0$581 ==.
+                           000805  2535 	XG$TIM1_GetCounter$0$0 ==.
+      0095DF 81               [ 4] 2536 	ret
+                           000806  2537 	G$TIM1_GetPrescaler$0$0 ==.
+                           000806  2538 	C$stm8s_tim1.c$2019$1_0$583 ==.
+                                   2539 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2019: uint16_t TIM1_GetPrescaler(void)
+                                   2540 ;	-----------------------------------------
+                                   2541 ;	 function TIM1_GetPrescaler
+                                   2542 ;	-----------------------------------------
+      0095E0                       2543 _TIM1_GetPrescaler:
+      0095E0 52 04            [ 2] 2544 	sub	sp, #4
+                           000808  2545 	C$stm8s_tim1.c$2023$1_0$583 ==.
+                                   2546 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2023: temp = ((uint16_t)TIM1->PSCRH << 8);
+      0095E2 C6 52 60         [ 1] 2547 	ld	a, 0x5260
+      0095E5 95               [ 1] 2548 	ld	xh, a
+      0095E6 4F               [ 1] 2549 	clr	a
+      0095E7 6B 02            [ 1] 2550 	ld	(0x02, sp), a
+                           00080F  2551 	C$stm8s_tim1.c$2026$1_0$583 ==.
+                                   2552 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2026: return (uint16_t)( temp | (uint16_t)(TIM1->PSCRL));
+      0095E9 C6 52 61         [ 1] 2553 	ld	a, 0x5261
+      0095EC 6B 04            [ 1] 2554 	ld	(0x04, sp), a
+      0095EE 0F 03            [ 1] 2555 	clr	(0x03, sp)
+      0095F0 7B 02            [ 1] 2556 	ld	a, (0x02, sp)
+      0095F2 1A 04            [ 1] 2557 	or	a, (0x04, sp)
+      0095F4 02               [ 1] 2558 	rlwa	x
+      0095F5 1A 03            [ 1] 2559 	or	a, (0x03, sp)
+      0095F7 95               [ 1] 2560 	ld	xh, a
+                           00081E  2561 	C$stm8s_tim1.c$2027$1_0$583 ==.
+                                   2562 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2027: }
+      0095F8 5B 04            [ 2] 2563 	addw	sp, #4
+                           000820  2564 	C$stm8s_tim1.c$2027$1_0$583 ==.
+                           000820  2565 	XG$TIM1_GetPrescaler$0$0 ==.
+      0095FA 81               [ 4] 2566 	ret
+                           000821  2567 	G$TIM1_GetFlagStatus$0$0 ==.
+                           000821  2568 	C$stm8s_tim1.c$2047$1_0$585 ==.
+                                   2569 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2047: FlagStatus TIM1_GetFlagStatus(TIM1_FLAG_TypeDef TIM1_FLAG)
+                                   2570 ;	-----------------------------------------
+                                   2571 ;	 function TIM1_GetFlagStatus
+                                   2572 ;	-----------------------------------------
+      0095FB                       2573 _TIM1_GetFlagStatus:
+      0095FB 52 03            [ 2] 2574 	sub	sp, #3
+                           000823  2575 	C$stm8s_tim1.c$2055$1_0$585 ==.
+                                   2576 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2055: tim1_flag_l = (uint8_t)(TIM1->SR1 & (uint8_t)TIM1_FLAG);
+      0095FD C6 52 55         [ 1] 2577 	ld	a, 0x5255
+      009600 6B 03            [ 1] 2578 	ld	(0x03, sp), a
+      009602 7B 07            [ 1] 2579 	ld	a, (0x07, sp)
+      009604 14 03            [ 1] 2580 	and	a, (0x03, sp)
+      009606 6B 01            [ 1] 2581 	ld	(0x01, sp), a
+                           00082E  2582 	C$stm8s_tim1.c$2056$1_0$585 ==.
+                                   2583 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2056: tim1_flag_h = (uint8_t)((uint16_t)TIM1_FLAG >> 8);
+      009608 7B 06            [ 1] 2584 	ld	a, (0x06, sp)
+      00960A 6B 03            [ 1] 2585 	ld	(0x03, sp), a
+      00960C 0F 02            [ 1] 2586 	clr	(0x02, sp)
+                           000834  2587 	C$stm8s_tim1.c$2058$1_0$585 ==.
+                                   2588 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2058: if ((tim1_flag_l | (uint8_t)(TIM1->SR2 & tim1_flag_h)) != 0)
+      00960E C6 52 56         [ 1] 2589 	ld	a, 0x5256
+      009611 14 03            [ 1] 2590 	and	a, (0x03, sp)
+      009613 1A 01            [ 1] 2591 	or	a, (0x01, sp)
+      009615 27 04            [ 1] 2592 	jreq	00102$
+                           00083D  2593 	C$stm8s_tim1.c$2060$2_0$586 ==.
+                                   2594 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2060: bitstatus = SET;
+      009617 A6 01            [ 1] 2595 	ld	a, #0x01
+      009619 20 01            [ 2] 2596 	jra	00103$
+      00961B                       2597 00102$:
+                           000841  2598 	C$stm8s_tim1.c$2064$2_0$587 ==.
+                                   2599 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2064: bitstatus = RESET;
+      00961B 4F               [ 1] 2600 	clr	a
+      00961C                       2601 00103$:
+                           000842  2602 	C$stm8s_tim1.c$2066$1_0$585 ==.
+                                   2603 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2066: return (FlagStatus)(bitstatus);
+                           000842  2604 	C$stm8s_tim1.c$2067$1_0$585 ==.
+                                   2605 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2067: }
+      00961C 5B 03            [ 2] 2606 	addw	sp, #3
+                           000844  2607 	C$stm8s_tim1.c$2067$1_0$585 ==.
+                           000844  2608 	XG$TIM1_GetFlagStatus$0$0 ==.
+      00961E 81               [ 4] 2609 	ret
+                           000845  2610 	G$TIM1_ClearFlag$0$0 ==.
+                           000845  2611 	C$stm8s_tim1.c$2087$1_0$589 ==.
+                                   2612 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2087: void TIM1_ClearFlag(TIM1_FLAG_TypeDef TIM1_FLAG)
+                                   2613 ;	-----------------------------------------
+                                   2614 ;	 function TIM1_ClearFlag
+                                   2615 ;	-----------------------------------------
+      00961F                       2616 _TIM1_ClearFlag:
+                           000845  2617 	C$stm8s_tim1.c$2093$1_0$589 ==.
+                                   2618 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2093: TIM1->SR1 = (uint8_t)(~(uint8_t)(TIM1_FLAG));
+      00961F 7B 04            [ 1] 2619 	ld	a, (0x04, sp)
+      009621 43               [ 1] 2620 	cpl	a
+      009622 C7 52 55         [ 1] 2621 	ld	0x5255, a
+                           00084B  2622 	C$stm8s_tim1.c$2094$1_0$589 ==.
+                                   2623 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2094: TIM1->SR2 = (uint8_t)((uint8_t)(~((uint8_t)((uint16_t)TIM1_FLAG >> 8))) & 
+      009625 7B 03            [ 1] 2624 	ld	a, (0x03, sp)
+      009627 43               [ 1] 2625 	cpl	a
+      009628 A4 1E            [ 1] 2626 	and	a, #0x1e
+      00962A C7 52 56         [ 1] 2627 	ld	0x5256, a
+                           000853  2628 	C$stm8s_tim1.c$2096$1_0$589 ==.
+                                   2629 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2096: }
+                           000853  2630 	C$stm8s_tim1.c$2096$1_0$589 ==.
+                           000853  2631 	XG$TIM1_ClearFlag$0$0 ==.
+      00962D 81               [ 4] 2632 	ret
+                           000854  2633 	G$TIM1_GetITStatus$0$0 ==.
+                           000854  2634 	C$stm8s_tim1.c$2112$1_0$591 ==.
+                                   2635 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2112: ITStatus TIM1_GetITStatus(TIM1_IT_TypeDef TIM1_IT)
+                                   2636 ;	-----------------------------------------
+                                   2637 ;	 function TIM1_GetITStatus
+                                   2638 ;	-----------------------------------------
+      00962E                       2639 _TIM1_GetITStatus:
+      00962E 88               [ 1] 2640 	push	a
+                           000855  2641 	C$stm8s_tim1.c$2120$1_0$591 ==.
+                                   2642 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2120: TIM1_itStatus = (uint8_t)(TIM1->SR1 & (uint8_t)TIM1_IT);
+      00962F C6 52 55         [ 1] 2643 	ld	a, 0x5255
+      009632 14 04            [ 1] 2644 	and	a, (0x04, sp)
+      009634 6B 01            [ 1] 2645 	ld	(0x01, sp), a
+                           00085C  2646 	C$stm8s_tim1.c$2122$1_0$591 ==.
+                                   2647 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2122: TIM1_itEnable = (uint8_t)(TIM1->IER & (uint8_t)TIM1_IT);
+      009636 C6 52 54         [ 1] 2648 	ld	a, 0x5254
+      009639 14 04            [ 1] 2649 	and	a, (0x04, sp)
+                           000861  2650 	C$stm8s_tim1.c$2124$1_0$591 ==.
+                                   2651 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2124: if ((TIM1_itStatus != (uint8_t)RESET ) && (TIM1_itEnable != (uint8_t)RESET ))
+      00963B 0D 01            [ 1] 2652 	tnz	(0x01, sp)
+      00963D 27 07            [ 1] 2653 	jreq	00102$
+      00963F 4D               [ 1] 2654 	tnz	a
+      009640 27 04            [ 1] 2655 	jreq	00102$
+                           000868  2656 	C$stm8s_tim1.c$2126$2_0$592 ==.
+                                   2657 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2126: bitstatus = SET;
+      009642 A6 01            [ 1] 2658 	ld	a, #0x01
+      009644 20 01            [ 2] 2659 	jra	00103$
+      009646                       2660 00102$:
+                           00086C  2661 	C$stm8s_tim1.c$2130$2_0$593 ==.
+                                   2662 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2130: bitstatus = RESET;
+      009646 4F               [ 1] 2663 	clr	a
+      009647                       2664 00103$:
+                           00086D  2665 	C$stm8s_tim1.c$2132$1_0$591 ==.
+                                   2666 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2132: return (ITStatus)(bitstatus);
+                           00086D  2667 	C$stm8s_tim1.c$2133$1_0$591 ==.
+                                   2668 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2133: }
+      009647 5B 01            [ 2] 2669 	addw	sp, #1
+                           00086F  2670 	C$stm8s_tim1.c$2133$1_0$591 ==.
+                           00086F  2671 	XG$TIM1_GetITStatus$0$0 ==.
+      009649 81               [ 4] 2672 	ret
+                           000870  2673 	G$TIM1_ClearITPendingBit$0$0 ==.
+                           000870  2674 	C$stm8s_tim1.c$2149$1_0$595 ==.
+                                   2675 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2149: void TIM1_ClearITPendingBit(TIM1_IT_TypeDef TIM1_IT)
+                                   2676 ;	-----------------------------------------
+                                   2677 ;	 function TIM1_ClearITPendingBit
+                                   2678 ;	-----------------------------------------
+      00964A                       2679 _TIM1_ClearITPendingBit:
+                           000870  2680 	C$stm8s_tim1.c$2155$1_0$595 ==.
+                                   2681 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2155: TIM1->SR1 = (uint8_t)(~(uint8_t)TIM1_IT);
+      00964A 7B 03            [ 1] 2682 	ld	a, (0x03, sp)
+      00964C 43               [ 1] 2683 	cpl	a
+      00964D C7 52 55         [ 1] 2684 	ld	0x5255, a
+                           000876  2685 	C$stm8s_tim1.c$2156$1_0$595 ==.
+                                   2686 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2156: }
+                           000876  2687 	C$stm8s_tim1.c$2156$1_0$595 ==.
+                           000876  2688 	XG$TIM1_ClearITPendingBit$0$0 ==.
+      009650 81               [ 4] 2689 	ret
+                           000877  2690 	Fstm8s_tim1$TI1_Config$0$0 ==.
+                           000877  2691 	C$stm8s_tim1.c$2174$1_0$597 ==.
+                                   2692 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2174: static void TI1_Config(uint8_t TIM1_ICPolarity,
+                                   2693 ;	-----------------------------------------
+                                   2694 ;	 function TI1_Config
+                                   2695 ;	-----------------------------------------
+      009651                       2696 _TI1_Config:
+      009651 88               [ 1] 2697 	push	a
+                           000878  2698 	C$stm8s_tim1.c$2179$1_0$597 ==.
+                                   2699 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2179: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1E);
+      009652 72 11 52 5C      [ 1] 2700 	bres	21084, #0
+                           00087C  2701 	C$stm8s_tim1.c$2182$1_0$597 ==.
+                                   2702 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2182: TIM1->CCMR1 = (uint8_t)((uint8_t)(TIM1->CCMR1 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF ))) | 
+      009656 C6 52 58         [ 1] 2703 	ld	a, 0x5258
+      009659 A4 0C            [ 1] 2704 	and	a, #0x0c
+      00965B 6B 01            [ 1] 2705 	ld	(0x01, sp), a
+                           000883  2706 	C$stm8s_tim1.c$2183$1_0$597 ==.
+                                   2707 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2183: (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
+      00965D 7B 06            [ 1] 2708 	ld	a, (0x06, sp)
+      00965F 4E               [ 1] 2709 	swap	a
+      009660 A4 F0            [ 1] 2710 	and	a, #0xf0
+      009662 1A 05            [ 1] 2711 	or	a, (0x05, sp)
+      009664 1A 01            [ 1] 2712 	or	a, (0x01, sp)
+      009666 C7 52 58         [ 1] 2713 	ld	0x5258, a
+                           00088F  2714 	C$stm8s_tim1.c$2186$1_0$597 ==.
+                                   2715 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2186: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
+      009669 0D 04            [ 1] 2716 	tnz	(0x04, sp)
+      00966B 27 06            [ 1] 2717 	jreq	00102$
+                           000893  2718 	C$stm8s_tim1.c$2188$2_0$598 ==.
+                                   2719 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2188: TIM1->CCER1 |= TIM1_CCER1_CC1P;
+      00966D 72 12 52 5C      [ 1] 2720 	bset	21084, #1
+      009671 20 04            [ 2] 2721 	jra	00103$
+      009673                       2722 00102$:
+                           000899  2723 	C$stm8s_tim1.c$2192$2_0$599 ==.
+                                   2724 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2192: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC1P);
+      009673 72 13 52 5C      [ 1] 2725 	bres	21084, #1
+      009677                       2726 00103$:
+                           00089D  2727 	C$stm8s_tim1.c$2196$1_0$597 ==.
+                                   2728 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2196: TIM1->CCER1 |=  TIM1_CCER1_CC1E;
+      009677 72 10 52 5C      [ 1] 2729 	bset	21084, #0
+                           0008A1  2730 	C$stm8s_tim1.c$2197$1_0$597 ==.
+                                   2731 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2197: }
+      00967B 84               [ 1] 2732 	pop	a
+                           0008A2  2733 	C$stm8s_tim1.c$2197$1_0$597 ==.
+                           0008A2  2734 	XFstm8s_tim1$TI1_Config$0$0 ==.
+      00967C 81               [ 4] 2735 	ret
+                           0008A3  2736 	Fstm8s_tim1$TI2_Config$0$0 ==.
+                           0008A3  2737 	C$stm8s_tim1.c$2215$1_0$601 ==.
+                                   2738 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2215: static void TI2_Config(uint8_t TIM1_ICPolarity,
+                                   2739 ;	-----------------------------------------
+                                   2740 ;	 function TI2_Config
+                                   2741 ;	-----------------------------------------
+      00967D                       2742 _TI2_Config:
+      00967D 88               [ 1] 2743 	push	a
+                           0008A4  2744 	C$stm8s_tim1.c$2220$1_0$601 ==.
+                                   2745 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2220: TIM1->CCER1 &=  (uint8_t)(~TIM1_CCER1_CC2E);
+      00967E 72 19 52 5C      [ 1] 2746 	bres	21084, #4
+                           0008A8  2747 	C$stm8s_tim1.c$2223$1_0$601 ==.
+                                   2748 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2223: TIM1->CCMR2  = (uint8_t)((uint8_t)(TIM1->CCMR2 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF ))) 
+      009682 C6 52 59         [ 1] 2749 	ld	a, 0x5259
+      009685 A4 0C            [ 1] 2750 	and	a, #0x0c
+      009687 6B 01            [ 1] 2751 	ld	(0x01, sp), a
+                           0008AF  2752 	C$stm8s_tim1.c$2224$1_0$601 ==.
+                                   2753 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2224: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
+      009689 7B 06            [ 1] 2754 	ld	a, (0x06, sp)
+      00968B 4E               [ 1] 2755 	swap	a
+      00968C A4 F0            [ 1] 2756 	and	a, #0xf0
+      00968E 1A 05            [ 1] 2757 	or	a, (0x05, sp)
+      009690 1A 01            [ 1] 2758 	or	a, (0x01, sp)
+      009692 C7 52 59         [ 1] 2759 	ld	0x5259, a
+                           0008BB  2760 	C$stm8s_tim1.c$2226$1_0$601 ==.
+                                   2761 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2226: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
+      009695 0D 04            [ 1] 2762 	tnz	(0x04, sp)
+      009697 27 06            [ 1] 2763 	jreq	00102$
+                           0008BF  2764 	C$stm8s_tim1.c$2228$2_0$602 ==.
+                                   2765 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2228: TIM1->CCER1 |= TIM1_CCER1_CC2P;
+      009699 72 1A 52 5C      [ 1] 2766 	bset	21084, #5
+      00969D 20 04            [ 2] 2767 	jra	00103$
+      00969F                       2768 00102$:
+                           0008C5  2769 	C$stm8s_tim1.c$2232$2_0$603 ==.
+                                   2770 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2232: TIM1->CCER1 &= (uint8_t)(~TIM1_CCER1_CC2P);
+      00969F 72 1B 52 5C      [ 1] 2771 	bres	21084, #5
+      0096A3                       2772 00103$:
+                           0008C9  2773 	C$stm8s_tim1.c$2235$1_0$601 ==.
+                                   2774 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2235: TIM1->CCER1 |=  TIM1_CCER1_CC2E;
+      0096A3 72 18 52 5C      [ 1] 2775 	bset	21084, #4
+                           0008CD  2776 	C$stm8s_tim1.c$2236$1_0$601 ==.
+                                   2777 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2236: }
+      0096A7 84               [ 1] 2778 	pop	a
+                           0008CE  2779 	C$stm8s_tim1.c$2236$1_0$601 ==.
+                           0008CE  2780 	XFstm8s_tim1$TI2_Config$0$0 ==.
+      0096A8 81               [ 4] 2781 	ret
+                           0008CF  2782 	Fstm8s_tim1$TI3_Config$0$0 ==.
+                           0008CF  2783 	C$stm8s_tim1.c$2254$1_0$605 ==.
+                                   2784 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2254: static void TI3_Config(uint8_t TIM1_ICPolarity,
+                                   2785 ;	-----------------------------------------
+                                   2786 ;	 function TI3_Config
+                                   2787 ;	-----------------------------------------
+      0096A9                       2788 _TI3_Config:
+      0096A9 88               [ 1] 2789 	push	a
+                           0008D0  2790 	C$stm8s_tim1.c$2259$1_0$605 ==.
+                                   2791 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2259: TIM1->CCER2 &=  (uint8_t)(~TIM1_CCER2_CC3E);
+      0096AA C6 52 5D         [ 1] 2792 	ld	a, 0x525d
+      0096AD A4 FE            [ 1] 2793 	and	a, #0xfe
+      0096AF C7 52 5D         [ 1] 2794 	ld	0x525d, a
+                           0008D8  2795 	C$stm8s_tim1.c$2262$1_0$605 ==.
+                                   2796 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2262: TIM1->CCMR3 = (uint8_t)((uint8_t)(TIM1->CCMR3 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF))) 
+      0096B2 C6 52 5A         [ 1] 2797 	ld	a, 0x525a
+      0096B5 A4 0C            [ 1] 2798 	and	a, #0x0c
+      0096B7 6B 01            [ 1] 2799 	ld	(0x01, sp), a
+                           0008DF  2800 	C$stm8s_tim1.c$2263$1_0$605 ==.
+                                   2801 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2263: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
+      0096B9 7B 06            [ 1] 2802 	ld	a, (0x06, sp)
+      0096BB 4E               [ 1] 2803 	swap	a
+      0096BC A4 F0            [ 1] 2804 	and	a, #0xf0
+      0096BE 1A 05            [ 1] 2805 	or	a, (0x05, sp)
+      0096C0 1A 01            [ 1] 2806 	or	a, (0x01, sp)
+      0096C2 C7 52 5A         [ 1] 2807 	ld	0x525a, a
+                           0008EB  2808 	C$stm8s_tim1.c$2266$1_0$605 ==.
+                                   2809 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2266: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
+      0096C5 0D 04            [ 1] 2810 	tnz	(0x04, sp)
+      0096C7 27 06            [ 1] 2811 	jreq	00102$
+                           0008EF  2812 	C$stm8s_tim1.c$2268$2_0$606 ==.
+                                   2813 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2268: TIM1->CCER2 |= TIM1_CCER2_CC3P;
+      0096C9 72 12 52 5D      [ 1] 2814 	bset	21085, #1
+      0096CD 20 04            [ 2] 2815 	jra	00103$
+      0096CF                       2816 00102$:
+                           0008F5  2817 	C$stm8s_tim1.c$2272$2_0$607 ==.
+                                   2818 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2272: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC3P);
+      0096CF 72 13 52 5D      [ 1] 2819 	bres	21085, #1
+      0096D3                       2820 00103$:
+                           0008F9  2821 	C$stm8s_tim1.c$2275$1_0$605 ==.
+                                   2822 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2275: TIM1->CCER2 |=  TIM1_CCER2_CC3E;
+      0096D3 72 10 52 5D      [ 1] 2823 	bset	21085, #0
+                           0008FD  2824 	C$stm8s_tim1.c$2276$1_0$605 ==.
+                                   2825 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2276: }
+      0096D7 84               [ 1] 2826 	pop	a
+                           0008FE  2827 	C$stm8s_tim1.c$2276$1_0$605 ==.
+                           0008FE  2828 	XFstm8s_tim1$TI3_Config$0$0 ==.
+      0096D8 81               [ 4] 2829 	ret
+                           0008FF  2830 	Fstm8s_tim1$TI4_Config$0$0 ==.
+                           0008FF  2831 	C$stm8s_tim1.c$2294$1_0$609 ==.
+                                   2832 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2294: static void TI4_Config(uint8_t TIM1_ICPolarity,
+                                   2833 ;	-----------------------------------------
+                                   2834 ;	 function TI4_Config
+                                   2835 ;	-----------------------------------------
+      0096D9                       2836 _TI4_Config:
+      0096D9 88               [ 1] 2837 	push	a
+                           000900  2838 	C$stm8s_tim1.c$2299$1_0$609 ==.
+                                   2839 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2299: TIM1->CCER2 &=  (uint8_t)(~TIM1_CCER2_CC4E);
+      0096DA 72 19 52 5D      [ 1] 2840 	bres	21085, #4
+                           000904  2841 	C$stm8s_tim1.c$2302$1_0$609 ==.
+                                   2842 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2302: TIM1->CCMR4 = (uint8_t)((uint8_t)(TIM1->CCMR4 & (uint8_t)(~(uint8_t)( TIM1_CCMR_CCxS | TIM1_CCMR_ICxF )))
+      0096DE C6 52 5B         [ 1] 2843 	ld	a, 0x525b
+      0096E1 A4 0C            [ 1] 2844 	and	a, #0x0c
+      0096E3 6B 01            [ 1] 2845 	ld	(0x01, sp), a
+                           00090B  2846 	C$stm8s_tim1.c$2303$1_0$609 ==.
+                                   2847 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2303: | (uint8_t)(( (TIM1_ICSelection)) | ((uint8_t)( TIM1_ICFilter << 4))));
+      0096E5 7B 06            [ 1] 2848 	ld	a, (0x06, sp)
+      0096E7 4E               [ 1] 2849 	swap	a
+      0096E8 A4 F0            [ 1] 2850 	and	a, #0xf0
+      0096EA 1A 05            [ 1] 2851 	or	a, (0x05, sp)
+      0096EC 1A 01            [ 1] 2852 	or	a, (0x01, sp)
+      0096EE C7 52 5B         [ 1] 2853 	ld	0x525b, a
+                           000917  2854 	C$stm8s_tim1.c$2306$1_0$609 ==.
+                                   2855 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2306: if (TIM1_ICPolarity != TIM1_ICPOLARITY_RISING)
+      0096F1 0D 04            [ 1] 2856 	tnz	(0x04, sp)
+      0096F3 27 06            [ 1] 2857 	jreq	00102$
+                           00091B  2858 	C$stm8s_tim1.c$2308$2_0$610 ==.
+                                   2859 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2308: TIM1->CCER2 |= TIM1_CCER2_CC4P;
+      0096F5 72 1A 52 5D      [ 1] 2860 	bset	21085, #5
+      0096F9 20 04            [ 2] 2861 	jra	00103$
+      0096FB                       2862 00102$:
+                           000921  2863 	C$stm8s_tim1.c$2312$2_0$611 ==.
+                                   2864 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2312: TIM1->CCER2 &= (uint8_t)(~TIM1_CCER2_CC4P);
+      0096FB 72 1B 52 5D      [ 1] 2865 	bres	21085, #5
+      0096FF                       2866 00103$:
+                           000925  2867 	C$stm8s_tim1.c$2316$1_0$609 ==.
+                                   2868 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2316: TIM1->CCER2 |=  TIM1_CCER2_CC4E;
+      0096FF 72 18 52 5D      [ 1] 2869 	bset	21085, #4
+                           000929  2870 	C$stm8s_tim1.c$2317$1_0$609 ==.
+                                   2871 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.c: 2317: }
+      009703 84               [ 1] 2872 	pop	a
+                           00092A  2873 	C$stm8s_tim1.c$2317$1_0$609 ==.
+                           00092A  2874 	XFstm8s_tim1$TI4_Config$0$0 ==.
+      009704 81               [ 4] 2875 	ret
+                                   2876 	.area CODE
+                                   2877 	.area CONST
+                                   2878 	.area INITIALIZER
+                                   2879 	.area CABS (ABS)

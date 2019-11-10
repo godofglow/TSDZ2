@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_tim3
 	.optsdcc -mstm8
@@ -160,7 +160,9 @@ _TIM3_TimeBaseInit:
 	C$stm8s_tim3.c$88$1_0$350 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 88: TIM3->ARRH = (uint8_t)(TIM3_Period >> 8);
 	ld	a, (0x06, sp)
+	ld	(0x02, sp), a
 	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	ld	0x532b, a
 	C$stm8s_tim3.c$89$1_0$350 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 89: TIM3->ARRL = (uint8_t)(TIM3_Period);
@@ -233,14 +235,14 @@ _TIM3_OC2Init:
 	C$stm8s_tim3.c$145$1_0$354 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 145: TIM3->CCER1 |= (uint8_t)((uint8_t)(TIM3_OutputState  & TIM3_CCER1_CC2E   ) | (uint8_t)(TIM3_OCPolarity   & TIM3_CCER1_CC2P ));
 	ld	a, 0x5327
-	ld	(0x02, sp), a
+	ld	(0x01, sp), a
 	ld	a, (0x06, sp)
 	and	a, #0x10
-	ld	(0x01, sp), a
+	ld	(0x02, sp), a
 	ld	a, (0x09, sp)
 	and	a, #0x20
-	or	a, (0x01, sp)
 	or	a, (0x02, sp)
+	or	a, (0x01, sp)
 	ld	0x5327, a
 	C$stm8s_tim3.c$149$1_0$354 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 149: TIM3->CCMR2 = (uint8_t)((uint8_t)(TIM3->CCMR2 & (uint8_t)(~TIM3_CCMR_OCM)) | (uint8_t)TIM3_OCMode);
@@ -330,12 +332,12 @@ _TIM3_PWMIConfig:
 	C$stm8s_tim3.c$228$2_0$361 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 228: icpolarity = (uint8_t)TIM3_ICPOLARITY_FALLING;
 	ld	a, #0x44
-	ld	(0x02, sp), a
+	ld	(0x01, sp), a
 	jra	00103$
 00102$:
 	C$stm8s_tim3.c$232$2_0$362 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 232: icpolarity = (uint8_t)TIM3_ICPOLARITY_RISING;
-	clr	(0x02, sp)
+	clr	(0x01, sp)
 00103$:
 	C$stm8s_tim3.c$236$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 236: if (TIM3_ICSelection == TIM3_ICSELECTION_DIRECTTI)
@@ -345,13 +347,13 @@ _TIM3_PWMIConfig:
 	C$stm8s_tim3.c$238$2_0$363 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 238: icselection = (uint8_t)TIM3_ICSELECTION_INDIRECTTI;
 	ld	a, #0x02
-	ld	(0x01, sp), a
+	ld	(0x02, sp), a
 	jra	00106$
 00105$:
 	C$stm8s_tim3.c$242$2_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 242: icselection = (uint8_t)TIM3_ICSELECTION_DIRECTTI;
 	ld	a, #0x01
-	ld	(0x01, sp), a
+	ld	(0x02, sp), a
 00106$:
 	C$stm8s_tim3.c$245$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 245: if (TIM3_Channel != TIM3_CHANNEL_2)
@@ -378,9 +380,9 @@ _TIM3_PWMIConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 255: TI2_Config(icpolarity, icselection, TIM3_ICFilter);
 	ld	a, (0x09, sp)
 	push	a
-	ld	a, (0x02, sp)
+	ld	a, (0x03, sp)
 	push	a
-	ld	a, (0x04, sp)
+	ld	a, (0x03, sp)
 	push	a
 	call	_TI2_Config
 	addw	sp, #3
@@ -412,9 +414,9 @@ _TIM3_PWMIConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 270: TI1_Config(icpolarity, icselection, TIM3_ICFilter);
 	ld	a, (0x09, sp)
 	push	a
-	ld	a, (0x02, sp)
+	ld	a, (0x03, sp)
 	push	a
-	ld	a, (0x04, sp)
+	ld	a, (0x03, sp)
 	push	a
 	call	_TI1_Config
 	addw	sp, #3
@@ -856,7 +858,9 @@ _TIM3_SetCounter:
 	C$stm8s_tim3.c$704$1_0$428 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 704: TIM3->CNTRH = (uint8_t)(Counter >> 8);
 	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
 	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	ld	0x5328, a
 	C$stm8s_tim3.c$705$1_0$428 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 705: TIM3->CNTRL = (uint8_t)(Counter);
@@ -879,7 +883,9 @@ _TIM3_SetAutoreload:
 	C$stm8s_tim3.c$717$1_0$430 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 717: TIM3->ARRH = (uint8_t)(Autoreload >> 8);
 	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
 	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	ld	0x532b, a
 	C$stm8s_tim3.c$718$1_0$430 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 718: TIM3->ARRL = (uint8_t)(Autoreload);
@@ -902,7 +908,9 @@ _TIM3_SetCompare1:
 	C$stm8s_tim3.c$730$1_0$432 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 730: TIM3->CCR1H = (uint8_t)(Compare1 >> 8);
 	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
 	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	ld	0x532d, a
 	C$stm8s_tim3.c$731$1_0$432 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 731: TIM3->CCR1L = (uint8_t)(Compare1);
@@ -925,7 +933,9 @@ _TIM3_SetCompare2:
 	C$stm8s_tim3.c$743$1_0$434 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 743: TIM3->CCR2H = (uint8_t)(Compare2 >> 8);
 	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
 	clr	(0x01, sp)
+	ld	a, (0x02, sp)
 	ld	0x532f, a
 	C$stm8s_tim3.c$744$1_0$434 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 744: TIM3->CCR2L = (uint8_t)(Compare2);
@@ -994,7 +1004,6 @@ _TIM3_GetCapture1:
 	clr	a
 	C$stm8s_tim3.c$800$1_0$440 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 800: tmpccr1 |= (uint16_t)((uint16_t)tmpccr1h << 8);
-	clrw	y
 	clr	(0x02, sp)
 	pushw	x
 	or	a, (1, sp)
@@ -1031,7 +1040,6 @@ _TIM3_GetCapture2:
 	clr	a
 	C$stm8s_tim3.c$820$1_0$442 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 820: tmpccr2 |= (uint16_t)((uint16_t)tmpccr2h << 8);
-	clrw	y
 	clr	(0x02, sp)
 	pushw	x
 	or	a, (1, sp)
@@ -1064,8 +1072,10 @@ _TIM3_GetCounter:
 	C$stm8s_tim3.c$836$1_0$444 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 836: return (uint16_t)( tmpcntr| (uint16_t)(TIM3->CNTRL));
 	ld	a, 0x5329
+	ld	(0x04, sp), a
 	clr	(0x03, sp)
-	or	a, (0x02, sp)
+	ld	a, (0x02, sp)
+	or	a, (0x04, sp)
 	rlwa	x
 	or	a, (0x03, sp)
 	ld	xh, a
@@ -1097,24 +1107,24 @@ _TIM3_GetPrescaler:
 ;	 function TIM3_GetFlagStatus
 ;	-----------------------------------------
 _TIM3_GetFlagStatus:
-	sub	sp, #5
+	sub	sp, #3
 	C$stm8s_tim3.c$869$1_0$448 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 869: tim3_flag_l = (uint8_t)(TIM3->SR1 & (uint8_t)TIM3_FLAG);
 	ld	a, 0x5322
 	ld	(0x03, sp), a
-	ld	a, (0x09, sp)
+	ld	a, (0x07, sp)
 	and	a, (0x03, sp)
-	ld	(0x05, sp), a
+	ld	(0x01, sp), a
 	C$stm8s_tim3.c$870$1_0$448 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 870: tim3_flag_h = (uint8_t)((uint16_t)TIM3_FLAG >> 8);
-	ld	a, (0x08, sp)
-	clr	(0x01, sp)
-	ld	(0x04, sp), a
+	ld	a, (0x06, sp)
+	ld	(0x03, sp), a
+	clr	(0x02, sp)
 	C$stm8s_tim3.c$872$1_0$448 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 872: if (((tim3_flag_l) | (uint8_t)(TIM3->SR2 & tim3_flag_h)) != (uint8_t)RESET )
 	ld	a, 0x5323
-	and	a, (0x04, sp)
-	or	a, (0x05, sp)
+	and	a, (0x03, sp)
+	or	a, (0x01, sp)
 	jreq	00102$
 	C$stm8s_tim3.c$874$2_0$449 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 874: bitstatus = SET;
@@ -1129,7 +1139,7 @@ _TIM3_GetFlagStatus:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 880: return (FlagStatus)bitstatus;
 	C$stm8s_tim3.c$881$1_0$448 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.c: 881: }
-	addw	sp, #5
+	addw	sp, #3
 	C$stm8s_tim3.c$881$1_0$448 ==.
 	XG$TIM3_GetFlagStatus$0$0 ==.
 	ret

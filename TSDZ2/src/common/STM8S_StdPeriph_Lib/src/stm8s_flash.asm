@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_flash
 	.optsdcc -mstm8
@@ -225,7 +225,7 @@ _FLASH_ReadByte:
 ;	 function FLASH_ProgramWord
 ;	-----------------------------------------
 _FLASH_ProgramWord:
-	sub	sp, #6
+	sub	sp, #4
 	C$stm8s_flash.c$218$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 218: FLASH->CR2 |= FLASH_CR2_WPRG;
 	bset	20571, #6
@@ -234,40 +234,40 @@ _FLASH_ProgramWord:
 	bres	20572, #6
 	C$stm8s_flash.c$222$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 222: *((PointerAttr uint8_t*)(MemoryAddressCast)Address)       = *((uint8_t*)(&Data));
-	ldw	y, (0x0b, sp)
+	ldw	y, (0x09, sp)
 	ldw	x, sp
-	addw	x, #13
-	ldw	(0x03, sp), x
+	addw	x, #11
+	ldw	(0x01, sp), x
 	ld	a, (x)
 	ld	(y), a
 	C$stm8s_flash.c$224$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 224: *(((PointerAttr uint8_t*)(MemoryAddressCast)Address) + 1) = *((uint8_t*)(&Data)+1);
 	ldw	x, y
 	incw	x
-	ldw	(0x01, sp), x
-	ldw	x, (0x03, sp)
-	ld	a, (0x1, x)
+	ldw	(0x03, sp), x
 	ldw	x, (0x01, sp)
+	ld	a, (0x1, x)
+	ldw	x, (0x03, sp)
 	ld	(x), a
 	C$stm8s_flash.c$226$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 226: *(((PointerAttr uint8_t*)(MemoryAddressCast)Address) + 2) = *((uint8_t*)(&Data)+2);
 	ldw	x, y
 	incw	x
 	incw	x
-	ldw	(0x05, sp), x
-	ldw	x, (0x03, sp)
+	ldw	(0x03, sp), x
+	ldw	x, (0x01, sp)
 	ld	a, (0x2, x)
-	ldw	x, (0x05, sp)
+	ldw	x, (0x03, sp)
 	ld	(x), a
 	C$stm8s_flash.c$228$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 228: *(((PointerAttr uint8_t*)(MemoryAddressCast)Address) + 3) = *((uint8_t*)(&Data)+3);
 	addw	y, #0x0003
-	ldw	x, (0x03, sp)
+	ldw	x, (0x01, sp)
 	ld	a, (0x3, x)
 	ld	(y), a
 	C$stm8s_flash.c$229$1_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 229: }
-	addw	sp, #6
+	addw	sp, #4
 	C$stm8s_flash.c$229$1_0$364 ==.
 	XG$FLASH_ProgramWord$0$0 ==.
 	ret
@@ -283,9 +283,7 @@ _FLASH_ProgramOptionByte:
 	bset	20571, #7
 	C$stm8s_flash.c$244$1_0$366 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 244: FLASH->NCR2 &= (uint8_t)(~FLASH_NCR2_NOPT);
-	ld	a, 0x505c
-	and	a, #0x7f
-	ld	0x505c, a
+	bres	20572, #7
 	C$stm8s_flash.c$247$1_0$366 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 247: if(Address == 0x4800)
 	ldw	x, (0x03, sp)
@@ -339,9 +337,7 @@ _FLASH_EraseOptionByte:
 	bset	20571, #7
 	C$stm8s_flash.c$277$1_0$370 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 277: FLASH->NCR2 &= (uint8_t)(~FLASH_NCR2_NOPT);
-	ld	a, 0x505c
-	and	a, #0x7f
-	ld	0x505c, a
+	bres	20572, #7
 	C$stm8s_flash.c$280$1_0$370 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 280: if(Address == 0x4800)
 	ldw	x, (0x03, sp)
@@ -387,10 +383,10 @@ _FLASH_EraseOptionByte:
 ;	 function FLASH_ReadOptionByte
 ;	-----------------------------------------
 _FLASH_ReadOptionByte:
-	sub	sp, #5
+	sub	sp, #2
 	C$stm8s_flash.c$311$1_0$374 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 311: value_optbyte = *((NEAR uint8_t*)Address); /* Read option byte */
-	ldw	x, (0x08, sp)
+	ldw	x, (0x05, sp)
 	ld	a, (x)
 	ld	yl, a
 	C$stm8s_flash.c$312$1_0$374 ==.
@@ -398,7 +394,7 @@ _FLASH_ReadOptionByte:
 	ld	a, (0x1, x)
 	C$stm8s_flash.c$315$1_0$374 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 315: if(Address == 0x4800)
-	ldw	x, (0x08, sp)
+	ldw	x, (0x05, sp)
 	cpw	x, #0x4800
 	jrne	00105$
 	C$stm8s_flash.c$317$2_0$375 ==.
@@ -412,26 +408,32 @@ _FLASH_ReadOptionByte:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 321: if(value_optbyte == (uint8_t)(~value_optbyte_complement))
 	push	a
 	cpl	a
-	ld	(0x02, sp), a
+	ld	(0x03, sp), a
 	ld	a, yl
-	cp	a, (0x02, sp)
+	cp	a, (0x03, sp)
 	pop	a
 	jrne	00102$
 	C$stm8s_flash.c$323$3_0$377 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 323: res_value = (uint16_t)((uint16_t)value_optbyte << 8);
-	clr	(0x04, sp)
+	exg	a, yl
+	ld	(0x02, sp), a
+	exg	a, yl
+	clr	(0x01, sp)
+	exg	a, yl
+	ld	a, (0x02, sp)
+	exg	a, yl
 	exg	a, xl
 	clr	a
 	exg	a, xl
 	C$stm8s_flash.c$324$3_0$377 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 324: res_value = res_value | (uint16_t)value_optbyte_complement;
-	clr	(0x02, sp)
-	pushw	x
-	or	a, (2, sp)
-	popw	x
+	ld	(0x02, sp), a
+	clr	(0x01, sp)
+	ld	a, xl
+	or	a, (0x02, sp)
 	ld	xl, a
 	ld	a, yl
-	or	a, (0x02, sp)
+	or	a, (0x01, sp)
 	ld	xh, a
 	jra	00106$
 00102$:
@@ -443,7 +445,7 @@ _FLASH_ReadOptionByte:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 331: return(res_value);
 	C$stm8s_flash.c$332$1_0$374 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 332: }
-	addw	sp, #5
+	addw	sp, #2
 	C$stm8s_flash.c$332$1_0$374 ==.
 	XG$FLASH_ReadOptionByte$0$0 ==.
 	ret
@@ -684,15 +686,17 @@ _FLASH_EraseBlock:
 	C$stm8s_flash.c$615$2_0$403 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 615: startaddress = FLASH_PROG_START_PHYSICAL_ADDRESS;
 	ldw	x, #0x8000
-	ldw	(0x05, sp), x
-	clr	(0x03, sp)
+	ldw	(0x03, sp), x
+	clrw	x
+	ldw	(0x01, sp), x
 	jra	00103$
 00102$:
 	C$stm8s_flash.c$620$2_0$404 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 620: startaddress = FLASH_DATA_START_PHYSICAL_ADDRESS;
 	ldw	x, #0x4000
-	ldw	(0x05, sp), x
-	clr	(0x03, sp)
+	ldw	(0x03, sp), x
+	clrw	x
+	ldw	(0x01, sp), x
 00103$:
 	C$stm8s_flash.c$628$1_0$402 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 628: pwFlash = (PointerAttr uint32_t *)(MemoryAddressCast)(startaddress + ((uint32_t)BlockNum * FLASH_BLOCK_SIZE));
@@ -704,8 +708,8 @@ _FLASH_EraseBlock:
 	sllw	x
 	sllw	x
 	sllw	x
-	ldw	(0x01, sp), x
-	addw	x, (0x05, sp)
+	ldw	(0x05, sp), x
+	addw	x, (0x03, sp)
 	C$stm8s_flash.c$632$1_0$402 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 632: FLASH->CR2 |= FLASH_CR2_ERASE;
 	bset	20571, #5
@@ -731,30 +735,30 @@ _FLASH_EraseBlock:
 ;	 function FLASH_ProgramBlock
 ;	-----------------------------------------
 _FLASH_ProgramBlock:
-	sub	sp, #16
+	sub	sp, #8
 	C$stm8s_flash.c$665$1_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 665: if(FLASH_MemType == FLASH_MEMTYPE_PROG)
-	ld	a, (0x15, sp)
+	ld	a, (0x0d, sp)
 	cp	a, #0xfd
 	jrne	00102$
 	C$stm8s_flash.c$668$2_0$407 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 668: startaddress = FLASH_PROG_START_PHYSICAL_ADDRESS;
-	clr	(0x0a, sp)
-	ld	a, #0x80
+	ldw	x, #0x8000
+	ldw	(0x03, sp), x
 	clrw	x
-	ldw	(0x07, sp), x
+	ldw	(0x01, sp), x
 	jra	00103$
 00102$:
 	C$stm8s_flash.c$673$2_0$408 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 673: startaddress = FLASH_DATA_START_PHYSICAL_ADDRESS;
-	clr	(0x0a, sp)
-	ld	a, #0x40
+	ldw	x, #0x4000
+	ldw	(0x03, sp), x
 	clrw	x
-	ldw	(0x07, sp), x
+	ldw	(0x01, sp), x
 00103$:
 	C$stm8s_flash.c$677$1_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 677: startaddress = startaddress + ((uint32_t)BlockNum * FLASH_BLOCK_SIZE);
-	ldw	y, (0x13, sp)
+	ldw	y, (0x0b, sp)
 	clrw	x
 	push	a
 	ld	a, #0x07
@@ -763,22 +767,20 @@ _FLASH_ProgramBlock:
 	rlcw	x
 	dec	a
 	jrne	00131$
-	ldw	(0x06, sp), y
+	ldw	(0x08, sp), y
 	pop	a
-	ld	yh, a
-	exg	a, yl
-	ld	a, (0x0a, sp)
-	exg	a, yl
-	addw	y, (0x05, sp)
+	ldw	y, (0x07, sp)
+	addw	y, (0x03, sp)
 	ld	a, xl
-	adc	a, (0x08, sp)
+	adc	a, (0x02, sp)
 	rlwa	x
-	adc	a, (0x07, sp)
+	adc	a, (0x01, sp)
 	ld	xh, a
-	ldw	(0x0b, sp), x
+	ldw	(0x03, sp), y
+	ldw	(0x01, sp), x
 	C$stm8s_flash.c$680$1_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 680: if(FLASH_ProgMode == FLASH_PROGRAMMODE_STANDARD)
-	tnz	(0x16, sp)
+	tnz	(0x0e, sp)
 	jrne	00105$
 	C$stm8s_flash.c$683$2_0$409 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 683: FLASH->CR2 |= FLASH_CR2_PRG;
@@ -798,28 +800,28 @@ _FLASH_ProgramBlock:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 694: for(Count = 0; Count < FLASH_BLOCK_SIZE; Count++)
 00114$:
 	clrw	x
-	ldw	(0x0f, sp), x
+	ldw	(0x07, sp), x
 00108$:
 	C$stm8s_flash.c$696$3_0$412 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 696: *((PointerAttr uint8_t*) (MemoryAddressCast)startaddress + Count) = ((uint8_t)(Buffer[Count]));
-	ldw	x, y
-	addw	x, (0x0f, sp)
-	ldw	(0x01, sp), x
-	ldw	x, (0x17, sp)
-	addw	x, (0x0f, sp)
+	ldw	x, (0x03, sp)
+	addw	x, (0x07, sp)
+	ldw	(0x05, sp), x
+	ldw	x, (0x0f, sp)
+	addw	x, (0x07, sp)
 	ld	a, (x)
-	ldw	x, (0x01, sp)
+	ldw	x, (0x05, sp)
 	ld	(x), a
 	C$stm8s_flash.c$694$2_0$411 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 694: for(Count = 0; Count < FLASH_BLOCK_SIZE; Count++)
-	ldw	x, (0x0f, sp)
+	ldw	x, (0x07, sp)
 	incw	x
-	ldw	(0x0f, sp), x
+	ldw	(0x07, sp), x
 	cpw	x, #0x0080
 	jrc	00108$
 	C$stm8s_flash.c$698$2_0$406 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_flash.c: 698: }
-	addw	sp, #16
+	addw	sp, #8
 	C$stm8s_flash.c$698$2_0$406 ==.
 	XG$FLASH_ProgramBlock$0$0 ==.
 	ret

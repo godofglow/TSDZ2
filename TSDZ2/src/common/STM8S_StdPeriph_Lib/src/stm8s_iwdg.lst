@@ -1,6 +1,6 @@
                                       1 ;--------------------------------------------------------
                                       2 ; File Created by SDCC : free open source ANSI-C Compiler
-                                      3 ; Version 3.8.0 #10562 (MINGW64)
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
                                       4 ;--------------------------------------------------------
                                       5 	.module stm8s_iwdg
                                       6 	.optsdcc -mstm8

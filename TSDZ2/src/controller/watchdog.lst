@@ -1,0 +1,90 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module watchdog
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _watchdog_init
+                                     12 	.globl _IWDG_Enable
+                                     13 	.globl _IWDG_ReloadCounter
+                                     14 	.globl _IWDG_SetReload
+                                     15 	.globl _IWDG_SetPrescaler
+                                     16 	.globl _IWDG_WriteAccessCmd
+                                     17 ;--------------------------------------------------------
+                                     18 ; ram data
+                                     19 ;--------------------------------------------------------
+                                     20 	.area DATA
+                                     21 ;--------------------------------------------------------
+                                     22 ; ram data
+                                     23 ;--------------------------------------------------------
+                                     24 	.area INITIALIZED
+                                     25 ;--------------------------------------------------------
+                                     26 ; absolute external ram data
+                                     27 ;--------------------------------------------------------
+                                     28 	.area DABS (ABS)
+                                     29 
+                                     30 ; default segment ordering for linker
+                                     31 	.area HOME
+                                     32 	.area GSINIT
+                                     33 	.area GSFINAL
+                                     34 	.area CONST
+                                     35 	.area INITIALIZER
+                                     36 	.area CODE
+                                     37 
+                                     38 ;--------------------------------------------------------
+                                     39 ; global & static initialisations
+                                     40 ;--------------------------------------------------------
+                                     41 	.area HOME
+                                     42 	.area GSINIT
+                                     43 	.area GSFINAL
+                                     44 	.area GSINIT
+                                     45 ;--------------------------------------------------------
+                                     46 ; Home
+                                     47 ;--------------------------------------------------------
+                                     48 	.area HOME
+                                     49 	.area HOME
+                                     50 ;--------------------------------------------------------
+                                     51 ; code
+                                     52 ;--------------------------------------------------------
+                                     53 	.area CODE
+                           000000    54 	G$watchdog_init$0$0 ==.
+                           000000    55 	C$watchdog.c$17$0_0$346 ==.
+                                     56 ;	watchdog.c: 17: void watchdog_init(void)
+                                     57 ;	-----------------------------------------
+                                     58 ;	 function watchdog_init
+                                     59 ;	-----------------------------------------
+      000000                         60 _watchdog_init:
+                           000000    61 	C$watchdog.c$19$1_0$346 ==.
+                                     62 ;	watchdog.c: 19: IWDG_Enable();
+      000000 CDr00r00         [ 4]   63 	call	_IWDG_Enable
+                           000003    64 	C$watchdog.c$20$1_0$346 ==.
+                                     65 ;	watchdog.c: 20: IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
+      000003 4B 55            [ 1]   66 	push	#0x55
+      000005 CDr00r00         [ 4]   67 	call	_IWDG_WriteAccessCmd
+      000008 84               [ 1]   68 	pop	a
+                           000009    69 	C$watchdog.c$21$1_0$346 ==.
+                                     70 ;	watchdog.c: 21: IWDG_SetPrescaler(IWDG_Prescaler_4);
+      000009 4B 00            [ 1]   71 	push	#0x00
+      00000B CDr00r00         [ 4]   72 	call	_IWDG_SetPrescaler
+      00000E 84               [ 1]   73 	pop	a
+                           00000F    74 	C$watchdog.c$35$1_0$346 ==.
+                                     75 ;	watchdog.c: 35: IWDG_SetReload(255); // ~16ms
+      00000F 4B FF            [ 1]   76 	push	#0xff
+      000011 CDr00r00         [ 4]   77 	call	_IWDG_SetReload
+      000014 84               [ 1]   78 	pop	a
+                           000015    79 	C$watchdog.c$36$1_0$346 ==.
+                                     80 ;	watchdog.c: 36: IWDG_ReloadCounter();
+      000015 CDr00r00         [ 4]   81 	call	_IWDG_ReloadCounter
+                           000018    82 	C$watchdog.c$37$1_0$346 ==.
+                                     83 ;	watchdog.c: 37: }
+                           000018    84 	C$watchdog.c$37$1_0$346 ==.
+                           000018    85 	XG$watchdog_init$0$0 ==.
+      000018 81               [ 4]   86 	ret
+                                     87 	.area CODE
+                                     88 	.area CONST
+                                     89 	.area INITIALIZER
+                                     90 	.area CABS (ABS)

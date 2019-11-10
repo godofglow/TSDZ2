@@ -13,187 +13,187 @@ A GSINIT size 0 flags 0 addr 0
 A GSFINAL size 0 flags 0 addr 0
 A CONST size 0 flags 0 addr 0
 A INITIALIZER size 0 flags 0 addr 0
-A CODE size FC flags 0 addr 0
+A CODE size FA flags 0 addr 0
 S C$stm8s_exti.c$53$0_0$346 Def000000
 S XG$EXTI_DeInit$0$0 Def000008
 S C$stm8s_exti.c$70$1_0$348 Def000009
 S C$stm8s_exti.c$55$1_0$346 Def000000
-S XG$EXTI_SetTLISensitivity$0$0 Def0000AA
+S XG$EXTI_SetTLISensitivity$0$0 Def0000A8
 S C$stm8s_exti.c$56$1_0$346 Def000004
-S C$stm8s_exti.c$80$2_0$349 Def000027
+S C$stm8s_exti.c$80$2_0$349 Def000026
 S C$stm8s_exti.c$57$1_0$346 Def000008
-S C$stm8s_exti.c$90$2_0$349 Def00006A
-S C$stm8s_exti.c$81$2_0$349 Def00002F
-S C$stm8s_exti.c$91$2_0$349 Def00006C
-S C$stm8s_exti.c$82$2_0$349 Def000037
-S C$stm8s_exti.c$92$2_0$349 Def00006C
-S C$stm8s_exti.c$83$2_0$349 Def00003A
-S C$stm8s_exti.c$93$2_0$349 Def000074
-S C$stm8s_exti.c$84$2_0$349 Def00003A
-S C$stm8s_exti.c$77$1_0$348 Def00000B
-S C$stm8s_exti.c$94$2_0$349 Def000085
-S C$stm8s_exti.c$85$2_0$349 Def000042
-S C$stm8s_exti.c$95$2_0$349 Def000087
-S C$stm8s_exti.c$86$2_0$349 Def000050
-S C$stm8s_exti.c$96$2_0$349 Def000087
-S C$stm8s_exti.c$87$2_0$349 Def000053
-S C$stm8s_exti.c$97$2_0$349 Def00008F
-S C$stm8s_exti.c$88$2_0$349 Def000053
-S C$stm8s_exti.c$79$2_0$349 Def000027
-S C$stm8s_exti.c$89$2_0$349 Def00005B
-S G$EXTI_GetExtIntSensitivity$0$0 Def0000AB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$110 Def000034
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$120 Def00003D
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$130 Def00004D
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$121 Def00003F
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$103 Def000027
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$212 Def0000A2
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$140 Def000056
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$113 Def000037
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$104 Def00002A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$240 Def0000B8
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$213 Def0000A5
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$150 Def000067
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$141 Def000058
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$105 Def00002C
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$304 Def0000F0
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$241 Def0000BA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$232 Def0000AC
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$214 Def0000A7
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$160 Def00006F
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$133 Def000050
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$124 Def000042
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$305 Def0000F3
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$260 Def0000CF
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$242 Def0000BB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$233 Def0000AD
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$170 Def00007F
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$161 Def000071
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$125 Def000045
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$333 Def0000FB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$315 Def0000F5
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$243 Def0000BC
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$234 Def0000AF
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$207 Def00009A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$171 Def000080
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$153 Def00006A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$144 Def00005B
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$126 Def000047
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$108 Def00002F
+S C$stm8s_exti.c$90$2_0$349 Def000069
+S C$stm8s_exti.c$81$2_0$349 Def00002E
+S C$stm8s_exti.c$91$2_0$349 Def00006B
+S C$stm8s_exti.c$82$2_0$349 Def000036
+S C$stm8s_exti.c$92$2_0$349 Def00006B
+S C$stm8s_exti.c$83$2_0$349 Def000039
+S C$stm8s_exti.c$93$2_0$349 Def000073
+S C$stm8s_exti.c$84$2_0$349 Def000039
+S C$stm8s_exti.c$77$1_0$348 Def00000A
+S C$stm8s_exti.c$94$2_0$349 Def000084
+S C$stm8s_exti.c$85$2_0$349 Def000041
+S C$stm8s_exti.c$95$2_0$349 Def000086
+S C$stm8s_exti.c$86$2_0$349 Def00004F
+S C$stm8s_exti.c$96$2_0$349 Def000086
+S C$stm8s_exti.c$87$2_0$349 Def000052
+S C$stm8s_exti.c$97$2_0$349 Def00008E
+S C$stm8s_exti.c$88$2_0$349 Def000052
+S C$stm8s_exti.c$79$2_0$349 Def000026
+S C$stm8s_exti.c$89$2_0$349 Def00005A
+S G$EXTI_GetExtIntSensitivity$0$0 Def0000A9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$110 Def000033
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$120 Def00003C
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$130 Def00004C
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$121 Def00003E
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$103 Def000026
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$212 Def0000A0
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$140 Def000055
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$113 Def000036
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$104 Def000029
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$240 Def0000B6
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$213 Def0000A3
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$150 Def000066
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$141 Def000057
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$105 Def00002B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$304 Def0000EE
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$241 Def0000B8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$232 Def0000AA
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$214 Def0000A5
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$160 Def00006E
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$133 Def00004F
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$124 Def000041
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$305 Def0000F1
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$260 Def0000CD
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$242 Def0000B9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$233 Def0000AB
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$170 Def00007E
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$161 Def000070
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$125 Def000044
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$333 Def0000F9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$315 Def0000F3
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$243 Def0000BA
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$234 Def0000AD
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$207 Def000098
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$171 Def00007F
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$153 Def000069
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$144 Def00005A
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$126 Def000046
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$108 Def00002E
 S G$EXTI_SetExtIntSensitivity$0$0 Def000009
-S _EXTI_GetExtIntSensitivity Def0000AB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$325 Def0000F6
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$280 Def0000DF
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$244 Def0000BF
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$235 Def0000B1
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$208 Def00009D
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$181 Def000087
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$172 Def000082
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$145 Def00005E
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$127 Def000049
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$109 Def000032
-S G$EXTI_GetTLISensitivity$0$0 Def0000F6
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$326 Def0000F9
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$290 Def0000E4
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$281 Def0000E0
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$272 Def0000D8
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$236 Def0000B2
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$209 Def00009F
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$182 Def00008A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$164 Def000074
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$146 Def000060
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$128 Def00004A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$119 Def00003A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$291 Def0000E7
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$237 Def0000B4
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$219 Def0000AA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$183 Def00008C
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$165 Def000077
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$147 Def000062
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$129 Def00004B
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$292 Def0000E9
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$256 Def0000CA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$229 Def0000AB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$175 Def000085
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$166 Def000079
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$148 Def000063
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$139 Def000053
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$293 Def0000EA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$284 Def0000E2
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$266 Def0000D1
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$257 Def0000CD
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$239 Def0000B7
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$194 Def000097
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$167 Def00007B
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$149 Def000065
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$294 Def0000EC
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$267 Def0000D4
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$186 Def00008F
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$168 Def00007C
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$159 Def00006C
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$295 Def0000ED
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$268 Def0000D6
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$187 Def000092
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$169 Def00007E
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$278 Def0000DA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$269 Def0000D7
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$197 Def000099
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$188 Def000094
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$279 Def0000DD
-S C$stm8s_exti.c$111$1_0$351 Def00009A
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$298 Def0000EE
+S _EXTI_GetExtIntSensitivity Def0000A9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$325 Def0000F4
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$280 Def0000DD
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$244 Def0000BD
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$235 Def0000AF
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$208 Def00009B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$181 Def000086
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$172 Def000081
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$145 Def00005D
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$127 Def000048
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$109 Def000031
+S G$EXTI_GetTLISensitivity$0$0 Def0000F4
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$326 Def0000F7
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$290 Def0000E2
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$281 Def0000DE
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$272 Def0000D6
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$236 Def0000B0
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$209 Def00009D
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$182 Def000089
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$164 Def000073
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$146 Def00005F
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$128 Def000049
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$119 Def000039
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$291 Def0000E5
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$237 Def0000B2
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$219 Def0000A8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$183 Def00008B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$165 Def000076
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$147 Def000061
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$129 Def00004A
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$292 Def0000E7
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$256 Def0000C8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$229 Def0000A9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$175 Def000084
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$166 Def000078
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$148 Def000062
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$139 Def000052
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$293 Def0000E8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$284 Def0000E0
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$266 Def0000CF
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$257 Def0000CB
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$239 Def0000B5
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$194 Def000096
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$167 Def00007A
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$149 Def000064
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$294 Def0000EA
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$267 Def0000D2
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$186 Def00008E
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$168 Def00007B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$159 Def00006B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$295 Def0000EB
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$268 Def0000D4
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$187 Def000091
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$169 Def00007D
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$278 Def0000D8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$269 Def0000D5
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$197 Def000097
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$188 Def000093
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$279 Def0000DB
+S C$stm8s_exti.c$111$1_0$351 Def000098
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$298 Def0000EC
 S G$EXTI_DeInit$0$0 Def000000
-S XG$EXTI_GetExtIntSensitivity$0$0 Def0000F5
+S XG$EXTI_GetExtIntSensitivity$0$0 Def0000F3
 S _EXTI_SetExtIntSensitivity Def000009
-S G$EXTI_SetTLISensitivity$0$0 Def00009A
-S _EXTI_GetTLISensitivity Def0000F6
+S G$EXTI_SetTLISensitivity$0$0 Def000098
+S _EXTI_GetTLISensitivity Def0000F4
 S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$70 Def000008
-S C$stm8s_exti.c$101$1_0$348 Def000097
+S C$stm8s_exti.c$101$1_0$348 Def000096
 S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$62 Def000000
-S C$stm8s_exti.c$140$2_0$354 Def0000D8
-S C$stm8s_exti.c$133$1_0$353 Def0000AC
-S C$stm8s_exti.c$117$1_0$351 Def00009A
-S C$stm8s_exti.c$102$1_0$348 Def000099
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$90 Def000019
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$81 Def00000B
-S C$stm8s_exti.c$152$1_0$353 Def0000F5
-S C$stm8s_exti.c$141$2_0$354 Def0000DA
-S C$stm8s_exti.c$118$1_0$351 Def0000A2
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$91 Def00001C
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$82 Def00000D
-S C$stm8s_exti.c$142$2_0$354 Def0000DA
-S C$stm8s_exti.c$126$1_0$353 Def0000AB
-S C$stm8s_exti.c$119$1_0$351 Def0000AA
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$83 Def00000F
+S C$stm8s_exti.c$140$2_0$354 Def0000D6
+S C$stm8s_exti.c$133$1_0$353 Def0000AA
+S C$stm8s_exti.c$117$1_0$351 Def000098
+S C$stm8s_exti.c$102$1_0$348 Def000097
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$90 Def000018
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$81 Def00000A
+S C$stm8s_exti.c$152$1_0$353 Def0000F3
+S C$stm8s_exti.c$141$2_0$354 Def0000D8
+S C$stm8s_exti.c$118$1_0$351 Def0000A0
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$91 Def00001B
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$82 Def00000C
+S C$stm8s_exti.c$142$2_0$354 Def0000D8
+S C$stm8s_exti.c$126$1_0$353 Def0000A9
+S C$stm8s_exti.c$119$1_0$351 Def0000A8
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$83 Def00000E
 S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$65 Def000004
-S C$stm8s_exti.c$154$1_0$353 Def0000F5
-S C$stm8s_exti.c$143$2_0$354 Def0000E2
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$84 Def000011
-S C$stm8s_exti.c$170$1_0$356 Def0000FB
-S C$stm8s_exti.c$155$1_0$353 Def0000F5
-S C$stm8s_exti.c$144$2_0$354 Def0000E4
-S C$stm8s_exti.c$135$2_0$354 Def0000CA
-S C$stm8s_exti.c$162$1_0$356 Def0000F6
-S C$stm8s_exti.c$145$2_0$354 Def0000E4
-S C$stm8s_exti.c$136$2_0$354 Def0000CA
-S C$stm8s_exti.c$128$2_0$353 Def0000AB
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$86 Def000014
-S C$stm8s_exti.c$146$2_0$354 Def0000EE
-S C$stm8s_exti.c$137$2_0$354 Def0000CF
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$87 Def000015
+S C$stm8s_exti.c$154$1_0$353 Def0000F3
+S C$stm8s_exti.c$143$2_0$354 Def0000E0
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$84 Def000010
+S C$stm8s_exti.c$170$1_0$356 Def0000F9
+S C$stm8s_exti.c$155$1_0$353 Def0000F3
+S C$stm8s_exti.c$144$2_0$354 Def0000E2
+S C$stm8s_exti.c$135$2_0$354 Def0000C8
+S C$stm8s_exti.c$162$1_0$356 Def0000F4
+S C$stm8s_exti.c$145$2_0$354 Def0000E2
+S C$stm8s_exti.c$136$2_0$354 Def0000C8
+S C$stm8s_exti.c$128$2_0$353 Def0000A9
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$86 Def000013
+S C$stm8s_exti.c$146$2_0$354 Def0000EC
+S C$stm8s_exti.c$137$2_0$354 Def0000CD
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$87 Def000014
 S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$78 Def000009
-S C$stm8s_exti.c$147$2_0$354 Def0000F0
-S C$stm8s_exti.c$138$2_0$354 Def0000D1
+S C$stm8s_exti.c$147$2_0$354 Def0000EE
+S C$stm8s_exti.c$138$2_0$354 Def0000CF
 S _EXTI_DeInit Def000000
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$88 Def000017
-S C$stm8s_exti.c$148$2_0$354 Def0000F0
-S C$stm8s_exti.c$139$2_0$354 Def0000D1
-S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$89 Def000018
-S XG$EXTI_SetExtIntSensitivity$0$0 Def000099
-S XG$EXTI_GetTLISensitivity$0$0 Def0000FB
-S C$stm8s_exti.c$167$1_0$356 Def0000F6
-S _EXTI_SetTLISensitivity Def00009A
-S C$stm8s_exti.c$169$1_0$356 Def0000FB
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$88 Def000016
+S C$stm8s_exti.c$148$2_0$354 Def0000EE
+S C$stm8s_exti.c$139$2_0$354 Def0000CF
+S A$stm8s_extiSTM8S_StdPeriph_Lib/src/stm8s_exti$89 Def000017
+S XG$EXTI_SetExtIntSensitivity$0$0 Def000097
+S XG$EXTI_GetTLISensitivity$0$0 Def0000F9
+S C$stm8s_exti.c$167$1_0$356 Def0000F4
+S _EXTI_SetTLISensitivity Def000098
+S C$stm8s_exti.c$169$1_0$356 Def0000F9
 A CABS size 0 flags 8 addr 0
 T 00 00 00
 R 00 00 00 09
@@ -201,103 +201,103 @@ T 00 00 00 35 00 50 A0 35 00 50 A1 81
 R 00 00 00 09
 T 00 00 09
 R 00 00 00 09
-T 00 00 09 52 03 7B 06 A1 04 23 03 CC 00 97
-R 00 00 00 09 00 0C 00 09
-T 00 00 14
+T 00 00 09 88 7B 04 A1 04 23 03 CC 00 96
+R 00 00 00 09 00 0B 00 09
+T 00 00 13
 R 00 00 00 09
-T 00 00 14 5F 7B 06 97 58 DE 00 1D FC
+T 00 00 13 5F 7B 04 97 58 DE 00 1C FC
 R 00 00 00 09 10 09 00 09
-T 00 00 1D
+T 00 00 1C
 R 00 00 00 09
-T 00 00 1D 00 27 00 3A
+T 00 00 1C 00 26 00 39
 R 00 00 00 09 00 03 00 09 00 05 00 09
-T 00 00 21 00 53 00 6C
+T 00 00 20 00 52 00 6B
 R 00 00 00 09 00 03 00 09 00 05 00 09
-T 00 00 25 00 87
+T 00 00 24 00 86
 R 00 00 00 09 00 03 00 09
-T 00 00 27
+T 00 00 26
 R 00 00 00 09
-T 00 00 27 C6 50 A0 A4 FC C7 50 A0 C6 50 A0 1A 07
+T 00 00 26 C6 50 A0 A4 FC C7 50 A0 C6 50 A0 1A 05
 R 00 00 00 09
-T 00 00 34 C7 50 A0 CC 00 97
+T 00 00 33 C7 50 A0 CC 00 96
 R 00 00 00 09 00 07 00 09
-T 00 00 3A
+T 00 00 39
 R 00 00 00 09
-T 00 00 3A C6 50 A0 A4 F3 C7 50 A0 C6 50 A0 6B 02
+T 00 00 39 C6 50 A0 A4 F3 C7 50 A0 C6 50 A0 6B 01
 R 00 00 00 09
-T 00 00 47 7B 07 48 48 1A 02 C7 50 A0 CC 00 97
+T 00 00 46 7B 05 48 48 1A 01 C7 50 A0 CC 00 96
 R 00 00 00 09 00 0D 00 09
-T 00 00 53
+T 00 00 52
 R 00 00 00 09
-T 00 00 53 C6 50 A0 A4 CF C7 50 A0 C6 50 A0 6B 01
+T 00 00 52 C6 50 A0 A4 CF C7 50 A0 C6 50 A0 6B 01
 R 00 00 00 09
-T 00 00 60 7B 07 4E A4 F0 1A 01 C7 50 A0 20 2B
+T 00 00 5F 7B 05 4E A4 F0 1A 01 C7 50 A0 20 2B
 R 00 00 00 09
-T 00 00 6C
+T 00 00 6B
 R 00 00 00 09
-T 00 00 6C C6 50 A0 A4 3F C7 50 A0 C6 50 A0 6B 03
+T 00 00 6B C6 50 A0 A4 3F C7 50 A0 C6 50 A0 6B 01
 R 00 00 00 09
-T 00 00 79 7B 07 4E A4 F0 48 48 1A 03 C7 50 A0 20
+T 00 00 78 7B 05 4E A4 F0 48 48 1A 01 C7 50 A0 20
 R 00 00 00 09
-T 00 00 86 10
+T 00 00 85 10
 R 00 00 00 09
-T 00 00 87
+T 00 00 86
 R 00 00 00 09
-T 00 00 87 C6 50 A1 A4 FC C7 50 A1 C6 50 A1 1A 07
+T 00 00 86 C6 50 A1 A4 FC C7 50 A1 C6 50 A1 1A 05
 R 00 00 00 09
-T 00 00 94 C7 50 A1
+T 00 00 93 C7 50 A1
 R 00 00 00 09
-T 00 00 97
+T 00 00 96
 R 00 00 00 09
-T 00 00 97 5B 03 81
+T 00 00 96 84 81
 R 00 00 00 09
-T 00 00 9A
+T 00 00 98
 R 00 00 00 09
-T 00 00 9A C6 50 A1 A4 FB C7 50 A1 C6 50 A1 1A 03
+T 00 00 98 C6 50 A1 A4 FB C7 50 A1 C6 50 A1 1A 03
 R 00 00 00 09
-T 00 00 A7 C7 50 A1 81
+T 00 00 A5 C7 50 A1 81
 R 00 00 00 09
-T 00 00 AB
+T 00 00 A9
 R 00 00 00 09
-T 00 00 AB 4F 88 7B 04 A1 04 84 23 03 CC 00 F5
+T 00 00 A9 4F 88 7B 04 A1 04 84 23 03 CC 00 F3
 R 00 00 00 09 00 0D 00 09
-T 00 00 B7
+T 00 00 B5
 R 00 00 00 09
-T 00 00 B7 5F 7B 03 97 58 DE 00 C0 FC
+T 00 00 B5 5F 7B 03 97 58 DE 00 BE FC
 R 00 00 00 09 10 09 00 09
-T 00 00 C0
+T 00 00 BE
 R 00 00 00 09
-T 00 00 C0 00 CA 00 D1
+T 00 00 BE 00 C8 00 CF
 R 00 00 00 09 00 03 00 09 00 05 00 09
-T 00 00 C4 00 DA 00 E4
+T 00 00 C2 00 D8 00 E2
 R 00 00 00 09 00 03 00 09 00 05 00 09
-T 00 00 C8 00 F0
+T 00 00 C6 00 EE
 R 00 00 00 09 00 03 00 09
-T 00 00 CA
+T 00 00 C8
 R 00 00 00 09
-T 00 00 CA C6 50 A0 A4 03 20 24
+T 00 00 C8 C6 50 A0 A4 03 20 24
 R 00 00 00 09
-T 00 00 D1
+T 00 00 CF
 R 00 00 00 09
-T 00 00 D1 C6 50 A0 A4 0C 44 44 20 1B
+T 00 00 CF C6 50 A0 A4 0C 44 44 20 1B
 R 00 00 00 09
-T 00 00 DA
+T 00 00 D8
 R 00 00 00 09
-T 00 00 DA C6 50 A0 A4 30 4E A4 0F 20 11
+T 00 00 D8 C6 50 A0 A4 30 4E A4 0F 20 11
 R 00 00 00 09
-T 00 00 E4
+T 00 00 E2
 R 00 00 00 09
-T 00 00 E4 C6 50 A0 A4 C0 4E A4 0F 44 44 20 05
+T 00 00 E2 C6 50 A0 A4 C0 4E A4 0F 44 44 20 05
 R 00 00 00 09
-T 00 00 F0
+T 00 00 EE
 R 00 00 00 09
-T 00 00 F0 C6 50 A1 A4 03
+T 00 00 EE C6 50 A1 A4 03
 R 00 00 00 09
-T 00 00 F5
+T 00 00 F3
 R 00 00 00 09
-T 00 00 F5 81
+T 00 00 F3 81
 R 00 00 00 09
-T 00 00 F6
+T 00 00 F4
 R 00 00 00 09
-T 00 00 F6 C6 50 A1 A4 04 81
+T 00 00 F4 C6 50 A1 A4 04 81
 R 00 00 00 09

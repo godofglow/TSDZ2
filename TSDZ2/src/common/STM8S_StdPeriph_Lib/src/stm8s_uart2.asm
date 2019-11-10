@@ -1,6 +1,6 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
-; Version 3.8.0 #10562 (MINGW64)
+; Version 3.9.4 #11422 (MINGW64)
 ;--------------------------------------------------------
 	.module stm8s_uart2
 	.optsdcc -mstm8
@@ -120,14 +120,14 @@ _UART2_DeInit:
 ;	 function UART2_Init
 ;	-----------------------------------------
 _UART2_Init:
-	sub	sp, #35
+	sub	sp, #16
 	C$stm8s_uart2.c$99$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 99: UART2->CR1 &= (uint8_t)(~UART2_CR1_M);
 	bres	21060, #4
 	C$stm8s_uart2.c$101$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 101: UART2->CR1 |= (uint8_t)WordLength; 
 	ld	a, 0x5244
-	or	a, (0x2a, sp)
+	or	a, (0x17, sp)
 	ld	0x5244, a
 	C$stm8s_uart2.c$104$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 104: UART2->CR3 &= (uint8_t)(~UART2_CR3_STOP);
@@ -137,7 +137,7 @@ _UART2_Init:
 	C$stm8s_uart2.c$106$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 106: UART2->CR3 |= (uint8_t)StopBits; 
 	ld	a, 0x5246
-	or	a, (0x2b, sp)
+	or	a, (0x18, sp)
 	ld	0x5246, a
 	C$stm8s_uart2.c$109$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 109: UART2->CR1 &= (uint8_t)(~(UART2_CR1_PCEN | UART2_CR1_PS  ));
@@ -147,7 +147,7 @@ _UART2_Init:
 	C$stm8s_uart2.c$111$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 111: UART2->CR1 |= (uint8_t)Parity;
 	ld	a, 0x5244
-	or	a, (0x2c, sp)
+	or	a, (0x19, sp)
 	ld	0x5244, a
 	C$stm8s_uart2.c$114$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 114: UART2->BRR1 &= (uint8_t)(~UART2_BRR1_DIVM);
@@ -166,38 +166,40 @@ _UART2_Init:
 	C$stm8s_uart2.c$121$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 121: BaudRate_Mantissa    = ((uint32_t)CLK_GetClockFreq() / (BaudRate << 4));
 	call	_CLK_GetClockFreq
-	ldw	(0x07, sp), x
-	ldw	x, (0x26, sp)
-	ldw	(0x01, sp), x
-	ldw	x, (0x28, sp)
+	ldw	(0x0f, sp), x
+	ldw	x, (0x13, sp)
+	ldw	(0x09, sp), x
+	ldw	x, (0x15, sp)
 	ld	a, #0x04
 00124$:
 	sllw	x
-	rlc	(0x02, sp)
-	rlc	(0x01, sp)
+	rlc	(0x0a, sp)
+	rlc	(0x09, sp)
 	dec	a
 	jrne	00124$
-	ldw	(0x03, sp), x
-	pushw	x
-	ldw	x, (0x03, sp)
+	ldw	(0x0b, sp), x
 	pushw	x
 	ldw	x, (0x0b, sp)
 	pushw	x
+	ldw	x, (0x13, sp)
+	pushw	x
 	pushw	y
 	call	__divulong
 	addw	sp, #8
-	ldw	(0x1e, sp), x
-	ldw	(0x1c, sp), y
-	ldw	y, (0x1d, sp)
-	ldw	(0x1d, sp), y
+	ldw	(0x0f, sp), x
+	ldw	(0x0d, sp), y
+	ldw	y, (0x0f, sp)
+	ldw	(0x03, sp), y
+	ldw	y, (0x0d, sp)
+	ldw	(0x01, sp), y
 	C$stm8s_uart2.c$122$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 122: BaudRate_Mantissa100 = (((uint32_t)CLK_GetClockFreq() * 100) / (BaudRate << 4));
 	call	_CLK_GetClockFreq
-	ldw	(0x14, sp), x
-	ldw	(0x12, sp), y
-	ldw	x, (0x14, sp)
+	ldw	(0x0f, sp), x
+	ldw	(0x0d, sp), y
+	ldw	x, (0x0f, sp)
 	pushw	x
-	ldw	x, (0x14, sp)
+	ldw	x, (0x0f, sp)
 	pushw	x
 	push	#0x64
 	clrw	x
@@ -205,23 +207,23 @@ _UART2_Init:
 	push	#0x00
 	call	__mullong
 	addw	sp, #8
-	ldw	(0x0c, sp), x
-	ldw	x, (0x03, sp)
+	ldw	(0x0f, sp), x
+	ldw	x, (0x0b, sp)
 	pushw	x
-	ldw	x, (0x03, sp)
+	ldw	x, (0x0b, sp)
 	pushw	x
-	ldw	x, (0x10, sp)
+	ldw	x, (0x13, sp)
 	pushw	x
 	pushw	y
 	call	__divulong
 	addw	sp, #8
-	ldw	(0x22, sp), x
-	ldw	(0x20, sp), y
+	ldw	(0x07, sp), x
+	ldw	(0x05, sp), y
 	C$stm8s_uart2.c$126$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 126: BRR2_1 = (uint8_t)((uint8_t)(((BaudRate_Mantissa100 - (BaudRate_Mantissa * 100))
-	ldw	x, (0x1e, sp)
+	ldw	x, (0x03, sp)
 	pushw	x
-	ldw	x, (0x1e, sp)
+	ldw	x, (0x03, sp)
 	pushw	x
 	push	#0x64
 	clrw	x
@@ -229,19 +231,19 @@ _UART2_Init:
 	push	#0x00
 	call	__mullong
 	addw	sp, #8
-	ldw	(0x18, sp), x
-	ldw	(0x16, sp), y
-	ldw	x, (0x22, sp)
-	subw	x, (0x18, sp)
-	ldw	(0x10, sp), x
-	ld	a, (0x21, sp)
-	sbc	a, (0x17, sp)
-	ld	(0x0f, sp), a
-	ld	a, (0x20, sp)
-	sbc	a, (0x16, sp)
+	ldw	(0x0b, sp), x
+	ldw	(0x09, sp), y
+	ldw	x, (0x07, sp)
+	subw	x, (0x0b, sp)
+	ldw	(0x0f, sp), x
+	ld	a, (0x06, sp)
+	sbc	a, (0x0a, sp)
 	ld	(0x0e, sp), a
-	ldw	x, (0x10, sp)
-	ldw	y, (0x0e, sp)
+	ld	a, (0x05, sp)
+	sbc	a, (0x09, sp)
+	ld	(0x0d, sp), a
+	ldw	x, (0x0f, sp)
+	ldw	y, (0x0d, sp)
 	ld	a, #0x04
 00126$:
 	sllw	x
@@ -258,21 +260,21 @@ _UART2_Init:
 	addw	sp, #8
 	ld	a, xl
 	and	a, #0x0f
-	ld	(0x1b, sp), a
+	ld	(0x10, sp), a
 	C$stm8s_uart2.c$128$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 128: BRR2_2 = (uint8_t)((BaudRate_Mantissa >> 4) & (uint8_t)0xF0);
-	ldw	x, (0x1e, sp)
+	ldw	x, (0x03, sp)
 	ld	a, #0x10
 	div	x, a
 	ld	a, xl
 	and	a, #0xf0
 	C$stm8s_uart2.c$130$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 130: UART2->BRR2 = (uint8_t)(BRR2_1 | BRR2_2);
-	or	a, (0x1b, sp)
+	or	a, (0x10, sp)
 	ld	0x5243, a
 	C$stm8s_uart2.c$132$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 132: UART2->BRR1 = (uint8_t)BaudRate_Mantissa;           
-	ld	a, (0x1f, sp)
+	ld	a, (0x04, sp)
 	ld	0x5242, a
 	C$stm8s_uart2.c$135$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 135: UART2->CR2 &= (uint8_t)~(UART2_CR2_TEN | UART2_CR2_REN);
@@ -287,14 +289,14 @@ _UART2_Init:
 	C$stm8s_uart2.c$139$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 139: UART2->CR3 |= (uint8_t)((uint8_t)SyncMode & (uint8_t)(UART2_CR3_CPOL | \
 	ld	a, 0x5246
-	ld	(0x1a, sp), a
-	ld	a, (0x2d, sp)
+	ld	(0x10, sp), a
+	ld	a, (0x1a, sp)
 	and	a, #0x07
-	or	a, (0x1a, sp)
+	or	a, (0x10, sp)
 	ld	0x5246, a
 	C$stm8s_uart2.c$142$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 142: if ((uint8_t)(Mode & UART2_MODE_TX_ENABLE))
-	ld	a, (0x2e, sp)
+	ld	a, (0x1b, sp)
 	bcp	a, #0x04
 	jreq	00102$
 	C$stm8s_uart2.c$145$2_0$349 ==.
@@ -308,7 +310,7 @@ _UART2_Init:
 00103$:
 	C$stm8s_uart2.c$152$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 152: if ((uint8_t)(Mode & UART2_MODE_RX_ENABLE))
-	ld	a, (0x2e, sp)
+	ld	a, (0x1b, sp)
 	bcp	a, #0x08
 	jreq	00105$
 	C$stm8s_uart2.c$155$2_0$351 ==.
@@ -322,7 +324,7 @@ _UART2_Init:
 00106$:
 	C$stm8s_uart2.c$164$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 164: if ((uint8_t)(SyncMode & UART2_SYNCMODE_CLOCK_DISABLE))
-	tnz	(0x2d, sp)
+	tnz	(0x1a, sp)
 	jrpl	00108$
 	C$stm8s_uart2.c$167$2_0$353 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 167: UART2->CR3 &= (uint8_t)(~UART2_CR3_CKEN); 
@@ -332,15 +334,15 @@ _UART2_Init:
 	C$stm8s_uart2.c$171$2_0$354 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 171: UART2->CR3 |= (uint8_t)((uint8_t)SyncMode & UART2_CR3_CKEN);
 	ld	a, 0x5246
-	ld	(0x09, sp), a
-	ld	a, (0x2d, sp)
+	ld	(0x10, sp), a
+	ld	a, (0x1a, sp)
 	and	a, #0x08
-	or	a, (0x09, sp)
+	or	a, (0x10, sp)
 	ld	0x5246, a
 00110$:
 	C$stm8s_uart2.c$173$1_0$348 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 173: }
-	addw	sp, #35
+	addw	sp, #16
 	C$stm8s_uart2.c$173$1_0$348 ==.
 	XG$UART2_Init$0$0 ==.
 	ret
@@ -376,29 +378,29 @@ _UART2_Cmd:
 ;	 function UART2_ITConfig
 ;	-----------------------------------------
 _UART2_ITConfig:
-	sub	sp, #5
+	sub	sp, #2
 	C$stm8s_uart2.c$219$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 219: uartreg = (uint8_t)((uint16_t)UART2_IT >> 0x08);
-	ld	a, (0x08, sp)
+	ld	a, (0x05, sp)
 	ld	xl, a
 	C$stm8s_uart2.c$222$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 222: itpos = (uint8_t)((uint8_t)1 << (uint8_t)((uint8_t)UART2_IT & (uint8_t)0x0F));
-	ld	a, (0x09, sp)
+	ld	a, (0x06, sp)
 	and	a, #0x0f
 	push	a
 	ld	a, #0x01
-	ld	(0x06, sp), a
+	ld	(0x02, sp), a
 	pop	a
 	tnz	a
 	jreq	00153$
 00152$:
-	sll	(0x05, sp)
+	sll	(0x01, sp)
 	dec	a
 	jrne	00152$
 00153$:
 	C$stm8s_uart2.c$224$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 224: if (NewState != DISABLE)
-	tnz	(0x0a, sp)
+	tnz	(0x07, sp)
 	jreq	00120$
 	C$stm8s_uart2.c$227$2_0$361 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 227: if (uartreg == 0x01)
@@ -408,7 +410,7 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$229$3_0$362 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 229: UART2->CR1 |= itpos;
 	ld	a, 0x5244
-	or	a, (0x05, sp)
+	or	a, (0x01, sp)
 	ld	0x5244, a
 	jp	00122$
 00108$:
@@ -420,7 +422,7 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$233$3_0$363 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 233: UART2->CR2 |= itpos;
 	ld	a, 0x5245
-	or	a, (0x05, sp)
+	or	a, (0x01, sp)
 	ld	0x5245, a
 	jp	00122$
 00105$:
@@ -432,14 +434,14 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$237$3_0$364 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 237: UART2->CR4 |= itpos;
 	ld	a, 0x5247
-	or	a, (0x05, sp)
+	or	a, (0x01, sp)
 	ld	0x5247, a
 	jra	00122$
 00102$:
 	C$stm8s_uart2.c$241$3_0$365 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 241: UART2->CR6 |= itpos;
 	ld	a, 0x5249
-	or	a, (0x05, sp)
+	or	a, (0x01, sp)
 	ld	0x5249, a
 	jra	00122$
 00120$:
@@ -451,10 +453,10 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$249$3_0$367 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 249: UART2->CR1 &= (uint8_t)(~itpos);
 	ld	a, 0x5244
-	ld	(0x04, sp), a
-	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x01, sp)
 	cpl	a
-	and	a, (0x04, sp)
+	and	a, (0x02, sp)
 	ld	0x5244, a
 	jra	00122$
 00117$:
@@ -466,10 +468,10 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$253$3_0$368 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 253: UART2->CR2 &= (uint8_t)(~itpos);
 	ld	a, 0x5245
-	ld	(0x03, sp), a
-	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x01, sp)
 	cpl	a
-	and	a, (0x03, sp)
+	and	a, (0x02, sp)
 	ld	0x5245, a
 	jra	00122$
 00114$:
@@ -481,10 +483,10 @@ _UART2_ITConfig:
 	C$stm8s_uart2.c$257$3_0$369 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 257: UART2->CR4 &= (uint8_t)(~itpos);
 	ld	a, 0x5247
-	ld	(0x01, sp), a
-	ld	a, (0x05, sp)
+	ld	(0x02, sp), a
+	ld	a, (0x01, sp)
 	cpl	a
-	and	a, (0x01, sp)
+	and	a, (0x02, sp)
 	ld	0x5247, a
 	jra	00122$
 00111$:
@@ -492,14 +494,14 @@ _UART2_ITConfig:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 261: UART2->CR6 &= (uint8_t)(~itpos);
 	ld	a, 0x5249
 	ld	(0x02, sp), a
-	ld	a, (0x05, sp)
+	ld	a, (0x01, sp)
 	cpl	a
 	and	a, (0x02, sp)
 	ld	0x5249, a
 00122$:
 	C$stm8s_uart2.c$264$1_0$360 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 264: }
-	addw	sp, #5
+	addw	sp, #2
 	C$stm8s_uart2.c$264$1_0$360 ==.
 	XG$UART2_ITConfig$0$0 ==.
 	ret
@@ -924,17 +926,17 @@ _UART2_SetPrescaler:
 ;	 function UART2_GetFlagStatus
 ;	-----------------------------------------
 _UART2_GetFlagStatus:
-	sub	sp, #4
+	push	a
 	C$stm8s_uart2.c$614$1_0$426 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 614: if (UART2_FLAG == UART2_FLAG_LBDF)
-	ldw	x, (0x07, sp)
+	ldw	x, (0x04, sp)
 	cpw	x, #0x0210
 	jrne	00121$
 	C$stm8s_uart2.c$616$2_0$427 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 616: if ((UART2->CR4 & (uint8_t)UART2_FLAG) != (uint8_t)0x00)
 	ld	a, 0x5247
 	ld	(0x01, sp), a
-	ld	a, (0x08, sp)
+	ld	a, (0x05, sp)
 	and	a, (0x01, sp)
 	jreq	00102$
 	C$stm8s_uart2.c$619$3_0$428 ==.
@@ -949,15 +951,15 @@ _UART2_GetFlagStatus:
 00121$:
 	C$stm8s_uart2.c$627$1_0$426 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 627: else if (UART2_FLAG == UART2_FLAG_SBK)
-	ldw	x, (0x07, sp)
+	ldw	x, (0x04, sp)
 	cpw	x, #0x0101
 	jrne	00118$
 	C$stm8s_uart2.c$629$2_0$430 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 629: if ((UART2->CR2 & (uint8_t)UART2_FLAG) != (uint8_t)0x00)
 	ld	a, 0x5245
-	ld	(0x02, sp), a
-	ld	a, (0x08, sp)
-	and	a, (0x02, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x05, sp)
+	and	a, (0x01, sp)
 	jreq	00105$
 	C$stm8s_uart2.c$632$3_0$431 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 632: status = SET;
@@ -971,19 +973,19 @@ _UART2_GetFlagStatus:
 00118$:
 	C$stm8s_uart2.c$640$1_0$426 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 640: else if ((UART2_FLAG == UART2_FLAG_LHDF) || (UART2_FLAG == UART2_FLAG_LSF))
-	ldw	x, (0x07, sp)
+	ldw	x, (0x04, sp)
 	cpw	x, #0x0302
 	jreq	00113$
-	ldw	x, (0x07, sp)
+	ldw	x, (0x04, sp)
 	cpw	x, #0x0301
 	jrne	00114$
 00113$:
 	C$stm8s_uart2.c$642$2_0$433 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 642: if ((UART2->CR6 & (uint8_t)UART2_FLAG) != (uint8_t)0x00)
 	ld	a, 0x5249
-	ld	(0x04, sp), a
-	ld	a, (0x08, sp)
-	and	a, (0x04, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x05, sp)
+	and	a, (0x01, sp)
 	jreq	00108$
 	C$stm8s_uart2.c$645$3_0$434 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 645: status = SET;
@@ -998,9 +1000,9 @@ _UART2_GetFlagStatus:
 	C$stm8s_uart2.c$655$2_0$436 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 655: if ((UART2->SR & (uint8_t)UART2_FLAG) != (uint8_t)0x00)
 	ld	a, 0x5240
-	ld	(0x03, sp), a
-	ld	a, (0x08, sp)
-	and	a, (0x03, sp)
+	ld	(0x01, sp), a
+	ld	a, (0x05, sp)
+	and	a, (0x01, sp)
 	jreq	00111$
 	C$stm8s_uart2.c$658$3_0$437 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 658: status = SET;
@@ -1015,7 +1017,7 @@ _UART2_GetFlagStatus:
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 668: return  status;
 	C$stm8s_uart2.c$669$1_0$426 ==.
 ;	../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.c: 669: }
-	addw	sp, #4
+	addw	sp, #1
 	C$stm8s_uart2.c$669$1_0$426 ==.
 	XG$UART2_GetFlagStatus$0$0 ==.
 	ret
