@@ -35,7 +35,9 @@
 #define ENABLE_DEBUG_UART											0
 #define ENABLE_DEBUG_FIRMWARE									0
 //---------------------------------------------------------
-#define ENABLE_ASSIST_LEVEL_EMTB							1
+#define ENABLE_ASSIST_LEVEL_EMTB							0
+#define ENABLE_BOOST							0
+
 //---------------------------------------------------------
 #define CLR_SOFT_START_WHEN_CADENCE_RPM_ZERO	1
 #if CLR_SOFT_START_WHEN_CADENCE_RPM_ZERO

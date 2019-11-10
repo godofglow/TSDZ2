@@ -1092,171 +1092,18 @@ static void uart_receive_package(void)
 			// assist pedal level 2:
 			if(ui8_assist_level == ASSIST_PEDAL_LEVEL2)
 			{
-				// Display down button pressed:
+
+				#if ENABLE_LIGHTS_FROM_OEM
 				if(ui8_rx_buffer[1] & 0x01)
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// mode boost cleared
-						if(!ui8_boost_flag)
-						{
-							// set boost flag
-							ui8_boost_flag = 1;
-
-							if(configuration_variables.ui8_startup_motor_power_boost_feature_enabled == 0)
-								// backlight on: power boost enabled only on display (E05)
-								configuration_variables.ui8_function_code = BOOST_ENABLED_ON_OEM;
-							else
-								// backlight on: power boost disables only on display (E01)
-								configuration_variables.ui8_function_code = BOOST_DISABLED_ON_OEM;
-
-							// clear lights counter
-							ui8_lights_counter = 0;
-						}
-
-						// after some seconds: switch on lights (if enabled) and abort function
-						if(ui8_lights_counter >= DELAY_LIGHTS_ON)
-						{
-							#if ENABLE_LIGHTS_FROM_OEM
-							// set lights flag
-							ui8_lights_flag = 1;
-							#endif
-
-							// clear boost flag
-							ui8_boost_flag = 0;
-						}
-					}
-				}
+					// Display lights enabled: set lights flag
+					ui8_lights_flag = 1;
 				else
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// boost flag active:
-						if(ui8_boost_flag)
-						{
-							// clear boost flag
-							ui8_boost_flag = 0;
-
-							if(configuration_variables.ui8_startup_motor_power_boost_feature_enabled == 0)
-							{
-								// enable power boost function
-								configuration_variables.ui8_startup_motor_power_boost_feature_enabled = 1;
-
-								// power boost function enabled!
-								configuration_variables.ui8_function_code = BOOST_FUNCTION_ENABLED;
-							}
-							else
-							{
-								// disable power boost function
-								configuration_variables.ui8_startup_motor_power_boost_feature_enabled = 0;
-
-								// power boost function disabled!
-								configuration_variables.ui8_function_code = BOOST_FUNCTION_DISABLED;
-							}
-						}
-					}
-					// lights on:
-					else
-					{
-						// clear lights flag
-						ui8_lights_flag = 0;
-					}
-				}
-			}
-			else
-			{
-				// clear boost flag
-				ui8_boost_flag = 0;
+					// Display lights disabled: clear lights flag
+					ui8_lights_flag = 0;
+				#endif
+		
 			}
 
-			#if ENABLE_ASSIST_LEVEL_EMTB
-			//-----------------------------------------------------
-			// ASSIST LEVEL3: ENABLE/DISABLE EMTB FUNCTION
-			//-----------------------------------------------------
-			// assist pedal level 3:
-			if(ui8_assist_level == ASSIST_PEDAL_LEVEL3)
-			{
-				// Display down button pressed:
-				if(ui8_rx_buffer[1] & 0x01)
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// emtb flag cleared
-						if(!ui8_emtb_flag)
-						{
-							// set emtb flag
-							ui8_emtb_flag = 1;
-
-							if(configuration_variables.ui8_emtb_mode == 0)
-								// backlight on: eMTB function enabled only on display (E02)
-								configuration_variables.ui8_function_code = EMTB_ENABLED_ON_OEM;
-							else
-								// backlight on: eMTB function disables only on display (E01)
-								configuration_variables.ui8_function_code = EMTB_DISABLED_ON_OEM;
-
-							// clear lights counter
-							ui8_lights_counter = 0;
-						}
-
-						// after some seconds: switch on lights (if enabled) and abort function
-						if(ui8_lights_counter >= DELAY_LIGHTS_ON)
-						{
-							#if ENABLE_LIGHTS_FROM_OEM
-							// set lights flag
-							ui8_lights_flag = 1;
-							#endif
-
-							// clear emtb flag
-							ui8_emtb_flag = 0;
-						}
-					}
-				}
-				else
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// emtb flag active:
-						if(ui8_emtb_flag)
-						{
-							// clear emtb flag
-							ui8_emtb_flag = 0;
-
-							if(configuration_variables.ui8_emtb_mode == 0)
-							{
-								// enable emtb function
-								configuration_variables.ui8_emtb_mode = 1;
-
-								// emtb function enabled!
-								configuration_variables.ui8_function_code = EMTB_FUNCTION_ENABLED;
-							}
-							else
-							{
-								// disable emtb function
-								configuration_variables.ui8_emtb_mode = 0;
-
-								// emtb function disabled!
-								configuration_variables.ui8_function_code = EMTB_FUNCTION_DISABLED;
-							}
-						}
-					}
-					// lights on:
-					else
-					{
-						// clear lights flag
-						ui8_lights_flag = 0;
-					}
-				}
-			}
-			else
-			{
-				// clear emtb flag
-				ui8_emtb_flag = 0;
-			}
-			#else
 			//-----------------------------------------------------
 			// ASSIST LEVEL3: SWITCH ON/SWITCH OFF LIGHTS
 			//-----------------------------------------------------
@@ -1272,7 +1119,7 @@ static void uart_receive_package(void)
 					ui8_lights_flag = 0;
 				#endif
 			}
-			#endif
+			
 
 			//-----------------------------------------------------
 			// ASSIST LEVEL4: SWITCH ON/SWITCH OFF LIGHTS
@@ -1739,7 +1586,7 @@ static void calc_pedal_force_and_torque(void)
 	Users did report that pedal human power is about 2x more.
 	@casainho had the idea to evaluate the torque sensor peak signal (measuring peak signal every pedal rotation)
 	as being a sinewaveand so the average would be:
-	> [Average value = 0.637 × maximum or peak value, Vpk](https://www.electronics-tutorials.ws/accircuits/average-voltage.html)
+	> [Average value = 0.637 ï¿½ maximum or peak value, Vpk](https://www.electronics-tutorials.ws/accircuits/average-voltage.html)
 	For a quick hack, we can just reduce actual value to 0.637.
 	95.5 * (1/0.637) = 150
 	*/
