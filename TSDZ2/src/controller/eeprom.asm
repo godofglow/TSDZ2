@@ -1524,8 +1524,8 @@ __xinit__array_default_values:
 	.db #0x05	; 5
 	.db #0x0c	; 12
 	.db #0x17	; 23
-	.db #0x23	; 35
-	.db #0x01	; 1
+	.db #0x28	; 40
+	.db #0x00	; 0
 	.db #0x00	; 0
 	.db #0x1c	; 28
 	.db #0x14	; 20

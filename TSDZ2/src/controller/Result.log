@@ -1,0 +1,468 @@
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:22:35
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:22:37
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:39:53
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:39:55
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:49:31
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:49:34
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:49:54
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:49:56
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:59:10
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:59:12
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:59:20
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte ON
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds
+----------------------------------------------------------
+new log session
+date:				11/10/19
+time:				14:59:22
+----------------------------------------------------------
+STVP_CmdLine version 1.6
+
+Verbose ON
+Log activity ON
+Display Progress OFF
+Message box warning if protect option byte OFF
+Loop mode OFF
+Erase device OFF
+Blank check device OFF
+Verify device ON
+
+Configuration:
+BoardName=ST-LINK ST-LINK_ID=0 Device=STM8S105x6 Port=USB ProgMode=SWIM
+
+>>> Filling PROGRAM MEMORY image in computer with Blank Value
+<<< Filling PROGRAM MEMORY image in computer succeeds
+
+>>> Loading file main.ihx in PROGRAM MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Filling DATA MEMORY image in computer with Blank Value
+<<< Filling DATA MEMORY image in computer succeeds
+
+>>> Loading file data.ihx in DATA MEMORY image in computer
+<<< Loading file succeeds
+
+>>> Loading file option_no_prot.ihx in OPTION BYTE image in computer
+<<< Loading file succeeds
+
+>>> Programming PROGRAM MEMORY
+<<< Programming PROGRAM MEMORY succeeds
+
+>>> Verifying PROGRAM MEMORY
+<<< Verifying PROGRAM MEMORY succeeds
+
+>>> Programming DATA MEMORY
+<<< Programming DATA MEMORY succeeds
+
+>>> Verifying DATA MEMORY
+<<< Verifying DATA MEMORY succeeds
+
+>>> Programming OPTION BYTE
+<<< Programming OPTION BYTE succeeds
+
+>>> Verifying OPTION BYTE
+<<< Verify OPTION BYTE succeeds

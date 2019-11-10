@@ -84,7 +84,7 @@
       008050 82 00 00 00             84 	int 0x000000 ; int18
       008054 82 00 00 00             85 	int 0x000000 ; int19
       008058 82 00 00 00             86 	int 0x000000 ; int20
-      00805C 82 00 C6 24             87 	int _UART2_IRQHandler ; int21
+      00805C 82 00 C5 B9             87 	int _UART2_IRQHandler ; int21
                                      88 ;--------------------------------------------------------
                                      89 ; global & static initialisations
                                      90 ;--------------------------------------------------------
@@ -170,16 +170,16 @@
       0082E8 26 E0            [ 1]  170 	jrne	00110$
                            000036   171 	C$main.c$88$1_0$403 ==.
                                     172 ;	main.c: 88: eeprom_init();
-      0082EA CD C9 83         [ 4]  173 	call	_eeprom_init
+      0082EA CD C9 18         [ 4]  173 	call	_eeprom_init
                            000039   174 	C$main.c$91$1_0$403 ==.
                                     175 ;	main.c: 91: eeprom_init_variables();
-      0082ED CD C9 AF         [ 4]  176 	call	_eeprom_init_variables
+      0082ED CD C9 44         [ 4]  176 	call	_eeprom_init_variables
                            00003C   177 	C$main.c$94$1_0$403 ==.
                                     178 ;	main.c: 94: brake_init();
       0082F0 CD B2 1C         [ 4]  179 	call	_brake_init
                            00003F   180 	C$main.c$101$1_0$403 ==.
                                     181 ;	main.c: 101: lights_init();
-      0082F3 CD D1 81         [ 4]  182 	call	_lights_init
+      0082F3 CD D1 16         [ 4]  182 	call	_lights_init
                            000042   183 	C$main.c$104$1_0$403 ==.
                                     184 ;	main.c: 104: uart2_init();
       0082F6 CD A8 59         [ 4]  185 	call	_uart2_init

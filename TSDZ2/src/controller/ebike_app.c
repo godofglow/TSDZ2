@@ -852,6 +852,12 @@ static void uart_receive_package(void)
 					// walk assist level 0
 					configuration_variables.ui8_walk_assist_pwm_duty_cycle = configuration_variables.ui8_walk_assist_pwm_duty_cycle_level[0];
 
+					// street mode wieder an!
+					configuration_variables.ui8_offroad_mode = 0;
+					configuration_variables.ui8_startup_motor_power_boost_feature_enabled = 0;
+					configuration_variables.ui8_emtb_mode = 0;
+					configuration_variables.ui8_function_code = DEFAULT_FUNCTION_ENABLED;
+
 					#if ENABLE_WALK_ASSIST_OFF_DELAY
 					// disable walk assist for level 0
 					ui8_enable_walk_assist = 0;
@@ -883,6 +889,8 @@ static void uart_receive_package(void)
 
 					// walk assist level 2
 					configuration_variables.ui8_walk_assist_pwm_duty_cycle = configuration_variables.ui8_walk_assist_pwm_duty_cycle_level[2];
+
+					
 
 					#if ENABLE_WALK_ASSIST_OFF_DELAY
 					// disable walk assist for level 2
@@ -923,82 +931,16 @@ static void uart_receive_package(void)
 			// assist pedal level 0:
 			if(ui8_assist_level == ASSIST_PEDAL_LEVEL0)
 			{
-				// Display down button pressed:
+				
+				#if ENABLE_LIGHTS_FROM_OEM
 				if(ui8_rx_buffer[1] & 0x01)
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// default flag cleared
-						if(!ui8_default_flag)
-						{
-							// set default flag
-							ui8_default_flag = 1;
-
-							// backlight on: default functions enabled only on display (E02)
-							configuration_variables.ui8_function_code = DEFAULT_ENABLED_ON_OEM;
-
-							// clear lights counter
-							ui8_lights_counter = 0;
-						}
-
-						// after some seconds: switch on lights (if enabled) and abort function
-						if(ui8_lights_counter >= DELAY_LIGHTS_ON)
-						{
-							#if ENABLE_LIGHTS_FROM_OEM
-							// set lights flag
-							ui8_lights_flag = 1;
-							#endif
-
-							// clear default flag
-							ui8_default_flag = 0;
-						}
-					}
-				}
+					// Display lights enabled: set lights flag
+					ui8_lights_flag = 1;
 				else
-				{
-					// lights off:
-					if(!ui8_lights_flag)
-					{
-						// default flag active:
-						if(ui8_default_flag)
-						{
-							// clear default flag
-							ui8_default_flag = 0;
-
-							if(configuration_variables.ui8_street_enabled_on_startup)
-								// enable street mode on startup!
-								configuration_variables.ui8_offroad_mode = 0;
-							else
-								// enable offroad mode on startup!
-								configuration_variables.ui8_offroad_mode = 1;
-								
-							// disable power boost
-							configuration_variables.ui8_startup_motor_power_boost_feature_enabled = 0;
-
-							if(configuration_variables.ui8_emtb_enabled_on_startup)
-								// enable emtb mode on startup!
-								configuration_variables.ui8_emtb_mode = 1;
-							else
-							  // disable emtb mode on startup!
-								configuration_variables.ui8_emtb_mode = 0;								
-
-							// default functions enabled!
-							configuration_variables.ui8_function_code = DEFAULT_FUNCTION_ENABLED;
-						}
-					}
-					// lights on:
-					else
-					{
-						// clear lights flag
-						ui8_lights_flag = 0;
-					}
-				}
-			}
-			else
-			{
-				// clear default flag
-				ui8_default_flag = 0;
+					// Display lights disabled: clear lights flag
+					ui8_lights_flag = 0;
+				#endif
+		
 			}
 
 			//-----------------------------------------------------

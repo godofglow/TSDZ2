@@ -335,7 +335,7 @@
       00AA40 52 02            [ 2]  335 	sub	sp, #2
                            00000E   336 	C$motor.c$518$1_0$427 ==.
                                     337 ;	motor.c: 518: p_configuration_variables = get_configuration_variables();
-      00AA42 CD C6 9E         [ 4]  338 	call	_get_configuration_variables
+      00AA42 CD C6 33         [ 4]  338 	call	_get_configuration_variables
                            000011   339 	C$motor.c$524$1_0$427 ==.
                                     340 ;	motor.c: 524: ADC1->CR2 &= (uint8_t)(~ADC1_CR2_SCAN);
       00AA45 72 13 54 02      [ 1]  341 	bres	21506, #1
@@ -826,7 +826,7 @@
       00ACC7 97               [ 1]  826 	ld	xl, a
       00ACC8 89               [ 2]  827 	pushw	x
       00ACC9 90 89            [ 2]  828 	pushw	y
-      00ACCB CD D5 14         [ 4]  829 	call	__mulint
+      00ACCB CD D4 A9         [ 4]  829 	call	__mulint
       00ACCE 5B 04            [ 2]  830 	addw	sp, #4
       00ACD0 CF 00 01         [ 2]  831 	ldw	_ui16_value+0, x
                            00029F   832 	C$motor.c$764$2_0$457 ==.
@@ -855,7 +855,7 @@
       00ACFB 97               [ 1]  855 	ld	xl, a
       00ACFC 89               [ 2]  856 	pushw	x
       00ACFD 90 89            [ 2]  857 	pushw	y
-      00ACFF CD D5 14         [ 4]  858 	call	__mulint
+      00ACFF CD D4 A9         [ 4]  858 	call	__mulint
       00AD02 5B 04            [ 2]  859 	addw	sp, #4
       00AD04 CF 00 01         [ 2]  860 	ldw	_ui16_value+0, x
                            0002D3   861 	C$motor.c$770$2_0$458 ==.
@@ -896,7 +896,7 @@
       00AD3B 97               [ 1]  896 	ld	xl, a
       00AD3C 89               [ 2]  897 	pushw	x
       00AD3D 90 89            [ 2]  898 	pushw	y
-      00AD3F CD D5 14         [ 4]  899 	call	__mulint
+      00AD3F CD D4 A9         [ 4]  899 	call	__mulint
       00AD42 5B 04            [ 2]  900 	addw	sp, #4
       00AD44 CF 00 01         [ 2]  901 	ldw	_ui16_value+0, x
                            000313   902 	C$motor.c$779$2_0$459 ==.
@@ -925,7 +925,7 @@
       00AD6F 97               [ 1]  925 	ld	xl, a
       00AD70 89               [ 2]  926 	pushw	x
       00AD71 90 89            [ 2]  927 	pushw	y
-      00AD73 CD D5 14         [ 4]  928 	call	__mulint
+      00AD73 CD D4 A9         [ 4]  928 	call	__mulint
       00AD76 5B 04            [ 2]  929 	addw	sp, #4
       00AD78 CF 00 01         [ 2]  930 	ldw	_ui16_value+0, x
                            000347   931 	C$motor.c$785$2_0$460 ==.
@@ -967,7 +967,7 @@
       00ADB1 97               [ 1]  967 	ld	xl, a
       00ADB2 89               [ 2]  968 	pushw	x
       00ADB3 90 89            [ 2]  969 	pushw	y
-      00ADB5 CD D5 14         [ 4]  970 	call	__mulint
+      00ADB5 CD D4 A9         [ 4]  970 	call	__mulint
       00ADB8 5B 04            [ 2]  971 	addw	sp, #4
       00ADBA CF 00 01         [ 2]  972 	ldw	_ui16_value+0, x
                            000389   973 	C$motor.c$794$2_0$461 ==.
@@ -996,7 +996,7 @@
       00ADE5 97               [ 1]  996 	ld	xl, a
       00ADE6 89               [ 2]  997 	pushw	x
       00ADE7 90 89            [ 2]  998 	pushw	y
-      00ADE9 CD D5 14         [ 4]  999 	call	__mulint
+      00ADE9 CD D4 A9         [ 4]  999 	call	__mulint
       00ADEC 5B 04            [ 2] 1000 	addw	sp, #4
       00ADEE CF 00 01         [ 2] 1001 	ldw	_ui16_value+0, x
                            0003BD  1002 	C$motor.c$800$2_0$462 ==.
@@ -1065,7 +1065,7 @@
       00AE4A 93               [ 1] 1065 	ldw	x, y
       00AE4B 5C               [ 1] 1066 	incw	x
       00AE4C CF 01 BE         [ 2] 1067 	ldw	_ui16_counter_adc_battery_current_ramp_up+0, x
-      00AE4F 90 A3 07 A1      [ 2] 1068 	cpw	y, #0x07a1
+      00AE4F 90 A3 03 D0      [ 2] 1068 	cpw	y, #0x03d0
       00AE53 25 17            [ 1] 1069 	jrc	00182$
                            000421  1070 	C$motor.c$822$3_0$464 ==.
                                    1071 ;	motor.c: 822: ui16_counter_adc_battery_current_ramp_up = 0;
@@ -1096,7 +1096,7 @@
       00AE78 93               [ 1] 1096 	ldw	x, y
       00AE79 5C               [ 1] 1097 	incw	x
       00AE7A CF 01 C1         [ 2] 1098 	ldw	_ui16_counter_adc_motor_current_ramp_up+0, x
-      00AE7D 90 A3 07 A1      [ 2] 1099 	cpw	y, #0x07a1
+      00AE7D 90 A3 03 D0      [ 2] 1099 	cpw	y, #0x03d0
       00AE81 25 17            [ 1] 1100 	jrc	00189$
                            00044F  1101 	C$motor.c$839$3_0$467 ==.
                                    1102 ;	motor.c: 839: ui16_counter_adc_motor_current_ramp_up = 0;
@@ -1646,7 +1646,7 @@
       00B089 52 0E            [ 2] 1646 	sub	sp, #14
                            000657  1647 	C$motor.c$1164$1_0$522 ==.
                                    1648 ;	motor.c: 1164: p_configuration_variables = get_configuration_variables();
-      00B08B CD C6 9E         [ 4] 1649 	call	_get_configuration_variables
+      00B08B CD C6 33         [ 4] 1649 	call	_get_configuration_variables
       00B08E 1F 0D            [ 2] 1650 	ldw	(0x0d, sp), x
                            00065C  1651 	C$motor.c$1174$1_0$522 ==.
                                    1652 ;	motor.c: 1174: ui16_temp = ui16_adc_battery_voltage_filtered_10b * ADC10BITS_BATTERY_VOLTAGE_PER_ADC_STEP_X512;
@@ -1654,7 +1654,7 @@
       00B093 3B 01 C8         [ 1] 1654 	push	_ui16_adc_battery_voltage_filtered_10b+0
       00B096 4B 2C            [ 1] 1655 	push	#0x2c
       00B098 4B 00            [ 1] 1656 	push	#0x00
-      00B09A CD D5 14         [ 4] 1657 	call	__mulint
+      00B09A CD D4 A9         [ 4] 1657 	call	__mulint
       00B09D 5B 04            [ 2] 1658 	addw	sp, #4
       00B09F 9E               [ 1] 1659 	ld	a, xh
                            00066C  1660 	C$motor.c$1175$1_0$522 ==.
@@ -1667,7 +1667,7 @@
       00B0A9 16 0B            [ 2] 1667 	ldw	y, (0x0b, sp)
       00B0AB 90 89            [ 2] 1668 	pushw	y
       00B0AD 89               [ 2] 1669 	pushw	x
-      00B0AE CD D5 14         [ 4] 1670 	call	__mulint
+      00B0AE CD D4 A9         [ 4] 1670 	call	__mulint
       00B0B1 5B 04            [ 2] 1671 	addw	sp, #4
       00B0B3 9E               [ 1] 1672 	ld	a, xh
                            000680  1673 	C$motor.c$1176$1_0$522 ==.
@@ -1689,7 +1689,7 @@
       00B0C5 89               [ 2] 1689 	pushw	x
       00B0C6 4B 66            [ 1] 1690 	push	#0x66
       00B0C8 4B 00            [ 1] 1691 	push	#0x00
-      00B0CA CD D5 14         [ 4] 1692 	call	__mulint
+      00B0CA CD D4 A9         [ 4] 1692 	call	__mulint
       00B0CD 5B 04            [ 2] 1693 	addw	sp, #4
                            00069B  1694 	C$motor.c$1182$2_0$523 ==.
                                    1695 ;	motor.c: 1182: ui32_i_phase_current_x2 = ui16_temp / ui8_duty_cycle;
@@ -1728,7 +1728,7 @@
       00B0F9 3B 01 A3         [ 1] 1728 	push	_ui16_motor_speed_erps+0
       00B0FC 4B 65            [ 1] 1729 	push	#0x65
       00B0FE 4B 00            [ 1] 1730 	push	#0x00
-      00B100 CD D5 14         [ 4] 1731 	call	__mulint
+      00B100 CD D4 A9         [ 4] 1731 	call	__mulint
       00B103 5B 04            [ 2] 1732 	addw	sp, #4
       00B105 90 5F            [ 1] 1733 	clrw	y
       00B107 1F 09            [ 2] 1734 	ldw	(0x09, sp), x
@@ -1836,7 +1836,7 @@
       00B179 89               [ 2] 1836 	pushw	x
       00B17A 1E 09            [ 2] 1837 	ldw	x, (0x09, sp)
       00B17C 89               [ 2] 1838 	pushw	x
-      00B17D CD DB 08         [ 4] 1839 	call	__mullong
+      00B17D CD DA 9D         [ 4] 1839 	call	__mullong
       00B180 5B 08            [ 2] 1840 	addw	sp, #8
       00B182 1F 0D            [ 2] 1841 	ldw	(0x0d, sp), x
                            000750  1842 	C$motor.c$1249$1_0$522 ==.
@@ -1848,7 +1848,7 @@
       00B18A 1E 11            [ 2] 1848 	ldw	x, (0x11, sp)
       00B18C 89               [ 2] 1849 	pushw	x
       00B18D 90 89            [ 2] 1850 	pushw	y
-      00B18F CD DB 08         [ 4] 1851 	call	__mullong
+      00B18F CD DA 9D         [ 4] 1851 	call	__mullong
       00B192 5B 08            [ 2] 1852 	addw	sp, #8
       00B194 51               [ 1] 1853 	exgw	x, y
                            000761  1854 	C$motor.c$1250$1_0$522 ==.

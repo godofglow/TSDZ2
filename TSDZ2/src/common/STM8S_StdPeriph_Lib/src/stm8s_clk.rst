@@ -839,7 +839,7 @@
       0087BF 4B 24            [ 1]  839 	push	#0x24
       0087C1 4B F4            [ 1]  840 	push	#0xf4
       0087C3 4B 00            [ 1]  841 	push	#0x00
-      0087C5 CD D7 E1         [ 4]  842 	call	__divulong
+      0087C5 CD D7 76         [ 4]  842 	call	__divulong
       0087C8 5B 08            [ 2]  843 	addw	sp, #8
       0087CA 1F 03            [ 2]  844 	ldw	(0x03, sp), x
       0087CC 20 1A            [ 2]  845 	jra	00106$

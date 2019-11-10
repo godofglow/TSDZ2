@@ -184,7 +184,7 @@
       0089D8 1E 13            [ 2]  184 	ldw	x, (0x13, sp)
       0089DA 89               [ 2]  185 	pushw	x
       0089DB 90 89            [ 2]  186 	pushw	y
-      0089DD CD D7 E1         [ 4]  187 	call	__divulong
+      0089DD CD D7 76         [ 4]  187 	call	__divulong
       0089E0 5B 08            [ 2]  188 	addw	sp, #8
       0089E2 1F 0F            [ 2]  189 	ldw	(0x0f, sp), x
       0089E4 17 0D            [ 2]  190 	ldw	(0x0d, sp), y
@@ -205,7 +205,7 @@
       0089FD 5F               [ 1]  205 	clrw	x
       0089FE 89               [ 2]  206 	pushw	x
       0089FF 4B 00            [ 1]  207 	push	#0x00
-      008A01 CD DB 08         [ 4]  208 	call	__mullong
+      008A01 CD DA 9D         [ 4]  208 	call	__mullong
       008A04 5B 08            [ 2]  209 	addw	sp, #8
       008A06 1F 0F            [ 2]  210 	ldw	(0x0f, sp), x
       008A08 1E 0B            [ 2]  211 	ldw	x, (0x0b, sp)
@@ -215,7 +215,7 @@
       008A0E 1E 13            [ 2]  215 	ldw	x, (0x13, sp)
       008A10 89               [ 2]  216 	pushw	x
       008A11 90 89            [ 2]  217 	pushw	y
-      008A13 CD D7 E1         [ 4]  218 	call	__divulong
+      008A13 CD D7 76         [ 4]  218 	call	__divulong
       008A16 5B 08            [ 2]  219 	addw	sp, #8
       008A18 1F 07            [ 2]  220 	ldw	(0x07, sp), x
       008A1A 17 05            [ 2]  221 	ldw	(0x05, sp), y
@@ -229,7 +229,7 @@
       008A24 5F               [ 1]  229 	clrw	x
       008A25 89               [ 2]  230 	pushw	x
       008A26 4B 00            [ 1]  231 	push	#0x00
-      008A28 CD DB 08         [ 4]  232 	call	__mullong
+      008A28 CD DA 9D         [ 4]  232 	call	__mullong
       008A2B 5B 08            [ 2]  233 	addw	sp, #8
       008A2D 1F 0B            [ 2]  234 	ldw	(0x0b, sp), x
       008A2F 17 09            [ 2]  235 	ldw	(0x09, sp), y
@@ -256,7 +256,7 @@
       008A56 4B 00            [ 1]  256 	push	#0x00
       008A58 89               [ 2]  257 	pushw	x
       008A59 90 89            [ 2]  258 	pushw	y
-      008A5B CD D7 E1         [ 4]  259 	call	__divulong
+      008A5B CD D7 76         [ 4]  259 	call	__divulong
       008A5E 5B 08            [ 2]  260 	addw	sp, #8
       008A60 9F               [ 1]  261 	ld	a, xl
       008A61 A4 0F            [ 1]  262 	and	a, #0x0f

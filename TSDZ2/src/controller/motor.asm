@@ -1065,7 +1065,7 @@ _TIM1_CAP_COM_IRQHandler:
 	ldw	x, y
 	incw	x
 	ldw	_ui16_counter_adc_battery_current_ramp_up+0, x
-	cpw	y, #0x07a1
+	cpw	y, #0x03d0
 	jrc	00182$
 	C$motor.c$822$3_0$464 ==.
 ;	motor.c: 822: ui16_counter_adc_battery_current_ramp_up = 0;
@@ -1096,7 +1096,7 @@ _TIM1_CAP_COM_IRQHandler:
 	ldw	x, y
 	incw	x
 	ldw	_ui16_counter_adc_motor_current_ramp_up+0, x
-	cpw	y, #0x07a1
+	cpw	y, #0x03d0
 	jrc	00189$
 	C$motor.c$839$3_0$467 ==.
 ;	motor.c: 839: ui16_counter_adc_motor_current_ramp_up = 0;

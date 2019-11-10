@@ -1065,7 +1065,7 @@
       000416 93               [ 1] 1065 	ldw	x, y
       000417 5C               [ 1] 1066 	incw	x
       000418 CFu01u5F         [ 2] 1067 	ldw	_ui16_counter_adc_battery_current_ramp_up+0, x
-      00041B 90 A3 07 A1      [ 2] 1068 	cpw	y, #0x07a1
+      00041B 90 A3 03 D0      [ 2] 1068 	cpw	y, #0x03d0
       00041F 25 17            [ 1] 1069 	jrc	00182$
                            000421  1070 	C$motor.c$822$3_0$464 ==.
                                    1071 ;	motor.c: 822: ui16_counter_adc_battery_current_ramp_up = 0;
@@ -1096,7 +1096,7 @@
       000444 93               [ 1] 1096 	ldw	x, y
       000445 5C               [ 1] 1097 	incw	x
       000446 CFu01u62         [ 2] 1098 	ldw	_ui16_counter_adc_motor_current_ramp_up+0, x
-      000449 90 A3 07 A1      [ 2] 1099 	cpw	y, #0x07a1
+      000449 90 A3 03 D0      [ 2] 1099 	cpw	y, #0x03d0
       00044D 25 17            [ 1] 1100 	jrc	00189$
                            00044F  1101 	C$motor.c$839$3_0$467 ==.
                                    1102 ;	motor.c: 839: ui16_counter_adc_motor_current_ramp_up = 0;
