@@ -1,0 +1,96 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$brake$100                                                    00001D GR
+  9 A$brake$101                                                    00001F GR
+  9 A$brake$102                                                    000022 GR
+  9 A$brake$105                                                    000024 GR
+  9 A$brake$106                                                    000026 GR
+  9 A$brake$107                                                    000028 GR
+  9 A$brake$108                                                    00002B GR
+  9 A$brake$113                                                    00002D GR
+  9 A$brake$123                                                    00002E GR
+  9 A$brake$124                                                    000030 GR
+  9 A$brake$125                                                    000032 GR
+  9 A$brake$126                                                    000034 GR
+  9 A$brake$127                                                    000037 GR
+  9 A$brake$128                                                    000039 GR
+  9 A$brake$129                                                    00003A GR
+  9 A$brake$132                                                    00003C GR
+  9 A$brake$133                                                    00003E GR
+  9 A$brake$137                                                    000040 GR
+  9 A$brake$143                                                    000041 GR
+  9 A$brake$63                                                     000000 GR
+  9 A$brake$64                                                     000001 GR
+  9 A$brake$67                                                     000002 GR
+  9 A$brake$68                                                     000005 GR
+  9 A$brake$69                                                     000006 GR
+  9 A$brake$72                                                     000008 GR
+  9 A$brake$73                                                     00000A GR
+  9 A$brake$74                                                     00000D GR
+  9 A$brake$75                                                     00000E GR
+  9 A$brake$79                                                     000010 GR
+  9 A$brake$80                                                     000012 GR
+  9 A$brake$81                                                     000015 GR
+  9 A$brake$87                                                     000016 GR
+  9 A$brake$97                                                     000017 GR
+  9 A$brake$98                                                     000019 GR
+  9 A$brake$99                                                     00001B GR
+  9 C$brake.c$21$0_0$386                                        =  000000 GR
+  9 C$brake.c$23$1_0$386                                        =  000002 GR
+  9 C$brake.c$25$2_0$387                                        =  000008 GR
+  9 C$brake.c$29$2_0$388                                        =  000010 GR
+  9 C$brake.c$31$1_0$386                                        =  000016 GR
+  9 C$brake.c$36$1_0$390                                        =  000017 GR
+  9 C$brake.c$45$1_0$390                                        =  000017 GR
+  9 C$brake.c$51$1_0$390                                        =  000024 GR
+  9 C$brake.c$53$1_0$390                                        =  00002D GR
+  9 C$brake.c$58$1_0$392                                        =  00002E GR
+  9 C$brake.c$60$1_0$392                                        =  00002E GR
+  9 C$brake.c$61$1_0$392                                        =  00003C GR
+  9 C$brake.c$63$1_0$392                                        =  000040 GR
+  9 C$brake.c$64$1_0$392                                        =  000041 GR
+  9 G$EXTI_PORTC_IRQHandler$0$0                                 =  000000 GR
+  9 G$brake_init$0$0                                            =  000017 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 G$brake_is_set$0$0                                          =  00002E GR
+  9 XG$EXTI_PORTC_IRQHandler$0$0                                =  000016 GR
+  9 XG$brake_init$0$0                                           =  00002D GR
+  9 XG$brake_is_set$0$0                                         =  000041 GR
+  9 _EXTI_PORTC_IRQHandler                                         000000 GR
+    _EXTI_SetExtIntSensitivity                                     ****** GX
+    _GPIO_Init                                                     ****** GX
+    _GPIO_ReadInputPin                                             ****** GX
+  9 _brake_init                                                    000017 GR
+  9 _brake_is_set                                                  00002E GR
+    _motor_controller_reset_state                                  ****** GX
+    _motor_controller_set_state                                    ****** GX
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size     42   flags    0
+   A CABS                                       size      0   flags    8
+

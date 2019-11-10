@@ -1,0 +1,37 @@
+-muwx
+-i main.ihx
+-Y
+-y
+-b HOME = 0x8000
+-b DATA = 0x0001
+-b SSEG = 0xffffffff
+-k C:\Program Files\SDCC\bin\..\lib\stm8
+-l stm8
+main.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_iwdg.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_itc.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_clk.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_gpio.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_uart2.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_tim1.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_tim2.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_tim3.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_exti.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_adc1.rel
+../common/STM8S_StdPeriph_Lib/src/stm8s_flash.rel
+watchdog.rel
+torque_sensor.rel
+uart.rel
+pwm.rel
+motor.rel
+wheel_speed_sensor.rel
+brake.rel
+pas.rel
+adc.rel
+timers.rel
+ebike_app.rel
+utils.rel
+eeprom.rel
+lights.rel
+
+-e

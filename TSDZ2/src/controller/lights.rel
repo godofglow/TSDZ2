@@ -1,0 +1,75 @@
+;!FILE lights.asm
+XH3
+H B areas 27 global symbols
+M lights
+O -mstm8
+S _GPIO_Init Ref000000
+S .__.ABS. Def000000
+S _GPIO_WriteLow Ref000000
+S _GPIO_WriteHigh Ref000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 0 flags 0 addr 0
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 2B flags 0 addr 0
+S A$lights$66 Def000008
+S A$lights$67 Def00000B
+S A$lights$95 Def00001F
+S A$lights$86 Def000012
+S A$lights$96 Def000021
+S A$lights$87 Def000014
+S A$lights$97 Def000023
+S A$lights$88 Def000016
+S A$lights$98 Def000025
+S A$lights$89 Def000018
+S A$lights$99 Def000028
+S G$lights_set_state$0$0 Def00000E
+S XG$lights_init$0$0 Def00000D
+S _lights_set_state Def00000E
+S XG$lights_set_state$0$0 Def00002A
+S A$lights$105 Def00002A
+S C$lights.c$35$2_0$350 Def00001F
+S C$lights.c$22$1_0$346 Def00000D
+S G$lights_init$0$0 Def000000
+S C$lights.c$17$0_0$346 Def000000
+S C$lights.c$31$2_0$349 Def000012
+S C$lights.c$19$1_0$346 Def000000
+S C$lights.c$27$1_0$348 Def00000E
+S C$lights.c$37$1_0$348 Def00002A
+S C$lights.c$29$1_0$348 Def00000E
+S A$lights$62 Def000000
+S A$lights$90 Def00001B
+S A$lights$72 Def00000D
+S A$lights$63 Def000002
+S _lights_init Def000000
+S A$lights$91 Def00001D
+S A$lights$82 Def00000E
+S A$lights$64 Def000004
+S A$lights$83 Def000010
+S A$lights$65 Def000006
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 4B C0 4B 10 4B 0F 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 00 0D 81
+R 00 00 00 09
+T 00 00 0E
+R 00 00 00 09
+T 00 00 0E 0D 03 27 0D 4B 10 4B 0F 4B 50 CD 00 00
+R 00 00 00 09 02 0E 00 03
+T 00 00 1B 5B 03 20 0B
+R 00 00 00 09
+T 00 00 1F
+R 00 00 00 09
+T 00 00 1F 4B 10 4B 0F 4B 50 CD 00 00 5B 03
+R 00 00 00 09 02 0A 00 02
+T 00 00 2A
+R 00 00 00 09
+T 00 00 2A 81
+R 00 00 00 09

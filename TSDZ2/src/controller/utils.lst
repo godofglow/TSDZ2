@@ -1,0 +1,603 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.9.4 #11422 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module utils
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _map
+                                     12 	.globl _map_inverse
+                                     13 	.globl _ui8_min
+                                     14 	.globl _ui8_max
+                                     15 	.globl _ui8_limit_max
+                                     16 	.globl _pi_controller
+                                     17 	.globl _pi_controller_reset
+                                     18 	.globl _crc16
+                                     19 ;--------------------------------------------------------
+                                     20 ; ram data
+                                     21 ;--------------------------------------------------------
+                                     22 	.area DATA
+                                     23 ;--------------------------------------------------------
+                                     24 ; ram data
+                                     25 ;--------------------------------------------------------
+                                     26 	.area INITIALIZED
+                                     27 ;--------------------------------------------------------
+                                     28 ; absolute external ram data
+                                     29 ;--------------------------------------------------------
+                                     30 	.area DABS (ABS)
+                                     31 
+                                     32 ; default segment ordering for linker
+                                     33 	.area HOME
+                                     34 	.area GSINIT
+                                     35 	.area GSFINAL
+                                     36 	.area CONST
+                                     37 	.area INITIALIZER
+                                     38 	.area CODE
+                                     39 
+                                     40 ;--------------------------------------------------------
+                                     41 ; global & static initialisations
+                                     42 ;--------------------------------------------------------
+                                     43 	.area HOME
+                                     44 	.area GSINIT
+                                     45 	.area GSFINAL
+                                     46 	.area GSINIT
+                                     47 ;--------------------------------------------------------
+                                     48 ; Home
+                                     49 ;--------------------------------------------------------
+                                     50 	.area HOME
+                                     51 	.area HOME
+                                     52 ;--------------------------------------------------------
+                                     53 ; code
+                                     54 ;--------------------------------------------------------
+                                     55 	.area CODE
+                           000000    56 	G$map$0$0 ==.
+                           000000    57 	C$utils.c$17$0_0$365 ==.
+                                     58 ;	utils.c: 17: int32_t map(int32_t x, int32_t in_min, int32_t in_max, int32_t out_min, int32_t out_max)
+                                     59 ;	-----------------------------------------
+                                     60 ;	 function map
+                                     61 ;	-----------------------------------------
+      000000                         62 _map:
+      000000 52 10            [ 2]   63 	sub	sp, #16
+                           000002    64 	C$utils.c$20$1_0$365 ==.
+                                     65 ;	utils.c: 20: if(x < in_min)
+      000002 1E 15            [ 2]   66 	ldw	x, (0x15, sp)
+      000004 13 19            [ 2]   67 	cpw	x, (0x19, sp)
+      000006 7B 14            [ 1]   68 	ld	a, (0x14, sp)
+      000008 12 18            [ 1]   69 	sbc	a, (0x18, sp)
+      00000A 7B 13            [ 1]   70 	ld	a, (0x13, sp)
+      00000C 12 17            [ 1]   71 	sbc	a, (0x17, sp)
+      00000E 2E 07            [ 1]   72 	jrsge	00108$
+                           000010    73 	C$utils.c$21$1_0$365 ==.
+                                     74 ;	utils.c: 21: return out_min;
+      000010 1E 21            [ 2]   75 	ldw	x, (0x21, sp)
+      000012 16 1F            [ 2]   76 	ldw	y, (0x1f, sp)
+      000014 CCr00rFE         [ 2]   77 	jp	00110$
+      000017                         78 00108$:
+                           000017    79 	C$utils.c$22$1_0$365 ==.
+                                     80 ;	utils.c: 22: else if(x > in_max)
+      000017 1E 1D            [ 2]   81 	ldw	x, (0x1d, sp)
+      000019 13 15            [ 2]   82 	cpw	x, (0x15, sp)
+      00001B 7B 1C            [ 1]   83 	ld	a, (0x1c, sp)
+      00001D 12 14            [ 1]   84 	sbc	a, (0x14, sp)
+      00001F 7B 1B            [ 1]   85 	ld	a, (0x1b, sp)
+      000021 12 13            [ 1]   86 	sbc	a, (0x13, sp)
+      000023 2E 07            [ 1]   87 	jrsge	00105$
+                           000025    88 	C$utils.c$23$1_0$365 ==.
+                                     89 ;	utils.c: 23: return out_max;
+      000025 1E 25            [ 2]   90 	ldw	x, (0x25, sp)
+      000027 16 23            [ 2]   91 	ldw	y, (0x23, sp)
+      000029 CCr00rFE         [ 2]   92 	jp	00110$
+      00002C                         93 00105$:
+                           00002C    94 	C$utils.c$27$1_0$365 ==.
+                                     95 ;	utils.c: 27: else  if((in_max - in_min) > (out_max - out_min))
+      00002C 1E 1D            [ 2]   96 	ldw	x, (0x1d, sp)
+      00002E 72 F0 19         [ 2]   97 	subw	x, (0x19, sp)
+      000031 1F 03            [ 2]   98 	ldw	(0x03, sp), x
+      000033 7B 1C            [ 1]   99 	ld	a, (0x1c, sp)
+      000035 12 18            [ 1]  100 	sbc	a, (0x18, sp)
+      000037 6B 02            [ 1]  101 	ld	(0x02, sp), a
+      000039 7B 1B            [ 1]  102 	ld	a, (0x1b, sp)
+      00003B 12 17            [ 1]  103 	sbc	a, (0x17, sp)
+      00003D 6B 01            [ 1]  104 	ld	(0x01, sp), a
+      00003F 1E 25            [ 2]  105 	ldw	x, (0x25, sp)
+      000041 72 F0 21         [ 2]  106 	subw	x, (0x21, sp)
+      000044 1F 07            [ 2]  107 	ldw	(0x07, sp), x
+      000046 7B 24            [ 1]  108 	ld	a, (0x24, sp)
+      000048 12 20            [ 1]  109 	sbc	a, (0x20, sp)
+      00004A 6B 06            [ 1]  110 	ld	(0x06, sp), a
+      00004C 7B 23            [ 1]  111 	ld	a, (0x23, sp)
+      00004E 12 1F            [ 1]  112 	sbc	a, (0x1f, sp)
+      000050 6B 05            [ 1]  113 	ld	(0x05, sp), a
+      000052 1E 07            [ 2]  114 	ldw	x, (0x07, sp)
+      000054 13 03            [ 2]  115 	cpw	x, (0x03, sp)
+      000056 7B 06            [ 1]  116 	ld	a, (0x06, sp)
+      000058 12 02            [ 1]  117 	sbc	a, (0x02, sp)
+      00005A 7B 05            [ 1]  118 	ld	a, (0x05, sp)
+      00005C 12 01            [ 1]  119 	sbc	a, (0x01, sp)
+      00005E 2E 5C            [ 1]  120 	jrsge	00102$
+                           000060   121 	C$utils.c$28$1_0$365 ==.
+                                    122 ;	utils.c: 28: return (x - in_min) * (out_max - out_min + 1) / (in_max - in_min + 1) + out_min;
+      000060 1E 15            [ 2]  123 	ldw	x, (0x15, sp)
+      000062 72 F0 19         [ 2]  124 	subw	x, (0x19, sp)
+      000065 1F 0B            [ 2]  125 	ldw	(0x0b, sp), x
+      000067 7B 14            [ 1]  126 	ld	a, (0x14, sp)
+      000069 12 18            [ 1]  127 	sbc	a, (0x18, sp)
+      00006B 6B 0A            [ 1]  128 	ld	(0x0a, sp), a
+      00006D 7B 13            [ 1]  129 	ld	a, (0x13, sp)
+      00006F 12 17            [ 1]  130 	sbc	a, (0x17, sp)
+      000071 6B 09            [ 1]  131 	ld	(0x09, sp), a
+      000073 1E 07            [ 2]  132 	ldw	x, (0x07, sp)
+      000075 1C 00 01         [ 2]  133 	addw	x, #0x0001
+      000078 1F 0F            [ 2]  134 	ldw	(0x0f, sp), x
+      00007A 1E 05            [ 2]  135 	ldw	x, (0x05, sp)
+      00007C 24 01            [ 1]  136 	jrnc	00127$
+      00007E 5C               [ 1]  137 	incw	x
+      00007F                        138 00127$:
+      00007F 7B 10            [ 1]  139 	ld	a, (0x10, sp)
+      000081 88               [ 1]  140 	push	a
+      000082 7B 10            [ 1]  141 	ld	a, (0x10, sp)
+      000084 88               [ 1]  142 	push	a
+      000085 89               [ 2]  143 	pushw	x
+      000086 1E 0F            [ 2]  144 	ldw	x, (0x0f, sp)
+      000088 89               [ 2]  145 	pushw	x
+      000089 1E 0F            [ 2]  146 	ldw	x, (0x0f, sp)
+      00008B 89               [ 2]  147 	pushw	x
+      00008C CDr00r00         [ 4]  148 	call	__mullong
+      00008F 5B 08            [ 2]  149 	addw	sp, #8
+      000091 1F 0F            [ 2]  150 	ldw	(0x0f, sp), x
+      000093 17 0D            [ 2]  151 	ldw	(0x0d, sp), y
+      000095 1E 03            [ 2]  152 	ldw	x, (0x03, sp)
+      000097 1C 00 01         [ 2]  153 	addw	x, #0x0001
+      00009A 16 01            [ 2]  154 	ldw	y, (0x01, sp)
+      00009C 24 02            [ 1]  155 	jrnc	00128$
+      00009E 90 5C            [ 1]  156 	incw	y
+      0000A0                        157 00128$:
+      0000A0 89               [ 2]  158 	pushw	x
+      0000A1 90 89            [ 2]  159 	pushw	y
+      0000A3 1E 13            [ 2]  160 	ldw	x, (0x13, sp)
+      0000A5 89               [ 2]  161 	pushw	x
+      0000A6 1E 13            [ 2]  162 	ldw	x, (0x13, sp)
+      0000A8 89               [ 2]  163 	pushw	x
+      0000A9 CDr00r00         [ 4]  164 	call	__divslong
+      0000AC 5B 08            [ 2]  165 	addw	sp, #8
+      0000AE 51               [ 1]  166 	exgw	x, y
+      0000AF 72 F9 21         [ 2]  167 	addw	y, (0x21, sp)
+      0000B2 9F               [ 1]  168 	ld	a, xl
+      0000B3 19 20            [ 1]  169 	adc	a, (0x20, sp)
+      0000B5 02               [ 1]  170 	rlwa	x
+      0000B6 19 1F            [ 1]  171 	adc	a, (0x1f, sp)
+      0000B8 95               [ 1]  172 	ld	xh, a
+      0000B9 51               [ 1]  173 	exgw	x, y
+      0000BA 20 42            [ 2]  174 	jra	00110$
+      0000BC                        175 00102$:
+                           0000BC   176 	C$utils.c$31$1_0$365 ==.
+                                    177 ;	utils.c: 31: return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+      0000BC 1E 15            [ 2]  178 	ldw	x, (0x15, sp)
+      0000BE 72 F0 19         [ 2]  179 	subw	x, (0x19, sp)
+      0000C1 1F 0F            [ 2]  180 	ldw	(0x0f, sp), x
+      0000C3 7B 14            [ 1]  181 	ld	a, (0x14, sp)
+      0000C5 12 18            [ 1]  182 	sbc	a, (0x18, sp)
+      0000C7 6B 0E            [ 1]  183 	ld	(0x0e, sp), a
+      0000C9 7B 13            [ 1]  184 	ld	a, (0x13, sp)
+      0000CB 12 17            [ 1]  185 	sbc	a, (0x17, sp)
+      0000CD 6B 0D            [ 1]  186 	ld	(0x0d, sp), a
+      0000CF 1E 07            [ 2]  187 	ldw	x, (0x07, sp)
+      0000D1 89               [ 2]  188 	pushw	x
+      0000D2 1E 07            [ 2]  189 	ldw	x, (0x07, sp)
+      0000D4 89               [ 2]  190 	pushw	x
+      0000D5 1E 13            [ 2]  191 	ldw	x, (0x13, sp)
+      0000D7 89               [ 2]  192 	pushw	x
+      0000D8 1E 13            [ 2]  193 	ldw	x, (0x13, sp)
+      0000DA 89               [ 2]  194 	pushw	x
+      0000DB CDr00r00         [ 4]  195 	call	__mullong
+      0000DE 5B 08            [ 2]  196 	addw	sp, #8
+      0000E0 1F 0F            [ 2]  197 	ldw	(0x0f, sp), x
+      0000E2 1E 03            [ 2]  198 	ldw	x, (0x03, sp)
+      0000E4 89               [ 2]  199 	pushw	x
+      0000E5 1E 03            [ 2]  200 	ldw	x, (0x03, sp)
+      0000E7 89               [ 2]  201 	pushw	x
+      0000E8 1E 13            [ 2]  202 	ldw	x, (0x13, sp)
+      0000EA 89               [ 2]  203 	pushw	x
+      0000EB 90 89            [ 2]  204 	pushw	y
+      0000ED CDr00r00         [ 4]  205 	call	__divslong
+      0000F0 5B 08            [ 2]  206 	addw	sp, #8
+      0000F2 51               [ 1]  207 	exgw	x, y
+      0000F3 72 F9 21         [ 2]  208 	addw	y, (0x21, sp)
+      0000F6 9F               [ 1]  209 	ld	a, xl
+      0000F7 19 20            [ 1]  210 	adc	a, (0x20, sp)
+      0000F9 02               [ 1]  211 	rlwa	x
+      0000FA 19 1F            [ 1]  212 	adc	a, (0x1f, sp)
+      0000FC 95               [ 1]  213 	ld	xh, a
+      0000FD 51               [ 1]  214 	exgw	x, y
+      0000FE                        215 00110$:
+                           0000FE   216 	C$utils.c$32$1_0$365 ==.
+                                    217 ;	utils.c: 32: }
+      0000FE 5B 10            [ 2]  218 	addw	sp, #16
+                           000100   219 	C$utils.c$32$1_0$365 ==.
+                           000100   220 	XG$map$0$0 ==.
+      000100 81               [ 4]  221 	ret
+                           000101   222 	G$map_inverse$0$0 ==.
+                           000101   223 	C$utils.c$37$1_0$367 ==.
+                                    224 ;	utils.c: 37: int32_t map_inverse(int32_t x, int32_t in_min, int32_t in_max, int32_t out_min, int32_t out_max)
+                                    225 ;	-----------------------------------------
+                                    226 ;	 function map_inverse
+                                    227 ;	-----------------------------------------
+      000101                        228 _map_inverse:
+      000101 52 08            [ 2]  229 	sub	sp, #8
+                           000103   230 	C$utils.c$40$1_0$367 ==.
+                                    231 ;	utils.c: 40: if(x < in_min)
+      000103 1E 0D            [ 2]  232 	ldw	x, (0x0d, sp)
+      000105 13 11            [ 2]  233 	cpw	x, (0x11, sp)
+      000107 7B 0C            [ 1]  234 	ld	a, (0x0c, sp)
+      000109 12 10            [ 1]  235 	sbc	a, (0x10, sp)
+      00010B 7B 0B            [ 1]  236 	ld	a, (0x0b, sp)
+      00010D 12 0F            [ 1]  237 	sbc	a, (0x0f, sp)
+      00010F 2E 07            [ 1]  238 	jrsge	00104$
+                           000111   239 	C$utils.c$41$1_0$367 ==.
+                                    240 ;	utils.c: 41: return out_min;
+      000111 1E 19            [ 2]  241 	ldw	x, (0x19, sp)
+      000113 16 17            [ 2]  242 	ldw	y, (0x17, sp)
+      000115 CCr01r94         [ 2]  243 	jp	00106$
+      000118                        244 00104$:
+                           000118   245 	C$utils.c$42$1_0$367 ==.
+                                    246 ;	utils.c: 42: else if(x > in_max)
+      000118 1E 15            [ 2]  247 	ldw	x, (0x15, sp)
+      00011A 13 0D            [ 2]  248 	cpw	x, (0x0d, sp)
+      00011C 7B 14            [ 1]  249 	ld	a, (0x14, sp)
+      00011E 12 0C            [ 1]  250 	sbc	a, (0x0c, sp)
+      000120 7B 13            [ 1]  251 	ld	a, (0x13, sp)
+      000122 12 0B            [ 1]  252 	sbc	a, (0x0b, sp)
+      000124 2E 06            [ 1]  253 	jrsge	00105$
+                           000126   254 	C$utils.c$43$1_0$367 ==.
+                                    255 ;	utils.c: 43: return out_max;
+      000126 1E 1D            [ 2]  256 	ldw	x, (0x1d, sp)
+      000128 16 1B            [ 2]  257 	ldw	y, (0x1b, sp)
+      00012A 20 68            [ 2]  258 	jra	00106$
+      00012C                        259 00105$:
+                           00012C   260 	C$utils.c$45$1_0$367 ==.
+                                    261 ;	utils.c: 45: return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+      00012C 1E 0D            [ 2]  262 	ldw	x, (0x0d, sp)
+      00012E 72 F0 11         [ 2]  263 	subw	x, (0x11, sp)
+      000131 1F 03            [ 2]  264 	ldw	(0x03, sp), x
+      000133 7B 0C            [ 1]  265 	ld	a, (0x0c, sp)
+      000135 12 10            [ 1]  266 	sbc	a, (0x10, sp)
+      000137 6B 02            [ 1]  267 	ld	(0x02, sp), a
+      000139 7B 0B            [ 1]  268 	ld	a, (0x0b, sp)
+      00013B 12 0F            [ 1]  269 	sbc	a, (0x0f, sp)
+      00013D 6B 01            [ 1]  270 	ld	(0x01, sp), a
+      00013F 1E 1D            [ 2]  271 	ldw	x, (0x1d, sp)
+      000141 72 F0 19         [ 2]  272 	subw	x, (0x19, sp)
+      000144 1F 07            [ 2]  273 	ldw	(0x07, sp), x
+      000146 7B 1C            [ 1]  274 	ld	a, (0x1c, sp)
+      000148 12 18            [ 1]  275 	sbc	a, (0x18, sp)
+      00014A 6B 06            [ 1]  276 	ld	(0x06, sp), a
+      00014C 7B 1B            [ 1]  277 	ld	a, (0x1b, sp)
+      00014E 12 17            [ 1]  278 	sbc	a, (0x17, sp)
+      000150 6B 05            [ 1]  279 	ld	(0x05, sp), a
+      000152 1E 07            [ 2]  280 	ldw	x, (0x07, sp)
+      000154 89               [ 2]  281 	pushw	x
+      000155 1E 07            [ 2]  282 	ldw	x, (0x07, sp)
+      000157 89               [ 2]  283 	pushw	x
+      000158 1E 07            [ 2]  284 	ldw	x, (0x07, sp)
+      00015A 89               [ 2]  285 	pushw	x
+      00015B 1E 07            [ 2]  286 	ldw	x, (0x07, sp)
+      00015D 89               [ 2]  287 	pushw	x
+      00015E CDr00r00         [ 4]  288 	call	__mullong
+      000161 5B 08            [ 2]  289 	addw	sp, #8
+      000163 1F 03            [ 2]  290 	ldw	(0x03, sp), x
+      000165 1E 15            [ 2]  291 	ldw	x, (0x15, sp)
+      000167 72 F0 11         [ 2]  292 	subw	x, (0x11, sp)
+      00016A 1F 07            [ 2]  293 	ldw	(0x07, sp), x
+      00016C 7B 14            [ 1]  294 	ld	a, (0x14, sp)
+      00016E 12 10            [ 1]  295 	sbc	a, (0x10, sp)
+      000170 6B 06            [ 1]  296 	ld	(0x06, sp), a
+      000172 7B 13            [ 1]  297 	ld	a, (0x13, sp)
+      000174 12 0F            [ 1]  298 	sbc	a, (0x0f, sp)
+      000176 6B 05            [ 1]  299 	ld	(0x05, sp), a
+      000178 1E 07            [ 2]  300 	ldw	x, (0x07, sp)
+      00017A 89               [ 2]  301 	pushw	x
+      00017B 1E 07            [ 2]  302 	ldw	x, (0x07, sp)
+      00017D 89               [ 2]  303 	pushw	x
+      00017E 1E 07            [ 2]  304 	ldw	x, (0x07, sp)
+      000180 89               [ 2]  305 	pushw	x
+      000181 90 89            [ 2]  306 	pushw	y
+      000183 CDr00r00         [ 4]  307 	call	__divslong
+      000186 5B 08            [ 2]  308 	addw	sp, #8
+      000188 51               [ 1]  309 	exgw	x, y
+      000189 72 F9 19         [ 2]  310 	addw	y, (0x19, sp)
+      00018C 9F               [ 1]  311 	ld	a, xl
+      00018D 19 18            [ 1]  312 	adc	a, (0x18, sp)
+      00018F 02               [ 1]  313 	rlwa	x
+      000190 19 17            [ 1]  314 	adc	a, (0x17, sp)
+      000192 95               [ 1]  315 	ld	xh, a
+      000193 51               [ 1]  316 	exgw	x, y
+      000194                        317 00106$:
+                           000194   318 	C$utils.c$46$1_0$367 ==.
+                                    319 ;	utils.c: 46: }
+      000194 5B 08            [ 2]  320 	addw	sp, #8
+                           000196   321 	C$utils.c$46$1_0$367 ==.
+                           000196   322 	XG$map_inverse$0$0 ==.
+      000196 81               [ 4]  323 	ret
+                           000197   324 	G$ui8_min$0$0 ==.
+                           000197   325 	C$utils.c$51$1_0$369 ==.
+                                    326 ;	utils.c: 51: uint8_t ui8_min(uint8_t value_a, uint8_t value_b)
+                                    327 ;	-----------------------------------------
+                                    328 ;	 function ui8_min
+                                    329 ;	-----------------------------------------
+      000197                        330 _ui8_min:
+                           000197   331 	C$utils.c$53$1_0$369 ==.
+                                    332 ;	utils.c: 53: if(value_a < value_b) return value_a;
+      000197 7B 03            [ 1]  333 	ld	a, (0x03, sp)
+      000199 11 04            [ 1]  334 	cp	a, (0x04, sp)
+      00019B 24 04            [ 1]  335 	jrnc	00102$
+      00019D 7B 03            [ 1]  336 	ld	a, (0x03, sp)
+      00019F 20 02            [ 2]  337 	jra	00104$
+      0001A1                        338 00102$:
+                           0001A1   339 	C$utils.c$54$1_0$369 ==.
+                                    340 ;	utils.c: 54: else return value_b;
+      0001A1 7B 04            [ 1]  341 	ld	a, (0x04, sp)
+      0001A3                        342 00104$:
+                           0001A3   343 	C$utils.c$55$1_0$369 ==.
+                                    344 ;	utils.c: 55: }
+                           0001A3   345 	C$utils.c$55$1_0$369 ==.
+                           0001A3   346 	XG$ui8_min$0$0 ==.
+      0001A3 81               [ 4]  347 	ret
+                           0001A4   348 	G$ui8_max$0$0 ==.
+                           0001A4   349 	C$utils.c$60$1_0$371 ==.
+                                    350 ;	utils.c: 60: uint8_t ui8_max(uint8_t value_a, uint8_t value_b)
+                                    351 ;	-----------------------------------------
+                                    352 ;	 function ui8_max
+                                    353 ;	-----------------------------------------
+      0001A4                        354 _ui8_max:
+                           0001A4   355 	C$utils.c$62$1_0$371 ==.
+                                    356 ;	utils.c: 62: if(value_a > value_b) return value_a;
+      0001A4 7B 03            [ 1]  357 	ld	a, (0x03, sp)
+      0001A6 11 04            [ 1]  358 	cp	a, (0x04, sp)
+      0001A8 22 02            [ 1]  359 	jrugt	00104$
+                           0001AA   360 	C$utils.c$63$1_0$371 ==.
+                                    361 ;	utils.c: 63: else return value_b;
+      0001AA 7B 04            [ 1]  362 	ld	a, (0x04, sp)
+      0001AC                        363 00104$:
+                           0001AC   364 	C$utils.c$64$1_0$371 ==.
+                                    365 ;	utils.c: 64: }
+                           0001AC   366 	C$utils.c$64$1_0$371 ==.
+                           0001AC   367 	XG$ui8_max$0$0 ==.
+      0001AC 81               [ 4]  368 	ret
+                           0001AD   369 	G$ui8_limit_max$0$0 ==.
+                           0001AD   370 	C$utils.c$69$1_0$373 ==.
+                                    371 ;	utils.c: 69: void ui8_limit_max(uint8_t *ui8_p_value, uint8_t ui8_max_value)
+                                    372 ;	-----------------------------------------
+                                    373 ;	 function ui8_limit_max
+                                    374 ;	-----------------------------------------
+      0001AD                        375 _ui8_limit_max:
+                           0001AD   376 	C$utils.c$71$1_0$373 ==.
+                                    377 ;	utils.c: 71: if(*ui8_p_value > ui8_max_value) { *ui8_p_value = ui8_max_value; }
+      0001AD 1E 03            [ 2]  378 	ldw	x, (0x03, sp)
+      0001AF F6               [ 1]  379 	ld	a, (x)
+      0001B0 11 05            [ 1]  380 	cp	a, (0x05, sp)
+      0001B2 23 03            [ 2]  381 	jrule	00103$
+      0001B4 7B 05            [ 1]  382 	ld	a, (0x05, sp)
+      0001B6 F7               [ 1]  383 	ld	(x), a
+      0001B7                        384 00103$:
+                           0001B7   385 	C$utils.c$72$1_0$373 ==.
+                                    386 ;	utils.c: 72: }
+                           0001B7   387 	C$utils.c$72$1_0$373 ==.
+                           0001B7   388 	XG$ui8_limit_max$0$0 ==.
+      0001B7 81               [ 4]  389 	ret
+                           0001B8   390 	G$pi_controller$0$0 ==.
+                           0001B8   391 	C$utils.c$77$1_0$376 ==.
+                                    392 ;	utils.c: 77: void pi_controller(struct_pi_controller_state *pi_controller)
+                                    393 ;	-----------------------------------------
+                                    394 ;	 function pi_controller
+                                    395 ;	-----------------------------------------
+      0001B8                        396 _pi_controller:
+      0001B8 52 08            [ 2]  397 	sub	sp, #8
+                           0001BA   398 	C$utils.c$83$1_0$376 ==.
+                                    399 ;	utils.c: 83: i16_error = pi_controller->ui8_target_value - pi_controller->ui8_current_value; // 255-0 or 0-255 --> [-255 ; 255]
+      0001BA 16 0B            [ 2]  400 	ldw	y, (0x0b, sp)
+      0001BC 17 01            [ 2]  401 	ldw	(0x01, sp), y
+      0001BE 93               [ 1]  402 	ldw	x, y
+      0001BF E6 01            [ 1]  403 	ld	a, (0x1, x)
+      0001C1 6B 04            [ 1]  404 	ld	(0x04, sp), a
+      0001C3 0F 03            [ 1]  405 	clr	(0x03, sp)
+      0001C5 1E 01            [ 2]  406 	ldw	x, (0x01, sp)
+      0001C7 F6               [ 1]  407 	ld	a, (x)
+      0001C8 6B 08            [ 1]  408 	ld	(0x08, sp), a
+      0001CA 6B 06            [ 1]  409 	ld	(0x06, sp), a
+      0001CC 0F 05            [ 1]  410 	clr	(0x05, sp)
+      0001CE 1E 03            [ 2]  411 	ldw	x, (0x03, sp)
+      0001D0 72 F0 05         [ 2]  412 	subw	x, (0x05, sp)
+      0001D3 1F 07            [ 2]  413 	ldw	(0x07, sp), x
+                           0001D5   414 	C$utils.c$84$1_0$376 ==.
+                                    415 ;	utils.c: 84: i16_p_term = (i16_error * pi_controller->ui8_kp_dividend) >> pi_controller->ui8_kp_divisor;
+      0001D5 1E 01            [ 2]  416 	ldw	x, (0x01, sp)
+      0001D7 E6 03            [ 1]  417 	ld	a, (0x3, x)
+      0001D9 5F               [ 1]  418 	clrw	x
+      0001DA 97               [ 1]  419 	ld	xl, a
+      0001DB 89               [ 2]  420 	pushw	x
+      0001DC 1E 09            [ 2]  421 	ldw	x, (0x09, sp)
+      0001DE 89               [ 2]  422 	pushw	x
+      0001DF CDr00r00         [ 4]  423 	call	__mulint
+      0001E2 5B 04            [ 2]  424 	addw	sp, #4
+      0001E4 16 01            [ 2]  425 	ldw	y, (0x01, sp)
+      0001E6 90 E6 04         [ 1]  426 	ld	a, (0x4, y)
+      0001E9 27 04            [ 1]  427 	jreq	00128$
+      0001EB                        428 00127$:
+      0001EB 57               [ 2]  429 	sraw	x
+      0001EC 4A               [ 1]  430 	dec	a
+      0001ED 26 FC            [ 1]  431 	jrne	00127$
+      0001EF                        432 00128$:
+      0001EF 1F 03            [ 2]  433 	ldw	(0x03, sp), x
+                           0001F1   434 	C$utils.c$86$1_0$376 ==.
+                                    435 ;	utils.c: 86: pi_controller->i16_i_term += (i16_error * pi_controller->ui8_ki_dividend) >> pi_controller->ui8_ki_divisor;
+      0001F1 16 01            [ 2]  436 	ldw	y, (0x01, sp)
+      0001F3 72 A9 00 07      [ 2]  437 	addw	y, #0x0007
+      0001F7 93               [ 1]  438 	ldw	x, y
+      0001F8 FE               [ 2]  439 	ldw	x, (x)
+      0001F9 1F 05            [ 2]  440 	ldw	(0x05, sp), x
+      0001FB 1E 01            [ 2]  441 	ldw	x, (0x01, sp)
+      0001FD E6 05            [ 1]  442 	ld	a, (0x5, x)
+      0001FF 5F               [ 1]  443 	clrw	x
+      000200 97               [ 1]  444 	ld	xl, a
+      000201 90 89            [ 2]  445 	pushw	y
+      000203 89               [ 2]  446 	pushw	x
+      000204 1E 0B            [ 2]  447 	ldw	x, (0x0b, sp)
+      000206 89               [ 2]  448 	pushw	x
+      000207 CDr00r00         [ 4]  449 	call	__mulint
+      00020A 5B 04            [ 2]  450 	addw	sp, #4
+      00020C 1F 09            [ 2]  451 	ldw	(0x09, sp), x
+      00020E 90 85            [ 2]  452 	popw	y
+      000210 1E 01            [ 2]  453 	ldw	x, (0x01, sp)
+      000212 E6 06            [ 1]  454 	ld	a, (0x6, x)
+      000214 1E 07            [ 2]  455 	ldw	x, (0x07, sp)
+      000216 4D               [ 1]  456 	tnz	a
+      000217 27 04            [ 1]  457 	jreq	00130$
+      000219                        458 00129$:
+      000219 57               [ 2]  459 	sraw	x
+      00021A 4A               [ 1]  460 	dec	a
+      00021B 26 FC            [ 1]  461 	jrne	00129$
+      00021D                        462 00130$:
+      00021D 72 FB 05         [ 2]  463 	addw	x, (0x05, sp)
+      000220 90 FF            [ 2]  464 	ldw	(y), x
+                           000222   465 	C$utils.c$87$1_0$376 ==.
+                                    466 ;	utils.c: 87: if(pi_controller->i16_i_term > 255) { pi_controller->i16_i_term = 255; }
+      000222 A3 00 FF         [ 2]  467 	cpw	x, #0x00ff
+      000225 2D 06            [ 1]  468 	jrsle	00102$
+      000227 93               [ 1]  469 	ldw	x, y
+      000228 A6 FF            [ 1]  470 	ld	a, #0xff
+      00022A E7 01            [ 1]  471 	ld	(0x1, x), a
+      00022C 7F               [ 1]  472 	clr	(x)
+      00022D                        473 00102$:
+                           00022D   474 	C$utils.c$88$1_0$376 ==.
+                                    475 ;	utils.c: 88: if(pi_controller->i16_i_term < 0) { pi_controller->i16_i_term = 0; }
+      00022D 93               [ 1]  476 	ldw	x, y
+      00022E FE               [ 2]  477 	ldw	x, (x)
+      00022F 2A 04            [ 1]  478 	jrpl	00104$
+      000231 93               [ 1]  479 	ldw	x, y
+      000232 6F 01            [ 1]  480 	clr	(0x1, x)
+      000234 7F               [ 1]  481 	clr	(x)
+      000235                        482 00104$:
+                           000235   483 	C$utils.c$90$1_0$376 ==.
+                                    484 ;	utils.c: 90: i16_temp = i16_p_term + pi_controller->i16_i_term;
+      000235 93               [ 1]  485 	ldw	x, y
+      000236 FE               [ 2]  486 	ldw	x, (x)
+      000237 72 FB 03         [ 2]  487 	addw	x, (0x03, sp)
+                           00023A   488 	C$utils.c$92$1_0$376 ==.
+                                    489 ;	utils.c: 92: if(i16_temp > 255) { i16_temp = 255; }
+      00023A A3 00 FF         [ 2]  490 	cpw	x, #0x00ff
+      00023D 2D 03            [ 1]  491 	jrsle	00106$
+      00023F AE 00 FF         [ 2]  492 	ldw	x, #0x00ff
+      000242                        493 00106$:
+                           000242   494 	C$utils.c$93$1_0$376 ==.
+                                    495 ;	utils.c: 93: if(i16_temp < 0) { i16_temp = 0; }
+      000242 5D               [ 2]  496 	tnzw	x
+      000243 2A 01            [ 1]  497 	jrpl	00108$
+      000245 5F               [ 1]  498 	clrw	x
+      000246                        499 00108$:
+                           000246   500 	C$utils.c$94$1_0$376 ==.
+                                    501 ;	utils.c: 94: pi_controller->ui8_controller_output_value = (uint8_t) i16_temp;
+      000246 16 01            [ 2]  502 	ldw	y, (0x01, sp)
+      000248 9F               [ 1]  503 	ld	a, xl
+      000249 90 E7 02         [ 1]  504 	ld	(0x0002, y), a
+                           00024C   505 	C$utils.c$95$1_0$376 ==.
+                                    506 ;	utils.c: 95: }
+      00024C 5B 08            [ 2]  507 	addw	sp, #8
+                           00024E   508 	C$utils.c$95$1_0$376 ==.
+                           00024E   509 	XG$pi_controller$0$0 ==.
+      00024E 81               [ 4]  510 	ret
+                           00024F   511 	G$pi_controller_reset$0$0 ==.
+                           00024F   512 	C$utils.c$100$1_0$382 ==.
+                                    513 ;	utils.c: 100: void pi_controller_reset(struct_pi_controller_state *pi_controller)
+                                    514 ;	-----------------------------------------
+                                    515 ;	 function pi_controller_reset
+                                    516 ;	-----------------------------------------
+      00024F                        517 _pi_controller_reset:
+                           00024F   518 	C$utils.c$102$1_0$382 ==.
+                                    519 ;	utils.c: 102: pi_controller->i16_i_term = 0;
+      00024F 1E 03            [ 2]  520 	ldw	x, (0x03, sp)
+      000251 1C 00 07         [ 2]  521 	addw	x, #0x0007
+      000254 6F 01            [ 1]  522 	clr	(0x1, x)
+      000256 7F               [ 1]  523 	clr	(x)
+                           000257   524 	C$utils.c$103$1_0$382 ==.
+                                    525 ;	utils.c: 103: }
+                           000257   526 	C$utils.c$103$1_0$382 ==.
+                           000257   527 	XG$pi_controller_reset$0$0 ==.
+      000257 81               [ 4]  528 	ret
+                           000258   529 	G$crc16$0$0 ==.
+                           000258   530 	C$utils.c$115$1_0$384 ==.
+                                    531 ;	utils.c: 115: void crc16(uint8_t ui8_data, uint16_t* ui16_crc)
+                                    532 ;	-----------------------------------------
+                                    533 ;	 function crc16
+                                    534 ;	-----------------------------------------
+      000258                        535 _crc16:
+      000258 52 04            [ 2]  536 	sub	sp, #4
+                           00025A   537 	C$utils.c$119$1_0$384 ==.
+                                    538 ;	utils.c: 119: *ui16_crc = *ui16_crc ^(uint16_t) ui8_data;
+      00025A 16 08            [ 2]  539 	ldw	y, (0x08, sp)
+      00025C 93               [ 1]  540 	ldw	x, y
+      00025D FE               [ 2]  541 	ldw	x, (x)
+      00025E 7B 07            [ 1]  542 	ld	a, (0x07, sp)
+      000260 6B 04            [ 1]  543 	ld	(0x04, sp), a
+      000262 0F 03            [ 1]  544 	clr	(0x03, sp)
+      000264 9F               [ 1]  545 	ld	a, xl
+      000265 18 04            [ 1]  546 	xor	a, (0x04, sp)
+      000267 02               [ 1]  547 	rlwa	x
+      000268 18 03            [ 1]  548 	xor	a, (0x03, sp)
+      00026A 95               [ 1]  549 	ld	xh, a
+      00026B 90 FF            [ 2]  550 	ldw	(y), x
+                           00026D   551 	C$utils.c$120$2_0$385 ==.
+                                    552 ;	utils.c: 120: for(i = 8; i > 0; i--)
+      00026D AE 00 08         [ 2]  553 	ldw	x, #0x0008
+      000270 1F 01            [ 2]  554 	ldw	(0x01, sp), x
+      000272                        555 00105$:
+                           000272   556 	C$utils.c$122$3_0$386 ==.
+                                    557 ;	utils.c: 122: if(*ui16_crc & 0x0001)
+      000272 93               [ 1]  558 	ldw	x, y
+      000273 FE               [ 2]  559 	ldw	x, (x)
+      000274 54               [ 2]  560 	srlw	x
+      000275 24 0E            [ 1]  561 	jrnc	00102$
+                           000277   562 	C$utils.c$123$3_0$386 ==.
+                                    563 ;	utils.c: 123: *ui16_crc = (*ui16_crc >> 1) ^ 0xA001;
+      000277 93               [ 1]  564 	ldw	x, y
+      000278 FE               [ 2]  565 	ldw	x, (x)
+      000279 54               [ 2]  566 	srlw	x
+      00027A 9F               [ 1]  567 	ld	a, xl
+      00027B A8 01            [ 1]  568 	xor	a, #0x01
+      00027D 02               [ 1]  569 	rlwa	x
+      00027E A8 A0            [ 1]  570 	xor	a, #0xa0
+      000280 95               [ 1]  571 	ld	xh, a
+      000281 90 FF            [ 2]  572 	ldw	(y), x
+      000283 20 0D            [ 2]  573 	jra	00106$
+      000285                        574 00102$:
+                           000285   575 	C$utils.c$125$3_0$386 ==.
+                                    576 ;	utils.c: 125: *ui16_crc >>= 1;
+      000285 93               [ 1]  577 	ldw	x, y
+      000286 FE               [ 2]  578 	ldw	x, (x)
+      000287 54               [ 2]  579 	srlw	x
+      000288 1F 03            [ 2]  580 	ldw	(0x03, sp), x
+      00028A 93               [ 1]  581 	ldw	x, y
+      00028B 7B 04            [ 1]  582 	ld	a, (0x04, sp)
+      00028D E7 01            [ 1]  583 	ld	(0x1, x), a
+      00028F 7B 03            [ 1]  584 	ld	a, (0x03, sp)
+      000291 F7               [ 1]  585 	ld	(x), a
+      000292                        586 00106$:
+                           000292   587 	C$utils.c$120$2_0$385 ==.
+                                    588 ;	utils.c: 120: for(i = 8; i > 0; i--)
+      000292 1E 01            [ 2]  589 	ldw	x, (0x01, sp)
+      000294 5A               [ 2]  590 	decw	x
+      000295 1F 01            [ 2]  591 	ldw	(0x01, sp), x
+      000297 5D               [ 2]  592 	tnzw	x
+      000298 26 D8            [ 1]  593 	jrne	00105$
+                           00029A   594 	C$utils.c$127$2_0$384 ==.
+                                    595 ;	utils.c: 127: }
+      00029A 5B 04            [ 2]  596 	addw	sp, #4
+                           00029C   597 	C$utils.c$127$2_0$384 ==.
+                           00029C   598 	XG$crc16$0$0 ==.
+      00029C 81               [ 4]  599 	ret
+                                    600 	.area CODE
+                                    601 	.area CONST
+                                    602 	.area INITIALIZER
+                                    603 	.area CABS (ABS)

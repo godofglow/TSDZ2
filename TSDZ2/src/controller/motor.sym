@@ -1,0 +1,1610 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$motor$1000                                                   0003B8 GR
+  9 A$motor$1001                                                   0003BA GR
+  9 A$motor$1004                                                   0003BD GR
+  9 A$motor$1005                                                   0003C0 GR
+  9 A$motor$1006                                                   0003C2 GR
+  9 A$motor$1007                                                   0003C4 GR
+  9 A$motor$1008                                                   0003C6 GR
+  9 A$motor$1011                                                   0003C9 GR
+  9 A$motor$1012                                                   0003CB GR
+  9 A$motor$1013                                                   0003CE GR
+  9 A$motor$1017                                                   0003D1 GR
+  9 A$motor$1018                                                   0003D4 GR
+  9 A$motor$1019                                                   0003D5 GR
+  9 A$motor$1020                                                   0003D7 GR
+  9 A$motor$1021                                                   0003D8 GR
+  9 A$motor$1022                                                   0003D9 GR
+  9 A$motor$1023                                                   0003DA GR
+  9 A$motor$1026                                                   0003DD GR
+  9 A$motor$1027                                                   0003E0 GR
+  9 A$motor$1028                                                   0003E1 GR
+  9 A$motor$1031                                                   0003E4 GR
+  9 A$motor$1032                                                   0003E7 GR
+  9 A$motor$1033                                                   0003E8 GR
+  9 A$motor$1034                                                   0003EA GR
+  9 A$motor$1035                                                   0003EB GR
+  9 A$motor$1036                                                   0003EC GR
+  9 A$motor$1037                                                   0003ED GR
+  9 A$motor$1040                                                   0003F0 GR
+  9 A$motor$1041                                                   0003F3 GR
+  9 A$motor$1042                                                   0003F4 GR
+  9 A$motor$1045                                                   0003F7 GR
+  9 A$motor$1046                                                   0003FA GR
+  9 A$motor$1047                                                   0003FB GR
+  9 A$motor$1048                                                   0003FD GR
+  9 A$motor$1049                                                   0003FE GR
+  9 A$motor$1050                                                   0003FF GR
+  9 A$motor$1051                                                   000400 GR
+  9 A$motor$1054                                                   000403 GR
+  9 A$motor$1055                                                   000406 GR
+  9 A$motor$1056                                                   000407 GR
+  9 A$motor$1059                                                   00040A GR
+  9 A$motor$1060                                                   00040D GR
+  9 A$motor$1061                                                   000410 GR
+  9 A$motor$1064                                                   000412 GR
+  9 A$motor$1065                                                   000416 GR
+  9 A$motor$1066                                                   000417 GR
+  9 A$motor$1067                                                   000418 GR
+  9 A$motor$1068                                                   00041B GR
+  9 A$motor$1069                                                   00041F GR
+  9 A$motor$1072                                                   000421 GR
+  9 A$motor$1073                                                   000422 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1076                                                   000425 GR
+  9 A$motor$1077                                                   000429 GR
+  9 A$motor$1081                                                   00042B GR
+  9 A$motor$1082                                                   00042E GR
+  9 A$motor$1083                                                   000431 GR
+  9 A$motor$1086                                                   000433 GR
+  9 A$motor$1090                                                   000438 GR
+  9 A$motor$1091                                                   00043B GR
+  9 A$motor$1092                                                   00043E GR
+  9 A$motor$1095                                                   000440 GR
+  9 A$motor$1096                                                   000444 GR
+  9 A$motor$1097                                                   000445 GR
+  9 A$motor$1098                                                   000446 GR
+  9 A$motor$1099                                                   000449 GR
+  9 A$motor$1100                                                   00044D GR
+  9 A$motor$1103                                                   00044F GR
+  9 A$motor$1104                                                   000450 GR
+  9 A$motor$1107                                                   000453 GR
+  9 A$motor$1108                                                   000457 GR
+  9 A$motor$1112                                                   000459 GR
+  9 A$motor$1113                                                   00045C GR
+  9 A$motor$1114                                                   00045F GR
+  9 A$motor$1117                                                   000461 GR
+  9 A$motor$1121                                                   000466 GR
+  9 A$motor$1122                                                   000469 GR
+  9 A$motor$1123                                                   00046A GR
+  9 A$motor$1126                                                   00046D GR
+  9 A$motor$1127                                                   000470 GR
+  9 A$motor$1128                                                   000471 GR
+  9 A$motor$1131                                                   000473 GR
+  9 A$motor$1132                                                   000477 GR
+  9 A$motor$1136                                                   000479 GR
+  9 A$motor$1140                                                   00047D GR
+  9 A$motor$1141                                                   000480 GR
+  9 A$motor$1142                                                   000483 GR
+  9 A$motor$1143                                                   000485 GR
+  9 A$motor$1147                                                   000488 GR
+  9 A$motor$1150                                                   00048D GR
+  9 A$motor$1151                                                   000490 GR
+  9 A$motor$1152                                                   000491 GR
+  9 A$motor$1155                                                   000493 GR
+  9 A$motor$1156                                                   000497 GR
+  9 A$motor$1159                                                   000499 GR
+  9 A$motor$1162                                                   00049D GR
+  9 A$motor$1163                                                   0004A0 GR
+  9 A$motor$1164                                                   0004A3 GR
+  9 A$motor$1168                                                   0004A5 GR
+  9 A$motor$1169                                                   0004A8 GR
+  9 A$motor$1170                                                   0004AB GR
+  9 A$motor$1173                                                   0004AD GR
+  9 A$motor$1174                                                   0004B0 GR
+  9 A$motor$1175                                                   0004B3 GR
+  9 A$motor$1179                                                   0004B5 GR
+  9 A$motor$1180                                                   0004B8 GR
+  9 A$motor$1183                                                   0004BB GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1184                                                   0004BC GR
+  9 A$motor$1188                                                   0004BF GR
+  9 A$motor$1189                                                   0004C2 GR
+  9 A$motor$1192                                                   0004C4 GR
+  9 A$motor$1193                                                   0004C8 GR
+  9 A$motor$1197                                                   0004CA GR
+  9 A$motor$1198                                                   0004CE GR
+  9 A$motor$1202                                                   0004D0 GR
+  9 A$motor$1203                                                   0004D4 GR
+  9 A$motor$1206                                                   0004D6 GR
+  9 A$motor$1207                                                   0004D9 GR
+  9 A$motor$1210                                                   0004DB GR
+  9 A$motor$1211                                                   0004DF GR
+  9 A$motor$1215                                                   0004E1 GR
+  9 A$motor$1219                                                   0004E5 GR
+  9 A$motor$1220                                                   0004E8 GR
+  9 A$motor$1221                                                   0004EB GR
+  9 A$motor$1224                                                   0004ED GR
+  9 A$motor$1225                                                   0004F0 GR
+  9 A$motor$1228                                                   0004F3 GR
+  9 A$motor$1229                                                   0004F4 GR
+  9 A$motor$1232                                                   0004F7 GR
+  9 A$motor$1235                                                   0004FB GR
+  9 A$motor$1238                                                   0004FF GR
+  9 A$motor$1239                                                   000500 GR
+  9 A$motor$1243                                                   000503 GR
+  9 A$motor$1244                                                   000506 GR
+  9 A$motor$1245                                                   000507 GR
+  9 A$motor$1248                                                   00050A GR
+  9 A$motor$1249                                                   00050D GR
+  9 A$motor$1250                                                   000510 GR
+  9 A$motor$1253                                                   000512 GR
+  9 A$motor$1254                                                   000515 GR
+  9 A$motor$1257                                                   000518 GR
+  9 A$motor$1258                                                   000519 GR
+  9 A$motor$1261                                                   00051C GR
+  9 A$motor$1262                                                   000520 GR
+  9 A$motor$1266                                                   000523 GR
+  9 A$motor$1267                                                   000526 GR
+  9 A$motor$1268                                                   000528 GR
+  9 A$motor$1271                                                   00052A GR
+  9 A$motor$1272                                                   00052E GR
+  9 A$motor$1276                                                   000530 GR
+  9 A$motor$1280                                                   000534 GR
+  9 A$motor$1281                                                   000537 GR
+  9 A$motor$1282                                                   00053A GR
+  9 A$motor$1285                                                   00053C GR
+  9 A$motor$1288                                                   000541 GR
+  9 A$motor$1289                                                   000544 GR
+  9 A$motor$1290                                                   000545 GR
+  9 A$motor$1293                                                   000547 GR
+  9 A$motor$1296                                                   00054B GR
+  9 A$motor$1297                                                   00054E GR
+  9 A$motor$1298                                                   000550 GR
+  9 A$motor$1301                                                   000552 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 4.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1302                                                   000555 GR
+  9 A$motor$1305                                                   000558 GR
+  9 A$motor$1306                                                   000559 GR
+  9 A$motor$1309                                                   00055C GR
+  9 A$motor$1310                                                   00055F GR
+  9 A$motor$1311                                                   000563 GR
+  9 A$motor$1312                                                   000564 GR
+  9 A$motor$1313                                                   000566 GR
+  9 A$motor$1315                                                   000568 GR
+  9 A$motor$1316                                                   00056B GR
+  9 A$motor$1319                                                   00056F GR
+  9 A$motor$1323                                                   000573 GR
+  9 A$motor$1327                                                   000577 GR
+  9 A$motor$1330                                                   000579 GR
+  9 A$motor$1340                                                   00057A GR
+  9 A$motor$1341                                                   00057C GR
+  9 A$motor$1342                                                   00057F GR
+  9 A$motor$1347                                                   000580 GR
+  9 A$motor$1357                                                   000581 GR
+  9 A$motor$1358                                                   000583 GR
+  9 A$motor$1359                                                   000586 GR
+  9 A$motor$1364                                                   000587 GR
+  9 A$motor$1374                                                   000588 GR
+  9 A$motor$1375                                                   00058A GR
+  9 A$motor$1376                                                   00058D GR
+  9 A$motor$1381                                                   000590 GR
+  9 A$motor$1391                                                   000591 GR
+  9 A$motor$1392                                                   000593 GR
+  9 A$motor$1393                                                   000594 GR
+  9 A$motor$1394                                                   000597 GR
+  9 A$motor$1399                                                   00059A GR
+  9 A$motor$1409                                                   00059B GR
+  9 A$motor$1410                                                   00059D GR
+  9 A$motor$1415                                                   0005A0 GR
+  9 A$motor$1425                                                   0005A1 GR
+  9 A$motor$1426                                                   0005A3 GR
+  9 A$motor$1427                                                   0005A5 GR
+  9 A$motor$1428                                                   0005A7 GR
+  9 A$motor$1429                                                   0005A9 GR
+  9 A$motor$1430                                                   0005AC GR
+  9 A$motor$1433                                                   0005AE GR
+  9 A$motor$1434                                                   0005B0 GR
+  9 A$motor$1435                                                   0005B2 GR
+  9 A$motor$1436                                                   0005B4 GR
+  9 A$motor$1437                                                   0005B6 GR
+  9 A$motor$1438                                                   0005B9 GR
+  9 A$motor$1441                                                   0005BB GR
+  9 A$motor$1442                                                   0005BD GR
+  9 A$motor$1443                                                   0005BF GR
+  9 A$motor$1444                                                   0005C1 GR
+  9 A$motor$1445                                                   0005C3 GR
+  9 A$motor$1446                                                   0005C6 GR
+  9 A$motor$1451                                                   0005C8 GR
+  9 A$motor$1461                                                   0005C9 GR
+  9 A$motor$1462                                                   0005CB GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 5.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1463                                                   0005CD GR
+  9 A$motor$1464                                                   0005D0 GR
+  9 A$motor$1467                                                   0005D2 GR
+  9 A$motor$1468                                                   0005D4 GR
+  9 A$motor$1469                                                   0005D6 GR
+  9 A$motor$1470                                                   0005D9 GR
+  9 A$motor$1473                                                   0005DB GR
+  9 A$motor$1474                                                   0005DD GR
+  9 A$motor$1475                                                   0005E0 GR
+  9 A$motor$1480                                                   0005E1 GR
+  9 A$motor$1490                                                   0005E2 GR
+  9 A$motor$1491                                                   0005E4 GR
+  9 A$motor$1492                                                   0005E6 GR
+  9 A$motor$1493                                                   0005E8 GR
+  9 A$motor$1494                                                   0005EA GR
+  9 A$motor$1498                                                   0005EC GR
+  9 A$motor$1499                                                   0005EF GR
+  9 A$motor$1500                                                   0005F1 GR
+  9 A$motor$1501                                                   0005F3 GR
+  9 A$motor$1505                                                   0005F5 GR
+  9 A$motor$1506                                                   0005F7 GR
+  9 A$motor$1511                                                   0005FA GR
+  9 A$motor$1521                                                   0005FB GR
+  9 A$motor$1522                                                   0005FD GR
+  9 A$motor$1527                                                   000600 GR
+  9 A$motor$1537                                                   000601 GR
+  9 A$motor$1538                                                   000603 GR
+  9 A$motor$1543                                                   000606 GR
+  9 A$motor$1553                                                   000607 GR
+  9 A$motor$1554                                                   00060A GR
+  9 A$motor$1555                                                   00060C GR
+  9 A$motor$1560                                                   00060F GR
+  9 A$motor$1570                                                   000610 GR
+  9 A$motor$1575                                                   000613 GR
+  9 A$motor$1585                                                   000614 GR
+  9 A$motor$1586                                                   000617 GR
+  9 A$motor$1587                                                   000618 GR
+  9 A$motor$1588                                                   000619 GR
+  9 A$motor$1589                                                   00061A GR
+  9 A$motor$1590                                                   00061E GR
+  9 A$motor$1593                                                   000621 GR
+  9 A$motor$1594                                                   000624 GR
+  9 A$motor$1595                                                   000628 GR
+  9 A$motor$1598                                                   00062B GR
+  9 A$motor$1599                                                   00062E GR
+  9 A$motor$1600                                                   00062F GR
+  9 A$motor$1601                                                   000630 GR
+  9 A$motor$1606                                                   000633 GR
+  9 A$motor$1616                                                   000634 GR
+  9 A$motor$1617                                                   000637 GR
+  9 A$motor$1618                                                   000638 GR
+  9 A$motor$1619                                                   000639 GR
+  9 A$motor$1620                                                   00063A GR
+  9 A$motor$1621                                                   00063E GR
+  9 A$motor$1624                                                   000641 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 6.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1625                                                   000644 GR
+  9 A$motor$1626                                                   000648 GR
+  9 A$motor$1629                                                   00064B GR
+  9 A$motor$1630                                                   00064E GR
+  9 A$motor$1631                                                   00064F GR
+  9 A$motor$1632                                                   000650 GR
+  9 A$motor$1633                                                   000651 GR
+  9 A$motor$1638                                                   000654 GR
+  9 A$motor$1646                                                   000655 GR
+  9 A$motor$1649                                                   000657 GR
+  9 A$motor$1650                                                   00065A GR
+  9 A$motor$1653                                                   00065C GR
+  9 A$motor$1654                                                   00065F GR
+  9 A$motor$1655                                                   000662 GR
+  9 A$motor$1656                                                   000664 GR
+  9 A$motor$1657                                                   000666 GR
+  9 A$motor$1658                                                   000669 GR
+  9 A$motor$1659                                                   00066B GR
+  9 A$motor$1662                                                   00066C GR
+  9 A$motor$1663                                                   00066D GR
+  9 A$motor$1664                                                   00066E GR
+  9 A$motor$1665                                                   000671 GR
+  9 A$motor$1666                                                   000673 GR
+  9 A$motor$1667                                                   000675 GR
+  9 A$motor$1668                                                   000677 GR
+  9 A$motor$1669                                                   000679 GR
+  9 A$motor$1670                                                   00067A GR
+  9 A$motor$1671                                                   00067D GR
+  9 A$motor$1672                                                   00067F GR
+  9 A$motor$1675                                                   000680 GR
+  9 A$motor$1676                                                   000681 GR
+  9 A$motor$1677                                                   000682 GR
+  9 A$motor$1678                                                   000683 GR
+  9 A$motor$1681                                                   000685 GR
+  9 A$motor$1682                                                   000688 GR
+  9 A$motor$1683                                                   00068A GR
+  9 A$motor$1686                                                   00068C GR
+  9 A$motor$1687                                                   00068D GR
+  9 A$motor$1688                                                   000690 GR
+  9 A$motor$1689                                                   000691 GR
+  9 A$motor$1690                                                   000692 GR
+  9 A$motor$1691                                                   000694 GR
+  9 A$motor$1692                                                   000696 GR
+  9 A$motor$1693                                                   000699 GR
+  9 A$motor$1696                                                   00069B GR
+  9 A$motor$1697                                                   00069D GR
+  9 A$motor$1698                                                   0006A0 GR
+  9 A$motor$1699                                                   0006A2 GR
+  9 A$motor$1700                                                   0006A3 GR
+  9 A$motor$1701                                                   0006A5 GR
+  9 A$motor$1702                                                   0006A7 GR
+  9 A$motor$1705                                                   0006A9 GR
+  9 A$motor$1706                                                   0006AB GR
+  9 A$motor$1707                                                   0006AE GR
+  9 A$motor$1708                                                   0006AF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 7.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1709                                                   0006B1 GR
+  9 A$motor$1710                                                   0006B2 GR
+  9 A$motor$1714                                                   0006B4 GR
+  9 A$motor$1715                                                   0006B5 GR
+  9 A$motor$1716                                                   0006B7 GR
+  9 A$motor$1719                                                   0006B9 GR
+  9 A$motor$1720                                                   0006BB GR
+  9 A$motor$1721                                                   0006BE GR
+  9 A$motor$1722                                                   0006BF GR
+  9 A$motor$1723                                                   0006C1 GR
+  9 A$motor$1727                                                   0006C2 GR
+  9 A$motor$1728                                                   0006C5 GR
+  9 A$motor$1729                                                   0006C8 GR
+  9 A$motor$1730                                                   0006CA GR
+  9 A$motor$1731                                                   0006CC GR
+  9 A$motor$1732                                                   0006CF GR
+  9 A$motor$1733                                                   0006D1 GR
+  9 A$motor$1734                                                   0006D3 GR
+  9 A$motor$1735                                                   0006D5 GR
+  9 A$motor$1738                                                   0006D7 GR
+  9 A$motor$1739                                                   0006D9 GR
+  9 A$motor$1740                                                   0006DB GR
+  9 A$motor$1741                                                   0006DD GR
+  9 A$motor$1742                                                   0006DF GR
+  9 A$motor$1743                                                   0006E1 GR
+  9 A$motor$1744                                                   0006E3 GR
+  9 A$motor$1745                                                   0006E5 GR
+  9 A$motor$1746                                                   0006E7 GR
+  9 A$motor$1747                                                   0006E9 GR
+  9 A$motor$1748                                                   0006EB GR
+  9 A$motor$1754                                                   0006EE GR
+  9 A$motor$1755                                                   0006F1 GR
+  9 A$motor$1756                                                   0006F3 GR
+  9 A$motor$1757                                                   0006F4 GR
+  9 A$motor$1760                                                   0006F6 GR
+  9 A$motor$1761                                                   0006F9 GR
+  9 A$motor$1764                                                   0006FC GR
+  9 A$motor$1770                                                   0006FF GR
+  9 A$motor$1771                                                   000702 GR
+  9 A$motor$1772                                                   000704 GR
+  9 A$motor$1773                                                   000705 GR
+  9 A$motor$1776                                                   000707 GR
+  9 A$motor$1777                                                   00070A GR
+  9 A$motor$1780                                                   00070D GR
+  9 A$motor$1786                                                   00070F GR
+  9 A$motor$1787                                                   000712 GR
+  9 A$motor$1788                                                   000714 GR
+  9 A$motor$1789                                                   000715 GR
+  9 A$motor$1792                                                   000717 GR
+  9 A$motor$1793                                                   00071A GR
+  9 A$motor$1796                                                   00071D GR
+  9 A$motor$1802                                                   00071F GR
+  9 A$motor$1803                                                   000722 GR
+  9 A$motor$1804                                                   000724 GR
+  9 A$motor$1805                                                   000725 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 8.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1808                                                   000727 GR
+  9 A$motor$1809                                                   00072A GR
+  9 A$motor$1812                                                   00072D GR
+  9 A$motor$1818                                                   00072F GR
+  9 A$motor$1819                                                   000732 GR
+  9 A$motor$1820                                                   000734 GR
+  9 A$motor$1821                                                   000735 GR
+  9 A$motor$1824                                                   000737 GR
+  9 A$motor$1825                                                   00073A GR
+  9 A$motor$1831                                                   00073D GR
+  9 A$motor$1832                                                   00073F GR
+  9 A$motor$1833                                                   000740 GR
+  9 A$motor$1834                                                   000742 GR
+  9 A$motor$1835                                                   000743 GR
+  9 A$motor$1836                                                   000745 GR
+  9 A$motor$1837                                                   000746 GR
+  9 A$motor$1838                                                   000748 GR
+  9 A$motor$1839                                                   000749 GR
+  9 A$motor$1840                                                   00074C GR
+  9 A$motor$1841                                                   00074E GR
+  9 A$motor$1844                                                   000750 GR
+  9 A$motor$1845                                                   000752 GR
+  9 A$motor$1846                                                   000753 GR
+  9 A$motor$1847                                                   000755 GR
+  9 A$motor$1848                                                   000756 GR
+  9 A$motor$1849                                                   000758 GR
+  9 A$motor$1850                                                   000759 GR
+  9 A$motor$1851                                                   00075B GR
+  9 A$motor$1852                                                   00075E GR
+  9 A$motor$1853                                                   000760 GR
+  9 A$motor$1856                                                   000761 GR
+  9 A$motor$1857                                                   000762 GR
+  9 A$motor$1860                                                   000763 GR
+  9 A$motor$1861                                                   000765 GR
+  9 A$motor$1862                                                   000766 GR
+  9 A$motor$1863                                                   000767 GR
+  9 A$motor$1864                                                   000768 GR
+  9 A$motor$1865                                                   00076B GR
+  9 A$motor$1866                                                   00076D GR
+  9 A$motor$1869                                                   000770 GR
+  9 A$motor$1870                                                   000773 GR
+  9 A$motor$1871                                                   000775 GR
+  9 A$motor$1872                                                   000776 GR
+  9 A$motor$1873                                                   000777 GR
+  9 A$motor$1874                                                   00077B GR
+  9 A$motor$1877                                                   00077E GR
+  9 A$motor$1878                                                   00077F GR
+  9 A$motor$1879                                                   000782 GR
+  9 A$motor$1880                                                   000783 GR
+  9 A$motor$1881                                                   000787 GR
+  9 A$motor$1884                                                   00078A GR
+  9 A$motor$1885                                                   00078D GR
+  9 A$motor$1886                                                   00078F GR
+  9 A$motor$1887                                                   000790 GR
+  9 A$motor$1888                                                   000791 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 9.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$1891                                                   000794 GR
+  9 A$motor$1894                                                   000796 GR
+  9 A$motor$1902                                                   000797 GR
+  9 A$motor$1905                                                   000798 GR
+  9 A$motor$1907                                                   00079A GR
+  9 A$motor$1908                                                   00079C GR
+  9 A$motor$1909                                                   00079E GR
+  9 A$motor$1912                                                   0007A0 GR
+  9 A$motor$1913                                                   0007A1 GR
+  9 A$motor$1914                                                   0007A3 GR
+  9 A$motor$1915                                                   0007A4 GR
+  9 A$motor$1916                                                   0007A7 GR
+  9 A$motor$1917                                                   0007A8 GR
+  9 A$motor$1918                                                   0007AA GR
+  9 A$motor$1921                                                   0007AC GR
+  9 A$motor$1922                                                   0007AE GR
+  9 A$motor$1926                                                   0007B0 GR
+  9 A$motor$1929                                                   0007B2 GR
+  9 A$motor$1932                                                   0007B4 GR
+  9 A$motor$1942                                                   0007B5 GR
+  9 A$motor$1947                                                   0007B8 GR
+  9 A$motor$1957                                                   0007B9 GR
+  9 A$motor$1962                                                   0007BC GR
+  9 A$motor$1972                                                   0007BD GR
+  9 A$motor$1973                                                   0007BF GR
+  9 A$motor$1978                                                   0007C2 GR
+  9 A$motor$314                                                    000000 GR
+  9 A$motor$317                                                    000003 GR
+  9 A$motor$320                                                    000006 GR
+  9 A$motor$325                                                    000009 GR
+  9 A$motor$333                                                    00000A GR
+  9 A$motor$334                                                    00000B GR
+  9 A$motor$335                                                    00000C GR
+  9 A$motor$338                                                    00000E GR
+  9 A$motor$341                                                    000011 GR
+  9 A$motor$344                                                    000015 GR
+  9 A$motor$347                                                    000019 GR
+  9 A$motor$351                                                    00001D GR
+  9 A$motor$352                                                    000020 GR
+  9 A$motor$355                                                    000022 GR
+  9 A$motor$356                                                    000025 GR
+  9 A$motor$359                                                    000028 GR
+  9 A$motor$360                                                    00002B GR
+  9 A$motor$361                                                    00002C GR
+  9 A$motor$362                                                    00002D GR
+  9 A$motor$363                                                    00002E GR
+  9 A$motor$366                                                    000031 GR
+  9 A$motor$367                                                    000035 GR
+  9 A$motor$370                                                    000037 GR
+  9 A$motor$371                                                    00003A GR
+  9 A$motor$372                                                    00003B GR
+  9 A$motor$373                                                    00003C GR
+  9 A$motor$374                                                    00003D GR
+  9 A$motor$375                                                    00003E GR
+  9 A$motor$376                                                    00003F GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 10.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$377                                                    000040 GR
+  9 A$motor$378                                                    000042 GR
+  9 A$motor$379                                                    000045 GR
+  9 A$motor$380                                                    000047 GR
+  9 A$motor$381                                                    000048 GR
+  9 A$motor$382                                                    000049 GR
+  9 A$motor$383                                                    00004C GR
+  9 A$motor$387                                                    00004E GR
+  9 A$motor$391                                                    000052 GR
+  9 A$motor$394                                                    000056 GR
+  9 A$motor$397                                                    00005A GR
+  9 A$motor$400                                                    00005E GR
+  9 A$motor$401                                                    000061 GR
+  9 A$motor$402                                                    000063 GR
+  9 A$motor$403                                                    000064 GR
+  9 A$motor$404                                                    000066 GR
+  9 A$motor$405                                                    000067 GR
+  9 A$motor$408                                                    000069 GR
+  9 A$motor$409                                                    00006C GR
+  9 A$motor$410                                                    00006E GR
+  9 A$motor$411                                                    00006F GR
+  9 A$motor$412                                                    000071 GR
+  9 A$motor$415                                                    000073 GR
+  9 A$motor$416                                                    000076 GR
+  9 A$motor$417                                                    000078 GR
+  9 A$motor$418                                                    000079 GR
+  9 A$motor$419                                                    00007A GR
+  9 A$motor$420                                                    00007B GR
+  9 A$motor$421                                                    00007D GR
+  9 A$motor$424                                                    000080 GR
+  9 A$motor$425                                                    000083 GR
+  9 A$motor$426                                                    000086 GR
+  9 A$motor$427                                                    000088 GR
+  9 A$motor$431                                                    00008B GR
+  9 A$motor$434                                                    000090 GR
+  9 A$motor$435                                                    000093 GR
+  9 A$motor$436                                                    000095 GR
+  9 A$motor$437                                                    000097 GR
+  9 A$motor$439                                                    00009A GR
+  9 A$motor$440                                                    00009B GR
+  9 A$motor$441                                                    00009C GR
+  9 A$motor$442                                                    00009D GR
+  9 A$motor$443                                                    0000A0 GR
+  9 A$motor$457                                                    0000AF GR
+  9 A$motor$460                                                    0000B3 GR
+  9 A$motor$466                                                    0000B6 GR
+  9 A$motor$467                                                    0000B9 GR
+  9 A$motor$468                                                    0000BA GR
+  9 A$motor$469                                                    0000BC GR
+  9 A$motor$473                                                    0000BF GR
+  9 A$motor$476                                                    0000C3 GR
+  9 A$motor$477                                                    0000C6 GR
+  9 A$motor$480                                                    0000C9 GR
+  9 A$motor$481                                                    0000CC GR
+  9 A$motor$484                                                    0000CF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 11.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$485                                                    0000D2 GR
+  9 A$motor$488                                                    0000D4 GR
+  9 A$motor$489                                                    0000D7 GR
+  9 A$motor$490                                                    0000DB GR
+  9 A$motor$491                                                    0000DC GR
+  9 A$motor$492                                                    0000DF GR
+  9 A$motor$496                                                    0000E1 GR
+  9 A$motor$497                                                    0000E4 GR
+  9 A$motor$501                                                    0000E7 GR
+  9 A$motor$502                                                    0000EA GR
+  9 A$motor$503                                                    0000ED GR
+  9 A$motor$506                                                    0000EF GR
+  9 A$motor$507                                                    0000F2 GR
+  9 A$motor$508                                                    0000F3 GR
+  9 A$motor$511                                                    0000F5 GR
+  9 A$motor$514                                                    0000F9 GR
+  9 A$motor$515                                                    0000FD GR
+  9 A$motor$519                                                    0000FF GR
+  9 A$motor$520                                                    000102 GR
+  9 A$motor$521                                                    000104 GR
+  9 A$motor$524                                                    000106 GR
+  9 A$motor$527                                                    00010A GR
+  9 A$motor$531                                                    00010E GR
+  9 A$motor$534                                                    000112 GR
+  9 A$motor$540                                                    000114 GR
+  9 A$motor$543                                                    000118 GR
+  9 A$motor$549                                                    00011A GR
+  9 A$motor$552                                                    00011E GR
+  9 A$motor$558                                                    000120 GR
+  9 A$motor$561                                                    000124 GR
+  9 A$motor$564                                                    000128 GR
+  9 A$motor$570                                                    00012A GR
+  9 A$motor$573                                                    00012E GR
+  9 A$motor$579                                                    000130 GR
+  9 A$motor$585                                                    000133 GR
+  9 A$motor$586                                                    000136 GR
+  9 A$motor$590                                                    000139 GR
+  9 A$motor$591                                                    00013C GR
+  9 A$motor$592                                                    00013F GR
+  9 A$motor$595                                                    000141 GR
+  9 A$motor$596                                                    000144 GR
+  9 A$motor$597                                                    000145 GR
+  9 A$motor$600                                                    000148 GR
+  9 A$motor$601                                                    00014B GR
+  9 A$motor$602                                                    00014C GR
+  9 A$motor$603                                                    00014F GR
+  9 A$motor$607                                                    000151 GR
+  9 A$motor$608                                                    000154 GR
+  9 A$motor$611                                                    000157 GR
+  9 A$motor$612                                                    00015A GR
+  9 A$motor$615                                                    00015D GR
+  9 A$motor$618                                                    000161 GR
+  9 A$motor$619                                                    000162 GR
+  9 A$motor$622                                                    000165 GR
+  9 A$motor$623                                                    000168 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 12.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$626                                                    00016B GR
+  9 A$motor$629                                                    00016F GR
+  9 A$motor$632                                                    000173 GR
+  9 A$motor$636                                                    000177 GR
+  9 A$motor$637                                                    00017A GR
+  9 A$motor$638                                                    00017C GR
+  9 A$motor$641                                                    00017E GR
+  9 A$motor$642                                                    000181 GR
+  9 A$motor$643                                                    000182 GR
+  9 A$motor$644                                                    000183 GR
+  9 A$motor$645                                                    000184 GR
+  9 A$motor$646                                                    000188 GR
+  9 A$motor$647                                                    000189 GR
+  9 A$motor$648                                                    00018A GR
+  9 A$motor$651                                                    00018D GR
+  9 A$motor$652                                                    000190 GR
+  9 A$motor$653                                                    000193 GR
+  9 A$motor$656                                                    000196 GR
+  9 A$motor$657                                                    000199 GR
+  9 A$motor$658                                                    00019C GR
+  9 A$motor$659                                                    00019F GR
+  9 A$motor$663                                                    0001A1 GR
+  9 A$motor$664                                                    0001A4 GR
+  9 A$motor$665                                                    0001A7 GR
+  9 A$motor$669                                                    0001AA GR
+  9 A$motor$670                                                    0001AD GR
+  9 A$motor$671                                                    0001AF GR
+  9 A$motor$674                                                    0001B2 GR
+  9 A$motor$675                                                    0001B5 GR
+  9 A$motor$676                                                    0001B8 GR
+  9 A$motor$679                                                    0001BA GR
+  9 A$motor$680                                                    0001BD GR
+  9 A$motor$681                                                    0001C0 GR
+  9 A$motor$684                                                    0001C2 GR
+  9 A$motor$685                                                    0001C5 GR
+  9 A$motor$686                                                    0001C8 GR
+  9 A$motor$690                                                    0001CA GR
+  9 A$motor$691                                                    0001CE GR
+  9 A$motor$695                                                    0001D0 GR
+  9 A$motor$699                                                    0001D4 GR
+  9 A$motor$700                                                    0001D7 GR
+  9 A$motor$701                                                    0001D8 GR
+  9 A$motor$702                                                    0001DB GR
+  9 A$motor$703                                                    0001DD GR
+  9 A$motor$706                                                    0001DF GR
+  9 A$motor$709                                                    0001E3 GR
+  9 A$motor$710                                                    0001E7 GR
+  9 A$motor$711                                                    0001E9 GR
+  9 A$motor$715                                                    0001EC GR
+  9 A$motor$716                                                    0001F0 GR
+  9 A$motor$717                                                    0001F2 GR
+  9 A$motor$721                                                    0001F5 GR
+  9 A$motor$722                                                    0001F9 GR
+  9 A$motor$726                                                    0001FC GR
+  9 A$motor$727                                                    0001FF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 13.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$728                                                    000202 GR
+  9 A$motor$731                                                    000204 GR
+  9 A$motor$732                                                    000208 GR
+  9 A$motor$733                                                    00020A GR
+  9 A$motor$737                                                    00020D GR
+  9 A$motor$738                                                    000211 GR
+  9 A$motor$742                                                    000214 GR
+  9 A$motor$743                                                    000217 GR
+  9 A$motor$744                                                    00021A GR
+  9 A$motor$747                                                    00021C GR
+  9 A$motor$748                                                    000220 GR
+  9 A$motor$749                                                    000222 GR
+  9 A$motor$753                                                    000225 GR
+  9 A$motor$754                                                    000229 GR
+  9 A$motor$758                                                    00022B GR
+  9 A$motor$759                                                    00022E GR
+  9 A$motor$760                                                    000231 GR
+  9 A$motor$763                                                    000233 GR
+  9 A$motor$764                                                    000237 GR
+  9 A$motor$767                                                    000239 GR
+  9 A$motor$768                                                    00023D GR
+  9 A$motor$769                                                    00023E GR
+  9 A$motor$770                                                    00023F GR
+  9 A$motor$771                                                    000242 GR
+  9 A$motor$772                                                    000246 GR
+  9 A$motor$775                                                    000248 GR
+  9 A$motor$776                                                    000249 GR
+  9 A$motor$779                                                    00024C GR
+  9 A$motor$780                                                    000250 GR
+  9 A$motor$784                                                    000252 GR
+  9 A$motor$785                                                    000255 GR
+  9 A$motor$786                                                    000258 GR
+  9 A$motor$789                                                    00025A GR
+  9 A$motor$790                                                    00025E GR
+  9 A$motor$791                                                    00025F GR
+  9 A$motor$792                                                    000260 GR
+  9 A$motor$793                                                    000263 GR
+  9 A$motor$794                                                    000267 GR
+  9 A$motor$797                                                    000269 GR
+  9 A$motor$798                                                    00026A GR
+  9 A$motor$801                                                    00026D GR
+  9 A$motor$805                                                    000271 GR
+  9 A$motor$806                                                    000274 GR
+  9 A$motor$807                                                    000276 GR
+  9 A$motor$808                                                    000277 GR
+  9 A$motor$809                                                    000278 GR
+  9 A$motor$810                                                    00027B GR
+  9 A$motor$811                                                    00027C GR
+  9 A$motor$814                                                    00027F GR
+  9 A$motor$815                                                    000282 GR
+  9 A$motor$816                                                    000284 GR
+  9 A$motor$819                                                    000286 GR
+  9 A$motor$820                                                    000287 GR
+  9 A$motor$821                                                    00028A GR
+  9 A$motor$822                                                    00028B GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 14.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$823                                                    00028E GR
+  9 A$motor$824                                                    00028F GR
+  9 A$motor$825                                                    000290 GR
+  9 A$motor$826                                                    000293 GR
+  9 A$motor$827                                                    000294 GR
+  9 A$motor$828                                                    000295 GR
+  9 A$motor$829                                                    000297 GR
+  9 A$motor$830                                                    00029A GR
+  9 A$motor$831                                                    00029C GR
+  9 A$motor$834                                                    00029F GR
+  9 A$motor$835                                                    0002A2 GR
+  9 A$motor$836                                                    0002A4 GR
+  9 A$motor$837                                                    0002A6 GR
+  9 A$motor$838                                                    0002A8 GR
+  9 A$motor$841                                                    0002AB GR
+  9 A$motor$842                                                    0002AE GR
+  9 A$motor$843                                                    0002B0 GR
+  9 A$motor$844                                                    0002B3 GR
+  9 A$motor$848                                                    0002B5 GR
+  9 A$motor$849                                                    0002B8 GR
+  9 A$motor$850                                                    0002BA GR
+  9 A$motor$851                                                    0002BC GR
+  9 A$motor$852                                                    0002C0 GR
+  9 A$motor$853                                                    0002C3 GR
+  9 A$motor$854                                                    0002C4 GR
+  9 A$motor$855                                                    0002C7 GR
+  9 A$motor$856                                                    0002C8 GR
+  9 A$motor$857                                                    0002C9 GR
+  9 A$motor$858                                                    0002CB GR
+  9 A$motor$859                                                    0002CE GR
+  9 A$motor$860                                                    0002D0 GR
+  9 A$motor$863                                                    0002D3 GR
+  9 A$motor$864                                                    0002D6 GR
+  9 A$motor$865                                                    0002D8 GR
+  9 A$motor$866                                                    0002DA GR
+  9 A$motor$867                                                    0002DC GR
+  9 A$motor$870                                                    0002DF GR
+  9 A$motor$871                                                    0002E1 GR
+  9 A$motor$872                                                    0002E4 GR
+  9 A$motor$876                                                    0002E7 GR
+  9 A$motor$877                                                    0002E8 GR
+  9 A$motor$878                                                    0002EB GR
+  9 A$motor$879                                                    0002EC GR
+  9 A$motor$880                                                    0002EF GR
+  9 A$motor$881                                                    0002F0 GR
+  9 A$motor$884                                                    0002F3 GR
+  9 A$motor$885                                                    0002F6 GR
+  9 A$motor$886                                                    0002F8 GR
+  9 A$motor$889                                                    0002FA GR
+  9 A$motor$890                                                    0002FB GR
+  9 A$motor$891                                                    0002FE GR
+  9 A$motor$892                                                    0002FF GR
+  9 A$motor$893                                                    000302 GR
+  9 A$motor$894                                                    000303 GR
+  9 A$motor$895                                                    000304 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 15.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$896                                                    000307 GR
+  9 A$motor$897                                                    000308 GR
+  9 A$motor$898                                                    000309 GR
+  9 A$motor$899                                                    00030B GR
+  9 A$motor$900                                                    00030E GR
+  9 A$motor$901                                                    000310 GR
+  9 A$motor$904                                                    000313 GR
+  9 A$motor$905                                                    000316 GR
+  9 A$motor$906                                                    000318 GR
+  9 A$motor$907                                                    00031A GR
+  9 A$motor$908                                                    00031C GR
+  9 A$motor$911                                                    00031F GR
+  9 A$motor$912                                                    000322 GR
+  9 A$motor$913                                                    000324 GR
+  9 A$motor$914                                                    000327 GR
+  9 A$motor$918                                                    000329 GR
+  9 A$motor$919                                                    00032C GR
+  9 A$motor$920                                                    00032E GR
+  9 A$motor$921                                                    000330 GR
+  9 A$motor$922                                                    000334 GR
+  9 A$motor$923                                                    000337 GR
+  9 A$motor$924                                                    000338 GR
+  9 A$motor$925                                                    00033B GR
+  9 A$motor$926                                                    00033C GR
+  9 A$motor$927                                                    00033D GR
+  9 A$motor$928                                                    00033F GR
+  9 A$motor$929                                                    000342 GR
+  9 A$motor$930                                                    000344 GR
+  9 A$motor$933                                                    000347 GR
+  9 A$motor$934                                                    00034A GR
+  9 A$motor$935                                                    00034C GR
+  9 A$motor$936                                                    00034E GR
+  9 A$motor$937                                                    000350 GR
+  9 A$motor$940                                                    000353 GR
+  9 A$motor$941                                                    000355 GR
+  9 A$motor$942                                                    000358 GR
+  9 A$motor$946                                                    00035B GR
+  9 A$motor$947                                                    00035E GR
+  9 A$motor$948                                                    000360 GR
+  9 A$motor$949                                                    000361 GR
+  9 A$motor$950                                                    000362 GR
+  9 A$motor$951                                                    000365 GR
+  9 A$motor$952                                                    000366 GR
+  9 A$motor$955                                                    000369 GR
+  9 A$motor$956                                                    00036C GR
+  9 A$motor$957                                                    00036E GR
+  9 A$motor$960                                                    000370 GR
+  9 A$motor$961                                                    000371 GR
+  9 A$motor$962                                                    000374 GR
+  9 A$motor$963                                                    000375 GR
+  9 A$motor$964                                                    000378 GR
+  9 A$motor$965                                                    000379 GR
+  9 A$motor$966                                                    00037A GR
+  9 A$motor$967                                                    00037D GR
+  9 A$motor$968                                                    00037E GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 16.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$motor$969                                                    00037F GR
+  9 A$motor$970                                                    000381 GR
+  9 A$motor$971                                                    000384 GR
+  9 A$motor$972                                                    000386 GR
+  9 A$motor$975                                                    000389 GR
+  9 A$motor$976                                                    00038C GR
+  9 A$motor$977                                                    00038E GR
+  9 A$motor$978                                                    000390 GR
+  9 A$motor$979                                                    000392 GR
+  9 A$motor$982                                                    000395 GR
+  9 A$motor$983                                                    000398 GR
+  9 A$motor$984                                                    00039A GR
+  9 A$motor$985                                                    00039D GR
+  9 A$motor$989                                                    00039F GR
+  9 A$motor$990                                                    0003A2 GR
+  9 A$motor$991                                                    0003A4 GR
+  9 A$motor$992                                                    0003A6 GR
+  9 A$motor$993                                                    0003AA GR
+  9 A$motor$994                                                    0003AD GR
+  9 A$motor$995                                                    0003AE GR
+  9 A$motor$996                                                    0003B1 GR
+  9 A$motor$997                                                    0003B2 GR
+  9 A$motor$998                                                    0003B3 GR
+  9 A$motor$999                                                    0003B5 GR
+  9 C$motor.c$1019$1_0$427                                      =  000573 GR
+  9 C$motor.c$1021$1_0$427                                      =  000579 GR
+  9 C$motor.c$1026$1_0$492                                      =  00057A GR
+  9 C$motor.c$1028$1_0$492                                      =  00057A GR
+  9 C$motor.c$1029$1_0$492                                      =  000580 GR
+  9 C$motor.c$1034$1_0$494                                      =  000581 GR
+  9 C$motor.c$1036$1_0$494                                      =  000581 GR
+  9 C$motor.c$1037$1_0$494                                      =  000587 GR
+  9 C$motor.c$1042$1_0$496                                      =  000588 GR
+  9 C$motor.c$1044$1_0$496                                      =  000588 GR
+  9 C$motor.c$1045$1_0$496                                      =  000590 GR
+  9 C$motor.c$1050$1_0$498                                      =  000591 GR
+  9 C$motor.c$1052$1_0$498                                      =  000591 GR
+  9 C$motor.c$1053$1_0$498                                      =  00059A GR
+  9 C$motor.c$1058$1_0$500                                      =  00059B GR
+  9 C$motor.c$1060$1_0$500                                      =  00059B GR
+  9 C$motor.c$1061$1_0$500                                      =  0005A0 GR
+  9 C$motor.c$1066$1_0$502                                      =  0005A1 GR
+  9 C$motor.c$1068$1_0$502                                      =  0005A1 GR
+  9 C$motor.c$1069$1_0$502                                      =  0005AE GR
+  9 C$motor.c$1070$1_0$502                                      =  0005BB GR
+  9 C$motor.c$1071$1_0$502                                      =  0005C8 GR
+  9 C$motor.c$1076$1_0$504                                      =  0005C9 GR
+  9 C$motor.c$1078$1_0$504                                      =  0005C9 GR
+  9 C$motor.c$1079$1_0$504                                      =  0005D2 GR
+  9 C$motor.c$1080$1_0$504                                      =  0005DB GR
+  9 C$motor.c$1081$1_0$504                                      =  0005E1 GR
+  9 C$motor.c$1086$1_0$506                                      =  0005E2 GR
+  9 C$motor.c$1088$1_0$506                                      =  0005E2 GR
+  9 C$motor.c$1091$1_0$506                                      =  0005EC GR
+  9 C$motor.c$1093$1_0$506                                      =  0005F5 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 17.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$motor.c$1094$1_0$506                                      =  0005FA GR
+  9 C$motor.c$1099$1_0$510                                      =  0005FB GR
+  9 C$motor.c$1101$1_0$510                                      =  0005FB GR
+  9 C$motor.c$1102$1_0$510                                      =  000600 GR
+  9 C$motor.c$1107$1_0$512                                      =  000601 GR
+  9 C$motor.c$1109$1_0$512                                      =  000601 GR
+  9 C$motor.c$1110$1_0$512                                      =  000606 GR
+  9 C$motor.c$1115$1_0$514                                      =  000607 GR
+  9 C$motor.c$1117$1_0$514                                      =  000607 GR
+  9 C$motor.c$1118$1_0$514                                      =  00060F GR
+  9 C$motor.c$1123$1_0$516                                      =  000610 GR
+  9 C$motor.c$1125$1_0$516                                      =  000610 GR
+  9 C$motor.c$1126$1_0$516                                      =  000613 GR
+  9 C$motor.c$1131$1_0$518                                      =  000614 GR
+  9 C$motor.c$1134$1_0$518                                      =  000614 GR
+  9 C$motor.c$1135$1_0$518                                      =  000621 GR
+  9 C$motor.c$1136$1_0$518                                      =  00062B GR
+  9 C$motor.c$1137$1_0$518                                      =  000633 GR
+  9 C$motor.c$1142$1_0$520                                      =  000634 GR
+  9 C$motor.c$1145$1_0$520                                      =  000634 GR
+  9 C$motor.c$1146$1_0$520                                      =  000641 GR
+  9 C$motor.c$1147$1_0$520                                      =  00064B GR
+  9 C$motor.c$1148$1_0$520                                      =  000654 GR
+  9 C$motor.c$1153$1_0$522                                      =  000655 GR
+  9 C$motor.c$1164$1_0$522                                      =  000657 GR
+  9 C$motor.c$1174$1_0$522                                      =  00065C GR
+  9 C$motor.c$1175$1_0$522                                      =  00066C GR
+  9 C$motor.c$1176$1_0$522                                      =  000680 GR
+  9 C$motor.c$1179$1_0$522                                      =  000685 GR
+  9 C$motor.c$1181$2_0$523                                      =  00068C GR
+  9 C$motor.c$1182$2_0$523                                      =  00069B GR
+  9 C$motor.c$1185$2_0$523                                      =  0006A9 GR
+  9 C$motor.c$1190$2_0$524                                      =  0006B4 GR
+  9 C$motor.c$1193$2_0$524                                      =  0006B9 GR
+  9 C$motor.c$1198$1_0$522                                      =  0006C2 GR
+  9 C$motor.c$1219$1_0$522                                      =  0006D7 GR
+  9 C$motor.c$1221$2_0$525                                      =  0006EE GR
+  9 C$motor.c$1222$2_0$525                                      =  0006EE GR
+  9 C$motor.c$1223$2_0$525                                      =  0006F6 GR
+  9 C$motor.c$1224$2_0$525                                      =  0006FC GR
+  9 C$motor.c$1226$2_0$525                                      =  0006FF GR
+  9 C$motor.c$1227$2_0$525                                      =  0006FF GR
+  9 C$motor.c$1228$2_0$525                                      =  000707 GR
+  9 C$motor.c$1229$2_0$525                                      =  00070D GR
+  9 C$motor.c$1231$2_0$525                                      =  00070F GR
+  9 C$motor.c$1232$2_0$525                                      =  00070F GR
+  9 C$motor.c$1233$2_0$525                                      =  000717 GR
+  9 C$motor.c$1234$2_0$525                                      =  00071D GR
+  9 C$motor.c$1236$2_0$525                                      =  00071F GR
+  9 C$motor.c$1237$2_0$525                                      =  00071F GR
+  9 C$motor.c$1238$2_0$525                                      =  000727 GR
+  9 C$motor.c$1239$2_0$525                                      =  00072D GR
+  9 C$motor.c$1241$2_0$525                                      =  00072F GR
+  9 C$motor.c$1242$2_0$525                                      =  00072F GR
+  9 C$motor.c$1243$2_0$525                                      =  000737 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 18.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$motor.c$1245$1_0$522                                      =  00073D GR
+  9 C$motor.c$1248$1_0$522                                      =  00073D GR
+  9 C$motor.c$1249$1_0$522                                      =  000750 GR
+  9 C$motor.c$1250$1_0$522                                      =  000761 GR
+  9 C$motor.c$1253$1_0$522                                      =  000763 GR
+  9 C$motor.c$1256$1_0$522                                      =  000770 GR
+  9 C$motor.c$1257$1_0$522                                      =  00077E GR
+  9 C$motor.c$1258$1_0$522                                      =  00078A GR
+  9 C$motor.c$1259$1_0$522                                      =  000796 GR
+  9 C$motor.c$1264$1_0$527                                      =  000797 GR
+  9 C$motor.c$1268$2_0$528                                      =  000798 GR
+  9 C$motor.c$1270$2_0$528                                      =  0007A0 GR
+  9 C$motor.c$1275$2_0$528                                      =  0007AC GR
+  9 C$motor.c$1279$1_0$527                                      =  0007B0 GR
+  9 C$motor.c$1280$1_0$527                                      =  0007B4 GR
+  9 C$motor.c$1285$1_0$531                                      =  0007B5 GR
+  9 C$motor.c$1287$1_0$531                                      =  0007B5 GR
+  9 C$motor.c$1288$1_0$531                                      =  0007B8 GR
+  9 C$motor.c$1293$1_0$533                                      =  0007B9 GR
+  9 C$motor.c$1295$1_0$533                                      =  0007B9 GR
+  9 C$motor.c$1296$1_0$533                                      =  0007BC GR
+  9 C$motor.c$1301$1_0$535                                      =  0007BD GR
+  9 C$motor.c$1303$1_0$535                                      =  0007BD GR
+  9 C$motor.c$1304$1_0$535                                      =  0007C2 GR
+  9 C$motor.c$496$0_0$425                                       =  000000 GR
+  9 C$motor.c$499$1_0$425                                       =  000000 GR
+  9 C$motor.c$500$1_0$425                                       =  000003 GR
+  9 C$motor.c$503$1_0$425                                       =  000006 GR
+  9 C$motor.c$504$1_0$425                                       =  000009 GR
+  9 C$motor.c$513$1_0$427                                       =  00000A GR
+  9 C$motor.c$518$1_0$427                                       =  00000E GR
+  9 C$motor.c$524$1_0$427                                       =  000011 GR
+  9 C$motor.c$526$1_0$427                                       =  000015 GR
+  9 C$motor.c$528$1_0$427                                       =  000019 GR
+  9 C$motor.c$529$1_0$427                                       =  00001D GR
+  9 C$motor.c$530$1_0$427                                       =  000022 GR
+  9 C$motor.c$531$1_0$427                                       =  000028 GR
+  9 C$motor.c$534$1_0$427                                       =  000031 GR
+  9 C$motor.c$536$2_0$428                                       =  000037 GR
+  9 C$motor.c$540$2_0$429                                       =  00004E GR
+  9 C$motor.c$545$1_0$427                                       =  000052 GR
+  9 C$motor.c$546$1_0$427                                       =  000056 GR
+  9 C$motor.c$547$1_0$427                                       =  00005A GR
+  9 C$motor.c$556$1_0$427                                       =  00005E GR
+  9 C$motor.c$557$1_0$427                                       =  000069 GR
+  9 C$motor.c$558$1_0$427                                       =  000073 GR
+  9 C$motor.c$560$1_0$427                                       =  000080 GR
+  9 C$motor.c$562$2_0$430                                       =  00008B GR
+  9 C$motor.c$564$2_0$430                                       =  000090 GR
+  9 C$motor.c$566$3_0$431                                       =  0000AF GR
+  9 C$motor.c$567$3_0$431                                       =  0000AF GR
+  9 C$motor.c$568$3_0$431                                       =  0000B3 GR
+  9 C$motor.c$570$3_0$431                                       =  0000B6 GR
+  9 C$motor.c$571$3_0$431                                       =  0000B6 GR
+  9 C$motor.c$573$4_0$432                                       =  0000BF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 19.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$motor.c$574$4_0$432                                       =  0000C3 GR
+  9 C$motor.c$575$4_0$432                                       =  0000C9 GR
+  9 C$motor.c$579$4_0$432                                       =  0000CF GR
+  9 C$motor.c$581$5_0$433                                       =  0000D4 GR
+  9 C$motor.c$585$5_0$434                                       =  0000E1 GR
+  9 C$motor.c$589$4_0$432                                       =  0000E7 GR
+  9 C$motor.c$591$5_0$435                                       =  0000EF GR
+  9 C$motor.c$593$6_0$436                                       =  0000F5 GR
+  9 C$motor.c$594$6_0$436                                       =  0000F9 GR
+  9 C$motor.c$599$5_0$437                                       =  0000FF GR
+  9 C$motor.c$601$6_0$438                                       =  000106 GR
+  9 C$motor.c$602$6_0$438                                       =  00010A GR
+  9 C$motor.c$607$3_0$431                                       =  00010E GR
+  9 C$motor.c$608$3_0$431                                       =  000112 GR
+  9 C$motor.c$610$3_0$431                                       =  000114 GR
+  9 C$motor.c$611$3_0$431                                       =  000114 GR
+  9 C$motor.c$612$3_0$431                                       =  000118 GR
+  9 C$motor.c$614$3_0$431                                       =  00011A GR
+  9 C$motor.c$615$3_0$431                                       =  00011A GR
+  9 C$motor.c$616$3_0$431                                       =  00011E GR
+  9 C$motor.c$618$3_0$431                                       =  000120 GR
+  9 C$motor.c$619$3_0$431                                       =  000120 GR
+  9 C$motor.c$620$3_0$431                                       =  000124 GR
+  9 C$motor.c$621$3_0$431                                       =  000128 GR
+  9 C$motor.c$626$3_0$431                                       =  00012A GR
+  9 C$motor.c$627$3_0$431                                       =  00012A GR
+  9 C$motor.c$628$3_0$431                                       =  00012E GR
+  9 C$motor.c$630$3_0$431                                       =  000130 GR
+  9 C$motor.c$631$3_0$431                                       =  000130 GR
+  9 C$motor.c$633$2_0$430                                       =  000133 GR
+  9 C$motor.c$635$2_0$430                                       =  000133 GR
+  9 C$motor.c$640$1_0$427                                       =  000139 GR
+  9 C$motor.c$642$2_0$439                                       =  000141 GR
+  9 C$motor.c$643$2_0$439                                       =  000148 GR
+  9 C$motor.c$647$2_0$440                                       =  000151 GR
+  9 C$motor.c$648$2_0$440                                       =  000157 GR
+  9 C$motor.c$649$2_0$440                                       =  00015D GR
+  9 C$motor.c$650$2_0$440                                       =  000161 GR
+  9 C$motor.c$651$2_0$440                                       =  000165 GR
+  9 C$motor.c$652$2_0$440                                       =  00016B GR
+  9 C$motor.c$653$2_0$440                                       =  00016F GR
+  9 C$motor.c$654$2_0$440                                       =  000173 GR
+  9 C$motor.c$663$1_0$427                                       =  000177 GR
+  9 C$motor.c$667$2_0$441                                       =  00017E GR
+  9 C$motor.c$668$2_0$441                                       =  00018D GR
+  9 C$motor.c$669$2_0$441                                       =  000196 GR
+  9 C$motor.c$674$2_0$442                                       =  0001A1 GR
+  9 C$motor.c$678$1_0$427                                       =  0001AA GR
+  9 C$motor.c$688$1_0$427                                       =  0001B2 GR
+  9 C$motor.c$689$1_0$427                                       =  0001BA GR
+  9 C$motor.c$690$1_0$427                                       =  0001C2 GR
+  9 C$motor.c$692$2_0$443                                       =  0001CA GR
+  9 C$motor.c$694$2_0$444                                       =  0001D0 GR
+  9 C$motor.c$699$1_0$427                                       =  0001D4 GR
+  9 C$motor.c$702$2_0$445                                       =  0001DF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 20.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$motor.c$705$2_0$445                                       =  0001E3 GR
+  9 C$motor.c$707$3_0$446                                       =  0001EC GR
+  9 C$motor.c$710$4_0$447                                       =  0001F5 GR
+  9 C$motor.c$714$1_0$427                                       =  0001FC GR
+  9 C$motor.c$716$2_0$448                                       =  000204 GR
+  9 C$motor.c$719$3_0$449                                       =  00020D GR
+  9 C$motor.c$722$1_0$427                                       =  000214 GR
+  9 C$motor.c$724$2_0$450                                       =  00021C GR
+  9 C$motor.c$727$3_0$451                                       =  000225 GR
+  9 C$motor.c$732$2_0$452                                       =  00022B GR
+  9 C$motor.c$733$2_0$452                                       =  000233 GR
+  9 C$motor.c$735$3_0$453                                       =  000239 GR
+  9 C$motor.c$737$4_0$454                                       =  000248 GR
+  9 C$motor.c$740$4_0$454                                       =  00024C GR
+  9 C$motor.c$743$2_0$452                                       =  000252 GR
+  9 C$motor.c$745$3_0$455                                       =  00025A GR
+  9 C$motor.c$747$4_0$456                                       =  000269 GR
+  9 C$motor.c$750$4_0$456                                       =  00026D GR
+  9 C$motor.c$760$1_0$427                                       =  000271 GR
+  9 C$motor.c$761$1_0$427                                       =  00027F GR
+  9 C$motor.c$763$2_0$457                                       =  000286 GR
+  9 C$motor.c$764$2_0$457                                       =  00029F GR
+  9 C$motor.c$765$2_0$457                                       =  0002AB GR
+  9 C$motor.c$769$2_0$458                                       =  0002B5 GR
+  9 C$motor.c$770$2_0$458                                       =  0002D3 GR
+  9 C$motor.c$771$2_0$458                                       =  0002DF GR
+  9 C$motor.c$775$1_0$427                                       =  0002E7 GR
+  9 C$motor.c$776$1_0$427                                       =  0002F3 GR
+  9 C$motor.c$778$2_0$459                                       =  0002FA GR
+  9 C$motor.c$779$2_0$459                                       =  000313 GR
+  9 C$motor.c$780$2_0$459                                       =  00031F GR
+  9 C$motor.c$784$2_0$460                                       =  000329 GR
+  9 C$motor.c$785$2_0$460                                       =  000347 GR
+  9 C$motor.c$786$2_0$460                                       =  000353 GR
+  9 C$motor.c$790$1_0$427                                       =  00035B GR
+  9 C$motor.c$791$1_0$427                                       =  000369 GR
+  9 C$motor.c$793$2_0$461                                       =  000370 GR
+  9 C$motor.c$794$2_0$461                                       =  000389 GR
+  9 C$motor.c$795$2_0$461                                       =  000395 GR
+  9 C$motor.c$799$2_0$462                                       =  00039F GR
+  9 C$motor.c$800$2_0$462                                       =  0003BD GR
+  9 C$motor.c$801$2_0$462                                       =  0003C9 GR
+  9 C$motor.c$806$1_0$427                                       =  0003D1 GR
+  9 C$motor.c$807$1_0$427                                       =  0003DD GR
+  9 C$motor.c$809$1_0$427                                       =  0003E4 GR
+  9 C$motor.c$810$1_0$427                                       =  0003F0 GR
+  9 C$motor.c$812$1_0$427                                       =  0003F7 GR
+  9 C$motor.c$813$1_0$427                                       =  000403 GR
+  9 C$motor.c$817$1_0$427                                       =  00040A GR
+  9 C$motor.c$819$2_0$463                                       =  000412 GR
+  9 C$motor.c$822$3_0$464                                       =  000421 GR
+  9 C$motor.c$824$3_0$464                                       =  000425 GR
+  9 C$motor.c$827$1_0$427                                       =  00042B GR
+  9 C$motor.c$830$2_0$465                                       =  000433 GR
+  9 C$motor.c$834$1_0$427                                       =  000438 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 21.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$motor.c$836$2_0$466                                       =  000440 GR
+  9 C$motor.c$839$3_0$467                                       =  00044F GR
+  9 C$motor.c$841$3_0$467                                       =  000453 GR
+  9 C$motor.c$844$1_0$427                                       =  000459 GR
+  9 C$motor.c$847$2_0$468                                       =  000461 GR
+  9 C$motor.c$854$1_0$427                                       =  000466 GR
+  9 C$motor.c$857$1_0$427                                       =  00046D GR
+  9 C$motor.c$859$2_0$469                                       =  000473 GR
+  9 C$motor.c$863$2_0$470                                       =  000479 GR
+  9 C$motor.c$867$1_0$427                                       =  00047D GR
+  9 C$motor.c$869$2_0$471                                       =  000488 GR
+  9 C$motor.c$872$2_0$471                                       =  00048D GR
+  9 C$motor.c$875$3_0$472                                       =  000493 GR
+  9 C$motor.c$877$4_0$473                                       =  000499 GR
+  9 C$motor.c$878$4_0$473                                       =  00049D GR
+  9 C$motor.c$884$4_0$474                                       =  0004A5 GR
+  9 C$motor.c$886$5_0$475                                       =  0004AD GR
+  9 C$motor.c$890$5_0$476                                       =  0004B5 GR
+  9 C$motor.c$891$5_0$476                                       =  0004BB GR
+  9 C$motor.c$895$4_0$474                                       =  0004BF GR
+  9 C$motor.c$897$5_0$477                                       =  0004C4 GR
+  9 C$motor.c$901$5_0$478                                       =  0004CA GR
+  9 C$motor.c$908$3_0$479                                       =  0004D0 GR
+  9 C$motor.c$911$4_0$480                                       =  0004D6 GR
+  9 C$motor.c$913$5_0$481                                       =  0004DB GR
+  9 C$motor.c$917$5_0$482                                       =  0004E1 GR
+  9 C$motor.c$948$1_0$427                                       =  0004E5 GR
+  9 C$motor.c$950$2_0$483                                       =  0004ED GR
+  9 C$motor.c$951$2_0$483                                       =  0004F3 GR
+  9 C$motor.c$952$2_0$483                                       =  0004F7 GR
+  9 C$motor.c$953$2_0$483                                       =  0004FB GR
+  9 C$motor.c$955$2_0$483                                       =  0004FF GR
+  9 C$motor.c$961$1_0$427                                       =  000503 GR
+  9 C$motor.c$964$1_0$427                                       =  00050A GR
+  9 C$motor.c$966$2_0$484                                       =  000512 GR
+  9 C$motor.c$967$2_0$484                                       =  000518 GR
+  9 C$motor.c$968$2_0$484                                       =  00051C GR
+  9 C$motor.c$974$2_0$485                                       =  000523 GR
+  9 C$motor.c$976$3_0$486                                       =  00052A GR
+  9 C$motor.c$980$3_0$487                                       =  000530 GR
+  9 C$motor.c$983$2_0$485                                       =  000534 GR
+  9 C$motor.c$985$3_0$488                                       =  00053C GR
+  9 C$motor.c$987$3_0$488                                       =  000541 GR
+  9 C$motor.c$991$4_0$489                                       =  000547 GR
+  9 C$motor.c$993$4_0$489                                       =  00054B GR
+  9 C$motor.c$995$5_0$490                                       =  000552 GR
+  9 C$motor.c$996$5_0$490                                       =  000558 GR
+  9 C$motor.c$997$5_0$490                                       =  00055C GR
+  9 C$motor.c$998$5_0$490                                       =  00056F GR
+  8 Fmotor$__xinit_ui16_PWM_cycles_counter$0_0$0                =  00013C GR
+  8 Fmotor$__xinit_ui16_PWM_cycles_counter_6$0_0$0              =  00013E GR
+  8 Fmotor$__xinit_ui16_PWM_cycles_counter_total$0_0$0          =  000140 GR
+  8 Fmotor$__xinit_ui16_adc_battery_current_10b$0_0$0           =  00016E GR
+  8 Fmotor$__xinit_ui16_adc_battery_current_accumulated$0_0$0   =  00016B GR
+  8 Fmotor$__xinit_ui16_adc_battery_voltage_accumulated$0_0$0   =  000167 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 22.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  8 Fmotor$__xinit_ui16_adc_battery_voltage_filtered_10b$0_0$0  =  000169 GR
+  8 Fmotor$__xinit_ui16_counter_adc_battery_current_ramp_up$0_0$=  00015F GR
+  8 Fmotor$__xinit_ui16_counter_adc_motor_current_ramp_up$0_0$0 =  000162 GR
+  8 Fmotor$__xinit_ui16_counter_duty_cycle_ramp_down$0_0$0      =  00015A GR
+  8 Fmotor$__xinit_ui16_counter_duty_cycle_ramp_up$0_0$0        =  000158 GR
+  8 Fmotor$__xinit_ui16_duty_cycle_ramp_down_inverse_step$0_0$0 =  000156 GR
+  8 Fmotor$__xinit_ui16_duty_cycle_ramp_up_inverse_step$0_0$0   =  000154 GR
+  8 Fmotor$__xinit_ui16_foc_angle_accumulated$0_0$0             =  00014B GR
+  8 Fmotor$__xinit_ui16_max_motor_speed_erps$0_0$0              =  000142 GR
+  8 Fmotor$__xinit_ui16_motor_speed_erps$0_0$0                  =  000144 GR
+  8 Fmotor$__xinit_ui16_pas_counter$0_0$0                       =  000179 GR
+  8 Fmotor$__xinit_ui16_torque_sensor_throttle_max_value$0_0$0  =  00017E GR
+  8 Fmotor$__xinit_ui16_torque_sensor_throttle_processed_value$0=  00017B GR
+  8 Fmotor$__xinit_ui16_torque_sensor_throttle_value$0_0$0      =  000180 GR
+  8 Fmotor$__xinit_ui16_wheel_speed_sensor_counter$0_0$0        =  000184 GR
+  8 Fmotor$__xinit_ui8_adc_battery_current$0_0$0                =  000170 GR
+  8 Fmotor$__xinit_ui8_adc_battery_current_filtered_10b$0_0$0   =  00016D GR
+  8 Fmotor$__xinit_ui8_adc_battery_voltage_cut_off$0_0$0        =  000166 GR
+  8 Fmotor$__xinit_ui8_adc_motor_phase_current$0_0$0            =  000171 GR
+  8 Fmotor$__xinit_ui8_adc_motor_phase_current_offset$0_0$0     =  000175 GR
+  8 Fmotor$__xinit_ui8_adc_target_motor_phase_max_current$0_0$0 =  000174 GR
+  8 Fmotor$__xinit_ui8_controller_adc_battery_max_current$0_0$0 =  000161 GR
+  8 Fmotor$__xinit_ui8_controller_adc_motor_max_current$0_0$0   =  000164 GR
+  8 Fmotor$__xinit_ui8_current_controller_counter$0_0$0         =  000172 GR
+  8 Fmotor$__xinit_ui8_current_controller_flag$0_0$0            =  000173 GR
+  8 Fmotor$__xinit_ui8_duty_cycle$0_0$0                         =  000152 GR
+  8 Fmotor$__xinit_ui8_duty_cycle_target$0_0$0                  =  000153 GR
+  8 Fmotor$__xinit_ui8_first_time_run_flag$0_0$0                =  000165 GR
+  8 Fmotor$__xinit_ui8_foc_angle$0_0$0                          =  000149 GR
+  8 Fmotor$__xinit_ui8_half_erps_flag$0_0$0                     =  000151 GR
+  8 Fmotor$__xinit_ui8_hall_sensors_state$0_0$0                 =  00014F GR
+  8 Fmotor$__xinit_ui8_hall_sensors_state_last$0_0$0            =  000150 GR
+  8 Fmotor$__xinit_ui8_interpolation_angle$0_0$0                =  00014A GR
+  8 Fmotor$__xinit_ui8_motor_commutation_type$0_0$0             =  00014D GR
+  8 Fmotor$__xinit_ui8_motor_controller_state$0_0$0             =  00014E GR
+  8 Fmotor$__xinit_ui8_motor_rotor_absolute_angle$0_0$0         =  000147 GR
+  8 Fmotor$__xinit_ui8_motor_rotor_angle$0_0$0                  =  000148 GR
+  8 Fmotor$__xinit_ui8_pas_after_first_pulse$0_0$0              =  000178 GR
+  8 Fmotor$__xinit_ui8_pas_state$0_0$0                          =  000176 GR
+  8 Fmotor$__xinit_ui8_pas_state_old$0_0$0                      =  000177 GR
+  8 Fmotor$__xinit_ui8_phase_a_voltage$0_0$0                    =  00015C GR
+  8 Fmotor$__xinit_ui8_phase_b_voltage$0_0$0                    =  00015D GR
+  8 Fmotor$__xinit_ui8_phase_c_voltage$0_0$0                    =  00015E GR
+  8 Fmotor$__xinit_ui8_sin_table$0_0$0                          =  000100 GR
+  8 Fmotor$__xinit_ui8_svm_table$0_0$0                          =  000000 GR
+  8 Fmotor$__xinit_ui8_svm_table_index$0_0$0                    =  000146 GR
+  8 Fmotor$__xinit_ui8_torque_sensor_pas_signal_change_counter$0=  00017D GR
+  8 Fmotor$__xinit_ui8_wheel_speed_sensor_change_counter$0_0$0  =  000186 GR
+  8 Fmotor$__xinit_ui8_wheel_speed_sensor_state$0_0$0           =  000182 GR
+  8 Fmotor$__xinit_ui8_wheel_speed_sensor_state_old$0_0$0       =  000183 GR
+  2 Fmotor$ui16_motor_speed_erps$0_0$0                          =  000144 GR
+  2 Fmotor$ui8_adc_motor_phase_current$0_0$0                    =  000171 GR
+  2 Fmotor$ui8_duty_cycle_target$0_0$0                          =  000153 GR
+  9 G$TIM1_CAP_COM_IRQHandler$0$0                               =  00000A GR
+  9 G$asin_table$0$0                                            =  000797 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 23.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 G$calc_foc_angle$0$0                                        =  000655 GR
+  9 G$hall_sensor_init$0$0                                      =  0005A1 GR
+  9 G$motor_controller$0$0                                      =  000000 GR
+  9 G$motor_controller_reset_state$0$0                          =  000591 GR
+  9 G$motor_controller_set_state$0$0                            =  000588 GR
+  9 G$motor_controller_state_is_set$0$0                         =  00059B GR
+  9 G$motor_disable_PWM$0$0                                     =  00057A GR
+  9 G$motor_enable_PWM$0$0                                      =  000581 GR
+  9 G$motor_get_adc_battery_current_filtered_10b$0$0            =  0007B5 GR
+  9 G$motor_get_adc_battery_voltage_filtered_10b$0$0            =  0007B9 GR
+  9 G$motor_init$0$0                                            =  0005C9 GR
+  9 G$motor_set_adc_battery_voltage_cut_off$0$0                 =  0007BD GR
+  9 G$motor_set_phase_current_max$0$0                           =  000607 GR
+  9 G$motor_set_pwm_duty_cycle_ramp_down_inverse_step$0$0       =  000601 GR
+  9 G$motor_set_pwm_duty_cycle_ramp_up_inverse_step$0$0         =  0005FB GR
+  9 G$motor_set_pwm_duty_cycle_target$0$0                       =  0005E2 GR
+  9 G$read_battery_current$0$0                                  =  000634 GR
+  9 G$read_battery_voltage$0$0                                  =  000614 GR
+  2 G$ui16_PWM_cycles_counter$0_0$0                             =  00013C GR
+  2 G$ui16_PWM_cycles_counter_6$0_0$0                           =  00013E GR
+  2 G$ui16_PWM_cycles_counter_total$0_0$0                       =  000140 GR
+  2 G$ui16_adc_battery_current_10b$0_0$0                        =  00016E GR
+  2 G$ui16_adc_battery_current_accumulated$0_0$0                =  00016B GR
+  2 G$ui16_adc_battery_voltage_accumulated$0_0$0                =  000167 GR
+  2 G$ui16_adc_battery_voltage_filtered_10b$0_0$0               =  000169 GR
+  2 G$ui16_counter_adc_battery_current_ramp_up$0_0$0            =  00015F GR
+  2 G$ui16_counter_adc_motor_current_ramp_up$0_0$0              =  000162 GR
+  2 G$ui16_counter_duty_cycle_ramp_down$0_0$0                   =  00015A GR
+  2 G$ui16_counter_duty_cycle_ramp_up$0_0$0                     =  000158 GR
+  2 G$ui16_duty_cycle_ramp_down_inverse_step$0_0$0              =  000156 GR
+  2 G$ui16_duty_cycle_ramp_up_inverse_step$0_0$0                =  000154 GR
+  2 G$ui16_foc_angle_accumulated$0_0$0                          =  00014B GR
+  2 G$ui16_max_motor_speed_erps$0_0$0                           =  000142 GR
+  9 G$ui16_motor_get_motor_speed_erps$0$0                       =  000610 GR
+  2 G$ui16_pas_counter$0_0$0                                    =  000179 GR
+  2 G$ui16_torque_sensor_throttle_max_value$0_0$0               =  00017E GR
+  2 G$ui16_torque_sensor_throttle_processed_value$0_0$0         =  00017B GR
+  2 G$ui16_torque_sensor_throttle_value$0_0$0                   =  000180 GR
+  1 G$ui16_value$0_0$0                                          =  000000 GR
+  2 G$ui16_wheel_speed_sensor_counter$0_0$0                     =  000184 GR
+  2 G$ui8_adc_battery_current$0_0$0                             =  000170 GR
+  2 G$ui8_adc_battery_current_filtered_10b$0_0$0                =  00016D GR
+  2 G$ui8_adc_battery_voltage_cut_off$0_0$0                     =  000166 GR
+  2 G$ui8_adc_motor_phase_current_offset$0_0$0                  =  000175 GR
+  2 G$ui8_adc_target_motor_phase_max_current$0_0$0              =  000174 GR
+  2 G$ui8_controller_adc_battery_max_current$0_0$0              =  000161 GR
+  2 G$ui8_controller_adc_motor_max_current$0_0$0                =  000164 GR
+  2 G$ui8_current_controller_counter$0_0$0                      =  000172 GR
+  2 G$ui8_current_controller_flag$0_0$0                         =  000173 GR
+  2 G$ui8_duty_cycle$0_0$0                                      =  000152 GR
+  2 G$ui8_first_time_run_flag$0_0$0                             =  000165 GR
+  2 G$ui8_foc_angle$0_0$0                                       =  000149 GR
+  2 G$ui8_half_erps_flag$0_0$0                                  =  000151 GR
+  2 G$ui8_hall_sensors_state$0_0$0                              =  00014F GR
+  2 G$ui8_hall_sensors_state_last$0_0$0                         =  000150 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 24.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  2 G$ui8_interpolation_angle$0_0$0                             =  00014A GR
+  2 G$ui8_motor_commutation_type$0_0$0                          =  00014D GR
+  2 G$ui8_motor_controller_state$0_0$0                          =  00014E GR
+  2 G$ui8_motor_rotor_absolute_angle$0_0$0                      =  000147 GR
+  2 G$ui8_motor_rotor_angle$0_0$0                               =  000148 GR
+  2 G$ui8_pas_after_first_pulse$0_0$0                           =  000178 GR
+  2 G$ui8_pas_state$0_0$0                                       =  000176 GR
+  2 G$ui8_pas_state_old$0_0$0                                   =  000177 GR
+  2 G$ui8_phase_a_voltage$0_0$0                                 =  00015C GR
+  2 G$ui8_phase_b_voltage$0_0$0                                 =  00015D GR
+  2 G$ui8_phase_c_voltage$0_0$0                                 =  00015E GR
+  2 G$ui8_sin_table$0_0$0                                       =  000100 GR
+  2 G$ui8_svm_table$0_0$0                                       =  000000 GR
+  2 G$ui8_svm_table_index$0_0$0                                 =  000146 GR
+  2 G$ui8_torque_sensor_pas_signal_change_counter$0_0$0         =  00017D GR
+  2 G$ui8_wheel_speed_sensor_change_counter$0_0$0               =  000186 GR
+  2 G$ui8_wheel_speed_sensor_state$0_0$0                        =  000182 GR
+  2 G$ui8_wheel_speed_sensor_state_old$0_0$0                    =  000183 GR
+  1 Lmotor.TIM1_CAP_COM_IRQHandler$ui8_temp$1_0$427             =  000002 GR
+  1 Lmotor.TIM1_CAP_COM_IRQHandler$valuesAreTooHigh$1_0$427     =  000003 GR
+  9 XG$TIM1_CAP_COM_IRQHandler$0$0                              =  000579 GR
+  9 XG$asin_table$0$0                                           =  0007B4 GR
+  9 XG$calc_foc_angle$0$0                                       =  000796 GR
+  9 XG$hall_sensor_init$0$0                                     =  0005C8 GR
+  9 XG$motor_controller$0$0                                     =  000009 GR
+  9 XG$motor_controller_reset_state$0$0                         =  00059A GR
+  9 XG$motor_controller_set_state$0$0                           =  000590 GR
+  9 XG$motor_controller_state_is_set$0$0                        =  0005A0 GR
+  9 XG$motor_disable_PWM$0$0                                    =  000580 GR
+  9 XG$motor_enable_PWM$0$0                                     =  000587 GR
+  9 XG$motor_get_adc_battery_current_filtered_10b$0$0           =  0007B8 GR
+  9 XG$motor_get_adc_battery_voltage_filtered_10b$0$0           =  0007BC GR
+  9 XG$motor_init$0$0                                           =  0005E1 GR
+  9 XG$motor_set_adc_battery_voltage_cut_off$0$0                =  0007C2 GR
+  9 XG$motor_set_phase_current_max$0$0                          =  00060F GR
+  9 XG$motor_set_pwm_duty_cycle_ramp_down_inverse_step$0$0      =  000606 GR
+  9 XG$motor_set_pwm_duty_cycle_ramp_up_inverse_step$0$0        =  000600 GR
+  9 XG$motor_set_pwm_duty_cycle_target$0$0                      =  0005FA GR
+  9 XG$read_battery_current$0$0                                 =  000654 GR
+  9 XG$read_battery_voltage$0$0                                 =  000633 GR
+  9 XG$ui16_motor_get_motor_speed_erps$0$0                      =  000613 GR
+    _GPIO_Init                                                     ****** GX
+  9 _TIM1_CAP_COM_IRQHandler                                       00000A GR
+  1 _TIM1_CAP_COM_IRQHandler_ui8_temp_65536_427                    000002 R
+  1 _TIM1_CAP_COM_IRQHandler_valuesAreTooHigh_65536_427            000003 R
+    _TIM1_CtrlPWMOutputs                                           ****** GX
+    __mulint                                                       ****** GX
+    __mullong                                                      ****** GX
+  8 __xinit__ui16_PWM_cycles_counter                               00013C R
+  8 __xinit__ui16_PWM_cycles_counter_6                             00013E R
+  8 __xinit__ui16_PWM_cycles_counter_total                         000140 R
+  8 __xinit__ui16_adc_battery_current_10b                          00016E R
+  8 __xinit__ui16_adc_battery_current_accumulated                  00016B R
+  8 __xinit__ui16_adc_battery_voltage_accumulated                  000167 R
+  8 __xinit__ui16_adc_battery_voltage_filtered_10b                 000169 R
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 25.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  8 __xinit__ui16_counter_adc_battery_current_ramp_up              00015F R
+  8 __xinit__ui16_counter_adc_motor_current_ramp_up                000162 R
+  8 __xinit__ui16_counter_duty_cycle_ramp_down                     00015A R
+  8 __xinit__ui16_counter_duty_cycle_ramp_up                       000158 R
+  8 __xinit__ui16_duty_cycle_ramp_down_inverse_step                000156 R
+  8 __xinit__ui16_duty_cycle_ramp_up_inverse_step                  000154 R
+  8 __xinit__ui16_foc_angle_accumulated                            00014B R
+  8 __xinit__ui16_max_motor_speed_erps                             000142 R
+  8 __xinit__ui16_motor_speed_erps                                 000144 R
+  8 __xinit__ui16_pas_counter                                      000179 R
+  8 __xinit__ui16_torque_sensor_throttle_max_value                 00017E R
+  8 __xinit__ui16_torque_sensor_throttle_processed_value           00017B R
+  8 __xinit__ui16_torque_sensor_throttle_value                     000180 R
+  8 __xinit__ui16_wheel_speed_sensor_counter                       000184 R
+  8 __xinit__ui8_adc_battery_current                               000170 R
+  8 __xinit__ui8_adc_battery_current_filtered_10b                  00016D R
+  8 __xinit__ui8_adc_battery_voltage_cut_off                       000166 R
+  8 __xinit__ui8_adc_motor_phase_current                           000171 R
+  8 __xinit__ui8_adc_motor_phase_current_offset                    000175 R
+  8 __xinit__ui8_adc_target_motor_phase_max_current                000174 R
+  8 __xinit__ui8_controller_adc_battery_max_current                000161 R
+  8 __xinit__ui8_controller_adc_motor_max_current                  000164 R
+  8 __xinit__ui8_current_controller_counter                        000172 R
+  8 __xinit__ui8_current_controller_flag                           000173 R
+  8 __xinit__ui8_duty_cycle                                        000152 R
+  8 __xinit__ui8_duty_cycle_target                                 000153 R
+  8 __xinit__ui8_first_time_run_flag                               000165 R
+  8 __xinit__ui8_foc_angle                                         000149 R
+  8 __xinit__ui8_half_erps_flag                                    000151 R
+  8 __xinit__ui8_hall_sensors_state                                00014F R
+  8 __xinit__ui8_hall_sensors_state_last                           000150 R
+  8 __xinit__ui8_interpolation_angle                               00014A R
+  8 __xinit__ui8_motor_commutation_type                            00014D R
+  8 __xinit__ui8_motor_controller_state                            00014E R
+  8 __xinit__ui8_motor_rotor_absolute_angle                        000147 R
+  8 __xinit__ui8_motor_rotor_angle                                 000148 R
+  8 __xinit__ui8_pas_after_first_pulse                             000178 R
+  8 __xinit__ui8_pas_state                                         000176 R
+  8 __xinit__ui8_pas_state_old                                     000177 R
+  8 __xinit__ui8_phase_a_voltage                                   00015C R
+  8 __xinit__ui8_phase_b_voltage                                   00015D R
+  8 __xinit__ui8_phase_c_voltage                                   00015E R
+  8 __xinit__ui8_sin_table                                         000100 R
+  8 __xinit__ui8_svm_table                                         000000 R
+  8 __xinit__ui8_svm_table_index                                   000146 R
+  8 __xinit__ui8_torque_sensor_pas_signal_change_counter           00017D R
+  8 __xinit__ui8_wheel_speed_sensor_change_counter                 000186 R
+  8 __xinit__ui8_wheel_speed_sensor_state                          000182 R
+  8 __xinit__ui8_wheel_speed_sensor_state_old                      000183 R
+  9 _asin_table                                                    000797 GR
+  9 _calc_foc_angle                                                000655 GR
+    _get_configuration_variables                                   ****** GX
+  9 _hall_sensor_init                                              0005A1 GR
+  9 _motor_controller                                              000000 GR
+  9 _motor_controller_reset_state                                  000591 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 26.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 _motor_controller_set_state                                    000588 GR
+  9 _motor_controller_state_is_set                                 00059B GR
+  9 _motor_disable_PWM                                             00057A GR
+  9 _motor_enable_PWM                                              000581 GR
+  9 _motor_get_adc_battery_current_filtered_10b                    0007B5 GR
+  9 _motor_get_adc_battery_voltage_filtered_10b                    0007B9 GR
+  9 _motor_init                                                    0005C9 GR
+  9 _motor_set_adc_battery_voltage_cut_off                         0007BD GR
+  9 _motor_set_phase_current_max                                   000607 GR
+  9 _motor_set_pwm_duty_cycle_ramp_down_inverse_step               000601 GR
+  9 _motor_set_pwm_duty_cycle_ramp_up_inverse_step                 0005FB GR
+  9 _motor_set_pwm_duty_cycle_target                               0005E2 GR
+  9 _read_battery_current                                          000634 GR
+  9 _read_battery_voltage                                          000614 GR
+  2 _ui16_PWM_cycles_counter                                       00013C GR
+  2 _ui16_PWM_cycles_counter_6                                     00013E GR
+  2 _ui16_PWM_cycles_counter_total                                 000140 GR
+  2 _ui16_adc_battery_current_10b                                  00016E GR
+  2 _ui16_adc_battery_current_accumulated                          00016B GR
+  2 _ui16_adc_battery_voltage_accumulated                          000167 GR
+  2 _ui16_adc_battery_voltage_filtered_10b                         000169 GR
+    _ui16_adc_read_battery_current_10b                             ****** GX
+    _ui16_adc_read_battery_voltage_10b                             ****** GX
+  2 _ui16_counter_adc_battery_current_ramp_up                      00015F GR
+  2 _ui16_counter_adc_motor_current_ramp_up                        000162 GR
+  2 _ui16_counter_duty_cycle_ramp_down                             00015A GR
+  2 _ui16_counter_duty_cycle_ramp_up                               000158 GR
+  2 _ui16_duty_cycle_ramp_down_inverse_step                        000156 GR
+  2 _ui16_duty_cycle_ramp_up_inverse_step                          000154 GR
+  2 _ui16_foc_angle_accumulated                                    00014B GR
+  2 _ui16_max_motor_speed_erps                                     000142 GR
+  9 _ui16_motor_get_motor_speed_erps                               000610 GR
+  2 _ui16_motor_speed_erps                                         000144 R
+  2 _ui16_pas_counter                                              000179 GR
+    _ui16_pas_pwm_cycles_ticks                                     ****** GX
+  2 _ui16_torque_sensor_throttle_max_value                         00017E GR
+  2 _ui16_torque_sensor_throttle_processed_value                   00017B GR
+  2 _ui16_torque_sensor_throttle_value                             000180 GR
+  1 _ui16_value                                                    000000 GR
+  2 _ui16_wheel_speed_sensor_counter                               000184 GR
+    _ui16_wheel_speed_sensor_pwm_cycles_ticks                      ****** GX
+    _ui32_wheel_speed_sensor_tick_counter                          ****** GX
+  2 _ui8_adc_battery_current                                       000170 GR
+  2 _ui8_adc_battery_current_filtered_10b                          00016D GR
+  2 _ui8_adc_battery_voltage_cut_off                               000166 GR
+  2 _ui8_adc_motor_phase_current                                   000171 R
+  2 _ui8_adc_motor_phase_current_offset                            000175 GR
+    _ui8_adc_target_battery_max_current                            ****** GX
+    _ui8_adc_target_motor_max_current                              ****** GX
+  2 _ui8_adc_target_motor_phase_max_current                        000174 GR
+  2 _ui8_controller_adc_battery_max_current                        000161 GR
+  2 _ui8_controller_adc_motor_max_current                          000164 GR
+  2 _ui8_current_controller_counter                                000172 GR
+  2 _ui8_current_controller_flag                                   000173 GR
+  2 _ui8_duty_cycle                                                000152 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 27.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  2 _ui8_duty_cycle_target                                         000153 R
+    _ui8_ebike_app_state                                           ****** GX
+  2 _ui8_first_time_run_flag                                       000165 GR
+  2 _ui8_foc_angle                                                 000149 GR
+  2 _ui8_half_erps_flag                                            000151 GR
+  2 _ui8_hall_sensors_state                                        00014F GR
+  2 _ui8_hall_sensors_state_last                                   000150 GR
+  2 _ui8_interpolation_angle                                       00014A GR
+  2 _ui8_motor_commutation_type                                    00014D GR
+  2 _ui8_motor_controller_state                                    00014E GR
+  2 _ui8_motor_rotor_absolute_angle                                000147 GR
+  2 _ui8_motor_rotor_angle                                         000148 GR
+  2 _ui8_pas_after_first_pulse                                     000178 GR
+  2 _ui8_pas_state                                                 000176 GR
+  2 _ui8_pas_state_old                                             000177 GR
+    _ui8_pedaling_direction                                        ****** GX
+  2 _ui8_phase_a_voltage                                           00015C GR
+  2 _ui8_phase_b_voltage                                           00015D GR
+  2 _ui8_phase_c_voltage                                           00015E GR
+  2 _ui8_sin_table                                                 000100 GR
+  2 _ui8_svm_table                                                 000000 GR
+  2 _ui8_svm_table_index                                           000146 GR
+  2 _ui8_torque_sensor_pas_signal_change_counter                   00017D GR
+  2 _ui8_wheel_speed_sensor_change_counter                         000186 GR
+  2 _ui8_wheel_speed_sensor_state                                  000182 GR
+  2 _ui8_wheel_speed_sensor_state_old                              000183 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 28.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      4   flags    0
+   2 INITIALIZED                                size    187   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size    187   flags    0
+   9 CODE                                       size    7C3   flags    0
+   A CABS                                       size      0   flags    8
+

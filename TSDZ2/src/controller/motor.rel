@@ -1,0 +1,2564 @@
+;!FILE motor.asm
+XH3
+H B areas 570 global symbols
+M motor
+O -mstm8
+S _GPIO_Init Ref000000
+S _ui8_adc_target_battery_max_current Ref000000
+S _ui16_adc_read_battery_current_10b Ref000000
+S _get_configuration_variables Ref000000
+S _ui16_wheel_speed_sensor_pwm_cycles_ticks Ref000000
+S __mulint Ref000000
+S _ui16_pas_pwm_cycles_ticks Ref000000
+S .__.ABS. Def000000
+S _TIM1_CtrlPWMOutputs Ref000000
+S _ui32_wheel_speed_sensor_tick_counter Ref000000
+S _ui16_adc_read_battery_voltage_10b Ref000000
+S _ui8_ebike_app_state Ref000000
+S _ui8_pedaling_direction Ref000000
+S _ui8_adc_target_motor_max_current Ref000000
+S __mullong Ref000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 4 flags 0 addr 0
+S _ui16_value Def000000
+S Lmotor.TIM1_CAP_COM_IRQHandler$valuesAreTooHigh$1_0$427 Def000003
+S G$ui16_value$0_0$0 Def000000
+S Lmotor.TIM1_CAP_COM_IRQHandler$ui8_temp$1_0$427 Def000002
+A INITIALIZED size 187 flags 0 addr 0
+S G$ui16_adc_battery_voltage_accumulated$0_0$0 Def000167
+S G$ui16_counter_duty_cycle_ramp_down$0_0$0 Def00015A
+S _ui8_motor_rotor_angle Def000148
+S _ui8_controller_adc_battery_max_current Def000161
+S G$ui8_motor_rotor_absolute_angle$0_0$0 Def000147
+S _ui8_half_erps_flag Def000151
+S _ui16_duty_cycle_ramp_up_inverse_step Def000154
+S _ui8_interpolation_angle Def00014A
+S G$ui8_controller_adc_battery_max_current$0_0$0 Def000161
+S G$ui8_motor_rotor_angle$0_0$0 Def000148
+S G$ui16_duty_cycle_ramp_up_inverse_step$0_0$0 Def000154
+S G$ui8_half_erps_flag$0_0$0 Def000151
+S _ui8_adc_motor_phase_current_offset Def000175
+S G$ui8_interpolation_angle$0_0$0 Def00014A
+S _ui8_sin_table Def000100
+S G$ui8_adc_motor_phase_current_offset$0_0$0 Def000175
+S G$ui8_sin_table$0_0$0 Def000100
+S _ui8_svm_table_index Def000146
+S _ui16_foc_angle_accumulated Def00014B
+S _ui8_adc_battery_current_filtered_10b Def00016D
+S _ui8_duty_cycle Def000152
+S _ui16_adc_battery_current_10b Def00016E
+S G$ui8_adc_battery_current_filtered_10b$0_0$0 Def00016D
+S G$ui16_foc_angle_accumulated$0_0$0 Def00014B
+S G$ui8_svm_table_index$0_0$0 Def000146
+S G$ui16_adc_battery_current_10b$0_0$0 Def00016E
+S G$ui8_duty_cycle$0_0$0 Def000152
+S _ui16_PWM_cycles_counter_6 Def00013E
+S _ui16_adc_battery_current_accumulated Def00016B
+S _ui16_counter_adc_motor_current_ramp_up Def000162
+S G$ui16_PWM_cycles_counter_6$0_0$0 Def00013E
+S Fmotor$ui8_adc_motor_phase_current$0_0$0 Def000171
+S G$ui16_adc_battery_current_accumulated$0_0$0 Def00016B
+S _ui8_svm_table Def000000
+S _ui8_torque_sensor_pas_signal_change_counter Def00017D
+S G$ui16_counter_adc_motor_current_ramp_up$0_0$0 Def000162
+S _ui16_torque_sensor_throttle_max_value Def00017E
+S _ui8_wheel_speed_sensor_state Def000182
+S G$ui8_torque_sensor_pas_signal_change_counter$0_0$0 Def00017D
+S G$ui8_svm_table$0_0$0 Def000000
+S _ui16_duty_cycle_ramp_down_inverse_step Def000156
+S _ui16_torque_sensor_throttle_processed_value Def00017B
+S G$ui8_wheel_speed_sensor_state$0_0$0 Def000182
+S G$ui16_torque_sensor_throttle_max_value$0_0$0 Def00017E
+S G$ui16_torque_sensor_throttle_processed_value$0_0$0 Def00017B
+S G$ui16_duty_cycle_ramp_down_inverse_step$0_0$0 Def000156
+S _ui8_pas_state Def000176
+S _ui8_pas_after_first_pulse Def000178
+S _ui16_counter_adc_battery_current_ramp_up Def00015F
+S _ui8_current_controller_counter Def000172
+S G$ui8_pas_after_first_pulse$0_0$0 Def000178
+S G$ui8_pas_state$0_0$0 Def000176
+S G$ui8_current_controller_counter$0_0$0 Def000172
+S G$ui16_counter_adc_battery_current_ramp_up$0_0$0 Def00015F
+S _ui16_wheel_speed_sensor_counter Def000184
+S _ui8_hall_sensors_state Def00014F
+S Fmotor$ui8_duty_cycle_target$0_0$0 Def000153
+S _ui16_max_motor_speed_erps Def000142
+S G$ui16_wheel_speed_sensor_counter$0_0$0 Def000184
+S G$ui8_hall_sensors_state$0_0$0 Def00014F
+S G$ui16_max_motor_speed_erps$0_0$0 Def000142
+S _ui16_adc_battery_voltage_filtered_10b Def000169
+S _ui16_pas_counter Def000179
+S _ui8_motor_controller_state Def00014E
+S G$ui16_pas_counter$0_0$0 Def000179
+S G$ui16_adc_battery_voltage_filtered_10b$0_0$0 Def000169
+S _ui8_adc_target_motor_phase_max_current Def000174
+S _ui16_counter_duty_cycle_ramp_up Def000158
+S G$ui8_motor_controller_state$0_0$0 Def00014E
+S G$ui8_adc_target_motor_phase_max_current$0_0$0 Def000174
+S _ui8_adc_battery_voltage_cut_off Def000166
+S G$ui16_counter_duty_cycle_ramp_up$0_0$0 Def000158
+S _ui16_torque_sensor_throttle_value Def000180
+S G$ui8_adc_battery_voltage_cut_off$0_0$0 Def000166
+S G$ui16_torque_sensor_throttle_value$0_0$0 Def000180
+S Fmotor$ui16_motor_speed_erps$0_0$0 Def000144
+S _ui8_wheel_speed_sensor_state_old Def000183
+S _ui8_foc_angle Def000149
+S G$ui8_wheel_speed_sensor_state_old$0_0$0 Def000183
+S _ui8_current_controller_flag Def000173
+S _ui8_hall_sensors_state_last Def000150
+S G$ui8_foc_angle$0_0$0 Def000149
+S _ui8_motor_commutation_type Def00014D
+S G$ui8_current_controller_flag$0_0$0 Def000173
+S _ui8_phase_a_voltage Def00015C
+S _ui8_controller_adc_motor_max_current Def000164
+S _ui8_pas_state_old Def000177
+S _ui8_wheel_speed_sensor_change_counter Def000186
+S G$ui8_hall_sensors_state_last$0_0$0 Def000150
+S _ui8_phase_b_voltage Def00015D
+S _ui8_first_time_run_flag Def000165
+S G$ui8_motor_commutation_type$0_0$0 Def00014D
+S _ui16_PWM_cycles_counter Def00013C
+S _ui8_phase_c_voltage Def00015E
+S _ui8_adc_battery_current Def000170
+S G$ui8_wheel_speed_sensor_change_counter$0_0$0 Def000186
+S G$ui8_pas_state_old$0_0$0 Def000177
+S G$ui8_controller_adc_motor_max_current$0_0$0 Def000164
+S G$ui8_phase_a_voltage$0_0$0 Def00015C
+S G$ui8_first_time_run_flag$0_0$0 Def000165
+S G$ui8_phase_b_voltage$0_0$0 Def00015D
+S G$ui8_adc_battery_current$0_0$0 Def000170
+S G$ui8_phase_c_voltage$0_0$0 Def00015E
+S G$ui16_PWM_cycles_counter$0_0$0 Def00013C
+S _ui16_PWM_cycles_counter_total Def000140
+S _ui16_counter_duty_cycle_ramp_down Def00015A
+S _ui16_adc_battery_voltage_accumulated Def000167
+S G$ui16_PWM_cycles_counter_total$0_0$0 Def000140
+S _ui8_motor_rotor_absolute_angle Def000147
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 187 flags 0 addr 0
+S Fmotor$__xinit_ui8_adc_motor_phase_current_offset$0_0$0 Def000175
+S Fmotor$__xinit_ui8_sin_table$0_0$0 Def000100
+S Fmotor$__xinit_ui8_adc_battery_current_filtered_10b$0_0$0 Def00016D
+S Fmotor$__xinit_ui16_foc_angle_accumulated$0_0$0 Def00014B
+S Fmotor$__xinit_ui8_svm_table_index$0_0$0 Def000146
+S Fmotor$__xinit_ui16_adc_battery_current_10b$0_0$0 Def00016E
+S Fmotor$__xinit_ui8_duty_cycle$0_0$0 Def000152
+S Fmotor$__xinit_ui16_PWM_cycles_counter_6$0_0$0 Def00013E
+S Fmotor$__xinit_ui16_adc_battery_current_accumulated$0_0$0 Def00016B
+S Fmotor$__xinit_ui16_counter_adc_motor_current_ramp_up$0_0$0 Def000162
+S Fmotor$__xinit_ui8_torque_sensor_pas_signal_change_counter$0_0$0 Def00017D
+S Fmotor$__xinit_ui8_svm_table$0_0$0 Def000000
+S Fmotor$__xinit_ui8_wheel_speed_sensor_state$0_0$0 Def000182
+S Fmotor$__xinit_ui16_torque_sensor_throttle_max_value$0_0$0 Def00017E
+S Fmotor$__xinit_ui16_torque_sensor_throttle_processed_value$0_0$0 Def00017B
+S Fmotor$__xinit_ui16_duty_cycle_ramp_down_inverse_step$0_0$0 Def000156
+S Fmotor$__xinit_ui8_pas_after_first_pulse$0_0$0 Def000178
+S Fmotor$__xinit_ui8_pas_state$0_0$0 Def000176
+S Fmotor$__xinit_ui8_current_controller_counter$0_0$0 Def000172
+S Fmotor$__xinit_ui16_counter_adc_battery_current_ramp_up$0_0$0 Def00015F
+S Fmotor$__xinit_ui8_adc_motor_phase_current$0_0$0 Def000171
+S Fmotor$__xinit_ui16_wheel_speed_sensor_counter$0_0$0 Def000184
+S Fmotor$__xinit_ui8_hall_sensors_state$0_0$0 Def00014F
+S Fmotor$__xinit_ui16_max_motor_speed_erps$0_0$0 Def000142
+S Fmotor$__xinit_ui16_pas_counter$0_0$0 Def000179
+S Fmotor$__xinit_ui16_adc_battery_voltage_filtered_10b$0_0$0 Def000169
+S Fmotor$__xinit_ui8_motor_controller_state$0_0$0 Def00014E
+S Fmotor$__xinit_ui8_adc_target_motor_phase_max_current$0_0$0 Def000174
+S Fmotor$__xinit_ui16_counter_duty_cycle_ramp_up$0_0$0 Def000158
+S Fmotor$__xinit_ui8_adc_battery_voltage_cut_off$0_0$0 Def000166
+S Fmotor$__xinit_ui16_torque_sensor_throttle_value$0_0$0 Def000180
+S Fmotor$__xinit_ui8_duty_cycle_target$0_0$0 Def000153
+S Fmotor$__xinit_ui8_wheel_speed_sensor_state_old$0_0$0 Def000183
+S Fmotor$__xinit_ui8_foc_angle$0_0$0 Def000149
+S Fmotor$__xinit_ui8_current_controller_flag$0_0$0 Def000173
+S Fmotor$__xinit_ui8_hall_sensors_state_last$0_0$0 Def000150
+S Fmotor$__xinit_ui8_motor_commutation_type$0_0$0 Def00014D
+S Fmotor$__xinit_ui8_wheel_speed_sensor_change_counter$0_0$0 Def000186
+S Fmotor$__xinit_ui8_pas_state_old$0_0$0 Def000177
+S Fmotor$__xinit_ui8_controller_adc_motor_max_current$0_0$0 Def000164
+S Fmotor$__xinit_ui8_phase_a_voltage$0_0$0 Def00015C
+S Fmotor$__xinit_ui8_first_time_run_flag$0_0$0 Def000165
+S Fmotor$__xinit_ui8_phase_b_voltage$0_0$0 Def00015D
+S Fmotor$__xinit_ui8_adc_battery_current$0_0$0 Def000170
+S Fmotor$__xinit_ui8_phase_c_voltage$0_0$0 Def00015E
+S Fmotor$__xinit_ui16_PWM_cycles_counter$0_0$0 Def00013C
+S Fmotor$__xinit_ui16_PWM_cycles_counter_total$0_0$0 Def000140
+S Fmotor$__xinit_ui16_adc_battery_voltage_accumulated$0_0$0 Def000167
+S Fmotor$__xinit_ui16_counter_duty_cycle_ramp_down$0_0$0 Def00015A
+S Fmotor$__xinit_ui16_motor_speed_erps$0_0$0 Def000144
+S Fmotor$__xinit_ui8_motor_rotor_absolute_angle$0_0$0 Def000147
+S Fmotor$__xinit_ui8_controller_adc_battery_max_current$0_0$0 Def000161
+S Fmotor$__xinit_ui8_motor_rotor_angle$0_0$0 Def000148
+S Fmotor$__xinit_ui16_duty_cycle_ramp_up_inverse_step$0_0$0 Def000154
+S Fmotor$__xinit_ui8_half_erps_flag$0_0$0 Def000151
+S Fmotor$__xinit_ui8_interpolation_angle$0_0$0 Def00014A
+A CODE size 7C3 flags 0 addr 0
+S A$motor$1500 Def0005F1
+S A$motor$1410 Def00059D
+S A$motor$1311 Def000563
+S A$motor$1302 Def000555
+S A$motor$1221 Def0004EB
+S A$motor$1203 Def0004D4
+S A$motor$1140 Def00047D
+S A$motor$1131 Def000473
+S A$motor$1122 Def000469
+S A$motor$1113 Def00045C
+S A$motor$1104 Def000450
+S A$motor$1050 Def0003FF
+S A$motor$1041 Def0003F3
+S A$motor$1032 Def0003E7
+S A$motor$1023 Def0003DA
+S A$motor$1005 Def0003C0
+S C$motor.c$1287$1_0$531 Def0007B5
+S C$motor.c$1264$1_0$527 Def000797
+S C$motor.c$1238$2_0$525 Def000727
+S C$motor.c$1229$2_0$525 Def00070D
+S C$motor.c$1179$1_0$522 Def000685
+S G$hall_sensor_init$0$0 Def0005A1
+S C$motor.c$1050$1_0$498 Def000591
+S C$motor.c$1036$1_0$494 Def000581
+S C$motor.c$1029$1_0$492 Def000580
+S XG$TIM1_CAP_COM_IRQHandler$0$0 Def000579
+S A$motor$1600 Def00062F
+S A$motor$1501 Def0005F3
+S A$motor$1330 Def000579
+S A$motor$1312 Def000564
+S A$motor$1150 Def00048D
+S A$motor$1141 Def000480
+S A$motor$1132 Def000477
+S A$motor$1123 Def00046A
+S A$motor$1114 Def00045F
+S A$motor$1060 Def00040D
+S A$motor$1051 Def000400
+S A$motor$1042 Def0003F4
+S A$motor$1033 Def0003E8
+S A$motor$1006 Def0003C2
+S C$motor.c$1295$1_0$533 Def0007B9
+S C$motor.c$1288$1_0$531 Def0007B8
+S C$motor.c$1239$2_0$525 Def00072D
+S C$motor.c$1198$1_0$522 Def0006C2
+S C$motor.c$1088$1_0$506 Def0005E2
+S XG$motor_controller_reset_state$0$0 Def00059A
+S C$motor.c$1044$1_0$496 Def000588
+S C$motor.c$1037$1_0$494 Def000587
+S A$motor$1700 Def0006A3
+S A$motor$1601 Def000630
+S A$motor$1511 Def0005FA
+S A$motor$1430 Def0005AC
+S A$motor$1340 Def00057A
+S A$motor$1313 Def000566
+S A$motor$1250 Def000510
+S A$motor$1232 Def0004F7
+S A$motor$1151 Def000490
+S A$motor$1142 Def000483
+S A$motor$1061 Def000410
+S A$motor$1034 Def0003EA
+S A$motor$1007 Def0003C4
+S C$motor.c$1296$1_0$533 Def0007BC
+S C$motor.c$1052$1_0$498 Def000591
+S C$motor.c$1045$1_0$496 Def000590
+S _motor_get_adc_battery_current_filtered_10b Def0007B5
+S A$motor$1710 Def0006B2
+S A$motor$1701 Def0006A5
+S A$motor$1620 Def00063A
+S A$motor$1521 Def0005FB
+S A$motor$1341 Def00057C
+S A$motor$1323 Def000573
+S A$motor$1305 Def000558
+S A$motor$1224 Def0004ED
+S A$motor$1215 Def0004E1
+S A$motor$1206 Def0004D6
+S A$motor$1170 Def0004AB
+S A$motor$1152 Def000491
+S A$motor$1143 Def000485
+S A$motor$1107 Def000453
+S A$motor$1035 Def0003EB
+S A$motor$1026 Def0003DD
+S A$motor$1017 Def0003D1
+S A$motor$1008 Def0003C6
+S XG$read_battery_current$0$0 Def000654
+S C$motor.c$1053$1_0$498 Def00059A
+S A$motor$1720 Def0006BB
+S A$motor$1702 Def0006A7
+S A$motor$1630 Def00064E
+S A$motor$1621 Def00063E
+S A$motor$1522 Def0005FD
+S A$motor$1441 Def0005BB
+S A$motor$1342 Def00057F
+S A$motor$1315 Def000568
+S A$motor$1306 Def000559
+S A$motor$1261 Def00051C
+S A$motor$1243 Def000503
+S A$motor$1225 Def0004F0
+S A$motor$1207 Def0004D9
+S A$motor$1180 Def0004B8
+S A$motor$1162 Def00049D
+S A$motor$1126 Def00046D
+S A$motor$1117 Def000461
+S A$motor$1108 Def000457
+S A$motor$1090 Def000438
+S A$motor$1081 Def00042B
+S A$motor$1072 Def000421
+S A$motor$1054 Def000403
+S A$motor$1045 Def0003F7
+S A$motor$1036 Def0003EC
+S A$motor$1027 Def0003E0
+S A$motor$1018 Def0003D4
+S C$motor.c$1275$2_0$528 Def0007AC
+S A$motor$1820 Def000734
+S A$motor$1802 Def00071F
+S A$motor$1730 Def0006CA
+S A$motor$1721 Def0006BE
+S A$motor$1631 Def00064F
+S A$motor$1505 Def0005F5
+S A$motor$1451 Def0005C8
+S A$motor$1442 Def0005BD
+S A$motor$1433 Def0005AE
+S A$motor$1415 Def0005A0
+S A$motor$1316 Def00056B
+S A$motor$1280 Def000534
+S A$motor$1271 Def00052A
+S A$motor$1262 Def000520
+S A$motor$1253 Def000512
+S A$motor$1244 Def000506
+S A$motor$1235 Def0004FB
+S A$motor$1163 Def0004A0
+S A$motor$1136 Def000479
+S A$motor$1127 Def000470
+S A$motor$1091 Def00043B
+S A$motor$1082 Def00042E
+S A$motor$1073 Def000422
+S A$motor$1064 Def000412
+S A$motor$1055 Def000406
+S A$motor$1046 Def0003FA
+S A$motor$1037 Def0003ED
+S A$motor$1028 Def0003E1
+S A$motor$1019 Def0003D5
+S C$motor.c$500$1_0$425 Def000003
+S A$motor$1902 Def000797
+S A$motor$1821 Def000735
+S A$motor$1812 Def00072D
+S A$motor$1803 Def000722
+S A$motor$1740 Def0006DB
+S A$motor$1731 Def0006CC
+S A$motor$1722 Def0006BF
+S A$motor$1650 Def00065A
+S A$motor$1632 Def000650
+S A$motor$1560 Def00060F
+S A$motor$1506 Def0005F7
+S A$motor$1470 Def0005D9
+S A$motor$1461 Def0005C9
+S A$motor$1443 Def0005BF
+S A$motor$1434 Def0005B0
+S A$motor$1425 Def0005A1
+S A$motor$1290 Def000545
+S A$motor$1281 Def000537
+S A$motor$1272 Def00052E
+S A$motor$1254 Def000515
+S A$motor$1245 Def000507
+S A$motor$1173 Def0004AD
+S A$motor$1164 Def0004A3
+S A$motor$1155 Def000493
+S A$motor$1128 Def000471
+S A$motor$1092 Def00043E
+S A$motor$1083 Def000431
+S A$motor$1065 Def000416
+S A$motor$1056 Def000407
+S A$motor$1047 Def0003FB
+S C$motor.c$1279$1_0$527 Def0007B0
+S C$motor.c$1268$2_0$528 Def000798
+S C$motor.c$610$3_0$431 Def000114
+S A$motor$1921 Def0007AC
+S A$motor$1912 Def0007A0
+S A$motor$1840 Def00074C
+S A$motor$1831 Def00073D
+S A$motor$1804 Def000724
+S A$motor$1741 Def0006DD
+S A$motor$1732 Def0006CF
+S A$motor$1723 Def0006C1
+S A$motor$1714 Def0006B4
+S A$motor$1705 Def0006A9
+S A$motor$1633 Def000651
+S A$motor$1624 Def000641
+S A$motor$1606 Def000633
+S A$motor$1570 Def000610
+S A$motor$1543 Def000606
+S A$motor$1480 Def0005E1
+S A$motor$1462 Def0005CB
+S A$motor$1444 Def0005C1
+S A$motor$1435 Def0005B2
+S A$motor$1426 Def0005A3
+S A$motor$1381 Def000590
+S A$motor$1327 Def000577
+S A$motor$1309 Def00055C
+S A$motor$1282 Def00053A
+S A$motor$1228 Def0004F3
+S A$motor$1219 Def0004E5
+S A$motor$1192 Def0004C4
+S A$motor$1183 Def0004BB
+S A$motor$1174 Def0004B0
+S A$motor$1156 Def000497
+S A$motor$1147 Def000488
+S A$motor$1066 Def000417
+S A$motor$1048 Def0003FD
+S C$motor.c$620$3_0$431 Def000124
+S C$motor.c$611$3_0$431 Def000114
+S A$motor$1922 Def0007AE
+S A$motor$1913 Def0007A1
+S A$motor$1850 Def000759
+S A$motor$1841 Def00074E
+S A$motor$1832 Def00073F
+S A$motor$1805 Def000725
+S A$motor$1760 Def0006F6
+S A$motor$1742 Def0006DF
+S A$motor$1733 Def0006D1
+S A$motor$1715 Def0006B5
+S A$motor$1706 Def0006AB
+S A$motor$1670 Def00067A
+S A$motor$1625 Def000644
+S A$motor$1616 Def000634
+S A$motor$1553 Def000607
+S A$motor$1490 Def0005E2
+S A$motor$1463 Def0005CD
+S A$motor$1445 Def0005C3
+S A$motor$1436 Def0005B4
+S A$motor$1427 Def0005A5
+S A$motor$1409 Def00059B
+S A$motor$1391 Def000591
+S A$motor$1364 Def000587
+S A$motor$1319 Def00056F
+S A$motor$1238 Def0004FF
+S A$motor$1229 Def0004F4
+S A$motor$1193 Def0004C8
+S A$motor$1184 Def0004BC
+S A$motor$1175 Def0004B3
+S A$motor$1076 Def000425
+S A$motor$1067 Def000418
+S A$motor$1049 Def0003FE
+S C$motor.c$630$3_0$431 Def000130
+S C$motor.c$621$3_0$431 Def000128
+S C$motor.c$612$3_0$431 Def000118
+S C$motor.c$503$1_0$425 Def000006
+S A$motor$1932 Def0007B4
+S A$motor$1914 Def0007A3
+S A$motor$1905 Def000798
+S A$motor$1860 Def000763
+S A$motor$1851 Def00075B
+S A$motor$1833 Def000740
+S A$motor$1824 Def000737
+S A$motor$1770 Def0006FF
+S A$motor$1761 Def0006F9
+S A$motor$1743 Def0006E1
+S A$motor$1734 Def0006D3
+S A$motor$1716 Def0006B7
+S A$motor$1707 Def0006AE
+S A$motor$1671 Def00067D
+S A$motor$1662 Def00066C
+S A$motor$1653 Def00065C
+S A$motor$1626 Def000648
+S A$motor$1617 Def000637
+S A$motor$1590 Def00061E
+S A$motor$1554 Def00060A
+S A$motor$1527 Def000600
+S A$motor$1491 Def0005E4
+S A$motor$1473 Def0005DB
+S A$motor$1464 Def0005D0
+S A$motor$1446 Def0005C6
+S A$motor$1437 Def0005B6
+S A$motor$1428 Def0005A7
+S A$motor$1392 Def000593
+S A$motor$1374 Def000588
+S A$motor$1347 Def000580
+S A$motor$1293 Def000547
+S A$motor$1266 Def000523
+S A$motor$1257 Def000518
+S A$motor$1248 Def00050A
+S A$motor$1239 Def000500
+S A$motor$1095 Def000440
+S A$motor$1086 Def000433
+S A$motor$1077 Def000429
+S A$motor$1068 Def00041B
+S A$motor$1059 Def00040A
+S C$motor.c$650$2_0$440 Def000161
+S C$motor.c$633$2_0$430 Def000133
+S C$motor.c$631$3_0$431 Def000130
+S C$motor.c$504$1_0$425 Def000009
+S A$motor$1942 Def0007B5
+S A$motor$1915 Def0007A4
+S A$motor$1870 Def000773
+S A$motor$1861 Def000765
+S A$motor$1852 Def00075E
+S A$motor$1834 Def000742
+S A$motor$1825 Def00073A
+S A$motor$1780 Def00070D
+S A$motor$1771 Def000702
+S A$motor$1744 Def0006E3
+S A$motor$1735 Def0006D5
+S A$motor$1708 Def0006AF
+S A$motor$1690 Def000692
+S A$motor$1681 Def000685
+S A$motor$1672 Def00067F
+S A$motor$1663 Def00066D
+S A$motor$1654 Def00065F
+S A$motor$1618 Def000638
+S A$motor$1555 Def00060C
+S A$motor$1537 Def000601
+S A$motor$1492 Def0005E6
+S A$motor$1474 Def0005DD
+S A$motor$1438 Def0005B9
+S A$motor$1429 Def0005A9
+S A$motor$1393 Def000594
+S A$motor$1375 Def00058A
+S A$motor$1357 Def000581
+S A$motor$1285 Def00053C
+S A$motor$1276 Def000530
+S A$motor$1267 Def000526
+S A$motor$1258 Def000519
+S A$motor$1249 Def00050D
+S A$motor$1168 Def0004A5
+S A$motor$1159 Def000499
+S A$motor$1096 Def000444
+S A$motor$1069 Def00041F
+S G$motor_disable_PWM$0$0 Def00057A
+S C$motor.c$800$2_0$462 Def0003BD
+S C$motor.c$651$2_0$440 Def000165
+S C$motor.c$614$3_0$431 Def00011A
+S C$motor.c$562$2_0$430 Def00008B
+S C$motor.c$530$1_0$427 Def000022
+S A$motor$1916 Def0007A7
+S A$motor$1907 Def00079A
+S A$motor$1880 Def000783
+S A$motor$1871 Def000775
+S A$motor$1862 Def000766
+S A$motor$1853 Def000760
+S A$motor$1844 Def000750
+S A$motor$1835 Def000743
+S A$motor$1808 Def000727
+S A$motor$1772 Def000704
+S A$motor$1754 Def0006EE
+S A$motor$1745 Def0006E5
+S A$motor$1727 Def0006C2
+S A$motor$1709 Def0006B1
+S A$motor$1691 Def000694
+S A$motor$1682 Def000688
+S A$motor$1664 Def00066E
+S A$motor$1655 Def000662
+S A$motor$1646 Def000655
+S A$motor$1619 Def000639
+S A$motor$1538 Def000603
+S A$motor$1493 Def0005E8
+S A$motor$1475 Def0005E0
+S A$motor$1394 Def000597
+S A$motor$1376 Def00058D
+S A$motor$1358 Def000583
+S A$motor$1268 Def000528
+S A$motor$1169 Def0004A8
+S A$motor$1097 Def000445
+S C$motor.c$810$1_0$427 Def0003F0
+S C$motor.c$801$2_0$462 Def0003C9
+S C$motor.c$652$2_0$440 Def00016B
+S C$motor.c$635$2_0$430 Def000133
+S C$motor.c$615$3_0$431 Def00011A
+S C$motor.c$570$3_0$431 Def0000B6
+S C$motor.c$531$1_0$427 Def000028
+S C$motor.c$513$1_0$427 Def00000A
+S _motor_set_pwm_duty_cycle_ramp_up_inverse_step Def0005FB
+S A$motor$1962 Def0007BC
+S A$motor$1926 Def0007B0
+S A$motor$1917 Def0007A8
+S A$motor$1908 Def00079C
+S A$motor$1881 Def000787
+S A$motor$1872 Def000776
+S A$motor$1863 Def000767
+S A$motor$1845 Def000752
+S A$motor$1836 Def000745
+S A$motor$1818 Def00072F
+S A$motor$1809 Def00072A
+S A$motor$1773 Def000705
+S A$motor$1764 Def0006FC
+S A$motor$1755 Def0006F1
+S A$motor$1746 Def0006E7
+S A$motor$1728 Def0006C5
+S A$motor$1719 Def0006B9
+S A$motor$1692 Def000696
+S A$motor$1683 Def00068A
+S A$motor$1665 Def000671
+S A$motor$1656 Def000664
+S A$motor$1638 Def000654
+S A$motor$1629 Def00064B
+S A$motor$1593 Def000621
+S A$motor$1575 Def000613
+S A$motor$1494 Def0005EA
+S A$motor$1467 Def0005D2
+S A$motor$1359 Def000586
+S A$motor$1296 Def00054B
+S A$motor$1197 Def0004CA
+S A$motor$1188 Def0004BF
+S A$motor$1179 Def0004B5
+S A$motor$1098 Def000446
+S C$motor.c$724$2_0$450 Def00021C
+S C$motor.c$702$2_0$445 Def0001DF
+S C$motor.c$653$2_0$440 Def00016F
+S C$motor.c$640$1_0$427 Def000139
+S C$motor.c$616$3_0$431 Def00011E
+S C$motor.c$607$3_0$431 Def00010E
+S C$motor.c$571$3_0$431 Def0000B6
+S C$motor.c$564$2_0$430 Def000090
+S _hall_sensor_init Def0005A1
+S A$motor$1972 Def0007BD
+S A$motor$1918 Def0007AA
+S A$motor$1909 Def00079E
+S A$motor$1891 Def000794
+S A$motor$1873 Def000777
+S A$motor$1864 Def000768
+S A$motor$1846 Def000753
+S A$motor$1837 Def000746
+S A$motor$1819 Def000732
+S A$motor$1792 Def000717
+S A$motor$1756 Def0006F3
+S A$motor$1747 Def0006E9
+S A$motor$1738 Def0006D7
+S A$motor$1729 Def0006C8
+S A$motor$1693 Def000699
+S A$motor$1675 Def000680
+S A$motor$1666 Def000673
+S A$motor$1657 Def000666
+S A$motor$1594 Def000624
+S A$motor$1585 Def000614
+S A$motor$1468 Def0005D4
+S A$motor$1297 Def00054E
+S A$motor$1288 Def000541
+S A$motor$1198 Def0004CE
+S A$motor$1189 Def0004C2
+S A$motor$1099 Def000449
+S G$motor_controller_state_is_set$0$0 Def00059B
+S C$motor.c$812$1_0$427 Def0003F7
+S C$motor.c$732$2_0$452 Def00022B
+S C$motor.c$722$1_0$427 Def000214
+S C$motor.c$654$2_0$440 Def000173
+S C$motor.c$626$3_0$431 Def00012A
+S C$motor.c$608$3_0$431 Def000112
+S C$motor.c$560$1_0$427 Def000080
+S C$motor.c$524$1_0$427 Def000011
+S A$motor$1973 Def0007BF
+S A$motor$1874 Def00077B
+S A$motor$1865 Def00076B
+S A$motor$1856 Def000761
+S A$motor$1847 Def000755
+S A$motor$1838 Def000748
+S A$motor$1793 Def00071A
+S A$motor$1757 Def0006F4
+S A$motor$1748 Def0006EB
+S A$motor$1739 Def0006D9
+S A$motor$1676 Def000681
+S A$motor$1667 Def000675
+S A$motor$1658 Def000669
+S A$motor$1649 Def000657
+S A$motor$1595 Def000628
+S A$motor$1586 Def000617
+S A$motor$1469 Def0005D6
+S A$motor$1298 Def000550
+S A$motor$1289 Def000544
+S A$motor$400 Def00005E
+S XG$motor_get_adc_battery_current_filtered_10b$0$0 Def0007B8
+S C$motor.c$813$1_0$427 Def000403
+S C$motor.c$733$2_0$452 Def000233
+S C$motor.c$714$1_0$427 Def0001FC
+S C$motor.c$627$3_0$431 Def00012A
+S C$motor.c$618$3_0$431 Def000120
+S C$motor.c$540$2_0$429 Def00004E
+S C$motor.c$534$1_0$427 Def000031
+S A$motor$1947 Def0007B8
+S A$motor$1929 Def0007B2
+S A$motor$1884 Def00078A
+S A$motor$1866 Def00076D
+S A$motor$1857 Def000762
+S A$motor$1848 Def000756
+S A$motor$1839 Def000749
+S A$motor$1776 Def000707
+S A$motor$1686 Def00068C
+S A$motor$1677 Def000682
+S A$motor$1668 Def000677
+S A$motor$1659 Def00066B
+S A$motor$1587 Def000618
+S A$motor$410 Def00006E
+S A$motor$401 Def000061
+S A$motor$320 Def000006
+S C$motor.c$911$4_0$480 Def0004D6
+S C$motor.c$760$1_0$427 Def000271
+S C$motor.c$743$2_0$452 Def000252
+S C$motor.c$710$4_0$447 Def0001F5
+S C$motor.c$705$2_0$445 Def0001E3
+S C$motor.c$647$2_0$440 Def000151
+S C$motor.c$628$3_0$431 Def00012E
+S C$motor.c$619$3_0$431 Def000120
+S C$motor.c$526$1_0$427 Def000015
+S A$motor$1957 Def0007B9
+S A$motor$1894 Def000796
+S A$motor$1885 Def00078D
+S A$motor$1849 Def000758
+S A$motor$1786 Def00070F
+S A$motor$1777 Def00070A
+S A$motor$1696 Def00069B
+S A$motor$1687 Def00068D
+S A$motor$1678 Def000683
+S A$motor$1669 Def000679
+S A$motor$1588 Def000619
+S A$motor$1498 Def0005EC
+S A$motor$1399 Def00059A
+S A$motor$600 Def000148
+S A$motor$501 Def0000E7
+S A$motor$420 Def00007B
+S A$motor$411 Def00006F
+S A$motor$402 Def000063
+S C$motor.c$830$2_0$465 Def000433
+S C$motor.c$806$1_0$427 Def0003D1
+S C$motor.c$761$1_0$427 Def00027F
+S C$motor.c$740$4_0$454 Def00024C
+S C$motor.c$648$2_0$440 Def000157
+S C$motor.c$601$6_0$438 Def000106
+S C$motor.c$573$4_0$432 Def0000BF
+S C$motor.c$566$3_0$431 Def0000AF
+S C$motor.c$545$1_0$427 Def000052
+S C$motor.c$518$1_0$427 Def00000E
+S A$motor$1886 Def00078F
+S A$motor$1877 Def00077E
+S A$motor$1796 Def00071D
+S A$motor$1787 Def000712
+S A$motor$1697 Def00069D
+S A$motor$1688 Def000690
+S A$motor$1598 Def00062B
+S A$motor$1589 Def00061A
+S A$motor$1499 Def0005EF
+S A$motor$700 Def0001D7
+S A$motor$601 Def00014B
+S A$motor$520 Def000102
+S A$motor$511 Def0000F5
+S A$motor$502 Def0000EA
+S A$motor$421 Def00007D
+S A$motor$412 Def000071
+S A$motor$403 Def000064
+S C$motor.c$834$1_0$427 Def000438
+S C$motor.c$822$3_0$464 Def000421
+S C$motor.c$807$1_0$427 Def0003DD
+S C$motor.c$727$3_0$451 Def000225
+S C$motor.c$690$1_0$427 Def0001C2
+S C$motor.c$674$2_0$442 Def0001A1
+S C$motor.c$663$1_0$427 Def000177
+S C$motor.c$649$2_0$440 Def00015D
+S C$motor.c$602$6_0$438 Def00010A
+S C$motor.c$581$5_0$433 Def0000D4
+S C$motor.c$574$4_0$432 Def0000C3
+S C$motor.c$567$3_0$431 Def0000AF
+S C$motor.c$546$1_0$427 Def000056
+S C$motor.c$528$1_0$427 Def000019
+S A$motor$1887 Def000790
+S A$motor$1878 Def00077F
+S A$motor$1869 Def000770
+S A$motor$1788 Def000714
+S A$motor$1698 Def0006A0
+S A$motor$1689 Def000691
+S A$motor$1599 Def00062E
+S A$motor$710 Def0001E7
+S A$motor$701 Def0001D8
+S A$motor$611 Def000157
+S A$motor$602 Def00014C
+S A$motor$521 Def000104
+S A$motor$503 Def0000ED
+S A$motor$440 Def00009B
+S A$motor$431 Def00008B
+S A$motor$404 Def000066
+S A$motor$341 Def000011
+S A$motor$314 Def000000
+S G$motor_set_pwm_duty_cycle_ramp_down_inverse_step$0$0 Def000601
+S G$motor_controller_set_state$0$0 Def000588
+S C$motor.c$961$1_0$427 Def000503
+S C$motor.c$863$2_0$470 Def000479
+S C$motor.c$844$1_0$427 Def000459
+S C$motor.c$817$1_0$427 Def00040A
+S C$motor.c$790$1_0$427 Def00035B
+S C$motor.c$735$3_0$453 Def000239
+S C$motor.c$692$2_0$443 Def0001CA
+S C$motor.c$667$2_0$441 Def00017E
+S C$motor.c$642$2_0$439 Def000141
+S C$motor.c$575$4_0$432 Def0000C9
+S C$motor.c$568$3_0$431 Def0000B3
+S C$motor.c$556$1_0$427 Def00005E
+S C$motor.c$547$1_0$427 Def00005A
+S C$motor.c$536$2_0$428 Def000037
+S C$motor.c$529$1_0$427 Def00001D
+S C$motor.c$496$0_0$425 Def000000
+S A$motor$1978 Def0007C2
+S A$motor$1888 Def000791
+S A$motor$1879 Def000782
+S A$motor$1789 Def000715
+S A$motor$1699 Def0006A2
+S A$motor$900 Def00030E
+S A$motor$810 Def00027B
+S A$motor$801 Def00026D
+S A$motor$711 Def0001E9
+S A$motor$702 Def0001DB
+S A$motor$612 Def00015A
+S A$motor$603 Def00014F
+S A$motor$540 Def000114
+S A$motor$531 Def00010E
+S A$motor$441 Def00009C
+S A$motor$405 Def000067
+S A$motor$360 Def00002B
+S A$motor$351 Def00001D
+S A$motor$333 Def00000A
+S C$motor.c$950$2_0$483 Def0004ED
+S C$motor.c$913$5_0$481 Def0004DB
+S C$motor.c$872$2_0$471 Def00048D
+S C$motor.c$854$1_0$427 Def000466
+S C$motor.c$827$1_0$427 Def00042B
+S C$motor.c$824$3_0$464 Def000425
+S C$motor.c$809$1_0$427 Def0003E4
+S C$motor.c$791$1_0$427 Def000369
+S C$motor.c$784$2_0$460 Def000329
+S C$motor.c$750$4_0$456 Def00026D
+S C$motor.c$707$3_0$446 Def0001EC
+S C$motor.c$668$2_0$441 Def00018D
+S C$motor.c$643$2_0$439 Def000148
+S C$motor.c$557$1_0$427 Def000069
+S A$motor$901 Def000310
+S A$motor$820 Def000287
+S A$motor$811 Def00027C
+S A$motor$721 Def0001F5
+S A$motor$703 Def0001DD
+S A$motor$622 Def000165
+S A$motor$514 Def0000F9
+S A$motor$460 Def0000B3
+S A$motor$442 Def00009D
+S A$motor$424 Def000080
+S A$motor$415 Def000073
+S A$motor$370 Def000037
+S A$motor$361 Def00002C
+S A$motor$352 Def000020
+S A$motor$334 Def00000B
+S A$motor$325 Def000009
+S C$motor.c$951$2_0$483 Def0004F3
+S C$motor.c$793$2_0$461 Def000370
+S C$motor.c$785$2_0$460 Def000347
+S C$motor.c$716$2_0$448 Def000204
+S C$motor.c$669$2_0$441 Def000196
+S C$motor.c$591$5_0$435 Def0000EF
+S C$motor.c$558$1_0$427 Def000073
+S A$motor$920 Def00032E
+S A$motor$911 Def00031F
+S A$motor$830 Def00029A
+S A$motor$821 Def00028A
+S A$motor$731 Def000204
+S A$motor$722 Def0001F9
+S A$motor$641 Def00017E
+S A$motor$632 Def000173
+S A$motor$623 Def000168
+S A$motor$524 Def000106
+S A$motor$515 Def0000FD
+S A$motor$506 Def0000EF
+S A$motor$443 Def0000A0
+S A$motor$434 Def000090
+S A$motor$425 Def000083
+S A$motor$416 Def000076
+S A$motor$380 Def000047
+S A$motor$371 Def00003A
+S A$motor$362 Def00002D
+S A$motor$344 Def000015
+S A$motor$335 Def00000C
+S A$motor$317 Def000003
+S C$motor.c$964$1_0$427 Def00050A
+S C$motor.c$952$2_0$483 Def0004F7
+S C$motor.c$841$3_0$467 Def000453
+S C$motor.c$819$2_0$463 Def000412
+S C$motor.c$794$2_0$461 Def000389
+S C$motor.c$786$2_0$460 Def000353
+S C$motor.c$775$1_0$427 Def0002E7
+S C$motor.c$770$2_0$458 Def0002D3
+S C$motor.c$745$3_0$455 Def00025A
+S C$motor.c$694$2_0$444 Def0001D0
+S A$motor$930 Def000344
+S A$motor$921 Def000330
+S A$motor$912 Def000322
+S A$motor$831 Def00029C
+S A$motor$822 Def00028B
+S A$motor$732 Def000208
+S A$motor$651 Def00018D
+S A$motor$642 Def000181
+S A$motor$615 Def00015D
+S A$motor$570 Def00012A
+S A$motor$561 Def000124
+S A$motor$552 Def00011E
+S A$motor$543 Def000118
+S A$motor$534 Def000112
+S A$motor$507 Def0000F2
+S A$motor$480 Def0000C9
+S A$motor$435 Def000093
+S A$motor$426 Def000086
+S A$motor$417 Def000078
+S A$motor$408 Def000069
+S A$motor$381 Def000048
+S A$motor$372 Def00003B
+S A$motor$363 Def00002E
+S C$motor.c$953$2_0$483 Def0004FB
+S C$motor.c$901$5_0$478 Def0004CA
+S C$motor.c$857$1_0$427 Def00046D
+S C$motor.c$795$2_0$461 Def000395
+S C$motor.c$776$1_0$427 Def0002F3
+S C$motor.c$771$2_0$458 Def0002DF
+S C$motor.c$763$2_0$457 Def000286
+S C$motor.c$737$4_0$454 Def000248
+S C$motor.c$585$5_0$434 Def0000E1
+S C$motor.c$579$4_0$432 Def0000CF
+S C$motor.c$499$1_0$425 Def000000
+S _motor_disable_PWM Def00057A
+S A$motor$940 Def000353
+S A$motor$922 Def000334
+S A$motor$913 Def000324
+S A$motor$904 Def000313
+S A$motor$850 Def0002BA
+S A$motor$841 Def0002AB
+S A$motor$823 Def00028E
+S A$motor$814 Def00027F
+S A$motor$805 Def000271
+S A$motor$760 Def000231
+S A$motor$742 Def000214
+S A$motor$733 Def00020A
+S A$motor$715 Def0001EC
+S A$motor$706 Def0001DF
+S A$motor$670 Def0001AD
+S A$motor$652 Def000190
+S A$motor$643 Def000182
+S A$motor$607 Def000151
+S A$motor$508 Def0000F3
+S A$motor$490 Def0000DB
+S A$motor$481 Def0000CC
+S A$motor$436 Def000095
+S A$motor$427 Def000088
+S A$motor$418 Def000079
+S A$motor$409 Def00006C
+S A$motor$391 Def000052
+S A$motor$382 Def000049
+S A$motor$373 Def00003C
+S A$motor$355 Def000022
+S XG$motor_set_pwm_duty_cycle_ramp_up_inverse_step$0$0 Def000600
+S G$motor_init$0$0 Def0005C9
+S C$motor.c$948$1_0$427 Def0004E5
+S C$motor.c$867$1_0$427 Def00047D
+S C$motor.c$836$2_0$466 Def000440
+S C$motor.c$780$2_0$459 Def00031F
+S C$motor.c$764$2_0$457 Def00029F
+S C$motor.c$678$1_0$427 Def0001AA
+S C$motor.c$589$4_0$432 Def0000E7
+S A$motor$950 Def000362
+S A$motor$941 Def000355
+S A$motor$923 Def000337
+S A$motor$914 Def000327
+S A$motor$905 Def000316
+S A$motor$860 Def0002D0
+S A$motor$851 Def0002BC
+S A$motor$842 Def0002AE
+S A$motor$824 Def00028F
+S A$motor$815 Def000282
+S A$motor$806 Def000274
+S A$motor$770 Def00023F
+S A$motor$743 Def000217
+S A$motor$716 Def0001F0
+S A$motor$680 Def0001BD
+S A$motor$671 Def0001AF
+S A$motor$653 Def000193
+S A$motor$644 Def000183
+S A$motor$626 Def00016B
+S A$motor$608 Def000154
+S A$motor$590 Def000139
+S A$motor$527 Def00010A
+S A$motor$491 Def0000DC
+S A$motor$473 Def0000BF
+S A$motor$437 Def000097
+S A$motor$419 Def00007A
+S A$motor$383 Def00004C
+S A$motor$374 Def00003D
+S A$motor$356 Def000025
+S A$motor$347 Def000019
+S A$motor$338 Def00000E
+S XG$hall_sensor_init$0$0 Def0005C8
+S C$motor.c$955$2_0$483 Def0004FF
+S C$motor.c$917$5_0$482 Def0004E1
+S C$motor.c$875$3_0$472 Def000493
+S C$motor.c$765$2_0$457 Def0002AB
+S C$motor.c$688$1_0$427 Def0001B2
+S C$motor.c$593$6_0$436 Def0000F5
+S A$motor$960 Def000370
+S A$motor$951 Def000365
+S A$motor$942 Def000358
+S A$motor$933 Def000347
+S A$motor$924 Def000338
+S A$motor$906 Def000318
+S A$motor$870 Def0002DF
+S A$motor$852 Def0002C0
+S A$motor$843 Def0002B0
+S A$motor$834 Def00029F
+S A$motor$825 Def000290
+S A$motor$816 Def000284
+S A$motor$807 Def000276
+S A$motor$780 Def000250
+S A$motor$771 Def000242
+S A$motor$753 Def000225
+S A$motor$744 Def00021A
+S A$motor$726 Def0001FC
+S A$motor$717 Def0001F2
+S A$motor$690 Def0001CA
+S A$motor$681 Def0001C0
+S A$motor$663 Def0001A1
+S A$motor$645 Def000184
+S A$motor$636 Def000177
+S A$motor$618 Def000161
+S A$motor$591 Def00013C
+S A$motor$573 Def00012E
+S A$motor$564 Def000128
+S A$motor$519 Def0000FF
+S A$motor$492 Def0000DF
+S A$motor$375 Def00003E
+S A$motor$366 Def000031
+S C$motor.c$869$2_0$471 Def000488
+S C$motor.c$747$4_0$456 Def000269
+S C$motor.c$719$3_0$449 Def00020D
+S C$motor.c$689$1_0$427 Def0001BA
+S C$motor.c$594$6_0$436 Def0000F9
+S _motor_controller_state_is_set Def00059B
+S A$motor$970 Def000381
+S A$motor$961 Def000371
+S A$motor$952 Def000366
+S A$motor$934 Def00034A
+S A$motor$925 Def00033B
+S A$motor$907 Def00031A
+S A$motor$880 Def0002EF
+S A$motor$871 Def0002E1
+S A$motor$853 Def0002C3
+S A$motor$844 Def0002B3
+S A$motor$835 Def0002A2
+S A$motor$826 Def000293
+S A$motor$808 Def000277
+S A$motor$790 Def00025E
+S A$motor$772 Def000246
+S A$motor$763 Def000233
+S A$motor$754 Def000229
+S A$motor$727 Def0001FF
+S A$motor$709 Def0001E3
+S A$motor$691 Def0001CE
+S A$motor$664 Def0001A4
+S A$motor$646 Def000188
+S A$motor$637 Def00017A
+S A$motor$619 Def000162
+S A$motor$592 Def00013F
+S A$motor$484 Def0000CF
+S A$motor$466 Def0000B6
+S A$motor$457 Def0000AF
+S A$motor$439 Def00009A
+S A$motor$394 Def000056
+S A$motor$376 Def00003F
+S A$motor$367 Def000035
+S G$read_battery_voltage$0$0 Def000614
+S C$motor.c$699$1_0$427 Def0001D4
+S A$motor$971 Def000384
+S A$motor$962 Def000374
+S A$motor$935 Def00034C
+S A$motor$926 Def00033C
+S A$motor$908 Def00031C
+S A$motor$890 Def0002FB
+S A$motor$881 Def0002F0
+S A$motor$872 Def0002E4
+S A$motor$863 Def0002D3
+S A$motor$854 Def0002C4
+S A$motor$836 Def0002A4
+S A$motor$827 Def000294
+S A$motor$809 Def000278
+S A$motor$791 Def00025F
+S A$motor$764 Def000237
+S A$motor$737 Def00020D
+S A$motor$728 Def000202
+S A$motor$674 Def0001B2
+S A$motor$665 Def0001A7
+S A$motor$656 Def000196
+S A$motor$647 Def000189
+S A$motor$638 Def00017C
+S A$motor$629 Def00016F
+S A$motor$485 Def0000D2
+S A$motor$476 Def0000C3
+S A$motor$467 Def0000B9
+S A$motor$377 Def000040
+S A$motor$359 Def000028
+S C$motor.c$983$2_0$485 Def000534
+S C$motor.c$980$3_0$487 Def000530
+S C$motor.c$974$2_0$485 Def000523
+S C$motor.c$966$2_0$484 Def000512
+S C$motor.c$890$5_0$476 Def0004B5
+S C$motor.c$884$4_0$474 Def0004A5
+S C$motor.c$847$2_0$468 Def000461
+S C$motor.c$799$2_0$462 Def00039F
+S A$motor$990 Def0003A2
+S A$motor$972 Def000386
+S A$motor$963 Def000375
+S A$motor$936 Def00034E
+S A$motor$927 Def00033D
+S A$motor$918 Def000329
+S A$motor$891 Def0002FE
+S A$motor$864 Def0002D6
+S A$motor$855 Def0002C7
+S A$motor$837 Def0002A6
+S A$motor$828 Def000295
+S A$motor$819 Def000286
+S A$motor$792 Def000260
+S A$motor$747 Def00021C
+S A$motor$738 Def000211
+S A$motor$684 Def0001C2
+S A$motor$675 Def0001B5
+S A$motor$657 Def000199
+S A$motor$648 Def00018A
+S A$motor$585 Def000133
+S A$motor$558 Def000120
+S A$motor$549 Def00011A
+S A$motor$477 Def0000C6
+S A$motor$468 Def0000BA
+S A$motor$387 Def00004E
+S A$motor$378 Def000042
+S G$motor_set_pwm_duty_cycle_target$0$0 Def0005E2
+S C$motor.c$967$2_0$484 Def000518
+S C$motor.c$908$3_0$479 Def0004D0
+S C$motor.c$891$5_0$476 Def0004BB
+S C$motor.c$877$4_0$473 Def000499
+S C$motor.c$839$3_0$467 Def00044F
+S A$motor$991 Def0003A4
+S A$motor$982 Def000395
+S A$motor$964 Def000378
+S A$motor$955 Def000369
+S A$motor$946 Def00035B
+S A$motor$937 Def000350
+S A$motor$928 Def00033F
+S A$motor$919 Def00032C
+S A$motor$892 Def0002FF
+S A$motor$865 Def0002D8
+S A$motor$856 Def0002C8
+S A$motor$838 Def0002A8
+S A$motor$829 Def000297
+S A$motor$793 Def000263
+S A$motor$784 Def000252
+S A$motor$775 Def000248
+S A$motor$748 Def000220
+S A$motor$685 Def0001C5
+S A$motor$676 Def0001B8
+S A$motor$658 Def00019C
+S A$motor$595 Def000141
+S A$motor$586 Def000136
+S A$motor$496 Def0000E1
+S A$motor$469 Def0000BC
+S A$motor$397 Def00005A
+S A$motor$379 Def000045
+S G$motor_enable_PWM$0$0 Def000581
+S C$motor.c$995$5_0$490 Def000552
+S C$motor.c$968$2_0$484 Def00051C
+S C$motor.c$895$4_0$474 Def0004BF
+S C$motor.c$878$4_0$473 Def00049D
+S C$motor.c$769$2_0$458 Def0002B5
+S A$motor$992 Def0003A6
+S A$motor$983 Def000398
+S A$motor$965 Def000379
+S A$motor$956 Def00036C
+S A$motor$947 Def00035E
+S A$motor$929 Def000342
+S A$motor$893 Def000302
+S A$motor$884 Def0002F3
+S A$motor$866 Def0002DA
+S A$motor$857 Def0002C9
+S A$motor$848 Def0002B5
+S A$motor$794 Def000267
+S A$motor$785 Def000255
+S A$motor$776 Def000249
+S A$motor$767 Def000239
+S A$motor$758 Def00022B
+S A$motor$749 Def000222
+S A$motor$695 Def0001D0
+S A$motor$686 Def0001C8
+S A$motor$659 Def00019F
+S A$motor$596 Def000144
+S A$motor$497 Def0000E4
+S A$motor$488 Def0000D4
+S C$motor.c$996$5_0$490 Def000558
+S C$motor.c$778$2_0$459 Def0002FA
+S C$motor.c$599$5_0$437 Def0000FF
+S _motor_set_pwm_duty_cycle_ramp_down_inverse_step Def000601
+S _motor_controller_set_state Def000588
+S A$motor$993 Def0003AA
+S A$motor$984 Def00039A
+S A$motor$975 Def000389
+S A$motor$966 Def00037A
+S A$motor$957 Def00036E
+S A$motor$948 Def000360
+S A$motor$894 Def000303
+S A$motor$885 Def0002F6
+S A$motor$876 Def0002E7
+S A$motor$867 Def0002DC
+S A$motor$858 Def0002CB
+S A$motor$849 Def0002B8
+S A$motor$786 Def000258
+S A$motor$768 Def00023D
+S A$motor$759 Def00022E
+S A$motor$669 Def0001AA
+S A$motor$597 Def000145
+S A$motor$579 Def000130
+S A$motor$489 Def0000D7
+S C$motor.c$997$5_0$490 Def00055C
+S C$motor.c$976$3_0$486 Def00052A
+S C$motor.c$886$5_0$475 Def0004AD
+S C$motor.c$859$2_0$469 Def000473
+S C$motor.c$779$2_0$459 Def000313
+S A$motor$994 Def0003AD
+S A$motor$985 Def00039D
+S A$motor$976 Def00038C
+S A$motor$967 Def00037D
+S A$motor$949 Def000361
+S A$motor$895 Def000304
+S A$motor$886 Def0002F8
+S A$motor$877 Def0002E8
+S A$motor$859 Def0002CE
+S A$motor$769 Def00023E
+S A$motor$679 Def0001BA
+S G$ui16_motor_get_motor_speed_erps$0$0 Def000610
+S C$motor.c$998$5_0$490 Def00056F
+S C$motor.c$991$4_0$489 Def000547
+S A$motor$995 Def0003AE
+S A$motor$977 Def00038E
+S A$motor$968 Def00037E
+S A$motor$896 Def000307
+S A$motor$878 Def0002EB
+S A$motor$797 Def000269
+S A$motor$779 Def00024C
+S C$motor.c$985$3_0$488 Def00053C
+S A$motor$996 Def0003B1
+S A$motor$978 Def000390
+S A$motor$969 Def00037F
+S A$motor$897 Def000308
+S A$motor$879 Def0002EC
+S A$motor$798 Def00026A
+S A$motor$789 Def00025A
+S A$motor$699 Def0001D4
+S XG$motor_disable_PWM$0$0 Def000580
+S C$motor.c$993$4_0$489 Def00054B
+S A$motor$997 Def0003B2
+S A$motor$979 Def000392
+S A$motor$898 Def000309
+S A$motor$889 Def0002FA
+S G$calc_foc_angle$0$0 Def000655
+S C$motor.c$987$3_0$488 Def000541
+S C$motor.c$897$5_0$477 Def0004C4
+S _motor_init Def0005C9
+S A$motor$998 Def0003B3
+S A$motor$989 Def00039F
+S A$motor$899 Def00030B
+S A$motor$999 Def0003B5
+S G$motor_get_adc_battery_voltage_filtered_10b$0$0 Def0007B9
+S G$asin_table$0$0 Def000797
+S XG$motor_controller_state_is_set$0$0 Def0005A0
+S G$motor_set_adc_battery_voltage_cut_off$0$0 Def0007BD
+S G$motor_set_phase_current_max$0$0 Def000607
+S _read_battery_voltage Def000614
+S G$motor_controller$0$0 Def000000
+S G$TIM1_CAP_COM_IRQHandler$0$0 Def00000A
+S _motor_set_pwm_duty_cycle_target Def0005E2
+S G$motor_controller_reset_state$0$0 Def000591
+S _motor_enable_PWM Def000581
+S XG$motor_set_pwm_duty_cycle_ramp_down_inverse_step$0$0 Def000606
+S XG$motor_controller_set_state$0$0 Def000590
+S G$read_battery_current$0$0 Def000634
+S _ui16_motor_get_motor_speed_erps Def000610
+S C$motor.c$1101$1_0$510 Def0005FB
+S C$motor.c$1102$1_0$510 Def000600
+S XG$motor_init$0$0 Def0005E1
+S _calc_foc_angle Def000655
+S C$motor.c$1110$1_0$512 Def000606
+S C$motor.c$1060$1_0$500 Def00059B
+S _motor_get_adc_battery_voltage_filtered_10b Def0007B9
+S _asin_table Def000797
+S XG$read_battery_voltage$0$0 Def000633
+S C$motor.c$1061$1_0$500 Def0005A0
+S _motor_set_adc_battery_voltage_cut_off Def0007BD
+S _motor_set_phase_current_max Def000607
+S _motor_controller Def000000
+S C$motor.c$1142$1_0$520 Def000634
+S XG$motor_set_pwm_duty_cycle_target$0$0 Def0005FA
+S C$motor.c$1070$1_0$502 Def0005BB
+S _TIM1_CAP_COM_IRQHandler Def00000A
+S C$motor.c$1071$1_0$502 Def0005C8
+S XG$motor_enable_PWM$0$0 Def000587
+S _motor_controller_reset_state Def000591
+S G$motor_get_adc_battery_current_filtered_10b$0$0 Def0007B5
+S C$motor.c$1250$1_0$522 Def000761
+S C$motor.c$1107$1_0$512 Def000601
+S C$motor.c$1021$1_0$427 Def000579
+S C$motor.c$1301$1_0$535 Def0007BD
+S C$motor.c$1145$1_0$520 Def000634
+S C$motor.c$1115$1_0$514 Def000607
+S C$motor.c$1080$1_0$504 Def0005DB
+S _read_battery_current Def000634
+S C$motor.c$1221$2_0$525 Def0006EE
+S C$motor.c$1153$1_0$522 Def000655
+S C$motor.c$1146$1_0$520 Def000641
+S XG$ui16_motor_get_motor_speed_erps$0$0 Def000613
+S C$motor.c$1123$1_0$516 Def000610
+S C$motor.c$1109$1_0$512 Def000601
+S C$motor.c$1081$1_0$504 Def0005E1
+S C$motor.c$1058$1_0$500 Def00059B
+S C$motor.c$1303$1_0$535 Def0007BD
+S C$motor.c$1253$1_0$522 Def000763
+S C$motor.c$1231$2_0$525 Def00070F
+S C$motor.c$1222$2_0$525 Def0006EE
+S C$motor.c$1147$1_0$520 Def00064B
+S C$motor.c$1131$1_0$518 Def000614
+S C$motor.c$1117$1_0$514 Def000607
+S C$motor.c$1066$1_0$502 Def0005A1
+S C$motor.c$1304$1_0$535 Def0007C2
+S C$motor.c$1245$1_0$522 Def00073D
+S C$motor.c$1241$2_0$525 Def00072F
+S C$motor.c$1232$2_0$525 Def00070F
+S C$motor.c$1223$2_0$525 Def0006F6
+S C$motor.c$1164$1_0$522 Def000657
+S C$motor.c$1148$1_0$520 Def000654
+S C$motor.c$1125$1_0$516 Def000610
+S C$motor.c$1118$1_0$514 Def00060F
+S A$motor$1000 Def0003B8
+S XG$calc_foc_angle$0$0 Def000796
+S C$motor.c$1242$2_0$525 Def00072F
+S C$motor.c$1233$2_0$525 Def000717
+S C$motor.c$1224$2_0$525 Def0006FC
+S C$motor.c$1219$1_0$522 Def0006D7
+S C$motor.c$1181$2_0$523 Def00068C
+S C$motor.c$1174$1_0$522 Def00065C
+S C$motor.c$1126$1_0$516 Def000613
+S C$motor.c$1091$1_0$506 Def0005EC
+S C$motor.c$1068$1_0$502 Def0005A1
+S A$motor$1100 Def00044D
+S A$motor$1001 Def0003BA
+S C$motor.c$1256$1_0$522 Def000770
+S C$motor.c$1243$2_0$525 Def000737
+S C$motor.c$1234$2_0$525 Def00071D
+S C$motor.c$1190$2_0$524 Def0006B4
+S C$motor.c$1182$2_0$523 Def00069B
+S C$motor.c$1175$1_0$522 Def00066C
+S C$motor.c$1134$1_0$518 Def000614
+S C$motor.c$1076$1_0$504 Def0005C9
+S C$motor.c$1069$1_0$502 Def0005AE
+S A$motor$1020 Def0003D7
+S A$motor$1011 Def0003C9
+S XG$motor_get_adc_battery_voltage_filtered_10b$0$0 Def0007BC
+S XG$asin_table$0$0 Def0007B4
+S C$motor.c$1257$1_0$522 Def00077E
+S C$motor.c$1248$1_0$522 Def00073D
+S C$motor.c$1226$2_0$525 Def0006FF
+S C$motor.c$1176$1_0$522 Def000680
+S C$motor.c$1135$1_0$518 Def000621
+S C$motor.c$1093$1_0$506 Def0005F5
+S C$motor.c$1026$1_0$492 Def00057A
+S C$motor.c$1019$1_0$427 Def000573
+S A$motor$1210 Def0004DB
+S A$motor$1021 Def0003D8
+S A$motor$1012 Def0003CB
+S XG$motor_set_adc_battery_voltage_cut_off$0$0 Def0007C2
+S C$motor.c$1285$1_0$531 Def0007B5
+S C$motor.c$1280$1_0$527 Def0007B4
+S C$motor.c$1258$1_0$522 Def00078A
+S C$motor.c$1249$1_0$522 Def000750
+S C$motor.c$1236$2_0$525 Def00071F
+S C$motor.c$1227$2_0$525 Def0006FF
+S C$motor.c$1136$1_0$518 Def00062B
+S XG$motor_set_phase_current_max$0$0 Def00060F
+S C$motor.c$1099$1_0$510 Def0005FB
+S C$motor.c$1094$1_0$506 Def0005FA
+S C$motor.c$1078$1_0$504 Def0005C9
+S C$motor.c$1034$1_0$494 Def000581
+S A$motor$1310 Def00055F
+S A$motor$1301 Def000552
+S A$motor$1220 Def0004E8
+S A$motor$1211 Def0004DF
+S A$motor$1202 Def0004D0
+S A$motor$1121 Def000466
+S A$motor$1112 Def000459
+S A$motor$1103 Def00044F
+S A$motor$1040 Def0003F0
+S A$motor$1031 Def0003E4
+S A$motor$1022 Def0003D9
+S A$motor$1013 Def0003CE
+S A$motor$1004 Def0003BD
+S C$motor.c$1293$1_0$533 Def0007B9
+S C$motor.c$1270$2_0$528 Def0007A0
+S C$motor.c$1259$1_0$522 Def000796
+S C$motor.c$1237$2_0$525 Def00071F
+S C$motor.c$1228$2_0$525 Def000707
+S C$motor.c$1193$2_0$524 Def0006B9
+S C$motor.c$1185$2_0$523 Def0006A9
+S C$motor.c$1137$1_0$518 Def000633
+S G$motor_set_pwm_duty_cycle_ramp_up_inverse_step$0$0 Def0005FB
+S C$motor.c$1086$1_0$506 Def0005E2
+S C$motor.c$1079$1_0$504 Def0005D2
+S C$motor.c$1042$1_0$496 Def000588
+S C$motor.c$1028$1_0$492 Def00057A
+S XG$motor_controller$0$0 Def000009
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 01
+T 00 00 02
+R 00 00 00 01
+T 00 00 02
+R 00 00 00 01
+T 00 00 03
+R 00 00 00 01
+T 00 00 03
+R 00 00 00 01
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 02
+T 00 01 00
+R 00 00 00 02
+T 00 01 00
+R 00 00 00 02
+T 00 01 3C
+R 00 00 00 02
+T 00 01 3C
+R 00 00 00 02
+T 00 01 3E
+R 00 00 00 02
+T 00 01 3E
+R 00 00 00 02
+T 00 01 40
+R 00 00 00 02
+T 00 01 40
+R 00 00 00 02
+T 00 01 42
+R 00 00 00 02
+T 00 01 42
+R 00 00 00 02
+T 00 01 44
+R 00 00 00 02
+T 00 01 44
+R 00 00 00 02
+T 00 01 46
+R 00 00 00 02
+T 00 01 46
+R 00 00 00 02
+T 00 01 47
+R 00 00 00 02
+T 00 01 47
+R 00 00 00 02
+T 00 01 48
+R 00 00 00 02
+T 00 01 48
+R 00 00 00 02
+T 00 01 49
+R 00 00 00 02
+T 00 01 49
+R 00 00 00 02
+T 00 01 4A
+R 00 00 00 02
+T 00 01 4A
+R 00 00 00 02
+T 00 01 4B
+R 00 00 00 02
+T 00 01 4B
+R 00 00 00 02
+T 00 01 4D
+R 00 00 00 02
+T 00 01 4D
+R 00 00 00 02
+T 00 01 4E
+R 00 00 00 02
+T 00 01 4E
+R 00 00 00 02
+T 00 01 4F
+R 00 00 00 02
+T 00 01 4F
+R 00 00 00 02
+T 00 01 50
+R 00 00 00 02
+T 00 01 50
+R 00 00 00 02
+T 00 01 51
+R 00 00 00 02
+T 00 01 51
+R 00 00 00 02
+T 00 01 52
+R 00 00 00 02
+T 00 01 52
+R 00 00 00 02
+T 00 01 53
+R 00 00 00 02
+T 00 01 53
+R 00 00 00 02
+T 00 01 54
+R 00 00 00 02
+T 00 01 54
+R 00 00 00 02
+T 00 01 56
+R 00 00 00 02
+T 00 01 56
+R 00 00 00 02
+T 00 01 58
+R 00 00 00 02
+T 00 01 58
+R 00 00 00 02
+T 00 01 5A
+R 00 00 00 02
+T 00 01 5A
+R 00 00 00 02
+T 00 01 5C
+R 00 00 00 02
+T 00 01 5C
+R 00 00 00 02
+T 00 01 5D
+R 00 00 00 02
+T 00 01 5D
+R 00 00 00 02
+T 00 01 5E
+R 00 00 00 02
+T 00 01 5E
+R 00 00 00 02
+T 00 01 5F
+R 00 00 00 02
+T 00 01 5F
+R 00 00 00 02
+T 00 01 61
+R 00 00 00 02
+T 00 01 61
+R 00 00 00 02
+T 00 01 62
+R 00 00 00 02
+T 00 01 62
+R 00 00 00 02
+T 00 01 64
+R 00 00 00 02
+T 00 01 64
+R 00 00 00 02
+T 00 01 65
+R 00 00 00 02
+T 00 01 65
+R 00 00 00 02
+T 00 01 66
+R 00 00 00 02
+T 00 01 66
+R 00 00 00 02
+T 00 01 67
+R 00 00 00 02
+T 00 01 67
+R 00 00 00 02
+T 00 01 69
+R 00 00 00 02
+T 00 01 69
+R 00 00 00 02
+T 00 01 6B
+R 00 00 00 02
+T 00 01 6B
+R 00 00 00 02
+T 00 01 6D
+R 00 00 00 02
+T 00 01 6D
+R 00 00 00 02
+T 00 01 6E
+R 00 00 00 02
+T 00 01 6E
+R 00 00 00 02
+T 00 01 70
+R 00 00 00 02
+T 00 01 70
+R 00 00 00 02
+T 00 01 71
+R 00 00 00 02
+T 00 01 71
+R 00 00 00 02
+T 00 01 72
+R 00 00 00 02
+T 00 01 72
+R 00 00 00 02
+T 00 01 73
+R 00 00 00 02
+T 00 01 73
+R 00 00 00 02
+T 00 01 74
+R 00 00 00 02
+T 00 01 74
+R 00 00 00 02
+T 00 01 75
+R 00 00 00 02
+T 00 01 75
+R 00 00 00 02
+T 00 01 76
+R 00 00 00 02
+T 00 01 76
+R 00 00 00 02
+T 00 01 77
+R 00 00 00 02
+T 00 01 77
+R 00 00 00 02
+T 00 01 78
+R 00 00 00 02
+T 00 01 78
+R 00 00 00 02
+T 00 01 79
+R 00 00 00 02
+T 00 01 79
+R 00 00 00 02
+T 00 01 7B
+R 00 00 00 02
+T 00 01 7B
+R 00 00 00 02
+T 00 01 7D
+R 00 00 00 02
+T 00 01 7D
+R 00 00 00 02
+T 00 01 7E
+R 00 00 00 02
+T 00 01 7E
+R 00 00 00 02
+T 00 01 80
+R 00 00 00 02
+T 00 01 80
+R 00 00 00 02
+T 00 01 82
+R 00 00 00 02
+T 00 01 82
+R 00 00 00 02
+T 00 01 83
+R 00 00 00 02
+T 00 01 83
+R 00 00 00 02
+T 00 01 84
+R 00 00 00 02
+T 00 01 84
+R 00 00 00 02
+T 00 01 86
+R 00 00 00 02
+T 00 01 86
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 CD 06 14 CD 06 34 CD
+R 00 00 00 09 00 04 00 09 00 07 00 09
+T 00 00 07 06 55 81
+R 00 00 00 09 00 03 00 09
+T 00 00 0A
+R 00 00 00 09
+T 00 00 0A 4F 62 52 02 CD 00 00 72 13 54 02 35 05
+R 00 00 00 09 02 08 00 03
+T 00 00 17 54 00 72 10 54 01
+R 00 00 00 09
+T 00 00 1D
+R 00 00 00 09
+T 00 00 1D C6 54 00 2A FB CD 00 00 CF 01 6E CE
+R 00 00 00 09 02 09 00 02 10 0C 00 02
+T 00 00 29 01 6E 54 54 9F C7 01 70 72 5D
+R 00 00 00 09 10 03 00 02 10 09 00 02
+T 00 00 33 01 52 27 17 CE 01 6E 58 58 58 58 58 58
+R 00 00 00 09 10 03 00 02 10 08 00 02
+T 00 00 40 90 5F C6 01 52 90 97 65 9F C7 01 71 20
+R 00 00 00 09 10 06 00 02 10 0D 00 02
+T 00 00 4D 04
+R 00 00 00 09
+T 00 00 4E
+R 00 00 00 09
+T 00 00 4E 72 5F 01 71
+R 00 00 00 09 10 05 00 02
+T 00 00 52
+R 00 00 00 09
+T 00 00 52 72 12 54 02 35 07 54 00 72 10 54 01 C6
+R 00 00 00 09
+T 00 00 5F 50 15 A4 20 4E A4 0F 44 6B 02 C6 50 10
+R 00 00 00 09
+T 00 00 6C A4 04 44 1A 02 6B 02 C6 50 0B A4 20 44
+R 00 00 00 09
+T 00 00 79 44 44 1A 02 C7 01 4F C6 01 50 C1
+R 00 00 00 09 10 08 00 02 10 0B 00 02
+T 00 00 84 01 4F 26 03 CC 01 39
+R 00 00 00 09 10 03 00 02 00 08 00 09
+T 00 00 8B
+R 00 00 00 09
+T 00 00 8B 55 01 4F 01 50 C6
+R 00 00 00 09 10 04 00 02 10 06 00 02
+T 00 00 91 01 4F A1 06 23 03 CC 01 30
+R 00 00 00 09 10 03 00 02 00 0A 00 09
+T 00 00 9A
+R 00 00 00 09
+T 00 00 9A 5F 97 58 DE 00 A1 FC
+R 00 00 00 09 10 07 00 09
+T 00 00 A1
+R 00 00 00 09
+T 00 00 A1 01 30 00 B6
+R 00 00 00 09 00 03 00 09 00 05 00 09
+T 00 00 A5 01 2A 00 AF
+R 00 00 00 09 00 03 00 09 00 05 00 09
+T 00 00 A9 01 1A 01 14
+R 00 00 00 09 00 03 00 09 00 05 00 09
+T 00 00 AD 01 20
+R 00 00 00 09 00 03 00 09
+T 00 00 AF
+R 00 00 00 09
+T 00 00 AF 35 74 01 47 CC 01 33
+R 00 00 00 09 10 05 00 02 00 08 00 09
+T 00 00 B6
+R 00 00 00 09
+T 00 00 B6 C6 01 51 4A 27 03 CC 01 0E
+R 00 00 00 09 10 04 00 02 00 0A 00 09
+T 00 00 BF
+R 00 00 00 09
+T 00 00 BF 72 5F 01 51 CE 01 3C CF
+R 00 00 00 09 10 05 00 02 10 08 00 02
+T 00 00 C7 01 40 AE 00 01 CF 01 3C CE
+R 00 00 00 09 10 03 00 02 10 09 00 02
+T 00 00 D0 01 40 27 0D AE 3D 09 90 CE 01 40 65 CF
+R 00 00 00 09 10 03 00 02 10 0C 00 02
+T 00 00 DD 01 44 20 06
+R 00 00 00 09 10 03 00 02
+T 00 00 E1
+R 00 00 00 09
+T 00 00 E1 AE 3D 09 CF 01 44
+R 00 00 00 09 10 07 00 02
+T 00 00 E7
+R 00 00 00 09
+T 00 00 E7 CE 01 44 A3 00 0A 23 10 C6 01 4D 4A 26
+R 00 00 00 09 10 04 00 02 10 0C 00 02
+T 00 00 F4 19 35 02 01 4D 35 04 00 00 20 0F
+R 00 00 00 09 10 06 00 02 12 0A 00 0B
+T 00 00 FF
+R 00 00 00 09
+T 00 00 FF C6 01 4D A1 02 26 08 35 01 01 4D 72 5F
+R 00 00 00 09 10 04 00 02 10 0C 00 02
+T 00 01 0C 01 49
+R 00 00 00 09 10 03 00 02
+T 00 01 0E
+R 00 00 00 09
+T 00 01 0E 35 9E 01 47 20 1F
+R 00 00 00 09 10 05 00 02
+T 00 01 14
+R 00 00 00 09
+T 00 01 14 35 C9 01 47 20 19
+R 00 00 00 09 10 05 00 02
+T 00 01 1A
+R 00 00 00 09
+T 00 01 1A 35 F3 01 47 20 13
+R 00 00 00 09 10 05 00 02
+T 00 01 20
+R 00 00 00 09
+T 00 01 20 35 01 01 51 35 1E 01 47 20 09
+R 00 00 00 09 10 05 00 02 10 09 00 02
+T 00 01 2A
+R 00 00 00 09
+T 00 01 2A 35 49 01 47 20 03
+R 00 00 00 09 10 05 00 02
+T 00 01 30
+R 00 00 00 09
+T 00 01 30 CC 05 77
+R 00 00 00 09 00 04 00 09
+T 00 01 33
+R 00 00 00 09
+T 00 01 33 AE 00 01 CF 01 3E
+R 00 00 00 09 10 07 00 02
+T 00 01 39
+R 00 00 00 09
+T 00 01 39 CE 01 3C A3 0C 35 24 10 CE 01 3C 5C CF
+R 00 00 00 09 10 04 00 02 10 0C 00 02
+T 00 01 46 01 3C CE 01 3E 5C CF
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 4D 01 3E 20 26
+R 00 00 00 09 10 03 00 02
+T 00 01 51
+R 00 00 00 09
+T 00 01 51 AE 00 01 CF 01 3C AE 00 01 CF 01 3E 72
+R 00 00 00 09 10 07 00 02 10 0D 00 02
+T 00 01 5E 5F 01 51 5F CF 01 44 AE FF FF CF
+R 00 00 00 09 10 04 00 02 10 08 00 02
+T 00 01 69 01 40 72 5F 01 49 35 01
+R 00 00 00 09 10 03 00 02 10 07 00 02
+T 00 01 71 01 4D 72 5F 01 50
+R 00 00 00 09 10 03 00 02 10 07 00 02
+T 00 01 77
+R 00 00 00 09
+T 00 01 77 C6 01 4D A1 02 26 23 C6 01 3F 95 4F 97
+R 00 00 00 09 10 04 00 02 10 0B 00 02
+T 00 01 84 90 CE 01 40 65 9F C7 01 4A C6
+R 00 00 00 09 10 05 00 02 10 0A 00 02
+T 00 01 8E 01 47 CB 01 4A C7
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 94 01 48 C6 01 48 CB
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 9A 01 49 C7 01 46 20 09
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 A1
+R 00 00 00 09
+T 00 01 A1 C6 01 47 CB 01 49 C7
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 01 A8 01 46
+R 00 00 00 09 10 03 00 02
+T 00 01 AA
+R 00 00 00 09
+T 00 01 AA C6 01 46 A0 3F C7 01 46 C6
+R 00 00 00 09 10 04 00 02 10 09 00 02
+T 00 01 B3 01 61 C1 01 70 25 10 C6
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 BB 01 74 C1 01 71 25 08 C6
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 C3 01 64 C1 01 71 24 06
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 01 CA
+R 00 00 00 09
+T 00 01 CA 35 01 00 03 20 04
+R 00 00 00 09 10 05 00 01
+T 00 01 D0
+R 00 00 00 09
+T 00 01 D0 72 5F 00 03
+R 00 00 00 09 10 05 00 01
+T 00 01 D4
+R 00 00 00 09
+T 00 01 D4 C6 01 72 4C C7 01 72 A1 0C 23 1D 72 5F
+R 00 00 00 09 10 04 00 02 10 08 00 02
+T 00 01 E1 01 72 72 5D 00 03 26 03 CC
+R 00 00 00 09 10 03 00 02 10 07 00 01
+T 00 01 EA 02 71
+R 00 00 00 09 00 03 00 09
+T 00 01 EC
+R 00 00 00 09
+T 00 01 EC 72 5D 01 52 26 03 CC 02 71
+R 00 00 00 09 10 05 00 02 00 0A 00 09
+T 00 01 F5
+R 00 00 00 09
+T 00 01 F5 72 5A 01 52 CC 02 71
+R 00 00 00 09 10 05 00 02 00 08 00 09
+T 00 01 FC
+R 00 00 00 09
+T 00 01 FC C6 53 EC C1 01 66 24 10 72 5D 01 52 26
+R 00 00 00 09 10 07 00 02 10 0D 00 02
+T 00 02 09 03 CC 02 71
+R 00 00 00 09 00 05 00 09
+T 00 02 0D
+R 00 00 00 09
+T 00 02 0D 72 5A 01 52 CC 02 71
+R 00 00 00 09 10 05 00 02 00 08 00 09
+T 00 02 14
+R 00 00 00 09
+T 00 02 14 CE 01 42 C3 01 44 24 0F 72 5D
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 02 1E 01 52 26 03 CC 02 71
+R 00 00 00 09 10 03 00 02 00 08 00 09
+T 00 02 25
+R 00 00 00 09
+T 00 02 25 72 5A 01 52 20 46
+R 00 00 00 09 10 05 00 02
+T 00 02 2B
+R 00 00 00 09
+T 00 02 2B C6 01 52 C1 01 53 24 1F 72 5D
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 02 35 00 03 26 19 90 CE 01 58 93 5C CF
+R 00 00 00 09 10 03 00 01 10 09 00 02
+T 00 02 40 01 58 90 C3 01 54 25 29 5F CF
+R 00 00 00 09 10 03 00 02 10 07 00 02
+T 00 02 4A 01 58 72 5C 01 52 20 1F
+R 00 00 00 09 10 03 00 02 10 07 00 02
+T 00 02 52
+R 00 00 00 09
+T 00 02 52 C6 01 52 C1 01 53 23 17 90 CE
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 02 5C 01 5A 93 5C CF 01 5A 90 C3
+R 00 00 00 09 10 03 00 02 10 08 00 02
+T 00 02 65 01 56 25 08 5F CF 01 5A 72 5A
+R 00 00 00 09 10 03 00 02 10 09 00 02
+T 00 02 6F 01 52
+R 00 00 00 09 10 03 00 02
+T 00 02 71
+R 00 00 00 09
+T 00 02 71 C6 01 46 AB AB 5F 97 1C 00 00 F6 C7
+R 00 00 00 09 10 04 00 02 00 0B 00 02
+T 00 02 7D 00 02 C6 00 02 A1 7F 23 2F 5F C6
+R 00 00 00 09 10 03 00 01 10 06 00 01
+T 00 02 88 00 02 97 1D 00 7F 51 5F C6 01 52 97 89
+R 00 00 00 09 10 03 00 01 10 0C 00 02
+T 00 02 95 90 89 CD 00 00 5B 04 CF 00 00 C6
+R 00 00 00 09 02 06 00 05 10 0B 00 01
+T 00 02 A0 00 00 6B 02 0F 01 7B 02 C7 00 02 C6
+R 00 00 00 09 10 03 00 01 10 0C 00 01
+T 00 02 AC 00 02 AB 7F C7 01 5C 20 32
+R 00 00 00 09 10 03 00 01 10 08 00 02
+T 00 02 B5
+R 00 00 00 09
+T 00 02 B5 C6 00 02 6B 02 0F 01 90 AE 00 7F 72 F2
+R 00 00 00 09 10 04 00 01
+T 00 02 C2 01 5F C6 01 52 97 89 90 89 CD 00 00 5B
+R 00 00 00 09 10 06 00 02 02 0D 00 05
+T 00 02 CF 04 CF 00 00 C6 00 00 6B 02 0F 01 7B 02
+R 00 00 00 09 10 05 00 01 10 08 00 01
+T 00 02 DC C7 00 02 A6 7F C0 00 02 C7
+R 00 00 00 09 10 04 00 01 10 09 00 01
+T 00 02 E5 01 5C
+R 00 00 00 09 10 03 00 02
+T 00 02 E7
+R 00 00 00 09
+T 00 02 E7 5F C6 01 46 97 1C 00 00 F6 C7
+R 00 00 00 09 10 05 00 02 00 09 00 02
+T 00 02 F1 00 02 C6 00 02 A1 7F 23 2F 5F C6
+R 00 00 00 09 10 03 00 01 10 06 00 01
+T 00 02 FC 00 02 97 1D 00 7F 51 5F C6 01 52 97 89
+R 00 00 00 09 10 03 00 01 10 0C 00 02
+T 00 03 09 90 89 CD 00 00 5B 04 CF 00 00 C6
+R 00 00 00 09 02 06 00 05 10 0B 00 01
+T 00 03 14 00 00 6B 02 0F 01 7B 02 C7 00 02 C6
+R 00 00 00 09 10 03 00 01 10 0C 00 01
+T 00 03 20 00 02 AB 7F C7 01 5D 20 32
+R 00 00 00 09 10 03 00 01 10 08 00 02
+T 00 03 29
+R 00 00 00 09
+T 00 03 29 C6 00 02 6B 02 0F 01 90 AE 00 7F 72 F2
+R 00 00 00 09 10 04 00 01
+T 00 03 36 01 5F C6 01 52 97 89 90 89 CD 00 00 5B
+R 00 00 00 09 10 06 00 02 02 0D 00 05
+T 00 03 43 04 CF 00 00 C6 00 00 6B 02 0F 01 7B 02
+R 00 00 00 09 10 05 00 01 10 08 00 01
+T 00 03 50 C7 00 02 A6 7F C0 00 02 C7
+R 00 00 00 09 10 04 00 01 10 09 00 01
+T 00 03 59 01 5D
+R 00 00 00 09 10 03 00 02
+T 00 03 5B
+R 00 00 00 09
+T 00 03 5B C6 01 46 AB 55 5F 97 1C 00 00 F6 C7
+R 00 00 00 09 10 04 00 02 00 0B 00 02
+T 00 03 67 00 02 C6 00 02 A1 7F 23 2F 5F C6
+R 00 00 00 09 10 03 00 01 10 06 00 01
+T 00 03 72 00 02 97 1D 00 7F 51 5F C6 01 52 97 89
+R 00 00 00 09 10 03 00 01 10 0C 00 02
+T 00 03 7F 90 89 CD 00 00 5B 04 CF 00 00 C6
+R 00 00 00 09 02 06 00 05 10 0B 00 01
+T 00 03 8A 00 00 6B 02 0F 01 7B 02 C7 00 02 C6
+R 00 00 00 09 10 03 00 01 10 0C 00 01
+T 00 03 96 00 02 AB 7F C7 01 5E 20 32
+R 00 00 00 09 10 03 00 01 10 08 00 02
+T 00 03 9F
+R 00 00 00 09
+T 00 03 9F C6 00 02 6B 02 0F 01 90 AE 00 7F 72 F2
+R 00 00 00 09 10 04 00 01
+T 00 03 AC 01 5F C6 01 52 97 89 90 89 CD 00 00 5B
+R 00 00 00 09 10 06 00 02 02 0D 00 05
+T 00 03 B9 04 CF 00 00 C6 00 00 6B 02 0F 01 7B 02
+R 00 00 00 09 10 05 00 01 10 08 00 01
+T 00 03 C6 C7 00 02 A6 7F C0 00 02 C7
+R 00 00 00 09 10 04 00 01 10 09 00 01
+T 00 03 CF 01 5E
+R 00 00 00 09 10 03 00 02
+T 00 03 D1
+R 00 00 00 09
+T 00 03 D1 C6 01 5D 4E A4 0F 44 44 44 C7 52 69 C6
+R 00 00 00 09 10 04 00 02
+T 00 03 DE 01 5D 48 C7 52 6A C6 01 5E 4E A4 0F 44
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 03 EB 44 44 C7 52 67 C6 01 5E 48 C7 52 68 C6
+R 00 00 00 09 10 09 00 02
+T 00 03 F8 01 5C 4E A4 0F 44 44 44 C7 52 65 C6
+R 00 00 00 09 10 03 00 02
+T 00 04 04 01 5C 48 C7 52 66 C6 01 61 C1
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 04 0E 00 00 24 19 90 CE 01 5F 93 5C CF
+R 00 00 00 09 12 03 00 01 10 09 00 02
+T 00 04 19 01 5F 90 A3 07 A1 25 17 5F CF 01 5F 72
+R 00 00 00 09 10 03 00 02 10 0D 00 02
+T 00 04 26 5C 01 61 20 0D
+R 00 00 00 09 10 04 00 02
+T 00 04 2B
+R 00 00 00 09
+T 00 04 2B C6 01 61 C1 00 00 23 05 55
+R 00 00 00 09 10 04 00 02 12 07 00 01
+T 00 04 34 00 00 01 61
+R 00 00 00 09 12 03 00 01 10 05 00 02
+T 00 04 38
+R 00 00 00 09
+T 00 04 38 C6 01 64 C1 00 00 24 19 90 CE
+R 00 00 00 09 10 04 00 02 12 07 00 0D
+T 00 04 42 01 62 93 5C CF 01 62 90 A3 07 A1 25 17
+R 00 00 00 09 10 03 00 02 10 08 00 02
+T 00 04 4F 5F CF 01 62 72 5C 01 64 20 0D
+R 00 00 00 09 10 05 00 02 10 09 00 02
+T 00 04 59
+R 00 00 00 09
+T 00 04 59 C6 01 64 C1 00 00 23 05 55
+R 00 00 00 09 10 04 00 02 12 07 00 0D
+T 00 04 62 00 00 01 64
+R 00 00 00 09 12 03 00 0D 10 05 00 02
+T 00 04 66
+R 00 00 00 09
+T 00 04 66 CE 01 79 5C CF 01 79 C6 50 15 44 25 06
+R 00 00 00 09 10 04 00 02 10 08 00 02
+T 00 04 73 72 5F 01 76 20 04
+R 00 00 00 09 10 05 00 02
+T 00 04 79
+R 00 00 00 09
+T 00 04 79 35 01 01 76
+R 00 00 00 09 10 05 00 02
+T 00 04 7D
+R 00 00 00 09
+T 00 04 7D C6 01 77 C1 01 76 26 03 CC
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 04 86 04 E5
+R 00 00 00 09 00 03 00 09
+T 00 04 88
+R 00 00 00 09
+T 00 04 88 55 01 76 01 77 C6
+R 00 00 00 09 10 04 00 02 10 06 00 02
+T 00 04 8E 01 76 4A 26 3D 72 5D 01 78 26 0C 35 01
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 04 9B 01 78 AE 24 9F CF 00 00 20 40
+R 00 00 00 09 10 03 00 02 12 09 00 06
+T 00 04 A5
+R 00 00 00 09
+T 00 04 A5 CE 01 79 A3 01 38 24 08 AE 01 38 CF
+R 00 00 00 09 10 04 00 02
+T 00 04 B1 00 00 20 0A
+R 00 00 00 09 12 03 00 06
+T 00 04 B5
+R 00 00 00 09
+T 00 04 B5 CE 01 79 CF 00 00 5F CF
+R 00 00 00 09 10 04 00 02 12 07 00 06
+T 00 04 BD 01 79
+R 00 00 00 09 10 03 00 02
+T 00 04 BF
+R 00 00 00 09
+T 00 04 BF C6 50 10 2B 06 35 02 00 00 20 1B
+R 00 00 00 09 12 0A 00 0C
+T 00 04 CA
+R 00 00 00 09
+T 00 04 CA 35 01 00 00 20 15
+R 00 00 00 09 12 05 00 0C
+T 00 04 D0
+R 00 00 00 09
+T 00 04 D0 72 5D 01 78 27 0F C6 50 10 2A 06 35 02
+R 00 00 00 09 10 05 00 02
+T 00 04 DD 00 00 20 04
+R 00 00 00 09 12 03 00 0C
+T 00 04 E1
+R 00 00 00 09
+T 00 04 E1 35 01 00 00
+R 00 00 00 09 12 05 00 0C
+T 00 04 E5
+R 00 00 00 09
+T 00 04 E5 CE 01 79 A3 24 9F 23 16 AE 24 9F CF
+R 00 00 00 09 10 04 00 02
+T 00 04 F1 00 00 5F CF 01 79 72 5F
+R 00 00 00 09 12 03 00 06 10 07 00 02
+T 00 04 F9 01 78 72 5F 00 00 5F CF
+R 00 00 00 09 10 03 00 02 12 07 00 0C
+T 00 05 01 01 7B
+R 00 00 00 09 10 03 00 02
+T 00 05 03
+R 00 00 00 09
+T 00 05 03 CE 01 84 5C CF 01 84 CE
+R 00 00 00 09 10 04 00 02 10 08 00 02
+T 00 05 0B 01 84 A3 FF FE 23 11 AE FF FE CF 00 00
+R 00 00 00 09 10 03 00 02 12 0E 00 04
+T 00 05 18 5F CF 01 84 72 5F 01 86 CC
+R 00 00 00 09 10 05 00 02 10 09 00 02
+T 00 05 21 05 73
+R 00 00 00 09 00 03 00 09
+T 00 05 23
+R 00 00 00 09
+T 00 05 23 C6 50 01 A5 02 27 06 35 01 01 82 20 04
+R 00 00 00 09 10 0C 00 02
+T 00 05 30
+R 00 00 00 09
+T 00 05 30 72 5F 01 82
+R 00 00 00 09 10 05 00 02
+T 00 05 34
+R 00 00 00 09
+T 00 05 34 C6 01 83 C1 01 82 27 37 55
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 05 3D 01 82 01 83 C6
+R 00 00 00 09 10 03 00 02 10 05 00 02
+T 00 05 42 01 82 4A 26 2C 72 5C 01 86 C6
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 05 4C 01 86 A1 02 25 21 CE 01 84 CF
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 05 56 00 00 5F CF 01 84 CE
+R 00 00 00 09 12 03 00 04 10 07 00 02
+T 00 05 5D 00 02 90 CE 00 00 5C 26 02 90 5C
+R 00 00 00 09 12 03 00 09 12 07 00 09
+T 00 05 68
+R 00 00 00 09
+T 00 05 68 CF 00 02 90 CF 00 00 35 01
+R 00 00 00 09 12 04 00 09 12 08 00 09
+T 00 05 71 01 86
+R 00 00 00 09 10 03 00 02
+T 00 05 73
+R 00 00 00 09
+T 00 05 73 35 EF 52 55
+R 00 00 00 09
+T 00 05 77
+R 00 00 00 09
+T 00 05 77 5B 02 80
+R 00 00 00 09
+T 00 05 7A
+R 00 00 00 09
+T 00 05 7A 4B 00 CD 00 00 84 81
+R 00 00 00 09 02 06 00 08
+T 00 05 81
+R 00 00 00 09
+T 00 05 81 4B 01 CD 00 00 84 81
+R 00 00 00 09 02 06 00 08
+T 00 05 88
+R 00 00 00 09
+T 00 05 88 7B 03 CA 01 4E C7 01 4E 81
+R 00 00 00 09 10 06 00 02 10 09 00 02
+T 00 05 91
+R 00 00 00 09
+T 00 05 91 7B 03 43 C4 01 4E C7 01 4E 81
+R 00 00 00 09 10 07 00 02 10 0A 00 02
+T 00 05 9B
+R 00 00 00 09
+T 00 05 9B 7B 03 C4 01 4E 81
+R 00 00 00 09 10 06 00 02
+T 00 05 A1
+R 00 00 00 09
+T 00 05 A1 4B 00 4B 20 4B 14 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 05 AE 4B 00 4B 04 4B 0F 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 05 BB 4B 00 4B 20 4B 0A 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 05 C8 81
+R 00 00 00 09
+T 00 05 C9
+R 00 00 00 09
+T 00 05 C9 4B 0F 4B 00 CD 05 FB 5B 02 4B 0F 4B 00
+R 00 00 00 09 00 08 00 09
+T 00 05 D6 CD 06 01 5B 02 4B 30 CD 06 07 84 81
+R 00 00 00 09 00 04 00 09 00 0B 00 09
+T 00 05 E2
+R 00 00 00 09
+T 00 05 E2 7B 03 A1 FE 23 04 A6 FE 6B 03
+R 00 00 00 09
+T 00 05 EC
+R 00 00 00 09
+T 00 05 EC C6 01 4E A5 02 27 02 0F 03
+R 00 00 00 09 10 04 00 02
+T 00 05 F5
+R 00 00 00 09
+T 00 05 F5 7B 03 C7 01 53 81
+R 00 00 00 09 10 06 00 02
+T 00 05 FB
+R 00 00 00 09
+T 00 05 FB 1E 03 CF 01 54 81
+R 00 00 00 09 10 06 00 02
+T 00 06 01
+R 00 00 00 09
+T 00 06 01 1E 03 CF 01 56 81
+R 00 00 00 09 10 06 00 02
+T 00 06 07
+R 00 00 00 09
+T 00 06 07 C6 01 75 1B 03 C7 01 74 81
+R 00 00 00 09 10 04 00 02 10 09 00 02
+T 00 06 10
+R 00 00 00 09
+T 00 06 10 CE 01 44 81
+R 00 00 00 09 10 04 00 02
+T 00 06 14
+R 00 00 00 09
+T 00 06 14 CE 01 67 54 54 50 72 BB 01 67 CF
+R 00 00 00 09 10 04 00 02 10 0B 00 02
+T 00 06 1F 01 67 CD 00 00 72 BB
+R 00 00 00 09 10 03 00 02 02 06 00 0A
+T 00 06 26 01 67 CF 01 67 CE
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 06 2C 01 67 54 54 CF 01 69 81
+R 00 00 00 09 10 03 00 02 10 08 00 02
+T 00 06 34
+R 00 00 00 09
+T 00 06 34 CE 01 6B 54 54 50 72 BB 01 6B CF
+R 00 00 00 09 10 04 00 02 10 0B 00 02
+T 00 06 3F 01 6B CE 01 6B 72 BB
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 06 46 01 6E CF 01 6B CE
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 06 4C 01 6B 54 54 9F C7 01 6D 81
+R 00 00 00 09 10 03 00 02 10 09 00 02
+T 00 06 55
+R 00 00 00 09
+T 00 06 55 52 0E CD 00 00 1F 0D 3B 01 6A 3B
+R 00 00 00 09 02 06 00 03 10 0B 00 02
+T 00 06 60 01 69 4B 2C 4B 00 CD 00 00 5B 04 9E 5F
+R 00 00 00 09 10 03 00 02 02 0A 00 05
+T 00 06 6D 97 C6 01 52 6B 0C 0F 0B 16 0B 90 89 89
+R 00 00 00 09 10 05 00 02
+T 00 06 7A CD 00 00 5B 04 9E 5F 97 54 1F 01 C6
+R 00 00 00 09 02 04 00 05
+T 00 06 86 01 52 A1 0A 23 28 5F C6 01 6D 97 89 4B
+R 00 00 00 09 10 03 00 02 10 0B 00 02
+T 00 06 93 66 4B 00 CD 00 00 5B 04 90 5F C6 01 52
+R 00 00 00 09 02 07 00 05 10 0E 00 02
+T 00 06 A0 90 97 65 90 5F 1F 05 17 03 1E 0D 1C
+R 00 00 00 09
+T 00 06 AC 00 23 F6 AA 40 F7 20 0E
+R 00 00 00 09
+T 00 06 B4
+R 00 00 00 09
+T 00 06 B4 5F 1F 05 1F 03 1E 0D 1C 00 23 F6 A4 BF
+R 00 00 00 09
+T 00 06 C1 F7
+R 00 00 00 09
+T 00 06 C2
+R 00 00 00 09
+T 00 06 C2 3B 01 45 3B 01 44 4B 65 4B 00 CD
+R 00 00 00 09 10 04 00 02 10 07 00 02
+T 00 06 CD 00 00 5B 04 90 5F 1F 09 17 07 1E 0D E6
+R 00 00 00 09 02 03 00 05
+T 00 06 DA 0D A1 00 27 0F A1 01 27 1C A1 02 27 28
+R 00 00 00 09
+T 00 06 E7 A1 03 27 34 CC 07 2F
+R 00 00 00 09 00 08 00 09
+T 00 06 EE
+R 00 00 00 09
+T 00 06 EE AE 00 8E 1F 0D 5F 1F 0B AE 02 08 CF
+R 00 00 00 09
+T 00 06 FA 01 42 CC 07 3D
+R 00 00 00 09 10 03 00 02 00 06 00 09
+T 00 06 FF
+R 00 00 00 09
+T 00 06 FF AE 00 50 1F 0D 5F 1F 0B AE 02 08 CF
+R 00 00 00 09
+T 00 07 0B 01 42 20 2E
+R 00 00 00 09 10 03 00 02
+T 00 07 0F
+R 00 00 00 09
+T 00 07 0F AE 00 C7 1F 0D 5F 1F 0B AE 02 BC CF
+R 00 00 00 09
+T 00 07 1B 01 42 20 1E
+R 00 00 00 09 10 03 00 02
+T 00 07 1F
+R 00 00 00 09
+T 00 07 1F AE 00 73 1F 0D 5F 1F 0B AE 02 BC CF
+R 00 00 00 09
+T 00 07 2B 01 42 20 0E
+R 00 00 00 09 10 03 00 02
+T 00 07 2F
+R 00 00 00 09
+T 00 07 2F AE 00 8E 1F 0D 5F 1F 0B AE 02 08 CF
+R 00 00 00 09
+T 00 07 3B 01 42
+R 00 00 00 09 10 03 00 02
+T 00 07 3D
+R 00 00 00 09
+T 00 07 3D 1E 0D 89 1E 0D 89 1E 09 89 1E 09 89 CD
+R 00 00 00 09
+T 00 07 4A 00 00 5B 08 1F 0D 1E 09 89 1E 09 89 1E
+R 00 00 00 09 02 03 00 0E
+T 00 07 57 11 89 90 89 CD 00 00 5B 08 51 54 54 16
+R 00 00 00 09 02 08 00 0E
+T 00 07 64 01 65 9F 88 CD 07 97 5B 01 C7 01 49 CE
+R 00 00 00 09 00 08 00 09 10 0D 00 02
+T 00 07 71 01 4B A6 10 62 50 72 BB 01 4B CF
+R 00 00 00 09 10 03 00 02 10 0B 00 02
+T 00 07 7C 01 4B 5F C6 01 49 97 72 BB
+R 00 00 00 09 10 03 00 02 10 07 00 02
+T 00 07 85 01 4B CF 01 4B CE
+R 00 00 00 09 10 03 00 02 10 06 00 02
+T 00 07 8B 01 4B A6 10 62 9F C7 01 49 5B 0E 81
+R 00 00 00 09 10 03 00 02 10 0A 00 02
+T 00 07 97
+R 00 00 00 09
+T 00 07 97 88 0F 01
+R 00 00 00 09
+T 00 07 9A
+R 00 00 00 09
+T 00 07 9A 7B 01 A1 3C 24 10 5F 7B 01 97 1C 01 00
+R 00 00 00 09 00 0E 00 02
+T 00 07 A7 F6 11 04 22 04 0C 01 20 EA
+R 00 00 00 09
+T 00 07 B0
+R 00 00 00 09
+T 00 07 B0 7B 01 5B 01 81
+R 00 00 00 09
+T 00 07 B5
+R 00 00 00 09
+T 00 07 B5 C6 01 6D 81
+R 00 00 00 09 10 04 00 02
+T 00 07 B9
+R 00 00 00 09
+T 00 07 B9 CE 01 69 81
+R 00 00 00 09 10 04 00 02
+T 00 07 BD
+R 00 00 00 09
+T 00 07 BD 7B 03 C7 01 66 81
+R 00 00 00 09 10 06 00 02
+T 00 00 00
+R 00 00 00 08
+T 00 00 00 EF F1 F2 F3 F5 F6 F7 F8 F9 FA FB FB FC
+R 00 00 00 08
+T 00 00 0D FD FD FE FE FE FF FF FF FF FF FF FE FE
+R 00 00 00 08
+T 00 00 1A FE FD FD FC FB FA FA F9 F8 F7 F5 F4 F3
+R 00 00 00 08
+T 00 00 27 F2 F0 EF EC E7 E3 DE D9 D4 CF CA C5 BF
+R 00 00 00 08
+T 00 00 34 BA B5 B0 AA A5 A0 9A 95 90 8A 85 7F 7A
+R 00 00 00 08
+T 00 00 41 74 6F 6A 64 5F 59 54 4F 4A 44 3F 3A 35
+R 00 00 00 08
+T 00 00 4E 30 2B 26 21 1C 17 12 10 0E 0D 0C 0A 09
+R 00 00 00 08
+T 00 00 5B 08 07 06 05 04 03 03 02 01 01 01 00 00
+R 00 00 00 08
+T 00 00 68 00 00 00 00 00 00 00 01 01 02 02 03 04
+R 00 00 00 08
+T 00 00 75 05 06 06 08 09 0A 0B 0C 0E 0F 11 0F 0E
+R 00 00 00 08
+T 00 00 82 0C 0B 0A 09 08 06 06 05 04 03 02 02 01
+R 00 00 00 08
+T 00 00 8F 01 00 00 00 00 00 00 00 00 00 01 01 01
+R 00 00 00 08
+T 00 00 9C 02 03 03 04 05 06 07 08 09 0A 0C 0D 0E
+R 00 00 00 08
+T 00 00 A9 10 12 17 1C 21 26 2B 30 35 3A 3F 44 4A
+R 00 00 00 08
+T 00 00 B6 4F 54 59 5F 64 6A 6F 74 7A 7F 85 8A 90
+R 00 00 00 08
+T 00 00 C3 95 9A A0 A5 AA B0 B5 BA BF C5 CA CF D4
+R 00 00 00 08
+T 00 00 D0 D9 DE E3 E7 EC EF F0 F2 F3 F4 F5 F7 F8
+R 00 00 00 08
+T 00 00 DD F9 FA FA FB FC FD FD FE FE FE FF FF FF
+R 00 00 00 08
+T 00 00 EA FF FF FF FE FE FE FD FD FC FB FB FA F9
+R 00 00 00 08
+T 00 00 F7 F8 F7 F6 F5 F3 F2 F1 EF EE
+R 00 00 00 08
+T 00 01 00
+R 00 00 00 08
+T 00 01 00 00 03 06 09 0C 10 13 16 19 1C 1F 22 25
+R 00 00 00 08
+T 00 01 0D 28 2B 2E 31 34 36 39 3C 3F 42 44 47 49
+R 00 00 00 08
+T 00 01 1A 4C 4E 51 53 56 58 5A 5C 5F 61 63 65 66
+R 00 00 00 08
+T 00 01 27 68 6A 6C 6D 6F 71 72 73 75 76 77 78 79
+R 00 00 00 08
+T 00 01 34 7A 7B 7C 7D 7D 7E 7E 7F
+R 00 00 00 08
+T 00 01 3C
+R 00 00 00 08
+T 00 01 3C 00 01
+R 00 00 00 08
+T 00 01 3E
+R 00 00 00 08
+T 00 01 3E 00 01
+R 00 00 00 08
+T 00 01 40
+R 00 00 00 08
+T 00 01 40 FF FF
+R 00 00 00 08
+T 00 01 42
+R 00 00 00 08
+T 00 01 42 02 08
+R 00 00 00 08
+T 00 01 44
+R 00 00 00 08
+T 00 01 44 00 00
+R 00 00 00 08
+T 00 01 46
+R 00 00 00 08
+T 00 01 46 00
+R 00 00 00 08
+T 00 01 47
+R 00 00 00 08
+T 00 01 47 00
+R 00 00 00 08
+T 00 01 48
+R 00 00 00 08
+T 00 01 48 00
+R 00 00 00 08
+T 00 01 49
+R 00 00 00 08
+T 00 01 49 00
+R 00 00 00 08
+T 00 01 4A
+R 00 00 00 08
+T 00 01 4A 00
+R 00 00 00 08
+T 00 01 4B
+R 00 00 00 08
+T 00 01 4B 00 00
+R 00 00 00 08
+T 00 01 4D
+R 00 00 00 08
+T 00 01 4D 01
+R 00 00 00 08
+T 00 01 4E
+R 00 00 00 08
+T 00 01 4E 01
+R 00 00 00 08
+T 00 01 4F
+R 00 00 00 08
+T 00 01 4F 00
+R 00 00 00 08
+T 00 01 50
+R 00 00 00 08
+T 00 01 50 00
+R 00 00 00 08
+T 00 01 51
+R 00 00 00 08
+T 00 01 51 00
+R 00 00 00 08
+T 00 01 52
+R 00 00 00 08
+T 00 01 52 00
+R 00 00 00 08
+T 00 01 53
+R 00 00 00 08
+T 00 01 53 00
+R 00 00 00 08
+T 00 01 54
+R 00 00 00 08
+T 00 01 54 00 00
+R 00 00 00 08
+T 00 01 56
+R 00 00 00 08
+T 00 01 56 00 00
+R 00 00 00 08
+T 00 01 58
+R 00 00 00 08
+T 00 01 58 00 00
+R 00 00 00 08
+T 00 01 5A
+R 00 00 00 08
+T 00 01 5A 00 00
+R 00 00 00 08
+T 00 01 5C
+R 00 00 00 08
+T 00 01 5C 00
+R 00 00 00 08
+T 00 01 5D
+R 00 00 00 08
+T 00 01 5D 00
+R 00 00 00 08
+T 00 01 5E
+R 00 00 00 08
+T 00 01 5E 00
+R 00 00 00 08
+T 00 01 5F
+R 00 00 00 08
+T 00 01 5F 00 00
+R 00 00 00 08
+T 00 01 61
+R 00 00 00 08
+T 00 01 61 00
+R 00 00 00 08
+T 00 01 62
+R 00 00 00 08
+T 00 01 62 00 00
+R 00 00 00 08
+T 00 01 64
+R 00 00 00 08
+T 00 01 64 00
+R 00 00 00 08
+T 00 01 65
+R 00 00 00 08
+T 00 01 65 01
+R 00 00 00 08
+T 00 01 66
+R 00 00 00 08
+T 00 01 66 FF
+R 00 00 00 08
+T 00 01 67
+R 00 00 00 08
+T 00 01 67 00 00
+R 00 00 00 08
+T 00 01 69
+R 00 00 00 08
+T 00 01 69 00 00
+R 00 00 00 08
+T 00 01 6B
+R 00 00 00 08
+T 00 01 6B 00 00
+R 00 00 00 08
+T 00 01 6D
+R 00 00 00 08
+T 00 01 6D 00
+R 00 00 00 08
+T 00 01 6E
+R 00 00 00 08
+T 00 01 6E 00 00
+R 00 00 00 08
+T 00 01 70
+R 00 00 00 08
+T 00 01 70 00
+R 00 00 00 08
+T 00 01 71
+R 00 00 00 08
+T 00 01 71 00
+R 00 00 00 08
+T 00 01 72
+R 00 00 00 08
+T 00 01 72 00
+R 00 00 00 08
+T 00 01 73
+R 00 00 00 08
+T 00 01 73 00
+R 00 00 00 08
+T 00 01 74
+R 00 00 00 08
+T 00 01 74 00
+R 00 00 00 08
+T 00 01 75
+R 00 00 00 08
+T 00 01 75 00
+R 00 00 00 08
+T 00 01 76
+R 00 00 00 08
+T 00 01 76 00
+R 00 00 00 08
+T 00 01 77
+R 00 00 00 08
+T 00 01 77 00
+R 00 00 00 08
+T 00 01 78
+R 00 00 00 08
+T 00 01 78 00
+R 00 00 00 08
+T 00 01 79
+R 00 00 00 08
+T 00 01 79 24 9F
+R 00 00 00 08
+T 00 01 7B
+R 00 00 00 08
+T 00 01 7B 00 00
+R 00 00 00 08
+T 00 01 7D
+R 00 00 00 08
+T 00 01 7D 00
+R 00 00 00 08
+T 00 01 7E
+R 00 00 00 08
+T 00 01 7E 00 00
+R 00 00 00 08
+T 00 01 80
+R 00 00 00 08
+T 00 01 80 00 00
+R 00 00 00 08
+T 00 01 82
+R 00 00 00 08
+T 00 01 82 01
+R 00 00 00 08
+T 00 01 83
+R 00 00 00 08
+T 00 01 83 01
+R 00 00 00 08
+T 00 01 84
+R 00 00 00 08
+T 00 01 84 00 00
+R 00 00 00 08
+T 00 01 86
+R 00 00 00 08
+T 00 01 86 00
+R 00 00 00 08

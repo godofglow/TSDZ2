@@ -1,0 +1,113 @@
+;!FILE timers.asm
+XH3
+H B areas 49 global symbols
+M timers
+O -mstm8
+S _TIM3_DeInit Ref000000
+S _TIM2_ARRPreloadConfig Ref000000
+S .__.ABS. Def000000
+S _TIM2_Cmd Ref000000
+S _TIM3_Cmd Ref000000
+S _TIM2_OC2Init Ref000000
+S _TIM2_TimeBaseInit Ref000000
+S _TIM3_TimeBaseInit Ref000000
+S _TIM2_OC2PreloadConfig Ref000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 0 flags 0 addr 0
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 58 flags 0 addr 0
+S C$timers.c$29$1_0$346 Def000020
+S A$timers$70 Def000006
+S A$timers$80 Def000018
+S A$timers$71 Def000009
+S _timer2_init Def000000
+S A$timers$90 Def000025
+S _timer3_init Def000038
+S A$timers$83 Def00001A
+S A$timers$74 Def00000B
+S A$timers$93 Def000026
+S A$timers$84 Def00001C
+S A$timers$75 Def00000D
+S A$timers$94 Def000028
+S A$timers$85 Def00001F
+S A$timers$76 Def00000F
+S A$timers$67 Def000000
+S A$timers$95 Def00002B
+S A$timers$77 Def000011
+S A$timers$68 Def000002
+S A$timers$78 Def000013
+S A$timers$69 Def000004
+S A$timers$88 Def000020
+S A$timers$79 Def000015
+S A$timers$98 Def00002C
+S A$timers$89 Def000022
+S XG$timer2_init$0$0 Def000037
+S XG$timer3_init$0$0 Def000057
+S A$timers$100 Def000030
+S A$timers$101 Def000031
+S A$timers$102 Def000032
+S A$timers$130 Def000048
+S A$timers$103 Def000034
+S A$timers$140 Def000055
+S A$timers$131 Def00004B
+S A$timers$122 Def00003B
+S A$timers$104 Def000035
+S A$timers$123 Def00003D
+S A$timers$124 Def00003F
+S A$timers$134 Def00004C
+S A$timers$125 Def000041
+S C$timers.c$40$2_0$350 Def000038
+S A$timers$126 Def000044
+S A$timers$145 Def000057
+S A$timers$136 Def000050
+S A$timers$109 Def000037
+S C$timers.c$51$2_0$350 Def000057
+S C$timers.c$50$2_0$351 Def00004C
+S A$timers$137 Def000051
+S A$timers$119 Def000038
+S A$timers$138 Def000052
+S A$timers$129 Def000046
+S C$timers.c$45$1_0$350 Def000038
+S C$timers.c$31$1_0$346 Def000026
+S G$timer2_init$0$0 Def000000
+S A$timers$139 Def000054
+S C$timers.c$46$1_0$350 Def00003B
+S G$timer3_init$0$0 Def000038
+S C$timers.c$23$1_0$346 Def000000
+S C$timers.c$47$1_0$350 Def000046
+S C$timers.c$17$0_0$346 Def000000
+S C$timers.c$26$1_0$346 Def00000B
+S C$timers.c$35$2_0$346 Def000037
+S C$timers.c$34$2_0$347 Def00002C
+S C$timers.c$27$1_0$346 Def00001A
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 4B 9F 4B 00 4B 01 CD 00 00 5B 03 4B 00
+R 00 00 00 09 02 0A 00 06
+T 00 00 0D 4B 10 4B 00 4B 11 4B 60 CD 00 00 5B 05
+R 00 00 00 09 02 0C 00 05
+T 00 00 1A 4B 01 CD 00 00 84 4B 01 CD 00 00 84 4B
+R 00 00 00 09 02 06 00 08 02 0C 00 01
+T 00 00 27 01 CD 00 00 84 90 AE FD E8
+R 00 00 00 09 02 05 00 03
+T 00 00 30
+R 00 00 00 09
+T 00 00 30 93 5A 90 93 5D 26 F9 81
+R 00 00 00 09
+T 00 00 38
+R 00 00 00 09
+T 00 00 38 CD 00 00 4B FF 4B FF 4B 0E CD 00 00 5B
+R 00 00 00 09 02 04 00 00 02 0D 00 07
+T 00 00 45 03 4B 01 CD 00 00 84 90 AE FD E8
+R 00 00 00 09 02 07 00 04
+T 00 00 50
+R 00 00 00 09
+T 00 00 50 93 5A 90 93 5D 26 F9 81
+R 00 00 00 09

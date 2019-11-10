@@ -1,0 +1,37 @@
+;!FILE wheel_speed_sensor.asm
+XH3
+H B areas F global symbols
+M wheel_speed_sensor
+O -mstm8
+S _GPIO_Init Ref000000
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 0 flags 0 addr 0
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size E flags 0 addr 0
+S C$wheel_speed_sensor.c$13$0_0$346 Def000000
+S G$wheel_speed_sensor_init$0$0 Def000000
+S C$wheel_speed_sensor.c$16$1_0$346 Def000000
+S C$wheel_speed_sensor.c$19$1_0$346 Def00000D
+S A$wheel_speed_sensor$60 Def000002
+S A$wheel_speed_sensor$61 Def000004
+S A$wheel_speed_sensor$62 Def000006
+S A$wheel_speed_sensor$63 Def000008
+S _wheel_speed_sensor_init Def000000
+S A$wheel_speed_sensor$64 Def00000B
+S A$wheel_speed_sensor$59 Def000000
+S A$wheel_speed_sensor$69 Def00000D
+S XG$wheel_speed_sensor_init$0$0 Def00000D
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 4B 40 4B 02 4B 00 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 00 0D 81
+R 00 00 00 09

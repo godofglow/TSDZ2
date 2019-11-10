@@ -7,126 +7,253 @@ Symbol Table
     .__.ABS.                                                    =  000000 G
     .__.CPU.                                                    =  000000 L
     .__.H$L.                                                    =  000001 L
-  9 A$pwm$100                                                      000029 GR
-  9 A$pwm$101                                                      00002C GR
-  9 A$pwm$104                                                      00002E GR
-  9 A$pwm$105                                                      000030 GR
-  9 A$pwm$106                                                      000033 GR
-  9 A$pwm$110                                                      000034 GR
-  9 A$pwm$111                                                      000036 GR
-  9 A$pwm$112                                                      000038 GR
-  9 A$pwm$113                                                      00003A GR
-  9 A$pwm$114                                                      00003C GR
-  9 A$pwm$115                                                      00003D GR
-  9 A$pwm$116                                                      00003E GR
-  9 A$pwm$117                                                      000041 GR
-  9 A$pwm$120                                                      000043 GR
-  9 A$pwm$121                                                      000045 GR
-  9 A$pwm$122                                                      000047 GR
-  9 A$pwm$123                                                      000049 GR
-  9 A$pwm$124                                                      00004B GR
-  9 A$pwm$125                                                      00004D GR
-  9 A$pwm$126                                                      00004F GR
-  9 A$pwm$127                                                      000051 GR
-  9 A$pwm$128                                                      000053 GR
-  9 A$pwm$129                                                      000055 GR
-  9 A$pwm$130                                                      000058 GR
-  9 A$pwm$133                                                      00005A GR
-  9 A$pwm$134                                                      00005C GR
-  9 A$pwm$135                                                      00005E GR
-  9 A$pwm$136                                                      000060 GR
-  9 A$pwm$137                                                      000062 GR
-  9 A$pwm$138                                                      000064 GR
-  9 A$pwm$139                                                      000066 GR
-  9 A$pwm$140                                                      000068 GR
-  9 A$pwm$141                                                      00006A GR
-  9 A$pwm$142                                                      00006C GR
-  9 A$pwm$143                                                      00006F GR
-  9 A$pwm$146                                                      000071 GR
-  9 A$pwm$147                                                      000073 GR
-  9 A$pwm$148                                                      000075 GR
-  9 A$pwm$149                                                      000077 GR
-  9 A$pwm$150                                                      000079 GR
-  9 A$pwm$151                                                      00007B GR
-  9 A$pwm$152                                                      00007D GR
-  9 A$pwm$153                                                      00007F GR
-  9 A$pwm$154                                                      000081 GR
-  9 A$pwm$155                                                      000083 GR
-  9 A$pwm$156                                                      000086 GR
-  9 A$pwm$159                                                      000088 GR
-  9 A$pwm$160                                                      00008A GR
-  9 A$pwm$161                                                      00008C GR
-  9 A$pwm$162                                                      00008E GR
-  9 A$pwm$163                                                      000090 GR
+  9 A$pwm$100                                                      000025 GR
+  9 A$pwm$101                                                      000027 GR
+  9 A$pwm$102                                                      000029 GR
+  9 A$pwm$103                                                      00002C GR
+  9 A$pwm$106                                                      00002E GR
+  9 A$pwm$107                                                      000030 GR
+  9 A$pwm$108                                                      000033 GR
+  9 A$pwm$112                                                      000034 GR
+  9 A$pwm$113                                                      000036 GR
+  9 A$pwm$114                                                      000038 GR
+  9 A$pwm$115                                                      00003A GR
+  9 A$pwm$116                                                      00003C GR
+  9 A$pwm$117                                                      00003D GR
+  9 A$pwm$118                                                      00003E GR
+  9 A$pwm$119                                                      000041 GR
+  9 A$pwm$122                                                      000043 GR
+  9 A$pwm$123                                                      000045 GR
+  9 A$pwm$124                                                      000047 GR
+  9 A$pwm$125                                                      000049 GR
+  9 A$pwm$126                                                      00004B GR
+  9 A$pwm$127                                                      00004D GR
+  9 A$pwm$128                                                      00004F GR
+  9 A$pwm$129                                                      000051 GR
+  9 A$pwm$130                                                      000053 GR
+  9 A$pwm$131                                                      000055 GR
+  9 A$pwm$132                                                      000058 GR
+  9 A$pwm$135                                                      00005A GR
+  9 A$pwm$136                                                      00005C GR
+  9 A$pwm$137                                                      00005E GR
+  9 A$pwm$138                                                      000060 GR
+  9 A$pwm$139                                                      000062 GR
+  9 A$pwm$140                                                      000064 GR
+  9 A$pwm$141                                                      000066 GR
+  9 A$pwm$142                                                      000068 GR
+  9 A$pwm$143                                                      00006A GR
+  9 A$pwm$144                                                      00006C GR
+  9 A$pwm$145                                                      00006F GR
+  9 A$pwm$148                                                      000071 GR
+  9 A$pwm$149                                                      000073 GR
+  9 A$pwm$150                                                      000075 GR
+  9 A$pwm$151                                                      000077 GR
+  9 A$pwm$152                                                      000079 GR
+  9 A$pwm$153                                                      00007B GR
+  9 A$pwm$154                                                      00007D GR
+  9 A$pwm$155                                                      00007F GR
+  9 A$pwm$156                                                      000081 GR
+  9 A$pwm$157                                                      000083 GR
+  9 A$pwm$158                                                      000086 GR
+  9 A$pwm$161                                                      000088 GR
+  9 A$pwm$162                                                      00008A GR
+  9 A$pwm$163                                                      00008C GR
 ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
 Hexadecimal [24-Bits]
 
 Symbol Table
 
-  9 A$pwm$164                                                      000092 GR
-  9 A$pwm$165                                                      000094 GR
-  9 A$pwm$166                                                      000097 GR
-  9 A$pwm$169                                                      000099 GR
-  9 A$pwm$170                                                      00009B GR
-  9 A$pwm$171                                                      00009D GR
-  9 A$pwm$172                                                      00009F GR
-  9 A$pwm$173                                                      0000A1 GR
-  9 A$pwm$174                                                      0000A3 GR
-  9 A$pwm$175                                                      0000A5 GR
-  9 A$pwm$176                                                      0000A8 GR
-  9 A$pwm$179                                                      0000AA GR
-  9 A$pwm$180                                                      0000AC GR
-  9 A$pwm$181                                                      0000AE GR
-  9 A$pwm$182                                                      0000B1 GR
-  9 A$pwm$185                                                      0000B3 GR
-  9 A$pwm$186                                                      0000B5 GR
-  9 A$pwm$187                                                      0000B8 GR
-  9 A$pwm$190                                                      0000B9 GR
-  9 A$pwm$191                                                      0000BB GR
-  9 A$pwm$192                                                      0000BE GR
-  9 A$pwm$197                                                      0000BF GR
-  9 A$pwm$73                                                       000000 GR
-  9 A$pwm$74                                                       000002 GR
-  9 A$pwm$75                                                       000005 GR
-  9 A$pwm$78                                                       000006 GR
-  9 A$pwm$79                                                       000008 GR
-  9 A$pwm$80                                                       00000A GR
-  9 A$pwm$81                                                       00000D GR
-  9 A$pwm$82                                                       00000F GR
-  9 A$pwm$83                                                       000012 GR
-  9 A$pwm$86                                                       000014 GR
-  9 A$pwm$87                                                       000016 GR
-  9 A$pwm$88                                                       000019 GR
-  9 A$pwm$91                                                       00001A GR
-  9 A$pwm$92                                                       00001C GR
-  9 A$pwm$93                                                       00001E GR
-  9 A$pwm$94                                                       000021 GR
-  9 A$pwm$97                                                       000023 GR
-  9 A$pwm$98                                                       000025 GR
-  9 A$pwm$99                                                       000027 GR
-  9 C$pwm.c$110$1_0$358                                         =  00005A GR
-  9 C$pwm.c$119$1_0$358                                         =  000071 GR
-  9 C$pwm.c$135$1_0$358                                         =  000088 GR
-  9 C$pwm.c$142$1_0$358                                         =  000099 GR
-  9 C$pwm.c$150$1_0$358                                         =  0000AA GR
-  9 C$pwm.c$151$1_0$358                                         =  0000B3 GR
-  9 C$pwm.c$152$1_0$358                                         =  0000B9 GR
-  9 C$pwm.c$154$1_0$358                                         =  0000BF GR
-  9 C$pwm.c$21$0_0$358                                          =  000000 GR
-  9 C$pwm.c$24$1_0$358                                          =  000000 GR
-  9 C$pwm.c$25$1_0$358                                          =  000006 GR
-  9 C$pwm.c$27$2_0$359                                          =  000014 GR
-  9 C$pwm.c$28$2_0$359                                          =  00001A GR
-  9 C$pwm.c$29$2_0$359                                          =  000023 GR
+  9 A$pwm$164                                                      00008E GR
+  9 A$pwm$165                                                      000090 GR
+  9 A$pwm$166                                                      000092 GR
+  9 A$pwm$167                                                      000094 GR
+  9 A$pwm$168                                                      000097 GR
+  9 A$pwm$171                                                      000099 GR
+  9 A$pwm$172                                                      00009B GR
+  9 A$pwm$173                                                      00009D GR
+  9 A$pwm$174                                                      00009F GR
+  9 A$pwm$175                                                      0000A1 GR
+  9 A$pwm$176                                                      0000A3 GR
+  9 A$pwm$177                                                      0000A5 GR
+  9 A$pwm$178                                                      0000A8 GR
+  9 A$pwm$181                                                      0000AA GR
+  9 A$pwm$182                                                      0000AC GR
+  9 A$pwm$183                                                      0000AE GR
+  9 A$pwm$184                                                      0000B1 GR
+  9 A$pwm$187                                                      0000B3 GR
+  9 A$pwm$188                                                      0000B5 GR
+  9 A$pwm$189                                                      0000B8 GR
+  9 A$pwm$192                                                      0000B9 GR
+  9 A$pwm$193                                                      0000BB GR
+  9 A$pwm$194                                                      0000BE GR
+  9 A$pwm$199                                                      0000BF GR
+  9 A$pwm$209                                                      0000C0 GR
+  9 A$pwm$210                                                      0000C2 GR
+  9 A$pwm$211                                                      0000C5 GR
+  9 A$pwm$214                                                      0000C6 GR
+  9 A$pwm$215                                                      0000C8 GR
+  9 A$pwm$216                                                      0000CA GR
+  9 A$pwm$217                                                      0000CC GR
+  9 A$pwm$218                                                      0000CE GR
+  9 A$pwm$219                                                      0000D0 GR
+  9 A$pwm$220                                                      0000D2 GR
+  9 A$pwm$221                                                      0000D4 GR
+  9 A$pwm$222                                                      0000D6 GR
+  9 A$pwm$223                                                      0000D8 GR
+  9 A$pwm$224                                                      0000DB GR
+  9 A$pwm$227                                                      0000DD GR
+  9 A$pwm$228                                                      0000DF GR
+  9 A$pwm$229                                                      0000E1 GR
+  9 A$pwm$230                                                      0000E3 GR
+  9 A$pwm$231                                                      0000E5 GR
+  9 A$pwm$232                                                      0000E7 GR
+  9 A$pwm$233                                                      0000E9 GR
+  9 A$pwm$234                                                      0000EB GR
+  9 A$pwm$235                                                      0000ED GR
+  9 A$pwm$236                                                      0000EF GR
+  9 A$pwm$237                                                      0000F2 GR
+  9 A$pwm$240                                                      0000F4 GR
+  9 A$pwm$241                                                      0000F6 GR
+  9 A$pwm$242                                                      0000F8 GR
+  9 A$pwm$243                                                      0000FA GR
+  9 A$pwm$244                                                      0000FC GR
+  9 A$pwm$245                                                      0000FE GR
 ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
 Hexadecimal [24-Bits]
 
 Symbol Table
 
-  9 C$pwm.c$30$2_0$359                                          =  00002E GR
-  9 C$pwm.c$88$1_0$358                                          =  000034 GR
-  9 C$pwm.c$96$1_0$358                                          =  000043 GR
+  9 A$pwm$246                                                      000100 GR
+  9 A$pwm$247                                                      000102 GR
+  9 A$pwm$248                                                      000104 GR
+  9 A$pwm$249                                                      000106 GR
+  9 A$pwm$250                                                      000109 GR
+  9 A$pwm$255                                                      00010B GR
+  9 A$pwm$265                                                      00010C GR
+  9 A$pwm$266                                                      00010E GR
+  9 A$pwm$267                                                      000110 GR
+  9 A$pwm$268                                                      000112 GR
+  9 A$pwm$269                                                      000114 GR
+  9 A$pwm$270                                                      000116 GR
+  9 A$pwm$271                                                      000118 GR
+  9 A$pwm$272                                                      00011A GR
+  9 A$pwm$273                                                      00011C GR
+  9 A$pwm$274                                                      00011E GR
+  9 A$pwm$275                                                      000121 GR
+  9 A$pwm$278                                                      000123 GR
+  9 A$pwm$279                                                      000125 GR
+  9 A$pwm$280                                                      000127 GR
+  9 A$pwm$281                                                      000129 GR
+  9 A$pwm$282                                                      00012B GR
+  9 A$pwm$283                                                      00012D GR
+  9 A$pwm$284                                                      00012F GR
+  9 A$pwm$285                                                      000131 GR
+  9 A$pwm$286                                                      000133 GR
+  9 A$pwm$287                                                      000135 GR
+  9 A$pwm$288                                                      000138 GR
+  9 A$pwm$291                                                      00013A GR
+  9 A$pwm$292                                                      00013C GR
+  9 A$pwm$293                                                      00013E GR
+  9 A$pwm$294                                                      000140 GR
+  9 A$pwm$295                                                      000142 GR
+  9 A$pwm$296                                                      000144 GR
+  9 A$pwm$297                                                      000146 GR
+  9 A$pwm$298                                                      000148 GR
+  9 A$pwm$299                                                      00014A GR
+  9 A$pwm$300                                                      00014C GR
+  9 A$pwm$301                                                      00014F GR
+  9 A$pwm$304                                                      000151 GR
+  9 A$pwm$305                                                      000153 GR
+  9 A$pwm$306                                                      000155 GR
+  9 A$pwm$307                                                      000157 GR
+  9 A$pwm$308                                                      000159 GR
+  9 A$pwm$309                                                      00015B GR
+  9 A$pwm$310                                                      00015D GR
+  9 A$pwm$311                                                      000160 GR
+  9 A$pwm$314                                                      000162 GR
+  9 A$pwm$315                                                      000164 GR
+  9 A$pwm$316                                                      000166 GR
+  9 A$pwm$317                                                      000168 GR
+  9 A$pwm$318                                                      00016A GR
+  9 A$pwm$319                                                      00016C GR
+  9 A$pwm$320                                                      00016E GR
+  9 A$pwm$321                                                      000171 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 4.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$pwm$324                                                      000173 GR
+  9 A$pwm$325                                                      000175 GR
+  9 A$pwm$326                                                      000177 GR
+  9 A$pwm$327                                                      00017A GR
+  9 A$pwm$330                                                      00017C GR
+  9 A$pwm$331                                                      00017E GR
+  9 A$pwm$332                                                      000181 GR
+  9 A$pwm$335                                                      000182 GR
+  9 A$pwm$336                                                      000184 GR
+  9 A$pwm$337                                                      000187 GR
+  9 A$pwm$342                                                      000188 GR
+  9 A$pwm$75                                                       000000 GR
+  9 A$pwm$76                                                       000002 GR
+  9 A$pwm$77                                                       000005 GR
+  9 A$pwm$80                                                       000006 GR
+  9 A$pwm$81                                                       000008 GR
+  9 A$pwm$82                                                       00000A GR
+  9 A$pwm$83                                                       00000D GR
+  9 A$pwm$84                                                       00000F GR
+  9 A$pwm$85                                                       000012 GR
+  9 A$pwm$88                                                       000014 GR
+  9 A$pwm$89                                                       000016 GR
+  9 A$pwm$90                                                       000019 GR
+  9 A$pwm$93                                                       00001A GR
+  9 A$pwm$94                                                       00001C GR
+  9 A$pwm$95                                                       00001E GR
+  9 A$pwm$96                                                       000021 GR
+  9 A$pwm$99                                                       000023 GR
+  9 C$pwm.c$154$1_0$360                                         =  0000BF GR
+  9 C$pwm.c$160$1_0$363                                         =  0000C0 GR
+  9 C$pwm.c$162$1_0$363                                         =  0000C0 GR
+  9 C$pwm.c$164$1_0$363                                         =  0000C6 GR
+  9 C$pwm.c$173$1_0$363                                         =  0000DD GR
+  9 C$pwm.c$182$1_0$363                                         =  0000F4 GR
+  9 C$pwm.c$200$1_0$363                                         =  00010B GR
+  9 C$pwm.c$207$1_0$365                                         =  00010C GR
+  9 C$pwm.c$209$1_0$365                                         =  00010C GR
+  9 C$pwm.c$21$0_0$360                                          =  000000 GR
+  9 C$pwm.c$218$1_0$365                                         =  000123 GR
+  9 C$pwm.c$227$1_0$365                                         =  00013A GR
+  9 C$pwm.c$239$1_0$365                                         =  000151 GR
+  9 C$pwm.c$24$1_0$360                                          =  000000 GR
+  9 C$pwm.c$246$1_0$365                                         =  000162 GR
+  9 C$pwm.c$25$1_0$360                                          =  000006 GR
+  9 C$pwm.c$254$1_0$365                                         =  000173 GR
+  9 C$pwm.c$255$1_0$365                                         =  00017C GR
+  9 C$pwm.c$256$1_0$365                                         =  000182 GR
+  9 C$pwm.c$258$1_0$365                                         =  000188 GR
+  9 C$pwm.c$27$2_0$361                                          =  000014 GR
+  9 C$pwm.c$28$2_0$361                                          =  00001A GR
+  9 C$pwm.c$29$2_0$361                                          =  000023 GR
+  9 C$pwm.c$30$2_0$361                                          =  00002E GR
+  9 C$pwm.c$34$1_0$360                                          =  000034 GR
+  9 C$pwm.c$40$1_0$360                                          =  000043 GR
+  9 C$pwm.c$49$1_0$360                                          =  00005A GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 5.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$pwm.c$58$1_0$360                                          =  000071 GR
+  9 C$pwm.c$69$1_0$360                                          =  000088 GR
+  9 C$pwm.c$76$1_0$360                                          =  000099 GR
+  9 C$pwm.c$84$1_0$360                                          =  0000AA GR
+  9 C$pwm.c$85$1_0$360                                          =  0000B3 GR
+  9 C$pwm.c$86$1_0$360                                          =  0000B9 GR
+  9 G$disable_pwm$0$0                                           =  0000C0 GR
+  9 G$enable_pwm$0$0                                            =  00010C GR
   9 G$pwm_init_bipolar_4q$0$0                                   =  000000 GR
+  9 XG$disable_pwm$0$0                                          =  00010B GR
+  9 XG$enable_pwm$0$0                                           =  000188 GR
   9 XG$pwm_init_bipolar_4q$0$0                                  =  0000BF GR
     _FLASH_EraseOptionByte                                         ****** GX
     _FLASH_Lock                                                    ****** GX
@@ -143,10 +270,12 @@ Symbol Table
     _TIM1_OC3Init                                                  ****** GX
     _TIM1_OC4Init                                                  ****** GX
     _TIM1_TimeBaseInit                                             ****** GX
+  9 _disable_pwm                                                   0000C0 GR
+  9 _enable_pwm                                                    00010C GR
   9 _pwm_init_bipolar_4q                                           000000 GR
 
 
-ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 4.
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 6.
 Hexadecimal [24-Bits]
 
 Area Table
@@ -160,6 +289,6 @@ Area Table
    6 GSFINAL                                    size      0   flags    0
    7 CONST                                      size      0   flags    0
    8 INITIALIZER                                size      0   flags    0
-   9 CODE                                       size     C0   flags    0
+   9 CODE                                       size    189   flags    0
    A CABS                                       size      0   flags    8
 

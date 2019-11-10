@@ -1,0 +1,65 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$lights$105                                                   00002A GR
+  9 A$lights$62                                                    000000 GR
+  9 A$lights$63                                                    000002 GR
+  9 A$lights$64                                                    000004 GR
+  9 A$lights$65                                                    000006 GR
+  9 A$lights$66                                                    000008 GR
+  9 A$lights$67                                                    00000B GR
+  9 A$lights$72                                                    00000D GR
+  9 A$lights$82                                                    00000E GR
+  9 A$lights$83                                                    000010 GR
+  9 A$lights$86                                                    000012 GR
+  9 A$lights$87                                                    000014 GR
+  9 A$lights$88                                                    000016 GR
+  9 A$lights$89                                                    000018 GR
+  9 A$lights$90                                                    00001B GR
+  9 A$lights$91                                                    00001D GR
+  9 A$lights$95                                                    00001F GR
+  9 A$lights$96                                                    000021 GR
+  9 A$lights$97                                                    000023 GR
+  9 A$lights$98                                                    000025 GR
+  9 A$lights$99                                                    000028 GR
+  9 C$lights.c$17$0_0$346                                       =  000000 GR
+  9 C$lights.c$19$1_0$346                                       =  000000 GR
+  9 C$lights.c$22$1_0$346                                       =  00000D GR
+  9 C$lights.c$27$1_0$348                                       =  00000E GR
+  9 C$lights.c$29$1_0$348                                       =  00000E GR
+  9 C$lights.c$31$2_0$349                                       =  000012 GR
+  9 C$lights.c$35$2_0$350                                       =  00001F GR
+  9 C$lights.c$37$1_0$348                                       =  00002A GR
+  9 G$lights_init$0$0                                           =  000000 GR
+  9 G$lights_set_state$0$0                                      =  00000E GR
+  9 XG$lights_init$0$0                                          =  00000D GR
+  9 XG$lights_set_state$0$0                                     =  00002A GR
+    _GPIO_Init                                                     ****** GX
+    _GPIO_WriteHigh                                                ****** GX
+    _GPIO_WriteLow                                                 ****** GX
+  9 _lights_init                                                   000000 GR
+  9 _lights_set_state                                              00000E GR
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size     2B   flags    0
+   A CABS                                       size      0   flags    8
+

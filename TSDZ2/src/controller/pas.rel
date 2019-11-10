@@ -1,0 +1,46 @@
+;!FILE pas.asm
+XH3
+H B areas 16 global symbols
+M pas
+O -mstm8
+S _GPIO_Init Ref000000
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A DATA size 0 flags 0 addr 0
+A INITIALIZED size 0 flags 0 addr 0
+A DABS size 0 flags 8 addr 0
+A HOME size 0 flags 0 addr 0
+A GSINIT size 0 flags 0 addr 0
+A GSFINAL size 0 flags 0 addr 0
+A CONST size 0 flags 0 addr 0
+A INITIALIZER size 0 flags 0 addr 0
+A CODE size 1B flags 0 addr 0
+S XG$pas_init$0$0 Def00001A
+S G$pas_init$0$0 Def000000
+S C$pas.c$24$1_0$346 Def00000D
+S C$pas.c$16$0_0$346 Def000000
+S C$pas.c$27$1_0$346 Def00001A
+S C$pas.c$19$1_0$346 Def000000
+S A$pas$60 Def000002
+S A$pas$70 Def000013
+S A$pas$61 Def000004
+S A$pas$71 Def000015
+S A$pas$62 Def000006
+S A$pas$72 Def000018
+S A$pas$63 Def000008
+S _pas_init Def000000
+S A$pas$64 Def00000B
+S A$pas$67 Def00000D
+S A$pas$77 Def00001A
+S A$pas$68 Def00000F
+S A$pas$59 Def000000
+S A$pas$69 Def000011
+A CABS size 0 flags 8 addr 0
+T 00 00 00
+R 00 00 00 09
+T 00 00 00 4B 40 4B 01 4B 14 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 00 0D 4B 40 4B 80 4B 0F 4B 50 CD 00 00 5B 04
+R 00 00 00 09 02 0C 00 00
+T 00 00 1A 81
+R 00 00 00 09

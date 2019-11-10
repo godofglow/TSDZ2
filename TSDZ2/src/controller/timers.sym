@@ -1,0 +1,105 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$timers$100                                                   000030 GR
+  9 A$timers$101                                                   000031 GR
+  9 A$timers$102                                                   000032 GR
+  9 A$timers$103                                                   000034 GR
+  9 A$timers$104                                                   000035 GR
+  9 A$timers$109                                                   000037 GR
+  9 A$timers$119                                                   000038 GR
+  9 A$timers$122                                                   00003B GR
+  9 A$timers$123                                                   00003D GR
+  9 A$timers$124                                                   00003F GR
+  9 A$timers$125                                                   000041 GR
+  9 A$timers$126                                                   000044 GR
+  9 A$timers$129                                                   000046 GR
+  9 A$timers$130                                                   000048 GR
+  9 A$timers$131                                                   00004B GR
+  9 A$timers$134                                                   00004C GR
+  9 A$timers$136                                                   000050 GR
+  9 A$timers$137                                                   000051 GR
+  9 A$timers$138                                                   000052 GR
+  9 A$timers$139                                                   000054 GR
+  9 A$timers$140                                                   000055 GR
+  9 A$timers$145                                                   000057 GR
+  9 A$timers$67                                                    000000 GR
+  9 A$timers$68                                                    000002 GR
+  9 A$timers$69                                                    000004 GR
+  9 A$timers$70                                                    000006 GR
+  9 A$timers$71                                                    000009 GR
+  9 A$timers$74                                                    00000B GR
+  9 A$timers$75                                                    00000D GR
+  9 A$timers$76                                                    00000F GR
+  9 A$timers$77                                                    000011 GR
+  9 A$timers$78                                                    000013 GR
+  9 A$timers$79                                                    000015 GR
+  9 A$timers$80                                                    000018 GR
+  9 A$timers$83                                                    00001A GR
+  9 A$timers$84                                                    00001C GR
+  9 A$timers$85                                                    00001F GR
+  9 A$timers$88                                                    000020 GR
+  9 A$timers$89                                                    000022 GR
+  9 A$timers$90                                                    000025 GR
+  9 A$timers$93                                                    000026 GR
+  9 A$timers$94                                                    000028 GR
+  9 A$timers$95                                                    00002B GR
+  9 A$timers$98                                                    00002C GR
+  9 C$timers.c$17$0_0$346                                       =  000000 GR
+  9 C$timers.c$23$1_0$346                                       =  000000 GR
+  9 C$timers.c$26$1_0$346                                       =  00000B GR
+  9 C$timers.c$27$1_0$346                                       =  00001A GR
+  9 C$timers.c$29$1_0$346                                       =  000020 GR
+  9 C$timers.c$31$1_0$346                                       =  000026 GR
+  9 C$timers.c$34$2_0$347                                       =  00002C GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$timers.c$35$2_0$346                                       =  000037 GR
+  9 C$timers.c$40$2_0$350                                       =  000038 GR
+  9 C$timers.c$45$1_0$350                                       =  000038 GR
+  9 C$timers.c$46$1_0$350                                       =  00003B GR
+  9 C$timers.c$47$1_0$350                                       =  000046 GR
+  9 C$timers.c$50$2_0$351                                       =  00004C GR
+  9 C$timers.c$51$2_0$350                                       =  000057 GR
+  9 G$timer2_init$0$0                                           =  000000 GR
+  9 G$timer3_init$0$0                                           =  000038 GR
+  9 XG$timer2_init$0$0                                          =  000037 GR
+  9 XG$timer3_init$0$0                                          =  000057 GR
+    _TIM2_ARRPreloadConfig                                         ****** GX
+    _TIM2_Cmd                                                      ****** GX
+    _TIM2_OC2Init                                                  ****** GX
+    _TIM2_OC2PreloadConfig                                         ****** GX
+    _TIM2_TimeBaseInit                                             ****** GX
+    _TIM3_Cmd                                                      ****** GX
+    _TIM3_DeInit                                                   ****** GX
+    _TIM3_TimeBaseInit                                             ****** GX
+  9 _timer2_init                                                   000000 GR
+  9 _timer3_init                                                   000038 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size     58   flags    0
+   A CABS                                       size      0   flags    8
+
