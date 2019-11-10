@@ -1,0 +1,1145 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$100             000000 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1003            00030D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1013            00030E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1014            000310 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1017            000312 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1020            000316 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1021            000319 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1024            00031B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1025            00031D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1026            000320 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$103             000004 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1030            000322 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1031            000324 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1032            000325 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1035            000327 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1038            00032B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1039            00032E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1042            000330 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1043            000332 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1044            000335 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1048            000337 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1051            00033B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1052            00033E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1055            000340 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1056            000342 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$106             000008 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1062            000345 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1070            000346 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1073            000348 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1074            00034A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1075            00034C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1078            00034F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1079            000351 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1082            000354 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1085            000356 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$109             00000C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1093            000357 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1096            000359 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1097            00035B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1098            00035D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1101            000360 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1102            000362 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1105            000365 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1108            000367 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1116            000368 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1119            00036A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$112             000010 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1120            00036C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1121            00036E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1124            000371 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1125            000373 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1128            000376 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1131            000378 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1139            000379 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1142            00037B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1143            00037D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1144            00037F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1147            000382 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1148            000384 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$115             000014 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1151            000387 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1154            000389 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1162            00038A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1165            00038C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1166            00038E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1167            000390 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1170            000393 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1171            000395 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1174            000398 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1177            00039A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$118             000018 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1187            00039B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1188            00039E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1191            0003A0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1192            0003A2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1197            0003A5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1207            0003A6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1208            0003A9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$121             00001C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1211            0003AB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1212            0003AD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1217            0003B0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1227            0003B1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1228            0003B4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1231            0003B6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1232            0003B8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1237            0003BB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$124             000020 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1245            0003BC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1248            0003BE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1249            0003C1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1252            0003C2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1255            0003C5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1256            0003C6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1259            0003C7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1260            0003C9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1261            0003CB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1262            0003CC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1263            0003CE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1264            0003CF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1265            0003D0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1266            0003D2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$127             000024 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1271            0003D3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1274            0003D5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1282            0003D6 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 3.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1285            0003D8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1286            0003DB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1289            0003DC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1292            0003DF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1293            0003E0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1296            0003E1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1297            0003E3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1298            0003E5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1299            0003E6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$130             000028 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1300            0003E8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1301            0003E9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1302            0003EA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1303            0003EC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1308            0003ED GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1311            0003EF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1319            0003F0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1322            0003F2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1323            0003F5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1326            0003F6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1329            0003F9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$133             00002C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1330            0003FA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1333            0003FB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1334            0003FD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1335            0003FF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1336            000400 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1337            000402 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1338            000403 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1339            000404 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1340            000406 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1345            000407 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1348            000409 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1356            00040A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1359            00040C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$136             000030 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1360            00040F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1361            000410 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1362            000411 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1365            000413 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1366            000416 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1367            000418 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1368            00041A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1369            00041B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1370            00041D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1373            00041E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1376            000420 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1386            000421 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$139             000034 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1391            000424 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1399            000425 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1402            000427 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1403            00042A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1404            00042C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1405            00042E GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 4.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1406            000430 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1409            000432 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1410            000434 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1411            000436 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1414            000438 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1415            00043B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1416            00043D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1417            00043F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$142             000038 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1420            000441 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1421            000443 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1425            000445 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1431            000446 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1434            000448 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1444            000449 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1445            00044B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1446            00044C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1449            00044F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$145             00003C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1450            000451 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1451            000452 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1456            000455 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1464            000456 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1467            000457 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1468            00045A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1469            00045C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1472            00045E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1473            000461 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1476            000463 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1477            000465 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1478            000467 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1479            000468 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$148             000040 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1482            00046A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1483            00046C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1487            00046E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1493            00046F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1496            000471 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1506            000472 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1507            000474 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1508            000475 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$151             000044 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1513            000478 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1521            000479 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1524            00047A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1527            00047E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1528            000481 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1529            000483 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1532            000485 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1533            000487 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1534            000488 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1535            00048A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1536            00048C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1537            00048E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$154             000048 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 5.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1540            000491 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1541            000493 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1544            000495 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1545            000499 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1549            00049B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1553            00049F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1556            0004A3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1559            0004A4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1567            0004A5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$157             00004C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1570            0004A6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1573            0004AA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1574            0004AD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1575            0004AF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1578            0004B1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1579            0004B3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1580            0004B4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1581            0004B6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1582            0004B8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1583            0004BA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1586            0004BD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1587            0004BF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1590            0004C1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1591            0004C5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1595            0004C7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1599            0004CB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$160             000050 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1602            0004CF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1605            0004D0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1613            0004D1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1616            0004D2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1619            0004D6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1620            0004D9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1621            0004DB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1624            0004DD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1625            0004DF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1626            0004E0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1627            0004E2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1628            0004E4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1629            0004E6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$163             000054 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1632            0004E9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1633            0004EB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1636            0004ED GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1637            0004F1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1641            0004F3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1645            0004F7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1648            0004FB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$1651            0004FC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$168             000058 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$176             000059 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$179             00005B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$180             00005E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$181             000060 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$184             000061 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 6.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$185             000063 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$186             000065 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$189             000068 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$190             00006A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$193             00006D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$196             00006F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$204             000070 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$207             000072 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$208             000075 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$209             000077 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$212             00007A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$213             00007D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$214             00007F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$215             000081 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$216             000083 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$219             000085 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$220             000087 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$221             000089 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$222             00008B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$223             00008D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$226             000090 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$227             000093 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$230             000095 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$231             000097 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$234             00009A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$235             00009C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$238             00009F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$239             0000A1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$242             0000A4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$245             0000A6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$253             0000A7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$256             0000A9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$257             0000AC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$258             0000AE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$261             0000B1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$262             0000B4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$263             0000B6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$264             0000B8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$265             0000BA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$268             0000BC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$269             0000BE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$270             0000C0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$271             0000C2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$272             0000C4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$275             0000C7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$276             0000CA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$279             0000CC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$280             0000CE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$283             0000D1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$284             0000D3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$287             0000D6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$288             0000D8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$291             0000DB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$294             0000DD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$302             0000DE GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 7.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$305             0000E0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$306             0000E3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$307             0000E5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$310             0000E8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$311             0000EB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$312             0000ED GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$313             0000EF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$314             0000F1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$317             0000F3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$318             0000F5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$319             0000F7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$320             0000F9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$321             0000FB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$324             0000FE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$325             000101 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$328             000103 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$329             000105 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$332             000108 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$333             00010A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$336             00010D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$337             00010F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$340             000112 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$343             000114 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$353             000115 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$354             000117 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$357             000119 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$358             00011B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$359             00011C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$360             00011E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$361             00011F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$362             000121 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$363             000122 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$364             000125 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$367             000127 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$368             000129 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$369             00012A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$370             00012D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$371             00012E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$375             000130 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$376             000132 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$377             000133 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$380             000135 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$381             000137 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$382             000138 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$383             00013A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$384             00013B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$385             00013D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$386             00013E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$387             000141 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$390             000143 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$391             000145 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$392             000146 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$393             000149 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$394             00014A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$398             00014C GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 8.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$399             00014E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$400             00014F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$401             000151 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$402             000152 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$403             000154 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$404             000155 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$405             000158 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$408             00015A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$409             00015C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$410             00015D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$411             000160 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$417             000161 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$425             000162 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$428             000164 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$429             000166 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$430             000168 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$433             00016A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$434             00016C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$435             00016E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$439             000170 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$443             000172 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$444             000174 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$445             000175 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$448             000177 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$449             000179 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$450             00017B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$454             00017D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$455             00017F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$459             000181 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$460             000183 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$463             000185 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$464             000187 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$465             000188 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$466             00018A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$467             00018B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$468             00018D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$469             00018E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$470             000191 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$473             000193 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$474             000195 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$475             000196 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$476             000199 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$479             00019A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$480             00019C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$481             00019D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$482             00019F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$483             0001A0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$484             0001A2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$485             0001A3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$486             0001A6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$489             0001A8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$490             0001AA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$491             0001AB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$492             0001AE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$493             0001AF GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 9.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$497             0001B1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$498             0001B3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$499             0001B4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$500             0001B6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$501             0001B7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$502             0001B9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$503             0001BA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$504             0001BD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$507             0001BF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$508             0001C1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$509             0001C2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$510             0001C5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$513             0001C6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$514             0001C8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$515             0001C9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$516             0001CB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$517             0001CC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$518             0001CE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$519             0001CF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$520             0001D2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$523             0001D4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$524             0001D6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$525             0001D7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$526             0001DA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$530             0001DB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$533             0001DD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$543             0001DE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$544             0001E0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$547             0001E2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$548             0001E6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$552             0001E8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$558             0001EC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$566             0001ED GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$569             0001EE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$570             0001F0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$573             0001F2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$574             0001F5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$575             0001F7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$576             0001FA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$580             0001FC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$581             0001FF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$582             000201 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$583             000203 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$584             000204 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$585             000206 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$589             000209 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$592             00020A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$602             00020B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$603             00020D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$606             00020F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$607             000213 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$611             000215 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$617             000219 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$627             00021A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$628             00021C GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 10.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$631             00021E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$632             000222 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$636             000224 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$642             000228 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$652             000229 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$653             00022B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$656             00022D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$657             000231 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$661             000233 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$667             000237 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$677             000238 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$678             00023B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$679             00023D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$682             00023E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$683             000241 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$684             000243 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$689             000244 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$699             000245 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$700             000248 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$703             00024A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$704             00024C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$709             00024F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$719             000250 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$720             000253 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$723             000255 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$724             000257 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$729             00025A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$739             00025B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$740             00025E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$743             000260 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$744             000262 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$749             000265 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$759             000266 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$760             000268 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$763             00026A GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$764             00026E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$768             000270 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$774             000274 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$784             000275 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$785             000277 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$788             000279 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$789             00027D GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$793             00027F GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$799             000283 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$809             000284 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$810             000286 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$813             000288 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$814             00028C GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$818             00028E GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$824             000292 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$834             000293 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$835             000295 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$838             000297 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$839             00029B GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$843             00029D GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 11.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$849             0002A1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$859             0002A2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$860             0002A5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$861             0002A7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$866             0002A8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$876             0002A9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$877             0002AB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$880             0002AD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$881             0002B1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$885             0002B3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$891             0002B7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$901             0002B8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$902             0002BA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$905             0002BC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$906             0002C0 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$910             0002C2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$916             0002C6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$926             0002C7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$927             0002C9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$930             0002CB GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$931             0002CF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$935             0002D1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$941             0002D5 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$951             0002D6 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$952             0002D8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$955             0002DA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$956             0002DC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$959             0002DE GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$960             0002E2 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$964             0002E4 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$965             0002E8 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$969             0002EA GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$970             0002EC GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$971             0002ED GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$974             0002EF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$975             0002F1 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$978             0002F3 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$979             0002F7 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$983             0002F9 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$984             0002FD GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$988             0002FF GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$989             000301 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$992             000303 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$993             000307 GR
+  9 A$stm8s_tim2STM8S_StdPeriph_Lib/src/stm8s_tim2$997             000309 GR
+  9 C$stm8s_tim2.c$1001$1_0$464                                 =  0003D8 GR
+  9 C$stm8s_tim2.c$1002$1_0$464                                 =  0003DC GR
+  9 C$stm8s_tim2.c$1004$1_0$464                                 =  0003DF GR
+  9 C$stm8s_tim2.c$1005$1_0$464                                 =  0003E1 GR
+  9 C$stm8s_tim2.c$1007$1_0$464                                 =  0003ED GR
+  9 C$stm8s_tim2.c$1008$1_0$464                                 =  0003EF GR
+  9 C$stm8s_tim2.c$1015$1_0$466                                 =  0003F0 GR
+  9 C$stm8s_tim2.c$1021$1_0$466                                 =  0003F2 GR
+  9 C$stm8s_tim2.c$1022$1_0$466                                 =  0003F6 GR
+  9 C$stm8s_tim2.c$1024$1_0$466                                 =  0003F9 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 12.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$1025$1_0$466                                 =  0003FB GR
+  9 C$stm8s_tim2.c$1027$1_0$466                                 =  000407 GR
+  9 C$stm8s_tim2.c$1028$1_0$466                                 =  000409 GR
+  9 C$stm8s_tim2.c$1035$1_0$468                                 =  00040A GR
+  9 C$stm8s_tim2.c$1039$1_0$468                                 =  00040C GR
+  9 C$stm8s_tim2.c$1041$1_0$468                                 =  000413 GR
+  9 C$stm8s_tim2.c$1042$1_0$468                                 =  000420 GR
+  9 C$stm8s_tim2.c$1049$1_0$470                                 =  000421 GR
+  9 C$stm8s_tim2.c$1052$1_0$470                                 =  000421 GR
+  9 C$stm8s_tim2.c$1053$1_0$470                                 =  000424 GR
+  9 C$stm8s_tim2.c$1068$1_0$472                                 =  000425 GR
+  9 C$stm8s_tim2.c$1076$1_0$472                                 =  000427 GR
+  9 C$stm8s_tim2.c$1077$1_0$472                                 =  000432 GR
+  9 C$stm8s_tim2.c$1079$1_0$472                                 =  000438 GR
+  9 C$stm8s_tim2.c$108$1_0$353                                  =  000070 GR
+  9 C$stm8s_tim2.c$1081$2_0$473                                 =  000441 GR
+  9 C$stm8s_tim2.c$1085$2_0$474                                 =  000445 GR
+  9 C$stm8s_tim2.c$1087$1_0$472                                 =  000446 GR
+  9 C$stm8s_tim2.c$1088$1_0$472                                 =  000448 GR
+  9 C$stm8s_tim2.c$1103$1_0$476                                 =  000449 GR
+  9 C$stm8s_tim2.c$1109$1_0$476                                 =  000449 GR
+  9 C$stm8s_tim2.c$1111$1_0$476                                 =  00044F GR
+  9 C$stm8s_tim2.c$1112$1_0$476                                 =  000455 GR
+  9 C$stm8s_tim2.c$1124$1_0$478                                 =  000456 GR
+  9 C$stm8s_tim2.c$1132$1_0$478                                 =  000457 GR
+  9 C$stm8s_tim2.c$1134$1_0$478                                 =  00045E GR
+  9 C$stm8s_tim2.c$1136$1_0$478                                 =  000463 GR
+  9 C$stm8s_tim2.c$1138$2_0$479                                 =  00046A GR
+  9 C$stm8s_tim2.c$1142$2_0$480                                 =  00046E GR
+  9 C$stm8s_tim2.c$1144$1_0$478                                 =  00046F GR
+  9 C$stm8s_tim2.c$1145$1_0$478                                 =  000471 GR
+  9 C$stm8s_tim2.c$1157$1_0$482                                 =  000472 GR
+  9 C$stm8s_tim2.c$1163$1_0$482                                 =  000472 GR
+  9 C$stm8s_tim2.c$1164$1_0$482                                 =  000478 GR
+  9 C$stm8s_tim2.c$1182$1_0$484                                 =  000479 GR
+  9 C$stm8s_tim2.c$1187$1_0$484                                 =  00047A GR
+  9 C$stm8s_tim2.c$119$1_0$353                                  =  000072 GR
+  9 C$stm8s_tim2.c$1190$1_0$484                                 =  00047E GR
+  9 C$stm8s_tim2.c$1191$1_0$484                                 =  000485 GR
+  9 C$stm8s_tim2.c$1194$1_0$484                                 =  000491 GR
+  9 C$stm8s_tim2.c$1196$2_0$485                                 =  000495 GR
+  9 C$stm8s_tim2.c$1200$2_0$486                                 =  00049B GR
+  9 C$stm8s_tim2.c$1203$1_0$484                                 =  00049F GR
+  9 C$stm8s_tim2.c$1204$1_0$484                                 =  0004A4 GR
+  9 C$stm8s_tim2.c$121$1_0$353                                  =  00007A GR
+  9 C$stm8s_tim2.c$122$1_0$353                                  =  000085 GR
+  9 C$stm8s_tim2.c$1222$1_0$488                                 =  0004A5 GR
+  9 C$stm8s_tim2.c$1227$1_0$488                                 =  0004A6 GR
+  9 C$stm8s_tim2.c$1230$1_0$488                                 =  0004AA GR
+  9 C$stm8s_tim2.c$1231$1_0$488                                 =  0004B1 GR
+  9 C$stm8s_tim2.c$1235$1_0$488                                 =  0004BD GR
+  9 C$stm8s_tim2.c$1237$2_0$489                                 =  0004C1 GR
+  9 C$stm8s_tim2.c$1241$2_0$490                                 =  0004C7 GR
+  9 C$stm8s_tim2.c$1245$1_0$488                                 =  0004CB GR
+  9 C$stm8s_tim2.c$1246$1_0$488                                 =  0004D0 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 13.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$125$1_0$353                                  =  000090 GR
+  9 C$stm8s_tim2.c$126$1_0$353                                  =  000095 GR
+  9 C$stm8s_tim2.c$1262$1_0$492                                 =  0004D1 GR
+  9 C$stm8s_tim2.c$1266$1_0$492                                 =  0004D2 GR
+  9 C$stm8s_tim2.c$1269$1_0$492                                 =  0004D6 GR
+  9 C$stm8s_tim2.c$1270$1_0$492                                 =  0004DD GR
+  9 C$stm8s_tim2.c$1274$1_0$492                                 =  0004E9 GR
+  9 C$stm8s_tim2.c$1276$2_0$493                                 =  0004ED GR
+  9 C$stm8s_tim2.c$1280$2_0$494                                 =  0004F3 GR
+  9 C$stm8s_tim2.c$1283$1_0$492                                 =  0004F7 GR
+  9 C$stm8s_tim2.c$1284$1_0$492                                 =  0004FC GR
+  9 C$stm8s_tim2.c$129$1_0$353                                  =  00009A GR
+  9 C$stm8s_tim2.c$130$1_0$353                                  =  00009F GR
+  9 C$stm8s_tim2.c$131$1_0$353                                  =  0000A6 GR
+  9 C$stm8s_tim2.c$142$1_0$355                                  =  0000A7 GR
+  9 C$stm8s_tim2.c$154$1_0$355                                  =  0000A9 GR
+  9 C$stm8s_tim2.c$156$1_0$355                                  =  0000B1 GR
+  9 C$stm8s_tim2.c$157$1_0$355                                  =  0000BC GR
+  9 C$stm8s_tim2.c$161$1_0$355                                  =  0000C7 GR
+  9 C$stm8s_tim2.c$162$1_0$355                                  =  0000CC GR
+  9 C$stm8s_tim2.c$166$1_0$355                                  =  0000D1 GR
+  9 C$stm8s_tim2.c$167$1_0$355                                  =  0000D6 GR
+  9 C$stm8s_tim2.c$168$1_0$355                                  =  0000DD GR
+  9 C$stm8s_tim2.c$179$1_0$357                                  =  0000DE GR
+  9 C$stm8s_tim2.c$189$1_0$357                                  =  0000E0 GR
+  9 C$stm8s_tim2.c$191$1_0$357                                  =  0000E8 GR
+  9 C$stm8s_tim2.c$192$1_0$357                                  =  0000F3 GR
+  9 C$stm8s_tim2.c$195$1_0$357                                  =  0000FE GR
+  9 C$stm8s_tim2.c$196$1_0$357                                  =  000103 GR
+  9 C$stm8s_tim2.c$199$1_0$357                                  =  000108 GR
+  9 C$stm8s_tim2.c$200$1_0$357                                  =  00010D GR
+  9 C$stm8s_tim2.c$201$1_0$357                                  =  000114 GR
+  9 C$stm8s_tim2.c$212$1_0$359                                  =  000115 GR
+  9 C$stm8s_tim2.c$225$1_0$359                                  =  000115 GR
+  9 C$stm8s_tim2.c$228$2_0$360                                  =  000119 GR
+  9 C$stm8s_tim2.c$233$2_0$360                                  =  000127 GR
+  9 C$stm8s_tim2.c$235$1_0$359                                  =  000130 GR
+  9 C$stm8s_tim2.c$238$2_0$361                                  =  000135 GR
+  9 C$stm8s_tim2.c$243$2_0$361                                  =  000143 GR
+  9 C$stm8s_tim2.c$248$2_0$362                                  =  00014C GR
+  9 C$stm8s_tim2.c$253$2_0$362                                  =  00015A GR
+  9 C$stm8s_tim2.c$255$1_0$359                                  =  000161 GR
+  9 C$stm8s_tim2.c$266$1_0$364                                  =  000162 GR
+  9 C$stm8s_tim2.c$282$1_0$364                                  =  000164 GR
+  9 C$stm8s_tim2.c$284$2_0$365                                  =  00016A GR
+  9 C$stm8s_tim2.c$288$2_0$366                                  =  000170 GR
+  9 C$stm8s_tim2.c$292$1_0$364                                  =  000172 GR
+  9 C$stm8s_tim2.c$294$2_0$367                                  =  000177 GR
+  9 C$stm8s_tim2.c$298$2_0$368                                  =  00017D GR
+  9 C$stm8s_tim2.c$301$1_0$364                                  =  000181 GR
+  9 C$stm8s_tim2.c$304$2_0$369                                  =  000185 GR
+  9 C$stm8s_tim2.c$308$2_0$369                                  =  000193 GR
+  9 C$stm8s_tim2.c$311$2_0$369                                  =  00019A GR
+  9 C$stm8s_tim2.c$314$2_0$369                                  =  0001A8 GR
+  9 C$stm8s_tim2.c$319$2_0$370                                  =  0001B1 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 14.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$323$2_0$370                                  =  0001BF GR
+  9 C$stm8s_tim2.c$326$2_0$370                                  =  0001C6 GR
+  9 C$stm8s_tim2.c$329$2_0$370                                  =  0001D4 GR
+  9 C$stm8s_tim2.c$331$1_0$364                                  =  0001DD GR
+  9 C$stm8s_tim2.c$339$1_0$372                                  =  0001DE GR
+  9 C$stm8s_tim2.c$345$1_0$372                                  =  0001DE GR
+  9 C$stm8s_tim2.c$347$2_0$373                                  =  0001E2 GR
+  9 C$stm8s_tim2.c$351$2_0$374                                  =  0001E8 GR
+  9 C$stm8s_tim2.c$353$1_0$372                                  =  0001EC GR
+  9 C$stm8s_tim2.c$368$1_0$376                                  =  0001ED GR
+  9 C$stm8s_tim2.c$374$1_0$376                                  =  0001EE GR
+  9 C$stm8s_tim2.c$377$2_0$377                                  =  0001F2 GR
+  9 C$stm8s_tim2.c$382$2_0$378                                  =  0001FC GR
+  9 C$stm8s_tim2.c$384$1_0$376                                  =  00020A GR
+  9 C$stm8s_tim2.c$392$1_0$380                                  =  00020B GR
+  9 C$stm8s_tim2.c$398$1_0$380                                  =  00020B GR
+  9 C$stm8s_tim2.c$400$2_0$381                                  =  00020F GR
+  9 C$stm8s_tim2.c$404$2_0$382                                  =  000215 GR
+  9 C$stm8s_tim2.c$406$1_0$380                                  =  000219 GR
+  9 C$stm8s_tim2.c$416$1_0$384                                  =  00021A GR
+  9 C$stm8s_tim2.c$422$1_0$384                                  =  00021A GR
+  9 C$stm8s_tim2.c$424$2_0$385                                  =  00021E GR
+  9 C$stm8s_tim2.c$428$2_0$386                                  =  000224 GR
+  9 C$stm8s_tim2.c$430$1_0$384                                  =  000228 GR
+  9 C$stm8s_tim2.c$440$1_0$388                                  =  000229 GR
+  9 C$stm8s_tim2.c$446$1_0$388                                  =  000229 GR
+  9 C$stm8s_tim2.c$448$2_0$389                                  =  00022D GR
+  9 C$stm8s_tim2.c$452$2_0$390                                  =  000233 GR
+  9 C$stm8s_tim2.c$454$1_0$388                                  =  000237 GR
+  9 C$stm8s_tim2.c$484$1_0$392                                  =  000238 GR
+  9 C$stm8s_tim2.c$492$1_0$392                                  =  000238 GR
+  9 C$stm8s_tim2.c$495$1_0$392                                  =  00023E GR
+  9 C$stm8s_tim2.c$496$1_0$392                                  =  000244 GR
+  9 C$stm8s_tim2.c$507$1_0$394                                  =  000245 GR
+  9 C$stm8s_tim2.c$513$1_0$394                                  =  000245 GR
+  9 C$stm8s_tim2.c$514$1_0$394                                  =  00024A GR
+  9 C$stm8s_tim2.c$515$1_0$394                                  =  00024F GR
+  9 C$stm8s_tim2.c$52$0_0$349                                   =  000000 GR
+  9 C$stm8s_tim2.c$526$1_0$396                                  =  000250 GR
+  9 C$stm8s_tim2.c$532$1_0$396                                  =  000250 GR
+  9 C$stm8s_tim2.c$533$1_0$396                                  =  000255 GR
+  9 C$stm8s_tim2.c$534$1_0$396                                  =  00025A GR
+  9 C$stm8s_tim2.c$54$1_0$349                                   =  000000 GR
+  9 C$stm8s_tim2.c$545$1_0$398                                  =  00025B GR
+  9 C$stm8s_tim2.c$55$1_0$349                                   =  000004 GR
+  9 C$stm8s_tim2.c$551$1_0$398                                  =  00025B GR
+  9 C$stm8s_tim2.c$552$1_0$398                                  =  000260 GR
+  9 C$stm8s_tim2.c$553$1_0$398                                  =  000265 GR
+  9 C$stm8s_tim2.c$56$1_0$349                                   =  000008 GR
+  9 C$stm8s_tim2.c$561$1_0$400                                  =  000266 GR
+  9 C$stm8s_tim2.c$567$1_0$400                                  =  000266 GR
+  9 C$stm8s_tim2.c$569$2_0$401                                  =  00026A GR
+  9 C$stm8s_tim2.c$573$2_0$402                                  =  000270 GR
+  9 C$stm8s_tim2.c$575$1_0$400                                  =  000274 GR
+  9 C$stm8s_tim2.c$583$1_0$404                                  =  000275 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 15.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$589$1_0$404                                  =  000275 GR
+  9 C$stm8s_tim2.c$59$1_0$349                                   =  00000C GR
+  9 C$stm8s_tim2.c$591$2_0$405                                  =  000279 GR
+  9 C$stm8s_tim2.c$595$2_0$406                                  =  00027F GR
+  9 C$stm8s_tim2.c$597$1_0$404                                  =  000283 GR
+  9 C$stm8s_tim2.c$60$1_0$349                                   =  000010 GR
+  9 C$stm8s_tim2.c$605$1_0$408                                  =  000284 GR
+  9 C$stm8s_tim2.c$611$1_0$408                                  =  000284 GR
+  9 C$stm8s_tim2.c$613$2_0$409                                  =  000288 GR
+  9 C$stm8s_tim2.c$617$2_0$410                                  =  00028E GR
+  9 C$stm8s_tim2.c$619$1_0$408                                  =  000292 GR
+  9 C$stm8s_tim2.c$627$1_0$412                                  =  000293 GR
+  9 C$stm8s_tim2.c$633$1_0$412                                  =  000293 GR
+  9 C$stm8s_tim2.c$635$2_0$413                                  =  000297 GR
+  9 C$stm8s_tim2.c$639$2_0$414                                  =  00029D GR
+  9 C$stm8s_tim2.c$64$1_0$349                                   =  000014 GR
+  9 C$stm8s_tim2.c$641$1_0$412                                  =  0002A1 GR
+  9 C$stm8s_tim2.c$65$1_0$349                                   =  000018 GR
+  9 C$stm8s_tim2.c$653$1_0$416                                  =  0002A2 GR
+  9 C$stm8s_tim2.c$659$1_0$416                                  =  0002A2 GR
+  9 C$stm8s_tim2.c$66$1_0$349                                   =  00001C GR
+  9 C$stm8s_tim2.c$660$1_0$416                                  =  0002A8 GR
+  9 C$stm8s_tim2.c$67$1_0$349                                   =  000020 GR
+  9 C$stm8s_tim2.c$670$1_0$418                                  =  0002A9 GR
+  9 C$stm8s_tim2.c$676$1_0$418                                  =  0002A9 GR
+  9 C$stm8s_tim2.c$678$2_0$419                                  =  0002AD GR
+  9 C$stm8s_tim2.c$68$1_0$349                                   =  000024 GR
+  9 C$stm8s_tim2.c$682$2_0$420                                  =  0002B3 GR
+  9 C$stm8s_tim2.c$684$1_0$418                                  =  0002B7 GR
+  9 C$stm8s_tim2.c$69$1_0$349                                   =  000028 GR
+  9 C$stm8s_tim2.c$694$1_0$422                                  =  0002B8 GR
+  9 C$stm8s_tim2.c$70$1_0$349                                   =  00002C GR
+  9 C$stm8s_tim2.c$700$1_0$422                                  =  0002B8 GR
+  9 C$stm8s_tim2.c$702$2_0$423                                  =  0002BC GR
+  9 C$stm8s_tim2.c$706$2_0$424                                  =  0002C2 GR
+  9 C$stm8s_tim2.c$708$1_0$422                                  =  0002C6 GR
+  9 C$stm8s_tim2.c$71$1_0$349                                   =  000030 GR
+  9 C$stm8s_tim2.c$718$1_0$426                                  =  0002C7 GR
+  9 C$stm8s_tim2.c$72$1_0$349                                   =  000034 GR
+  9 C$stm8s_tim2.c$724$1_0$426                                  =  0002C7 GR
+  9 C$stm8s_tim2.c$726$2_0$427                                  =  0002CB GR
+  9 C$stm8s_tim2.c$73$1_0$349                                   =  000038 GR
+  9 C$stm8s_tim2.c$730$2_0$428                                  =  0002D1 GR
+  9 C$stm8s_tim2.c$732$1_0$426                                  =  0002D5 GR
+  9 C$stm8s_tim2.c$74$1_0$349                                   =  00003C GR
+  9 C$stm8s_tim2.c$745$1_0$430                                  =  0002D6 GR
+  9 C$stm8s_tim2.c$75$1_0$349                                   =  000040 GR
+  9 C$stm8s_tim2.c$751$1_0$430                                  =  0002D6 GR
+  9 C$stm8s_tim2.c$754$2_0$431                                  =  0002DA GR
+  9 C$stm8s_tim2.c$756$3_0$432                                  =  0002DE GR
+  9 C$stm8s_tim2.c$76$1_0$349                                   =  000044 GR
+  9 C$stm8s_tim2.c$760$3_0$433                                  =  0002E4 GR
+  9 C$stm8s_tim2.c$764$1_0$430                                  =  0002EA GR
+  9 C$stm8s_tim2.c$767$2_0$434                                  =  0002EF GR
+  9 C$stm8s_tim2.c$769$3_0$435                                  =  0002F3 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 16.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$77$1_0$349                                   =  000048 GR
+  9 C$stm8s_tim2.c$773$3_0$436                                  =  0002F9 GR
+  9 C$stm8s_tim2.c$779$2_0$437                                  =  0002FF GR
+  9 C$stm8s_tim2.c$78$1_0$349                                   =  00004C GR
+  9 C$stm8s_tim2.c$781$3_0$438                                  =  000303 GR
+  9 C$stm8s_tim2.c$785$3_0$439                                  =  000309 GR
+  9 C$stm8s_tim2.c$788$1_0$430                                  =  00030D GR
+  9 C$stm8s_tim2.c$79$1_0$349                                   =  000050 GR
+  9 C$stm8s_tim2.c$80$1_0$349                                   =  000054 GR
+  9 C$stm8s_tim2.c$81$1_0$349                                   =  000058 GR
+  9 C$stm8s_tim2.c$810$1_0$441                                  =  00030E GR
+  9 C$stm8s_tim2.c$816$1_0$441                                  =  00030E GR
+  9 C$stm8s_tim2.c$819$2_0$442                                  =  000312 GR
+  9 C$stm8s_tim2.c$822$2_0$442                                  =  000316 GR
+  9 C$stm8s_tim2.c$823$2_0$442                                  =  00031B GR
+  9 C$stm8s_tim2.c$825$1_0$441                                  =  000322 GR
+  9 C$stm8s_tim2.c$828$2_0$443                                  =  000327 GR
+  9 C$stm8s_tim2.c$831$2_0$443                                  =  00032B GR
+  9 C$stm8s_tim2.c$832$2_0$443                                  =  000330 GR
+  9 C$stm8s_tim2.c$837$2_0$444                                  =  000337 GR
+  9 C$stm8s_tim2.c$840$2_0$444                                  =  00033B GR
+  9 C$stm8s_tim2.c$841$2_0$444                                  =  000340 GR
+  9 C$stm8s_tim2.c$843$1_0$441                                  =  000345 GR
+  9 C$stm8s_tim2.c$851$1_0$446                                  =  000346 GR
+  9 C$stm8s_tim2.c$854$1_0$446                                  =  000348 GR
+  9 C$stm8s_tim2.c$855$1_0$446                                  =  00034F GR
+  9 C$stm8s_tim2.c$856$1_0$446                                  =  000356 GR
+  9 C$stm8s_tim2.c$864$1_0$448                                  =  000357 GR
+  9 C$stm8s_tim2.c$867$1_0$448                                  =  000359 GR
+  9 C$stm8s_tim2.c$868$1_0$448                                  =  000360 GR
+  9 C$stm8s_tim2.c$869$1_0$448                                  =  000367 GR
+  9 C$stm8s_tim2.c$877$1_0$450                                  =  000368 GR
+  9 C$stm8s_tim2.c$880$1_0$450                                  =  00036A GR
+  9 C$stm8s_tim2.c$881$1_0$450                                  =  000371 GR
+  9 C$stm8s_tim2.c$882$1_0$450                                  =  000378 GR
+  9 C$stm8s_tim2.c$89$1_0$351                                   =  000059 GR
+  9 C$stm8s_tim2.c$890$1_0$452                                  =  000379 GR
+  9 C$stm8s_tim2.c$893$1_0$452                                  =  00037B GR
+  9 C$stm8s_tim2.c$894$1_0$452                                  =  000382 GR
+  9 C$stm8s_tim2.c$895$1_0$452                                  =  000389 GR
+  9 C$stm8s_tim2.c$903$1_0$454                                  =  00038A GR
+  9 C$stm8s_tim2.c$906$1_0$454                                  =  00038C GR
+  9 C$stm8s_tim2.c$907$1_0$454                                  =  000393 GR
+  9 C$stm8s_tim2.c$908$1_0$454                                  =  00039A GR
+  9 C$stm8s_tim2.c$920$1_0$456                                  =  00039B GR
+  9 C$stm8s_tim2.c$926$1_0$456                                  =  00039B GR
+  9 C$stm8s_tim2.c$927$1_0$456                                  =  0003A0 GR
+  9 C$stm8s_tim2.c$928$1_0$456                                  =  0003A5 GR
+  9 C$stm8s_tim2.c$93$1_0$351                                   =  00005B GR
+  9 C$stm8s_tim2.c$940$1_0$458                                  =  0003A6 GR
+  9 C$stm8s_tim2.c$946$1_0$458                                  =  0003A6 GR
+  9 C$stm8s_tim2.c$947$1_0$458                                  =  0003AB GR
+  9 C$stm8s_tim2.c$948$1_0$458                                  =  0003B0 GR
+  9 C$stm8s_tim2.c$95$1_0$351                                   =  000061 GR
+  9 C$stm8s_tim2.c$96$1_0$351                                   =  000068 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 17.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 C$stm8s_tim2.c$960$1_0$460                                  =  0003B1 GR
+  9 C$stm8s_tim2.c$966$1_0$460                                  =  0003B1 GR
+  9 C$stm8s_tim2.c$967$1_0$460                                  =  0003B6 GR
+  9 C$stm8s_tim2.c$968$1_0$460                                  =  0003BB GR
+  9 C$stm8s_tim2.c$97$1_0$351                                   =  00006F GR
+  9 C$stm8s_tim2.c$975$1_0$462                                  =  0003BC GR
+  9 C$stm8s_tim2.c$981$1_0$462                                  =  0003BE GR
+  9 C$stm8s_tim2.c$982$1_0$462                                  =  0003C2 GR
+  9 C$stm8s_tim2.c$984$1_0$462                                  =  0003C5 GR
+  9 C$stm8s_tim2.c$985$1_0$462                                  =  0003C7 GR
+  9 C$stm8s_tim2.c$987$1_0$462                                  =  0003D3 GR
+  9 C$stm8s_tim2.c$988$1_0$462                                  =  0003D5 GR
+  9 C$stm8s_tim2.c$995$1_0$464                                  =  0003D6 GR
+  9 Fstm8s_tim2$TI1_Config$0$0                                  =  000479 GR
+  9 Fstm8s_tim2$TI2_Config$0$0                                  =  0004A5 GR
+  9 Fstm8s_tim2$TI3_Config$0$0                                  =  0004D1 GR
+  9 G$TIM2_ARRPreloadConfig$0$0                                 =  000266 GR
+  9 G$TIM2_CCxCmd$0$0                                           =  0002D6 GR
+  9 G$TIM2_ClearFlag$0$0                                        =  000449 GR
+  9 G$TIM2_ClearITPendingBit$0$0                                =  000472 GR
+  9 G$TIM2_Cmd$0$0                                              =  0001DE GR
+  9 G$TIM2_DeInit$0$0                                           =  000000 GR
+  9 G$TIM2_ForcedOC1Config$0$0                                  =  000245 GR
+  9 G$TIM2_ForcedOC2Config$0$0                                  =  000250 GR
+  9 G$TIM2_ForcedOC3Config$0$0                                  =  00025B GR
+  9 G$TIM2_GenerateEvent$0$0                                    =  0002A2 GR
+  9 G$TIM2_GetCapture1$0$0                                      =  0003BC GR
+  9 G$TIM2_GetCapture2$0$0                                      =  0003D6 GR
+  9 G$TIM2_GetCapture3$0$0                                      =  0003F0 GR
+  9 G$TIM2_GetCounter$0$0                                       =  00040A GR
+  9 G$TIM2_GetFlagStatus$0$0                                    =  000425 GR
+  9 G$TIM2_GetITStatus$0$0                                      =  000456 GR
+  9 G$TIM2_GetPrescaler$0$0                                     =  000421 GR
+  9 G$TIM2_ICInit$0$0                                           =  000115 GR
+  9 G$TIM2_ITConfig$0$0                                         =  0001ED GR
+  9 G$TIM2_OC1Init$0$0                                          =  000070 GR
+  9 G$TIM2_OC1PolarityConfig$0$0                                =  0002A9 GR
+  9 G$TIM2_OC1PreloadConfig$0$0                                 =  000275 GR
+  9 G$TIM2_OC2Init$0$0                                          =  0000A7 GR
+  9 G$TIM2_OC2PolarityConfig$0$0                                =  0002B8 GR
+  9 G$TIM2_OC2PreloadConfig$0$0                                 =  000284 GR
+  9 G$TIM2_OC3Init$0$0                                          =  0000DE GR
+  9 G$TIM2_OC3PolarityConfig$0$0                                =  0002C7 GR
+  9 G$TIM2_OC3PreloadConfig$0$0                                 =  000293 GR
+  9 G$TIM2_PWMIConfig$0$0                                       =  000162 GR
+  9 G$TIM2_PrescalerConfig$0$0                                  =  000238 GR
+  9 G$TIM2_SelectOCxM$0$0                                       =  00030E GR
+  9 G$TIM2_SelectOnePulseMode$0$0                               =  000229 GR
+  9 G$TIM2_SetAutoreload$0$0                                    =  000357 GR
+  9 G$TIM2_SetCompare1$0$0                                      =  000368 GR
+  9 G$TIM2_SetCompare2$0$0                                      =  000379 GR
+  9 G$TIM2_SetCompare3$0$0                                      =  00038A GR
+  9 G$TIM2_SetCounter$0$0                                       =  000346 GR
+  9 G$TIM2_SetIC1Prescaler$0$0                                  =  00039B GR
+  9 G$TIM2_SetIC2Prescaler$0$0                                  =  0003A6 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 18.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 G$TIM2_SetIC3Prescaler$0$0                                  =  0003B1 GR
+  9 G$TIM2_TimeBaseInit$0$0                                     =  000059 GR
+  9 G$TIM2_UpdateDisableConfig$0$0                              =  00020B GR
+  9 G$TIM2_UpdateRequestConfig$0$0                              =  00021A GR
+  9 XFstm8s_tim2$TI1_Config$0$0                                 =  0004A4 GR
+  9 XFstm8s_tim2$TI2_Config$0$0                                 =  0004D0 GR
+  9 XFstm8s_tim2$TI3_Config$0$0                                 =  0004FC GR
+  9 XG$TIM2_ARRPreloadConfig$0$0                                =  000274 GR
+  9 XG$TIM2_CCxCmd$0$0                                          =  00030D GR
+  9 XG$TIM2_ClearFlag$0$0                                       =  000455 GR
+  9 XG$TIM2_ClearITPendingBit$0$0                               =  000478 GR
+  9 XG$TIM2_Cmd$0$0                                             =  0001EC GR
+  9 XG$TIM2_DeInit$0$0                                          =  000058 GR
+  9 XG$TIM2_ForcedOC1Config$0$0                                 =  00024F GR
+  9 XG$TIM2_ForcedOC2Config$0$0                                 =  00025A GR
+  9 XG$TIM2_ForcedOC3Config$0$0                                 =  000265 GR
+  9 XG$TIM2_GenerateEvent$0$0                                   =  0002A8 GR
+  9 XG$TIM2_GetCapture1$0$0                                     =  0003D5 GR
+  9 XG$TIM2_GetCapture2$0$0                                     =  0003EF GR
+  9 XG$TIM2_GetCapture3$0$0                                     =  000409 GR
+  9 XG$TIM2_GetCounter$0$0                                      =  000420 GR
+  9 XG$TIM2_GetFlagStatus$0$0                                   =  000448 GR
+  9 XG$TIM2_GetITStatus$0$0                                     =  000471 GR
+  9 XG$TIM2_GetPrescaler$0$0                                    =  000424 GR
+  9 XG$TIM2_ICInit$0$0                                          =  000161 GR
+  9 XG$TIM2_ITConfig$0$0                                        =  00020A GR
+  9 XG$TIM2_OC1Init$0$0                                         =  0000A6 GR
+  9 XG$TIM2_OC1PolarityConfig$0$0                               =  0002B7 GR
+  9 XG$TIM2_OC1PreloadConfig$0$0                                =  000283 GR
+  9 XG$TIM2_OC2Init$0$0                                         =  0000DD GR
+  9 XG$TIM2_OC2PolarityConfig$0$0                               =  0002C6 GR
+  9 XG$TIM2_OC2PreloadConfig$0$0                                =  000292 GR
+  9 XG$TIM2_OC3Init$0$0                                         =  000114 GR
+  9 XG$TIM2_OC3PolarityConfig$0$0                               =  0002D5 GR
+  9 XG$TIM2_OC3PreloadConfig$0$0                                =  0002A1 GR
+  9 XG$TIM2_PWMIConfig$0$0                                      =  0001DD GR
+  9 XG$TIM2_PrescalerConfig$0$0                                 =  000244 GR
+  9 XG$TIM2_SelectOCxM$0$0                                      =  000345 GR
+  9 XG$TIM2_SelectOnePulseMode$0$0                              =  000237 GR
+  9 XG$TIM2_SetAutoreload$0$0                                   =  000367 GR
+  9 XG$TIM2_SetCompare1$0$0                                     =  000378 GR
+  9 XG$TIM2_SetCompare2$0$0                                     =  000389 GR
+  9 XG$TIM2_SetCompare3$0$0                                     =  00039A GR
+  9 XG$TIM2_SetCounter$0$0                                      =  000356 GR
+  9 XG$TIM2_SetIC1Prescaler$0$0                                 =  0003A5 GR
+  9 XG$TIM2_SetIC2Prescaler$0$0                                 =  0003B0 GR
+  9 XG$TIM2_SetIC3Prescaler$0$0                                 =  0003BB GR
+  9 XG$TIM2_TimeBaseInit$0$0                                    =  00006F GR
+  9 XG$TIM2_UpdateDisableConfig$0$0                             =  000219 GR
+  9 XG$TIM2_UpdateRequestConfig$0$0                             =  000228 GR
+  9 _TI1_Config                                                    000479 R
+  9 _TI2_Config                                                    0004A5 R
+  9 _TI3_Config                                                    0004D1 R
+  9 _TIM2_ARRPreloadConfig                                         000266 GR
+  9 _TIM2_CCxCmd                                                   0002D6 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 19.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  9 _TIM2_ClearFlag                                                000449 GR
+  9 _TIM2_ClearITPendingBit                                        000472 GR
+  9 _TIM2_Cmd                                                      0001DE GR
+  9 _TIM2_DeInit                                                   000000 GR
+  9 _TIM2_ForcedOC1Config                                          000245 GR
+  9 _TIM2_ForcedOC2Config                                          000250 GR
+  9 _TIM2_ForcedOC3Config                                          00025B GR
+  9 _TIM2_GenerateEvent                                            0002A2 GR
+  9 _TIM2_GetCapture1                                              0003BC GR
+  9 _TIM2_GetCapture2                                              0003D6 GR
+  9 _TIM2_GetCapture3                                              0003F0 GR
+  9 _TIM2_GetCounter                                               00040A GR
+  9 _TIM2_GetFlagStatus                                            000425 GR
+  9 _TIM2_GetITStatus                                              000456 GR
+  9 _TIM2_GetPrescaler                                             000421 GR
+  9 _TIM2_ICInit                                                   000115 GR
+  9 _TIM2_ITConfig                                                 0001ED GR
+  9 _TIM2_OC1Init                                                  000070 GR
+  9 _TIM2_OC1PolarityConfig                                        0002A9 GR
+  9 _TIM2_OC1PreloadConfig                                         000275 GR
+  9 _TIM2_OC2Init                                                  0000A7 GR
+  9 _TIM2_OC2PolarityConfig                                        0002B8 GR
+  9 _TIM2_OC2PreloadConfig                                         000284 GR
+  9 _TIM2_OC3Init                                                  0000DE GR
+  9 _TIM2_OC3PolarityConfig                                        0002C7 GR
+  9 _TIM2_OC3PreloadConfig                                         000293 GR
+  9 _TIM2_PWMIConfig                                               000162 GR
+  9 _TIM2_PrescalerConfig                                          000238 GR
+  9 _TIM2_SelectOCxM                                               00030E GR
+  9 _TIM2_SelectOnePulseMode                                       000229 GR
+  9 _TIM2_SetAutoreload                                            000357 GR
+  9 _TIM2_SetCompare1                                              000368 GR
+  9 _TIM2_SetCompare2                                              000379 GR
+  9 _TIM2_SetCompare3                                              00038A GR
+  9 _TIM2_SetCounter                                               000346 GR
+  9 _TIM2_SetIC1Prescaler                                          00039B GR
+  9 _TIM2_SetIC2Prescaler                                          0003A6 GR
+  9 _TIM2_SetIC3Prescaler                                          0003B1 GR
+  9 _TIM2_TimeBaseInit                                             000059 GR
+  9 _TIM2_UpdateDisableConfig                                      00020B GR
+  9 _TIM2_UpdateRequestConfig                                      00021A GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 20.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size    4FD   flags    0
+   A CABS                                       size      0   flags    8
+
